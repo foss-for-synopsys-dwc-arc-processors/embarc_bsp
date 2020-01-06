@@ -1,0 +1,44 @@
+/******************************************************************************
+ *
+ * Copyright (c) 2017, Synopsys, Inc.
+ * \version	0.1
+ * \date	2018-01-02
+ * \author	Huaqi Fang
+ *
+ */
+
+/* ******************************************************************************
+ * 1st level group definition
+ */
+
+/**
+ * \defgroup	BOARD_HSDK	HSDK BSP
+ * \ingroup	BOARD
+ * \brief	ARC HS Development Kit BSP
+ * \details
+ *		Provides all HSDK related board support package,
+ *	including init process, baremetal timer functions,
+ *	peripheral drivers, middleware drivers, linker scripts
+ *	and more.
+ */
+
+
+/* ******************************************************************************
+ * 2nd level group definition
+ */
+/**
+ * \defgroup	BOARD_HSDK_COMMON	HSDK Common Module
+ * \ingroup	BOARD_HSDK
+ * \brief	HSDK Board Common Module
+ * \details
+ *		HSDK board common init, baremetal timer and other items
+ */
+
+/**
+ * \defgroup	BOARD_HSDK_DRIVER	HSDK Peripheral Driver Module
+ * \ingroup	BOARD_HSDK
+ * \brief	HSDK Board Peripheral Drivers
+ * \details
+ *		Provide peripheral hardware device drivers.  Both device operations
+ *	and middleware packages require this driver support.
+ */
