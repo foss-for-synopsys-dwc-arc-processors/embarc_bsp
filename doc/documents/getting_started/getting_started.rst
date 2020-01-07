@@ -3,14 +3,13 @@
 Getting Started
 ===============
 
-Use this guide to get started with your :ref:`embARC BSP <introduction_embarc_BSP>`
-development.
+Use this guide to get started with your :ref:`embARC BSP <introduction_embarc_BSP>` development.
 
 Checking Out the embARC BSP source code
 #######################################
 
-The embARC BSP source code is hosted in a GitHub repository that supports
-cloning via git. There are scripts and such in this repo that you'll need to set up your development environment, and we'll be using Git to get this repo. If you don't have Git installed, please refer to the beginning of the host OS-specific getting started instructions below for help.
+The embARC BSP source code is hosted in GitHub.
+The code can be checkouted to your local machine by *git clone*.
 
 We'll begin by using Git to clone the repository anonymously.
 
@@ -23,19 +22,19 @@ We'll begin by using Git to clone the repository anonymously.
 
    git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_bsp.git embarc_bsp
 
-You have successfully checked out a copy of the source code to your local
-machine.
+When the command is returned, you can check in your folder that you have successfully cloned the source code to your local machine.
 
 
 Setting Up the Development Environment
 ######################################
 
-The embARC BSP platform supports, but not limited to, the following development machine operating systems:
+The embARC BSP supports, but not limited to, the following development machine operating systems:
 
 * Microsoft Windows 10 / Windows 7
 * Ubuntu 16.04
 
-Use the following procedure to create a new development environment. Please DO follow the instructions introduced in the document below to acquire a third party library.
+Use the following procedure to create a new development environment.
+Please DO follow the instructions introduced in the document below to acquire a third party library.
 
 .. toctree::
    :maxdepth: 1
@@ -49,10 +48,9 @@ Use the following procedure to create a new development environment. Please DO f
 Building a Sample Application
 #############################
 
-Using the ``blinky`` example, the following steps, which contains the commands
+Using the ``blinky`` example as demonstration, the following steps which contain the commands
 used for the ARC GNU toolchain in a Windows environment, will describe how
-to build an embARC BSP application. Please use the
-appropriate commands for your OS.
+to build an embARC BSP application. Please use the appropriate commands for your OS.
 
 1. Make sure the ARC GNU toolchain is installed in your environment, see :ref:`software_requirement`.
 

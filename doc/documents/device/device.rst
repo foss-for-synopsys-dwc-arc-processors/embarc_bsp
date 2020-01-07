@@ -6,22 +6,21 @@ Devices
 Overview
 ########
 
-The ``device`` folder in the root of embARC contains the necessary software APIs
-and implementations for common device IP and external peripheral drivers. The
-device layer consists of the following components:
+In the root directory of embARC, the ``device`` folder contains the necessary software APIs
+and implementations for common device IP and external peripheral drivers.
+The device layer consists of the following components:
 
-- **Device HAL**: a device hardware abstraction layer including WNIC (Wireless
-  Network Interface Controller), UART (Universal Asynchronous
+- **Device HAL**: a device hardware abstraction layer including UART (Universal Asynchronous
   Receiver/Transmitter), SPI (Serial Peripheral Interface), IIC (Inter-
   Integrated Circuit), I2S (Inter-IC Sound), GPIO (General Purpose Input Output) and SDIO (Secure
   Digital Input and Output).
 
-- **IP Driver Implementation**: device driver implementations based on the above device
-  HAL, including DesignWare IP implementations of UART, IIC, SPI, GPIO and
+- **IP Driver Implementation**: Based on the device HAL, the IP drivers
+  include DesignWare IP implementations of UART, IIC, SPI, GPIO and
   SDIO devices and Designware ARC Subsystem IP implementation.
 
-- **Peripheral Driver Implementation**: peripheral driver implementations such as
-  flash, sensors and PMOD modules.
+- **Peripheral Driver Implementation**: on-board peripheral driver implementations such as
+  flash, ADC, sensors.
 
 .. image:: /pic/embARC_device_hal.png
     :alt: embARC Device HAL
@@ -90,5 +89,5 @@ information. Taking EMSK board as an example, its drivers' instantiation is loca
 ``board/emsk/drivers/ip/designware``. Different instantiations of same type driver will be
 differentiated through ID.
 
-There are 3 UARTs in EMSK, their instantiations are in ``dw_uart_obj.c`` and
-ID allocations & other related definitions are in ``dw_uart_obj.h``.
+There are 3 UART ports in EMSK, their instantiations locate in ``dw_uart_obj.c``.
+ID allocations as well as other related definitions are in ``dw_uart_obj.h``.
