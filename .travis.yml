@@ -1,0 +1,89 @@
+language: sh
+os: linux
+sudo: required
+dist: trusty
+
+env:
+  global:
+    - >
+      STATUS=$'curl -so/dev/null --user "$EMBARC_BOT" --request POST
+      https://api.github.com/repos/$TRAVIS_REPO_SLUG/statuses/${TRAVIS_PULL_REQUEST_SHA:-$TRAVIS_COMMIT}
+      --data @- << DATA\n{
+      "state": "$0",
+      "description": "$1",
+      "context": "travis-ci/$NAME",
+      "target_url": "https://travis-ci.org/$TRAVIS_REPO_SLUG/jobs/$TRAVIS_JOB_ID"
+      }\nDATA'
+      
+      COMMENT=none
+      COMMENTS=$'curl -so/dev/null --user "$EMBARC_BOT" --request POST
+      https://api.github.com/repos/$TRAVIS_REPO_SLUG/issues/$TRAVIS_PULL_REQUEST/comments
+      --data @- << DATA\n{
+      "body": "$COMMENT"
+      }\nDATA'
+    - TOOLCHAIN_VER="latest"
+    - BSP_ROOT="."
+
+cache:
+    pip: true
+
+branches:
+    except:
+        - gh-pages
+
+before_install:
+    - git config --global user.name "embARC Automated Bot"
+    - git config --global user.email "$U_EMAIL"
+    - >
+        if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+            diff=$(git diff FETCH_HEAD master .ci)
+            if [ "$diff" == "" ]; then
+            git checkout remotes/origin/master -- .ci
+            fi
+        fi
+    - >
+        (sudo apt-get update;
+        sudo apt-get install lib32z1;
+        sudo apt-get install dos2unix)
+
+after_success:
+    - bash -c "$STATUS" success "Local $NAME testing has passed"
+
+after_failure:
+    - bash -c "$STATUS" failure "Local $NAME testing has failed"
+
+jobs:
+    include:
+
+        - stage: "Docs"
+          if: type = pull_request
+          name: "sphinx"
+          env: NAME=sphinx
+          language: python
+          python: 3.6
+          install:
+            - >-
+                sudo apt-get install doxygen;
+                pip install --upgrade pip;
+                pip install Sphinx;
+                pip install breathe;
+                pip install recommonmark;
+                pip install sphinx-tabs;
+                pip install sphinx_rtd_theme
+          script:
+            - bash .ci/deploy_doc.sh
+        - name: "codestyle"
+          env: NAME=codestyle
+          install:
+            - >-
+                sudo apt-get update;
+                sudo apt-get install uncrustify
+          script:
+            - find -name "*.c" | while read file; do uncrustify -c .uncrustify.cfg --replace --no-backup "${file}"; done
+            - git status | ( grep '.\(c\|cpp\|h\|hpp\)$' || true ) | cut -d":" -f2 >> codestyle.log
+          after_success:
+            - |
+              COMMENT_CONTENT=$(sed 's/$/&<br>/g' codestyle.log)
+              COMMENT_HEAD="# Code style check result \n***********************\n<pre>"
+              COMMENT="${COMMENT_HEAD}${COMMENT_CONTENT}</pre>"
+              bash -c "$COMMENTS"
