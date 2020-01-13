@@ -72,7 +72,7 @@ Inline void dw_trng_unmask_reg_interrupt(DW_TRNG_REG_PTR trng_reg, uint32_t mask
 
 /**
  * @fn void dw_trng_mask_reg_interrupt(DW_TRNG_REG_PTR trng_reg, uint32_t mask)
- * @brief Disable designware trng bit interrupt with mask 
+ * @brief Disable designware trng bit interrupt with mask
  */
 Inline void dw_trng_mask_reg_interrupt(DW_TRNG_REG_PTR trng_reg, uint32_t mask)
 {

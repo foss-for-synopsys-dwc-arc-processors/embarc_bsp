@@ -72,7 +72,7 @@
 
 /**
  * @fn void dw_spi_disable(DW_SPI_REG *spi_reg_ptr)
- * @brief Disable designware spi device 
+ * @brief Disable designware spi device
  */
 Inline void dw_spi_disable(DW_SPI_REG *spi_reg_ptr)
 {

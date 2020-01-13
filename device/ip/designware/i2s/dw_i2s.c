@@ -534,7 +534,7 @@ Inline void dw_i2s_tx_set_wss(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t word_selec
 
 /**
  * @fn void dw_i2s_rx_set_wss(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t word_select)
- * @brief Set DesignWare I2S RX clock configuration word select line (ws_out) 
+ * @brief Set DesignWare I2S RX clock configuration word select line (ws_out)
  */
 Inline void dw_i2s_rx_set_wss(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t word_select)
 {
@@ -544,7 +544,7 @@ Inline void dw_i2s_rx_set_wss(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t word_selec
 
 /**
  * @fn void dw_i2s_rx_flush_fifo(DW_I2S_RX_REG *i2s_rx_reg_ptr)
- * @brief Reset DesignWare I2S RX FIFO, flush all the RX FIFOs (a self clearing bit) 
+ * @brief Reset DesignWare I2S RX FIFO, flush all the RX FIFOs (a self clearing bit)
  */
 Inline void dw_i2s_rx_flush_fifo(DW_I2S_RX_REG *i2s_rx_reg_ptr)
 {
@@ -553,7 +553,7 @@ Inline void dw_i2s_rx_flush_fifo(DW_I2S_RX_REG *i2s_rx_reg_ptr)
 
 /**
  * @fn void dw_i2s_tx_flush_fifo(DW_I2S_TX_REG *i2s_tx_reg_ptr)
- * @brief Reset DesignWare I2S TX FIFO, flush all the TX FIFOs (a self clearing bit) 
+ * @brief Reset DesignWare I2S TX FIFO, flush all the TX FIFOs (a self clearing bit)
  */
 Inline void dw_i2s_tx_flush_fifo(DW_I2S_TX_REG *i2s_tx_reg_ptr)
 {
