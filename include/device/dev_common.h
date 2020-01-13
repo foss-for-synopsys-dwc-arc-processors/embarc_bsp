@@ -89,7 +89,7 @@
  * @ingroup DEVICE_HAL_COMMON
  * @brief Definitions for device working mode(master or slave)
  * @details Common macro definitions for working mode, Master or Slave mode,
- * used in @ref DEV_HAL_IIC, @ref DEV_HAL_SPI.
+ * used in @ref DEVICE_HAL_IIC, @ref DEVICE_HAL_SPI.
  * @{
  */
 /*
