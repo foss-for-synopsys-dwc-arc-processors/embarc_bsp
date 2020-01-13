@@ -114,7 +114,7 @@ extern "C" {
  * @brief Check an expression to see if it is right, and when error
  *        set the ercd, and goto exit_label
  * @param EXPR Expression that need to be checked (==0 failed)
- * @param ERCD MUST pass a variable to here to get the error code
+ * @param _ERCD MUST pass a variable to here to get the error code
  * @param ERROR_CODE Error code that pass to _ERCD
  * @param EXIT_LABEL Label to go when error happens
  */
@@ -129,7 +129,6 @@ extern "C" {
  *        directly goto exit_label
  * @param EXPR Expression that need to be checked (==0 failed)
  * @param EXIT_LABEL Label to go when error happens
- * @retval
  */
 #define CHECK_EXP_NOERCD(EXPR, EXIT_LABEL) {	    \
 		if (arc_compiler_rarely(!(EXPR))) { \
