@@ -48,5 +48,3 @@ The following pre-defined work is done in ``board_main`` function:
   * initialize the ``xprintf`` function to have a console output
 
 * jump to ``main`` function.
-
-.. Note:: User can undefine the macro ``EMBARC_USE_BOARD_MAIN`` to bypass the pre-defined board-level initialization and do customized initialization.

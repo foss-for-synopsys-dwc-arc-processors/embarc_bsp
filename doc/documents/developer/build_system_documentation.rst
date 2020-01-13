@@ -245,13 +245,6 @@ Options Coded in Application Makefile
 
         * For baremetal and Contiki applications, **STACKSZ** is useful for baremetal applications.
 
-* **USE_BOARD_MAIN**: Control which board init process is used. The default value of this option is ``1`` defined in ``<embARC>/board/board.mk``.
-
-        * When **USE_BOARD_MAIN** is 0, it uses the normal board init process, compatible with previous embARC releases; you must do board_init yourself.
-        * When **USE_BOARD_MAIN** is 1
-
-.. note:: For more details about how this new process is implemented, see ``<embARC>/board/board.c``. In most embARC examples, you don't need to change ``USE_BOARD_MAIN`` to 0.
-
 * **EXT_DEV_LIST**: Select peripheral device drivers used in your application.
 
         * Use **EXT_DEV_LIST** in the example's makefile. If more than one peripheral device drivers are selected, please use space between each other, like ``EXT_DEV_LIST += EXT_DEV_LIST += wifi/mrf24g sensor/temperature/adt7420``.
