@@ -13,12 +13,15 @@ Detailed Description
 ====================
 
  * Extra Required Tools
+
       NO
 
  * Extra Required Peripherals
+
       NO
 
  * Design Concept
+
     This example is designed to show how to use |arc| XY memory and Address Generation Unit (AGU). The job is to add *DAT_SIZE* uin32_t number, i.e. c = a + b. Two approaches are adopted
     to do the job, one tradition way and one accelerated by xy memory
 
@@ -41,6 +44,7 @@ Sample Output
 =============
 
 .. code-block:: console
+
 	-----------------------------------------------------------
 	 ____                                _ ____
 	|  _ \ _____      _____ _ __ ___  __| | __ ) _   _

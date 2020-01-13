@@ -12,12 +12,15 @@ Detailed Description
 ====================
 
  * Extra Required Tools
+
     NO
 
  * Extra Required Peripherals
+
     NO
 
  * Design Concept
+
     This example is designed to test the cache module of |arc|. Besides, it shows how to use ARC Cache API defined in ``arc_cache.h``.
 
 .. note::

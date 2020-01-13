@@ -1,4 +1,4 @@
-.. _example_arc_feature_timer_interrupt:
+.. _example_arc_feature_memory_protection:
 
 ARC Memory Protection Example
 #############################

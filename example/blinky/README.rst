@@ -11,18 +11,23 @@ Overview
 Detailed Description
 ====================
  * Extra Required Tools
+
     NO
 
  * Extra Required Peripherals
+
     NO
 
  * Design Concept
+
     This example is designed to test board without any extra peripheral
 
  * Usage Manual
+
     Toggle all leds on board in 1s period
 
  * Extra Comments
+
     NO
 
 Buidling and Running
