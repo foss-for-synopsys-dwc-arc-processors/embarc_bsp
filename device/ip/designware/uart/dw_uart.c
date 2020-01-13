@@ -97,7 +97,7 @@ Inline int32_t dw_uart_putready(DW_UART_REG *uart_reg_ptr)
 
 /**
  * @fn int32_t dw_uart_getready(DW_UART_REG *uart_reg_ptr)
- * @brief Test whether uart is ready to receive, 1 ready, 0 not ready 
+ * @brief Test whether uart is ready to receive, 1 ready, 0 not ready
  */
 Inline int32_t dw_uart_getready(DW_UART_REG *uart_reg_ptr)
 {

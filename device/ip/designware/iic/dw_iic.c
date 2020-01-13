@@ -419,7 +419,7 @@ void dw_iic_calc_sclcnt(uint32_t clk_khz, uint32_t caploading, DW_IIC_SCL_CNT *s
 
 /**
  * @fn void dw_iic_set_spike_len(DW_IIC_REG *iic_reg_ptr, DW_IIC_SPKLEN *spklen)
- * @brief Set spike suppression configuration 
+ * @brief Set spike suppression configuration
  */
 Inline void dw_iic_set_spike_len(DW_IIC_REG *iic_reg_ptr, DW_IIC_SPKLEN *spklen)
 {
