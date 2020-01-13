@@ -693,7 +693,6 @@ int32_t int_level_config(const uint32_t intno, const uint32_t level)
  * \brief Get interrupt request mode
  *
  * @param intno Interrupt number
- * @param level 0-level triggered, 1-pulse triggered
  */
 int32_t int_level_get(const uint32_t intno)
 {
