@@ -56,7 +56,6 @@ jobs:
     include:
 
         - stage: "Docs"
-          if: type = pull_request
           name: "sphinx"
           env: NAME=sphinx
           language: python
