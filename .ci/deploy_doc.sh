@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REPO_NAME="github.com/wangnuannuan/embarc_bsp.git"
+REPO_NAME="github.com/foss-for-synopsys-dwc-arc-processors/embarc_bsp.git"
 REPO_LINK="https://""${GH_TOKEN}""@""${REPO_NAME}"
 
 die()
