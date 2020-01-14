@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__PWM__TIMER__CFG" kind="struct" prot="public">
+    <compoundname>DEV_PWM_TIMER_CFG</compoundname>
+    <includes refid="dev__pwm__timer_8h" local="no">dev_pwm_timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1ga3e39f88347afc6ecef04c70844b3eb01" kindref="member">DEV_PWM_TIMER_MODE</ref></type>
+        <definition>DEV_PWM_TIMER_MODE DEV_PWM_TIMER_CFG::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>work mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="112" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__CFG_a4f25f953f731cb19711fcb4212f9f75a_1a4f25f953f731cb19711fcb4212f9f75a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DEV_PWM_TIMER_CFG::count_low</definition>
+        <argsstring></argsstring>
+        <name>count_low</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count for timer or pwm period low </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="113" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__CFG_ab62e539f96e54adada9fc7065cb9bf68_1ab62e539f96e54adada9fc7065cb9bf68" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t DEV_PWM_TIMER_CFG::count_high</definition>
+        <argsstring></argsstring>
+        <name>count_high</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count for pwm period high </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__CFG_a65a5ee80f4e99c890e14c5358118130a_1a65a5ee80f4e99c890e14c5358118130a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__PWM__TIMER_ga8db6fd35a0475f738f2afa833bcb69d5_1ga8db6fd35a0475f738f2afa833bcb69d5" kindref="member">DEV_PWM_TIMER_HANDLER</ref></type>
+        <definition>DEV_PWM_TIMER_HANDLER DEV_PWM_TIMER_CFG::isr_hander</definition>
+        <argsstring></argsstring>
+        <name>isr_hander</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>channel ch isr hander </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>PWM_TIMER Device Config Struct </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="111" bodyend="116"/>
+    <listofallmembers>
+      <member refid="structDEV__PWM__TIMER__CFG_ab62e539f96e54adada9fc7065cb9bf68_1ab62e539f96e54adada9fc7065cb9bf68" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_CFG</scope><name>count_high</name></member>
+      <member refid="structDEV__PWM__TIMER__CFG_a4f25f953f731cb19711fcb4212f9f75a_1a4f25f953f731cb19711fcb4212f9f75a" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_CFG</scope><name>count_low</name></member>
+      <member refid="structDEV__PWM__TIMER__CFG_a65a5ee80f4e99c890e14c5358118130a_1a65a5ee80f4e99c890e14c5358118130a" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_CFG</scope><name>isr_hander</name></member>
+      <member refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_CFG</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

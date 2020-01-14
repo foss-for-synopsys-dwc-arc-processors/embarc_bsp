@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__I2S__BUFFER" kind="struct" prot="public">
+    <compoundname>DW_I2S_BUFFER</compoundname>
+    <includes refid="dw__i2s_8h" local="no">dw_i2s.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__I2S__BUFFER_a191850b854af1d3ad4a513fa9c24cbe6_1a191850b854af1d3ad4a513fa9c24cbe6" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* DW_I2S_BUFFER::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="280" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__BUFFER_a74ee06bb8c7806144d61ebdfb501db4d_1a74ee06bb8c7806144d61ebdfb501db4d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_BUFFER::ofs</definition>
+        <argsstring></argsstring>
+        <name>ofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="284" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__BUFFER_aa772356b8a93222607955ba3408d8ec0_1aa772356b8a93222607955ba3408d8ec0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_BUFFER::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="285" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="278" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="278" bodyend="286"/>
+    <listofallmembers>
+      <member refid="structDW__I2S__BUFFER_a191850b854af1d3ad4a513fa9c24cbe6_1a191850b854af1d3ad4a513fa9c24cbe6" prot="public" virt="non-virtual"><scope>DW_I2S_BUFFER</scope><name>buf</name></member>
+      <member refid="structDW__I2S__BUFFER_aa772356b8a93222607955ba3408d8ec0_1aa772356b8a93222607955ba3408d8ec0" prot="public" virt="non-virtual"><scope>DW_I2S_BUFFER</scope><name>len</name></member>
+      <member refid="structDW__I2S__BUFFER_a74ee06bb8c7806144d61ebdfb501db4d_1a74ee06bb8c7806144d61ebdfb501db4d" prot="public" virt="non-virtual"><scope>DW_I2S_BUFFER</scope><name>ofs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

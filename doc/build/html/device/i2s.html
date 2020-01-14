@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>I2S HAL &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SPI HAL" href="spi.html" />
+    <link rel="prev" title="I2C HAL" href="i2c.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="device.html">Devices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="device.html#overview">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="device.html#id1">Device HAL</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="gpio.html">GPIO HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c.html">I2C HAL</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">I2S HAL</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spi.html">SPI HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uart.html">UART HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdio.html">SDIO HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trng.html">TRNG HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pwm_timer.html">PWM_TIMER HAL</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="device.html#ip-drivers">IP Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="device.html#driver-instantiation">Driver Instantiation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="device.html">Devices</a> &raquo;</li>
+        
+      <li>I2S HAL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="i2s-hal">
+<span id="device-hal-i2s"></span><h1>I2S HAL<a class="headerlink" href="#i2s-hal" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<dl class="group">
+<dt>
+<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT"></span><em>group</em> <code class="sig-name descname">DEVICE_HAL_I2S_DEVSTRUCT</code></dt>
+<dd><p>Definitions for I2S device structure. </p>
+<p>This structure will be used in user implemented code, which was called Device Driver Implement Layer for I2S to realize in user code. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Defines</p>
+<dl class="macro">
+<dt id="c.DEV_I2S_INFO_SET_EXTRA_OBJECT">
+<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga14a028919c4c6fb0a8b0ba7d6ba6b496"></span><code class="sig-name descname">DEV_I2S_INFO_SET_EXTRA_OBJECT</code><span class="sig-paren">(</span>i2s_info_ptr, extra_info<span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_I2S_INFO_SET_EXTRA_OBJECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set extra information pointer of I2S </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DEV_I2S_INFO_GET_EXTRA_OBJECT">
+<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga6279e7b89f92b9203ac13dc92b33d4e3"></span><code class="sig-name descname">DEV_I2S_INFO_GET_EXTRA_OBJECT</code><span class="sig-paren">(</span>i2s_info_ptr<span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_I2S_INFO_GET_EXTRA_OBJECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get extra information pointer of I2S </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Typedefs</p>
+<dl class="type">
+<dt id="_CPPv416DEV_I2S_INFO_PTR">
+<span id="_CPPv316DEV_I2S_INFO_PTR"></span><span id="_CPPv216DEV_I2S_INFO_PTR"></span><span id="DEV_I2S_INFO_PTR"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga37034e6fdbce66af76679009cdd47037"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv412DEV_I2S_INFO" title="DEV_I2S_INFO">DEV_I2S_INFO</a> *<code class="sig-name descname">DEV_I2S_INFO_PTR</code><a class="headerlink" href="#_CPPv416DEV_I2S_INFO_PTR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv411DEV_I2S_PTR">
+<span id="_CPPv311DEV_I2S_PTR"></span><span id="_CPPv211DEV_I2S_PTR"></span><span id="DEV_I2S_PTR"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga593d3f4862005c0ef8dcadc2809b5a2b"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv47DEV_I2S" title="DEV_I2S">DEV_I2S</a> *<code class="sig-name descname">DEV_I2S_PTR</code><a class="headerlink" href="#_CPPv411DEV_I2S_PTR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Variables</p>
+<dl class="member">
+<dt id="_CPPv4N7DEV_I2S8i2s_openE">
+<span id="_CPPv3N7DEV_I2S8i2s_openE"></span><span id="_CPPv2N7DEV_I2S8i2s_openE"></span><span id="DEV_I2S::i2s_open__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga3632ba1ae2a88ea3992e37433cb8646f"></span>int32_t *<code class="sig-name descname">i2s_open</code><a class="headerlink" href="#_CPPv4N7DEV_I2S8i2s_openE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>open I2S device in master/slave mode, \ when in master mode, param stands for speed mode, \ when in slave mode, param stands for slave address</p>
+<p>Open an I2S device with selected mode (master or slave) with defined param <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">mode</span></code>: Working mode (master or slave) </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">param</span></code>: Device type (transmitter OR receiver) </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Open successfully without any issues </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OPNED</span></code>: Device was opened before </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Device initialized parameters are different with parameters in IP </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_NOSPT</span></code>: Open settings are not supported </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N7DEV_I2S9i2s_closeE">
+<span id="_CPPv3N7DEV_I2S9i2s_closeE"></span><span id="_CPPv2N7DEV_I2S9i2s_closeE"></span><span id="DEV_I2S::i2s_close__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1gab87a23fcdf8323c09bc107ec6a6bb637"></span>int32_t *<code class="sig-name descname">i2s_close</code><a class="headerlink" href="#_CPPv4N7DEV_I2S9i2s_closeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>close I2S device</p>
+<p>close an I2S device, just decrease the opn_cnt, if opn_cnt equals 0, then close the device <dl class="simple">
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Close successfully without any issues(including scenario that device is already closed) </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OPNED</span></code>: Device is still opened, the device opn_cnt decreased by 1 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N7DEV_I2S11i2s_controlE">
+<span id="_CPPv3N7DEV_I2S11i2s_controlE"></span><span id="_CPPv2N7DEV_I2S11i2s_controlE"></span><span id="DEV_I2S::i2s_control__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga72ecb416e0f1e019129e3c54f5f659e5"></span>int32_t *<code class="sig-name descname">i2s_control</code><a class="headerlink" href="#_CPPv4N7DEV_I2S11i2s_controlE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>control i2s device</p>
+<p>Control an I2S device by ctrl_cmd, with passed param. you can control I2S device using predefined I2S control commands defined using DEV_SET_SYSCMD (which must be implemented by bsp developer), command details. And you can also control I2S device using your own specified commands defined using DEV_SET_USRCMD, but these specified commands should be defined in your own I2S device driver implementation. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">ctrl_cmd</span></code>: control command, to change or get some thing related to I2S </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[inout]</span> <span class="pre">param</span></code>: Parameters that maybe argument of the command, or return values of the command, must not be NULL </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Control device successfully </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_CLSED</span></code>: Device is not opened </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid or not exists </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid for current control command </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Control device failed, due to hardware issues, such as device is disabled </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_CTX</span></code>: Control device failed, due to different reasons like in transfer state </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_NOSPT</span></code>: Control command is not supported or not valid </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N7DEV_I2S9i2s_writeE">
+<span id="_CPPv3N7DEV_I2S9i2s_writeE"></span><span id="_CPPv2N7DEV_I2S9i2s_writeE"></span><span id="DEV_I2S::i2s_write__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga62997f2e475f6baa91b6b1281cd0a7bf"></span>int32_t *<code class="sig-name descname">i2s_write</code><a class="headerlink" href="#_CPPv4N7DEV_I2S9i2s_writeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>send data by i2s TX device (blocking method)</p>
+<p>Send data through I2S with defined len to RX device. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">data</span></code>: Pointer to data need to send by I2S </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">len</span></code>: Length of data to be sent </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code>: 0 Byte count that was successfully sent for poll method, it might can’t send that much due to different error state. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid or not exists </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_CTX</span></code>: Device is still in transfer state </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Can’t write data to hardware due to hardware issues, such as device is disabled </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N7DEV_I2S8i2s_readE">
+<span id="_CPPv3N7DEV_I2S8i2s_readE"></span><span id="_CPPv2N7DEV_I2S8i2s_readE"></span><span id="DEV_I2S::i2s_read__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1gab35b00fe606cc548f1148047f297ecd8"></span>int32_t *<code class="sig-name descname">i2s_read</code><a class="headerlink" href="#_CPPv4N7DEV_I2S8i2s_readE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>read data from i2s RX device (blocking method)</p>
+<p>Receive data of defined len through I2S from TX device. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[out]</span> <span class="pre">data</span></code>: Pointer to data need to received by I2S </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">len</span></code>: Length of data to be received </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code>: 0 Byte count that was successfully received for poll method, it might can’t send that much due to different error state. </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid or not exists </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_CTX</span></code>: Device is still in transfer state </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Can’t receive data from hardware due to hardware issues, such as device is disabled </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv412DEV_I2S_INFO">
+<span id="_CPPv312DEV_I2S_INFO"></span><span id="_CPPv212DEV_I2S_INFO"></span><span id="DEV_I2S_INFO"></span><span class="target" id="structDEV__I2S__INFO"></span><em class="property">struct </em><code class="sig-name descname">DEV_I2S_INFO</code><a class="headerlink" href="#_CPPv412DEV_I2S_INFO" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;dev_i2s.h&gt;</em><p>I2S information struct definition. </p>
+<p>Informations about I2S open state, working state, baurate, I2S registers, working method, interrupt number </p>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv47DEV_I2S">
+<span id="_CPPv37DEV_I2S"></span><span id="_CPPv27DEV_I2S"></span><span id="DEV_I2S"></span><span class="target" id="structDEV__I2S"></span><em class="property">struct </em><code class="sig-name descname">DEV_I2S</code><a class="headerlink" href="#_CPPv47DEV_I2S" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;dev_i2s.h&gt;</em><p>Definition for I2S device interface. </p>
+<p>Define I2S device interface, like I2S information structure, fuctions to get I2S info, open/close/control I2S, send/receive data by I2S <dl class="simple">
+<dt><strong>Note</strong></dt><dd><p>All this details are implemented by user in user porting code </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

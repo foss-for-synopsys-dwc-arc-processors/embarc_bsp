@@ -1,0 +1,1100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" kind="file">
+    <compoundname>dw_spi_obj.c</compoundname>
+    <includes refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h" local="yes">dw_spi_obj.h</includes>
+    <includes refid="emsdp_8h" local="yes">emsdp/emsdp.h</includes>
+    <incdepgraph>
+      <node id="1064">
+        <label>device/ip_hal/dev_pwm_timer.h</label>
+        <link refid="dev__pwm__timer_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1065">
+        <label>drivers/ip/subsystem/spi/dfss_spi_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8h"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1041" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+      </node>
+      <node id="1054">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>drivers/ip/designware/trng/dw_trng_obj.h</label>
+        <link refid="dw__trng__obj_8h"/>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>stdint.h</label>
+      </node>
+      <node id="1072">
+        <label>device/ip_hal/dev_i2s.h</label>
+        <link refid="dev__i2s_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1034">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp/drivers/ip/designware/spi/dw_spi_obj.c"/>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>dw_spi_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h"/>
+        <childnode refid="1036" relation="include">
+        </childnode>
+      </node>
+      <node id="1061">
+        <label>device/designware/dw_nist_trng.h</label>
+        <link refid="dw__nist__trng_8h"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>drivers/ip/subsystem/iic/dfss_iic_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8h"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>drivers/ip/subsystem/gpio/dfss_gpio_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8h"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>device/ip_hal/dev_trng.h</label>
+        <link refid="dev__trng_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1042">
+        <label>stddef.h</label>
+      </node>
+      <node id="1046">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="1047" relation="include">
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>device/designware/dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>limits.h</label>
+      </node>
+      <node id="1063">
+        <label>device/designware/dw_pwm_timer.h</label>
+        <link refid="dw__pwm__timer_8h"/>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>device/ip_hal/dev_sdio.h</label>
+        <link refid="dev__sdio_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="1077">
+        <label>board_emsdp.h</label>
+      </node>
+      <node id="1051">
+        <label>device/ip_hal/dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1075">
+        <label>emsdp_hardware.h</label>
+        <link refid="emsdp__hardware_8h"/>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>drivers/ip/subsystem/uart/dfss_uart_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1051" relation="include">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>device/designware/dw_spi.h</label>
+        <link refid="dw__spi_8h"/>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
+        <childnode refid="1063" relation="include">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>io_config.h</label>
+      </node>
+      <node id="1073">
+        <label>device/dev_pinmux.h</label>
+        <link refid="dev__pinmux_8h"/>
+        <childnode refid="1039" relation="include">
+        </childnode>
+      </node>
+      <node id="1049">
+        <label>arc/arc_em.h</label>
+        <link refid="arc__em_8h"/>
+        <childnode refid="1046" relation="include">
+        </childnode>
+      </node>
+      <node id="1038">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="1039" relation="include">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>drivers/ip/designware/sdio/dw_sdio_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8h"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+      </node>
+      <node id="1059">
+        <label>device/designware/dw_trng.h</label>
+        <link refid="dw__trng_8h"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>device/designware/dw_sdio.h</label>
+        <link refid="dw__sdio_8h"/>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="1045" relation="include">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>device/ip_hal/dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>device/ip_hal/dev_spi.h</label>
+        <link refid="dev__spi_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>drivers/ip/subsystem/i2s/dfss_i2s_obj.h</label>
+        <link refid="dfss__i2s__obj_8h"/>
+        <childnode refid="1072" relation="include">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>apexextensions.h</label>
+      </node>
+      <node id="1048">
+        <label>emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="1049" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+      </node>
+      <node id="1074">
+        <label>common/emsdp_io.h</label>
+        <link refid="emsdp__io_8h"/>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af22eb89baa2ee58b428d5ec0ba69506e_1af22eb89baa2ee58b428d5ec0ba69506e" prot="public" static="no">
+        <name>DW_SPI_0_BASE</name>
+        <initializer>(<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_a57bad8893ea9b02b324fe5e50a9b8152_1a57bad8893ea9b02b324fe5e50a9b8152" kindref="member">EMSDP_SPI_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 0 relative baseaddr </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="35" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a320b0f5d4389de4581d75bff65b8eb3c_1a320b0f5d4389de4581d75bff65b8eb3c" prot="public" static="no">
+        <name>DW_SPI_0_INTNO</name>
+        <initializer>(<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_a27f145489a63ed4141570f6a97e0ca4a_1a27f145489a63ed4141570f6a97e0ca4a" kindref="member">EMSDP_REDPINE_SPI_INTR</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 0 interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="36" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1e92bea9a2d9f6ab5c0faf8c6aef4821_1a1e92bea9a2d9f6ab5c0faf8c6aef4821" prot="public" static="no">
+        <name>DW_SPI_0_RX_SAMPLEDLY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 0 RXD Sample Delay </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="37" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a8ead6112b5e53996941fd884fa30d47c_1a8ead6112b5e53996941fd884fa30d47c" prot="public" static="no">
+        <name>DW_SPI_0_TX_FIFO_LEN</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="39" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af5895258eef4af84dfa8dcc88a58ffb9_1af5895258eef4af84dfa8dcc88a58ffb9" prot="public" static="no">
+        <name>DW_SPI_0_RX_FIFO_LEN</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="40" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a8d9e210d7b5824cff3063a51da1ad849_1a8d9e210d7b5824cff3063a51da1ad849" prot="public" static="no">
+        <name>DW_SPI_0_SUPPORTED_MODE</name>
+        <initializer><ref refid="dw__spi_8h_ad37884a4b1a83c3f6793074ea2beca3a_1ad37884a4b1a83c3f6793074ea2beca3a" kindref="member">DW_SPI_MASTER_SUPPORTED</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="42" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_afb4b87070714769a57fcdbe8f7804071_1afb4b87070714769a57fcdbe8f7804071" prot="public" static="no">
+        <name>DW_SPI_1_BASE</name>
+        <initializer>(<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_a94c747a4786f56e8052edfe4d189d390_1a94c747a4786f56e8052edfe4d189d390" kindref="member">EMSDP_FLASH_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 1 relative baseaddr </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="138" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a38a5268ffbdbd3373dd0cf01fde501b2_1a38a5268ffbdbd3373dd0cf01fde501b2" prot="public" static="no">
+        <name>DW_SPI_1_INTNO</name>
+        <initializer>(<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_a45602345a29ef2815d01410a446c1463_1a45602345a29ef2815d01410a446c1463" kindref="member">EMSDP_SPI1_INTR</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 1 interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="139" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a4990fb15a9b821c7cd80291dc87fa6d5_1a4990fb15a9b821c7cd80291dc87fa6d5" prot="public" static="no">
+        <name>DW_SPI_1_RX_SAMPLEDLY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 1 RXD Sample Delay </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="140" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a16d433212ea51bb53b142d826874fd3f_1a16d433212ea51bb53b142d826874fd3f" prot="public" static="no">
+        <name>DW_SPI_1_TX_FIFO_LEN</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="142" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a5b3b3696ab214164ffd5d0f705a4507c_1a5b3b3696ab214164ffd5d0f705a4507c" prot="public" static="no">
+        <name>DW_SPI_1_RX_FIFO_LEN</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="143" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a06e87510ea43af8323de1ff18e02eaf5_1a06e87510ea43af8323de1ff18e02eaf5" prot="public" static="no">
+        <name>DW_SPI_1_SUPPORTED_MODE</name>
+        <initializer><ref refid="dw__spi_8h_ad37884a4b1a83c3f6793074ea2beca3a_1ad37884a4b1a83c3f6793074ea2beca3a" kindref="member">DW_SPI_MASTER_SUPPORTED</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="145" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a89855285c80602f2bcfef0c00c5c2813_1a89855285c80602f2bcfef0c00c5c2813" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref></type>
+        <definition>DEV_SPI dw_spi_0</definition>
+        <argsstring></argsstring>
+        <name>dw_spi_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="44" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_aa04dbbad35b871c6007357e81f133a6b_1aa04dbbad35b871c6007357e81f133a6b" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref></type>
+        <definition>DW_SPI_CTRL dw_spi_0_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_spi_0_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 0 ctrl </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9c0084c238de2676af44dff2e19c2a82_1a9c0084c238de2676af44dff2e19c2a82" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dw_spi_0_cs_status</definition>
+        <argsstring></argsstring>
+        <name>dw_spi_0_cs_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="46" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9005e07b937899fe11388d2ecabc6dd9_1a9005e07b937899fe11388d2ecabc6dd9" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref></type>
+        <definition>DEV_SPI dw_spi_1</definition>
+        <argsstring></argsstring>
+        <name>dw_spi_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 1 object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="147" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af54b47a6578761ba9542535f3839d090_1af54b47a6578761ba9542535f3839d090" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref></type>
+        <definition>DW_SPI_CTRL dw_spi_1_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_spi_1_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware spi 1 ctrl </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="148" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a84a46ae96d73f31d30d26e9d60847151_1a84a46ae96d73f31d30d26e9d60847151" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dw_spi_1_cs_status</definition>
+        <argsstring></argsstring>
+        <name>dw_spi_1_cs_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="149" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a348718f5f86915bfa2536b8590e269db_1a348718f5f86915bfa2536b8590e269db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_0_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_spi_0_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="34" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_abecdf382ce9db2027a9b4c673aa2b0c1_1abecdf382ce9db2027a9b4c673aa2b0c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_0_open</definition>
+        <argsstring>(uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_spi_0_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="48" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_ac0bffbfb2607e12285cb7e5aebb38f26_1ac0bffbfb2607e12285cb7e5aebb38f26" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_0_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_spi_0_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="53" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1acbe06806a36412c40ce0bbf67875be_1a1acbe06806a36412c40ce0bbf67875be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_0_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_spi_0_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="58" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="58" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af25e361ba143feb2b5b65a3987916266_1af25e361ba143feb2b5b65a3987916266" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_0_write</definition>
+        <argsstring>(const void *data, uint32_t len)</argsstring>
+        <name>dw_spi_0_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="73" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_abb80169b2854ea5a7aac85c5528d326f_1abb80169b2854ea5a7aac85c5528d326f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_0_read</definition>
+        <argsstring>(void *data, uint32_t len)</argsstring>
+        <name>dw_spi_0_read</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="78" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a505b35c8cfa638a32b00d789d0cc99e6_1a505b35c8cfa638a32b00d789d0cc99e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_0_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_spi_0_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>get absolute designware base address</para><para>&lt; designware spi 0 relative baseaddr</para><para>spi info init</para><para>&lt; designware spi 0 interrupt number</para><para>&lt; designware spi 0 RXD Sample Delay</para><para>spi dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="88" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a3d4e7f9499fa786732cbe1a50323d47c_1a3d4e7f9499fa786732cbe1a50323d47c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_1_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_spi_1_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="137" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_ad4003498340ca7e3bfe36a60936df788_1ad4003498340ca7e3bfe36a60936df788" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_1_open</definition>
+        <argsstring>(uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_spi_1_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="151" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1f1f1111f40f1bc2035eeeb0c2bcb57d_1a1f1f1111f40f1bc2035eeeb0c2bcb57d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_1_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_spi_1_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="156" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a052906e638ca3a174d3b7ea42d80a575_1a052906e638ca3a174d3b7ea42d80a575" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_1_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_spi_1_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="161" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="161" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_aa7bb711d9c7e450c9d775cd3e67248e9_1aa7bb711d9c7e450c9d775cd3e67248e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_1_write</definition>
+        <argsstring>(const void *data, uint32_t len)</argsstring>
+        <name>dw_spi_1_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="176" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a87292a261a518c76decff07bfd37a116_1a87292a261a518c76decff07bfd37a116" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_1_read</definition>
+        <argsstring>(void *data, uint32_t len)</argsstring>
+        <name>dw_spi_1_read</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="181" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a79f444d78cd25fad3d4cc6d7c18f2be5_1a79f444d78cd25fad3d4cc6d7c18f2be5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_1_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_spi_1_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>get absolute designware base address</para><para>&lt; designware spi 1 relative baseaddr</para><para>spi info init</para><para>&lt; designware spi 1 interrupt number</para><para>&lt; designware spi 1 RXD Sample Delay</para><para>spi dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="191" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="191" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1b320bc3e22153831a4cd42335e10ef8_1a1b320bc3e22153831a4cd42335e10ef8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_all_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_spi_all_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Install all spi objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="241" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="241" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a973ce41f48ad335779a2a80d9564ee3b_1a973ce41f48ad335779a2a80d9564ee3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga37272142669e902623fa64735ff3ac8c_1ga37272142669e902623fa64735ff3ac8c" kindref="member">DEV_SPI_PTR</ref></type>
+        <definition>DEV_SPI_PTR dw_spi_get_dev</definition>
+        <argsstring>(int32_t spi_id)</argsstring>
+        <name>dw_spi_get_dev</name>
+        <param>
+          <type>int32_t</type>
+          <declname>spi_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get one designware device structure </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; SPI 0 id macro (Redpine)</para><para>&lt; SPI 1 id macro (SPI flash) </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" line="252" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c" bodystart="252" bodyend="277"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h" kindref="compound">dw_spi_obj.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emsdp_8h" kindref="compound">emsdp/emsdp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SPI_0)</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a348718f5f86915bfa2536b8590e269db_1a348718f5f86915bfa2536b8590e269db" kindref="member">dw_spi_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_0_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EMSDP_SPI_BASE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#define<sp/>DW_SPI_0_INTNO<sp/><sp/><sp/><sp/><sp/><sp/>(EMSDP_REDPINE_SPI_INTR)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#define<sp/>DW_SPI_0_RX_SAMPLEDLY<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#define<sp/>DW_SPI_0_TX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_0_RX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_0_SUPPORTED_MODE<sp/>DW_SPI_MASTER_SUPPORTED</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a89855285c80602f2bcfef0c00c5c2813_1a89855285c80602f2bcfef0c00c5c2813" kindref="member">dw_spi_0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_aa04dbbad35b871c6007357e81f133a6b_1aa04dbbad35b871c6007357e81f133a6b" kindref="member">dw_spi_0_ctrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9c0084c238de2676af44dff2e19c2a82_1a9c0084c238de2676af44dff2e19c2a82" kindref="member">dw_spi_0_cs_status</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_abecdf382ce9db2027a9b4c673aa2b0c1_1abecdf382ce9db2027a9b4c673aa2b0c1" kindref="member">dw_spi_0_open</ref>(uint32_t<sp/>mode,<sp/>uint32_t<sp/>param)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_a237c47561c92859edb1272a2446732d8_1a237c47561c92859edb1272a2446732d8" kindref="member">dw_spi_open</ref>(&amp;dw_spi_0,<sp/>mode,<sp/>param);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_ac0bffbfb2607e12285cb7e5aebb38f26_1ac0bffbfb2607e12285cb7e5aebb38f26" kindref="member">dw_spi_0_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_a3b3007ebdf775be7cb571b56a7bebe1f_1a3b3007ebdf775be7cb571b56a7bebe1f" kindref="member">dw_spi_close</ref>(&amp;dw_spi_0);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1acbe06806a36412c40ce0bbf67875be_1a1acbe06806a36412c40ce0bbf67875be" kindref="member">dw_spi_0_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="dw__spi_8h_a9d8a5b3a14d5b4ef1ca1dfdc082854d2_1a9d8a5b3a14d5b4ef1ca1dfdc082854d2" kindref="member">dw_spi_control</ref>(&amp;dw_spi_0,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctrl_cmd<sp/>==<sp/><ref refid="group__DEVICE__HAL__SPI__CTRLCMD_ga3917a1fd406a1d67750f3d0f2fd4d767_1ga3917a1fd406a1d67750f3d0f2fd4d767" kindref="member">SPI_CMD_MST_SEL_DEV</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9c0084c238de2676af44dff2e19c2a82_1a9c0084c238de2676af44dff2e19c2a82" kindref="member">dw_spi_0_cs_status</ref><sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctrl_cmd<sp/>==<sp/><ref refid="group__DEVICE__HAL__SPI__CTRLCMD_ga8f6ad6c20c16aa1a0dcd696f27a7af5c_1ga8f6ad6c20c16aa1a0dcd696f27a7af5c" kindref="member">SPI_CMD_MST_DSEL_DEV</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9c0084c238de2676af44dff2e19c2a82_1a9c0084c238de2676af44dff2e19c2a82" kindref="member">dw_spi_0_cs_status</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af25e361ba143feb2b5b65a3987916266_1af25e361ba143feb2b5b65a3987916266" kindref="member">dw_spi_0_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_ac28e8d5fb9a3b015086e05c7eb98d736_1ac28e8d5fb9a3b015086e05c7eb98d736" kindref="member">dw_spi_write</ref>(&amp;dw_spi_0,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_abb80169b2854ea5a7aac85c5528d326f_1abb80169b2854ea5a7aac85c5528d326f" kindref="member">dw_spi_0_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_aee5f5374c61563d6958326c2d492bee8_1aee5f5374c61563d6958326c2d492bee8" kindref="member">dw_spi_read</ref>(&amp;dw_spi_0,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a348718f5f86915bfa2536b8590e269db_1a348718f5f86915bfa2536b8590e269db" kindref="member">dw_spi_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__spi_8h_acd146c38391a37a6eeab52760e1b96ee_1acd146c38391a37a6eeab52760e1b96ee" kindref="member">dw_spi_isr</ref>(&amp;dw_spi_0,<sp/>ptr);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a505b35c8cfa638a32b00d789d0cc99e6_1a505b35c8cfa638a32b00d789d0cc99e6" kindref="member">dw_spi_0_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>spi_abs_base<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*dw_spi_ptr<sp/>=<sp/>&amp;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a89855285c80602f2bcfef0c00c5c2813_1a89855285c80602f2bcfef0c00c5c2813" kindref="member">dw_spi_0</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref><sp/>*dw_spi_info_ptr<sp/>=<sp/>&amp;(dw_spi_0.<ref refid="structDEV__SPI_a2676f9bdf726511777a722f4e76b8a7d_1a2676f9bdf726511777a722f4e76b8a7d" kindref="member">spi_info</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref><sp/>*dw_spi_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_aa04dbbad35b871c6007357e81f133a6b_1aa04dbbad35b871c6007357e81f133a6b" kindref="member">dw_spi_0_ctrl</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref><sp/>*dw_spi_reg_ptr;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>spi_abs_base<sp/>=<sp/>(uint32_t)<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af22eb89baa2ee58b428d5ec0ba69506e_1af22eb89baa2ee58b428d5ec0ba69506e" kindref="member">DW_SPI_0_BASE</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_reg_ptr<sp/>=<sp/>(<ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref><sp/>*)spi_abs_base;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_aa780af93d6f30bc192edfd570ffa55d5_1aa780af93d6f30bc192edfd570ffa55d5" kindref="member">spi_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_spi_ctrl_ptr;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a27261359b0690d1f09ae3d106d7b5567_1a27261359b0690d1f09ae3d106d7b5567" kindref="member">status</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gacacfd9a0d19ea1f779312ce02f789269_1gacacfd9a0d19ea1f779312ce02f789269" kindref="member">DEV_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a2f3f90d784b47772a64f0398c57060dd_1a2f3f90d784b47772a64f0398c57060dd" kindref="member">freq</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a3f0f622e26f4dd34691f258af663f804_1a3f0f622e26f4dd34691f258af663f804" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a640cc063db3bbbf156230334c27ab183_1a640cc063db3bbbf156230334c27ab183" kindref="member">mode</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__COMMON__DEVMODE_ga9b1ad5abdf677288f655dd4bc9dc188d_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">DEV_MASTER_MODE</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a92224b6c87b3b5157dcd364a913f4203_1a92224b6c87b3b5157dcd364a913f4203" kindref="member">clk_mode</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__SPI__CLK__MODE_ga735bc163d8ddbefc74aa940df4826cb0_1ga735bc163d8ddbefc74aa940df4826cb0" kindref="member">SPI_CLK_MODE_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_aace81a52b422dbe8c8beb73f423b9340_1aace81a52b422dbe8c8beb73f423b9340" kindref="member">slave</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga586076350631be95b49d18994622b0eb_1ga586076350631be95b49d18994622b0eb" kindref="member">SPI_SLAVE_NOT_SELECTED</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a869450fef5307c9379f534cfa8edf551_1a869450fef5307c9379f534cfa8edf551" kindref="member">dfs</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gaa32c7741fd1467614b5908e38af740a3_1gaa32c7741fd1467614b5908e38af740a3" kindref="member">SPI_DFS_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a59a35ff6d44004d8cf2080bfd0c4800d_1a59a35ff6d44004d8cf2080bfd0c4800d" kindref="member">dummy</ref><sp/>=<sp/>0xff;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>ctrl<sp/>init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>should<sp/>be<sp/>set<sp/>during<sp/>object<sp/>implementation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a58d19a051331b15da44d0407304947f9_1a58d19a051331b15da44d0407304947f9" kindref="member">dw_spi_regs</ref><sp/>=<sp/>dw_spi_reg_ptr;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a5e107109659fb477cbd296d77e9847e8_1a5e107109659fb477cbd296d77e9847e8" kindref="member">intno</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a320b0f5d4389de4581d75bff65b8eb3c_1a320b0f5d4389de4581d75bff65b8eb3c" kindref="member">DW_SPI_0_INTNO</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_ac6305df2586ed62fa2a6e308ef895091_1ac6305df2586ed62fa2a6e308ef895091" kindref="member">support_modes</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a8d9e210d7b5824cff3063a51da1ad849_1a8d9e210d7b5824cff3063a51da1ad849" kindref="member">DW_SPI_0_SUPPORTED_MODE</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a11dbebb922ae54d3ad178721186c9e55_1a11dbebb922ae54d3ad178721186c9e55" kindref="member">tx_fifo_len</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a8ead6112b5e53996941fd884fa30d47c_1a8ead6112b5e53996941fd884fa30d47c" kindref="member">DW_SPI_0_TX_FIFO_LEN</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a01703b66eec346bf1671285b60cd313c_1a01703b66eec346bf1671285b60cd313c" kindref="member">rx_fifo_len</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a8ead6112b5e53996941fd884fa30d47c_1a8ead6112b5e53996941fd884fa30d47c" kindref="member">DW_SPI_0_TX_FIFO_LEN</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a0fd621f8cf69ea500ce2150318d0e8f5_1a0fd621f8cf69ea500ce2150318d0e8f5" kindref="member">dw_apb_bus_freq</ref><sp/>=<sp/><ref refid="axs__hardware_8h_a834959d61bd62205d39308860373b374_1a834959d61bd62205d39308860373b374" kindref="member">CLK_BUS_APB</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a6ad1a520fc56228ea9f982f0f92be057_1a6ad1a520fc56228ea9f982f0f92be057" kindref="member">rx_sampledly</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1e92bea9a2d9f6ab5c0faf8c6aef4821_1a1e92bea9a2d9f6ab5c0faf8c6aef4821" kindref="member">DW_SPI_0_RX_SAMPLEDLY</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a475e0c805a0b45917697fa37205850aa_1a475e0c805a0b45917697fa37205850aa" kindref="member">dw_spi_int_handler</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a348718f5f86915bfa2536b8590e269db_1a348718f5f86915bfa2536b8590e269db" kindref="member">dw_spi_0_isr</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>spi<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_aa5746c133e16885c3cfb0c077f1a5ad1_1aa5746c133e16885c3cfb0c077f1a5ad1" kindref="member">int_status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga76dc62e9fbc37c84f83744b6300ebd3c_1ga76dc62e9fbc37c84f83744b6300ebd3c" kindref="member">spi_open</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_abecdf382ce9db2027a9b4c673aa2b0c1_1abecdf382ce9db2027a9b4c673aa2b0c1" kindref="member">dw_spi_0_open</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gac91ee54e8fc86263c118ad915cb82116_1gac91ee54e8fc86263c118ad915cb82116" kindref="member">spi_close</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_ac0bffbfb2607e12285cb7e5aebb38f26_1ac0bffbfb2607e12285cb7e5aebb38f26" kindref="member">dw_spi_0_close</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga827e9145bc57364eb611f19127706ac8_1ga827e9145bc57364eb611f19127706ac8" kindref="member">spi_control</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1acbe06806a36412c40ce0bbf67875be_1a1acbe06806a36412c40ce0bbf67875be" kindref="member">dw_spi_0_control</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga5dddc1fc0a2e21f188611b6657c3e6b0_1ga5dddc1fc0a2e21f188611b6657c3e6b0" kindref="member">spi_write</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af25e361ba143feb2b5b65a3987916266_1af25e361ba143feb2b5b65a3987916266" kindref="member">dw_spi_0_write</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga7543acdd354a2569d1919f78cfaa89a5_1ga7543acdd354a2569d1919f78cfaa89a5" kindref="member">spi_read</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_abb80169b2854ea5a7aac85c5528d326f_1abb80169b2854ea5a7aac85c5528d326f" kindref="member">dw_spi_0_read</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_SPI_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SPI_1)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a3d4e7f9499fa786732cbe1a50323d47c_1a3d4e7f9499fa786732cbe1a50323d47c" kindref="member">dw_spi_1_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EMSDP_FLASH_BASE)<sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor">#define<sp/>DW_SPI_1_INTNO<sp/><sp/><sp/><sp/><sp/><sp/>(EMSDP_SPI1_INTR)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor">#define<sp/>DW_SPI_1_RX_SAMPLEDLY<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor">#define<sp/>DW_SPI_1_TX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_1_RX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_1_SUPPORTED_MODE<sp/>DW_SPI_MASTER_SUPPORTED</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9005e07b937899fe11388d2ecabc6dd9_1a9005e07b937899fe11388d2ecabc6dd9" kindref="member">dw_spi_1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af54b47a6578761ba9542535f3839d090_1af54b47a6578761ba9542535f3839d090" kindref="member">dw_spi_1_ctrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a84a46ae96d73f31d30d26e9d60847151_1a84a46ae96d73f31d30d26e9d60847151" kindref="member">dw_spi_1_cs_status</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_ad4003498340ca7e3bfe36a60936df788_1ad4003498340ca7e3bfe36a60936df788" kindref="member">dw_spi_1_open</ref>(uint32_t<sp/>mode,<sp/>uint32_t<sp/>param)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_a237c47561c92859edb1272a2446732d8_1a237c47561c92859edb1272a2446732d8" kindref="member">dw_spi_open</ref>(&amp;dw_spi_1,<sp/>mode,<sp/>param);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1f1f1111f40f1bc2035eeeb0c2bcb57d_1a1f1f1111f40f1bc2035eeeb0c2bcb57d" kindref="member">dw_spi_1_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_a3b3007ebdf775be7cb571b56a7bebe1f_1a3b3007ebdf775be7cb571b56a7bebe1f" kindref="member">dw_spi_close</ref>(&amp;dw_spi_1);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a052906e638ca3a174d3b7ea42d80a575_1a052906e638ca3a174d3b7ea42d80a575" kindref="member">dw_spi_1_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="dw__spi_8h_a9d8a5b3a14d5b4ef1ca1dfdc082854d2_1a9d8a5b3a14d5b4ef1ca1dfdc082854d2" kindref="member">dw_spi_control</ref>(&amp;dw_spi_1,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctrl_cmd<sp/>==<sp/><ref refid="group__DEVICE__HAL__SPI__CTRLCMD_ga3917a1fd406a1d67750f3d0f2fd4d767_1ga3917a1fd406a1d67750f3d0f2fd4d767" kindref="member">SPI_CMD_MST_SEL_DEV</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dw_spi_1_cs_status<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctrl_cmd<sp/>==<sp/><ref refid="group__DEVICE__HAL__SPI__CTRLCMD_ga8f6ad6c20c16aa1a0dcd696f27a7af5c_1ga8f6ad6c20c16aa1a0dcd696f27a7af5c" kindref="member">SPI_CMD_MST_DSEL_DEV</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(dw_spi_1_cs_status);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_aa7bb711d9c7e450c9d775cd3e67248e9_1aa7bb711d9c7e450c9d775cd3e67248e9" kindref="member">dw_spi_1_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_ac28e8d5fb9a3b015086e05c7eb98d736_1ac28e8d5fb9a3b015086e05c7eb98d736" kindref="member">dw_spi_write</ref>(&amp;dw_spi_1,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a87292a261a518c76decff07bfd37a116_1a87292a261a518c76decff07bfd37a116" kindref="member">dw_spi_1_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_aee5f5374c61563d6958326c2d492bee8_1aee5f5374c61563d6958326c2d492bee8" kindref="member">dw_spi_read</ref>(&amp;dw_spi_1,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a3d4e7f9499fa786732cbe1a50323d47c_1a3d4e7f9499fa786732cbe1a50323d47c" kindref="member">dw_spi_1_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__spi_8h_acd146c38391a37a6eeab52760e1b96ee_1acd146c38391a37a6eeab52760e1b96ee" kindref="member">dw_spi_isr</ref>(&amp;dw_spi_1,<sp/>ptr);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a79f444d78cd25fad3d4cc6d7c18f2be5_1a79f444d78cd25fad3d4cc6d7c18f2be5" kindref="member">dw_spi_1_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>spi_abs_base<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*dw_spi_ptr<sp/>=<sp/>&amp;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9005e07b937899fe11388d2ecabc6dd9_1a9005e07b937899fe11388d2ecabc6dd9" kindref="member">dw_spi_1</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref><sp/>*dw_spi_info_ptr<sp/>=<sp/>&amp;(dw_spi_1.<ref refid="structDEV__SPI_a2676f9bdf726511777a722f4e76b8a7d_1a2676f9bdf726511777a722f4e76b8a7d" kindref="member">spi_info</ref>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref><sp/>*dw_spi_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_af54b47a6578761ba9542535f3839d090_1af54b47a6578761ba9542535f3839d090" kindref="member">dw_spi_1_ctrl</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref><sp/>*dw_spi_reg_ptr;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>spi_abs_base<sp/>=<sp/>(uint32_t)<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_afb4b87070714769a57fcdbe8f7804071_1afb4b87070714769a57fcdbe8f7804071" kindref="member">DW_SPI_1_BASE</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_reg_ptr<sp/>=<sp/>(<ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref><sp/>*)spi_abs_base;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_aa780af93d6f30bc192edfd570ffa55d5_1aa780af93d6f30bc192edfd570ffa55d5" kindref="member">spi_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_spi_ctrl_ptr;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a27261359b0690d1f09ae3d106d7b5567_1a27261359b0690d1f09ae3d106d7b5567" kindref="member">status</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gacacfd9a0d19ea1f779312ce02f789269_1gacacfd9a0d19ea1f779312ce02f789269" kindref="member">DEV_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a2f3f90d784b47772a64f0398c57060dd_1a2f3f90d784b47772a64f0398c57060dd" kindref="member">freq</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a3f0f622e26f4dd34691f258af663f804_1a3f0f622e26f4dd34691f258af663f804" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a640cc063db3bbbf156230334c27ab183_1a640cc063db3bbbf156230334c27ab183" kindref="member">mode</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__COMMON__DEVMODE_ga9b1ad5abdf677288f655dd4bc9dc188d_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">DEV_MASTER_MODE</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a92224b6c87b3b5157dcd364a913f4203_1a92224b6c87b3b5157dcd364a913f4203" kindref="member">clk_mode</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__SPI__CLK__MODE_ga735bc163d8ddbefc74aa940df4826cb0_1ga735bc163d8ddbefc74aa940df4826cb0" kindref="member">SPI_CLK_MODE_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_aace81a52b422dbe8c8beb73f423b9340_1aace81a52b422dbe8c8beb73f423b9340" kindref="member">slave</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga586076350631be95b49d18994622b0eb_1ga586076350631be95b49d18994622b0eb" kindref="member">SPI_SLAVE_NOT_SELECTED</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a869450fef5307c9379f534cfa8edf551_1a869450fef5307c9379f534cfa8edf551" kindref="member">dfs</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gaa32c7741fd1467614b5908e38af740a3_1gaa32c7741fd1467614b5908e38af740a3" kindref="member">SPI_DFS_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_info_ptr-&gt;<ref refid="structDEV__SPI__INFO_a59a35ff6d44004d8cf2080bfd0c4800d_1a59a35ff6d44004d8cf2080bfd0c4800d" kindref="member">dummy</ref><sp/>=<sp/>0xff;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>spi<sp/>ctrl<sp/>init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>should<sp/>be<sp/>set<sp/>during<sp/>object<sp/>implementation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a58d19a051331b15da44d0407304947f9_1a58d19a051331b15da44d0407304947f9" kindref="member">dw_spi_regs</ref><sp/>=<sp/>dw_spi_reg_ptr;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a5e107109659fb477cbd296d77e9847e8_1a5e107109659fb477cbd296d77e9847e8" kindref="member">intno</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a38a5268ffbdbd3373dd0cf01fde501b2_1a38a5268ffbdbd3373dd0cf01fde501b2" kindref="member">DW_SPI_1_INTNO</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_ac6305df2586ed62fa2a6e308ef895091_1ac6305df2586ed62fa2a6e308ef895091" kindref="member">support_modes</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a06e87510ea43af8323de1ff18e02eaf5_1a06e87510ea43af8323de1ff18e02eaf5" kindref="member">DW_SPI_1_SUPPORTED_MODE</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a11dbebb922ae54d3ad178721186c9e55_1a11dbebb922ae54d3ad178721186c9e55" kindref="member">tx_fifo_len</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a16d433212ea51bb53b142d826874fd3f_1a16d433212ea51bb53b142d826874fd3f" kindref="member">DW_SPI_1_TX_FIFO_LEN</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a01703b66eec346bf1671285b60cd313c_1a01703b66eec346bf1671285b60cd313c" kindref="member">rx_fifo_len</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a16d433212ea51bb53b142d826874fd3f_1a16d433212ea51bb53b142d826874fd3f" kindref="member">DW_SPI_1_TX_FIFO_LEN</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a6ad1a520fc56228ea9f982f0f92be057_1a6ad1a520fc56228ea9f982f0f92be057" kindref="member">rx_sampledly</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a4990fb15a9b821c7cd80291dc87fa6d5_1a4990fb15a9b821c7cd80291dc87fa6d5" kindref="member">DW_SPI_1_RX_SAMPLEDLY</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a0fd621f8cf69ea500ce2150318d0e8f5_1a0fd621f8cf69ea500ce2150318d0e8f5" kindref="member">dw_apb_bus_freq</ref><sp/>=<sp/><ref refid="axs__hardware_8h_a834959d61bd62205d39308860373b374_1a834959d61bd62205d39308860373b374" kindref="member">CLK_BUS_APB</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_a475e0c805a0b45917697fa37205850aa_1a475e0c805a0b45917697fa37205850aa" kindref="member">dw_spi_int_handler</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a3d4e7f9499fa786732cbe1a50323d47c_1a3d4e7f9499fa786732cbe1a50323d47c" kindref="member">dw_spi_1_isr</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>spi<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ctrl_ptr-&gt;<ref refid="structDW__SPI__CTRL_aa5746c133e16885c3cfb0c077f1a5ad1_1aa5746c133e16885c3cfb0c077f1a5ad1" kindref="member">int_status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga76dc62e9fbc37c84f83744b6300ebd3c_1ga76dc62e9fbc37c84f83744b6300ebd3c" kindref="member">spi_open</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_ad4003498340ca7e3bfe36a60936df788_1ad4003498340ca7e3bfe36a60936df788" kindref="member">dw_spi_1_open</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gac91ee54e8fc86263c118ad915cb82116_1gac91ee54e8fc86263c118ad915cb82116" kindref="member">spi_close</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1f1f1111f40f1bc2035eeeb0c2bcb57d_1a1f1f1111f40f1bc2035eeeb0c2bcb57d" kindref="member">dw_spi_1_close</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga827e9145bc57364eb611f19127706ac8_1ga827e9145bc57364eb611f19127706ac8" kindref="member">spi_control</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a052906e638ca3a174d3b7ea42d80a575_1a052906e638ca3a174d3b7ea42d80a575" kindref="member">dw_spi_1_control</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga5dddc1fc0a2e21f188611b6657c3e6b0_1ga5dddc1fc0a2e21f188611b6657c3e6b0" kindref="member">spi_write</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_aa7bb711d9c7e450c9d775cd3e67248e9_1aa7bb711d9c7e450c9d775cd3e67248e9" kindref="member">dw_spi_1_write</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_spi_ptr-&gt;<ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga7543acdd354a2569d1919f78cfaa89a5_1ga7543acdd354a2569d1919f78cfaa89a5" kindref="member">spi_read</ref><sp/>=<sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a87292a261a518c76decff07bfd37a116_1a87292a261a518c76decff07bfd37a116" kindref="member">dw_spi_1_read</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_SPI_1<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="241"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1b320bc3e22153831a4cd42335e10ef8_1a1b320bc3e22153831a4cd42335e10ef8" kindref="member">dw_spi_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SPI_0)</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a505b35c8cfa638a32b00d789d0cc99e6_1a505b35c8cfa638a32b00d789d0cc99e6" kindref="member">dw_spi_0_install</ref>();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SPI_1)</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a79f444d78cd25fad3d4cc6d7c18f2be5_1a79f444d78cd25fad3d4cc6d7c18f2be5" kindref="member">dw_spi_1_install</ref>();</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><ref refid="structDEV__SPI" kindref="compound">DEV_SPI_PTR</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a973ce41f48ad335779a2a80d9564ee3b_1a973ce41f48ad335779a2a80d9564ee3b" kindref="member">dw_spi_get_dev</ref>(int32_t<sp/>spi_id)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>install<sp/>device<sp/>objects<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(install_flag<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>install_flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a1b320bc3e22153831a4cd42335e10ef8_1a1b320bc3e22153831a4cd42335e10ef8" kindref="member">dw_spi_all_install</ref>();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(spi_id)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SPI_0)</highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h_a906ed6ea818fb3ea7b3b52f174751ec2_1a906ed6ea818fb3ea7b3b52f174751ec2" kindref="member">DW_SPI_0_ID</ref>:</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a89855285c80602f2bcfef0c00c5c2813_1a89855285c80602f2bcfef0c00c5c2813" kindref="member">dw_spi_0</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SPI_1)</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h_a8a5280ff5f1815b96c5cf853e366527b_1a8a5280ff5f1815b96c5cf853e366527b" kindref="member">DW_SPI_1_ID</ref>:</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_a9005e07b937899fe11388d2ecabc6dd9_1a9005e07b937899fe11388d2ecabc6dd9" kindref="member">dw_spi_1</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="273"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_820b2b9dd608784780e51ab49715a98b" kind="dir">
+    <compoundname>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device</compoundname>
+    <innerdir refid="dir_186dbe9c673f504ebc67eaaff66f4d3d">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/"/>
+  </compounddef>
+</doxygen>

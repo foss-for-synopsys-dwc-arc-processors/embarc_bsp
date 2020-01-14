@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__PWM__TIMER__REG" kind="struct" prot="public">
+    <compoundname>DW_PWM_TIMER_REG</compoundname>
+    <includes refid="dw__pwm__timer_8h" local="no">dw_pwm_timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" prot="public" static="no" mutable="no">
+        <type><ref refid="structCH__CTRL" kindref="compound">CH_CTRL</ref></type>
+        <definition>CH_CTRL DW_PWM_TIMER_REG::CTRL[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x00 ~ 0x9C) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="54" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__PWM__TIMER__REG_a19e922485b9651bdd153f9406f966a2d_1a19e922485b9651bdd153f9406f966a2d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_PWM_TIMER_REG::PWM_TIMERS_INT_STATUS</definition>
+        <argsstring></argsstring>
+        <name>PWM_TIMERS_INT_STATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xA0) Contains the interrupt status of all timers in the component. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="55" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__PWM__TIMER__REG_ae899c06cd83351f3d6b4f8e4ad8bbd2b_1ae899c06cd83351f3d6b4f8e4ad8bbd2b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_PWM_TIMER_REG::PWM_TIMERS_EOI</definition>
+        <argsstring></argsstring>
+        <name>PWM_TIMERS_EOI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xA4) Read return all zeroes (0) and clears all active interrupts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__PWM__TIMER__REG_a68751764c114e7f1a2737841afba776b_1a68751764c114e7f1a2737841afba776b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_PWM_TIMER_REG::PWM_TIMERS_RAWINT_STATUS</definition>
+        <argsstring></argsstring>
+        <name>PWM_TIMERS_RAWINT_STATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xA8) Contains the unmasked interrupt status of all timers in the component. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="57" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__PWM__TIMER__REG_ad56c749bc34c417abc3c8716b33d10cb_1ad56c749bc34c417abc3c8716b33d10cb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_PWM_TIMER_REG::PWM_TIMERS_COMP_VER</definition>
+        <argsstring></argsstring>
+        <name>PWM_TIMERS_COMP_VER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xAC) Current revision number of the DW_apb_timers component. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="58" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__PWM__TIMER__REG_a4071398d5a59964a598b7afdfa4a6b3e_1a4071398d5a59964a598b7afdfa4a6b3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_PWM_TIMER_REG::LOAD_COUNT2[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>LOAD_COUNT2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xB0 ~ 0xCC) Value to be loaded into Timer when toggle output changes from 0 to 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="59" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="180">
+        <label>CH_CTRL</label>
+        <link refid="structCH__CTRL"/>
+      </node>
+      <node id="179">
+        <label>DW_PWM_TIMER_REG</label>
+        <link refid="structDW__PWM__TIMER__REG"/>
+        <childnode refid="180" relation="usage">
+          <edgelabel>CTRL</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="53" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="53" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_REG</scope><name>CTRL</name></member>
+      <member refid="structDW__PWM__TIMER__REG_a4071398d5a59964a598b7afdfa4a6b3e_1a4071398d5a59964a598b7afdfa4a6b3e" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_REG</scope><name>LOAD_COUNT2</name></member>
+      <member refid="structDW__PWM__TIMER__REG_ad56c749bc34c417abc3c8716b33d10cb_1ad56c749bc34c417abc3c8716b33d10cb" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_REG</scope><name>PWM_TIMERS_COMP_VER</name></member>
+      <member refid="structDW__PWM__TIMER__REG_ae899c06cd83351f3d6b4f8e4ad8bbd2b_1ae899c06cd83351f3d6b4f8e4ad8bbd2b" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_REG</scope><name>PWM_TIMERS_EOI</name></member>
+      <member refid="structDW__PWM__TIMER__REG_a19e922485b9651bdd153f9406f966a2d_1a19e922485b9651bdd153f9406f966a2d" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_REG</scope><name>PWM_TIMERS_INT_STATUS</name></member>
+      <member refid="structDW__PWM__TIMER__REG_a68751764c114e7f1a2737841afba776b_1a68751764c114e7f1a2737841afba776b" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_REG</scope><name>PWM_TIMERS_RAWINT_STATUS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

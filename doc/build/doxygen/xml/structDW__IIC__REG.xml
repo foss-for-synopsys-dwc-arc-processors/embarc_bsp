@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__IIC__REG" kind="struct" prot="public">
+    <compoundname>DW_IIC_REG</compoundname>
+    <includes refid="dw__iic_8h" local="no">dw_iic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__IIC__REG_adb55c038ce60496df09ed58c88efccd4_1adb55c038ce60496df09ed58c88efccd4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CON</definition>
+        <argsstring></argsstring>
+        <name>IC_CON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x00) : IIC control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="65" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a47c757085d3bd458b9b4c3f35df6d1f6_1a47c757085d3bd458b9b4c3f35df6d1f6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_TAR</definition>
+        <argsstring></argsstring>
+        <name>IC_TAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x04) : IIC target address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a891360debe964b38d9989dcf2720f5be_1a891360debe964b38d9989dcf2720f5be" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_SAR</definition>
+        <argsstring></argsstring>
+        <name>IC_SAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x08) : IIC slave address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="67" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_aa3fd3dab3deee27569238d9960b8a0ca_1aa3fd3dab3deee27569238d9960b8a0ca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_HS_MADDR</definition>
+        <argsstring></argsstring>
+        <name>IC_HS_MADDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0c) : IIC HS Master Mode Code address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="68" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a31bcc05a0415827a4b2f663ce8ee2f72_1a31bcc05a0415827a4b2f663ce8ee2f72" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_DATA_CMD</definition>
+        <argsstring></argsstring>
+        <name>IC_DATA_CMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x10) : IIC Rx/Tx Data Buffer and Command </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="69" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a06ede7178bcb1bdcf2a8330529a491e2_1a06ede7178bcb1bdcf2a8330529a491e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_SS_SCL_HCNT</definition>
+        <argsstring></argsstring>
+        <name>IC_SS_SCL_HCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x14) : Standard Speed IIC clock SCL High Count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="70" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ad35d3564be87f286faa3699cfbd6d366_1ad35d3564be87f286faa3699cfbd6d366" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_SS_SCL_LCNT</definition>
+        <argsstring></argsstring>
+        <name>IC_SS_SCL_LCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x18) : Standard Speed IIC clock SCL Low Count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a6db3e0b03c70304040ecea1ef0d9ff13_1a6db3e0b03c70304040ecea1ef0d9ff13" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_FS_SCL_HCNT</definition>
+        <argsstring></argsstring>
+        <name>IC_FS_SCL_HCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1c) : Fast Speed IIC clock SCL Low Count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ae649e2a90209cccee4cc911cde07fe75_1ae649e2a90209cccee4cc911cde07fe75" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_FS_SCL_LCNT</definition>
+        <argsstring></argsstring>
+        <name>IC_FS_SCL_LCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x20) : Fast Speed IIC clock SCL Low Count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="73" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a31c9964cf48bc3d34616d2d2a741930f_1a31c9964cf48bc3d34616d2d2a741930f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_HS_SCL_HCNT</definition>
+        <argsstring></argsstring>
+        <name>IC_HS_SCL_HCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x24) : High Speed IIC clock SCL Low Count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="74" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ad704e2ad022940de6c1fba6f0935aefc_1ad704e2ad022940de6c1fba6f0935aefc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_HS_SCL_LCNT</definition>
+        <argsstring></argsstring>
+        <name>IC_HS_SCL_LCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x28) : High Speed IIC clock SCL Low Count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="75" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a89ce002d8fde2b8767b3c337278c5f3e_1a89ce002d8fde2b8767b3c337278c5f3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_INTR_STAT</definition>
+        <argsstring></argsstring>
+        <name>IC_INTR_STAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x2c) : IIC Interrupt Status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="76" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a18386429a2d69ccc8485d18b8e74623d_1a18386429a2d69ccc8485d18b8e74623d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_INTR_MASK</definition>
+        <argsstring></argsstring>
+        <name>IC_INTR_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x30) : IIC Interrupt Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a245c44db41fd2b727fd062173950bbb6_1a245c44db41fd2b727fd062173950bbb6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_RAW_INTR_STAT</definition>
+        <argsstring></argsstring>
+        <name>IC_RAW_INTR_STAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x34) : IIC Raw Interrupt Status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="78" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a9627c6d26f171740a339c13cf64cd9e6_1a9627c6d26f171740a339c13cf64cd9e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_RX_TL</definition>
+        <argsstring></argsstring>
+        <name>IC_RX_TL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x38) : IIC Receive FIFO Threshold </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="79" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ae5fc8ea732739ffaa2b9c79f3917df4f_1ae5fc8ea732739ffaa2b9c79f3917df4f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_TX_TL</definition>
+        <argsstring></argsstring>
+        <name>IC_TX_TL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x3c) : IIC Transmit FIFO Threshold </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a642b05e8185225bb725b3dbdc62834d7_1a642b05e8185225bb725b3dbdc62834d7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_INTR</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_INTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x40) : Clear combined and Individual Interrupts </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a20a8adc9c67ae38b1878040cceac11e1_1a20a8adc9c67ae38b1878040cceac11e1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_RX_UNDER</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_RX_UNDER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x44) : Clear RX_UNDER Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a894eb5a78873faea492c46ed82cf37aa_1a894eb5a78873faea492c46ed82cf37aa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_RX_OVER</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_RX_OVER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x48) : Clear RX_OVER Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="83" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a54cd0097c81666905afdbae90ebe529b_1a54cd0097c81666905afdbae90ebe529b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_TX_OVER</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_TX_OVER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x4c) : Clear TX_OVER Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="84" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a2f9af209c00ddf18d6b4de46e1b7bc3e_1a2f9af209c00ddf18d6b4de46e1b7bc3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_RD_REQ</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_RD_REQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x50) : Clear RQ_REQ Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="85" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a9451b354c42a7cc8833393b73cad6db8_1a9451b354c42a7cc8833393b73cad6db8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_TX_ABRT</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_TX_ABRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x54) : Clear TX_ABRT Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="86" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a0db85667278807e55bc8a4d1b6cc7d36_1a0db85667278807e55bc8a4d1b6cc7d36" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_RX_DONE</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_RX_DONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x58) : Clear RX_DONE Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ad4ceb6c035d5a45679270628379c5909_1ad4ceb6c035d5a45679270628379c5909" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_ACTIVITY</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_ACTIVITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x5c) : Clear ACTIVITY Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a2ff2d5aa0503b7a295e3128ca25b46fa_1a2ff2d5aa0503b7a295e3128ca25b46fa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_STOP_DET</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_STOP_DET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x60) : Clear STOP_DET Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="89" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a125a7202d6e986ad775c3fc65675c2d8_1a125a7202d6e986ad775c3fc65675c2d8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_START_DET</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_START_DET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x64) : Clear START_DET Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="90" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a2e10f69505982f255cf01d5f3ee780ce_1a2e10f69505982f255cf01d5f3ee780ce" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_CLR_GEN_CALL</definition>
+        <argsstring></argsstring>
+        <name>IC_CLR_GEN_CALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x68) : Clear GEN_CALL Interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="91" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a2fc1c58f944e4d970c4985a55f9600a4_1a2fc1c58f944e4d970c4985a55f9600a4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>IC_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x6c) : IIC Enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="92" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a1e480753f63bba47096d992baa122ab6_1a1e480753f63bba47096d992baa122ab6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_STATUS</definition>
+        <argsstring></argsstring>
+        <name>IC_STATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x70) : IIC Status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="93" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a397a410ff1b283dbd649d00560c948f2_1a397a410ff1b283dbd649d00560c948f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_TXFLR</definition>
+        <argsstring></argsstring>
+        <name>IC_TXFLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x74) : Transmit FIFO Level Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="94" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a603e432d3ea288dc8e59ba8ace497b4b_1a603e432d3ea288dc8e59ba8ace497b4b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_RXFLR</definition>
+        <argsstring></argsstring>
+        <name>IC_RXFLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x78) : Receive FIFO Level Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="95" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ab5fce5ef4fc8d27fb92c9749fd1802bd_1ab5fce5ef4fc8d27fb92c9749fd1802bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_SDA_HOLD</definition>
+        <argsstring></argsstring>
+        <name>IC_SDA_HOLD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x7c) : SDA Hold Time Length Reg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="96" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_adfc964b1a25aa5ae3edee72517267e5e_1adfc964b1a25aa5ae3edee72517267e5e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_TX_ABRT_SOURCE</definition>
+        <argsstring></argsstring>
+        <name>IC_TX_ABRT_SOURCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x80) : IIC Transmit Abort Status Reg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="97" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_afc7d13e84f921c29decb521fd4dca011_1afc7d13e84f921c29decb521fd4dca011" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_SLV_DATA_NACK_ONLY</definition>
+        <argsstring></argsstring>
+        <name>IC_SLV_DATA_NACK_ONLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x84) : Generate SLV_DATA_NACK Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="98" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a741811c416d405c858c4ab2622147a93_1a741811c416d405c858c4ab2622147a93" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_DMA_CR</definition>
+        <argsstring></argsstring>
+        <name>IC_DMA_CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x88) : DMA Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="99" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a935ccd09d76a2303e2bc170f938b4dfd_1a935ccd09d76a2303e2bc170f938b4dfd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_DMA_TDLR</definition>
+        <argsstring></argsstring>
+        <name>IC_DMA_TDLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x8c) : DMA Transmit Data Level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="100" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a8a52bdd969958c8fc20b507688077fc0_1a8a52bdd969958c8fc20b507688077fc0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_DMA_RDLR</definition>
+        <argsstring></argsstring>
+        <name>IC_DMA_RDLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x90) : DMA Receive Data Level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ac21601ea0c455874ffdf62b14d8abb36_1ac21601ea0c455874ffdf62b14d8abb36" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_SDA_SETUP</definition>
+        <argsstring></argsstring>
+        <name>IC_SDA_SETUP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x94) : SDA Setup Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="102" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a45a1028a05ce1be2a8a1640e97dabc2d_1a45a1028a05ce1be2a8a1640e97dabc2d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_ACK_GENERAL_CALL</definition>
+        <argsstring></argsstring>
+        <name>IC_ACK_GENERAL_CALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x98) : ACK General Call Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="103" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a31441763ce69fc6b21beb87dc956d698_1a31441763ce69fc6b21beb87dc956d698" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_ENABLE_STATUS</definition>
+        <argsstring></argsstring>
+        <name>IC_ENABLE_STATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x9c) : Enable Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a3d2e9d773c2ed47438c09f780d6f4f12_1a3d2e9d773c2ed47438c09f780d6f4f12" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_FS_SPKLEN</definition>
+        <argsstring></argsstring>
+        <name>IC_FS_SPKLEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xa0) : ISS and FS spike suppression limit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a1b1b262aa25eab4305c3702e936f8abf_1a1b1b262aa25eab4305c3702e936f8abf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_HS_SPKLEN</definition>
+        <argsstring></argsstring>
+        <name>IC_HS_SPKLEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xa4) : HS spike suppression limit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a8070d74cb8ff62703bcd60946374cbe4_1a8070d74cb8ff62703bcd60946374cbe4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::RESERVED[19]</definition>
+        <argsstring>[19]</argsstring>
+        <name>RESERVED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xa8) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a8eaead0f5afe5eb06a85bc7c0383231a_1a8eaead0f5afe5eb06a85bc7c0383231a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_COMP_PARAM_1</definition>
+        <argsstring></argsstring>
+        <name>IC_COMP_PARAM_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xf4) : Component Parameter Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="108" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_a1b64f112b0c17eb4ff75fd2cd1a9e253_1a1b64f112b0c17eb4ff75fd2cd1a9e253" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_COMP_VERSION</definition>
+        <argsstring></argsstring>
+        <name>IC_COMP_VERSION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xf8) : Component Version ID Reg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__REG_ab74763228417ea5a627b9d4bdc53307c_1ab74763228417ea5a627b9d4bdc53307c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_REG::IC_COMP_TYPE</definition>
+        <argsstring></argsstring>
+        <name>IC_COMP_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0xfc) : Component Type Reg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="64" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="64" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structDW__IIC__REG_a45a1028a05ce1be2a8a1640e97dabc2d_1a45a1028a05ce1be2a8a1640e97dabc2d" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_ACK_GENERAL_CALL</name></member>
+      <member refid="structDW__IIC__REG_ad4ceb6c035d5a45679270628379c5909_1ad4ceb6c035d5a45679270628379c5909" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_ACTIVITY</name></member>
+      <member refid="structDW__IIC__REG_a2e10f69505982f255cf01d5f3ee780ce_1a2e10f69505982f255cf01d5f3ee780ce" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_GEN_CALL</name></member>
+      <member refid="structDW__IIC__REG_a642b05e8185225bb725b3dbdc62834d7_1a642b05e8185225bb725b3dbdc62834d7" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_INTR</name></member>
+      <member refid="structDW__IIC__REG_a2f9af209c00ddf18d6b4de46e1b7bc3e_1a2f9af209c00ddf18d6b4de46e1b7bc3e" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_RD_REQ</name></member>
+      <member refid="structDW__IIC__REG_a0db85667278807e55bc8a4d1b6cc7d36_1a0db85667278807e55bc8a4d1b6cc7d36" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_RX_DONE</name></member>
+      <member refid="structDW__IIC__REG_a894eb5a78873faea492c46ed82cf37aa_1a894eb5a78873faea492c46ed82cf37aa" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_RX_OVER</name></member>
+      <member refid="structDW__IIC__REG_a20a8adc9c67ae38b1878040cceac11e1_1a20a8adc9c67ae38b1878040cceac11e1" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_RX_UNDER</name></member>
+      <member refid="structDW__IIC__REG_a125a7202d6e986ad775c3fc65675c2d8_1a125a7202d6e986ad775c3fc65675c2d8" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_START_DET</name></member>
+      <member refid="structDW__IIC__REG_a2ff2d5aa0503b7a295e3128ca25b46fa_1a2ff2d5aa0503b7a295e3128ca25b46fa" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_STOP_DET</name></member>
+      <member refid="structDW__IIC__REG_a9451b354c42a7cc8833393b73cad6db8_1a9451b354c42a7cc8833393b73cad6db8" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_TX_ABRT</name></member>
+      <member refid="structDW__IIC__REG_a54cd0097c81666905afdbae90ebe529b_1a54cd0097c81666905afdbae90ebe529b" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CLR_TX_OVER</name></member>
+      <member refid="structDW__IIC__REG_a8eaead0f5afe5eb06a85bc7c0383231a_1a8eaead0f5afe5eb06a85bc7c0383231a" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_COMP_PARAM_1</name></member>
+      <member refid="structDW__IIC__REG_ab74763228417ea5a627b9d4bdc53307c_1ab74763228417ea5a627b9d4bdc53307c" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_COMP_TYPE</name></member>
+      <member refid="structDW__IIC__REG_a1b64f112b0c17eb4ff75fd2cd1a9e253_1a1b64f112b0c17eb4ff75fd2cd1a9e253" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_COMP_VERSION</name></member>
+      <member refid="structDW__IIC__REG_adb55c038ce60496df09ed58c88efccd4_1adb55c038ce60496df09ed58c88efccd4" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_CON</name></member>
+      <member refid="structDW__IIC__REG_a31bcc05a0415827a4b2f663ce8ee2f72_1a31bcc05a0415827a4b2f663ce8ee2f72" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_DATA_CMD</name></member>
+      <member refid="structDW__IIC__REG_a741811c416d405c858c4ab2622147a93_1a741811c416d405c858c4ab2622147a93" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_DMA_CR</name></member>
+      <member refid="structDW__IIC__REG_a8a52bdd969958c8fc20b507688077fc0_1a8a52bdd969958c8fc20b507688077fc0" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_DMA_RDLR</name></member>
+      <member refid="structDW__IIC__REG_a935ccd09d76a2303e2bc170f938b4dfd_1a935ccd09d76a2303e2bc170f938b4dfd" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_DMA_TDLR</name></member>
+      <member refid="structDW__IIC__REG_a2fc1c58f944e4d970c4985a55f9600a4_1a2fc1c58f944e4d970c4985a55f9600a4" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_ENABLE</name></member>
+      <member refid="structDW__IIC__REG_a31441763ce69fc6b21beb87dc956d698_1a31441763ce69fc6b21beb87dc956d698" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_ENABLE_STATUS</name></member>
+      <member refid="structDW__IIC__REG_a6db3e0b03c70304040ecea1ef0d9ff13_1a6db3e0b03c70304040ecea1ef0d9ff13" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_FS_SCL_HCNT</name></member>
+      <member refid="structDW__IIC__REG_ae649e2a90209cccee4cc911cde07fe75_1ae649e2a90209cccee4cc911cde07fe75" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_FS_SCL_LCNT</name></member>
+      <member refid="structDW__IIC__REG_a3d2e9d773c2ed47438c09f780d6f4f12_1a3d2e9d773c2ed47438c09f780d6f4f12" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_FS_SPKLEN</name></member>
+      <member refid="structDW__IIC__REG_aa3fd3dab3deee27569238d9960b8a0ca_1aa3fd3dab3deee27569238d9960b8a0ca" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_HS_MADDR</name></member>
+      <member refid="structDW__IIC__REG_a31c9964cf48bc3d34616d2d2a741930f_1a31c9964cf48bc3d34616d2d2a741930f" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_HS_SCL_HCNT</name></member>
+      <member refid="structDW__IIC__REG_ad704e2ad022940de6c1fba6f0935aefc_1ad704e2ad022940de6c1fba6f0935aefc" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_HS_SCL_LCNT</name></member>
+      <member refid="structDW__IIC__REG_a1b1b262aa25eab4305c3702e936f8abf_1a1b1b262aa25eab4305c3702e936f8abf" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_HS_SPKLEN</name></member>
+      <member refid="structDW__IIC__REG_a18386429a2d69ccc8485d18b8e74623d_1a18386429a2d69ccc8485d18b8e74623d" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_INTR_MASK</name></member>
+      <member refid="structDW__IIC__REG_a89ce002d8fde2b8767b3c337278c5f3e_1a89ce002d8fde2b8767b3c337278c5f3e" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_INTR_STAT</name></member>
+      <member refid="structDW__IIC__REG_a245c44db41fd2b727fd062173950bbb6_1a245c44db41fd2b727fd062173950bbb6" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_RAW_INTR_STAT</name></member>
+      <member refid="structDW__IIC__REG_a9627c6d26f171740a339c13cf64cd9e6_1a9627c6d26f171740a339c13cf64cd9e6" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_RX_TL</name></member>
+      <member refid="structDW__IIC__REG_a603e432d3ea288dc8e59ba8ace497b4b_1a603e432d3ea288dc8e59ba8ace497b4b" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_RXFLR</name></member>
+      <member refid="structDW__IIC__REG_a891360debe964b38d9989dcf2720f5be_1a891360debe964b38d9989dcf2720f5be" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_SAR</name></member>
+      <member refid="structDW__IIC__REG_ab5fce5ef4fc8d27fb92c9749fd1802bd_1ab5fce5ef4fc8d27fb92c9749fd1802bd" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_SDA_HOLD</name></member>
+      <member refid="structDW__IIC__REG_ac21601ea0c455874ffdf62b14d8abb36_1ac21601ea0c455874ffdf62b14d8abb36" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_SDA_SETUP</name></member>
+      <member refid="structDW__IIC__REG_afc7d13e84f921c29decb521fd4dca011_1afc7d13e84f921c29decb521fd4dca011" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_SLV_DATA_NACK_ONLY</name></member>
+      <member refid="structDW__IIC__REG_a06ede7178bcb1bdcf2a8330529a491e2_1a06ede7178bcb1bdcf2a8330529a491e2" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_SS_SCL_HCNT</name></member>
+      <member refid="structDW__IIC__REG_ad35d3564be87f286faa3699cfbd6d366_1ad35d3564be87f286faa3699cfbd6d366" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_SS_SCL_LCNT</name></member>
+      <member refid="structDW__IIC__REG_a1e480753f63bba47096d992baa122ab6_1a1e480753f63bba47096d992baa122ab6" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_STATUS</name></member>
+      <member refid="structDW__IIC__REG_a47c757085d3bd458b9b4c3f35df6d1f6_1a47c757085d3bd458b9b4c3f35df6d1f6" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_TAR</name></member>
+      <member refid="structDW__IIC__REG_adfc964b1a25aa5ae3edee72517267e5e_1adfc964b1a25aa5ae3edee72517267e5e" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_TX_ABRT_SOURCE</name></member>
+      <member refid="structDW__IIC__REG_ae5fc8ea732739ffaa2b9c79f3917df4f_1ae5fc8ea732739ffaa2b9c79f3917df4f" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_TX_TL</name></member>
+      <member refid="structDW__IIC__REG_a397a410ff1b283dbd649d00560c948f2_1a397a410ff1b283dbd649d00560c948f2" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>IC_TXFLR</name></member>
+      <member refid="structDW__IIC__REG_a8070d74cb8ff62703bcd60946374cbe4_1a8070d74cb8ff62703bcd60946374cbe4" prot="public" virt="non-virtual"><scope>DW_IIC_REG</scope><name>RESERVED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

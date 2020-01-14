@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__GPIO__REG" kind="struct" prot="public">
+    <compoundname>DW_GPIO_REG</compoundname>
+    <includes refid="dw__gpio_8h" local="no">dw_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__GPIO__REG_adeadfc3be58d791621199e6fa7031458_1adeadfc3be58d791621199e6fa7031458" prot="public" static="no" mutable="no">
+        <type><ref refid="structPORT__CTRL" kindref="compound">PORT_CTRL</ref></type>
+        <definition>PORT_CTRL DW_GPIO_REG::SWPORTS[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>SWPORTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a5ca7e355011a4868e0d77da383466f93_1a5ca7e355011a4868e0d77da383466f93" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::INTEN</definition>
+        <argsstring></argsstring>
+        <name>INTEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x30) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="73" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_ac416bc22e29f463bf0ab9f49bf0b74c3_1ac416bc22e29f463bf0ab9f49bf0b74c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::INTMASK</definition>
+        <argsstring></argsstring>
+        <name>INTMASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x34) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="74" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_aace76324970c9f963e85a4efee008cbf_1aace76324970c9f963e85a4efee008cbf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::INTTYPE_LEVEL</definition>
+        <argsstring></argsstring>
+        <name>INTTYPE_LEVEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x38) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="75" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a2e2bcf6f3e21e587ff119009acb6fc3e_1a2e2bcf6f3e21e587ff119009acb6fc3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::INT_POLARITY</definition>
+        <argsstring></argsstring>
+        <name>INT_POLARITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x3c) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="76" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_aba1690753fecb978e5c5afbef62de57e_1aba1690753fecb978e5c5afbef62de57e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::INTSTATUS</definition>
+        <argsstring></argsstring>
+        <name>INTSTATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x40) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a8e6cfa577cb8c7114a05b4455c5a05d9_1a8e6cfa577cb8c7114a05b4455c5a05d9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::RAW_INTSTATUS</definition>
+        <argsstring></argsstring>
+        <name>RAW_INTSTATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x44) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="78" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a32972a1e4d8981b1880d16eeca8a85e0_1a32972a1e4d8981b1880d16eeca8a85e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::DEBOUNCE</definition>
+        <argsstring></argsstring>
+        <name>DEBOUNCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x48) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="79" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a3963deb170f219a1f7c2bd106ade95e8_1a3963deb170f219a1f7c2bd106ade95e8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::PORTA_EOI</definition>
+        <argsstring></argsstring>
+        <name>PORTA_EOI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x4c) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_aab67208927411c3d8f0248b9869db37d_1aab67208927411c3d8f0248b9869db37d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::EXT_PORTS[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>EXT_PORTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x50) -A (0x54) -B (0x58) -C (0x5c) -D </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a833aa906062f766638ea5081a0fac383_1a833aa906062f766638ea5081a0fac383" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::LS_SYNC</definition>
+        <argsstring></argsstring>
+        <name>LS_SYNC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x60) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="85" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a425e6f3ac67f194b40c1212c84644dba_1a425e6f3ac67f194b40c1212c84644dba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::ID_CODE</definition>
+        <argsstring></argsstring>
+        <name>ID_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x64) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="86" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a4160b00fc254b4925965efb6446f499f_1a4160b00fc254b4925965efb6446f499f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::RESERVED_3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x68) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_ac545beca1bc04ee36db2a35f87e55c5c_1ac545beca1bc04ee36db2a35f87e55c5c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::VER_ID_CODE</definition>
+        <argsstring></argsstring>
+        <name>VER_ID_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x6c) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a9d529701f57043e68458b7cbae837587_1a9d529701f57043e68458b7cbae837587" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::CONFIG_REG2</definition>
+        <argsstring></argsstring>
+        <name>CONFIG_REG2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x70) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="89" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__REG_a51f6f41fec53cff3c5af37d3c698742e_1a51f6f41fec53cff3c5af37d3c698742e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_REG::CONFIG_REG1</definition>
+        <argsstring></argsstring>
+        <name>CONFIG_REG1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x74) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="90" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="135">
+        <label>DW_GPIO_REG</label>
+        <link refid="structDW__GPIO__REG"/>
+        <childnode refid="136" relation="usage">
+          <edgelabel>SWPORTS</edgelabel>
+        </childnode>
+      </node>
+      <node id="136">
+        <label>PORT_CTRL</label>
+        <link refid="structPORT__CTRL"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="71" bodyend="91"/>
+    <listofallmembers>
+      <member refid="structDW__GPIO__REG_a51f6f41fec53cff3c5af37d3c698742e_1a51f6f41fec53cff3c5af37d3c698742e" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>CONFIG_REG1</name></member>
+      <member refid="structDW__GPIO__REG_a9d529701f57043e68458b7cbae837587_1a9d529701f57043e68458b7cbae837587" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>CONFIG_REG2</name></member>
+      <member refid="structDW__GPIO__REG_a32972a1e4d8981b1880d16eeca8a85e0_1a32972a1e4d8981b1880d16eeca8a85e0" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>DEBOUNCE</name></member>
+      <member refid="structDW__GPIO__REG_aab67208927411c3d8f0248b9869db37d_1aab67208927411c3d8f0248b9869db37d" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>EXT_PORTS</name></member>
+      <member refid="structDW__GPIO__REG_a425e6f3ac67f194b40c1212c84644dba_1a425e6f3ac67f194b40c1212c84644dba" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>ID_CODE</name></member>
+      <member refid="structDW__GPIO__REG_a2e2bcf6f3e21e587ff119009acb6fc3e_1a2e2bcf6f3e21e587ff119009acb6fc3e" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>INT_POLARITY</name></member>
+      <member refid="structDW__GPIO__REG_a5ca7e355011a4868e0d77da383466f93_1a5ca7e355011a4868e0d77da383466f93" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>INTEN</name></member>
+      <member refid="structDW__GPIO__REG_ac416bc22e29f463bf0ab9f49bf0b74c3_1ac416bc22e29f463bf0ab9f49bf0b74c3" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>INTMASK</name></member>
+      <member refid="structDW__GPIO__REG_aba1690753fecb978e5c5afbef62de57e_1aba1690753fecb978e5c5afbef62de57e" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>INTSTATUS</name></member>
+      <member refid="structDW__GPIO__REG_aace76324970c9f963e85a4efee008cbf_1aace76324970c9f963e85a4efee008cbf" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>INTTYPE_LEVEL</name></member>
+      <member refid="structDW__GPIO__REG_a833aa906062f766638ea5081a0fac383_1a833aa906062f766638ea5081a0fac383" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>LS_SYNC</name></member>
+      <member refid="structDW__GPIO__REG_a3963deb170f219a1f7c2bd106ade95e8_1a3963deb170f219a1f7c2bd106ade95e8" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>PORTA_EOI</name></member>
+      <member refid="structDW__GPIO__REG_a8e6cfa577cb8c7114a05b4455c5a05d9_1a8e6cfa577cb8c7114a05b4455c5a05d9" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>RAW_INTSTATUS</name></member>
+      <member refid="structDW__GPIO__REG_a4160b00fc254b4925965efb6446f499f_1a4160b00fc254b4925965efb6446f499f" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>RESERVED_3</name></member>
+      <member refid="structDW__GPIO__REG_adeadfc3be58d791621199e6fa7031458_1adeadfc3be58d791621199e6fa7031458" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>SWPORTS</name></member>
+      <member refid="structDW__GPIO__REG_ac545beca1bc04ee36db2a35f87e55c5c_1ac545beca1bc04ee36db2a35f87e55c5c" prot="public" virt="non-virtual"><scope>DW_GPIO_REG</scope><name>VER_ID_CODE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

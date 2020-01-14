@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__mpu_8c" kind="file">
+    <compoundname>arc_mpu.c</compoundname>
+    <includes refid="arc__mpu_8h" local="yes">arc/arc_mpu.h</includes>
+    <incdepgraph>
+      <node id="58">
+        <label>stdbool.h</label>
+      </node>
+      <node id="52">
+        <label>arc/arc_mpu.h</label>
+        <link refid="arc__mpu_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>stdint.h</label>
+      </node>
+      <node id="57">
+        <label>stddef.h</label>
+      </node>
+      <node id="59">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>limits.h</label>
+      </node>
+      <node id="60">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="51">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c</label>
+        <link refid="arc_mpu.c"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arc__mpu_8c_ac47dd81104048bc09708c8d2f33f8beb_1ac47dd81104048bc09708c8d2f33f8beb" prot="public" static="no">
+        <name>CALC_REGION_END_ADDR</name>
+        <param><defname>start</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>(start + size - (1 &lt;&lt; <ref refid="group__ARC__HAL__MISC__MPU_ga10071ce6efb7f85c49b7d14d898a8c53_1ga10071ce6efb7f85c49b7d14d898a8c53" kindref="member">ARC_FEATURE_MPU_ALIGNMENT_BITS</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="32" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__MPU_ga6d861b7cbd4028db1f93ab5db30b4ea7_1ga6d861b7cbd4028db1f93ab5db30b4ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_mpu_enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>arc_mpu_enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable the memory protection unit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="39" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__MPU_ga380c115770d03de330f3f10e0f1b79d6_1ga380c115770d03de330f3f10e0f1b79d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_mpu_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>arc_mpu_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable the memory protection unit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="52" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__MPU_ga045d147505c2d0d2871a1f1b4d6b3388_1ga045d147505c2d0d2871a1f1b4d6b3388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_mpu_region_config</definition>
+        <argsstring>(uint32_t index, uint32_t base, uint32_t size, uint32_t region_attr)</argsstring>
+        <name>arc_mpu_region_config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>region_attr</declname>
+        </param>
+        <briefdescription>
+<para>Configure the given mpu region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region index to be configured </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base address for the region </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region size of the region to be configured </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>region_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value of mpu region </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="69" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="69" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__MPU_ga37d12ad39a657dfddd69a05a667cb514_1ga37d12ad39a657dfddd69a05a667cb514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_mpu_default</definition>
+        <argsstring>(uint32_t region_attr)</argsstring>
+        <name>arc_mpu_default</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>region_attr</declname>
+        </param>
+        <briefdescription>
+<para>Set default attribute of mpu region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region_attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="120" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__MPU_ga39d1e1c94b1468c87ed846312270e4fc_1ga39d1e1c94b1468c87ed846312270e4fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t arc_mpu_in_region</definition>
+        <argsstring>(uint32_t index, uint32_t start, uint32_t size)</argsstring>
+        <name>arc_mpu_in_region</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Check whether [start, start+size] in the given mpu region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start address of memory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of memory </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 in the given mpu region, 0 not in </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="136" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="136" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__MPU_ga3c6353781b336615adfef3709084aa84_1ga3c6353781b336615adfef3709084aa84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t arc_mpu_probe</definition>
+        <argsstring>(uint32_t addr)</argsstring>
+        <name>arc_mpu_probe</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Probe whether the given address in mpu entries. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The given address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 not in mpu entries, -2 mpu version error, &gt;= 0 mpu entry number </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" line="169" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c" bodystart="169" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__mpu_8h" kindref="compound">arc/arc_mpu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CALC_REGION_END_ADDR(start,<sp/>size)<sp/>\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(start<sp/>+<sp/>size<sp/>-<sp/>(1<sp/>&lt;&lt;<sp/>ARC_FEATURE_MPU_ALIGNMENT_BITS))</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__MPU_ga6d861b7cbd4028db1f93ab5db30b4ea7_1ga6d861b7cbd4028db1f93ab5db30b4ea7" kindref="member">arc_mpu_enable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2632c8f0fc83ee1f35bf722609159a1d_1ga2632c8f0fc83ee1f35bf722609159a1d" kindref="member">AUX_MPU_EN</ref>,<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2632c8f0fc83ee1f35bf722609159a1d_1ga2632c8f0fc83ee1f35bf722609159a1d" kindref="member">AUX_MPU_EN</ref>)<sp/>|<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga574d7e7cd498b81c7a3ead4763c6319f_1ga574d7e7cd498b81c7a3ead4763c6319f" kindref="member">AUX_MPU_EN_ENABLE</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>4</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__MPU_ga37d12ad39a657dfddd69a05a667cb514_1ga37d12ad39a657dfddd69a05a667cb514" kindref="member">arc_mpu_default</ref>(0);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__MPU_ga380c115770d03de330f3f10e0f1b79d6_1ga380c115770d03de330f3f10e0f1b79d6" kindref="member">arc_mpu_disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2632c8f0fc83ee1f35bf722609159a1d_1ga2632c8f0fc83ee1f35bf722609159a1d" kindref="member">AUX_MPU_EN</ref>,<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2632c8f0fc83ee1f35bf722609159a1d_1ga2632c8f0fc83ee1f35bf722609159a1d" kindref="member">AUX_MPU_EN</ref>)<sp/>&amp;<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga3e3af95176c5d103c3b8847141e82ad9_1ga3e3af95176c5d103c3b8847141e82ad9" kindref="member">AUX_MPU_EN_DISABLE</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>4</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__MPU_ga37d12ad39a657dfddd69a05a667cb514_1ga37d12ad39a657dfddd69a05a667cb514" kindref="member">arc_mpu_default</ref>(<ref refid="group__ARC__HAL__MISC__MPU_ga8847ffbddbfe8087c4c4735a86b63e7c_1ga8847ffbddbfe8087c4c4735a86b63e7c" kindref="member">ARC_MPU_REGION_ALL_ATTR</ref><sp/>|<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga5b508144ec92ab7f0fc96849e3ef0825_1ga5b508144ec92ab7f0fc96849e3ef0825" kindref="member">AUX_MPU_ATTR_S</ref><sp/>|<sp/><ref refid="group__ARC__HAL__MISC__MPU_gac076c70e165252e24c9a4b07cdb9ee7e_1gac076c70e165252e24c9a4b07cdb9ee7e" kindref="member">AUX_MPU_ATTR_SID</ref>(1));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__MPU_ga045d147505c2d0d2871a1f1b4d6b3388_1ga045d147505c2d0d2871a1f1b4d6b3388" kindref="member">arc_mpu_region_config</ref>(uint32_t<sp/>index,<sp/>uint32_t<sp/>base,<sp/>uint32_t<sp/>size,<sp/>uint32_t<sp/>region_attr)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga1c4a5e6f1d19d50718cc3aaed5f9b35d_1ga1c4a5e6f1d19d50718cc3aaed5f9b35d" kindref="member">ARC_FEATURE_MPU_REGIONS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>region_attr<sp/>&amp;=<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga0624a477287f719a407f31b85336cdeb_1ga0624a477287f719a407f31b85336cdeb" kindref="member">AUX_MPU_ATTR_MASK</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ARC<sp/>MPU<sp/>version<sp/>2<sp/>and<sp/>version<sp/>3<sp/>have<sp/>different<sp/>aux<sp/>reg<sp/>interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bits<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_ga41802452828b15335e4fb1244544322a_1ga41802452828b15335e4fb1244544322a" kindref="member">arc_find_msb</ref>(size)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bits<sp/>&lt;<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga10071ce6efb7f85c49b7d14d898a8c53_1ga10071ce6efb7f85c49b7d14d898a8c53" kindref="member">ARC_FEATURE_MPU_ALIGNMENT_BITS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/>=<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga10071ce6efb7f85c49b7d14d898a8c53_1ga10071ce6efb7f85c49b7d14d898a8c53" kindref="member">ARC_FEATURE_MPU_ALIGNMENT_BITS</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((1<sp/>&lt;&lt;<sp/>bits)<sp/>&lt;<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits++;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>region_attr<sp/>|=<sp/><ref refid="group__ARC__HAL__MISC__MPU_gad5181954b9c6a242d013aac8d1960e47_1gad5181954b9c6a242d013aac8d1960e47" kindref="member">AUX_MPU_RDP_REGION_SIZE</ref>(bits);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base<sp/>|=<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga25c8bbaee850943fb1d02a1d44033597_1ga25c8bbaee850943fb1d02a1d44033597" kindref="member">AUX_MPU_VALID_MASK</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(2<sp/>*<sp/>index<sp/>+<sp/><ref refid="group__ARC__HAL__CORE__COMM_ga3d75546a52ec2f5d240d775dd85a1c6b_1ga3d75546a52ec2f5d240d775dd85a1c6b" kindref="member">AUX_MPU_RDP0</ref>,<sp/>region_attr);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(2<sp/>*<sp/>index<sp/>+<sp/><ref refid="group__ARC__HAL__CORE__COMM_ga7e4457ef3ed7280e041cf93dd5d93e57_1ga7e4457ef3ed7280e041cf93dd5d93e57" kindref="member">AUX_MPU_RDB0</ref>,<sp/>base);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>4</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>&lt;<sp/>(1<sp/>&lt;&lt;<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga10071ce6efb7f85c49b7d14d898a8c53_1ga10071ce6efb7f85c49b7d14d898a8c53" kindref="member">ARC_FEATURE_MPU_ALIGNMENT_BITS</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga10071ce6efb7f85c49b7d14d898a8c53_1ga10071ce6efb7f85c49b7d14d898a8c53" kindref="member">ARC_FEATURE_MPU_ALIGNMENT_BITS</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(region_attr)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>region_attr<sp/>|=<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga25c8bbaee850943fb1d02a1d44033597_1ga25c8bbaee850943fb1d02a1d44033597" kindref="member">AUX_MPU_VALID_MASK</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga389ad56562f3f0d9666070ac1632ff0c_1ga389ad56562f3f0d9666070ac1632ff0c" kindref="member">AUX_MPU_INDEX</ref>,<sp/>index);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga43e9ef6c47a3a147a9f1ee08d5e88bba_1ga43e9ef6c47a3a147a9f1ee08d5e88bba" kindref="member">AUX_MPU_RSTART</ref>,<sp/>base);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2c64634d9a6529f5b767b5abd1ed9a22_1ga2c64634d9a6529f5b767b5abd1ed9a22" kindref="member">AUX_MPU_REND</ref>,<sp/><ref refid="arc__mpu_8c_ac47dd81104048bc09708c8d2f33f8beb_1ac47dd81104048bc09708c8d2f33f8beb" kindref="member">CALC_REGION_END_ADDR</ref>(base,<sp/>size));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaa513e98521401db7a7c9efcf9ac9560a_1gaa513e98521401db7a7c9efcf9ac9560a" kindref="member">AUX_MPU_RPER</ref>,<sp/>region_attr);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__MPU_ga37d12ad39a657dfddd69a05a667cb514_1ga37d12ad39a657dfddd69a05a667cb514" kindref="member">arc_mpu_default</ref>(uint32_t<sp/>region_attr)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2632c8f0fc83ee1f35bf722609159a1d_1ga2632c8f0fc83ee1f35bf722609159a1d" kindref="member">AUX_MPU_EN</ref>)<sp/>&amp;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(~<ref refid="group__ARC__HAL__MISC__MPU_ga0624a477287f719a407f31b85336cdeb_1ga0624a477287f719a407f31b85336cdeb" kindref="member">AUX_MPU_ATTR_MASK</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga2632c8f0fc83ee1f35bf722609159a1d_1ga2632c8f0fc83ee1f35bf722609159a1d" kindref="member">AUX_MPU_EN</ref>,<sp/>(region_attr<sp/>&amp;<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga0624a477287f719a407f31b85336cdeb_1ga0624a477287f719a407f31b85336cdeb" kindref="member">AUX_MPU_ATTR_MASK</ref>)<sp/>|<sp/>val);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga39d1e1c94b1468c87ed846312270e4fc_1ga39d1e1c94b1468c87ed846312270e4fc" kindref="member">arc_mpu_in_region</ref>(uint32_t<sp/>index,<sp/>uint32_t<sp/>start,<sp/>uint32_t<sp/>size)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>r_addr_start;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>r_addr_end;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>r_size_lshift;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>r_addr_start<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga7e4457ef3ed7280e041cf93dd5d93e57_1ga7e4457ef3ed7280e041cf93dd5d93e57" kindref="member">AUX_MPU_RDB0</ref><sp/>+<sp/>2<sp/>*<sp/>index)<sp/>&amp;<sp/>(~<ref refid="group__ARC__HAL__MISC__MPU_ga25c8bbaee850943fb1d02a1d44033597_1ga25c8bbaee850943fb1d02a1d44033597" kindref="member">AUX_MPU_VALID_MASK</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>r_size_lshift<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga3d75546a52ec2f5d240d775dd85a1c6b_1ga3d75546a52ec2f5d240d775dd85a1c6b" kindref="member">AUX_MPU_RDP0</ref><sp/>+<sp/>2<sp/>*<sp/>index)<sp/>&amp;<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga0624a477287f719a407f31b85336cdeb_1ga0624a477287f719a407f31b85336cdeb" kindref="member">AUX_MPU_ATTR_MASK</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>r_size_lshift<sp/>=<sp/>(r_size_lshift<sp/>&amp;<sp/>0x3)<sp/>|<sp/>((r_size_lshift<sp/>&gt;&gt;<sp/>7)<sp/>&amp;<sp/>0x1C);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>r_addr_end<sp/>=<sp/>r_addr_start<sp/><sp/>+<sp/>(1<sp/>&lt;&lt;<sp/>(r_size_lshift<sp/>+<sp/>1));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(start<sp/>&gt;=<sp/>r_addr_start<sp/>&amp;&amp;<sp/>(start<sp/>+<sp/>size)<sp/>&lt;<sp/>r_addr_end)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>4</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((index<sp/>==<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga3c6353781b336615adfef3709084aa84_1ga3c6353781b336615adfef3709084aa84" kindref="member">arc_mpu_probe</ref>(start))<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(index<sp/>==<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga3c6353781b336615adfef3709084aa84_1ga3c6353781b336615adfef3709084aa84" kindref="member">arc_mpu_probe</ref>(start<sp/>+<sp/>size)))<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga3c6353781b336615adfef3709084aa84_1ga3c6353781b336615adfef3709084aa84" kindref="member">arc_mpu_probe</ref>(uint32_t<sp/>addr)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>index;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>regions<sp/>=<sp/><ref refid="group__ARC__HAL__MISC__MPU_ga1c4a5e6f1d19d50718cc3aaed5f9b35d_1ga1c4a5e6f1d19d50718cc3aaed5f9b35d" kindref="member">ARC_FEATURE_MPU_REGIONS</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>regions;<sp/>index++)<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__MPU_ga39d1e1c94b1468c87ed846312270e4fc_1ga39d1e1c94b1468c87ed846312270e4fc" kindref="member">arc_mpu_in_region</ref>(index,<sp/>addr,<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)index;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>ARC_FEATURE_MPU_VERSION<sp/>==<sp/>4</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>index;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga7ac373f8463ce9488e5401f6e70c9a59_1ga7ac373f8463ce9488e5401f6e70c9a59" kindref="member">AUX_MPU_PROBE</ref>,<sp/>addr);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>index<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga389ad56562f3f0d9666070ac1632ff0c_1ga389ad56562f3f0d9666070ac1632ff0c" kindref="member">AUX_MPU_INDEX</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>no<sp/>match<sp/>or<sp/>multiple<sp/>regions<sp/>match,<sp/>return<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&amp;<sp/>(<ref refid="group__ARC__HAL__MISC__MPU_ga8ce492534f2454772d3e1f8e46874d9a_1ga8ce492534f2454772d3e1f8e46874d9a" kindref="member">AUX_MPU_INDEX_DEFAULT</ref><sp/>|<sp/><ref refid="group__ARC__HAL__MISC__MPU_gadcf7d6a7e5157ee29846c7e89720a1ab_1gadcf7d6a7e5157ee29846c7e89720a1ab" kindref="member">AUX_MPU_INDEX_MULT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)index;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-2;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mpu.c"/>
+  </compounddef>
+</doxygen>

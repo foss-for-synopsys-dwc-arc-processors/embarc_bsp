@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__UART__DEVSTRUCT" kind="group">
+    <compoundname>DEVICE_HAL_UART_DEVSTRUCT</compoundname>
+    <title>UART Device Interface Definition</title>
+    <innerclass refid="structDEV__UART__INFO" prot="public">DEV_UART_INFO</innerclass>
+    <innerclass refid="structDEV__UART" prot="public">DEV_UART</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__UART__DEVSTRUCT_1gac789d3ad54a1fd17e47569f55af11e80" prot="public" static="no">
+        <type>struct <ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+        <definition>typedef  struct DEV_UART_INFO * DEV_UART_INFO_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_UART_INFO_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga39a2c3e3c12141f19ed62130a86dfe04" prot="public" static="no">
+        <type>struct <ref refid="structDEV__UART" kindref="compound">DEV_UART</ref> *</type>
+        <definition>typedef  struct DEV_UART * DEV_UART_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_UART_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="377" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga6150a860d3b101329e8521e178e3df38" prot="public" static="no">
+        <name>DEV_UART_INFO_SET_EXTRA_OBJECT</name>
+        <param><defname>uart_info_ptr</defname></param>
+        <param><defname>extra_info</defname></param>
+        <initializer>(uart_info_ptr)-&gt;extra = (void *)(extra_info)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set extra information pointer of uart info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="360" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga62092f9afef6b9e2e7c6f27623ba87ff" prot="public" static="no">
+        <name>DEV_UART_INFO_GET_EXTRA_OBJECT</name>
+        <param><defname>uart_info_ptr</defname></param>
+        <initializer>((uart_info_ptr)-&gt;extra)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get extra information pointer of uart info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="362" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga860ca9f9693e4f1552590565dc961869" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_UART::uart_open</definition>
+        <argsstring>)(uint32_t baud)</argsstring>
+        <name>uart_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open uart device</para><para>Open an uart device with defined baudrate param[in] baud <ref refid="group__DEVICE__HAL__UART__BAUD" kindref="compound">initial baudrate of uart</ref>, must &gt; 0 <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref> and return <ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="372" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_UART::uart_close</definition>
+        <argsstring>)(void)</argsstring>
+        <name>uart_close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close uart device</para><para>Close an uart device, just decrease the <ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref>, if <ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref> equals 0, then close the device <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including scenario that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="373" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga6b40883d5dfbfabd632ba125e128d1e5" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_UART::uart_control</definition>
+        <argsstring>)(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>uart_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control uart device</para><para>Control an uart device by ctrl_cmd, with passed param. you can control uart device using predefined uart control commands defined using <ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref> (which must be implemented by bsp developer), such as <ref refid="group__DEVICE__HAL__UART__CTRLCMD_ga764fa9e43d0e6386328e6123469dfd05_1ga764fa9e43d0e6386328e6123469dfd05" kindref="member">change baudrate</ref>, <ref refid="group__DEVICE__HAL__UART__CTRLCMD_gae4fafef76cb1216e06523779ef842847_1gae4fafef76cb1216e06523779ef842847" kindref="member">flush output</ref> and <ref refid="group__DEVICE__HAL__UART__CTRLCMD" kindref="compound">more</ref>. And you can also control uart device using your own specified commands defined using <ref refid="group__DEVICE__HAL__COMMON__DEFCMD_gafe70e244452c1c2f5235b85cadf602bb_1gafe70e244452c1c2f5235b85cadf602bb" kindref="member">DEV_SET_USRCMD</ref>, but these specified commands should be defined in your own uart device driver implementation. param[in] ctrl_cmd <ref refid="group__DEVICE__HAL__UART__CTRLCMD" kindref="compound">control command</ref>, to change or get some thing related to uart param[in,out] param Parameters that maybe argument of the command, or return values of the command <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="374" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__UART__DEVSTRUCT_1ga0104a456ec339fc30fe9d03070bbf4a7" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_UART::uart_write</definition>
+        <argsstring>)(const void *data, uint32_t len)</argsstring>
+        <name>uart_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send data by uart device(blocked)</para><para>Send data through uart with defined len(blocked). param[in] data Pointer to data need to send by uart, must not be NULL param[in] len Length of data to be sent, must &gt; 0 <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully sent for poll method </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t write data to hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="375" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__UART__DEVSTRUCT_1gad5a2572b8fb96539bf2b348436bdd1bf" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_UART::uart_read</definition>
+        <argsstring>)(void *data, uint32_t len)</argsstring>
+        <name>uart_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from uart device(blocked)</para><para>Receive data of defined len through uart(blocked). param[out] data Pointer to data need to received by uart, must not be NULL param[in] len Length of data to be received, must &gt; 0 <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully received for poll method </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="376" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for uart device interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure will be used in user implemented code, which was called <ref refid="group__DEVICE__IMPL" kindref="compound">Device Driver Implement Layer</ref> for uart to use in implementation code. Application developer should use the UART API provided here to access to UART devices. BSP developer should follow the API definition to implement UART device drivers. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

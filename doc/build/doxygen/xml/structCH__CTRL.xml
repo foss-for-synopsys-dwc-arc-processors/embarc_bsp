@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structCH__CTRL" kind="struct" prot="public">
+    <compoundname>CH_CTRL</compoundname>
+    <includes refid="dw__pwm__timer_8h" local="no">dw_pwm_timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCH__CTRL_adceee45af88436f8ba4190c790426cde_1adceee45af88436f8ba4190c790426cde" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CH_CTRL::LOAD_COUNT</definition>
+        <argsstring></argsstring>
+        <name>LOAD_COUNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value to be loaded into Timer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="46" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCH__CTRL_acf53b25eaeb0829552749a58eb59cef5_1acf53b25eaeb0829552749a58eb59cef5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CH_CTRL::CURRENT_VALUE</definition>
+        <argsstring></argsstring>
+        <name>CURRENT_VALUE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Value of Timer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="47" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CH_CTRL::CONTROL_REG</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_REG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Register for Timer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="48" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCH__CTRL_aa5f6e58b4be1e59ab85317dc5c5e2f64_1aa5f6e58b4be1e59ab85317dc5c5e2f64" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CH_CTRL::EOI</definition>
+        <argsstring></argsstring>
+        <name>EOI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the interrupt from Timer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="49" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCH__CTRL_a3f417aa412549203de3d7735923b8e87_1a3f417aa412549203de3d7735923b8e87" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CH_CTRL::INT_STATUS</definition>
+        <argsstring></argsstring>
+        <name>INT_STATUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contains the interrupt status for Timer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="45" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" prot="public" virt="non-virtual"><scope>CH_CTRL</scope><name>CONTROL_REG</name></member>
+      <member refid="structCH__CTRL_acf53b25eaeb0829552749a58eb59cef5_1acf53b25eaeb0829552749a58eb59cef5" prot="public" virt="non-virtual"><scope>CH_CTRL</scope><name>CURRENT_VALUE</name></member>
+      <member refid="structCH__CTRL_aa5f6e58b4be1e59ab85317dc5c5e2f64_1aa5f6e58b4be1e59ab85317dc5c5e2f64" prot="public" virt="non-virtual"><scope>CH_CTRL</scope><name>EOI</name></member>
+      <member refid="structCH__CTRL_a3f417aa412549203de3d7735923b8e87_1a3f417aa412549203de3d7735923b8e87" prot="public" virt="non-virtual"><scope>CH_CTRL</scope><name>INT_STATUS</name></member>
+      <member refid="structCH__CTRL_adceee45af88436f8ba4190c790426cde_1adceee45af88436f8ba4190c790426cde" prot="public" virt="non-virtual"><scope>CH_CTRL</scope><name>LOAD_COUNT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

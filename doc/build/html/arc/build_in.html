@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Built-In Functions &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Resource Definitions" href="resource.html" />
+    <link rel="prev" title="Exception and Interrupt Management" href="exception_interrupt.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ARC Processors</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#overview">Overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="start.html">Start up in embARC BSP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exception_interrupt.html">Exception and Interrupt Management</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Built-In Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="resource.html">Resource Definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#related-files">Related files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">ARC Processors</a> &raquo;</li>
+        
+      <li>Built-In Functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="built-in-functions">
+<span id="arc-hal-builtin"></span><h1>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">¶</a></h1>
+<p>Compiler built-in functions are used to invoke certain processor operations
+without writing assembly code. In embARC BSP, a series of built-in functions are
+provided for both the MetaWare and GNU toolchains.</p>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<dl class="group">
+<dt>
+<span class="target" id="group__ARC__HAL__BUILTIN"></span><em>group</em> <code class="sig-name descname">ARC_HAL_BUILTIN</code></dt>
+<dd><p>Built-in and helper functions to access ARC hardware layer. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">cache related helper function</p>
+<dl class="function">
+<dt id="_CPPv420arc_read_uncached_32Pv">
+<span id="_CPPv320arc_read_uncached_32Pv"></span><span id="_CPPv220arc_read_uncached_32Pv"></span><span id="arc_read_uncached_32__voidP"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga1637ed07384a17725612aa217acd5c2d"></span><code class="sig-name descname">arc_read_uncached_32</code><span class="sig-paren">(</span>void *<em>ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420arc_read_uncached_32Pv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read memory and bypass the cache. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>data in the memory </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ptr</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv421arc_write_uncached_32Pv8uint32_t">
+<span id="_CPPv321arc_write_uncached_32Pv8uint32_t"></span><span id="_CPPv221arc_write_uncached_32Pv8uint32_t"></span><span id="arc_write_uncached_32__voidP.uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga764ea57c08a543a190af29f0e2753f4a"></span><code class="sig-name descname">arc_write_uncached_32</code><span class="sig-paren">(</span>void *<em>ptr</em>, uint32_t <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421arc_write_uncached_32Pv8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write memory and bypass the cache. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ptr</span></code>: memory address </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: value to be written </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418arc_read_cached_32Pv">
+<span id="_CPPv318arc_read_cached_32Pv"></span><span id="_CPPv218arc_read_cached_32Pv"></span><span id="arc_read_cached_32__voidP"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga62303ed5fcd9ecbc49a99236d6b19e5f"></span><code class="sig-name descname">arc_read_cached_32</code><span class="sig-paren">(</span>void *<em>ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418arc_read_cached_32Pv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read memory with cache. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>data in the memory </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ptr</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv419arc_write_cached_32Pv8uint32_t">
+<span id="_CPPv319arc_write_cached_32Pv8uint32_t"></span><span id="_CPPv219arc_write_cached_32Pv8uint32_t"></span><span id="arc_write_cached_32__voidP.uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gaa7b3c92f6fe86feb99103e45ee3967c8"></span>void <code class="sig-name descname">arc_write_cached_32</code><span class="sig-paren">(</span>void *<em>ptr</em>, uint32_t <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419arc_write_cached_32Pv8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read memory with cache. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ptr</span></code>: Memory address </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: Data to be written </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv413arc_goto_main7int32_tPPc">
+<span id="_CPPv313arc_goto_main7int32_tPPc"></span><span id="_CPPv213arc_goto_main7int32_tPPc"></span><span id="arc_goto_main__int32_t.cPP"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga3a4f9f65558ad1c1182054eb6efa054f"></span>int32_t <code class="sig-name descname">arc_goto_main</code><span class="sig-paren">(</span>int32_t <em>argc</em>, char **<em>argv</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413arc_goto_main7int32_tPPc" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Go to main function with proper arguments. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">argc</span></code>: Argument count </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">argv</span></code>: Argument content array </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Return</span></code>: value of main function </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv412arc_find_msb8uint32_t">
+<span id="_CPPv312arc_find_msb8uint32_t"></span><span id="_CPPv212arc_find_msb8uint32_t"></span><span id="arc_find_msb__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga41802452828b15335e4fb1244544322a"></span>uint32_t <code class="sig-name descname">arc_find_msb</code><span class="sig-paren">(</span>uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412arc_find_msb8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find most significant bit set in a 32-bit word. </p>
+<p>This routine finds the first bit set starting from the most significant bit in the argument passed in and returns the index of that bit. Bits are numbered starting at 1 from the least significant bit. A return value of zero indicates that the value passed is zero.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Most significant bit set, 0 if <em>val</em> is 0 </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv412arc_find_lsb8uint32_t">
+<span id="_CPPv312arc_find_lsb8uint32_t"></span><span id="_CPPv212arc_find_lsb8uint32_t"></span><span id="arc_find_lsb__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gaeb63aa9f01893feeab70ca73b5f9a863"></span>uint32_t <code class="sig-name descname">arc_find_lsb</code><span class="sig-paren">(</span>uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412arc_find_lsb8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Find least significant bit set in a 32-bit word. </p>
+<p>This routine finds the first bit set starting from the least significant bit in the argument passed in and returns the index of that bit. Bits are numbered starting at 1 from the least significant bit. A return value of zero indicates that the value passed is zero.</p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Least significant bit set, 0 if <em>val</em> is 0 </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv411arc_core_idv">
+<span id="_CPPv311arc_core_idv"></span><span id="_CPPv211arc_core_idv"></span><span id="arc_core_id__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gaaed1a146ea22a3cdcec0522f15dce237"></span>uint32_t <code class="sig-name descname">arc_core_id</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411arc_core_idv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read core id. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Core id </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv422arc_stack_check_enablev">
+<span id="_CPPv322arc_stack_check_enablev"></span><span id="_CPPv222arc_stack_check_enablev"></span><span id="arc_stack_check_enable__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga290e3c171b54f288db12ab5f36521911"></span>void <code class="sig-name descname">arc_stack_check_enable</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422arc_stack_check_enablev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enable hardware stack checking. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv423arc_stack_check_disablev">
+<span id="_CPPv323arc_stack_check_disablev"></span><span id="_CPPv223arc_stack_check_disablev"></span><span id="arc_stack_check_disable__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gad5983fbbadf98e58d67d7b4010e572b0"></span>void <code class="sig-name descname">arc_stack_check_disable</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423arc_stack_check_disablev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disable hardware stack checking. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv432arc_kernel_stack_check_configure8uint32_t8uint32_t">
+<span id="_CPPv332arc_kernel_stack_check_configure8uint32_t8uint32_t"></span><span id="_CPPv232arc_kernel_stack_check_configure8uint32_t8uint32_t"></span><span id="arc_kernel_stack_check_configure__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga0f81380cbb54ce86c061637826f17940"></span>void <code class="sig-name descname">arc_kernel_stack_check_configure</code><span class="sig-paren">(</span>uint32_t <em>top</em>, uint32_t <em>base</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432arc_kernel_stack_check_configure8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Configure stack checking in kernel mode. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">top</span></code>: Top of stack </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">base</span></code>: Base of stack </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv416arc_is_user_modev">
+<span id="_CPPv316arc_is_user_modev"></span><span id="_CPPv216arc_is_user_modev"></span><span id="arc_is_user_mode__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gab1742fbca7c3453bf185c0ded28ce36f"></span>uint32_t <code class="sig-name descname">arc_is_user_mode</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416arc_is_user_modev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether processor is in user mode this function relies on AUX_STATUS_BIT_US set in privileged mode first. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>1 user mode, 0 privileged mode </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv417arc_goto_usermodePvP8uint32_t">
+<span id="_CPPv317arc_goto_usermodePvP8uint32_t"></span><span id="_CPPv217arc_goto_usermodePvP8uint32_t"></span><span id="arc_goto_usermode__voidP.uint32_tP"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga8e10c190b7ebcee58c8651ac5526223e"></span>void <code class="sig-name descname">arc_goto_usermode</code><span class="sig-paren">(</span>void *<em>target</em>, uint32_t *<em>sp</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417arc_goto_usermodePvP8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Go to user mode It’s suggested to disable interrupt before call this function especially when using current stack, i.e., sp == 0. Because interrupt handling requires kernel mode stack which is different with user mode stack. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">target</span></code>: Target address to run in user mode, 0 means next line of code </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sp</span></code>: Stack where the target address runs, 0 means using current stack </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv419arc_goto_kernelmodePvP8uint32_t">
+<span id="_CPPv319arc_goto_kernelmodePvP8uint32_t"></span><span id="_CPPv219arc_goto_kernelmodePvP8uint32_t"></span><span id="arc_goto_kernelmode__voidP.uint32_tP"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga2731e64353037ea69a27a01401e08dc3"></span>void <code class="sig-name descname">arc_goto_kernelmode</code><span class="sig-paren">(</span>void *<em>target</em>, uint32_t *<em>sp</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419arc_goto_kernelmodePvP8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Go to kernel mode this function uses trap exception to do switch from user mode to kernel mode, please install exc_entry_arc_goto_kernelmode for trap exception before call this function. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">target</span></code>: Target address to run in kernel mode, 0 means next line of code </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sp</span></code>: Stack where the target address runs, 0 means using current stack </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv429exc_entry_arc_goto_kernelmodev">
+<span id="_CPPv329exc_entry_arc_goto_kernelmodev"></span><span id="_CPPv229exc_entry_arc_goto_kernelmodev"></span><span id="exc_entry_arc_goto_kernelmode__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga8f432a3d2628380c2b7a324c58b09490"></span>void <code class="sig-name descname">exc_entry_arc_goto_kernelmode</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429exc_entry_arc_goto_kernelmodev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Trap exception entry used for arc_goto_kernelmode. </p>
+<p>install this entry for trap exception before call arc_goto_kernelmode </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Defines</p>
+<dl class="macro">
+<dt id="c.arc_compiler_usually">
+<span class="target" id="group__ARC__HAL__BUILTIN_1gabf29ae950f5cd6294fbfac99f875cc08"></span><code class="sig-name descname">arc_compiler_usually</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#c.arc_compiler_usually" title="Permalink to this definition">¶</a></dt>
+<dd><p>arc_compiler_usually(expr) evaluates expression expr and informs the compiler that the value is usually true. </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.arc_compiler_rarely">
+<span class="target" id="group__ARC__HAL__BUILTIN_1gad077dba129e598bdc9a85a87cd0266b0"></span><code class="sig-name descname">arc_compiler_rarely</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#c.arc_compiler_rarely" title="Permalink to this definition">¶</a></dt>
+<dd><p>arc_compiler_rarely(expr) evaluates expression expr and informs the compiler that the value is rarely true. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Functions</p>
+<dl class="function">
+<dt id="_CPPv46arc_mbv">
+<span id="_CPPv36arc_mbv"></span><span id="_CPPv26arc_mbv"></span><span id="arc_mb__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gad7a6c7494d14dcaad83f913529972232"></span>void <code class="sig-name descname">arc_mb</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv46arc_mbv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Do memory barrier. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv47arc_rmbv">
+<span id="_CPPv37arc_rmbv"></span><span id="_CPPv27arc_rmbv"></span><span id="arc_rmb__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gaa5ad1e4d3785607eb261b03f8fc7263b"></span>void <code class="sig-name descname">arc_rmb</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47arc_rmbv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read memory barrier. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv47arc_wmbv">
+<span id="_CPPv37arc_wmbv"></span><span id="_CPPv27arc_wmbv"></span><span id="arc_wmb__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga3cb33f123f9fb9f4b0c0d08a46bbc887"></span>void <code class="sig-name descname">arc_wmb</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47arc_wmbv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write memory barrier. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv412arc_aux_read8uint32_t">
+<span id="_CPPv312arc_aux_read8uint32_t"></span><span id="_CPPv212arc_aux_read8uint32_t"></span><span id="arc_aux_read__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gad03638934aed9ae0b0212a6b351a4aa0"></span>uint32_t <code class="sig-name descname">arc_aux_read</code><span class="sig-paren">(</span>uint32_t <em>aux</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412arc_aux_read8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read auxiliary register. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>value of auxiliary register </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">aux</span></code>: auxiliary register address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv413arc_aux_write8uint32_t8uint32_t">
+<span id="_CPPv313arc_aux_write8uint32_t8uint32_t"></span><span id="_CPPv213arc_aux_write8uint32_t8uint32_t"></span><span id="arc_aux_write__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga7fc2bb3f493a46207d78c3d22abdb118"></span>void <code class="sig-name descname">arc_aux_write</code><span class="sig-paren">(</span>uint32_t <em>aux</em>, uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413arc_aux_write8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write auxiliary register. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">aux</span></code>: auxiliary register address </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">val</span></code>: Value to write </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv47arc_brkv">
+<span id="_CPPv37arc_brkv"></span><span id="_CPPv27arc_brkv"></span><span id="arc_brk__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga6214b4434cef32406cec2af0ba1ebe6e"></span>void <code class="sig-name descname">arc_brk</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47arc_brkv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call brk instruction stop the core through a brk instruction. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv48arc_syncv">
+<span id="_CPPv38arc_syncv"></span><span id="_CPPv28arc_syncv"></span><span id="arc_sync__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga5118758b44cc214d20d7f9cbf59a8de3"></span>void <code class="sig-name descname">arc_sync</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48arc_syncv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call sync instruction. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv49arc_kflag8uint32_t">
+<span id="_CPPv39arc_kflag8uint32_t"></span><span id="_CPPv29arc_kflag8uint32_t"></span><span id="arc_kflag__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga4925166d3d6d1149efcd46ac5f4bb49e"></span>void <code class="sig-name descname">arc_kflag</code><span class="sig-paren">(</span>uint32_t <em>flag</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49arc_kflag8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call kflag instruction to change status32. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">flag</span></code>: Flag to set in status32 </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv47arc_nopv">
+<span id="_CPPv37arc_nopv"></span><span id="_CPPv27arc_nopv"></span><span id="arc_nop__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gaa7af7af52c1378ab56ef06e384d8a4f9"></span>void <code class="sig-name descname">arc_nop</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47arc_nopv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call nop_s function flush the pipeline by nop_s instruction. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv48arc_clriv">
+<span id="_CPPv38arc_clriv"></span><span id="_CPPv28arc_clriv"></span><span id="arc_clri__void"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga305a3259373787aa2974195be626a77b"></span>uint32_t <code class="sig-name descname">arc_clri</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48arc_clriv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call clri instruction call a clri instruction to disable interrupt. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>interrupt related bits in status32 </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv48arc_seti8uint32_t">
+<span id="_CPPv38arc_seti8uint32_t"></span><span id="_CPPv28arc_seti8uint32_t"></span><span id="arc_seti__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1gad4b9674eb1f00bc08b13bad80289911b"></span>void <code class="sig-name descname">arc_seti</code><span class="sig-paren">(</span>uint32_t <em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48arc_seti8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Call seti instruction call a set instruction to change interrupt status. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code>: interrupt status </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv410arc_swap328uint32_t">
+<span id="_CPPv310arc_swap328uint32_t"></span><span id="_CPPv210arc_swap328uint32_t"></span><span id="arc_swap32__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga49755ded4ba881111f648fcdb3fc95bd"></span>uint32_t <code class="sig-name descname">arc_swap32</code><span class="sig-paren">(</span>uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410arc_swap328uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Swap bytes order of a 32-bits value. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Swapped value </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">val</span></code>: Target value </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv410arc_swap168uint32_t">
+<span id="_CPPv310arc_swap168uint32_t"></span><span id="_CPPv210arc_swap168uint32_t"></span><span id="arc_swap16__uint32_t"></span><span class="target" id="group__ARC__HAL__BUILTIN_1ga5795c722201c4eb4d53e0e41e0cda5da"></span>uint16_t <code class="sig-name descname">arc_swap16</code><span class="sig-paren">(</span>uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410arc_swap168uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Swap bytes order of a 32-bits value and return high 16-bits. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>High 16 bits of the swapped value </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">val</span></code>: Target value </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

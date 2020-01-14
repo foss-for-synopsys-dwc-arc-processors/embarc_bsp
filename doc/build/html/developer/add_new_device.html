@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Adding a New Device &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="embARC Documentation Generation" href="documentation_generation.html" />
+    <link rel="prev" title="Adding a New Board" href="add_new_board.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developer_guides.html">Developer Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html">Coding style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="application_development.html">Application Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="build_system_documentation.html">Build System Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="porting_guides.html">Porting Guides</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_new_board.html">Adding a New Board</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Adding a New Device</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#adding-support-for-on-chip-ip">Adding support for On-Chip IP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-support-for-an-on-board-or-external-peripheral">Adding support for an On-Board or External Peripheral</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="documentation_generation.html">embARC Documentation Generation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developer_guides.html">Developer Guides</a> &raquo;</li>
+        
+          <li><a href="porting_guides.html">Porting Guides</a> &raquo;</li>
+        
+      <li>Adding a New Device</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="adding-a-new-device">
+<span id="add-new-device"></span><h1>Adding a New Device<a class="headerlink" href="#adding-a-new-device" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-support-for-on-chip-ip">
+<h2>Adding support for On-Chip IP<a class="headerlink" href="#adding-support-for-on-chip-ip" title="Permalink to this headline">¶</a></h2>
+<p>If the HAL for the new device is already defined in embARC BSP, follow the steps below.</p>
+<ul class="simple">
+<li><p>Create a sub-folder in <code class="docutils literal notranslate"><span class="pre">device/ip</span></code>.</p></li>
+<li><p>Implement the driver according to the device HAL definition and existing DesignWare IP implementations.</p></li>
+<li><p>Add the corresponding makefile.</p></li>
+</ul>
+<p>If the HAL of the new device is not defined, follow the steps below.</p>
+<ul class="simple">
+<li><p>Create a header file in <code class="docutils literal notranslate"><span class="pre">device/ip/ip_hal</span></code>.</p></li>
+<li><p>Add the HAL definition for the new device.</p></li>
+<li><p>Implement the driver according to the device HAL definition.</p></li>
+<li><p>Add the corresponding makefile.</p></li>
+</ul>
+</div>
+<div class="section" id="adding-support-for-an-on-board-or-external-peripheral">
+<h2>Adding support for an On-Board or External Peripheral<a class="headerlink" href="#adding-support-for-an-on-board-or-external-peripheral" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add the driver in <code class="docutils literal notranslate"><span class="pre">device/peripheral</span></code> folder according to the class of peripheral. For example, a flash device <code class="docutils literal notranslate"><span class="pre">xxx</span></code> should be in the folder <code class="docutils literal notranslate"><span class="pre">device/peripheral/flash/xxx</span></code> folder.</p></li>
+<li><p>Add the corresponding makefile.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

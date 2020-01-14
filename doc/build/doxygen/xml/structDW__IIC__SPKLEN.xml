@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__IIC__SPKLEN" kind="struct" prot="public">
+    <compoundname>DW_IIC_SPKLEN</compoundname>
+    <includes refid="dw__iic_8h" local="no">dw_iic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__IIC__SPKLEN_a68db660c9495fbdf50d54f63aea2948a_1a68db660c9495fbdf50d54f63aea2948a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SPKLEN::fs_spklen</definition>
+        <argsstring></argsstring>
+        <name>fs_spklen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_FS_SPKLEN, Tsp for fast mode is 50ns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="116" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__SPKLEN_a4d32cc7940b9a17a5be01ddcd4df6755_1a4d32cc7940b9a17a5be01ddcd4df6755" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SPKLEN::hs_spklen</definition>
+        <argsstring></argsstring>
+        <name>hs_spklen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_HS_SPKLEN, Tsp for high-speed mode is 10ns </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="117" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Spike Suppression Limit Configurations </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="115" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structDW__IIC__SPKLEN_a68db660c9495fbdf50d54f63aea2948a_1a68db660c9495fbdf50d54f63aea2948a" prot="public" virt="non-virtual"><scope>DW_IIC_SPKLEN</scope><name>fs_spklen</name></member>
+      <member refid="structDW__IIC__SPKLEN_a4d32cc7940b9a17a5be01ddcd4df6755_1a4d32cc7940b9a17a5be01ddcd4df6755" prot="public" virt="non-virtual"><scope>DW_IIC_SPKLEN</scope><name>hs_spklen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

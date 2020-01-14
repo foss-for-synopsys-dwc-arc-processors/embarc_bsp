@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_18199f27b1ac439ff20e342b4523a07a" kind="dir">
+    <compoundname>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common</compoundname>
+    <innerfile refid="emsk__init_8c">emsk_init.c</innerfile>
+    <innerfile refid="emsk__io_8c">emsk_io.c</innerfile>
+    <innerfile refid="emsk__io_8h">emsk_io.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__ARC__HAL__MISC__CACHE" kind="group">
+    <compoundname>ARC_HAL_MISC_CACHE</compoundname>
+    <title>Cache</title>
+    <innerfile refid="arc__cache_8c">arc_cache.c</innerfile>
+    <innerfile refid="arc__cache_8h">arc_cache.h</innerfile>
+      <sectiondef kind="user-defined">
+      <header>Marco definitions for cache control</header>
+      <description></description>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga89588be391940bb908fac67345fbc64b" prot="public" static="no">
+        <name>IC_CTRL_IC_ENABLE</name>
+        <initializer>(0x0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable instruction cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="52" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga8b1837f2e109d4394dded75f3b680be2" prot="public" static="no">
+        <name>IC_CTRL_IC_DISABLE</name>
+        <initializer>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable instruction cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga58b146a52b956f6f1d0e0329ea17ccc1" prot="public" static="no">
+        <name>IC_CTRL_DIRECT_ACCESS</name>
+        <initializer>(0x0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>direct access mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="54" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1gad9d26d7c4d98f519c5d20fa9031eeaee" prot="public" static="no">
+        <name>IC_CTRL_INDIRECT_ACCESS</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indirect access mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="55" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga69a15333c7c721cf4ef4a62f5ada1711" prot="public" static="no">
+        <name>IC_CTRL_OP_SUCCEEDED</name>
+        <initializer>(0x8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>instruction cache operation succeeded </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="56" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Marco definitions for data cache control</header>
+      <description></description>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga639cae40b38816d74ef5f622c6e9bfe7" prot="public" static="no">
+        <name>IC_CTRL_I</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="64" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga94b39308cfd002663d63689cda868a09" prot="public" static="no">
+        <name>DC_CTRL_DC_ENABLE</name>
+        <initializer>(0x0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable data cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="65" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga5c1a63346f607c480d88d68b40ac3cef" prot="public" static="no">
+        <name>DC_CTRL_DC_DISABLE</name>
+        <initializer>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable data cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="66" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga65272db83521f6977dfd0a46468952ba" prot="public" static="no">
+        <name>DC_CTRL_INVALID_ONLY</name>
+        <initializer>(0x0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>invalid data cache only </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="67" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1gad39e2ba72c52a7531bed72e5c53ceb64" prot="public" static="no">
+        <name>DC_CTRL_INVALID_FLUSH</name>
+        <initializer>(0x40)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>invalid and flush data cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="68" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1gae0adad0cc819a38dfa21b2a8ce5a77b5" prot="public" static="no">
+        <name>DC_CTRL_ENABLE_FLUSH_LOCKED</name>
+        <initializer>(0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the locked data cache can be flushed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="69" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga8dcb9d71ecace8c648c4b525a8bc6190" prot="public" static="no">
+        <name>DC_CTRL_DISABLE_FLUSH_LOCKED</name>
+        <initializer>(0x0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the locked data cache cannot be flushed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="70" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1gac2f3f57da7299e52cdb89ec2e53b4de8" prot="public" static="no">
+        <name>DC_CTRL_FLUSH_STATUS</name>
+        <initializer>(0x100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flush status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="71" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1ga2e9537539df989260d4041b86212db79" prot="public" static="no">
+        <name>DC_CTRL_DIRECT_ACCESS</name>
+        <initializer>(0x0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>direct access mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="72" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1gab6018a2516d040b1f7cab03b37883eb1" prot="public" static="no">
+        <name>DC_CTRL_INDIRECT_ACCESS</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indirect access mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="73" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__CACHE_1gacb1e748794870e28d437a192b88b60b3" prot="public" static="no">
+        <name>DC_CTRL_OP_SUCCEEDED</name>
+        <initializer>(0x4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data cache operation succeeded </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="74" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>instruction cache related inline function</header>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga8e1ae0cff12a4279ca994f0df8f1bc30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t icache_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>icache_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check whether instruction cache is available,. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 for not available, &gt;0 for available </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="92" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga0eb613ef234830ebb8fdb5b69ebdc21a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void icache_enable</definition>
+        <argsstring>(uint32_t icache_en_mask)</argsstring>
+        <name>icache_enable</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>icache_en_mask</declname>
+        </param>
+        <briefdescription>
+<para>Enable instruction cache. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icache_en_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>operation mask </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="102" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="102" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1gab37364e2f6a851faa045186434063dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void icache_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>icache_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable instruction cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; disable instruction cache </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga090d5a46c2dd09d034f4cc5ce33fb732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void icache_invalidate</definition>
+        <argsstring>(void)</argsstring>
+        <name>icache_invalidate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Invalidate the entire instruction cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="123" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="123" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga9be89cc489a04fe4c45c84d6bc9e92e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void icache_invalidate_line</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>icache_invalidate_line</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Invalidate specific cache line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="137" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="137" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga4db14300fbe84e72f2dff8f5746c8f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t icache_lock_line</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>icache_lock_line</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Lock specific cache line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; instruction cache operation succeeded </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="152" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="152" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga5ecd2496ace0f6f053d8166dd199b078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void icache_access_mode</definition>
+        <argsstring>(uint32_t mode)</argsstring>
+        <name>icache_access_mode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set icache access mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>access mode, 1: indirect access 0:direct access </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; indirect access mode</para><para>&lt; indirect access mode </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="167" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="167" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>data cache related inline functions</header>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga33e49b74bc6d63ea4c7c9675e0cc3ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dcache_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>dcache_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check whether data cache is available, 0 for not available, &gt;0 for available. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="187" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga6d0dd9250492278511535b265c3c8d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_invalidate</definition>
+        <argsstring>(void)</argsstring>
+        <name>dcache_invalidate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Invalidate the entire data cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; flush status </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="196" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="196" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga6496f7c13308fd783aa71a55dc606116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_invalidate_line</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>dcache_invalidate_line</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Invalidate the specific cache line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="214" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="214" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga776803ac7c72e6e799d27ca7e7092822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_enable</definition>
+        <argsstring>(uint32_t dcache_en_mask)</argsstring>
+        <name>dcache_enable</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>dcache_en_mask</declname>
+        </param>
+        <briefdescription>
+<para>Enable data cache. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dcache_en_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation mask </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="227" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1gaa52b3839dbcb6a29e95dbe3e5c6b94b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>dcache_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable data cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; disable data cache </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="236" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1gaad2dd04d2506953bbd0af3ecc8aa52bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_flush</definition>
+        <argsstring>(void)</argsstring>
+        <name>dcache_flush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Flush data cache. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; flush status </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="245" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="245" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga7bddc47357297db8e6bf3b29cb77d471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_flush_line</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>dcache_flush_line</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Flush the specific data cache line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; flush status </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="263" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="263" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1gae8bb6ef8f92a4a92c31bb2686de82c72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dcache_lock_line</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>dcache_lock_line</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Lock the specific data cache line. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; data cache operation succeeded </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="281" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="281" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga305bb2e6267926afa83c23a05f07613d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dcache_access_mode</definition>
+        <argsstring>(uint32_t mode)</argsstring>
+        <name>dcache_access_mode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set dcache access mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Access mode, 1: indirect access 0:direct access </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; indirect access mode</para><para>&lt; indirect access mode </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="296" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" bodystart="296" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>declarations of cache related functions</header>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga6f0c3d1cb5e164571bf826622a20c65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t icache_invalidate_mlines</definition>
+        <argsstring>(uint32_t start_addr, uint32_t size)</argsstring>
+        <name>icache_invalidate_mlines</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>start_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Invalidate instruction cache lines. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start address in instruction cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be invalidated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="311" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="57" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga48f9fb90008431f06fcb385d9f67fc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t icache_lock_mlines</definition>
+        <argsstring>(uint32_t start_addr, uint32_t size)</argsstring>
+        <name>icache_lock_mlines</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>start_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Lock instruction cache lines. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start address in instruction cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be locked </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed (cache already locked or other reasons) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="312" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="91" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga3efe68d04d6fd03795066a79f032059f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t icache_direct_write</definition>
+        <argsstring>(uint32_t cache_addr, uint32_t tag, uint32_t data)</argsstring>
+        <name>icache_direct_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>cache_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga6444cdd20acd74647d4959dea9a2dd36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t icache_direct_read</definition>
+        <argsstring>(uint32_t cache_addr, uint32_t *tag, uint32_t *data)</argsstring>
+        <name>icache_direct_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>cache_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga438d802e1198870ae27d3ff22512ef20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t icache_indirect_read</definition>
+        <argsstring>(uint32_t mem_addr, uint32_t *tag, uint32_t *data)</argsstring>
+        <name>icache_indirect_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mem_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga59d602ce2dc5882749c4efb11d4afd45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dcache_invalidate_mlines</definition>
+        <argsstring>(uint32_t start_addr, uint32_t size)</argsstring>
+        <name>dcache_invalidate_mlines</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>start_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Invalidate data cache lines. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start address in data cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be invalidated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="316" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="193" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga22809d879f9791c65001e86ff559434c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dcache_flush_mlines</definition>
+        <argsstring>(uint32_t start_addr, uint32_t size)</argsstring>
+        <name>dcache_flush_mlines</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>start_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Flush data cache lines to memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be flushed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="317" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="232" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga04d4e5c837e79cc0eaffe1e462b744bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dcache_lock_mlines</definition>
+        <argsstring>(uint32_t start_addr, uint32_t size)</argsstring>
+        <name>dcache_lock_mlines</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>start_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Lock data cache lines. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start address in data cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to be locked </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="318" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="270" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1gabfdca8296f41bd31cc9e5643a8d24e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dcache_direct_write</definition>
+        <argsstring>(uint32_t cache_addr, uint32_t tag, uint32_t data)</argsstring>
+        <name>dcache_direct_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>cache_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Directly write dcache internal ram. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dcache internal address(way+index+offset) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cache tag to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cache data to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="319" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="309" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga10472449765a96cb2eeab9fb89f188da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dcache_direct_read</definition>
+        <argsstring>(uint32_t cache_addr, uint32_t *tag, uint32_t *data)</argsstring>
+        <name>dcache_direct_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>cache_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Directly read dcache internal ram. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dcache internal address(way+index+offset) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cache tag to read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cache data to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="320" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="330" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga9c6a7e168e8daf46938f6c8a63318e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dcache_indirect_read</definition>
+        <argsstring>(uint32_t mem_addr, uint32_t *tag, uint32_t *data)</argsstring>
+        <name>dcache_indirect_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mem_addr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Indirectly read dcache internal ram. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mem_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory address(tag+index+offset) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cache tag to read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cache data to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, succeeded, -1, failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="321" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="351" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__CACHE_1ga6bda12adc92ba421f24f6e836051db9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_cache_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>arc_cache_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize cache. </para>        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>invalidate icache and dcache</para></listitem><listitem><para>Only support ARCv2 cache </para></listitem></orderedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_cache.h" line="322" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_cache.c" bodystart="373" bodyend="403"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cache related definitions and functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

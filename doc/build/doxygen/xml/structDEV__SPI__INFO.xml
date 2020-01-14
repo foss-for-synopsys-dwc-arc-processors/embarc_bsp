@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__SPI__INFO" kind="struct" prot="public">
+    <compoundname>DEV_SPI_INFO</compoundname>
+    <includes refid="dev__spi_8h" local="no">dev_spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__SPI__INFO_aa780af93d6f30bc192edfd570ffa55d5_1aa780af93d6f30bc192edfd570ffa55d5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_SPI_INFO::spi_ctrl</definition>
+        <argsstring></argsstring>
+        <name>spi_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi control related </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="503" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a27261359b0690d1f09ae3d106d7b5567_1a27261359b0690d1f09ae3d106d7b5567" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_SPI_INFO::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current working status, refer to <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS" kindref="compound">Common Device Status</ref>, this should be <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gaad1f383b0e8eb7feec60f52998730eff_1gaad1f383b0e8eb7feec60f52998730eff" kindref="member">DEV_ENABLED</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="504" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a2f3f90d784b47772a64f0398c57060dd_1a2f3f90d784b47772a64f0398c57060dd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_SPI_INFO::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi working baudrate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="505" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a640cc063db3bbbf156230334c27ab183_1a640cc063db3bbbf156230334c27ab183" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DEV_SPI_INFO::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi working mode (master/slave) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="506" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a92224b6c87b3b5157dcd364a913f4203_1a92224b6c87b3b5157dcd364a913f4203" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DEV_SPI_INFO::clk_mode</definition>
+        <argsstring></argsstring>
+        <name>clk_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi clock phase and polarity, this should be <ref refid="group__DEVICE__HAL__SPI__CLK__MODE_ga735bc163d8ddbefc74aa940df4826cb0_1ga735bc163d8ddbefc74aa940df4826cb0" kindref="member">SPI_CLK_MODE_DEFAULT</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="507" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a3f0f622e26f4dd34691f258af663f804_1a3f0f622e26f4dd34691f258af663f804" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DEV_SPI_INFO::opn_cnt</definition>
+        <argsstring></argsstring>
+        <name>opn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi open count, open it will increase 1, close it will decrease 1, 0 for close, &gt;0 for open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="508" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_aace81a52b422dbe8c8beb73f423b9340_1aace81a52b422dbe8c8beb73f423b9340" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DEV_SPI_INFO::slave</definition>
+        <argsstring></argsstring>
+        <name>slave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current selected slave device no, start from 0, this should be <ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga586076350631be95b49d18994622b0eb_1ga586076350631be95b49d18994622b0eb" kindref="member">SPI_SLAVE_NOT_SELECTED</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="509" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a869450fef5307c9379f534cfa8edf551_1a869450fef5307c9379f534cfa8edf551" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DEV_SPI_INFO::dfs</definition>
+        <argsstring></argsstring>
+        <name>dfs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data frame size, this should be <ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gaa32c7741fd1467614b5908e38af740a3_1gaa32c7741fd1467614b5908e38af740a3" kindref="member">SPI_DFS_DEFAULT</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="510" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_ac26ce88652fdfb2b7824d228bf13e03d_1ac26ce88652fdfb2b7824d228bf13e03d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga296ca50563d3df910743a6c1001946c6_1ga296ca50563d3df910743a6c1001946c6" kindref="member">DEV_SPI_TRANSFER</ref></type>
+        <definition>DEV_SPI_TRANSFER DEV_SPI_INFO::xfer</definition>
+        <argsstring></argsstring>
+        <name>xfer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi transfer, this should be set to all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="512" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_af41e55411e312a9a4198d748c5451c19_1af41e55411e312a9a4198d748c5451c19" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__SPI__CBS" kindref="compound">DEV_SPI_CBS</ref></type>
+        <definition>DEV_SPI_CBS DEV_SPI_INFO::spi_cbs</definition>
+        <argsstring></argsstring>
+        <name>spi_cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi callbacks, for both master and slave mode, this should be all NULL for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="513" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_ae9189d4d35574638b143da21d1165c3e_1ae9189d4d35574638b143da21d1165c3e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_SPI_INFO::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a extra pointer to get hook to applications which should not used by bsp developer, this should be NULL for first open and you can <ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga354000dde22f74e03fe31398427d3f89_1ga354000dde22f74e03fe31398427d3f89" kindref="member">set</ref> or <ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gae4b36ea0d96870590ff54beff78dfd37_1gae4b36ea0d96870590ff54beff78dfd37" kindref="member">get</ref> the extra information pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="514" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__INFO_a59a35ff6d44004d8cf2080bfd0c4800d_1a59a35ff6d44004d8cf2080bfd0c4800d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_SPI_INFO::dummy</definition>
+        <argsstring></argsstring>
+        <name>dummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dummy write data when send and receive, this should be <ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_gae7d05f1d5a9b9c1342951d816b3f8a2f_1gae7d05f1d5a9b9c1342951d816b3f8a2f" kindref="member">SPI_DUMMY_DEFAULT</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="517" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for spi information. </para>    </briefdescription>
+    <detaileddescription>
+<para>Informations about spi open state, working state, frequency, spi registers, working method, interrupt number </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="84">
+        <label>dev_spi_transfer</label>
+        <link refid="structdev__spi__transfer"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>DEV_SPI_CBS</label>
+        <link refid="structDEV__SPI__CBS"/>
+      </node>
+      <node id="82">
+        <label>DEV_SPI_INFO</label>
+        <link refid="structDEV__SPI__INFO"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>spi_cbs</edgelabel>
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>xfer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="502" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="502" bodyend="518"/>
+    <listofallmembers>
+      <member refid="structDEV__SPI__INFO_a92224b6c87b3b5157dcd364a913f4203_1a92224b6c87b3b5157dcd364a913f4203" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>clk_mode</name></member>
+      <member refid="structDEV__SPI__INFO_a869450fef5307c9379f534cfa8edf551_1a869450fef5307c9379f534cfa8edf551" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>dfs</name></member>
+      <member refid="structDEV__SPI__INFO_a59a35ff6d44004d8cf2080bfd0c4800d_1a59a35ff6d44004d8cf2080bfd0c4800d" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>dummy</name></member>
+      <member refid="structDEV__SPI__INFO_ae9189d4d35574638b143da21d1165c3e_1ae9189d4d35574638b143da21d1165c3e" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>extra</name></member>
+      <member refid="structDEV__SPI__INFO_a2f3f90d784b47772a64f0398c57060dd_1a2f3f90d784b47772a64f0398c57060dd" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>freq</name></member>
+      <member refid="structDEV__SPI__INFO_a640cc063db3bbbf156230334c27ab183_1a640cc063db3bbbf156230334c27ab183" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>mode</name></member>
+      <member refid="structDEV__SPI__INFO_a3f0f622e26f4dd34691f258af663f804_1a3f0f622e26f4dd34691f258af663f804" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>opn_cnt</name></member>
+      <member refid="structDEV__SPI__INFO_aace81a52b422dbe8c8beb73f423b9340_1aace81a52b422dbe8c8beb73f423b9340" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>slave</name></member>
+      <member refid="structDEV__SPI__INFO_af41e55411e312a9a4198d748c5451c19_1af41e55411e312a9a4198d748c5451c19" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>spi_cbs</name></member>
+      <member refid="structDEV__SPI__INFO_aa780af93d6f30bc192edfd570ffa55d5_1aa780af93d6f30bc192edfd570ffa55d5" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>spi_ctrl</name></member>
+      <member refid="structDEV__SPI__INFO_a27261359b0690d1f09ae3d106d7b5567_1a27261359b0690d1f09ae3d106d7b5567" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>status</name></member>
+      <member refid="structDEV__SPI__INFO_ac26ce88652fdfb2b7824d228bf13e03d_1ac26ce88652fdfb2b7824d228bf13e03d" prot="public" virt="non-virtual"><scope>DEV_SPI_INFO</scope><name>xfer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

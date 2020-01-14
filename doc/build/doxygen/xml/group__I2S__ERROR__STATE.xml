@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__I2S__ERROR__STATE" kind="group">
+    <compoundname>I2S_ERROR_STATE</compoundname>
+    <title>I2S Error State</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__I2S__ERROR__STATE_1gac5b9b0607135f46c6709fdfde4f29bd4" prot="public" static="no">
+        <name>I2S_ERROR_STATE</name>
+        <enumvalue id="group__I2S__ERROR__STATE_gac5b9b0607135f46c6709fdfde4f29bd4_1ggac5b9b0607135f46c6709fdfde4f29bd4a7010438f2a7e36117a2f7323e765977e" prot="public">
+          <name>I2S_ERR_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in I2S device free state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__ERROR__STATE_gac5b9b0607135f46c6709fdfde4f29bd4_1ggac5b9b0607135f46c6709fdfde4f29bd4aebe2a8cddc88f3dab2460cdc499cd63d" prot="public">
+          <name>I2S_ERR_RX_OVERRUN</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RX FIFO data overrun </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__ERROR__STATE_gac5b9b0607135f46c6709fdfde4f29bd4_1ggac5b9b0607135f46c6709fdfde4f29bd4a6d88b95926195041f6b6b77ccefbc4d9" prot="public">
+          <name>I2S_ERR_TX_OVERRUN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TX FIFO data overrun </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__ERROR__STATE_gac5b9b0607135f46c6709fdfde4f29bd4_1ggac5b9b0607135f46c6709fdfde4f29bd4a6a6c9d8fdf131e3548560071577bcd87" prot="public">
+          <name>I2S_ERR_UNDEF</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undefined error cases </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="124" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for I2S error state. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Peripheral Preparation &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Makefile Manual" href="makefile_manual.html" />
+    <link rel="prev" title="Hardware Requirement" href="hardware_requirement.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#checking-out-the-embarc-bsp-source-code">Checking Out the embARC BSP source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#setting-up-the-development-environment">Setting Up the Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#building-a-sample-application">Building a Sample Application</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="getting_started.html#hardware-preparation">Hardware Preparation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="hardware_requirement.html">Hardware Requirement</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Peripheral Preparation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mux-controller-setting">MUX Controller Setting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#running-a-sample-application">Running a Sample Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#advanced-topics">Advanced Topics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
+        
+      <li>Peripheral Preparation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="peripheral-preparation">
+<span id="id1"></span><h1>Peripheral Preparation<a class="headerlink" href="#peripheral-preparation" title="Permalink to this headline">¶</a></h1>
+<p>This is a quick manual helping you to connect your peripheral modules with your embARC boards.</p>
+<div class="section" id="mux-controller-setting">
+<h2>MUX Controller Setting<a class="headerlink" href="#mux-controller-setting" title="Permalink to this headline">¶</a></h2>
+<p>On most of embARC boards, pins are multiplexed for various usages: uart, i2c, spi, etc. One pin can not be accessed by different usage simultaneously, that’s where MUX controller comes in.
+We will take PMOD interface as an example to explain the setting method. Other interfaces (Andruino, MikroBUS, etc.) can take PMOD as a reference, and use the same method for the setting.</p>
+<p>1. You need to find mux controller code at <code class="docutils literal notranslate"><span class="pre">embarc_bsp/board/[board_type]/drivers/mux</span></code>.
+[board_type] should be replaced to board type name, such as <em>emsk</em>, <em>hsdk</em> or <em>iotdk</em>.</p>
+<p>2. If you are using EMSK, go to <code class="docutils literal notranslate"><span class="pre">mux.c</span></code> and find <code class="docutils literal notranslate"><span class="pre">io_mux_init()</span></code> function, you will see it calls <code class="docutils literal notranslate"><span class="pre">set_pmod_mux()</span></code> with MUX options as parameters.
+MUX options are defined in mux.h and you can change them as you see fit.</p>
+<p>For example, you want to connect your EMSK with two i2c sensor modules. By default setting, you only have PM2 as i2c interface.
+So now you have to check mux.h or EMSK manual to see if it supports one more i2c interface.
+Notice that there is a <code class="docutils literal notranslate"><span class="pre">PM3_I2C_GPIO_D</span></code> macro in <code class="docutils literal notranslate"><span class="pre">mux.h</span></code> meaning that PM3 supports i2c interface. Now all you need to do is to replace the default PM3 setting in <code class="docutils literal notranslate"><span class="pre">set_pmod_mux()</span></code> to <code class="docutils literal notranslate"><span class="pre">PM3_I2C_GPIO_D</span></code>.
+Now your code should be like this:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">set_pmod_mux</span><span class="p">(</span><span class="n">PM1_UR_UART_0</span> <span class="o">|</span> <span class="n">PM1_LR_SPI_S</span>       \
+                        <span class="o">|</span> <span class="n">PM2_I2C_HRI</span>           \
+                        <span class="o">|</span> <span class="n">PM3_I2C_GPIO_D</span>        \
+                        <span class="o">|</span> <span class="n">PM4_I2C_GPIO_D</span>        \
+                        <span class="o">|</span> <span class="n">PM5_UR_SPI_M1</span> <span class="o">|</span> <span class="n">PM5_LR_GPIO_A</span> \
+                        <span class="o">|</span> <span class="n">PM6_UR_SPI_M0</span> <span class="o">|</span> <span class="n">PM6_LR_GPIO_A</span> <span class="p">);</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice that <code class="docutils literal notranslate"><span class="pre">UR</span></code> means Upper Layer of Pmod interface and <code class="docutils literal notranslate"><span class="pre">LR</span></code> means Lower Layer of Pmod</p>
+</div>
+<p>3. If you are using HSDK, go to <code class="docutils literal notranslate"><span class="pre">mux.c</span></code> and find <code class="docutils literal notranslate"><span class="pre">io_mux_init()</span></code> function, you will find it calls <code class="docutils literal notranslate"><span class="pre">creg_hsdc_set_gpio_mux()</span></code> with parameter array <code class="docutils literal notranslate"><span class="pre">gpio_mux_config</span></code> as MUX options.
+By default all pins are set to GPIO, other MUX options are defined in <code class="docutils literal notranslate"><span class="pre">PINMUX_TYPE</span></code> in <code class="docutils literal notranslate"><span class="pre">embarc_bsp/device/inc/dev_pinmux.h</span></code></p>
+<p>4. If you are using IoTDK, go to <code class="docutils literal notranslate"><span class="pre">mux.c</span></code> and find <code class="docutils literal notranslate"><span class="pre">int32_t</span>&#160; <span class="pre">io_pmod_config(uint32_t</span> <span class="pre">pmod,</span> <span class="pre">uint32_t</span> <span class="pre">type,</span> <span class="pre">uint32_t</span> <span class="pre">config)</span></code> function.
+All three parameters should use definitions in <code class="docutils literal notranslate"><span class="pre">embarc_bsp/device/inc/dev_pinmux.h</span></code>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The first parameter can be chosen from <code class="docutils literal notranslate"><span class="pre">PMOD_PORT</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">PMOD_A</span></code>, <code class="docutils literal notranslate"><span class="pre">PMOD_B</span></code>, <code class="docutils literal notranslate"><span class="pre">PMOD_C</span></code>), other inputs will be ignored.</p></li>
+<li><p>The second parameter should be in <code class="docutils literal notranslate"><span class="pre">PMOD_TYPE</span></code>, unsupported options will have no effect.</p></li>
+<li><p>The third parameter should be <code class="docutils literal notranslate"><span class="pre">IO_PINMUX_ENABLE</span></code> or <code class="docutils literal notranslate"><span class="pre">IO_PINMUX_DISABLE</span></code>, enabling or disabling the mux controller respectively.</p></li>
+</ul>
+</div></blockquote>
+<p>5. If you are using EMSDP, go to <code class="docutils literal notranslate"><span class="pre">mux.c</span></code> and find <code class="docutils literal notranslate"><span class="pre">io_mux_init()</span></code> function, you will find it calls <code class="docutils literal notranslate"><span class="pre">set_pmod_mux()</span></code> with MUX options as parameters.
+MUX options are defined in mux.h and you can change them as you see fit.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In EMSDP, notice that <code class="docutils literal notranslate"><span class="pre">CFG0</span></code> means Upper Layer of Pmod interface and <code class="docutils literal notranslate"><span class="pre">CFG1</span></code> means Lower Layer of Pmod</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To learn what interface your board has, please go to <a class="reference internal" href="../board/board.html#board-bsp"><span class="std std-ref">Boards</span></a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

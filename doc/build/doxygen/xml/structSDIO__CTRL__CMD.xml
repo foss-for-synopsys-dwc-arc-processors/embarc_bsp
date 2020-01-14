@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structSDIO__CTRL__CMD" kind="struct" prot="public">
+    <compoundname>SDIO_CTRL_CMD</compoundname>
+    <includes refid="dev__sdio_8h" local="no">dev_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSDIO__CTRL__CMD_a3237281ae39dd9f03fdbf9ce39f09f9d_1a3237281ae39dd9f03fdbf9ce39f09f9d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SDIO_CTRL_CMD::card</definition>
+        <argsstring></argsstring>
+        <name>card</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSDIO__CTRL__CMD_a141521d7da99a9731e522fbf8d30c631_1a141521d7da99a9731e522fbf8d30c631" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SDIO_CTRL_CMD::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="89" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="87" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structSDIO__CTRL__CMD_a3237281ae39dd9f03fdbf9ce39f09f9d_1a3237281ae39dd9f03fdbf9ce39f09f9d" prot="public" virt="non-virtual"><scope>SDIO_CTRL_CMD</scope><name>card</name></member>
+      <member refid="structSDIO__CTRL__CMD_a141521d7da99a9731e522fbf8d30c631_1a141521d7da99a9731e522fbf8d30c631" prot="public" virt="non-virtual"><scope>SDIO_CTRL_CMD</scope><name>cmd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

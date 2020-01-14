@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__IIC__CFG" kind="group">
+    <compoundname>DEVICE_HAL_IIC_CFG</compoundname>
+    <title>IIC Related Configurations</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__DEVICE__HAL__IIC__CFG_1gae5c62fde306db5a15e4f5b0afad4c6b9" prot="public" static="no">
+        <name>IIC_SPEED_MODE</name>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae5c62fde306db5a15e4f5b0afad4c6b9_1ggae5c62fde306db5a15e4f5b0afad4c6b9ab314670a486e8922eea476940ccab620" prot="public">
+          <name>IIC_SPEED_STANDARD</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bidirectional, Standard-mode (Sm), with a bit rate up to 100 kbit/s </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae5c62fde306db5a15e4f5b0afad4c6b9_1ggae5c62fde306db5a15e4f5b0afad4c6b9af900faba85f887b80ebc0eb129f3e831" prot="public">
+          <name>IIC_SPEED_FAST</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bidirectional, Fast-mode (Fm), with a bit rate up to 400 kbit/s </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae5c62fde306db5a15e4f5b0afad4c6b9_1ggae5c62fde306db5a15e4f5b0afad4c6b9aaed4daa677effb47adcc969b59555b42" prot="public">
+          <name>IIC_SPEED_FASTPLUS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bidirectional, Fast-mode Plus (Fm+), with a bit rate up to 1 Mbit/s </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae5c62fde306db5a15e4f5b0afad4c6b9_1ggae5c62fde306db5a15e4f5b0afad4c6b9a542f95b266ff48fa4763261d677e076b" prot="public">
+          <name>IIC_SPEED_HIGH</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bidirectional, High-speed mode (Hs-mode), with a bit rate up to 3.4 Mbit/s </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae5c62fde306db5a15e4f5b0afad4c6b9_1ggae5c62fde306db5a15e4f5b0afad4c6b9a12c26a3ffab1692a311a1416cb2de82c" prot="public">
+          <name>IIC_SPEED_ULTRA</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unidirectional(Write only), Ultra Fast-mode (UFm), with a bit rate up to 5 Mbit/s </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Bus possible speed modes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="62" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__IIC__CFG_1ga96503315f5aac1c2564adc51f76ef7c1" prot="public" static="no">
+        <name>iic_next_condtion</name>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga96503315f5aac1c2564adc51f76ef7c1_1gga96503315f5aac1c2564adc51f76ef7c1a2466a7db8f39e362701cead7d24f7284" prot="public">
+          <name>IIC_MODE_STOP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Send a STOP condition after write/read operation </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga96503315f5aac1c2564adc51f76ef7c1_1gga96503315f5aac1c2564adc51f76ef7c1a5bc13058e1acad35ef7340dba862af2d" prot="public">
+          <name>IIC_MODE_RESTART</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Send a RESTART condition after write/read operation </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC next Condition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__IIC__CFG_1ga4aee94b5522b7e2dfac949053f56fb75" prot="public" static="no">
+        <name>IIC_ERROR_STATE</name>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75ac9c901374108da2d82f421e89d229101" prot="public">
+          <name>IIC_ERR_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in iic device free state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75af4a290e81b5107acfd34b4a824841b13" prot="public">
+          <name>IIC_ERR_LOST_BUS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Master or slave lost bus during operation </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75aa35dc73b91888e8c40c8711b7259533a" prot="public">
+          <name>IIC_ERR_ADDR_NOACK</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Slave address is sent but not addressed by any slave devices </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75a9d7fb4a1cfa61f188d0bcab51755a4b1" prot="public">
+          <name>IIC_ERR_DATA_NOACK</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data in transfer is not acked when it should be acked </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75a5227369192513be21f71ac5598daeb12" prot="public">
+          <name>IIC_ERR_TIMEOUT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transfer timeout, no more data is received or sent </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75ab5b06e75f9c2d1d49e8cbfd72c7f41d4" prot="public">
+          <name>IIC_ERR_MSTSTOP</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Slave received a STOP condition from master device </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75a789e11e0bcdd0031266bb92453804979" prot="public">
+          <name>IIC_ERR_UNDEF</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Undefined error cases </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Error State </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__IIC__CFG_1gaa45fd2c850f36eb7ca7d3f2678637f13" prot="public" static="no">
+        <name>IIC_WORKING_STATE</name>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gaa45fd2c850f36eb7ca7d3f2678637f13_1ggaa45fd2c850f36eb7ca7d3f2678637f13a2c7ca026a008fb42a7bc2ac8a744ff28" prot="public">
+          <name>IIC_FREE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in iic device free state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gaa45fd2c850f36eb7ca7d3f2678637f13_1ggaa45fd2c850f36eb7ca7d3f2678637f13acda00d47d3e541868c3586d22749cfd1" prot="public">
+          <name>IIC_IN_TX</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in iic master transmit state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gaa45fd2c850f36eb7ca7d3f2678637f13_1ggaa45fd2c850f36eb7ca7d3f2678637f13a120b89806ecf6a92aa30f0b438338c4a" prot="public">
+          <name>IIC_IN_RX</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in iic master receive state </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Working State </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__IIC__CFG_1ga96fb8fc07afe6021bc4101b61628161d" prot="public" static="no">
+        <name>IIC_ADDRESS_MODE</name>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga96fb8fc07afe6021bc4101b61628161d_1gga96fb8fc07afe6021bc4101b61628161da0d2d3865e7df7b55f8b71a8b29e688ac" prot="public">
+          <name>IIC_7BIT_ADDRESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use 7bit address mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_ga96fb8fc07afe6021bc4101b61628161d_1gga96fb8fc07afe6021bc4101b61628161dabb8cb7b016c72f0700ea7c917bb91fe3" prot="public">
+          <name>IIC_10BIT_ADDRESS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use 10bit address mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Addressing Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="95" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__IIC__CFG_1gae47844661ffe29d289251c9a0ec09d4b" prot="public" static="no">
+        <name>IIC_SLAVE_STATE</name>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4ba81bb22b04eef73c65d9f46d256681f39" prot="public">
+          <name>IIC_SLAVE_STATE_FREE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None state, in free </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4ba7ce859086cfdd8d67f4cd41221fcad70" prot="public">
+          <name>IIC_SLAVE_STATE_START</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start or Restart condition, clear it when read </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4baaaa2eaf965bcafe1571310118e4eef8e" prot="public">
+          <name>IIC_SLAVE_STATE_STOP</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Stop condition, clear it when read </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4ba00bff475f8509bb6b9d2ec2570dae563" prot="public">
+          <name>IIC_SLAVE_STATE_RD_REQ</name>
+          <initializer>= (1 &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Read request from master, this will trigger the slave transmit callback </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4ba1a5e7fbb26c1d71bbca0e3b5495e3128" prot="public">
+          <name>IIC_SLAVE_STATE_RD_DONE</name>
+          <initializer>= (1 &lt;&lt; 4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Read request done from master, clear it when read </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4ba1eff55dbe068cc21fbefcda0f9de4c43" prot="public">
+          <name>IIC_SLAVE_STATE_WR_REQ</name>
+          <initializer>= (1 &lt;&lt; 5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Write request from master, this will trigger the slave receive callback </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4badcdc75cf064d194732ca1f7d8c782b40" prot="public">
+          <name>IIC_SLAVE_STATE_GC_REQ</name>
+          <initializer>= (1 &lt;&lt; 6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>General call request from master </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__IIC__CFG_gae47844661ffe29d289251c9a0ec09d4b_1ggae47844661ffe29d289251c9a0ec09d4ba851d8511d921bc1f196d8a67d029c702" prot="public">
+          <name>IIC_SLAVE_STATE_ERROR</name>
+          <initializer>= (1 &lt;&lt; 7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Error, clear it when read </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Slave State </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="101" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__IIC__CFG_1gab39710098165ba749fcec91c79774368" prot="public" static="no">
+        <type>enum <ref refid="group__DEVICE__HAL__IIC__CFG_ga96503315f5aac1c2564adc51f76ef7c1_1ga96503315f5aac1c2564adc51f76ef7c1" kindref="member">iic_next_condtion</ref></type>
+        <definition>typedef enum iic_next_condtion  IIC_NEXT_CONDTION</definition>
+        <argsstring></argsstring>
+        <name>IIC_NEXT_CONDTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC next Condition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__DEVICE__HAL__IIC__CFG_1ga2ac0c6c6c231574f9548fd997cd51bac" prot="public" static="no">
+        <name>IIC_7BIT_ADDRESS_MASK</name>
+        <initializer>(0x7F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>7bit IIC address mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="113" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__IIC__CFG_1ga10509d398d5845ac8a23d81bd3df6500" prot="public" static="no">
+        <name>IIC_10BIT_ADDRESS_MASK</name>
+        <initializer>(0x3FF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>10bit IIC address mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="115" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Macros definitions for for IIC device During IIC device during implementation, it is recommended that when user set iic speed to a speed maybe not supported in your iic device, device driver will set to a supported slower speed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__TRNG__CTRL" kind="struct" prot="public">
+    <compoundname>DW_TRNG_CTRL</compoundname>
+    <includes refid="dw__trng_8h" local="no">dw_trng.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__TRNG__CTRL_af3162d2b770f43299f66b952a1932a7f_1af3162d2b770f43299f66b952a1932a7f" prot="public" static="no" mutable="no">
+        <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+        <definition>DW_TRNG_REG_PTR DW_TRNG_CTRL::dw_trng_regs</definition>
+        <argsstring></argsstring>
+        <name>dw_trng_regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw trng register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__CTRL_ad410879a0745796185b959df2e56a599_1ad410879a0745796185b959df2e56a599" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_CTRL::intno</definition>
+        <argsstring></argsstring>
+        <name>intno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt vector number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="73" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__CTRL_afeea3491205d027f5fb5e331fcfaf0ef_1afeea3491205d027f5fb5e331fcfaf0ef" prot="public" static="no" mutable="no">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T DW_TRNG_CTRL::dw_trng_int_handler</definition>
+        <argsstring></argsstring>
+        <name>dw_trng_int_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="74" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__CTRL_acc266299b122f73a084258762ae455c9_1acc266299b122f73a084258762ae455c9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_CTRL::int_status</definition>
+        <argsstring></argsstring>
+        <name>int_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="75" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="195">
+        <label>DW_TRNG_REG</label>
+        <link refid="structDW__TRNG__REG"/>
+      </node>
+      <node id="194">
+        <label>DW_TRNG_CTRL</label>
+        <link refid="structDW__TRNG__CTRL"/>
+        <childnode refid="195" relation="usage">
+          <edgelabel>dw_trng_regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="71" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structDW__TRNG__CTRL_afeea3491205d027f5fb5e331fcfaf0ef_1afeea3491205d027f5fb5e331fcfaf0ef" prot="public" virt="non-virtual"><scope>DW_TRNG_CTRL</scope><name>dw_trng_int_handler</name></member>
+      <member refid="structDW__TRNG__CTRL_af3162d2b770f43299f66b952a1932a7f_1af3162d2b770f43299f66b952a1932a7f" prot="public" virt="non-virtual"><scope>DW_TRNG_CTRL</scope><name>dw_trng_regs</name></member>
+      <member refid="structDW__TRNG__CTRL_acc266299b122f73a084258762ae455c9_1acc266299b122f73a084258762ae455c9" prot="public" virt="non-virtual"><scope>DW_TRNG_CTRL</scope><name>int_status</name></member>
+      <member refid="structDW__TRNG__CTRL_ad410879a0745796185b959df2e56a599_1ad410879a0745796185b959df2e56a599" prot="public" virt="non-virtual"><scope>DW_TRNG_CTRL</scope><name>intno</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

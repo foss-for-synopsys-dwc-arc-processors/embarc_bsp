@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__GPIO__INT__CFG" kind="struct" prot="public">
+    <compoundname>DEV_GPIO_INT_CFG</compoundname>
+    <includes refid="dev__gpio_8h" local="no">dev_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__GPIO__INT__CFG_aa453e07dd83f231ad5861a0407deec9a_1aa453e07dd83f231ad5861a0407deec9a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INT_CFG::int_bit_mask</definition>
+        <argsstring></argsstring>
+        <name>int_bit_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt bit mask for gpio </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="342" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INT__CFG_ad06189567b15eeffab3afed8a18abcd8_1ad06189567b15eeffab3afed8a18abcd8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INT_CFG::int_bit_type</definition>
+        <argsstring></argsstring>
+        <name>int_bit_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga6af26c98e4ab38de1881a258ad890cb5_1ga6af26c98e4ab38de1881a258ad890cb5" kindref="member">level sensitive</ref> or <ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_gab62c3bce0ebe01b3fea627a032a56995_1gab62c3bce0ebe01b3fea627a032a56995" kindref="member">edge sensitive</ref> for each gpio bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="343" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INT__CFG_a6ccfc2c28842f273246cc842ead62e7c_1a6ccfc2c28842f273246cc842ead62e7c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INT_CFG::int_bit_polarity</definition>
+        <argsstring></argsstring>
+        <name>int_bit_polarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>active high or low, refer to <ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga58ce96f05f5aed30f6101586fdecb750_1ga58ce96f05f5aed30f6101586fdecb750" kindref="member">GPIO_INT_POLARITY</ref> for each gpio bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="344" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INT__CFG_a3ed9f2bc54e4e679bd57e438091d70f0_1a3ed9f2bc54e4e679bd57e438091d70f0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INT_CFG::int_bit_debounce</definition>
+        <argsstring></argsstring>
+        <name>int_bit_debounce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga2ca79acf34a8eb18f89f02f1edf8e8a6_1ga2ca79acf34a8eb18f89f02f1edf8e8a6" kindref="member">enable</ref> or <ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga593c2f076bdb6d88ca004fed48c7a12f_1ga593c2f076bdb6d88ca004fed48c7a12f" kindref="member">disable</ref> debounce logic for each gpio bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="345" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>GPIO interrupt configuration </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="341" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="341" bodyend="346"/>
+    <listofallmembers>
+      <member refid="structDEV__GPIO__INT__CFG_a3ed9f2bc54e4e679bd57e438091d70f0_1a3ed9f2bc54e4e679bd57e438091d70f0" prot="public" virt="non-virtual"><scope>DEV_GPIO_INT_CFG</scope><name>int_bit_debounce</name></member>
+      <member refid="structDEV__GPIO__INT__CFG_aa453e07dd83f231ad5861a0407deec9a_1aa453e07dd83f231ad5861a0407deec9a" prot="public" virt="non-virtual"><scope>DEV_GPIO_INT_CFG</scope><name>int_bit_mask</name></member>
+      <member refid="structDEV__GPIO__INT__CFG_a6ccfc2c28842f273246cc842ead62e7c_1a6ccfc2c28842f273246cc842ead62e7c" prot="public" virt="non-virtual"><scope>DEV_GPIO_INT_CFG</scope><name>int_bit_polarity</name></member>
+      <member refid="structDEV__GPIO__INT__CFG_ad06189567b15eeffab3afed8a18abcd8_1ad06189567b15eeffab3afed8a18abcd8" prot="public" virt="non-virtual"><scope>DEV_GPIO_INT_CFG</scope><name>int_bit_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

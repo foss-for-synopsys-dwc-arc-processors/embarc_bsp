@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT" kind="group">
+    <compoundname>DEVICE_HAL_PWM_TIMER_DEVSTRUCT</compoundname>
+    <title>PWM_TIMER Device Interface Definition</title>
+    <innerclass refid="structDEV__PWM__TIMER__INFO" prot="public">DEV_PWM_TIMER_INFO</innerclass>
+    <innerclass refid="structDEV__PWM__TIMER" prot="public">DEV_PWM_TIMER</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gaf1d551e4d3304688a25070fefcc5e7eb" prot="public" static="no">
+        <type>struct <ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO</ref> *</type>
+        <definition>typedef  struct DEV_PWM_TIMER_INFO * DEV_PWM_TIMER_INFO_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_PWM_TIMER_INFO_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gac1d25b2a23177d0a36d857bb6733489c" prot="public" static="no">
+        <type>struct <ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+        <definition>typedef  struct DEV_PWM_TIMER * DEV_PWM_TIMER_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_PWM_TIMER_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="153" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1ga8f523fcf30525a9f5e09c33a21240706" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_PWM_TIMER::pwm_timer_open</definition>
+        <argsstring>)(void)</argsstring>
+        <name>pwm_timer_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open pwm_timer device</para><para>Open pwm_timer device <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref> and return <ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="148" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gaeaeca5e6b75111aa5742f2b498434864" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_PWM_TIMER::pwm_timer_close</definition>
+        <argsstring>)(void)</argsstring>
+        <name>pwm_timer_close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close pwm_timer device</para><para>Close an pwm_timer device, just decrease the <ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref>, if <ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref> equals 0, then close the device <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including scenario that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="149" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gac3aa5e0a9cfef137dd0dfa82c1db68d1" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_PWM_TIMER::pwm_timer_control</definition>
+        <argsstring>)(uint32_t ch, uint32_t cmd, void *param2)</argsstring>
+        <name>pwm_timer_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control pwm_timer device</para><para>Control a pwm_timer device [channel number: ch] by ctrl_cmd, with passed param. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel number of pwm_timer to control, must &gt;= 0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command, to change or get some thing related to pwm_timer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters that maybe argument of the command, or return values of the command </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="150" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1ga690e5bbaf88d7661836130a9fb1b6d32" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_PWM_TIMER::pwm_timer_write</definition>
+        <argsstring>)(uint32_t ch, uint32_t mode, uint32_t freq, uint32_t dc)</argsstring>
+        <name>pwm_timer_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the configuration of pwm_timer</para><para>Set the configuration of pwm_timer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel number of pwm_timer to write, must &gt;= 0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the mode of pwm_timer, must not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the frequency of pwm_timer, must not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the duty cycle of pwm_timer, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="151" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1ga7d9edf4b50d2a264ae02ad4c292a6d09" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_PWM_TIMER::pwm_timer_read</definition>
+        <argsstring>)(uint32_t ch, uint32_t *mode, uint32_t *freq, uint32_t *dc)</argsstring>
+        <name>pwm_timer_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read the configuration of pwm_timer</para><para>Read the configuration of pwm_timer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel number of pwm_timer to read, must &gt;= 0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data mode of pwm_timer, must not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data frequency of pwm_timer, must not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data duty cycle of pwm_timer, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="152" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definition for pwm_timer device. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure will be used in user implemented code, which was called <ref refid="group__DEVICE__IMPL" kindref="compound">Device Driver Implement Layer</ref> for pwm_timer to use in implementation code. Application developer should use the PWM_TIMER API provided here to access to PWM_TIMER devices. BSP developer should follow the API definition to implement PWM_TIMER device drivers. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

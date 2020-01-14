@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__TRNG__DEVSTRUCT" kind="group">
+    <compoundname>DEVICE_HAL_TRNG_DEVSTRUCT</compoundname>
+    <title>TRNG Device Interface Definition</title>
+    <innerclass refid="structDEV__TRNG__INFO" prot="public">DEV_TRNG_INFO</innerclass>
+    <innerclass refid="structDEV__TRNG" prot="public">DEV_TRNG</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga392561f3579cf3d82c8dd53dd7a51e9c" prot="public" static="no">
+        <type>struct <ref refid="structDEV__TRNG__INFO" kindref="compound">DEV_TRNG_INFO</ref> *</type>
+        <definition>typedef  struct DEV_TRNG_INFO * DEV_TRNG_INFO_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_TRNG_INFO_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga188ae76b37c7f9638ec146f754c4ea26" prot="public" static="no">
+        <type>struct <ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG</ref> *</type>
+        <definition>typedef  struct DEV_TRNG * DEV_TRNG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_TRNG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="105" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1gab09960371ab78fc25db2c0c3271f2dfb" prot="public" static="no">
+        <name>DEV_TRNG_INFO_SET_EXTRA_OBJECT</name>
+        <param><defname>trng_info_ptr</defname></param>
+        <param><defname>extra_info</defname></param>
+        <initializer>(trng_info_ptr)-&gt;extra = (void *)(extra_info)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set extra information pointer of trng info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="94" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga3e1b027e9e19df14f940828cd2eacac3" prot="public" static="no">
+        <name>DEV_TRNG_INFO_GET_EXTRA_OBJECT</name>
+        <param><defname>trng_info_ptr</defname></param>
+        <initializer>((trng_info_ptr)-&gt;extra)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get extra information pointer of trng info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="96" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga4687d130c24c13120b8befa2090f4d46" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_TRNG::trng_open</definition>
+        <argsstring>)(void)</argsstring>
+        <name>trng_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open trng device</para><para>Open trng device <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" kindref="member">opn_cnt</ref> and return <ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga85bde14d494b0ab3d4c7476e3272308e" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_TRNG::trng_close</definition>
+        <argsstring>)(void)</argsstring>
+        <name>trng_close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close trng device</para><para>Close an trng device, just decrease the <ref refid="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" kindref="member">opn_cnt</ref>, if <ref refid="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" kindref="member">opn_cnt</ref> equals 0, then close the device <parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including scenario that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="102" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga7ef78873506eefecf1f661aabce6c343" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_TRNG::trng_control</definition>
+        <argsstring>)(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>trng_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control trng device</para><para>Control a trng device [channel number: ch] by ctrl_cmd, with passed param. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel number of trng to control, must &gt;= 0 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command, to change or get some thing related to trng </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters that maybe argument of the command, or return values of the command </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="103" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__HAL__TRNG__DEVSTRUCT_1ga23b539c6ace603487daf21124707b8ce" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t * DEV_TRNG::trng_read</definition>
+        <argsstring>)(uint32_t *data_buf)</argsstring>
+        <name>trng_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from trng device(blocked)</para><para>Read the configuration of trng. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">data_buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data buffer read from trng, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for trng device interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure will be used in user implemented code, which was called <ref refid="group__DEVICE__IMPL" kindref="compound">Device Driver Implement Layer</ref> for trng to use in implementation code. Application developer should use the TRNG API provided here to access to TRNG devices. BSP developer should follow the API definition to implement TRNG device drivers. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

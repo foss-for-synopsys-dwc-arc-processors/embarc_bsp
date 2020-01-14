@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_304bcd04872ae41564f2742e338d48d5" kind="dir">
+    <compoundname>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console</compoundname>
+    <innerdir refid="dir_eba89dcd8a0e022d40af793735313667">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf</innerdir>
+    <innerfile refid="console__io_8c">console_io.c</innerfile>
+    <innerfile refid="console__io_8h">console_io.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structARC__CONNECT__OP__T" kind="struct" prot="public">
+    <compoundname>ARC_CONNECT_OP_T</compoundname>
+    <includes refid="arc__connect_8h" local="no">arc_connect.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structARC__CONNECT__OP__T_a391d353629145714bd7230cd61441550_1a391d353629145714bd7230cd61441550" prot="public" static="no" mutable="no">
+        <type><ref refid="arc__connect_8h_a3fc526dd3800b1b1d5143ee781c01c1e_1a3fc526dd3800b1b1d5143ee781c01c1e" kindref="member">ARC_CONNECT_CMD_T</ref></type>
+        <definition>ARC_CONNECT_CMD_T ARC_CONNECT_OP_T::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" line="127" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structARC__CONNECT__OP__T_ab740e3da1269d0ca7c52c81cff2b85f3_1ab740e3da1269d0ca7c52c81cff2b85f3" prot="public" static="no" mutable="no">
+        <type><ref refid="arc__connect_8h_ac76484bfcb4de841f2d771c713ccfe30_1ac76484bfcb4de841f2d771c713ccfe30" kindref="member">ARC_CONNECT_CMD_TYPE_T</ref></type>
+        <definition>ARC_CONNECT_CMD_TYPE_T ARC_CONNECT_OP_T::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structARC__CONNECT__OP__T_a2337de33956855872132f19dc041c4df_1a2337de33956855872132f19dc041c4df" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ARC_CONNECT_OP_T::param</definition>
+        <argsstring></argsstring>
+        <name>param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" line="129" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structARC__CONNECT__OP__T_a37f9208af888888968b2968a8f7a2ea7_1a37f9208af888888968b2968a8f7a2ea7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ARC_CONNECT_OP_T::wdata</definition>
+        <argsstring></argsstring>
+        <name>wdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" line="130" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" line="126" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_connect.h" bodystart="126" bodyend="131"/>
+    <listofallmembers>
+      <member refid="structARC__CONNECT__OP__T_a391d353629145714bd7230cd61441550_1a391d353629145714bd7230cd61441550" prot="public" virt="non-virtual"><scope>ARC_CONNECT_OP_T</scope><name>cmd</name></member>
+      <member refid="structARC__CONNECT__OP__T_a2337de33956855872132f19dc041c4df_1a2337de33956855872132f19dc041c4df" prot="public" virt="non-virtual"><scope>ARC_CONNECT_OP_T</scope><name>param</name></member>
+      <member refid="structARC__CONNECT__OP__T_ab740e3da1269d0ca7c52c81cff2b85f3_1ab740e3da1269d0ca7c52c81cff2b85f3" prot="public" virt="non-virtual"><scope>ARC_CONNECT_OP_T</scope><name>type</name></member>
+      <member refid="structARC__CONNECT__OP__T_a37f9208af888888968b2968a8f7a2ea7_1a37f9208af888888968b2968a8f7a2ea7" prot="public" virt="non-virtual"><scope>ARC_CONNECT_OP_T</scope><name>wdata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

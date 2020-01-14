@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__TRNG__CBS" kind="struct" prot="public">
+    <compoundname>DEV_TRNG_CBS</compoundname>
+    <includes refid="dev__trng_8h" local="no">dev_trng.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__TRNG__CBS_a3b0ca0e7942841c54ccb070fd8fde489_1a3b0ca0e7942841c54ccb070fd8fde489" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_TRNG_CBS::in_cb</definition>
+        <argsstring></argsstring>
+        <name>in_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trng data transmit success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="60" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__CBS_af2e193591dbe13764202c4c949e2c41c_1af2e193591dbe13764202c4c949e2c41c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_TRNG_CBS::out_cb</definition>
+        <argsstring></argsstring>
+        <name>out_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trng data receive success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__CBS_a69e5a791272bfe94e1a4fa1eaf8a1612_1a69e5a791272bfe94e1a4fa1eaf8a1612" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_TRNG_CBS::err_cb</definition>
+        <argsstring></argsstring>
+        <name>err_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trng error callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="62" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="59" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="59" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structDEV__TRNG__CBS_a69e5a791272bfe94e1a4fa1eaf8a1612_1a69e5a791272bfe94e1a4fa1eaf8a1612" prot="public" virt="non-virtual"><scope>DEV_TRNG_CBS</scope><name>err_cb</name></member>
+      <member refid="structDEV__TRNG__CBS_a3b0ca0e7942841c54ccb070fd8fde489_1a3b0ca0e7942841c54ccb070fd8fde489" prot="public" virt="non-virtual"><scope>DEV_TRNG_CBS</scope><name>in_cb</name></member>
+      <member refid="structDEV__TRNG__CBS_af2e193591dbe13764202c4c949e2c41c_1af2e193591dbe13764202c4c949e2c41c" prot="public" virt="non-virtual"><scope>DEV_TRNG_CBS</scope><name>out_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

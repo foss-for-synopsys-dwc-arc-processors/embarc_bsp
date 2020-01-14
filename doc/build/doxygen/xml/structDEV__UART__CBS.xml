@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__UART__CBS" kind="struct" prot="public">
+    <compoundname>DEV_UART_CBS</compoundname>
+    <includes refid="dev__uart_8h" local="no">dev_uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__UART__CBS_a80ccaca0d2d3826ae8a91d2e8fb6be76_1a80ccaca0d2d3826ae8a91d2e8fb6be76" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_UART_CBS::tx_cb</definition>
+        <argsstring></argsstring>
+        <name>tx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart data transmit success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="323" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__CBS_ade466313b1b02d6e011e12604510ef9e_1ade466313b1b02d6e011e12604510ef9e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_UART_CBS::rx_cb</definition>
+        <argsstring></argsstring>
+        <name>rx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart data receive success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="324" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__CBS_a764ed682bf6106d462c95e7b14423d25_1a764ed682bf6106d462c95e7b14423d25" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_UART_CBS::err_cb</definition>
+        <argsstring></argsstring>
+        <name>err_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart error callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="325" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="322" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="322" bodyend="326"/>
+    <listofallmembers>
+      <member refid="structDEV__UART__CBS_a764ed682bf6106d462c95e7b14423d25_1a764ed682bf6106d462c95e7b14423d25" prot="public" virt="non-virtual"><scope>DEV_UART_CBS</scope><name>err_cb</name></member>
+      <member refid="structDEV__UART__CBS_ade466313b1b02d6e011e12604510ef9e_1ade466313b1b02d6e011e12604510ef9e" prot="public" virt="non-virtual"><scope>DEV_UART_CBS</scope><name>rx_cb</name></member>
+      <member refid="structDEV__UART__CBS_a80ccaca0d2d3826ae8a91d2e8fb6be76_1a80ccaca0d2d3826ae8a91d2e8fb6be76" prot="public" virt="non-virtual"><scope>DEV_UART_CBS</scope><name>tx_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

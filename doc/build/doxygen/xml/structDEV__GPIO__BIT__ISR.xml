@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__GPIO__BIT__ISR" kind="struct" prot="public">
+    <compoundname>DEV_GPIO_BIT_ISR</compoundname>
+    <includes refid="dev__gpio_8h" local="no">dev_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__GPIO__BIT__ISR_a8cd3bb5755aab129cfffb60edc10a0e5_1a8cd3bb5755aab129cfffb60edc10a0e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_BIT_ISR::int_bit_ofs</definition>
+        <argsstring></argsstring>
+        <name>int_bit_ofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>int bit offset </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="358" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__BIT__ISR_a08675f3b307bafefbbc4add26e32b2ef_1a08675f3b307bafefbbc4add26e32b2ef" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga8b480cf689e0b43585d081d51d1b6ff6_1ga8b480cf689e0b43585d081d51d1b6ff6" kindref="member">DEV_GPIO_HANDLER</ref></type>
+        <definition>DEV_GPIO_HANDLER DEV_GPIO_BIT_ISR::int_bit_handler</definition>
+        <argsstring></argsstring>
+        <name>int_bit_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="359" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>interrupt handler for each port bit </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="357" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="357" bodyend="360"/>
+    <listofallmembers>
+      <member refid="structDEV__GPIO__BIT__ISR_a08675f3b307bafefbbc4add26e32b2ef_1a08675f3b307bafefbbc4add26e32b2ef" prot="public" virt="non-virtual"><scope>DEV_GPIO_BIT_ISR</scope><name>int_bit_handler</name></member>
+      <member refid="structDEV__GPIO__BIT__ISR_a8cd3bb5755aab129cfffb60edc10a0e5_1a8cd3bb5755aab129cfffb60edc10a0e5" prot="public" virt="non-virtual"><scope>DEV_GPIO_BIT_ISR</scope><name>int_bit_ofs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

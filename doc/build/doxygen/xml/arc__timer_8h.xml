@@ -1,0 +1,813 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__timer_8h" kind="file">
+    <compoundname>arc_timer.h</compoundname>
+    <includes refid="arc__builtin_8h" local="yes">arc/arc_builtin.h</includes>
+    <includedby refid="arc__timer_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c</includedby>
+    <includedby refid="embARC_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</includedby>
+    <includedby refid="axs__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/common/axs_init.c</includedby>
+    <includedby refid="emsdp__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_init.c</includedby>
+    <includedby refid="emsk__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_init.c</includedby>
+    <includedby refid="hsdk__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/common/hsdk_init.c</includedby>
+    <includedby refid="iotdk__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/common/iotdk_init.c</includedby>
+    <includedby refid="nsim__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/common/nsim_init.c</includedby>
+    <incdepgraph>
+      <node id="4054">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4050">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4051" relation="include">
+        </childnode>
+        <childnode refid="4052" relation="include">
+        </childnode>
+        <childnode refid="4053" relation="include">
+        </childnode>
+        <childnode refid="4054" relation="include">
+        </childnode>
+      </node>
+      <node id="4051">
+        <label>stdint.h</label>
+      </node>
+      <node id="4053">
+        <label>stddef.h</label>
+      </node>
+      <node id="4055">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4056" relation="include">
+        </childnode>
+      </node>
+      <node id="4052">
+        <label>limits.h</label>
+      </node>
+      <node id="4056">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4048">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h</label>
+        <link refid="arc_timer.h"/>
+        <childnode refid="4049" relation="include">
+        </childnode>
+      </node>
+      <node id="4049">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4050" relation="include">
+        </childnode>
+        <childnode refid="4055" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4060">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/clib/embARC_syscalls.c</label>
+        <link refid="embARC__syscalls_8c"/>
+      </node>
+      <node id="4062">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h</label>
+        <link refid="dw__i2s_8h"/>
+        <childnode refid="4063" relation="include">
+        </childnode>
+        <childnode refid="4064" relation="include">
+        </childnode>
+      </node>
+      <node id="4064">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
+        <link refid="dw__i2s_8c"/>
+      </node>
+      <node id="4063">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
+        <link refid="dw__i2s__obj_8c"/>
+      </node>
+      <node id="4073">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/common/nsim_init.c</label>
+        <link refid="nsim__init_8c"/>
+      </node>
+      <node id="4058">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c</label>
+        <link refid="arc__timer_8c"/>
+      </node>
+      <node id="4066">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/board.c</label>
+        <link refid="board_8c"/>
+      </node>
+      <node id="4057">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h</label>
+        <link refid="arc_timer.h"/>
+        <childnode refid="4058" relation="include">
+        </childnode>
+        <childnode refid="4059" relation="include">
+        </childnode>
+        <childnode refid="4068" relation="include">
+        </childnode>
+        <childnode refid="4069" relation="include">
+        </childnode>
+        <childnode refid="4070" relation="include">
+        </childnode>
+        <childnode refid="4071" relation="include">
+        </childnode>
+        <childnode refid="4072" relation="include">
+        </childnode>
+        <childnode refid="4073" relation="include">
+        </childnode>
+      </node>
+      <node id="4068">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/common/axs_init.c</label>
+        <link refid="axs__init_8c"/>
+      </node>
+      <node id="4061">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/console_io.c</label>
+        <link refid="console__io_8c"/>
+      </node>
+      <node id="4070">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_init.c</label>
+        <link refid="emsk__init_8c"/>
+      </node>
+      <node id="4072">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/common/iotdk_init.c</label>
+        <link refid="iotdk__init_8c"/>
+      </node>
+      <node id="4059">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="4060" relation="include">
+        </childnode>
+        <childnode refid="4061" relation="include">
+        </childnode>
+        <childnode refid="4062" relation="include">
+        </childnode>
+        <childnode refid="4065" relation="include">
+        </childnode>
+        <childnode refid="4066" relation="include">
+        </childnode>
+        <childnode refid="4067" relation="include">
+        </childnode>
+      </node>
+      <node id="4065">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c</label>
+        <link refid="axs__103__interrupt_8c"/>
+      </node>
+      <node id="4071">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/common/hsdk_init.c</label>
+        <link refid="hsdk__init_8c"/>
+      </node>
+      <node id="4069">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_init.c</label>
+        <link refid="emsdp__init_8c"/>
+      </node>
+      <node id="4067">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/configs/10/hsdk_interrupt.c</label>
+        <link refid="hsdk__interrupt_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>arc internal timers names</header>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" prot="public" static="no">
+        <name>TIMER_0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>macro name for arc internal timer 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="51" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" prot="public" static="no">
+        <name>TIMER_1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>macro name for arc internal timer 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="52" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" prot="public" static="no">
+        <name>TIMER_RTC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>macro name for arc internal RTC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" prot="public" static="no">
+        <name>SECURE_TIMER_0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>macro name for arc internal secure timer 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="54" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" prot="public" static="no">
+        <name>SECURE_TIMER_1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>macro name for arc internal secure timer 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="55" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>bit definition of RTC CTRL reg</header>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gaff747ffa08b8fde47bba1fda40474332_1gaff747ffa08b8fde47bba1fda40474332" prot="public" static="no">
+        <name>TIMER_RTC_ENABLE</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable RTC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="83" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gab984a3b6054a19b5547fdefb3118bc89_1gab984a3b6054a19b5547fdefb3118bc89" prot="public" static="no">
+        <name>TIMER_RTC_CLEAR</name>
+        <initializer>(0x02)              /* clears the AUX_RTC_LOW and AUX_RTC_HIGH */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="84" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gaf0586c343f581977c584b13a4f6eb3f7_1gaf0586c343f581977c584b13a4f6eb3f7" prot="public" static="no">
+        <name>TIMER_RTC_STATUS_A0</name>
+        <initializer>(0x40000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>track bit of atomicity of reads of RTC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="85" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga7147b16c109045e36f769daec4bdb3ed_1ga7147b16c109045e36f769daec4bdb3ed" prot="public" static="no">
+        <name>TIMER_RTC_STATUS_A1</name>
+        <initializer>(0x80000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>track bit of atomicity of reads of RTC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="86" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>bit definition of timer CTRL reg</header>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga3d86ac7ea9125720c6117abaae649e1a_1ga3d86ac7ea9125720c6117abaae649e1a" prot="public" static="no">
+        <name>TIMER_CTRL_IE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt when count reaches limit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="93" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga454b737cdb6a609764ef011654f471f2_1ga454b737cdb6a609764ef011654f471f2" prot="public" static="no">
+        <name>TIMER_CTRL_NH</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count only when CPU NOT halted </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="94" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga989c3b36e74e1c5174485872be973489_1ga989c3b36e74e1c5174485872be973489" prot="public" static="no">
+        <name>TIMER_CTRL_W</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>watchdog enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="95" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gac3be2b7827aa154d07f55d2497190173_1gac3be2b7827aa154d07f55d2497190173" prot="public" static="no">
+        <name>TIMER_CTRL_IP</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt pending </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="96" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga7b8512078a0c7ba91d2f2058ca8e66b6_1ga7b8512078a0c7ba91d2f2058ca8e66b6" prot="public" static="no">
+        <name>INTNO_TIMER0</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="61" column="10" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_gab79d104685fb9b67358a5534ea059dd9_1gab79d104685fb9b67358a5534ea059dd9" prot="public" static="no">
+        <name>INTNO_TIMER1</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="66" column="11" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga1b6b40e3f0ebe066e905bd8f172ab4c6_1ga1b6b40e3f0ebe066e905bd8f172ab4c6" prot="public" static="no">
+        <name>INTNO_SECURE_TIMER0</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="71" column="11" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__TIMER_ga6931c1288639bbf0568139926abecbdc_1ga6931c1288639bbf0568139926abecbdc" prot="public" static="no">
+        <name>INTNO_SECURE_TIMER1</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="76" column="11" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_present</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>timer_present</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the specific timer present. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 present, 0 not present </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="50" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_start</definition>
+        <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
+        <name>timer_start</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Start a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer mode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer limit value (not for RTC) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="80" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_stop</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>timer_stop</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Stop timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="114" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_current</definition>
+        <argsstring>(const uint32_t no, void *val)</argsstring>
+        <name>timer_current</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Get timer current tick. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer current tick value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="147" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_int_clear</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>timer_int_clear</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Clear the interrupt pending bit of timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="108" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="175" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void timer_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>timer_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize internal timer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="199" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_delay_us</definition>
+        <argsstring>(uint32_t usecs)</argsstring>
+        <name>arc_delay_us</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>usecs</declname>
+        </param>
+        <briefdescription>
+<para>Function for delaying execution for number of microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of us </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="374" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t timer_calibrate_delay</definition>
+        <argsstring>(uint32_t cpu_clock)</argsstring>
+        <name>timer_calibrate_delay</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>cpu_clock</declname>
+        </param>
+        <briefdescription>
+<para>Get calibration values for a given cpu clock source. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cpu_clock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>board CPU clock source to calibrate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loops_per_jiffy Calibration value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="399" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t secure_timer_present</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>secure_timer_present</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga44648e9bf965305b509a1169761c02ab_1ga44648e9bf965305b509a1169761c02ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t secure_timer_start</definition>
+        <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
+        <name>secure_timer_start</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t secure_timer_stop</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>secure_timer_stop</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaab2aa4baf8219ebb86c9aad1148b0523_1gaab2aa4baf8219ebb86c9aad1148b0523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t secure_timer_current</definition>
+        <argsstring>(const uint32_t no, void *val)</argsstring>
+        <name>secure_timer_current</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga517e9a555515b5c73549fb3703d7fed0_1ga517e9a555515b5c73549fb3703d7fed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t secure_timer_int_clear</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>secure_timer_int_clear</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaf453c9883df6ab97ef7c50cfb7a555f3_1gaf453c9883df6ab97ef7c50cfb7a555f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void secure_timer_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>secure_timer_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="117" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>header file of ARC internal timer </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">#ifndef<sp/>H_ARC_TIMER</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_ARC_TIMER</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__builtin_8h" kindref="compound">arc/arc_builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_RTC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" refkind="member"><highlight class="preprocessor">#define<sp/>SECURE_TIMER_0<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" refkind="member"><highlight class="preprocessor">#define<sp/>SECURE_TIMER_1<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor">#ifdef<sp/>ARC_FEATURE_TIMER0_VECTOR</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_TIMER0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARC_FEATURE_TIMER0_VECTOR<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="61" refid="group__ARC__HAL__MISC__TIMER_ga7b8512078a0c7ba91d2f2058ca8e66b6_1ga7b8512078a0c7ba91d2f2058ca8e66b6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_TIMER0<sp/>16</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>ARC_FEATURE_TIMER1_VECTOR</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_TIMER1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARC_FEATURE_TIMER1_VECTOR<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="66" refid="group__ARC__HAL__MISC__TIMER_gab79d104685fb9b67358a5534ea059dd9_1gab79d104685fb9b67358a5534ea059dd9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_TIMER1<sp/>17</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>ARC_FEATURE_SEC_TIMER0_VECTOR</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_SECURE_TIMER0<sp/><sp/><sp/><sp/><sp/>ARC_FEATURE_SEC_TIMER0_VECTOR<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="71" refid="group__ARC__HAL__MISC__TIMER_ga1b6b40e3f0ebe066e905bd8f172ab4c6_1ga1b6b40e3f0ebe066e905bd8f172ab4c6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_SECURE_TIMER0<sp/>20</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>ARC_FEATURE_SEC_TIMER1_VECTOR</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_SECURE_TIMER1<sp/><sp/><sp/><sp/><sp/>ARC_FEATURE_SEC_TIMER1_VECTOR<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="76" refid="group__ARC__HAL__MISC__TIMER_ga6931c1288639bbf0568139926abecbdc_1ga6931c1288639bbf0568139926abecbdc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTNO_SECURE_TIMER1<sp/>21</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="83" refid="group__ARC__HAL__MISC__TIMER_gaff747ffa08b8fde47bba1fda40474332_1gaff747ffa08b8fde47bba1fda40474332" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_RTC_ENABLE<sp/><sp/><sp/><sp/>(0x01)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="group__ARC__HAL__MISC__TIMER_gab984a3b6054a19b5547fdefb3118bc89_1gab984a3b6054a19b5547fdefb3118bc89" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_RTC_CLEAR<sp/><sp/><sp/><sp/><sp/>(0x02)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>clears<sp/>the<sp/>AUX_RTC_LOW<sp/>and<sp/>AUX_RTC_HIGH<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="85" refid="group__ARC__HAL__MISC__TIMER_gaf0586c343f581977c584b13a4f6eb3f7_1gaf0586c343f581977c584b13a4f6eb3f7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TIMER_RTC_STATUS_A0<sp/>(0x40000000)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="group__ARC__HAL__MISC__TIMER_ga7147b16c109045e36f769daec4bdb3ed_1ga7147b16c109045e36f769daec4bdb3ed" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_RTC_STATUS_A1<sp/>(0x80000000)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="group__ARC__HAL__MISC__TIMER_ga3d86ac7ea9125720c6117abaae649e1a_1ga3d86ac7ea9125720c6117abaae649e1a" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_CTRL_IE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="group__ARC__HAL__MISC__TIMER_ga454b737cdb6a609764ef011654f471f2_1ga454b737cdb6a609764ef011654f471f2" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_CTRL_NH<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="group__ARC__HAL__MISC__TIMER_ga989c3b36e74e1c5174485872be973489_1ga989c3b36e74e1c5174485872be973489" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_CTRL_W<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="group__ARC__HAL__MISC__TIMER_gac3be2b7827aa154d07f55d2497190173_1gac3be2b7827aa154d07f55d2497190173" refkind="member"><highlight class="preprocessor">#define<sp/>TIMER_CTRL_IP<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor">#ifndef<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" kindref="member">timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" kindref="member">timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" kindref="member">timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" kindref="member">arc_delay_us</ref>(uint32_t<sp/>usecs);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" kindref="member">timer_calibrate_delay</ref>(uint32_t<sp/>cpu_clock);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga44648e9bf965305b509a1169761c02ab_1ga44648e9bf965305b509a1169761c02ab" kindref="member">secure_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaab2aa4baf8219ebb86c9aad1148b0523_1gaab2aa4baf8219ebb86c9aad1148b0523" kindref="member">secure_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga517e9a555515b5c73549fb3703d7fed0_1ga517e9a555515b5c73549fb3703d7fed0" kindref="member">secure_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaf453c9883df6ab97ef7c50cfb7a555f3_1gaf453c9883df6ab97ef7c50cfb7a555f3" kindref="member">secure_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__ASSEMBLY__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>H_ARC_TIMER<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h"/>
+  </compounddef>
+</doxygen>

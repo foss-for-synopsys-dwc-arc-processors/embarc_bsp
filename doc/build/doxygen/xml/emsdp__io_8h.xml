@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emsdp__io_8h" kind="file">
+    <compoundname>emsdp_io.h</compoundname>
+    <includes refid="dev__gpio_8h" local="yes">device/ip_hal/dev_gpio.h</includes>
+    <includedby refid="emsdp_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</includedby>
+    <incdepgraph>
+      <node id="740">
+        <label>stdbool.h</label>
+      </node>
+      <node id="736">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>stdint.h</label>
+      </node>
+      <node id="739">
+        <label>stddef.h</label>
+      </node>
+      <node id="738">
+        <label>limits.h</label>
+      </node>
+      <node id="735">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+      <node id="733">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h</label>
+        <link refid="emsdp_io.h"/>
+        <childnode refid="734" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="754">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="752">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="746">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="745">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="751">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="749">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="753">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="744">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="748">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="747">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="750">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="742">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h</label>
+        <link refid="emsdp_io.h"/>
+        <childnode refid="742" relation="include">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="emsdp__io_8h_a470a61f373a4457924fa1c81974a1f9a_1a470a61f373a4457924fa1c81974a1f9a" prot="public" static="no">
+        <name>EMSDP_LED_OFFSET</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EMSDP LED Port Configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="38" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_a7d68f8d65bbd56707fb0030787dea030_1a7d68f8d65bbd56707fb0030787dea030" prot="public" static="no">
+        <name>EMSDP_LED_MASK</name>
+        <initializer>((0xff) &lt;&lt; EMSDP_LED_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="39" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_ae8b7c40eb3f061e0f95b3b26a572a2e1_1ae8b7c40eb3f061e0f95b3b26a572a2e1" prot="public" static="no">
+        <name>EMSDP_LED_PORT</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__GPIO__PINDEF_ga2c0a2bdea10ebb6f388a70150cc42b27_1gga2c0a2bdea10ebb6f388a70150cc42b27acd5810cf1f20b884f187dc90bd0cfe3e" kindref="member">DEV_GPIO_PORT_B</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="40" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_abe4388b16b6e88cc6e4e781119da9f33_1abe4388b16b6e88cc6e4e781119da9f33" prot="public" static="no">
+        <name>EMSDP_LED_DIR</name>
+        <initializer>((0xff) &lt;&lt; EMSDP_LED_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="41" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_a396a45e4f56363a31949a56ec60b66a0_1a396a45e4f56363a31949a56ec60b66a0" prot="public" static="no">
+        <name>EMSDP_SWITCH_OFFSET</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EMSDP Switch Port Configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="46" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_a1f340f37db9efab145d791649fbaceed_1a1f340f37db9efab145d791649fbaceed" prot="public" static="no">
+        <name>EMSDP_SWITCH_MASK</name>
+        <initializer>((0xf) &lt;&lt; EMSDP_SWITCH_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="47" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_a86643df6f8c3fdcb6d0a2c49941662ac_1a86643df6f8c3fdcb6d0a2c49941662ac" prot="public" static="no">
+        <name>EMSDP_SWITCH_PORT</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__GPIO__PINDEF_ga2c0a2bdea10ebb6f388a70150cc42b27_1gga2c0a2bdea10ebb6f388a70150cc42b27a6601c97c399ff793e35459b4eee158b3" kindref="member">DEV_GPIO_PORT_A</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="48" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp__io_8h_aafc07f50a4a304c8e875690674259edd_1aafc07f50a4a304c8e875690674259edd" prot="public" static="no">
+        <name>EMSDP_SWITCH_DIR</name>
+        <initializer>((0x0) &lt;&lt; EMSDP_SWITCH_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="49" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="emsdp__io_8h_a8717cf9c27cc9f61e2193be4e25193d0_1a8717cf9c27cc9f61e2193be4e25193d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsdp_led_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsdp_led_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsdp on-board led init, led default off </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="55" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="47" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp__io_8h_a2f9095031ea53dc57fd724bd7e03e6fe_1a2f9095031ea53dc57fd724bd7e03e6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsdp_switch_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsdp_switch_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsdp on-board switch init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="65" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="emsdp__io_8h_a08fdfed1853e8fa6f448ccc4757306a6_1a08fdfed1853e8fa6f448ccc4757306a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsdp_io_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsdp_io_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsdp on board gpio init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="57" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga0d116692517e4c11de41ec07145b8404_1ga0d116692517e4c11de41ec07145b8404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_write</definition>
+        <argsstring>(uint32_t led_val, uint32_t mask)</argsstring>
+        <name>led_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>led_val</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write 1 to light on led bit, else light off led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="58" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="81" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga0dc68bc0b79209469f458809e464b178_1ga0dc68bc0b79209469f458809e464b178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t led_read</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>led_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read led value, on for 1, off for 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="59" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="105" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga37c8d684dfd11fe1900c93fa1fe7cc0b_1ga37c8d684dfd11fe1900c93fa1fe7cc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_toggle</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>led_toggle</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>toggle masked led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="60" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="95" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_gacf651d7f9071df560e583ba654d4b3d0_1gacf651d7f9071df560e583ba654d4b3d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t switch_read</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>switch_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>turn on switch return 1, else 0</para><para>Pull down switch return 1, else 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.c" bodystart="122" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_EMSDP_GPIO</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_EMSDP_GPIO</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__gpio_8h" kindref="compound">device/ip_hal/dev_gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="emsdp__io_8h_a470a61f373a4457924fa1c81974a1f9a_1a470a61f373a4457924fa1c81974a1f9a" refkind="member"><highlight class="preprocessor">#define<sp/>EMSDP_LED_OFFSET<sp/><sp/><sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="39" refid="emsdp__io_8h_a7d68f8d65bbd56707fb0030787dea030_1a7d68f8d65bbd56707fb0030787dea030" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_LED_MASK<sp/><sp/><sp/><sp/><sp/><sp/>((0xff)<sp/>&lt;&lt;<sp/>EMSDP_LED_OFFSET)</highlight></codeline>
+<codeline lineno="40" refid="emsdp__io_8h_ae8b7c40eb3f061e0f95b3b26a572a2e1_1ae8b7c40eb3f061e0f95b3b26a572a2e1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_LED_PORT<sp/><sp/><sp/><sp/><sp/><sp/>(DEV_GPIO_PORT_B)</highlight></codeline>
+<codeline lineno="41" refid="emsdp__io_8h_abe4388b16b6e88cc6e4e781119da9f33_1abe4388b16b6e88cc6e4e781119da9f33" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_LED_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0xff)<sp/>&lt;&lt;<sp/>EMSDP_LED_OFFSET)</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="46" refid="emsdp__io_8h_a396a45e4f56363a31949a56ec60b66a0_1a396a45e4f56363a31949a56ec60b66a0" refkind="member"><highlight class="preprocessor">#define<sp/>EMSDP_SWITCH_OFFSET<sp/>(0)</highlight></codeline>
+<codeline lineno="47" refid="emsdp__io_8h_a1f340f37db9efab145d791649fbaceed_1a1f340f37db9efab145d791649fbaceed" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_SWITCH_MASK<sp/><sp/><sp/>((0xf)<sp/>&lt;&lt;<sp/>EMSDP_SWITCH_OFFSET)</highlight></codeline>
+<codeline lineno="48" refid="emsdp__io_8h_a86643df6f8c3fdcb6d0a2c49941662ac_1a86643df6f8c3fdcb6d0a2c49941662ac" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_SWITCH_PORT<sp/><sp/><sp/>(DEV_GPIO_PORT_A)</highlight></codeline>
+<codeline lineno="49" refid="emsdp__io_8h_aafc07f50a4a304c8e875690674259edd_1aafc07f50a4a304c8e875690674259edd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_SWITCH_DIR<sp/><sp/><sp/><sp/>((0x0)<sp/>&lt;&lt;<sp/>EMSDP_SWITCH_OFFSET)</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp__io_8h_a8717cf9c27cc9f61e2193be4e25193d0_1a8717cf9c27cc9f61e2193be4e25193d0" kindref="member">emsdp_led_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp__io_8h_a2f9095031ea53dc57fd724bd7e03e6fe_1a2f9095031ea53dc57fd724bd7e03e6fe" kindref="member">emsdp_switch_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emsdp__io_8h_a08fdfed1853e8fa6f448ccc4757306a6_1a08fdfed1853e8fa6f448ccc4757306a6" kindref="member">emsdp_io_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_ga0d116692517e4c11de41ec07145b8404_1ga0d116692517e4c11de41ec07145b8404" kindref="member">led_write</ref>(uint32_t<sp/>led_val,<sp/>uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_ga0dc68bc0b79209469f458809e464b178_1ga0dc68bc0b79209469f458809e464b178" kindref="member">led_read</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_ga37c8d684dfd11fe1900c93fa1fe7cc0b_1ga37c8d684dfd11fe1900c93fa1fe7cc0b" kindref="member">led_toggle</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_gacf651d7f9071df560e583ba654d4b3d0_1gacf651d7f9071df560e583ba654d4b3d0" kindref="member">switch_read</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_EMSDP_GPIO<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_io.h"/>
+  </compounddef>
+</doxygen>

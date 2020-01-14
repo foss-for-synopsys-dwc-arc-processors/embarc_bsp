@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDMA__DESC__T" kind="struct" prot="public">
+    <compoundname>DMA_DESC_T</compoundname>
+    <includes refid="arc__udma_8h" local="no">arc_udma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDMA__DESC__T_ac80b3b0dd101659b06ace47678f444f5_1ac80b3b0dd101659b06ace47678f444f5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_DESC_T::DMACTRLx</definition>
+        <argsstring></argsstring>
+        <name>DMACTRLx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="160" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__DESC__T_a40ef21c53193afeb344d5c649fbeb074_1a40ef21c53193afeb344d5c649fbeb074" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_DESC_T::DMASARx</definition>
+        <argsstring></argsstring>
+        <name>DMASARx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel end source address register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="161" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__DESC__T_a4f3a7b3297f1fa6a27bc33d83c3e495e_1a4f3a7b3297f1fa6a27bc33d83c3e495e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_DESC_T::DMADARx</definition>
+        <argsstring></argsstring>
+        <name>DMADARx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel end destination address register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="162" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__DESC__T_a2127084ae4ad3243d38794cdde8d91b0_1a2127084ae4ad3243d38794cdde8d91b0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_DESC_T::DMALLPx</definition>
+        <argsstring></argsstring>
+        <name>DMALLPx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel link-list pointer (for chaining/linking separate DMA transfers only) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="163" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DMA descriptor (DMA channel registers) </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="159" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="159" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structDMA__DESC__T_ac80b3b0dd101659b06ace47678f444f5_1ac80b3b0dd101659b06ace47678f444f5" prot="public" virt="non-virtual"><scope>DMA_DESC_T</scope><name>DMACTRLx</name></member>
+      <member refid="structDMA__DESC__T_a4f3a7b3297f1fa6a27bc33d83c3e495e_1a4f3a7b3297f1fa6a27bc33d83c3e495e" prot="public" virt="non-virtual"><scope>DMA_DESC_T</scope><name>DMADARx</name></member>
+      <member refid="structDMA__DESC__T_a2127084ae4ad3243d38794cdde8d91b0_1a2127084ae4ad3243d38794cdde8d91b0" prot="public" virt="non-virtual"><scope>DMA_DESC_T</scope><name>DMALLPx</name></member>
+      <member refid="structDMA__DESC__T_a40ef21c53193afeb344d5c649fbeb074_1a40ef21c53193afeb344d5c649fbeb074" prot="public" virt="non-virtual"><scope>DMA_DESC_T</scope><name>DMASARx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

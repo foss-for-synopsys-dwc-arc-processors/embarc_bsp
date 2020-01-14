@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__UART" kind="group">
+    <compoundname>DEVICE_HAL_UART</compoundname>
+    <title>UART Device HAL Interface</title>
+    <innerfile refid="dev__uart_8h">dev_uart.h</innerfile>
+    <innergroup refid="group__DEVICE__HAL__UART__BAUD">UART Device Baudrate Definitions</innergroup>
+    <innergroup refid="group__DEVICE__HAL__UART__CTRLCMD">UART Device Control Commands</innergroup>
+    <innergroup refid="group__DEVICE__HAL__UART__FORMAT">UART Device Format Definitions</innergroup>
+    <innergroup refid="group__DEVICE__HAL__UART__DEVSTRUCT">UART Device Interface Definition</innergroup>
+    <innergroup refid="group__DEVICE__HAL__UART__CALLBACK">UART Interrupt callback functions</innergroup>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__DEVICE__HAL__UART_1gaa79a1d08e403b54670b892c0c58d91d5" prot="public" static="no">
+        <name>UART_HW_FLOW_CONTROL</name>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a542109175bf0b1928d4803f2702ce1ed" prot="public">
+          <name>UART_FC_DEFAULT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default hardware flow control method </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a527864f0ec595151e7db5ef909fcf9f0" prot="public">
+          <name>UART_FC_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Non hardware flow control </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5afc75cc759e85ee277ead4520fb1d0b90" prot="public">
+          <name>UART_FC_RTS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request To Send </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a42eb1be010429695afe750de07e7ade6" prot="public">
+          <name>UART_FC_CTS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Clear To Send </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a666090870593651febac7ad9db862760" prot="public">
+          <name>UART_FC_BOTH</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Both hardware flow control methods </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Device Hardware Flow Control Types Enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__HAL__UART_1gade938afe2174b43b8522bf05cdcb1202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga39a2c3e3c12141f19ed62130a86dfe04_1ga39a2c3e3c12141f19ed62130a86dfe04" kindref="member">DEV_UART_PTR</ref></type>
+        <definition>DEV_UART_PTR uart_get_dev</definition>
+        <argsstring>(int32_t uart_id)</argsstring>
+        <name>uart_get_dev</name>
+        <param>
+          <type>int32_t</type>
+          <declname>uart_id</declname>
+        </param>
+        <briefdescription>
+<para>Get an <ref refid="structDEV__UART" kindref="compound">uart device</ref> by uart device id. For how to use uart device hal refer to <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT" kindref="compound">Functions in uart device structure</ref> param[in] uart_id ID of uart, defined by user. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>!NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an <ref refid="structDEV__UART" kindref="compound">uart device structure</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to find the uart device by uart_id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Need to implemented by user in user code</para></simplesect>
+get one designware device structure</para><para>get one uart device structure </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 3 id macro </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="454" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="256" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for uart device hardware layer (<ref refid="dev__uart_8h" kindref="compound">dev_uart.h</ref>) </para>    </briefdescription>
+    <detaileddescription>
+<para>Provide unified APIs for uart driver to implement. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

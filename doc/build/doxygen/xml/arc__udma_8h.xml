@@ -1,0 +1,2047 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__udma_8h" kind="file">
+    <compoundname>arc_udma.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="arc__builtin_8h" local="yes">arc/arc_builtin.h</includes>
+    <includes refid="arc__cache_8h" local="yes">arc/arc_cache.h</includes>
+    <includedby refid="arc__udma_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c</includedby>
+    <incdepgraph>
+      <node id="4081">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4079">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4075" relation="include">
+        </childnode>
+        <childnode refid="4080" relation="include">
+        </childnode>
+        <childnode refid="4076" relation="include">
+        </childnode>
+        <childnode refid="4081" relation="include">
+        </childnode>
+      </node>
+      <node id="4075">
+        <label>stdint.h</label>
+      </node>
+      <node id="4076">
+        <label>stddef.h</label>
+      </node>
+      <node id="4082">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4083" relation="include">
+        </childnode>
+      </node>
+      <node id="4084">
+        <label>arc/arc_cache.h</label>
+        <link refid="arc__cache_8h"/>
+        <childnode refid="4078" relation="include">
+        </childnode>
+        <childnode refid="4085" relation="include">
+        </childnode>
+      </node>
+      <node id="4080">
+        <label>limits.h</label>
+      </node>
+      <node id="4083">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4077">
+        <label>string.h</label>
+      </node>
+      <node id="4074">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h</label>
+        <link refid="arc_udma.h"/>
+        <childnode refid="4075" relation="include">
+        </childnode>
+        <childnode refid="4076" relation="include">
+        </childnode>
+        <childnode refid="4077" relation="include">
+        </childnode>
+        <childnode refid="4078" relation="include">
+        </childnode>
+        <childnode refid="4084" relation="include">
+        </childnode>
+      </node>
+      <node id="4085">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="4078" relation="include">
+        </childnode>
+      </node>
+      <node id="4078">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4079" relation="include">
+        </childnode>
+        <childnode refid="4082" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4086">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h</label>
+        <link refid="arc_udma.h"/>
+        <childnode refid="4087" relation="include">
+        </childnode>
+      </node>
+      <node id="4087">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c</label>
+        <link refid="arc__udma_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structDMA__CTRL__FIELD__T" prot="public">DMA_CTRL_FIELD_T</innerclass>
+    <innerclass refid="unionDMA__CTRL__T" prot="public">DMA_CTRL_T</innerclass>
+    <innerclass refid="structDMA__DESC__T" prot="public">DMA_DESC_T</innerclass>
+    <innerclass refid="structDMA__CHANNEL__T" prot="public">DMA_CHANNEL_T</innerclass>
+    <innerclass refid="structDMA__STATE__T" prot="public">DMA_STATE_T</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gae6d576ffb70ae165ab3cf26f1a5c24b0_1gae6d576ffb70ae165ab3cf26f1a5c24b0" prot="public" static="no">
+        <name>CORE_DMAC_INTERNAL_VERSION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the DMA controller </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="57" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaf6e87d0c5d43b4f136169f619243fe5a_1gaf6e87d0c5d43b4f136169f619243fe5a" prot="public" static="no">
+        <name>DMA_MULTI_IRQ</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiple interrupts for DMA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="62" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaf16c6e745771a011277aabd659759eed_1gaf16c6e745771a011277aabd659759eed" prot="public" static="no">
+        <name>DMA_IRQ_PRIO</name>
+        <initializer>(<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA IRQ priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="67" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga8e05b31d51dbe30264e2467c9d1650c9_1ga8e05b31d51dbe30264e2467c9d1650c9" prot="public" static="no">
+        <name>DMA_IRQ_NUM_START</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA IRQ start vector Number of all DMA channels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="72" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga33e5192848954a63f872b0c7df80367a_1ga33e5192848954a63f872b0c7df80367a" prot="public" static="no">
+        <name>DMA_ALL_CHANNEL_NUM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of all aux-register based DMA channels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="80" column="10" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga662e5971b9271b6855045bb9dbf1a654_1ga662e5971b9271b6855045bb9dbf1a654" prot="public" static="no">
+        <name>DMA_REGISTER_CHANNEL_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask of all DMA channels at the most </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="89" column="10" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga1e656f95a8cb87b02d8a79853210ee0a_1ga1e656f95a8cb87b02d8a79853210ee0a" prot="public" static="no">
+        <name>DMA_ALL_CHANNEL_MASK</name>
+        <initializer>0xFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="94" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga3b5573ef57629c751ae39c5f12de6f7d_1ga3b5573ef57629c751ae39c5f12de6f7d" prot="public" static="no">
+        <name>DMACTRLx_OP_OFS</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 0,1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="96" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga2899e234bca37fbfcff7beb307416e80_1ga2899e234bca37fbfcff7beb307416e80" prot="public" static="no">
+        <name>DMACTRLx_R_OFS</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="97" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga086b211216c85d46ca879d01a4ed1e98_1ga086b211216c85d46ca879d01a4ed1e98" prot="public" static="no">
+        <name>DMACTRLx_DTT_OFS</name>
+        <initializer>(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 3,4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="98" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gad49f849bd52d48d3f2b53ea5130251c2_1gad49f849bd52d48d3f2b53ea5130251c2" prot="public" static="no">
+        <name>DMACTRLx_DWINC_OFS</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 5,6,7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="99" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga93a80795d8f15775272ce151207655a8_1ga93a80795d8f15775272ce151207655a8" prot="public" static="no">
+        <name>DMACTRLx_SIZE_OFS</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 8..20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="100" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga8c0257c0859578c2754b424f9ed6561c_1ga8c0257c0859578c2754b424f9ed6561c" prot="public" static="no">
+        <name>DMACTRLx_ARB_OFS</name>
+        <initializer>(21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 21..28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="101" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga31a279ac20de678a5d95139520d61482_1ga31a279ac20de678a5d95139520d61482" prot="public" static="no">
+        <name>DMACTRLx_INT_OFS</name>
+        <initializer>(29)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 29 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="102" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gade1850d1b521cc9dd20a7aaf0bb9c1fb_1gade1850d1b521cc9dd20a7aaf0bb9c1fb" prot="public" static="no">
+        <name>DMACTRLx_AM_OFS</name>
+        <initializer>(30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field offset: bit 30,31 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="103" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga41d979f2c6d3f1b38eb1b9e06702d6b3_1ga41d979f2c6d3f1b38eb1b9e06702d6b3" prot="public" static="no">
+        <name>DMACTRLx_OP</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_ga3b5573ef57629c751ae39c5f12de6f7d_1ga3b5573ef57629c751ae39c5f12de6f7d" kindref="member">DMACTRLx_OP_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 0,1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="105" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga52e6e61880941be08bfbb3de211e0229_1ga52e6e61880941be08bfbb3de211e0229" prot="public" static="no">
+        <name>DMACTRLx_R</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_ga2899e234bca37fbfcff7beb307416e80_1ga2899e234bca37fbfcff7beb307416e80" kindref="member">DMACTRLx_R_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="106" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gacf6a1f73d4a4ecff800fa48f715f9cbc_1gacf6a1f73d4a4ecff800fa48f715f9cbc" prot="public" static="no">
+        <name>DMACTRLx_DTT</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_ga086b211216c85d46ca879d01a4ed1e98_1ga086b211216c85d46ca879d01a4ed1e98" kindref="member">DMACTRLx_DTT_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 3,4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="107" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga37fcc916a26f83883a7fee1caaa0cde0_1ga37fcc916a26f83883a7fee1caaa0cde0" prot="public" static="no">
+        <name>DMACTRLx_DWINC</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_gad49f849bd52d48d3f2b53ea5130251c2_1gad49f849bd52d48d3f2b53ea5130251c2" kindref="member">DMACTRLx_DWINC_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 5,6,7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="108" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gac2f590aac7504e3960cf3607c973f664_1gac2f590aac7504e3960cf3607c973f664" prot="public" static="no">
+        <name>DMACTRLx_SIZE</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_ga93a80795d8f15775272ce151207655a8_1ga93a80795d8f15775272ce151207655a8" kindref="member">DMACTRLx_SIZE_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 8..20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="109" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga46a9c1990f09d7b7640534e5b396575a_1ga46a9c1990f09d7b7640534e5b396575a" prot="public" static="no">
+        <name>DMACTRLx_ARB</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_ga8c0257c0859578c2754b424f9ed6561c_1ga8c0257c0859578c2754b424f9ed6561c" kindref="member">DMACTRLx_ARB_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 21..28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="110" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gad7b8fd9be8515f3be65b4809b66235f3_1gad7b8fd9be8515f3be65b4809b66235f3" prot="public" static="no">
+        <name>DMACTRLx_INT</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_ga31a279ac20de678a5d95139520d61482_1ga31a279ac20de678a5d95139520d61482" kindref="member">DMACTRLx_INT_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 29 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="111" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga6f6826c4c867b294c7744ae7ca10e1e0_1ga6f6826c4c867b294c7744ae7ca10e1e0" prot="public" static="no">
+        <name>DMACTRLx_AM</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) &lt;&lt; <ref refid="group__ARC__HAL__MISC__UDMA_gade1850d1b521cc9dd20a7aaf0bb9c1fb_1gade1850d1b521cc9dd20a7aaf0bb9c1fb" kindref="member">DMACTRLx_AM_OFS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field value: bit 30,31 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="112" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gae24b57a3add49e83da7ca8726b611ab4_1gae24b57a3add49e83da7ca8726b611ab4" prot="public" static="no">
+        <name>DMACTRLx_OP_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_ga41d979f2c6d3f1b38eb1b9e06702d6b3_1ga41d979f2c6d3f1b38eb1b9e06702d6b3" kindref="member">DMACTRLx_OP</ref>(0x3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 0,1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="114" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gab75c4448785d187e51cffe9fe3348f12_1gab75c4448785d187e51cffe9fe3348f12" prot="public" static="no">
+        <name>DMACTRLx_R_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_ga52e6e61880941be08bfbb3de211e0229_1ga52e6e61880941be08bfbb3de211e0229" kindref="member">DMACTRLx_R</ref>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="115" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gad31a9e4496940638ae397b4e98eb524b_1gad31a9e4496940638ae397b4e98eb524b" prot="public" static="no">
+        <name>DMACTRLx_DTT_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_gacf6a1f73d4a4ecff800fa48f715f9cbc_1gacf6a1f73d4a4ecff800fa48f715f9cbc" kindref="member">DMACTRLx_DTT</ref>(0x3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 3,4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="116" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaaae12efddb5d280847bfe8cec54dce80_1gaaae12efddb5d280847bfe8cec54dce80" prot="public" static="no">
+        <name>DMACTRLx_DWINC_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_ga37fcc916a26f83883a7fee1caaa0cde0_1ga37fcc916a26f83883a7fee1caaa0cde0" kindref="member">DMACTRLx_DWINC</ref>(0x7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 5,6,7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="117" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaf0b85ea535b49f78caedc2c15c1bb743_1gaf0b85ea535b49f78caedc2c15c1bb743" prot="public" static="no">
+        <name>DMACTRLx_SIZE_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_gac2f590aac7504e3960cf3607c973f664_1gac2f590aac7504e3960cf3607c973f664" kindref="member">DMACTRLx_SIZE</ref>(0x1FFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 8..20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="118" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaea8174d2d67026a0e77aa8b6b00cd5f2_1gaea8174d2d67026a0e77aa8b6b00cd5f2" prot="public" static="no">
+        <name>DMACTRLx_ARB_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_ga46a9c1990f09d7b7640534e5b396575a_1ga46a9c1990f09d7b7640534e5b396575a" kindref="member">DMACTRLx_ARB</ref>(0xFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 21..28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="119" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga53d0a9711055e401c57d3d654b020879_1ga53d0a9711055e401c57d3d654b020879" prot="public" static="no">
+        <name>DMACTRLx_INT_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_gad7b8fd9be8515f3be65b4809b66235f3_1gad7b8fd9be8515f3be65b4809b66235f3" kindref="member">DMACTRLx_INT</ref>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 29 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="120" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaf58c8da68a90d064668776f6c5cb7347_1gaf58c8da68a90d064668776f6c5cb7347" prot="public" static="no">
+        <name>DMACTRLx_AM_MASK</name>
+        <initializer><ref refid="group__ARC__HAL__MISC__UDMA_ga6f6826c4c867b294c7744ae7ca10e1e0_1ga6f6826c4c867b294c7744ae7ca10e1e0" kindref="member">DMACTRLx_AM</ref>(0x3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit field mask: bit 30,31 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="121" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga1ec5fe68d27f31d10ef534096fd08145_1ga1ec5fe68d27f31d10ef534096fd08145" prot="public" static="no">
+        <name>DMACHANNEL</name>
+        <param><defname>x</defname></param>
+        <initializer>((0x1 &lt;&lt; (x)) &amp; 0xFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel number to Bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="123" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaf374fb59919b4cfd20b088bbf8b80124_1gaf374fb59919b4cfd20b088bbf8b80124" prot="public" static="no">
+        <name>DMA_IDLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA working status enumeration Current DMA status is IDLE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="146" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaad8d757da712e20a5b6b3cca2902cf57_1gaad8d757da712e20a5b6b3cca2902cf57" prot="public" static="no">
+        <name>DMA_BUSY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current DMA status is busy, in transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="147" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga16eb0563338fed885dbcaa491a7ab7c6_1ga16eb0563338fed885dbcaa491a7ab7c6" prot="public" static="no">
+        <name>DMA_ERROR</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current DMA status is error, in transfer error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="148" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga75d041ea1ea3c5d6affcc5e196e1257d_1ga75d041ea1ea3c5d6affcc5e196e1257d" prot="public" static="no">
+        <name>DMA_STOP</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current DMA is stop by user </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="149" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga9d0b061c89f56629feba02f00f700b87_1ga9d0b061c89f56629feba02f00f700b87" prot="public" static="no">
+        <name>DMA_CHN_ANY</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Any channel, request one </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="151" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga6c4d940e45d1aa3d554bd8a16fdcf5c6_1ga6c4d940e45d1aa3d554bd8a16fdcf5c6" prot="public" static="no">
+        <name>DMA_CHN_INVALID</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invalid channel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="152" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gafbce73db02f90ec79b963b893885480f_1gafbce73db02f90ec79b963b893885480f" prot="public" static="no">
+        <name>DMA_REQ_SOFT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel request or trigger source enumeration Software trigger </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="155" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gadc8e014bc2eac67f668eb25bcc78ccf0_1gadc8e014bc2eac67f668eb25bcc78ccf0" prot="public" static="no">
+        <name>DMA_REQ_PERIPHERAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral trigger </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="156" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga2609dc6a8d164247377598a20296627f_1ga2609dc6a8d164247377598a20296627f" prot="public" static="no">
+        <name>DMA_INVALID_TRANSFER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control bit field enumeration - DMA Operation (OP) Invalid channel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="178" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga37cbdb4c347b12dd7637911320177517_1ga37cbdb4c347b12dd7637911320177517" prot="public" static="no">
+        <name>DMA_SINGLE_TRANSFER</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Single Block </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="179" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gafca745abb0abe8e507d54af7b98ac529_1gafca745abb0abe8e507d54af7b98ac529" prot="public" static="no">
+        <name>DMA_AUTO_LINKED_TRANSFER</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link-List (Auto-Request) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="180" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga88f3ba2b6c266d0749db601554f6b4d1_1ga88f3ba2b6c266d0749db601554f6b4d1" prot="public" static="no">
+        <name>DMA_MANUAL_LINKED_TRANSFER</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link-List (Manual-Request) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="181" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga71b9c5e4584a75375d93017e915731ac_1ga71b9c5e4584a75375d93017e915731ac" prot="public" static="no">
+        <name>DMA_AUTO_REQUEST</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control bit field enumeration - Request Type (RT) Auto-request following channel arbitration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="184" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga54f5ebde516d67b0758af14724f4f780_1ga54f5ebde516d67b0758af14724f4f780" prot="public" static="no">
+        <name>DMA_MANUAL_REQUEST</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Manual-request following channel arbitration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="185" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaa1ee99dcc45fe894b75a4ff87e040f86_1gaa1ee99dcc45fe894b75a4ff87e040f86" prot="public" static="no">
+        <name>DMA_MEM2MEM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control bit field enumeration - Data Transfer Type (DTT) Memory to Memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="189" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga5f086268ae149787952ee28bd1051411_1ga5f086268ae149787952ee28bd1051411" prot="public" static="no">
+        <name>DMA_MEM2AUX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Memory to Auxiliary </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="190" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaff0b1572aa1e08c4902e4d0301f73b5c_1gaff0b1572aa1e08c4902e4d0301f73b5c" prot="public" static="no">
+        <name>DMA_AUX2MEM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auxiliary to Memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="191" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gadd449521a76881e69281e66ae036dd5c_1gadd449521a76881e69281e66ae036dd5c" prot="public" static="no">
+        <name>DMA_AUX2AUX</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auxiliary to Auxiliary </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="192" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gabd91c9a9c2018f29a07f9e9658a273d7_1gabd91c9a9c2018f29a07f9e9658a273d7" prot="public" static="no">
+        <name>DMA_DW1INC1</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control bit field enumeration - Data Width/Increment (DW/INC) dw=byte, inc=byte </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="196" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga3e67b89beaabedcad86f117f04071d25_1ga3e67b89beaabedcad86f117f04071d25" prot="public" static="no">
+        <name>DMA_DW1INC2</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw=byte, inc=half-word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="197" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga321acbb1a0c7f773d3782654e8ffc071_1ga321acbb1a0c7f773d3782654e8ffc071" prot="public" static="no">
+        <name>DMA_DW1INC4</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw=byte, inc=word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="198" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga2b19967dc6a795d5743301576b68e04c_1ga2b19967dc6a795d5743301576b68e04c" prot="public" static="no">
+        <name>DMA_DW2INC2</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw=half-word, inc=half-word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="199" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga50066286e842a598120d2289e62aa03a_1ga50066286e842a598120d2289e62aa03a" prot="public" static="no">
+        <name>DMA_DW2INC4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw=half-word, inc=word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="200" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga63456a38da21f4c5174ed42fe36f21c6_1ga63456a38da21f4c5174ed42fe36f21c6" prot="public" static="no">
+        <name>DMA_DW4INC4</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw=word, inc=word </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="201" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gae511b0d3832463bb198b8bfab3ec3e48_1gae511b0d3832463bb198b8bfab3ec3e48" prot="public" static="no">
+        <name>DMA_DWINC_CLR</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clear mode (dw=word, inc=word) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="202" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gad61716db88205c5bdd7cb9a4a1972e6d_1gad61716db88205c5bdd7cb9a4a1972e6d" prot="public" static="no">
+        <name>DMA_DW8INC8</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dw=double-word, inc=double-word(Only supported in HS) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="203" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga50e60c8b4abeea8716f5c6cb3355b61c_1ga50e60c8b4abeea8716f5c6cb3355b61c" prot="public" static="no">
+        <name>DMA_INT_DISABLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control bit field enumeration - Internal/External Interrupt enable (INT) Interrupt disabled, no interrupt raised is on completion of a data transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="207" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga9f0fb284e21e576a1388971f9fc3f983_1ga9f0fb284e21e576a1388971f9fc3f983" prot="public" static="no">
+        <name>DMA_INT_ENABLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt enabled, a level interrupt raised on completion of a data transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="208" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga5fb09e31ee3ffc93ab7760edb0fafc53_1ga5fb09e31ee3ffc93ab7760edb0fafc53" prot="public" static="no">
+        <name>DMA_AM_SRCNOT_DSTNOT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel control bit field enumeration - Address update Mode (AM) No Source or Destination Address increment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="212" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gabe3a292add3664ff8a129c91aef362ab_1gabe3a292add3664ff8a129c91aef362ab" prot="public" static="no">
+        <name>DMA_AM_SRCINC_DSTNOT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source Address incremented, Destination Address not incremented </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="213" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gafc9c62af5111d7f1f543fbb4d8a1a7d5_1gafc9c62af5111d7f1f543fbb4d8a1a7d5" prot="public" static="no">
+        <name>DMA_AM_SRCNOT_DSTINC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source Address not incremented, Destination Address incremented </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="214" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gadcce31c7e2701511690b5a772abb3cbe_1gadcce31c7e2701511690b5a772abb3cbe" prot="public" static="no">
+        <name>DMA_AM_SRCINC_DSTINC</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Source Address and Destination Address incremented </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="215" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga9eca52291792d023ba8c0f77536d62d5_1ga9eca52291792d023ba8c0f77536d62d5" prot="public" static="no">
+        <name>DMA_CHN_NORM_PRIO</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA channel priority enumeration Normal priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="219" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaa0202a0c409497b4092a8f123e935e55_1gaa0202a0c409497b4092a8f123e935e55" prot="public" static="no">
+        <name>DMA_CHN_HIGH_PRIO</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>High priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="220" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga5bfc90842e558ba607b22779febaa55e_1ga5bfc90842e558ba607b22779febaa55e" prot="public" static="no">
+        <name>DMA_MEMORY_CHANNEL_NUM</name>
+        <initializer>((<ref refid="group__ARC__HAL__MISC__UDMA_ga33e5192848954a63f872b0c7df80367a_1ga33e5192848954a63f872b0c7df80367a" kindref="member">DMA_ALL_CHANNEL_NUM</ref>) -(<ref refid="group__ARC__HAL__MISC__UDMA_ga662e5971b9271b6855045bb9dbf1a654_1ga662e5971b9271b6855045bb9dbf1a654" kindref="member">DMA_REGISTER_CHANNEL_NUM</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of Memory based DMA Channel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="223" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gaa05397c67f1ca927f140e195108d7334_1gaa05397c67f1ca927f140e195108d7334" prot="public" static="no">
+        <name>DMA_CHECK_REGISTER</name>
+        <param><defname>channel</defname></param>
+        <initializer>(channel &gt;= (<ref refid="group__ARC__HAL__MISC__UDMA_ga5bfc90842e558ba607b22779febaa55e_1ga5bfc90842e558ba607b22779febaa55e" kindref="member">DMA_MEMORY_CHANNEL_NUM</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether channel have register interface </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="233" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga953064c2f0d009a5077daa2433a639e3_1ga953064c2f0d009a5077daa2433a639e3" prot="public" static="no">
+        <name>DMA_CTRL_SET_OP</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.op = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - OP</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="253" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gae16af2522ce8a6ecba90d692fcf0af91_1gae16af2522ce8a6ecba90d692fcf0af91" prot="public" static="no">
+        <name>DMA_CTRL_SET_RT</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.rt = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - RT</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="259" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga27adf242d61f7b91b638bbc4ad95fd7e_1ga27adf242d61f7b91b638bbc4ad95fd7e" prot="public" static="no">
+        <name>DMA_CTRL_SET_DTT</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.dtt = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - DTT</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="265" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga4a69004fd86b7cb4f58337bf9b946989_1ga4a69004fd86b7cb4f58337bf9b946989" prot="public" static="no">
+        <name>DMA_CTRL_SET_DWINC</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.dwinc = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - DW/INC</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="271" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga40c309561706031ad808577793a4fdd7_1ga40c309561706031ad808577793a4fdd7" prot="public" static="no">
+        <name>DMA_CTRL_BLKSZ</name>
+        <param><defname>x</defname></param>
+        <initializer>(x - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate right size</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transfer size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>(x-1)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value after calculation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="277" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga32ba6fdd3f7b0d710ac4f8453bf0a186_1ga32ba6fdd3f7b0d710ac4f8453bf0a186" prot="public" static="no">
+        <name>DMA_CTRL_SET_BLKSZ</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.blksz = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - BLOCKSIZE</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="283" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga37aa2e14b2c8884f4b81d76c301e7c04_1ga37aa2e14b2c8884f4b81d76c301e7c04" prot="public" static="no">
+        <name>DMA_CTRL_SET_ARB</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.arb = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - ARB</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="289" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_gade35d9b6153a6be05277b5d13841c91e_1gade35d9b6153a6be05277b5d13841c91e" prot="public" static="no">
+        <name>DMA_CTRL_SET_INT</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.intm = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - I</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="295" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga3149b76bdf33d26240875f72a7954182_1ga3149b76bdf33d26240875f72a7954182" prot="public" static="no">
+        <name>DMA_CTRL_SET_AM</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;bits.am = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl bit field - AM</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="301" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__MISC__UDMA_ga3d1ae1072b84f3974de1105e8b03fdbb_1ga3d1ae1072b84f3974de1105e8b03fdbb" prot="public" static="no">
+        <name>DMA_CTRL_SET_VALUE</name>
+        <param><defname>ctrl</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>(ctrl)-&gt;value = val;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure ctrl value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This should be <ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> structure, and not NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="308" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__ARC__HAL__MISC__UDMA_ga939d7b0dc401478b6429653943fb6978_1ga939d7b0dc401478b6429653943fb6978" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* DMA_CALLBACK_T)(void *param)</definition>
+        <argsstring>)(void *param)</argsstring>
+        <name>DMA_CALLBACK_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handler function for uDAM callback, param should be current dma channel transfer structure <ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="126" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gabe1f10d79b3fda52149d4f66986910e8_1gabe1f10d79b3fda52149d4f66986910e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_init</definition>
+        <argsstring>(DMA_STATE_T *state)</argsstring>
+        <name>dmac_init</name>
+        <param>
+          <type><ref refid="structDMA__STATE__T" kindref="compound">DMA_STATE_T</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Initialize uDMA controller with a valid <ref refid="structDMA__STATE__T" kindref="compound">DMA_STATE_T</ref> structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you want to use this uDMA driver, you need to call the dmac_init function with a valid state, dmac will init the valid state. If initialized successfully, you can use the other uDMA APIs.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA state structure to maintain uDMA resources, this should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initialize successfully </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="484" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="484" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gaa077df81d09f99dc06f9f09746bee81a_1gaa077df81d09f99dc06f9f09746bee81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dmac_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dmac_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Close uDMA controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function disable all DMA channels. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="666" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="666" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_ga6c2645e2c3492c6d8b67c2041df46158_1ga6c2645e2c3492c6d8b67c2041df46158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_config_desc</definition>
+        <argsstring>(DMA_DESC_T *desc, void *src, void *dst, uint32_t size, DMA_CTRL_T *ctrl)</argsstring>
+        <name>dmac_config_desc</name>
+        <param>
+          <type><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref> *</type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+<para>Configure uDMA descriptor with source/destination address, transfer size in bytes and ctrl mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA descriptor, this should not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source address for the uDMA transfer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination address for the uDMA transfer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Actual transfer size in bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA channel control value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>desc is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The DMALLPx of desc will be set to NULL in this function, and DMACTRLx of desc will be set with right transfer size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="694" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="694" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gafca1f1fa507314a40e79217947adef6d_1gafca1f1fa507314a40e79217947adef6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_desc_add_linked</definition>
+        <argsstring>(DMA_DESC_T *head, DMA_DESC_T *next)</argsstring>
+        <name>dmac_desc_add_linked</name>
+        <param>
+          <type><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <param>
+          <type><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref> *</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+<para>Set uDMA channel linked-list pointer register, head -&gt; next. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA descriptor, should not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA descriptor, could be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>head is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="715" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="715" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_ga53d90b6138b8df5b68122f9eb5226aa4_1ga53d90b6138b8df5b68122f9eb5226aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_init_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn)</argsstring>
+        <name>dmac_init_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a channel for DMA transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data structure containing the default configuration for the selected channel, should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Channel will be set to DMA_CHN_INVALID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="733" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="733" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gad12af6a4849430107955660aae039a7e_1gad12af6a4849430107955660aae039a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_config_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn, DMA_DESC_T *desc)</argsstring>
+        <name>dmac_config_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <param>
+          <type><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref> *</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+<para>Configure channel for DMA transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data structure containing the intended configuration for the selected channel, should not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA descriptor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="756" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="756" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_ga0295616cd38d893a3299064492aa917d_1ga0295616cd38d893a3299064492aa917d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_reserve_channel</definition>
+        <argsstring>(int32_t channel, DMA_CHANNEL_T *dma_chn, uint32_t source)</argsstring>
+        <name>dmac_reserve_channel</name>
+        <param>
+          <type>int32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Reserve a DMA channel, bind it with dma_chn, and set the dma trigger source. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This can be DMA_CHN_ANY or any valid channel id. For DMA_CHN_ANY, it will try to peek an available channel. For any valid channel id, it will try to reserve that channel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA channel structure, should not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA trigger source, this can be any value in uint32_t enum</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>DMA_CHN_INVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL, or channel is not a valid one, or there is no channel available now </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0-DMA_ALL_CHANNEL_NUM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The channel id that reserved </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="782" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="782" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_ga282f1785750e3ca7b9273125a28b0c60_1ga282f1785750e3ca7b9273125a28b0c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_start_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn, DMA_CALLBACK_T callback, uint32_t priority)</argsstring>
+        <name>dmac_start_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__MISC__UDMA_ga939d7b0dc401478b6429653943fb6978_1ga939d7b0dc401478b6429653943fb6978" kindref="member">DMA_CALLBACK_T</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Start uDMA transfer for dma_chn, set handler function for uDAM callback and transfer priority. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA channel structure, should not be NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handler function, when DMA transfer is done, it will be called with parameter which value is dma_chn </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA transfer priority</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL or dma_chn-&gt;desc is NULL or channel of dma_chn is not a valid one or dma_chn is still in transfer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When channel is a aux-based channel, the dma descriptor should not be a linked list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When callback is NULL, then all INT field in DMA descriptor will be set to interrupt disable, otherwise it will be set to interrupt enable </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Check if aux based registers and linked transfer is not supported </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="828" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="828" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gaf8fe57c35476338282acc127301d16ec_1gaf8fe57c35476338282acc127301d16ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_stop_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn)</argsstring>
+        <name>dmac_stop_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <briefdescription>
+<para>Stop uDMA transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA channel structure, should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL or dma_chn-&gt;desc is NULL or channel of dma_chn is not a valid one </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="899" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="899" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gabe12957e565e2321b654cc6fdf882797_1gabe12957e565e2321b654cc6fdf882797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_release_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn)</argsstring>
+        <name>dmac_release_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <briefdescription>
+<para>Release an uDMA channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel tansfer structure of uDMA channel to be released, should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL or dma_chn-&gt;desc is NULL or channel of dma_chn is not a valid one </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="967" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="967" bodyend="989"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_gaea1ff54cdc15fb84a2574f9a9cd5f7f7_1gaea1ff54cdc15fb84a2574f9a9cd5f7f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_wait_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn)</argsstring>
+        <name>dmac_wait_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <briefdescription>
+<para>Wait until uDMA channel job is completed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel tansfer structure of uDMA channel, should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL or dma_chn-&gt;desc is NULL or channel of dma_chn is not a valid one </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_IDLE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer is done without error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer is done with error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="1001" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="1001" bodyend="1024"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_ga13b221e59cbdf4c1263a885b01bd740e_1ga13b221e59cbdf4c1263a885b01bd740e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_check_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn)</argsstring>
+        <name>dmac_check_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <briefdescription>
+<para>Check channel transfer status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel tansfer structure of uDMA channel, should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL or dma_chn-&gt;desc is NULL or channel of dma_chn is not a valid one </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_BUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_IDLE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer is done without error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DMA_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer is done with error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="1037" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="1037" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__UDMA_ga57e298efd5d09786c934bac3f5611b09_1ga57e298efd5d09786c934bac3f5611b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dmac_clear_channel</definition>
+        <argsstring>(DMA_CHANNEL_T *dma_chn)</argsstring>
+        <name>dmac_clear_channel</name>
+        <param>
+          <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+          <declname>dma_chn</declname>
+        </param>
+        <briefdescription>
+<para>Clear channel transfer status and set it to DMA_IDLE. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dma_chn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uDMA channel structure, should not be NULL</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dma_chn is NULL or dma_chn-&gt;desc is NULL or channel of dma_chn is not a valid one </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OK </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" line="933" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_udma.c" bodystart="933" bodyend="956"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>header file for ARC uDMA Controller </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#ifndef<sp/>H_ARC_UDMA</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_ARC_UDMA</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__builtin_8h" kindref="compound">arc/arc_builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__cache_8h" kindref="compound">arc/arc_cache.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CORE_DMAC_INTERNAL_VERSION</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="57" refid="group__ARC__HAL__MISC__UDMA_gae6d576ffb70ae165ab3cf26f1a5c24b0_1gae6d576ffb70ae165ab3cf26f1a5c24b0" refkind="member"><highlight class="preprocessor">#define<sp/>CORE_DMAC_INTERNAL_VERSION<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DMA_MULTI_IRQ</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="62" refid="group__ARC__HAL__MISC__UDMA_gaf6e87d0c5d43b4f136169f619243fe5a_1gaf6e87d0c5d43b4f136169f619243fe5a" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_MULTI_IRQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DMA_IRQ_PRIO</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="67" refid="group__ARC__HAL__MISC__UDMA_gaf16c6e745771a011277aabd659759eed_1gaf16c6e745771a011277aabd659759eed" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_IRQ_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(INT_PRI_MIN)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DMA_IRQ_NUM_START</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="72" refid="group__ARC__HAL__MISC__UDMA_ga8e05b31d51dbe30264e2467c9d1650c9_1ga8e05b31d51dbe30264e2467c9d1650c9" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_IRQ_NUM_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DMA_ALL_CHANNEL_NUM</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor">#ifdef<sp/><sp/>CORE_DMAC_CHANNELS</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMA_ALL_CHANNEL_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_DMAC_CHANNELS</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="80" refid="group__ARC__HAL__MISC__UDMA_ga33e5192848954a63f872b0c7df80367a_1ga33e5192848954a63f872b0c7df80367a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMA_ALL_CHANNEL_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DMA_REGISTER_CHANNEL_NUM</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor">#ifdef<sp/><sp/>CORE_DMAC_REGISTERS</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMA_REGISTER_CHANNEL_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CORE_DMAC_REGISTERS</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="89" refid="group__ARC__HAL__MISC__UDMA_ga662e5971b9271b6855045bb9dbf1a654_1ga662e5971b9271b6855045bb9dbf1a654" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMA_REGISTER_CHANNEL_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="94" refid="group__ARC__HAL__MISC__UDMA_ga1e656f95a8cb87b02d8a79853210ee0a_1ga1e656f95a8cb87b02d8a79853210ee0a" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_ALL_CHANNEL_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFFF</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="group__ARC__HAL__MISC__UDMA_ga3b5573ef57629c751ae39c5f12de6f7d_1ga3b5573ef57629c751ae39c5f12de6f7d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMACTRLx_OP_OFS<sp/><sp/><sp/><sp/><sp/>(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="group__ARC__HAL__MISC__UDMA_ga2899e234bca37fbfcff7beb307416e80_1ga2899e234bca37fbfcff7beb307416e80" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_R_OFS<sp/><sp/><sp/><sp/><sp/><sp/>(2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="group__ARC__HAL__MISC__UDMA_ga086b211216c85d46ca879d01a4ed1e98_1ga086b211216c85d46ca879d01a4ed1e98" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_DTT_OFS<sp/><sp/><sp/><sp/>(3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="group__ARC__HAL__MISC__UDMA_gad49f849bd52d48d3f2b53ea5130251c2_1gad49f849bd52d48d3f2b53ea5130251c2" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_DWINC_OFS<sp/><sp/>(5)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="group__ARC__HAL__MISC__UDMA_ga93a80795d8f15775272ce151207655a8_1ga93a80795d8f15775272ce151207655a8" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_SIZE_OFS<sp/><sp/><sp/>(8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="group__ARC__HAL__MISC__UDMA_ga8c0257c0859578c2754b424f9ed6561c_1ga8c0257c0859578c2754b424f9ed6561c" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_ARB_OFS<sp/><sp/><sp/><sp/>(21)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="group__ARC__HAL__MISC__UDMA_ga31a279ac20de678a5d95139520d61482_1ga31a279ac20de678a5d95139520d61482" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_INT_OFS<sp/><sp/><sp/><sp/>(29)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="group__ARC__HAL__MISC__UDMA_gade1850d1b521cc9dd20a7aaf0bb9c1fb_1gade1850d1b521cc9dd20a7aaf0bb9c1fb" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_AM_OFS<sp/><sp/><sp/><sp/><sp/>(30)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="group__ARC__HAL__MISC__UDMA_ga41d979f2c6d3f1b38eb1b9e06702d6b3_1ga41d979f2c6d3f1b38eb1b9e06702d6b3" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_OP(x)<sp/><sp/><sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_OP_OFS)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="group__ARC__HAL__MISC__UDMA_ga52e6e61880941be08bfbb3de211e0229_1ga52e6e61880941be08bfbb3de211e0229" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_R(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_R_OFS)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="group__ARC__HAL__MISC__UDMA_gacf6a1f73d4a4ecff800fa48f715f9cbc_1gacf6a1f73d4a4ecff800fa48f715f9cbc" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_DTT(x)<sp/><sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_DTT_OFS)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="group__ARC__HAL__MISC__UDMA_ga37fcc916a26f83883a7fee1caaa0cde0_1ga37fcc916a26f83883a7fee1caaa0cde0" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_DWINC(x)<sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_DWINC_OFS)<sp/></highlight></codeline>
+<codeline lineno="109" refid="group__ARC__HAL__MISC__UDMA_gac2f590aac7504e3960cf3607c973f664_1gac2f590aac7504e3960cf3607c973f664" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_SIZE(x)<sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_SIZE_OFS)<sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="group__ARC__HAL__MISC__UDMA_ga46a9c1990f09d7b7640534e5b396575a_1ga46a9c1990f09d7b7640534e5b396575a" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_ARB(x)<sp/><sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_ARB_OFS)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="group__ARC__HAL__MISC__UDMA_gad7b8fd9be8515f3be65b4809b66235f3_1gad7b8fd9be8515f3be65b4809b66235f3" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_INT(x)<sp/><sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_INT_OFS)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="group__ARC__HAL__MISC__UDMA_ga6f6826c4c867b294c7744ae7ca10e1e0_1ga6f6826c4c867b294c7744ae7ca10e1e0" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_AM(x)<sp/><sp/><sp/><sp/><sp/><sp/>((x)<sp/>&lt;&lt;<sp/>DMACTRLx_AM_OFS)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="group__ARC__HAL__MISC__UDMA_gae24b57a3add49e83da7ca8726b611ab4_1gae24b57a3add49e83da7ca8726b611ab4" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_OP_MASK<sp/><sp/><sp/><sp/>DMACTRLx_OP(0x3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="group__ARC__HAL__MISC__UDMA_gab75c4448785d187e51cffe9fe3348f12_1gab75c4448785d187e51cffe9fe3348f12" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_R_MASK<sp/><sp/><sp/><sp/><sp/>DMACTRLx_R(0x1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="group__ARC__HAL__MISC__UDMA_gad31a9e4496940638ae397b4e98eb524b_1gad31a9e4496940638ae397b4e98eb524b" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_DTT_MASK<sp/><sp/><sp/>DMACTRLx_DTT(0x3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="group__ARC__HAL__MISC__UDMA_gaaae12efddb5d280847bfe8cec54dce80_1gaaae12efddb5d280847bfe8cec54dce80" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_DWINC_MASK<sp/>DMACTRLx_DWINC(0x7)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="group__ARC__HAL__MISC__UDMA_gaf0b85ea535b49f78caedc2c15c1bb743_1gaf0b85ea535b49f78caedc2c15c1bb743" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_SIZE_MASK<sp/><sp/>DMACTRLx_SIZE(0x1FFF)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="group__ARC__HAL__MISC__UDMA_gaea8174d2d67026a0e77aa8b6b00cd5f2_1gaea8174d2d67026a0e77aa8b6b00cd5f2" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_ARB_MASK<sp/><sp/><sp/>DMACTRLx_ARB(0xFF)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="group__ARC__HAL__MISC__UDMA_ga53d0a9711055e401c57d3d654b020879_1ga53d0a9711055e401c57d3d654b020879" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_INT_MASK<sp/><sp/><sp/>DMACTRLx_INT(0x1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="group__ARC__HAL__MISC__UDMA_gaf58c8da68a90d064668776f6c5cb7347_1gaf58c8da68a90d064668776f6c5cb7347" refkind="member"><highlight class="preprocessor">#define<sp/>DMACTRLx_AM_MASK<sp/><sp/><sp/><sp/>DMACTRLx_AM(0x3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="group__ARC__HAL__MISC__UDMA_ga1ec5fe68d27f31d10ef534096fd08145_1ga1ec5fe68d27f31d10ef534096fd08145" refkind="member"><highlight class="preprocessor">#define<sp/>DMACHANNEL(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0x1<sp/>&lt;&lt;<sp/>(x))<sp/>&amp;<sp/>0xFFFF)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="group__ARC__HAL__MISC__UDMA_ga939d7b0dc401478b6429653943fb6978_1ga939d7b0dc401478b6429653943fb6978" refkind="member"><highlight class="preprocessor">typedef<sp/>void<sp/>(*DMA_CALLBACK_T)<sp/>(void<sp/>*param);</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="structDMA__CTRL__FIELD__T" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129" refid="structDMA__CTRL__FIELD__T_ac96daa4694a07f430a968e99e3706847_1ac96daa4694a07f430a968e99e3706847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>op<sp/><sp/><sp/><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="structDMA__CTRL__FIELD__T_acd1b9ef621a2f139a6cc3d4b753f8dbf_1acd1b9ef621a2f139a6cc3d4b753f8dbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>rt<sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="structDMA__CTRL__FIELD__T_aaa754739d8efd3699a4c682239c14d30_1aaa754739d8efd3699a4c682239c14d30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dtt<sp/><sp/><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="structDMA__CTRL__FIELD__T_af399c14491ac4a28fd14ff182ea565d9_1af399c14491ac4a28fd14ff182ea565d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dwinc<sp/>:<sp/>3;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="structDMA__CTRL__FIELD__T_afbaeeff4638a39e1e97d040d4ca87b2a_1afbaeeff4638a39e1e97d040d4ca87b2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>blksz<sp/>:<sp/>13;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="structDMA__CTRL__FIELD__T_a302b970e4da468a47d4b4ab7880b8b50_1a302b970e4da468a47d4b4ab7880b8b50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>arb<sp/><sp/><sp/>:<sp/>8;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="structDMA__CTRL__FIELD__T_a755d5c213b11377227f3279f35d9b723_1a755d5c213b11377227f3279f35d9b723" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>intm<sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="structDMA__CTRL__FIELD__T_a32b4377f73904d3eb2ca00de45d0f2b1_1a32b4377f73904d3eb2ca00de45d0f2b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>am<sp/><sp/><sp/><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/><ref refid="structDMA__CTRL__FIELD__T" kindref="compound">DMA_CTRL_FIELD_T</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="unionDMA__CTRL__T" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141" refid="unionDMA__CTRL__T_a24a1928eb120a47b5b651ef5179f6492_1a24a1928eb120a47b5b651ef5179f6492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDMA__CTRL__FIELD__T" kindref="compound">DMA_CTRL_FIELD_T</ref><sp/><ref refid="unionDMA__CTRL__T_a24a1928eb120a47b5b651ef5179f6492_1a24a1928eb120a47b5b651ef5179f6492" kindref="member">bits</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="unionDMA__CTRL__T_a2861ace9a428c942702d66965e05f2e6_1a2861ace9a428c942702d66965e05f2e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="unionDMA__CTRL__T_a2861ace9a428c942702d66965e05f2e6_1a2861ace9a428c942702d66965e05f2e6" kindref="member">value</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}<sp/><ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="group__ARC__HAL__MISC__UDMA_gaf374fb59919b4cfd20b088bbf8b80124_1gaf374fb59919b4cfd20b088bbf8b80124" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_IDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="group__ARC__HAL__MISC__UDMA_gaad8d757da712e20a5b6b3cca2902cf57_1gaad8d757da712e20a5b6b3cca2902cf57" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_BUSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="group__ARC__HAL__MISC__UDMA_ga16eb0563338fed885dbcaa491a7ab7c6_1ga16eb0563338fed885dbcaa491a7ab7c6" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="group__ARC__HAL__MISC__UDMA_ga75d041ea1ea3c5d6affcc5e196e1257d_1ga75d041ea1ea3c5d6affcc5e196e1257d" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="group__ARC__HAL__MISC__UDMA_ga9d0b061c89f56629feba02f00f700b87_1ga9d0b061c89f56629feba02f00f700b87" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CHN_ANY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="group__ARC__HAL__MISC__UDMA_ga6c4d940e45d1aa3d554bd8a16fdcf5c6_1ga6c4d940e45d1aa3d554bd8a16fdcf5c6" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CHN_INVALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-2<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="group__ARC__HAL__MISC__UDMA_gafbce73db02f90ec79b963b893885480f_1gafbce73db02f90ec79b963b893885480f" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_REQ_SOFT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="group__ARC__HAL__MISC__UDMA_gadc8e014bc2eac67f668eb25bcc78ccf0_1gadc8e014bc2eac67f668eb25bcc78ccf0" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_REQ_PERIPHERAL<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="structDMA__DESC__T" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct<sp/>{</highlight></codeline>
+<codeline lineno="160" refid="structDMA__DESC__T_ac80b3b0dd101659b06ace47678f444f5_1ac80b3b0dd101659b06ace47678f444f5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDMA__DESC__T_ac80b3b0dd101659b06ace47678f444f5_1ac80b3b0dd101659b06ace47678f444f5" kindref="member">DMACTRLx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="structDMA__DESC__T_a40ef21c53193afeb344d5c649fbeb074_1a40ef21c53193afeb344d5c649fbeb074" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDMA__DESC__T_a40ef21c53193afeb344d5c649fbeb074_1a40ef21c53193afeb344d5c649fbeb074" kindref="member">DMASARx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="structDMA__DESC__T_a4f3a7b3297f1fa6a27bc33d83c3e495e_1a4f3a7b3297f1fa6a27bc33d83c3e495e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDMA__DESC__T_a4f3a7b3297f1fa6a27bc33d83c3e495e_1a4f3a7b3297f1fa6a27bc33d83c3e495e" kindref="member">DMADARx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="structDMA__DESC__T_a2127084ae4ad3243d38794cdde8d91b0_1a2127084ae4ad3243d38794cdde8d91b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDMA__DESC__T_a2127084ae4ad3243d38794cdde8d91b0_1a2127084ae4ad3243d38794cdde8d91b0" kindref="member">DMALLPx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="structDMA__CHANNEL__T" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168" refid="structDMA__CHANNEL__T_a35ca7577073df9f04a5d1eabd2a468db_1a35ca7577073df9f04a5d1eabd2a468db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structDMA__CHANNEL__T_a35ca7577073df9f04a5d1eabd2a468db_1a35ca7577073df9f04a5d1eabd2a468db" kindref="member">channel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="structDMA__CHANNEL__T_addcc7911abce048faa30ddfd648329f7_1addcc7911abce048faa30ddfd648329f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="structDMA__CHANNEL__T_addcc7911abce048faa30ddfd648329f7_1addcc7911abce048faa30ddfd648329f7" kindref="member">priority</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="structDMA__CHANNEL__T_a272bcfe1e09e9594f23914821ca1c23c_1a272bcfe1e09e9594f23914821ca1c23c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="structDMA__CHANNEL__T_a272bcfe1e09e9594f23914821ca1c23c_1a272bcfe1e09e9594f23914821ca1c23c" kindref="member">int_en</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="structDMA__CHANNEL__T_a0e4c5047e6ac0c1a4776e8028ddc05e6_1a0e4c5047e6ac0c1a4776e8028ddc05e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDMA__CHANNEL__T_a0e4c5047e6ac0c1a4776e8028ddc05e6_1a0e4c5047e6ac0c1a4776e8028ddc05e6" kindref="member">source</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="structDMA__CHANNEL__T_aba398042491db742881a83f41130c596_1aba398042491db742881a83f41130c596" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref><sp/>*<ref refid="structDMA__CHANNEL__T_aba398042491db742881a83f41130c596_1aba398042491db742881a83f41130c596" kindref="member">desc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="structDMA__CHANNEL__T_adc789c2521bf56fe2050e024d838a5a2_1adc789c2521bf56fe2050e024d838a5a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structDMA__CHANNEL__T_adc789c2521bf56fe2050e024d838a5a2_1adc789c2521bf56fe2050e024d838a5a2" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="structDMA__CHANNEL__T_ad673bd4b2562549c214c76bb23c97b0a_1ad673bd4b2562549c214c76bb23c97b0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga939d7b0dc401478b6429653943fb6978_1ga939d7b0dc401478b6429653943fb6978" kindref="member">DMA_CALLBACK_T</ref><sp/><ref refid="structDMA__CHANNEL__T_ad673bd4b2562549c214c76bb23c97b0a_1ad673bd4b2562549c214c76bb23c97b0a" kindref="member">callback</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}<sp/><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="group__ARC__HAL__MISC__UDMA_ga2609dc6a8d164247377598a20296627f_1ga2609dc6a8d164247377598a20296627f" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_INVALID_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179" refid="group__ARC__HAL__MISC__UDMA_ga37cbdb4c347b12dd7637911320177517_1ga37cbdb4c347b12dd7637911320177517" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_SINGLE_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180" refid="group__ARC__HAL__MISC__UDMA_gafca745abb0abe8e507d54af7b98ac529_1gafca745abb0abe8e507d54af7b98ac529" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AUTO_LINKED_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181" refid="group__ARC__HAL__MISC__UDMA_ga88f3ba2b6c266d0749db601554f6b4d1_1ga88f3ba2b6c266d0749db601554f6b4d1" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_MANUAL_LINKED_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184" refid="group__ARC__HAL__MISC__UDMA_ga71b9c5e4584a75375d93017e915731ac_1ga71b9c5e4584a75375d93017e915731ac" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AUTO_REQUEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="group__ARC__HAL__MISC__UDMA_ga54f5ebde516d67b0758af14724f4f780_1ga54f5ebde516d67b0758af14724f4f780" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_MANUAL_REQUEST<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189" refid="group__ARC__HAL__MISC__UDMA_gaa1ee99dcc45fe894b75a4ff87e040f86_1gaa1ee99dcc45fe894b75a4ff87e040f86" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_MEM2MEM<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190" refid="group__ARC__HAL__MISC__UDMA_ga5f086268ae149787952ee28bd1051411_1ga5f086268ae149787952ee28bd1051411" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_MEM2AUX<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191" refid="group__ARC__HAL__MISC__UDMA_gaff0b1572aa1e08c4902e4d0301f73b5c_1gaff0b1572aa1e08c4902e4d0301f73b5c" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AUX2MEM<sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192" refid="group__ARC__HAL__MISC__UDMA_gadd449521a76881e69281e66ae036dd5c_1gadd449521a76881e69281e66ae036dd5c" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AUX2AUX<sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="group__ARC__HAL__MISC__UDMA_gabd91c9a9c2018f29a07f9e9658a273d7_1gabd91c9a9c2018f29a07f9e9658a273d7" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW1INC1<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197" refid="group__ARC__HAL__MISC__UDMA_ga3e67b89beaabedcad86f117f04071d25_1ga3e67b89beaabedcad86f117f04071d25" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW1INC2<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198" refid="group__ARC__HAL__MISC__UDMA_ga321acbb1a0c7f773d3782654e8ffc071_1ga321acbb1a0c7f773d3782654e8ffc071" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW1INC4<sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199" refid="group__ARC__HAL__MISC__UDMA_ga2b19967dc6a795d5743301576b68e04c_1ga2b19967dc6a795d5743301576b68e04c" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW2INC2<sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="200" refid="group__ARC__HAL__MISC__UDMA_ga50066286e842a598120d2289e62aa03a_1ga50066286e842a598120d2289e62aa03a" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW2INC4<sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201" refid="group__ARC__HAL__MISC__UDMA_ga63456a38da21f4c5174ed42fe36f21c6_1ga63456a38da21f4c5174ed42fe36f21c6" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW4INC4<sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202" refid="group__ARC__HAL__MISC__UDMA_gae511b0d3832463bb198b8bfab3ec3e48_1gae511b0d3832463bb198b8bfab3ec3e48" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DWINC_CLR<sp/><sp/><sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203" refid="group__ARC__HAL__MISC__UDMA_gad61716db88205c5bdd7cb9a4a1972e6d_1gad61716db88205c5bdd7cb9a4a1972e6d" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_DW8INC8<sp/><sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207" refid="group__ARC__HAL__MISC__UDMA_ga50e60c8b4abeea8716f5c6cb3355b61c_1ga50e60c8b4abeea8716f5c6cb3355b61c" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_INT_DISABLE<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208" refid="group__ARC__HAL__MISC__UDMA_ga9f0fb284e21e576a1388971f9fc3f983_1ga9f0fb284e21e576a1388971f9fc3f983" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_INT_ENABLE<sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212" refid="group__ARC__HAL__MISC__UDMA_ga5fb09e31ee3ffc93ab7760edb0fafc53_1ga5fb09e31ee3ffc93ab7760edb0fafc53" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AM_SRCNOT_DSTNOT<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213" refid="group__ARC__HAL__MISC__UDMA_gabe3a292add3664ff8a129c91aef362ab_1gabe3a292add3664ff8a129c91aef362ab" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AM_SRCINC_DSTNOT<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214" refid="group__ARC__HAL__MISC__UDMA_gafc9c62af5111d7f1f543fbb4d8a1a7d5_1gafc9c62af5111d7f1f543fbb4d8a1a7d5" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AM_SRCNOT_DSTINC<sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215" refid="group__ARC__HAL__MISC__UDMA_gadcce31c7e2701511690b5a772abb3cbe_1gadcce31c7e2701511690b5a772abb3cbe" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_AM_SRCINC_DSTINC<sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219" refid="group__ARC__HAL__MISC__UDMA_ga9eca52291792d023ba8c0f77536d62d5_1ga9eca52291792d023ba8c0f77536d62d5" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CHN_NORM_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220" refid="group__ARC__HAL__MISC__UDMA_gaa0202a0c409497b4092a8f123e935e55_1gaa0202a0c409497b4092a8f123e935e55" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CHN_HIGH_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223" refid="group__ARC__HAL__MISC__UDMA_ga5bfc90842e558ba607b22779febaa55e_1ga5bfc90842e558ba607b22779febaa55e" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_MEMORY_CHANNEL_NUM<sp/><sp/><sp/><sp/><sp/><sp/>((DMA_ALL_CHANNEL_NUM)<sp/>-(DMA_REGISTER_CHANNEL_NUM))</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CORE_DMAC_INTERNAL_VERSION<sp/>==<sp/>1</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>DMA_MEMORY_CHANNEL_NUM<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor">#define<sp/>DMA_MEMORY_HEADER</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="233" refid="group__ARC__HAL__MISC__UDMA_gaa05397c67f1ca927f140e195108d7334_1gaa05397c67f1ca927f140e195108d7334" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CHECK_REGISTER(channel)<sp/>(channel<sp/>&gt;=<sp/>(DMA_MEMORY_CHANNEL_NUM))</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="236" refid="structDMA__STATE__T" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DMA_MEMORY_HEADER</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__TOOLCHAIN_ga502852257a5c7b4bc34a232dc9ab9043_1ga502852257a5c7b4bc34a232dc9ab9043" kindref="member">EMBARC_ALIGNED</ref>(256)<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref><sp/>mem_dma_descs[<ref refid="group__ARC__HAL__MISC__UDMA_ga5bfc90842e558ba607b22779febaa55e_1ga5bfc90842e558ba607b22779febaa55e" kindref="member">DMA_MEMORY_CHANNEL_NUM</ref>];</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>CORE_DMAC_INTERNAL_VERSION<sp/>&gt;<sp/>1</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__TOOLCHAIN_ga502852257a5c7b4bc34a232dc9ab9043_1ga502852257a5c7b4bc34a232dc9ab9043" kindref="member">EMBARC_ALIGNED</ref>(32)<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>mem_dma_ptrs[<ref refid="group__ARC__HAL__MISC__UDMA_ga33e5192848954a63f872b0c7df80367a_1ga33e5192848954a63f872b0c7df80367a" kindref="member">DMA_ALL_CHANNEL_NUM</ref>];</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="245" refid="structDMA__STATE__T_a9703298e5d965a0656838649425dabdc_1a9703298e5d965a0656838649425dabdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chns[<ref refid="group__ARC__HAL__MISC__UDMA_ga33e5192848954a63f872b0c7df80367a_1ga33e5192848954a63f872b0c7df80367a" kindref="member">DMA_ALL_CHANNEL_NUM</ref>];</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}<sp/><ref refid="structDMA__STATE__T" kindref="compound">DMA_STATE_T</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="group__ARC__HAL__MISC__UDMA_ga953064c2f0d009a5077daa2433a639e3_1ga953064c2f0d009a5077daa2433a639e3" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_OP(ctrl,<sp/>val)<sp/><sp/>(ctrl)-&gt;bits.op<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="259" refid="group__ARC__HAL__MISC__UDMA_gae16af2522ce8a6ecba90d692fcf0af91_1gae16af2522ce8a6ecba90d692fcf0af91" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_RT(ctrl,<sp/>val)<sp/><sp/>(ctrl)-&gt;bits.rt<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="260"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="265" refid="group__ARC__HAL__MISC__UDMA_ga27adf242d61f7b91b638bbc4ad95fd7e_1ga27adf242d61f7b91b638bbc4ad95fd7e" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_DTT(ctrl,<sp/>val)<sp/>(ctrl)-&gt;bits.dtt<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="266"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="271" refid="group__ARC__HAL__MISC__UDMA_ga4a69004fd86b7cb4f58337bf9b946989_1ga4a69004fd86b7cb4f58337bf9b946989" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_DWINC(ctrl,<sp/>val)<sp/><sp/><sp/>(ctrl)-&gt;bits.dwinc<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="277" refid="group__ARC__HAL__MISC__UDMA_ga40c309561706031ad808577793a4fdd7_1ga40c309561706031ad808577793a4fdd7" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_BLKSZ(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(x<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="283" refid="group__ARC__HAL__MISC__UDMA_ga32ba6fdd3f7b0d710ac4f8453bf0a186_1ga32ba6fdd3f7b0d710ac4f8453bf0a186" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_BLKSZ(ctrl,<sp/>val)<sp/><sp/><sp/>(ctrl)-&gt;bits.blksz<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="289" refid="group__ARC__HAL__MISC__UDMA_ga37aa2e14b2c8884f4b81d76c301e7c04_1ga37aa2e14b2c8884f4b81d76c301e7c04" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_ARB(ctrl,<sp/>val)<sp/>(ctrl)-&gt;bits.arb<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="290"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="295" refid="group__ARC__HAL__MISC__UDMA_gade35d9b6153a6be05277b5d13841c91e_1gade35d9b6153a6be05277b5d13841c91e" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_INT(ctrl,<sp/>val)<sp/>(ctrl)-&gt;bits.intm<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="301" refid="group__ARC__HAL__MISC__UDMA_ga3149b76bdf33d26240875f72a7954182_1ga3149b76bdf33d26240875f72a7954182" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_AM(ctrl,<sp/>val)<sp/><sp/>(ctrl)-&gt;bits.am<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="308" refid="group__ARC__HAL__MISC__UDMA_ga3d1ae1072b84f3974de1105e8b03fdbb_1ga3d1ae1072b84f3974de1105e8b03fdbb" refkind="member"><highlight class="preprocessor">#define<sp/>DMA_CTRL_SET_VALUE(ctrl,<sp/>val)<sp/><sp/><sp/>(ctrl)-&gt;value<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_gabe1f10d79b3fda52149d4f66986910e8_1gabe1f10d79b3fda52149d4f66986910e8" kindref="member">dmac_init</ref>(<ref refid="structDMA__STATE__T" kindref="compound">DMA_STATE_T</ref><sp/>*state);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__UDMA_gaa077df81d09f99dc06f9f09746bee81a_1gaa077df81d09f99dc06f9f09746bee81a" kindref="member">dmac_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga6c2645e2c3492c6d8b67c2041df46158_1ga6c2645e2c3492c6d8b67c2041df46158" kindref="member">dmac_config_desc</ref>(<ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref><sp/>*desc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*src,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dst,<sp/>uint32_t<sp/>size,<sp/><ref refid="unionDMA__CTRL__T" kindref="compound">DMA_CTRL_T</ref><sp/>*ctrl);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_gafca1f1fa507314a40e79217947adef6d_1gafca1f1fa507314a40e79217947adef6d" kindref="member">dmac_desc_add_linked</ref>(<ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref><sp/>*head,<sp/><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref><sp/>*next);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga53d90b6138b8df5b68122f9eb5226aa4_1ga53d90b6138b8df5b68122f9eb5226aa4" kindref="member">dmac_init_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_gad12af6a4849430107955660aae039a7e_1gad12af6a4849430107955660aae039a7e" kindref="member">dmac_config_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn,<sp/><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref><sp/>*desc);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga0295616cd38d893a3299064492aa917d_1ga0295616cd38d893a3299064492aa917d" kindref="member">dmac_reserve_channel</ref>(int32_t<sp/>channel,<sp/><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn,<sp/>uint32_t<sp/>source);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga282f1785750e3ca7b9273125a28b0c60_1ga282f1785750e3ca7b9273125a28b0c60" kindref="member">dmac_start_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn,<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga939d7b0dc401478b6429653943fb6978_1ga939d7b0dc401478b6429653943fb6978" kindref="member">DMA_CALLBACK_T</ref><sp/>callback,<sp/>uint32_t<sp/>priority);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_gaf8fe57c35476338282acc127301d16ec_1gaf8fe57c35476338282acc127301d16ec" kindref="member">dmac_stop_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_gabe12957e565e2321b654cc6fdf882797_1gabe12957e565e2321b654cc6fdf882797" kindref="member">dmac_release_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_gaea1ff54cdc15fb84a2574f9a9cd5f7f7_1gaea1ff54cdc15fb84a2574f9a9cd5f7f7" kindref="member">dmac_wait_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga13b221e59cbdf4c1263a885b01bd740e_1ga13b221e59cbdf4c1263a885b01bd740e" kindref="member">dmac_check_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__UDMA_ga57e298efd5d09786c934bac3f5611b09_1ga57e298efd5d09786c934bac3f5611b09" kindref="member">dmac_clear_channel</ref>(<ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref><sp/>*dma_chn);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="327"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__ASSEMBLY__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>H_ARC_UDMA<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="330"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h"/>
+  </compounddef>
+</doxygen>

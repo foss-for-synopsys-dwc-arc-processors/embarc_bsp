@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__I2S__RX__CTRL" kind="struct" prot="public">
+    <compoundname>DW_I2S_RX_CTRL</compoundname>
+    <includes refid="dw__i2s_8h" local="no">dw_i2s.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__I2S__RX__CTRL_afb01016105a1a896e17686f9fd16f8b0_1afb01016105a1a896e17686f9fd16f8b0" prot="public" static="no" mutable="no">
+        <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+        <definition>DW_I2S_RX_REG* DW_I2S_RX_CTRL::dw_i2s_regs</definition>
+        <argsstring></argsstring>
+        <name>dw_i2s_regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S device registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="307" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__CTRL_ab8743d98e0bc43dff25d7baa08ca54bd_1ab8743d98e0bc43dff25d7baa08ca54bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_CTRL::int_status[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>int_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S interrupt status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="309" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__CTRL_a80bf19f67393485c3bee5c31345ad396_1a80bf19f67393485c3bee5c31345ad396" prot="public" static="no" mutable="no">
+        <type><ref refid="structDW__I2S__BUFFER" kindref="compound">DW_I2S_BUFFER</ref></type>
+        <definition>DW_I2S_BUFFER DW_I2S_RX_CTRL::dw_i2s_buf</definition>
+        <argsstring></argsstring>
+        <name>dw_i2s_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S read buffer for receive data, left+right data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="310" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for DesignWare I2S control. </para>    </briefdescription>
+    <detaileddescription>
+<para>Structure type for DesignWare I2S implementation </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="143">
+        <label>DW_I2S_BUFFER</label>
+        <link refid="structDW__I2S__BUFFER"/>
+      </node>
+      <node id="142">
+        <label>DW_I2S_RX_CTRL</label>
+        <link refid="structDW__I2S__RX__CTRL"/>
+        <childnode refid="143" relation="usage">
+          <edgelabel>dw_i2s_buf</edgelabel>
+        </childnode>
+        <childnode refid="144" relation="usage">
+          <edgelabel>dw_i2s_regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="144">
+        <label>DW_I2S_RX_REG</label>
+        <link refid="structDW__I2S__RX__REG"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="306" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="306" bodyend="311"/>
+    <listofallmembers>
+      <member refid="structDW__I2S__RX__CTRL_a80bf19f67393485c3bee5c31345ad396_1a80bf19f67393485c3bee5c31345ad396" prot="public" virt="non-virtual"><scope>DW_I2S_RX_CTRL</scope><name>dw_i2s_buf</name></member>
+      <member refid="structDW__I2S__RX__CTRL_afb01016105a1a896e17686f9fd16f8b0_1afb01016105a1a896e17686f9fd16f8b0" prot="public" virt="non-virtual"><scope>DW_I2S_RX_CTRL</scope><name>dw_i2s_regs</name></member>
+      <member refid="structDW__I2S__RX__CTRL_ab8743d98e0bc43dff25d7baa08ca54bd_1ab8743d98e0bc43dff25d7baa08ca54bd" prot="public" virt="non-virtual"><scope>DW_I2S_RX_CTRL</scope><name>int_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

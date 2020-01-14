@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c" kind="file">
+    <compoundname>dw_sdio_obj.c</compoundname>
+    <includes refid="dw__sdio_8h" local="yes">device/designware/dw_sdio.h</includes>
+    <includes refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8h" local="yes">dw_sdio_obj.h</includes>
+    <includes refid="iotdk_8h" local="yes">iotdk/iotdk.h</includes>
+    <incdepgraph>
+      <node id="961">
+        <label>device/ip_hal/dev_pwm_timer.h</label>
+        <link refid="dev__pwm__timer_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="950">
+        <label>stdbool.h</label>
+      </node>
+      <node id="946">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+      </node>
+      <node id="971">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="974">
+        <label>drivers/smic/smic_eflash/smic_eflash.h</label>
+        <link refid="smic__eflash_8h"/>
+        <childnode refid="962" relation="include">
+        </childnode>
+      </node>
+      <node id="957">
+        <label>drivers/ip/designware/i2s/dw_i2s_obj.h</label>
+        <link refid="dw__i2s__obj_8h"/>
+        <childnode refid="958" relation="include">
+        </childnode>
+      </node>
+      <node id="947">
+        <label>stdint.h</label>
+      </node>
+      <node id="958">
+        <label>device/ip_hal/dev_i2s.h</label>
+        <link refid="dev__i2s_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c"/>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+      </node>
+      <node id="972">
+        <label>drivers/sysconf/sysconf.h</label>
+        <link refid="sysconf_8h"/>
+      </node>
+      <node id="954">
+        <label>dw_sdio_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8h"/>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>apexextensions.h</label>
+        <link refid="iotdk_2configs_210_2apexextensions_8h"/>
+      </node>
+      <node id="949">
+        <label>stddef.h</label>
+      </node>
+      <node id="952">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="953" relation="include">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>limits.h</label>
+      </node>
+      <node id="960">
+        <label>device/designware/dw_pwm_timer.h</label>
+        <link refid="dw__pwm__timer_8h"/>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>device/ip_hal/dev_sdio.h</label>
+        <link refid="dev__sdio_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="953">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="975">
+        <label>drivers/smic/smic_bootspi/smic_bootspi.h</label>
+        <link refid="smic__bootspi_8h"/>
+        <childnode refid="962" relation="include">
+        </childnode>
+      </node>
+      <node id="955">
+        <label>iotdk/iotdk.h</label>
+        <link refid="iotdk_8h"/>
+        <childnode refid="956" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+        <childnode refid="966" relation="include">
+        </childnode>
+        <childnode refid="968" relation="include">
+        </childnode>
+        <childnode refid="970" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+        <childnode refid="975" relation="include">
+        </childnode>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+      </node>
+      <node id="967">
+        <label>device/ip_hal/dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="964">
+        <label>io_config.h</label>
+      </node>
+      <node id="976">
+        <label>device/dev_pinmux.h</label>
+        <link refid="dev__pinmux_8h"/>
+        <childnode refid="946" relation="include">
+        </childnode>
+      </node>
+      <node id="973">
+        <label>drivers/smic/smic_adc/smic_adc.h</label>
+        <link refid="smic__adc_8h"/>
+        <childnode refid="962" relation="include">
+        </childnode>
+      </node>
+      <node id="956">
+        <label>arc/arc_em.h</label>
+        <link refid="arc__em_8h"/>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+      <node id="945">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="946" relation="include">
+        </childnode>
+      </node>
+      <node id="970">
+        <label>drivers/ip/subsystem/gpio/dfss_gpio_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8h"/>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+      </node>
+      <node id="943">
+        <label>device/designware/dw_sdio.h</label>
+        <link refid="dw__sdio_8h"/>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+      </node>
+      <node id="962">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="951" relation="include">
+        </childnode>
+      </node>
+      <node id="968">
+        <label>drivers/ip/subsystem/spi/dfss_spi_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8h"/>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="969" relation="include">
+        </childnode>
+      </node>
+      <node id="951">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+      </node>
+      <node id="965">
+        <label>device/ip_hal/dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="969">
+        <label>device/ip_hal/dev_spi.h</label>
+        <link refid="dev__spi_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="959">
+        <label>drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
+        <childnode refid="960" relation="include">
+        </childnode>
+      </node>
+      <node id="963">
+        <label>drivers/ip/subsystem/iic/dfss_iic_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8h"/>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="965" relation="include">
+        </childnode>
+      </node>
+      <node id="977">
+        <label>iotdk_hardware.h</label>
+        <link refid="iotdk__hardware_8h"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="978">
+        <label>io_config.h</label>
+        <link refid="iotdk_2configs_210_2io__config_8h"/>
+      </node>
+      <node id="966">
+        <label>drivers/ip/subsystem/uart/dfss_uart_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h"/>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="967" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aa230cf3470fcb046f46dc0ae3840b205_1aa230cf3470fcb046f46dc0ae3840b205" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDW__SDIO__CTRL" kindref="compound">DW_SDIO_CTRL</ref></type>
+        <definition>DW_SDIO_CTRL dw_sdio_0_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_sdio_0_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="37" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a9e6b401e7027c129a9962cd4cb70e310_1a9e6b401e7027c129a9962cd4cb70e310" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDEV__SDIO" kindref="compound">DEV_SDIO</ref></type>
+        <definition>DEV_SDIO dw_sdio_0</definition>
+        <argsstring></argsstring>
+        <name>dw_sdio_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="38" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a7b80d980502d406c7e4b0a1302c51222_1a7b80d980502d406c7e4b0a1302c51222" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_sdio_0_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_sdio_0_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="40" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aee64dc59a6c97f4bcddb9402417c1161_1aee64dc59a6c97f4bcddb9402417c1161" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_open</definition>
+        <argsstring>(uint32_t card)</argsstring>
+        <name>dw_sdio_0_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>card</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a75cb1d98894d95b515a14311d5724b6c_1a75cb1d98894d95b515a14311d5724b6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_close</definition>
+        <argsstring>(uint32_t card)</argsstring>
+        <name>dw_sdio_0_close</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>card</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="51" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a80015c75cdb2307107573345c40643a2_1a80015c75cdb2307107573345c40643a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_control</definition>
+        <argsstring>(SDIO_CTRL_CMD_PTR ctrl_cmd, void *param)</argsstring>
+        <name>dw_sdio_0_control</name>
+        <param>
+          <type><ref refid="dev__sdio_8h_a6e35c59e0c9dc668474e6900d2be7e1e_1a6e35c59e0c9dc668474e6900d2be7e1e" kindref="member">SDIO_CTRL_CMD_PTR</ref></type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aba42fbefbf923606b952582002268a7f_1aba42fbefbf923606b952582002268a7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_cmd_poll</definition>
+        <argsstring>(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data)</argsstring>
+        <name>dw_sdio_0_cmd_poll</name>
+        <param>
+          <type><ref refid="dev__sdio_8h_abda4cbd949345962871acce0b492100a_1abda4cbd949345962871acce0b492100a" kindref="member">SDIO_CMD_PTR</ref></type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type><ref refid="dev__sdio_8h_a5fa161e559f10023e9fc38d5bae4adba_1a5fa161e559f10023e9fc38d5bae4adba" kindref="member">SDIO_DATA_PTR</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a766094f21441e6d1d411833377ab61ff_1a766094f21441e6d1d411833377ab61ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_cmd_int</definition>
+        <argsstring>(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data, DEV_CALLBACK cb)</argsstring>
+        <name>dw_sdio_0_cmd_int</name>
+        <param>
+          <type><ref refid="dev__sdio_8h_abda4cbd949345962871acce0b492100a_1abda4cbd949345962871acce0b492100a" kindref="member">SDIO_CMD_PTR</ref></type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type><ref refid="dev__sdio_8h_a5fa161e559f10023e9fc38d5bae4adba_1a5fa161e559f10023e9fc38d5bae4adba" kindref="member">SDIO_DATA_PTR</ref></type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_acf384a61a05b71fea75ff7765e2b6b16_1acf384a61a05b71fea75ff7765e2b6b16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_cd</definition>
+        <argsstring>(uint32_t card)</argsstring>
+        <name>dw_sdio_0_cd</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>card</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a4086ec13f379de37680415c528e3d1af_1a4086ec13f379de37680415c528e3d1af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_sdio_0_wp</definition>
+        <argsstring>(uint32_t card)</argsstring>
+        <name>dw_sdio_0_wp</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>card</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="76" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a33774ae91d899520e57af030d2de3609_1a33774ae91d899520e57af030d2de3609" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_sdio_0_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_sdio_0_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="81" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a0b6c3e99f3e329ce8eb3d525f742c2e5_1a0b6c3e99f3e329ce8eb3d525f742c2e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_sdio_all_install</definition>
+        <argsstring>()</argsstring>
+        <name>dw_sdio_all_install</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a0e077c4695dbe968be66940e95d78ade_1a0e077c4695dbe968be66940e95d78ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dev__sdio_8h_a55ff46a9c3b22199a830ba17105a97b6_1a55ff46a9c3b22199a830ba17105a97b6" kindref="member">DEV_SDIO_PTR</ref></type>
+        <definition>DEV_SDIO_PTR sdio_get_dev</definition>
+        <argsstring>(uint32_t sdio_id)</argsstring>
+        <name>sdio_get_dev</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>sdio_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c" bodystart="114" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__sdio_8h" kindref="compound">device/designware/dw_sdio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8h" kindref="compound">dw_sdio_obj.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="iotdk_8h" kindref="compound">iotdk/iotdk.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SDIO_0)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDW__SDIO__CTRL" kindref="compound">DW_SDIO_CTRL</ref><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aa230cf3470fcb046f46dc0ae3840b205_1aa230cf3470fcb046f46dc0ae3840b205" kindref="member">dw_sdio_0_ctrl</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDEV__SDIO" kindref="compound">DEV_SDIO</ref><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a9e6b401e7027c129a9962cd4cb70e310_1a9e6b401e7027c129a9962cd4cb70e310" kindref="member">dw_sdio_0</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a7b80d980502d406c7e4b0a1302c51222_1a7b80d980502d406c7e4b0a1302c51222" kindref="member">dw_sdio_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__sdio_8h_a7ddbb6b92c3ff9ef69de956c6e7453cf_1a7ddbb6b92c3ff9ef69de956c6e7453cf" kindref="member">dw_sdio_isr</ref>(&amp;dw_sdio_0,<sp/>ptr);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aee64dc59a6c97f4bcddb9402417c1161_1aee64dc59a6c97f4bcddb9402417c1161" kindref="member">dw_sdio_0_open</ref>(uint32_t<sp/>card)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__sdio_8h_a0ee55d98e2fa5436baded62c53ece72a_1a0ee55d98e2fa5436baded62c53ece72a" kindref="member">dw_sdio_open</ref>(&amp;dw_sdio_0,<sp/>card);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a75cb1d98894d95b515a14311d5724b6c_1a75cb1d98894d95b515a14311d5724b6c" kindref="member">dw_sdio_0_close</ref>(uint32_t<sp/>card)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__sdio_8h_aa7d4cb1475ef3a9c6c21c9e355ea1ce9_1aa7d4cb1475ef3a9c6c21c9e355ea1ce9" kindref="member">dw_sdio_close</ref>(&amp;dw_sdio_0,<sp/>card);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a80015c75cdb2307107573345c40643a2_1a80015c75cdb2307107573345c40643a2" kindref="member">dw_sdio_0_control</ref>(<ref refid="structSDIO__CTRL__CMD" kindref="compound">SDIO_CTRL_CMD_PTR</ref><sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__sdio_8h_a64131de3f9abe8c42b9152513e389033_1a64131de3f9abe8c42b9152513e389033" kindref="member">dw_sdio_control</ref>(&amp;dw_sdio_0,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aba42fbefbf923606b952582002268a7f_1aba42fbefbf923606b952582002268a7f" kindref="member">dw_sdio_0_cmd_poll</ref>(<ref refid="structSDIO__CMD" kindref="compound">SDIO_CMD_PTR</ref><sp/>cmd,<sp/><ref refid="structSDIO__DATA" kindref="compound">SDIO_DATA_PTR</ref><sp/>data)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__sdio_8h_a9b8e6b4316c45a186b105c5a78784774_1a9b8e6b4316c45a186b105c5a78784774" kindref="member">dw_sdio_cmd_poll</ref>(&amp;dw_sdio_0,<sp/>cmd,<sp/>data);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a766094f21441e6d1d411833377ab61ff_1a766094f21441e6d1d411833377ab61ff" kindref="member">dw_sdio_0_cmd_int</ref>(<ref refid="structSDIO__CMD" kindref="compound">SDIO_CMD_PTR</ref><sp/>cmd,<sp/><ref refid="structSDIO__DATA" kindref="compound">SDIO_DATA_PTR</ref><sp/>data,<sp/><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref><sp/>cb)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_acf384a61a05b71fea75ff7765e2b6b16_1acf384a61a05b71fea75ff7765e2b6b16" kindref="member">dw_sdio_0_cd</ref>(uint32_t<sp/>card)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__sdio_8h_af129bb5e210e5ad7791ab8aa3ae406d0_1af129bb5e210e5ad7791ab8aa3ae406d0" kindref="member">dw_sdio_cd</ref>(&amp;dw_sdio_0,<sp/>card);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a4086ec13f379de37680415c528e3d1af_1a4086ec13f379de37680415c528e3d1af" kindref="member">dw_sdio_0_wp</ref>(uint32_t<sp/>card)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__sdio_8h_a81ee7e09ddf685e88c3ce7302f7456d9_1a81ee7e09ddf685e88c3ce7302f7456d9" kindref="member">dw_sdio_wp</ref>(&amp;dw_sdio_0,<sp/>card);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a33774ae91d899520e57af030d2de3609_1a33774ae91d899520e57af030d2de3609" kindref="member">dw_sdio_0_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__SDIO" kindref="compound">DEV_SDIO_PTR</ref><sp/>dw_sdio_ptr<sp/>=<sp/>&amp;<ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a9e6b401e7027c129a9962cd4cb70e310_1a9e6b401e7027c129a9962cd4cb70e310" kindref="member">dw_sdio_0</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdev__sdio__info" kindref="compound">DEV_SDIO_INFO_PTR</ref><sp/>dw_sdio_info_ptr<sp/>=<sp/>&amp;(dw_sdio_0.<ref refid="structDEV__SDIO_a030dcb146b8b09e904c3899400911747_1a030dcb146b8b09e904c3899400911747" kindref="member">sdio_info</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SDIO__CTRL" kindref="compound">DW_SDIO_CTRL_PTR</ref><sp/>dw_sdio_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aa230cf3470fcb046f46dc0ae3840b205_1aa230cf3470fcb046f46dc0ae3840b205" kindref="member">dw_sdio_0_ctrl</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_info_ptr-&gt;<ref refid="structdev__sdio__info_ae2b822b79e17b0f8565ba341f739bbc6_1ae2b822b79e17b0f8565ba341f739bbc6" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_info_ptr-&gt;<ref refid="structdev__sdio__info_a804240f0c116a212cab0959a552fbfdc_1a804240f0c116a212cab0959a552fbfdc" kindref="member">sdio_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_sdio_ctrl_ptr;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_info_ptr-&gt;<ref refid="structdev__sdio__info_a8b86f2b7c44dec818e1329007400b2e5_1a8b86f2b7c44dec818e1329007400b2e5" kindref="member">status</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gacacfd9a0d19ea1f779312ce02f789269_1gacacfd9a0d19ea1f779312ce02f789269" kindref="member">DEV_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ctrl_ptr-&gt;<ref refid="structDW__SDIO__CTRL_ad16f076fdb4723a36431c02a9e0f2ed3_1ad16f076fdb4723a36431c02a9e0f2ed3" kindref="member">reg_base</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)<sp/><ref refid="iotdk__hardware_8h_af65516329c452897e4e741c8ad8dad4b_1af65516329c452897e4e741c8ad8dad4b" kindref="member">BASE_ADDR_SDIO</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ctrl_ptr-&gt;<ref refid="structDW__SDIO__CTRL_a6f2f1865f73f77280385d1c12a9ab455_1a6f2f1865f73f77280385d1c12a9ab455" kindref="member">intno</ref><sp/>=<sp/><ref refid="iotdk__hardware_8h_aa1f43463da4b09f5037ef17b23c5dc17_1aa1f43463da4b09f5037ef17b23c5dc17" kindref="member">INTNO_SDIO</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ctrl_ptr-&gt;<ref refid="structDW__SDIO__CTRL_a7db9bb4b961c269b956fc0d60912515b_1a7db9bb4b961c269b956fc0d60912515b" kindref="member">ref_clk</ref><sp/>=<sp/><ref refid="axs__hardware_8h_a77ec960fb2992023cfa6b3e698b2aed8_1a77ec960fb2992023cfa6b3e698b2aed8" kindref="member">CLK_CPU</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ctrl_ptr-&gt;<ref refid="structDW__SDIO__CTRL_af8c126a2e5ecfec9e69f5e1bd57243f4_1af8c126a2e5ecfec9e69f5e1bd57243f4" kindref="member">fifo_depth</ref><sp/>=<sp/>128;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a17139ddc8dd0aad154a5591a226425d1_1a17139ddc8dd0aad154a5591a226425d1" kindref="member">open</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aee64dc59a6c97f4bcddb9402417c1161_1aee64dc59a6c97f4bcddb9402417c1161" kindref="member">dw_sdio_0_open</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a05c93ebf61ea72b4047ae398031248ac_1a05c93ebf61ea72b4047ae398031248ac" kindref="member">close</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a75cb1d98894d95b515a14311d5724b6c_1a75cb1d98894d95b515a14311d5724b6c" kindref="member">dw_sdio_0_close</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a571f1c0764f4376b877d2b8943788f5f_1a571f1c0764f4376b877d2b8943788f5f" kindref="member">control</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a80015c75cdb2307107573345c40643a2_1a80015c75cdb2307107573345c40643a2" kindref="member">dw_sdio_0_control</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a0e6baef8941af515d4bfbea57fb6371d_1a0e6baef8941af515d4bfbea57fb6371d" kindref="member">cmd_poll</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_aba42fbefbf923606b952582002268a7f_1aba42fbefbf923606b952582002268a7f" kindref="member">dw_sdio_0_cmd_poll</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a138b8c4a6d00a16da4c9412df89eb69f_1a138b8c4a6d00a16da4c9412df89eb69f" kindref="member">cmd_int</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a766094f21441e6d1d411833377ab61ff_1a766094f21441e6d1d411833377ab61ff" kindref="member">dw_sdio_0_cmd_int</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a03a56c5470895124dfaf2a27ff35e98a_1a03a56c5470895124dfaf2a27ff35e98a" kindref="member">cd</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_acf384a61a05b71fea75ff7765e2b6b16_1acf384a61a05b71fea75ff7765e2b6b16" kindref="member">dw_sdio_0_cd</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_sdio_ptr-&gt;<ref refid="structDEV__SDIO_a0b34cc7dfbb2473c59d0b65909cfe05a_1a0b34cc7dfbb2473c59d0b65909cfe05a" kindref="member">wp</ref><sp/>=<sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a4086ec13f379de37680415c528e3d1af_1a4086ec13f379de37680415c528e3d1af" kindref="member">dw_sdio_0_wp</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_SDIO<sp/>0*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a0b6c3e99f3e329ce8eb3d525f742c2e5_1a0b6c3e99f3e329ce8eb3d525f742c2e5" kindref="member">dw_sdio_all_install</ref>()</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SDIO_0)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a33774ae91d899520e57af030d2de3609_1a33774ae91d899520e57af030d2de3609" kindref="member">dw_sdio_0_install</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="structDEV__SDIO" kindref="compound">DEV_SDIO_PTR</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a0e077c4695dbe968be66940e95d78ade_1a0e077c4695dbe968be66940e95d78ade" kindref="member">sdio_get_dev</ref>(uint32_t<sp/>sdio_id)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(install_flag<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>install_flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a0b6c3e99f3e329ce8eb3d525f742c2e5_1a0b6c3e99f3e329ce8eb3d525f742c2e5" kindref="member">dw_sdio_all_install</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sdio_id)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_SDIO_0)</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8h_a838c30e7617ea4af431a702b169789b7_1a838c30e7617ea4af431a702b169789b7" kindref="member">DW_SDIO_0_ID</ref>:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c_a9e6b401e7027c129a9962cd4cb70e310_1a9e6b401e7027c129a9962cd4cb70e310" kindref="member">dw_sdio_0</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c"/>
+  </compounddef>
+</doxygen>

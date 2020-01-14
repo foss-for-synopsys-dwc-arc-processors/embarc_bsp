@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__SDIO" kind="struct" prot="public">
+    <compoundname>DEV_SDIO</compoundname>
+    <includes refid="dev__sdio_8h" local="no">dev_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__SDIO_a030dcb146b8b09e904c3899400911747_1a030dcb146b8b09e904c3899400911747" prot="public" static="no" mutable="no">
+        <type><ref refid="dev__sdio_8h_a213cf024dbb73c9cc825f86363227782_1a213cf024dbb73c9cc825f86363227782" kindref="member">DEV_SDIO_INFO</ref></type>
+        <definition>DEV_SDIO_INFO DEV_SDIO::sdio_info</definition>
+        <argsstring></argsstring>
+        <name>sdio_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sdio device information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a17139ddc8dd0aad154a5591a226425d1_1a17139ddc8dd0aad154a5591a226425d1" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::open)(uint32_t card)</definition>
+        <argsstring>)(uint32_t card)</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open sdio device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="102" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a05c93ebf61ea72b4047ae398031248ac_1a05c93ebf61ea72b4047ae398031248ac" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::close)(uint32_t card)</definition>
+        <argsstring>)(uint32_t card)</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close sdio device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="103" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a571f1c0764f4376b877d2b8943788f5f_1a571f1c0764f4376b877d2b8943788f5f" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::control)(SDIO_CTRL_CMD_PTR ctrl_cmd, void *param)</definition>
+        <argsstring>)(SDIO_CTRL_CMD_PTR ctrl_cmd, void *param)</argsstring>
+        <name>control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control sdio device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a0e6baef8941af515d4bfbea57fb6371d_1a0e6baef8941af515d4bfbea57fb6371d" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::cmd_poll)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data)</definition>
+        <argsstring>)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data)</argsstring>
+        <name>cmd_poll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a138b8c4a6d00a16da4c9412df89eb69f_1a138b8c4a6d00a16da4c9412df89eb69f" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::cmd_int)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data, DEV_CALLBACK cb)</definition>
+        <argsstring>)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data, DEV_CALLBACK cb)</argsstring>
+        <name>cmd_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a03a56c5470895124dfaf2a27ff35e98a_1a03a56c5470895124dfaf2a27ff35e98a" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::cd)(uint32_t card)</definition>
+        <argsstring>)(uint32_t card)</argsstring>
+        <name>cd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SDIO_a0b34cc7dfbb2473c59d0b65909cfe05a_1a0b34cc7dfbb2473c59d0b65909cfe05a" prot="public" static="no" mutable="no">
+        <type>int32_t(*</type>
+        <definition>int32_t(* DEV_SDIO::wp)(uint32_t card)</definition>
+        <argsstring>)(uint32_t card)</argsstring>
+        <name>wp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="108" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="70">
+        <label>DEV_SDIO</label>
+        <link refid="structDEV__SDIO"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>sdio_info</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>dev_sdio_info</label>
+        <link refid="structdev__sdio__info"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="100" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="100" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structDEV__SDIO_a03a56c5470895124dfaf2a27ff35e98a_1a03a56c5470895124dfaf2a27ff35e98a" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>cd</name></member>
+      <member refid="structDEV__SDIO_a05c93ebf61ea72b4047ae398031248ac_1a05c93ebf61ea72b4047ae398031248ac" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>close</name></member>
+      <member refid="structDEV__SDIO_a138b8c4a6d00a16da4c9412df89eb69f_1a138b8c4a6d00a16da4c9412df89eb69f" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>cmd_int</name></member>
+      <member refid="structDEV__SDIO_a0e6baef8941af515d4bfbea57fb6371d_1a0e6baef8941af515d4bfbea57fb6371d" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>cmd_poll</name></member>
+      <member refid="structDEV__SDIO_a571f1c0764f4376b877d2b8943788f5f_1a571f1c0764f4376b877d2b8943788f5f" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>control</name></member>
+      <member refid="structDEV__SDIO_a17139ddc8dd0aad154a5591a226425d1_1a17139ddc8dd0aad154a5591a226425d1" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>open</name></member>
+      <member refid="structDEV__SDIO_a030dcb146b8b09e904c3899400911747_1a030dcb146b8b09e904c3899400911747" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>sdio_info</name></member>
+      <member refid="structDEV__SDIO_a0b34cc7dfbb2473c59d0b65909cfe05a_1a0b34cc7dfbb2473c59d0b65909cfe05a" prot="public" virt="non-virtual"><scope>DEV_SDIO</scope><name>wp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__exception_8c" kind="file">
+    <compoundname>arc_exception.c</compoundname>
+    <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
+    <includes refid="arc__cache_8h" local="yes">arc/arc_cache.h</includes>
+    <includes refid="embARC__debug_8h" local="yes">embARC_debug.h</includes>
+    <incdepgraph>
+      <node id="33">
+        <label>stdbool.h</label>
+      </node>
+      <node id="29">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stdint.h</label>
+      </node>
+      <node id="26">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c</label>
+        <link refid="arc_exception.c"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>stddef.h</label>
+      </node>
+      <node id="34">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>arc/arc_cache.h</label>
+        <link refid="arc__cache_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>limits.h</label>
+      </node>
+      <node id="35">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="37">
+        <label>embARC_debug.h</label>
+        <link refid="embARC__debug_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structAUX__IRQ__CTRL__FIELD__T" prot="public">AUX_IRQ_CTRL_FIELD_T</innerclass>
+    <innerclass refid="unionAUX__IRQ__CTRL__T" prot="public">AUX_IRQ_CTRL_T</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arc__exception_8c_a2cef61607f2e07d7f031bc83f3573e91_1a2cef61607f2e07d7f031bc83f3573e91" prot="public" static="no">
+        <name>DBG_LESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="39" column="10" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__ARC__HAL__EXCEPTION__CPU_ga66b52625373d41fbdbb76ef3e86aae63_1ga66b52625373d41fbdbb76ef3e86aae63" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _f_stack[]</definition>
+        <argsstring>[]</argsstring>
+        <name>_f_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="384" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaaa967b5a9b8869279d8bbe9b57fc7a9b_1gaaa967b5a9b8869279d8bbe9b57fc7a9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void exc_handler_default</definition>
+        <argsstring>(void *p_excinf)</argsstring>
+        <name>exc_handler_default</name>
+        <param>
+          <type>void *</type>
+          <declname>p_excinf</declname>
+        </param>
+        <briefdescription>
+<para>Install default cpu exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_excinf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the exception frame </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="303" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="303" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__INTERRUPT_gae7e4ca8e25d29bcd69348e9624a684e8_1gae7e4ca8e25d29bcd69348e9624a684e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void int_handler_default</definition>
+        <argsstring>(void *p_excinf)</argsstring>
+        <name>int_handler_default</name>
+        <param>
+          <type>void *</type>
+          <declname>p_excinf</declname>
+        </param>
+        <briefdescription>
+<para>Register default interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_excinf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information for interrupt handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="334" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="334" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__INTERRUPT_ga0d83599ed3aa340e40e593d5556e811f_1ga0d83599ed3aa340e40e593d5556e811f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exc_int_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>exc_int_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the exception and interrupt handling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>ipm should be set after cpu unlock restore to avoid reset of the status32 value </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="389" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="389" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaff188f19c90ccab522207c930f5f63cd_1gaff188f19c90ccab522207c930f5f63cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t exc_entry_install</definition>
+        <argsstring>(const uint32_t excno, EXC_ENTRY_T entry)</argsstring>
+        <name>exc_entry_install</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref></type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+<para>Install a CPU exception entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception entry to install </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="444" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="444" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaa4b5c673e573e320b929709ba930b45f_1gaa4b5c673e573e320b929709ba930b45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref></type>
+        <definition>EXC_ENTRY_T exc_entry_get</definition>
+        <argsstring>(const uint32_t excno)</argsstring>
+        <name>exc_entry_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <briefdescription>
+<para>Get the installed CPU exception entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The installed CPU exception entry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="483" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="483" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga69b337215e6300f4b4d85e34ebb26d7c_1ga69b337215e6300f4b4d85e34ebb26d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t exc_handler_install</definition>
+        <argsstring>(const uint32_t excno, EXC_HANDLER_T handler)</argsstring>
+        <name>exc_handler_install</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Install an exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The installed CPU exception handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="497" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="497" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab088d390d0f2aaf7f3308a269523f62b_1gab088d390d0f2aaf7f3308a269523f62b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref></type>
+        <definition>EXC_HANDLER_T exc_handler_get</definition>
+        <argsstring>(const uint32_t excno)</argsstring>
+        <name>exc_handler_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <briefdescription>
+<para>Get the installed exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The installed exception handler or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="513" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="513" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_disable</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_disable</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Disable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="528" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="528" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_enable</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_enable</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="543" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="543" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga7f54b17cdd6f65442850e1bdcf10c272_1ga7f54b17cdd6f65442850e1bdcf10c272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_enabled</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_enabled</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get interrupt enable state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 disabled, 1 enabled, &lt; 0 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="559" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="559" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga653e2bfd8567c76dc56578aad0585517_1ga653e2bfd8567c76dc56578aad0585517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_ipm_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>int_ipm_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Interrupt priority masking threshold, negative num </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="574" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="574" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab54915b2976f68cc96681374cbd0f023_1gab54915b2976f68cc96681374cbd0f023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_ipm_set</definition>
+        <argsstring>(int32_t intpri)</argsstring>
+        <name>int_ipm_set</name>
+        <param>
+          <type>int32_t</type>
+          <declname>intpri</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intpri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt priority masking threshold </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="584" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="584" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga155d43c83556ee963e5291c8a25c1dc5_1ga155d43c83556ee963e5291c8a25c1dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_pri_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_pri_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get current interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 interrupt priority, 0 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="600" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="600" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab670f0f6729ebec51cc2de8f98c74a40_1gab670f0f6729ebec51cc2de8f98c74a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_pri_set</definition>
+        <argsstring>(const uint32_t intno, int32_t intpri)</argsstring>
+        <name>int_pri_set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>intpri</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt priority. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intpri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt priority </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 error, 0 ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="616" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="616" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gafef73153596413e6c51edbe558b01c33_1gafef73153596413e6c51edbe558b01c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_secure_set</definition>
+        <argsstring>(const uint32_t intno, uint32_t secure)</argsstring>
+        <name>int_secure_set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>secure</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt secure or not secure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>secure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for normal, &gt; 0 for secure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 error, 0 ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="636" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="636" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga9126c0df90c318b678022ab7b4d470c2_1ga9126c0df90c318b678022ab7b4d470c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_probe</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_probe</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Probe interrupt pending state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 pending, 0 no pending, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="653" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="653" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga136b8b6cdc3fd044879e2e3779041c3b_1ga136b8b6cdc3fd044879e2e3779041c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_sw_trigger</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_sw_trigger</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Trigger interrupt through software. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 ok, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="667" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="667" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gafb4ee7c403bef57f56452190d13e93ec_1gafb4ee7c403bef57f56452190d13e93ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_level_config</definition>
+        <argsstring>(const uint32_t intno, const uint32_t level)</argsstring>
+        <name>int_level_config</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Configure interrupt trigger mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0-level triggered, 1-pulse triggered </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 ok, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="683" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="683" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga46223bbf586c1a4af4d5d4082d3484e7_1ga46223bbf586c1a4af4d5d4082d3484e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_level_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_level_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get interrupt request mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="697" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="697" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga733e45f48f9fe46022e47acd9677d980_1ga733e45f48f9fe46022e47acd9677d980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_lock</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_lock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>lock cpu, disable interrupts </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="708" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="708" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaa93883b650c91f0e9b31a4cd6e935dc8_1gaa93883b650c91f0e9b31a4cd6e935dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_unlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_unlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unlock cpu to enable interrupts. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="716" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="716" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t cpu_lock_save</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_lock_save</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Lock cpu and return status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>CPU status </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="726" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="726" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_unlock_restore</definition>
+        <argsstring>(const uint32_t status)</argsstring>
+        <name>cpu_unlock_restore</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Unlock cpu with the specific status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU status saved by cpu_lock_save </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="736" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="736" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__INTERRUPT_ga75a43aab696debc012bc72b6de13e30a_1ga75a43aab696debc012bc72b6de13e30a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_handler_install</definition>
+        <argsstring>(const uint32_t intno, INT_HANDLER_T handler)</argsstring>
+        <name>int_handler_install</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Install interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="747" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="747" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__INTERRUPT_gafeb182cdc708ccbeb49792ed1d4b7f7f_1gafeb182cdc708ccbeb49792ed1d4b7f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T int_handler_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_handler_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get the installed interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The installed interrupt handler or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="763" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="763" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gad14255ed8d12d245bc83636c252f1e17_1gad14255ed8d12d245bc83636c252f1e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_firq_stack_set</definition>
+        <argsstring>(uint8_t *firq_sp)</argsstring>
+        <name>arc_firq_stack_set</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>firq_sp</declname>
+        </param>
+        <briefdescription>
+<para>Set the stack pointer for firq handling. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>firq_sp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="779" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="779" bodyend="811"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ARC interrupt and exception handling. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc/arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__cache_8h" kindref="compound">arc/arc_cache.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DBG_LESS</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__debug_8h" kindref="compound">embARC_debug.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#ifdef<sp/>CONFIG_ARC_EXCEPTION_DEBUG</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>For<sp/>EV_ProtV,<sp/>the<sp/>numbering/semantics<sp/>of<sp/>the<sp/>parameter<sp/>are<sp/>consistent<sp/>across</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>several<sp/>codes,<sp/>although<sp/>not<sp/>all<sp/>combination<sp/>will<sp/>be<sp/>reported.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>These<sp/>codes<sp/>and<sp/>parameters<sp/>do<sp/>not<sp/>have<sp/>associated*<sp/>names<sp/>in</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>the<sp/>technical<sp/>manual,<sp/>just<sp/>switch<sp/>on<sp/>the<sp/>values<sp/>in<sp/>Table<sp/>6-5</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_protv_access_err(uint32_t<sp/>parameter)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(parameter)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x1:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;code<sp/>protection<sp/>scheme&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x2:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;stack<sp/>checking<sp/>scheme&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x4:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;MPU&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x8:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;MMU&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x10:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;NVM&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x24:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Secure<sp/>MPU&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x44:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Secure<sp/>MPU<sp/>with<sp/>SID<sp/>mismatch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>parameter&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_protv_exception(uint32_t<sp/>cause,<sp/>uint32_t<sp/>parameter)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(cause)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x0:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Instruction<sp/>fetch<sp/>violation:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_protv_access_err(parameter);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x1:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Memory<sp/>read<sp/>protection<sp/>violation:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_protv_access_err(parameter);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x2:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Memory<sp/>write<sp/>protection<sp/>violation:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_protv_access_err(parameter);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x3:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Memory<sp/>read-modify-write<sp/>violation:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_protv_access_err(parameter);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x10:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Normal<sp/>vector<sp/>table<sp/>in<sp/>secure<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x11:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;NS<sp/>handler<sp/>code<sp/>located<sp/>in<sp/>S<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x12:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;NSC<sp/>Table<sp/>Range<sp/>Violation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>cause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_machine_check_exception(uint32_t<sp/>cause,<sp/>uint32_t<sp/>parameter)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(cause)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x0:</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;double<sp/>fault&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x1:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;overlapping<sp/>TLB<sp/>entries&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x2:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;fatal<sp/>TLB<sp/>error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x3:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;fatal<sp/>cache<sp/>error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x4:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;internal<sp/>memory<sp/>error<sp/>on<sp/>instruction<sp/>fetch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x5:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;internal<sp/>memory<sp/>error<sp/>on<sp/>data<sp/>fetch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x6:</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;illegal<sp/>overlapping<sp/>MPU<sp/>entries&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parameter<sp/>==<sp/>0x1)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>(jump<sp/>and<sp/>branch<sp/>target)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x10:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;secure<sp/>vector<sp/>table<sp/>not<sp/>located<sp/>in<sp/>secure<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x11:</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;NSC<sp/>jump<sp/>table<sp/>not<sp/>located<sp/>in<sp/>secure<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x12:</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;secure<sp/>handler<sp/>code<sp/>not<sp/>located<sp/>in<sp/>secure<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x13:</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;NSC<sp/>target<sp/>address<sp/>not<sp/>located<sp/>in<sp/>secure<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x80:</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;uncorrectable<sp/>ECC<sp/>or<sp/>parity<sp/>error<sp/>in<sp/>vector<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>cause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_privilege_exception(uint32_t<sp/>cause,<sp/>uint32_t<sp/>parameter)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(cause)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x0:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Privilege<sp/>violation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x1:</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;disabled<sp/>extension&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x2:</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;action<sp/>point<sp/>hit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x10:</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(parameter)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x1:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;N<sp/>to<sp/>S<sp/>return<sp/>using<sp/>incorrect<sp/>return<sp/>mechanism&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x2:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;N<sp/>to<sp/>S<sp/>return<sp/>with<sp/>incorrect<sp/>operating<sp/>mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x3:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;IRQ/exception<sp/>return<sp/>fetch<sp/>from<sp/>wrong<sp/>mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x4:</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;attempt<sp/>to<sp/>halt<sp/>secure<sp/>processor<sp/>in<sp/>NS<sp/>mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x20:</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;attempt<sp/>to<sp/>access<sp/>secure<sp/>resource<sp/>from<sp/>normal<sp/>mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x40:</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;SID<sp/>violation<sp/>on<sp/>resource<sp/>access<sp/>(APEX/UAUX/key<sp/>NVM)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>parameter&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x13:</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(parameter)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x20:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;attempt<sp/>to<sp/>access<sp/>secure<sp/>APEX<sp/>feature<sp/>from<sp/>NS<sp/>mode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x40:</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;SID<sp/>violation<sp/>on<sp/>access<sp/>to<sp/>APEX<sp/>feature&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>parameter&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>cause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_exception_info(uint32_t<sp/>vector,<sp/>uint32_t<sp/>cause,<sp/>uint32_t<sp/>param)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Names<sp/>are<sp/>exactly<sp/>as<sp/>they<sp/>appear<sp/>in<sp/>Designware<sp/>ARCv2<sp/>ISA</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Programmer&apos;s<sp/>reference<sp/>manual<sp/>for<sp/>easy<sp/>searching</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(vector)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gafa24b28046a1eedff3e480911002de02_1gafa24b28046a1eedff3e480911002de02" kindref="member">EXC_NO_RESET</ref>:</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Reset&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga90736543a65e9f8ac906844d5523efc2_1ga90736543a65e9f8ac906844d5523efc2" kindref="member">EXC_NO_MEM_ERR</ref>:</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Memory<sp/>Error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gac5c43a531993d624a88bebe5825dd766_1gac5c43a531993d624a88bebe5825dd766" kindref="member">EXC_NO_INS_ERR</ref>:</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;Instruction<sp/>Error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga899e299b2ef69b55bb2a539215d81723_1ga899e299b2ef69b55bb2a539215d81723" kindref="member">EXC_NO_MAC_CHK</ref>:</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_MachineCheck:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_machine_check_exception(cause,<sp/>param);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga06780c232a4ea3b5e29ff6a136d21d91_1ga06780c232a4ea3b5e29ff6a136d21d91" kindref="member">EXC_NO_TLB_MISS_I</ref>:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_TLBMissI&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga2209e2a9f68df904096027524728ac36_1ga2209e2a9f68df904096027524728ac36" kindref="member">EXC_NO_TLB_MISS_D</ref>:</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_TLBMissD&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga1d96372215f6da90233c55b0e1fe79ea_1ga1d96372215f6da90233c55b0e1fe79ea" kindref="member">EXC_NO_PRO_VIO</ref>:</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_ProtV:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_protv_exception(cause,<sp/>param);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gaf165991042106832237f404e38d6206e_1gaf165991042106832237f404e38d6206e" kindref="member">EXC_NO_PRI_VIO</ref>:</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_PrivilegeV:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_privilege_exception(cause,<sp/>param);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gab39654823da77b23958d8623af9a2262_1gab39654823da77b23958d8623af9a2262" kindref="member">EXC_NO_SWI</ref>:</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_SWI&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga94eca04cf50e0bbe4718fcbc1639cf99_1ga94eca04cf50e0bbe4718fcbc1639cf99" kindref="member">EXC_NO_TRAP</ref>:</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_Trap&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga594deb12b5f14ff7a8d3f80766999b86_1ga594deb12b5f14ff7a8d3f80766999b86" kindref="member">EXC_NO_EXT</ref>:</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_Extension&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gada2bce93cdc2e4641523397c86916293_1gada2bce93cdc2e4641523397c86916293" kindref="member">EXC_NO_DIV_ZER0</ref>:</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_DivZero&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gae8f6017e08857d5cd7f1701b24a267a0_1gae8f6017e08857d5cd7f1701b24a267a0" kindref="member">EXC_NO_DC_ERR</ref>:</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_DCError&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_ga972ae78d191f14d95322f674f799f1dc_1ga972ae78d191f14d95322f674f799f1dc" kindref="member">EXC_NO_MAL_ALIGN</ref>:</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_Misaligned&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__CORE__COMM_gaca55e199ea84f0b7bc7b6ef58fff3ca7_1gaca55e199ea84f0b7bc7b6ef58fff3ca7" kindref="member">EXC_NO_VEC_UNIT</ref>:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;EV_VecUnit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>exception<sp/>vector&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_afcf8ad3ba3aaf1a0f704cf8de50ffa60_1afcf8ad3ba3aaf1a0f704cf8de50ffa60" kindref="member">EMBARC_PRINTF</ref>(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_ARC_EXCEPTION_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="297"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="303"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaaa967b5a9b8869279d8bbe9b57fc7a9b_1gaaa967b5a9b8869279d8bbe9b57fc7a9b" kindref="member">exc_handler_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_excinf)</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>excpt_cause_reg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>excpt_ret_reg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>exc_no<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>exc_cause<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>exc_param<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>excpt_cause_reg<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga27d065a0b0108aab0a221f2d2ac40a6b_1ga27d065a0b0108aab0a221f2d2ac40a6b" kindref="member">AUX_ECR</ref>);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>excpt_ret_reg<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gafbc5603e557abbf645d214d67f8b4966_1gafbc5603e557abbf645d214d67f8b4966" kindref="member">AUX_ERRET</ref>);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>exc_no<sp/>=<sp/>(excpt_cause_reg<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>exc_cause<sp/>=<sp/>(excpt_cause_reg<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>exc_param<sp/>=<sp/>(excpt_cause_reg<sp/>&gt;&gt;<sp/>0)<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_a64c3710e75a1b7a7064e717e3d597011_1a64c3710e75a1b7a7064e717e3d597011" kindref="member">dbg_printf</ref>(<ref refid="embARC__debug_8h_aee22b8a6373c36de2143f4395af27498_1aee22b8a6373c36de2143f4395af27498" kindref="member">DBG_LESS_INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;default<sp/>cpu<sp/>exception<sp/>handler\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_a64c3710e75a1b7a7064e717e3d597011_1a64c3710e75a1b7a7064e717e3d597011" kindref="member">dbg_printf</ref>(<ref refid="embARC__debug_8h_aee22b8a6373c36de2143f4395af27498_1aee22b8a6373c36de2143f4395af27498" kindref="member">DBG_LESS_INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;exc_no:%d,<sp/>last<sp/>sp:0x%08x,<sp/>ecr:0x%08x,<sp/>eret:0x%08x\r\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exc_no,<sp/>p_excinf,<sp/>excpt_cause_reg,<sp/>excpt_ret_reg);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_ARC_EXCEPTION_DEBUG</highlight></codeline>
+<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>dump_exception_info(exc_no,<sp/>exc_cause,<sp/>exc_param);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_UNIT_TEST</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga4925166d3d6d1149efcd46ac5f4bb49e_1ga4925166d3d6d1149efcd46ac5f4bb49e" kindref="member">arc_kflag</ref>(1);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="327"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gae7e4ca8e25d29bcd69348e9624a684e8_1gae7e4ca8e25d29bcd69348e9624a684e8" kindref="member">int_handler_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p_excinf)</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>int_cause_reg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>int_cause_reg<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gabfa80e606297d1294a0da6cabb07f7e3_1gabfa80e606297d1294a0da6cabb07f7e3" kindref="member">AUX_IRQ_CAUSE</ref>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_a64c3710e75a1b7a7064e717e3d597011_1a64c3710e75a1b7a7064e717e3d597011" kindref="member">dbg_printf</ref>(<ref refid="embARC__debug_8h_aee22b8a6373c36de2143f4395af27498_1aee22b8a6373c36de2143f4395af27498" kindref="member">DBG_LESS_INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;default<sp/>interrupt<sp/>handler\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="embARC__debug_8h_a64c3710e75a1b7a7064e717e3d597011_1a64c3710e75a1b7a7064e717e3d597011" kindref="member">dbg_printf</ref>(<ref refid="embARC__debug_8h_aee22b8a6373c36de2143f4395af27498_1aee22b8a6373c36de2143f4395af27498" kindref="member">DBG_LESS_INFO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;last<sp/>sp:0x%08x,<sp/>icause:0x%08x\r\n&quot;</highlight><highlight class="normal">,<sp/>p_excinf,<sp/>int_cause_reg);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga4925166d3d6d1149efcd46ac5f4bb49e_1ga4925166d3d6d1149efcd46ac5f4bb49e" kindref="member">arc_kflag</ref>(1);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enforcement<sp/>of<sp/>1024<sp/>byte<sp/>alignment<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal">__attribute__<sp/>((aligned(1024),<sp/>section(</highlight><highlight class="stringliteral">&quot;.vector&quot;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga7f19edb2bb5a5e518171a0d3eb8325eb_1ga7f19edb2bb5a5e518171a0d3eb8325eb" kindref="member">exc_entry_table</ref>[<ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>]<sp/>=<sp/>{<sp/>[0]<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gabe24c383d1e553174241984dec0f5c62_1gabe24c383d1e553174241984dec0f5c62" kindref="member">exc_entry_reset</ref>,</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>[1<sp/>...<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>-<sp/>1]<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gac7dbb1861e25fce9d97d20987ad64df9_1gac7dbb1861e25fce9d97d20987ad64df9" kindref="member">exc_entry_cpu</ref>,</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>[<ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>...<sp/>NUM_EXC_ALL<sp/>-<sp/>1]<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga3d9c822d87f512a468d2247f4c150cab_1ga3d9c822d87f512a468d2247f4c150cab" kindref="member">exc_entry_int</ref></highlight></codeline>
+<codeline lineno="353"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref><sp/><ref refid="arc__exception_8h_ab0c5ebe2ab1f939e1b103c0e2cc900cc_1ab0c5ebe2ab1f939e1b103c0e2cc900cc" kindref="member">exc_int_handler_table</ref>[<ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>[0<sp/>...<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>-<sp/>1]<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaaa967b5a9b8869279d8bbe9b57fc7a9b_1gaaa967b5a9b8869279d8bbe9b57fc7a9b" kindref="member">exc_handler_default</ref>,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>[<ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>...<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref><sp/>-<sp/>1]<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gae7e4ca8e25d29bcd69348e9624a684e8_1gae7e4ca8e25d29bcd69348e9624a684e8" kindref="member">int_handler_default</ref></highlight></codeline>
+<codeline lineno="362"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="structAUX__IRQ__CTRL__FIELD__T" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>note:<sp/>little<sp/>endian<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>save_nr_gpr_pairs<sp/>:<sp/>5;<sp/></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>res<sp/>:<sp/>4;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>save_blink<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>save_lp_regs<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>save_u_to_u<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>res2<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>save_idx_regs<sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>res3<sp/>:<sp/>18;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="377"><highlight class="normal">}<sp/><ref refid="structAUX__IRQ__CTRL__FIELD__T" kindref="compound">AUX_IRQ_CTRL_FIELD_T</ref>;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="unionAUX__IRQ__CTRL__T" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structAUX__IRQ__CTRL__FIELD__T" kindref="compound">AUX_IRQ_CTRL_FIELD_T</ref><sp/>bits;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>value;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">}<sp/><ref refid="unionAUX__IRQ__CTRL__T" kindref="compound">AUX_IRQ_CTRL_T</ref>;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga66b52625373d41fbdbb76ef3e86aae63_1ga66b52625373d41fbdbb76ef3e86aae63" kindref="member">_f_stack</ref>[];</highlight></codeline>
+<codeline lineno="389"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga0d83599ed3aa340e40e593d5556e811f_1ga0d83599ed3aa340e40e593d5556e811f" kindref="member">exc_int_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionAUX__IRQ__CTRL__T" kindref="compound">AUX_IRQ_CTRL_T</ref><sp/>ictrl;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_a81cc8f12d8b2033b1480750e62f0acfe_1a81cc8f12d8b2033b1480750e62f0acfe" kindref="member">value</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ARC_FEATURE_RF16</highlight></codeline>
+<codeline lineno="398"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" kindref="member">bits</ref>.<ref refid="structAUX__IRQ__CTRL__FIELD__T_af42a5b7a64750ebc63cc47f793bc2f59_1af42a5b7a64750ebc63cc47f793bc2f59" kindref="member">save_nr_gpr_pairs</ref><sp/>=<sp/>6;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>r0<sp/>to<sp/>r11<sp/>(r12<sp/>saved<sp/>manually)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="400"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" kindref="member">bits</ref>.<ref refid="structAUX__IRQ__CTRL__FIELD__T_af42a5b7a64750ebc63cc47f793bc2f59_1af42a5b7a64750ebc63cc47f793bc2f59" kindref="member">save_nr_gpr_pairs</ref><sp/>=<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>r0<sp/>to<sp/>r3,<sp/>r10,<sp/>r11<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="402"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" kindref="member">bits</ref>.<ref refid="structAUX__IRQ__CTRL__FIELD__T_ae3a3949a1303abc8cdc518aac56784b3_1ae3a3949a1303abc8cdc518aac56784b3" kindref="member">save_blink</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" kindref="member">bits</ref>.<ref refid="structAUX__IRQ__CTRL__FIELD__T_a330aac7c666453f22879e2e417551a24_1a330aac7c666453f22879e2e417551a24" kindref="member">save_lp_regs</ref><sp/>=<sp/>1;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LP_COUNT,<sp/>LP_START,<sp/>LP_END<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" kindref="member">bits</ref>.<ref refid="structAUX__IRQ__CTRL__FIELD__T_a1aaed22ea0166c447433073e89a641c8_1a1aaed22ea0166c447433073e89a641c8" kindref="member">save_u_to_u</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>user<sp/>ctxt<sp/>saved<sp/>on<sp/>kernel<sp/>stack<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_CODE_DENSITY</highlight></codeline>
+<codeline lineno="407"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" kindref="member">bits</ref>.<ref refid="structAUX__IRQ__CTRL__FIELD__T_a4ff7cd4f1874b5af6f880eba7651e1c6_1a4ff7cd4f1874b5af6f880eba7651e1c6" kindref="member">save_idx_regs</ref><sp/>=<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>JLI,<sp/>LDI,<sp/>EI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="409"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga30228a3464d0f5e2c1e22bfe7c296e4c_1ga30228a3464d0f5e2c1e22bfe7c296e4c" kindref="member">arc_lock_save</ref>();</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref>;<sp/>i<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>interrupt<sp/>level<sp/>triggered,<sp/>disabled,<sp/>priority<sp/>is<sp/>the<sp/>lowest<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga0fb98718c5c045e34bdef4a23ac48900_1ga0fb98718c5c045e34bdef4a23ac48900" kindref="member">AUX_IRQ_SELECT</ref>,<sp/>i);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaf01202d51fe8c4a6961d7c74daf79f7b_1gaf01202d51fe8c4a6961d7c74daf79f7b" kindref="member">AUX_IRQ_ENABLE</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga9b8a370a34e2ac76a4faa420cd02e95d_1ga9b8a370a34e2ac76a4faa420cd02e95d" kindref="member">AUX_IRQ_TRIGGER</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARC_FEATURE_SEC_PRESENT)</highlight></codeline>
+<codeline lineno="417"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gad4f5edc22f5d515a0cb68e4a866fbb2b_1gad4f5edc22f5d515a0cb68e4a866fbb2b" kindref="member">AUX_IRQ_PRIORITY</ref>,<sp/>(1<sp/>&lt;&lt;<sp/><ref refid="group__ARC__HAL__CORE__COMM_gadddcd4c7fa9fbf77cf1c24eaaf6cba27_1gadddcd4c7fa9fbf77cf1c24eaaf6cba27" kindref="member">AUX_IRQ_PRIORITY_BIT_S</ref>)|(<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab0ae4780994cd452eef15ad91410d2fc_1gab0ae4780994cd452eef15ad91410d2fc" kindref="member">INT_PRI_MAX</ref><sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>));</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="419"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gad4f5edc22f5d515a0cb68e4a866fbb2b_1gad4f5edc22f5d515a0cb68e4a866fbb2b" kindref="member">AUX_IRQ_PRIORITY</ref>,<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab0ae4780994cd452eef15ad91410d2fc_1gab0ae4780994cd452eef15ad91410d2fc" kindref="member">INT_PRI_MAX</ref><sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="421"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gad07a04f21e4b6880f191139bdc714cf8_1gad07a04f21e4b6880f191139bdc714cf8" kindref="member">AUX_IRQ_CTRL</ref>,<sp/>ictrl.<ref refid="unionAUX__IRQ__CTRL__T_a81cc8f12d8b2033b1480750e62f0acfe_1a81cc8f12d8b2033b1480750e62f0acfe" kindref="member">value</ref>);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga7df36b77b3cfa36e7e4d79abf99045fa_1ga7df36b77b3cfa36e7e4d79abf99045fa" kindref="member">arc_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaa24e54ba34a493fecc82f7184a201fd9_1gaa24e54ba34a493fecc82f7184a201fd9" kindref="member">arc_int_ipm_set</ref>((<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab0ae4780994cd452eef15ad91410d2fc_1gab0ae4780994cd452eef15ad91410d2fc" kindref="member">INT_PRI_MAX</ref><sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>));</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARC_FEATURE_RGF_BANKED_REGS<sp/>&gt;=<sp/>16<sp/>&amp;&amp;<sp/>ARC_FEATURE_FIRQ<sp/>==<sp/>1</highlight></codeline>
+<codeline lineno="430"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>_STACKSIZE<sp/>&lt;<sp/>512</highlight></codeline>
+<codeline lineno="431"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;not<sp/>enough<sp/>stack<sp/>size<sp/>for<sp/>irq<sp/>and<sp/>firq&quot;</highlight></codeline>
+<codeline lineno="432"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="433"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>top<sp/>256<sp/>bytes<sp/>of<sp/>stack<sp/>used<sp/>as<sp/>firq<sp/>stack<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gad14255ed8d12d245bc83636c252f1e17_1gad14255ed8d12d245bc83636c252f1e17" kindref="member">arc_firq_stack_set</ref>(_f_stack<sp/>+<sp/>256);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="436"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaff188f19c90ccab522207c930f5f63cd_1gaff188f19c90ccab522207c930f5f63cd" kindref="member">exc_entry_install</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>excno,<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref><sp/>entry)</highlight></codeline>
+<codeline lineno="445"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref><sp/>*table;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARC_FEATURE_SEC_PRESENT)</highlight></codeline>
+<codeline lineno="450"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>table<sp/>=<sp/>(<ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref><sp/>*)<ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga0a13f498fbbf80ecf9da3a7c24d9db61_1ga0a13f498fbbf80ecf9da3a7c24d9db61" kindref="member">AUX_INT_VECT_BASE_S</ref>);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="452"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>table<sp/>=<sp/>(<ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref><sp/>*)<ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaa35f715c5d59826f7879abde183353e7_1gaa35f715c5d59826f7879abde183353e7" kindref="member">AUX_INT_VECT_BASE</ref>);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="454"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(excno<sp/>&lt;<sp/>NUM_EXC_ALL<sp/>&amp;&amp;<sp/>entry<sp/>!=<sp/>NULL</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>table[excno]<sp/>!=<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>();</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>directly<sp/>write<sp/>to<sp/>mem,<sp/>as<sp/>arc<sp/>gets<sp/>exception<sp/>handler<sp/>from<sp/>mem<sp/>not<sp/>from<sp/>cache<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FIXME,<sp/>here<sp/>maybe<sp/>icache<sp/>is<sp/>dirty,<sp/>need<sp/>to<sp/>be<sp/>invalidated<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>table[excno]<sp/>=<sp/>entry;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga0a71e31c0c9c908d33185905eb042010_1ga0a71e31c0c9c908d33185905eb042010" kindref="member">AUX_BCR_D_CACHE</ref>)<sp/>&gt;<sp/>0x2)<sp/>{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>dcache<sp/>is<sp/>available<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__CACHE_ga7bddc47357297db8e6bf3b29cb77d471_1ga7bddc47357297db8e6bf3b29cb77d471" kindref="member">dcache_flush_line</ref>((uint32_t)&amp;table[excno]);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga0a71e31c0c9c908d33185905eb042010_1ga0a71e31c0c9c908d33185905eb042010" kindref="member">AUX_BCR_D_CACHE</ref>)<sp/>&gt;<sp/>0x2)<sp/>{</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>icache<sp/>is<sp/>available<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__CACHE_ga9be89cc489a04fe4c45c84d6bc9e92e9_1ga9be89cc489a04fe4c45c84d6bc9e92e9" kindref="member">icache_invalidate_line</ref>((uint32_t)&amp;table[excno]);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa4b5c673e573e320b929709ba930b45f_1gaa4b5c673e573e320b929709ba930b45f" kindref="member">exc_entry_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>excno)</highlight></codeline>
+<codeline lineno="484"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(excno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga7f19edb2bb5a5e518171a0d3eb8325eb_1ga7f19edb2bb5a5e518171a0d3eb8325eb" kindref="member">exc_entry_table</ref>[excno];</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="489"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga69b337215e6300f4b4d85e34ebb26d7c_1ga69b337215e6300f4b4d85e34ebb26d7c" kindref="member">exc_handler_install</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>excno,<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref><sp/>handler)</highlight></codeline>
+<codeline lineno="498"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(excno<sp/>&lt;<sp/>NUM_EXC_ALL<sp/>&amp;&amp;<sp/>handler<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exc_int_handler_table[excno]<sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab088d390d0f2aaf7f3308a269523f62b_1gab088d390d0f2aaf7f3308a269523f62b" kindref="member">exc_handler_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>excno)</highlight></codeline>
+<codeline lineno="514"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(excno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>exc_int_handler_table[excno];</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_OVERRIDE_ARC_INTERRUPT_MANAGEMENT</highlight></codeline>
+<codeline lineno="523"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="529"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga490e115d56eb5abb7a22ddadaa87735e_1ga490e115d56eb5abb7a22ddadaa87735e" kindref="member">arc_int_disable</ref>(intno);</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" kindref="member">int_enable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="544"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga3420c503406e5c6e76b6a1e73544e8f9_1ga3420c503406e5c6e76b6a1e73544e8f9" kindref="member">arc_int_enable</ref>(intno);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="551"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga7f54b17cdd6f65442850e1bdcf10c272_1ga7f54b17cdd6f65442850e1bdcf10c272" kindref="member">int_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="560"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga0fb98718c5c045e34bdef4a23ac48900_1ga0fb98718c5c045e34bdef4a23ac48900" kindref="member">AUX_IRQ_SELECT</ref>,<sp/>intno);</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaf01202d51fe8c4a6961d7c74daf79f7b_1gaf01202d51fe8c4a6961d7c74daf79f7b" kindref="member">AUX_IRQ_ENABLE</ref>);</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="567"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga653e2bfd8567c76dc56578aad0585517_1ga653e2bfd8567c76dc56578aad0585517" kindref="member">int_ipm_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="575"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaccb62bca19bc3aad58ff877770554803_1gaccb62bca19bc3aad58ff877770554803" kindref="member">arc_int_ipm_get</ref>()<sp/>+<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>);</highlight></codeline>
+<codeline lineno="577"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab54915b2976f68cc96681374cbd0f023_1gab54915b2976f68cc96681374cbd0f023" kindref="member">int_ipm_set</ref>(int32_t<sp/>intpri)</highlight></codeline>
+<codeline lineno="585"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intpri<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref><sp/>&amp;&amp;<sp/>intpri<sp/>&lt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab0ae4780994cd452eef15ad91410d2fc_1gab0ae4780994cd452eef15ad91410d2fc" kindref="member">INT_PRI_MAX</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaa24e54ba34a493fecc82f7184a201fd9_1gaa24e54ba34a493fecc82f7184a201fd9" kindref="member">arc_int_ipm_set</ref>(intpri<sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga155d43c83556ee963e5291c8a25c1dc5_1ga155d43c83556ee963e5291c8a25c1dc5" kindref="member">int_pri_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="601"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga12503138f3c2a7e70dc2f7612d67f3ea_1ga12503138f3c2a7e70dc2f7612d67f3ea" kindref="member">arc_int_pri_get</ref>(intno)<sp/>+<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="607"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab670f0f6729ebec51cc2de8f98c74a40_1gab670f0f6729ebec51cc2de8f98c74a40" kindref="member">int_pri_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/>int32_t<sp/>intpri)</highlight></codeline>
+<codeline lineno="617"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>();</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intpri<sp/>=<sp/>intpri<sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab4e3ed950ef95fecc947b3bd756b628c_1gab4e3ed950ef95fecc947b3bd756b628c" kindref="member">arc_int_pri_set</ref>(intno,<sp/>(uint32_t)intpri);</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="628"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gafef73153596413e6c51edbe558b01c33_1gafef73153596413e6c51edbe558b01c33" kindref="member">int_secure_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/>uint32_t<sp/>secure)</highlight></codeline>
+<codeline lineno="637"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga9353e289c4023d0e6925548dcec5895e_1ga9353e289c4023d0e6925548dcec5895e" kindref="member">arc_int_secure_set</ref>(intno,<sp/>secure);</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9126c0df90c318b678022ab7b4d470c2_1ga9126c0df90c318b678022ab7b4d470c2" kindref="member">int_probe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="654"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga441529dec3254c566ceb10e6bfd0e28b_1ga441529dec3254c566ceb10e6bfd0e28b" kindref="member">arc_int_probe</ref>(intno);</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="659"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga136b8b6cdc3fd044879e2e3779041c3b_1ga136b8b6cdc3fd044879e2e3779041c3b" kindref="member">int_sw_trigger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="668"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga86b153983ea94a48bf42dae55b57a291_1ga86b153983ea94a48bf42dae55b57a291" kindref="member">arc_int_sw_trigger</ref>(intno);</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="674"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gafb4ee7c403bef57f56452190d13e93ec_1gafb4ee7c403bef57f56452190d13e93ec" kindref="member">int_level_config</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>level)</highlight></codeline>
+<codeline lineno="684"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga8070fbc3833c231a4d677aa140ff9d9f_1ga8070fbc3833c231a4d677aa140ff9d9f" kindref="member">arc_int_level_config</ref>(intno,<sp/>level);</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="690"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga46223bbf586c1a4af4d5d4082d3484e7_1ga46223bbf586c1a4af4d5d4082d3484e7" kindref="member">int_level_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="698"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>intno<sp/>&lt;<sp/>NUM_EXC_ALL)<sp/>{</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga8c870168b2f2d4145a0eb855375b0872_1ga8c870168b2f2d4145a0eb855375b0872" kindref="member">arc_int_level_get</ref>(intno);</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga733e45f48f9fe46022e47acd9677d980_1ga733e45f48f9fe46022e47acd9677d980" kindref="member">cpu_lock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="709"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaf577f14b54bb9faf12fb5dbbcb387039_1gaf577f14b54bb9faf12fb5dbbcb387039" kindref="member">arc_lock</ref>();</highlight></codeline>
+<codeline lineno="711"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa93883b650c91f0e9b31a4cd6e935dc8_1gaa93883b650c91f0e9b31a4cd6e935dc8" kindref="member">cpu_unlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="717"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga3cbe63282edd6624f71e5fc2c741a242_1ga3cbe63282edd6624f71e5fc2c741a242" kindref="member">arc_unlock</ref>();</highlight></codeline>
+<codeline lineno="719"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal">uint32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="727"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga30228a3464d0f5e2c1e22bfe7c296e4c_1ga30228a3464d0f5e2c1e22bfe7c296e4c" kindref="member">arc_lock_save</ref>();</highlight></codeline>
+<codeline lineno="729"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"></highlight></codeline>
+<codeline lineno="736"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>status)</highlight></codeline>
+<codeline lineno="737"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga7df36b77b3cfa36e7e4d79abf99045fa_1ga7df36b77b3cfa36e7e4d79abf99045fa" kindref="member">arc_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="739"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="747"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga75a43aab696debc012bc72b6de13e30a_1ga75a43aab696debc012bc72b6de13e30a" kindref="member">int_handler_install</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/>handler)</highlight></codeline>
+<codeline lineno="748"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga69b337215e6300f4b4d85e34ebb26d7c_1ga69b337215e6300f4b4d85e34ebb26d7c" kindref="member">exc_handler_install</ref>(intno,<sp/>handler);</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"></highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="755"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gafeb182cdc708ccbeb49792ed1d4b7f7f_1gafeb182cdc708ccbeb49792ed1d4b7f7f" kindref="member">int_handler_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="764"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab088d390d0f2aaf7f3308a269523f62b_1gab088d390d0f2aaf7f3308a269523f62b" kindref="member">exc_handler_get</ref>(intno);</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"></highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="770"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="772"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>EMBARC_OVERRIDE_ARC_INTERRUPT_MANAGEMENT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="773"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="779"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gad14255ed8d12d245bc83636c252f1e17_1gad14255ed8d12d245bc83636c252f1e17" kindref="member">arc_firq_stack_set</ref>(uint8_t<sp/>*firq_sp)</highlight></codeline>
+<codeline lineno="780"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(firq_sp<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"></highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga30228a3464d0f5e2c1e22bfe7c296e4c_1ga30228a3464d0f5e2c1e22bfe7c296e4c" kindref="member">arc_lock_save</ref>();</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__TOOLCHAIN_ga5c82d9ffd382ecf74b6e2e4e20278525_1ga5c82d9ffd382ecf74b6e2e4e20278525" kindref="member">Asm</ref>(</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>only<sp/>ilink<sp/>will<sp/>not<sp/>be<sp/>banked,<sp/>so<sp/>use<sp/>ilink<sp/>as<sp/>channel</highlight></codeline>
+<codeline lineno="791"><highlight class="comment"><sp/>*<sp/>between<sp/>2<sp/>banks</highlight></codeline>
+<codeline lineno="792"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="793"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>%%ilink,<sp/>%0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;lr<sp/>%0,<sp/>[%1]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;or<sp/>%0,<sp/>%0,<sp/>%2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;kflag<sp/>%0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>%%sp,<sp/>%%ilink<sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="798"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>switch<sp/>back<sp/>to<sp/>bank0,<sp/>use<sp/>ilink<sp/>to<sp/>avoid<sp/>the<sp/>pollution<sp/>of</highlight></codeline>
+<codeline lineno="799"><highlight class="comment"><sp/>*<sp/>bank1&apos;s<sp/>gp<sp/>regs.</highlight></codeline>
+<codeline lineno="800"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;lr<sp/>%%ilink,<sp/>[%1]<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;and<sp/>%%ilink,<sp/>%%ilink,<sp/>%3<sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;kflag<sp/>%%ilink<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(firq_sp),<sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__CORE__COMM_ga8c8b02d290e7547a418792b37ae3bff1_1ga8c8b02d290e7547a418792b37ae3bff1" kindref="member">AUX_STATUS32</ref>),</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__CORE__COMM_ga40c370d152e77f94001f6a21b532bc89_1ga40c370d152e77f94001f6a21b532bc89" kindref="member">AUX_STATUS_RB</ref>(1)),</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal"><sp/>(~<ref refid="group__ARC__HAL__CORE__COMM_ga40c370d152e77f94001f6a21b532bc89_1ga40c370d152e77f94001f6a21b532bc89" kindref="member">AUX_STATUS_RB</ref>(7))</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga7df36b77b3cfa36e7e4d79abf99045fa_1ga7df36b77b3cfa36e7e4d79abf99045fa" kindref="member">arc_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="811"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emsk__io_8h" kind="file">
+    <compoundname>emsk_io.h</compoundname>
+    <includes refid="dev__gpio_8h" local="yes">device/ip_hal/dev_gpio.h</includes>
+    <includedby refid="emsk_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/emsk.h</includedby>
+    <incdepgraph>
+      <node id="2285">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2281">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="2282" relation="include">
+        </childnode>
+        <childnode refid="2283" relation="include">
+        </childnode>
+        <childnode refid="2284" relation="include">
+        </childnode>
+        <childnode refid="2285" relation="include">
+        </childnode>
+      </node>
+      <node id="2279">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="2280" relation="include">
+        </childnode>
+      </node>
+      <node id="2278">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h</label>
+        <link refid="emsk_io.h"/>
+        <childnode refid="2279" relation="include">
+        </childnode>
+      </node>
+      <node id="2282">
+        <label>stdint.h</label>
+      </node>
+      <node id="2284">
+        <label>stddef.h</label>
+      </node>
+      <node id="2283">
+        <label>limits.h</label>
+      </node>
+      <node id="2280">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="2281" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2291">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="2286">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h</label>
+        <link refid="emsk_io.h"/>
+        <childnode refid="2287" relation="include">
+        </childnode>
+      </node>
+      <node id="2287">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/emsk.h</label>
+        <link refid="emsk_8h"/>
+        <childnode refid="2288" relation="include">
+        </childnode>
+        <childnode refid="2289" relation="include">
+        </childnode>
+        <childnode refid="2290" relation="include">
+        </childnode>
+        <childnode refid="2291" relation="include">
+        </childnode>
+        <childnode refid="2292" relation="include">
+        </childnode>
+      </node>
+      <node id="2290">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="2289">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="2292">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/mux/mux.c</label>
+        <link refid="emsk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="2288">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>EMSK LED Port Configuration</header>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_gabf400e0dfd464fc6fbf09699d27bb8b9_1gabf400e0dfd464fc6fbf09699d27bb8b9" prot="public" static="no">
+        <name>EMSK_LED_OFFSET</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="48" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_gacf210fa38c5ec81f9e35938495fd6fe8_1gacf210fa38c5ec81f9e35938495fd6fe8" prot="public" static="no">
+        <name>EMSK_LED_MASK</name>
+        <initializer>((0x1ff) &lt;&lt; EMSK_LED_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="49" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_gad75964c8f44e6e666a7156ccbcc3649a_1gad75964c8f44e6e666a7156ccbcc3649a" prot="public" static="no">
+        <name>EMSK_LED_PORT</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__GPIO__PINDEF_ga2c0a2bdea10ebb6f388a70150cc42b27_1gga2c0a2bdea10ebb6f388a70150cc42b27acd5810cf1f20b884f187dc90bd0cfe3e" kindref="member">DEV_GPIO_PORT_B</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="50" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_ga8cc2144e46ec9dd2f6b14cea91674957_1ga8cc2144e46ec9dd2f6b14cea91674957" prot="public" static="no">
+        <name>EMSK_LED_DIR</name>
+        <initializer>((0x1ff) &lt;&lt; EMSK_LED_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="51" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>EMSK Switch Port Configuration</header>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_ga29219faa3e3718dd9bb8191b11c32095_1ga29219faa3e3718dd9bb8191b11c32095" prot="public" static="no">
+        <name>EMSK_SWITCH_OFFSET</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="58" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_ga6cf5f6e515ffa91cc589c06e9ecadd34_1ga6cf5f6e515ffa91cc589c06e9ecadd34" prot="public" static="no">
+        <name>EMSK_SWITCH_MASK</name>
+        <initializer>((0xf) &lt;&lt; EMSK_SWITCH_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="59" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_gaadcb87cd303dfe5865a935d817414b0d_1gaadcb87cd303dfe5865a935d817414b0d" prot="public" static="no">
+        <name>EMSK_SWITCH_PORT</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__GPIO__PINDEF_ga2c0a2bdea10ebb6f388a70150cc42b27_1gga2c0a2bdea10ebb6f388a70150cc42b27ab87602402daaffb1449875e6d75329f0" kindref="member">DEV_GPIO_PORT_C</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="60" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_gaa94eb84a13f039dbd2b6b5cf1fd8078c_1gaa94eb84a13f039dbd2b6b5cf1fd8078c" prot="public" static="no">
+        <name>EMSK_SWITCH_DIR</name>
+        <initializer>((0x0) &lt;&lt; EMSK_SWITCH_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="61" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>EMSK Button Port Configuration</header>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_gaea1f5a273194343ae8c130b02b0f21ec_1gaea1f5a273194343ae8c130b02b0f21ec" prot="public" static="no">
+        <name>EMSK_BUTTON_OFFSET</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="68" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_ga751072051115543818565f32ca9b0a6f_1ga751072051115543818565f32ca9b0a6f" prot="public" static="no">
+        <name>EMSK_BUTTON_MASK</name>
+        <initializer>((0x7) &lt;&lt; EMSK_BUTTON_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="69" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_ga99890d8e2a495f37bc627e1614a24634_1ga99890d8e2a495f37bc627e1614a24634" prot="public" static="no">
+        <name>EMSK_BUTTON_PORT</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__GPIO__PINDEF_ga2c0a2bdea10ebb6f388a70150cc42b27_1gga2c0a2bdea10ebb6f388a70150cc42b27a6601c97c399ff793e35459b4eee158b3" kindref="member">DEV_GPIO_PORT_A</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="70" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__BOARD__EMSK__DRV__GPIO_ga65052b70d0da4655dd565b21fe3d34c9_1ga65052b70d0da4655dd565b21fe3d34c9" prot="public" static="no">
+        <name>EMSK_BUTTON_DIR</name>
+        <initializer>((0x0) &lt;&lt; EMSK_BUTTON_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" line="71" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_gac9f916612edd3260bf1282c25ceea192_1gac9f916612edd3260bf1282c25ceea192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsk_led_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsk_led_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsk on-board led init, led default off </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="70" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="70" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga1c5aeb4ab0898b4d756415644ff65c68_1ga1c5aeb4ab0898b4d756415644ff65c68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsk_button_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsk_button_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsk on-board button init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="88" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga17c90e6a42b9c2952d406d0136a390ba_1ga17c90e6a42b9c2952d406d0136a390ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsk_switch_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsk_switch_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsk on-board switch init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="104" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_gae3e6113ee6e6875ab8d71f4a8871af30_1gae3e6113ee6e6875ab8d71f4a8871af30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void emsk_io_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>emsk_io_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>emsk on board gpio init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="62" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga0d116692517e4c11de41ec07145b8404_1ga0d116692517e4c11de41ec07145b8404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_write</definition>
+        <argsstring>(uint32_t led_val, uint32_t mask)</argsstring>
+        <name>led_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>led_val</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write 1 to light on led bit, else light off led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="120" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="120" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga0dc68bc0b79209469f458809e464b178_1ga0dc68bc0b79209469f458809e464b178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t led_read</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>led_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read led value, on for 1, off for 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="144" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="144" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga37c8d684dfd11fe1900c93fa1fe7cc0b_1ga37c8d684dfd11fe1900c93fa1fe7cc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_toggle</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>led_toggle</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>toggle masked led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="134" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_gacf651d7f9071df560e583ba654d4b3d0_1gacf651d7f9071df560e583ba654d4b3d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t switch_read</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>switch_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pull down switch return 1, else 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="161" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="161" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga1321d1f2d3e39b23315285b52acd0852_1ga1321d1f2d3e39b23315285b52acd0852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t button_read</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>button_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Press down bit set to 1 else 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" line="178" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.c" bodystart="178" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>EMSK gpio implementation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#ifndef<sp/>H_EMSK_GPIO</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_EMSK_GPIO</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__gpio_8h" kindref="compound">device/ip_hal/dev_gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="group__BOARD__EMSK__DRV__GPIO_gabf400e0dfd464fc6fbf09699d27bb8b9_1gabf400e0dfd464fc6fbf09699d27bb8b9" refkind="member"><highlight class="preprocessor">#define<sp/>EMSK_LED_OFFSET<sp/><sp/><sp/><sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="49" refid="group__BOARD__EMSK__DRV__GPIO_gacf210fa38c5ec81f9e35938495fd6fe8_1gacf210fa38c5ec81f9e35938495fd6fe8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_LED_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0x1ff)<sp/>&lt;&lt;<sp/>EMSK_LED_OFFSET)</highlight></codeline>
+<codeline lineno="50" refid="group__BOARD__EMSK__DRV__GPIO_gad75964c8f44e6e666a7156ccbcc3649a_1gad75964c8f44e6e666a7156ccbcc3649a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_LED_PORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DEV_GPIO_PORT_B)</highlight></codeline>
+<codeline lineno="51" refid="group__BOARD__EMSK__DRV__GPIO_ga8cc2144e46ec9dd2f6b14cea91674957_1ga8cc2144e46ec9dd2f6b14cea91674957" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_LED_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0x1ff)<sp/>&lt;&lt;<sp/>EMSK_LED_OFFSET)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="58" refid="group__BOARD__EMSK__DRV__GPIO_ga29219faa3e3718dd9bb8191b11c32095_1ga29219faa3e3718dd9bb8191b11c32095" refkind="member"><highlight class="preprocessor">#define<sp/>EMSK_SWITCH_OFFSET<sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="59" refid="group__BOARD__EMSK__DRV__GPIO_ga6cf5f6e515ffa91cc589c06e9ecadd34_1ga6cf5f6e515ffa91cc589c06e9ecadd34" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SWITCH_MASK<sp/><sp/><sp/><sp/>((0xf)<sp/>&lt;&lt;<sp/>EMSK_SWITCH_OFFSET)</highlight></codeline>
+<codeline lineno="60" refid="group__BOARD__EMSK__DRV__GPIO_gaadcb87cd303dfe5865a935d817414b0d_1gaadcb87cd303dfe5865a935d817414b0d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SWITCH_PORT<sp/><sp/><sp/><sp/>(DEV_GPIO_PORT_C)</highlight></codeline>
+<codeline lineno="61" refid="group__BOARD__EMSK__DRV__GPIO_gaa94eb84a13f039dbd2b6b5cf1fd8078c_1gaa94eb84a13f039dbd2b6b5cf1fd8078c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SWITCH_DIR<sp/><sp/><sp/><sp/><sp/>((0x0)<sp/>&lt;&lt;<sp/>EMSK_SWITCH_OFFSET)</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="68" refid="group__BOARD__EMSK__DRV__GPIO_gaea1f5a273194343ae8c130b02b0f21ec_1gaea1f5a273194343ae8c130b02b0f21ec" refkind="member"><highlight class="preprocessor">#define<sp/>EMSK_BUTTON_OFFSET<sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="69" refid="group__BOARD__EMSK__DRV__GPIO_ga751072051115543818565f32ca9b0a6f_1ga751072051115543818565f32ca9b0a6f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_BUTTON_MASK<sp/><sp/><sp/><sp/>((0x7)<sp/>&lt;&lt;<sp/>EMSK_BUTTON_OFFSET)</highlight></codeline>
+<codeline lineno="70" refid="group__BOARD__EMSK__DRV__GPIO_ga99890d8e2a495f37bc627e1614a24634_1ga99890d8e2a495f37bc627e1614a24634" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_BUTTON_PORT<sp/><sp/><sp/><sp/>(DEV_GPIO_PORT_A)</highlight></codeline>
+<codeline lineno="71" refid="group__BOARD__EMSK__DRV__GPIO_ga65052b70d0da4655dd565b21fe3d34c9_1ga65052b70d0da4655dd565b21fe3d34c9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_BUTTON_DIR<sp/><sp/><sp/><sp/><sp/>((0x0)<sp/>&lt;&lt;<sp/>EMSK_BUTTON_OFFSET)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_gac9f916612edd3260bf1282c25ceea192_1gac9f916612edd3260bf1282c25ceea192" kindref="member">emsk_led_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_ga1c5aeb4ab0898b4d756415644ff65c68_1ga1c5aeb4ab0898b4d756415644ff65c68" kindref="member">emsk_button_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_ga17c90e6a42b9c2952d406d0136a390ba_1ga17c90e6a42b9c2952d406d0136a390ba" kindref="member">emsk_switch_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_gae3e6113ee6e6875ab8d71f4a8871af30_1gae3e6113ee6e6875ab8d71f4a8871af30" kindref="member">emsk_io_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_8h_a9dd2c6696976e4f10afeef472985e0aa_1a9dd2c6696976e4f10afeef472985e0aa" kindref="member">led_write</ref>(uint32_t<sp/>led_val,<sp/>uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs_8h_a8db463c7e8ea419238926918318a31b6_1a8db463c7e8ea419238926918318a31b6" kindref="member">led_read</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_8h_a3a0ce8d39226c77167c07c69ebba53da_1a3a0ce8d39226c77167c07c69ebba53da" kindref="member">led_toggle</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs_8h_a8dc91b6750ae7da9696d5575c9c82917_1a8dc91b6750ae7da9696d5575c9c82917" kindref="member">switch_read</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs_8h_a06fce7f491694b0fe2f2b7ac3c5a1b00_1a06fce7f491694b0fe2f2b7ac3c5a1b00" kindref="member">button_read</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_EMSK_GPIO<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_io.h"/>
+  </compounddef>
+</doxygen>

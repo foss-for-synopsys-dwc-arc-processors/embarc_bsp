@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__pwm__timer_8h" kind="file">
+    <compoundname>dw_pwm_timer.h</compoundname>
+    <includes refid="dev__pwm__timer_8h" local="yes">device/ip_hal/dev_pwm_timer.h</includes>
+    <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
+    <includedby refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</includedby>
+    <includedby refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</includedby>
+    <includedby refid="dw__pwm__timer_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</includedby>
+    <incdepgraph>
+      <node id="4224">
+        <label>device/ip_hal/dev_pwm_timer.h</label>
+        <link refid="dev__pwm__timer_8h"/>
+        <childnode refid="4225" relation="include">
+        </childnode>
+      </node>
+      <node id="4230">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4226">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4227" relation="include">
+        </childnode>
+        <childnode refid="4228" relation="include">
+        </childnode>
+        <childnode refid="4229" relation="include">
+        </childnode>
+        <childnode refid="4230" relation="include">
+        </childnode>
+      </node>
+      <node id="4227">
+        <label>stdint.h</label>
+      </node>
+      <node id="4229">
+        <label>stddef.h</label>
+      </node>
+      <node id="4233">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4234" relation="include">
+        </childnode>
+      </node>
+      <node id="4228">
+        <label>limits.h</label>
+      </node>
+      <node id="4223">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h</label>
+        <link refid="dw_pwm_timer.h"/>
+        <childnode refid="4224" relation="include">
+        </childnode>
+        <childnode refid="4231" relation="include">
+        </childnode>
+      </node>
+      <node id="4234">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4225">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="4226" relation="include">
+        </childnode>
+      </node>
+      <node id="4231">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="4232" relation="include">
+        </childnode>
+      </node>
+      <node id="4232">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4226" relation="include">
+        </childnode>
+        <childnode refid="4233" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4250">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4248">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4242">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="4254">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
+        <link refid="dw__i2s__obj_8c"/>
+      </node>
+      <node id="4241">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4255">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4247">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4245">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4235">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h</label>
+        <link refid="dw_pwm_timer.h"/>
+        <childnode refid="4236" relation="include">
+        </childnode>
+        <childnode refid="4251" relation="include">
+        </childnode>
+        <childnode refid="4261" relation="include">
+        </childnode>
+      </node>
+      <node id="4261">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</label>
+        <link refid="dw__pwm__timer_8c"/>
+      </node>
+      <node id="4253">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/iotdk.h</label>
+        <link refid="iotdk_8h"/>
+        <childnode refid="4254" relation="include">
+        </childnode>
+        <childnode refid="4252" relation="include">
+        </childnode>
+        <childnode refid="4255" relation="include">
+        </childnode>
+        <childnode refid="4256" relation="include">
+        </childnode>
+        <childnode refid="4257" relation="include">
+        </childnode>
+        <childnode refid="4258" relation="include">
+        </childnode>
+        <childnode refid="4259" relation="include">
+        </childnode>
+        <childnode refid="4260" relation="include">
+        </childnode>
+      </node>
+      <node id="4249">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="4237">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
+      </node>
+      <node id="4236">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
+        <childnode refid="4237" relation="include">
+        </childnode>
+        <childnode refid="4238" relation="include">
+        </childnode>
+      </node>
+      <node id="4240">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4256">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4244">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="4258">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4243">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4260">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/mux/mux.c</label>
+        <link refid="iotdk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4252">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
+      </node>
+      <node id="4251">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
+        <childnode refid="4252" relation="include">
+        </childnode>
+        <childnode refid="4253" relation="include">
+        </childnode>
+      </node>
+      <node id="4246">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="4257">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4238">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="4239" relation="include">
+        </childnode>
+        <childnode refid="4240" relation="include">
+        </childnode>
+        <childnode refid="4241" relation="include">
+        </childnode>
+        <childnode refid="4242" relation="include">
+        </childnode>
+        <childnode refid="4243" relation="include">
+        </childnode>
+        <childnode refid="4244" relation="include">
+        </childnode>
+        <childnode refid="4245" relation="include">
+        </childnode>
+        <childnode refid="4246" relation="include">
+        </childnode>
+        <childnode refid="4247" relation="include">
+        </childnode>
+        <childnode refid="4248" relation="include">
+        </childnode>
+        <childnode refid="4249" relation="include">
+        </childnode>
+        <childnode refid="4250" relation="include">
+        </childnode>
+      </node>
+      <node id="4259">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="4239">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCH__CTRL" prot="public">CH_CTRL</innerclass>
+    <innerclass refid="structDW__PWM__TIMER__REG" prot="public">DW_PWM_TIMER_REG</innerclass>
+    <innerclass refid="structDW__PWM__TIMER__CH__ISR" prot="public">DW_PWM_TIMER_CH_ISR</innerclass>
+    <innerclass refid="structDW__PWM__TIMER__CTRL" prot="public">DW_PWM_TIMER_CTRL</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Structure definitions for DesignWare PWM_TIMER Register</header>
+      <description><para>Contains definitions of DesignWare PWM_TIMER register structure </para></description>
+      <memberdef kind="typedef" id="dw__pwm__timer_8h_aec2c8b157bb9b2375a4d2f0ff3b6b281_1aec2c8b157bb9b2375a4d2f0ff3b6b281" prot="public" static="no">
+        <type>struct <ref refid="structDW__PWM__TIMER__REG" kindref="compound">DW_PWM_TIMER_REG</ref> *</type>
+        <definition>typedef  struct DW_PWM_TIMER_REG * DW_PWM_TIMER_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_PWM_TIMER_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="60" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>DesignWare PWM_TIMER Function Declaration</header>
+      <description><para>Contains declarations of designware pwm_timer functions.</para><para>These are only used in pwm_timer object implementation source file </para></description>
+      <memberdef kind="function" id="dw__pwm__timer_8h_abf2b866d8aaac40908b3372ae897b305_1abf2b866d8aaac40908b3372ae897b305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_open</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj)</argsstring>
+        <name>dw_pwm_timer_open</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open designware pwm_timer device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="94" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="135" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8h_a57ee00e89584d1d5fa12c59f91ea709e_1a57ee00e89584d1d5fa12c59f91ea709e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_close</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj)</argsstring>
+        <name>dw_pwm_timer_close</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close designware pwm_timer device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="95" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="165" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8h_a1e7bea71974c2210e61595eef2891152_1a1e7bea71974c2210e61595eef2891152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_read</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, uint32_t ch, uint32_t *mode, uint32_t *freq, uint32_t *dc)</argsstring>
+        <name>dw_pwm_timer_read</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read designware pwm_timer device value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="96" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="197" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8h_a62bfd755bd055a3653deb4ce23fe31e5_1a62bfd755bd055a3653deb4ce23fe31e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_write</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, uint32_t ch, uint32_t mode, uint32_t freq, uint32_t dc)</argsstring>
+        <name>dw_pwm_timer_write</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write designware pwm_timer device value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="97" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="239" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8h_abfd14db51539df2ec35a4e8f1b3ccafd_1abfd14db51539df2ec35a4e8f1b3ccafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_control</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, uint32_t ch, uint32_t cmd, void *param)</argsstring>
+        <name>dw_pwm_timer_control</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cmd</declname>
+          <defname>ctrl_cmd</defname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+          <defname>par</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control designware pwm_timer device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="98" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="289" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8h_a55d0d88dd401fe63458633160d4e0744_1a55d0d88dd401fe63458633160d4e0744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_isr_handler</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, void *ptr)</argsstring>
+        <name>dw_pwm_timer_isr_handler</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware pwm_timer interrupt process </para>        </detaileddescription>
+        <inbodydescription>
+<para>read interrupt status</para><para>clear this bit interrupt </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="99" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="365" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__pwm__timer_8h_a384cc309aa779705e9998ea443f319b4_1a384cc309aa779705e9998ea443f319b4" prot="public" static="no">
+        <name>DW_PWM_TIMER_CH_MAX_COUNT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="36" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__pwm__timer_8h_a807ef6415717b890eb177e2226bddd93_1a807ef6415717b890eb177e2226bddd93" prot="public" static="no">
+        <name>DW_PWM_TIMER_INVALID_INTNO</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__COMMON_ga1c959a409ad6e952dc79b876f8e9b861_1ga1c959a409ad6e952dc79b876f8e9b861" kindref="member">DEV_INTNO_INVALID</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="38" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dw__pwm__timer_8h_a977b4d0c71ea6233d677b6b346934a9d_1a977b4d0c71ea6233d677b6b346934a9d" prot="public" static="no">
+        <type>struct <ref refid="structDW__PWM__TIMER__CH__ISR" kindref="compound">DW_PWM_TIMER_CH_ISR</ref> *</type>
+        <definition>typedef  struct DW_PWM_TIMER_CH_ISR * DW_PWM_TIMER_CH_ISR_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_PWM_TIMER_CH_ISR_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" prot="public" static="no">
+        <type>struct <ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL</ref> *</type>
+        <definition>typedef  struct DW_PWM_TIMER_CTRL * DW_PWM_TIMER_CTRL_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_PWM_TIMER_CTRL_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_DW_PWM_TIMER</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_DW_PWM_TIMER</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__pwm__timer_8h" kindref="compound">device/ip_hal/dev_pwm_timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc/arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="dw__pwm__timer_8h_a384cc309aa779705e9998ea443f319b4_1a384cc309aa779705e9998ea443f319b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_PWM_TIMER_CH_MAX_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="dw__pwm__timer_8h_a807ef6415717b890eb177e2226bddd93_1a807ef6415717b890eb177e2226bddd93" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_PWM_TIMER_INVALID_INTNO<sp/><sp/><sp/><sp/><sp/><sp/>(DEV_INTNO_INVALID)</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="45" refid="structCH__CTRL" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46" refid="structCH__CTRL_adceee45af88436f8ba4190c790426cde_1adceee45af88436f8ba4190c790426cde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCH__CTRL_adceee45af88436f8ba4190c790426cde_1adceee45af88436f8ba4190c790426cde" kindref="member">LOAD_COUNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structCH__CTRL_acf53b25eaeb0829552749a58eb59cef5_1acf53b25eaeb0829552749a58eb59cef5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCH__CTRL_acf53b25eaeb0829552749a58eb59cef5_1acf53b25eaeb0829552749a58eb59cef5" kindref="member">CURRENT_VALUE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" kindref="member">CONTROL_REG</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structCH__CTRL_aa5f6e58b4be1e59ab85317dc5c5e2f64_1aa5f6e58b4be1e59ab85317dc5c5e2f64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCH__CTRL_aa5f6e58b4be1e59ab85317dc5c5e2f64_1aa5f6e58b4be1e59ab85317dc5c5e2f64" kindref="member">EOI</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structCH__CTRL_a3f417aa412549203de3d7735923b8e87_1a3f417aa412549203de3d7735923b8e87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structCH__CTRL_a3f417aa412549203de3d7735923b8e87_1a3f417aa412549203de3d7735923b8e87" kindref="member">INT_STATUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structCH__CTRL" kindref="compound">CH_CTRL</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structDW__PWM__TIMER__REG" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54" refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCH__CTRL" kindref="compound">CH_CTRL</ref><sp/>CTRL[<ref refid="dw__pwm__timer_8h_a384cc309aa779705e9998ea443f319b4_1a384cc309aa779705e9998ea443f319b4" kindref="member">DW_PWM_TIMER_CH_MAX_COUNT</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structDW__PWM__TIMER__REG_a19e922485b9651bdd153f9406f966a2d_1a19e922485b9651bdd153f9406f966a2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__REG_a19e922485b9651bdd153f9406f966a2d_1a19e922485b9651bdd153f9406f966a2d" kindref="member">PWM_TIMERS_INT_STATUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structDW__PWM__TIMER__REG_ae899c06cd83351f3d6b4f8e4ad8bbd2b_1ae899c06cd83351f3d6b4f8e4ad8bbd2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__REG_ae899c06cd83351f3d6b4f8e4ad8bbd2b_1ae899c06cd83351f3d6b4f8e4ad8bbd2b" kindref="member">PWM_TIMERS_EOI</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structDW__PWM__TIMER__REG_a68751764c114e7f1a2737841afba776b_1a68751764c114e7f1a2737841afba776b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__REG_a68751764c114e7f1a2737841afba776b_1a68751764c114e7f1a2737841afba776b" kindref="member">PWM_TIMERS_RAWINT_STATUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structDW__PWM__TIMER__REG_ad56c749bc34c417abc3c8716b33d10cb_1ad56c749bc34c417abc3c8716b33d10cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__REG_ad56c749bc34c417abc3c8716b33d10cb_1ad56c749bc34c417abc3c8716b33d10cb" kindref="member">PWM_TIMERS_COMP_VER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structDW__PWM__TIMER__REG_a4071398d5a59964a598b7afdfa4a6b3e_1a4071398d5a59964a598b7afdfa4a6b3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>LOAD_COUNT2[<ref refid="dw__pwm__timer_8h_a384cc309aa779705e9998ea443f319b4_1a384cc309aa779705e9998ea443f319b4" kindref="member">DW_PWM_TIMER_CH_MAX_COUNT</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/><ref refid="structDW__PWM__TIMER__REG" kindref="compound">DW_PWM_TIMER_REG</ref>,<sp/>*<ref refid="dw__pwm__timer_8h_aec2c8b157bb9b2375a4d2f0ff3b6b281_1aec2c8b157bb9b2375a4d2f0ff3b6b281" kindref="member">DW_PWM_TIMER_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structDW__PWM__TIMER__CH__ISR" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65" refid="structDW__PWM__TIMER__CH__ISR_ab93871f5853748ba000fc9f8e1f532d6_1ab93871f5853748ba000fc9f8e1f532d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__CH__ISR_ab93871f5853748ba000fc9f8e1f532d6_1ab93871f5853748ba000fc9f8e1f532d6" kindref="member">int_ch_max_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga8db6fd35a0475f738f2afa833bcb69d5_1ga8db6fd35a0475f738f2afa833bcb69d5" kindref="member">DEV_PWM_TIMER_HANDLER</ref><sp/>*<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structDW__PWM__TIMER__CH__ISR" kindref="compound">DW_PWM_TIMER_CH_ISR</ref>,<sp/>*<ref refid="dw__pwm__timer_8h_a977b4d0c71ea6233d677b6b346934a9d_1a977b4d0c71ea6233d677b6b346934a9d" kindref="member">DW_PWM_TIMER_CH_ISR_PTR</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structDW__PWM__TIMER__CTRL" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74" refid="structDW__PWM__TIMER__CTRL_ad312cc9781465aab68f02e5475742086_1ad312cc9781465aab68f02e5475742086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__CTRL_ad312cc9781465aab68f02e5475742086_1ad312cc9781465aab68f02e5475742086" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DW_PWM_TIMER_REG_PTR<sp/><ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="structDW__PWM__TIMER__CTRL_ae65dc00496447dbe265b09b36a707ebf_1ae65dc00496447dbe265b09b36a707ebf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__CTRL_ae65dc00496447dbe265b09b36a707ebf_1ae65dc00496447dbe265b09b36a707ebf" kindref="member">ch_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="structDW__PWM__TIMER__CTRL_ab9bb68f3ed76dccfad130a3a2d8598ff_1ab9bb68f3ed76dccfad130a3a2d8598ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__PWM__TIMER__CTRL_ab9bb68f3ed76dccfad130a3a2d8598ff_1ab9bb68f3ed76dccfad130a3a2d8598ff" kindref="member">clock</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="structDW__PWM__TIMER__CTRL_a2b17d120143a1b2728cc4dd886d3425b_1a2b17d120143a1b2728cc4dd886d3425b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="structDW__PWM__TIMER__CTRL_a2b17d120143a1b2728cc4dd886d3425b_1a2b17d120143a1b2728cc4dd886d3425b" kindref="member">int_handler</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DW_PWM_TIMER_CH_ISR_PTR<sp/><ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga39379f31f577bac0b4c551de5cf71cd3_1ga39379f31f577bac0b4c551de5cf71cd3" kindref="member">DEV_PWM_TIMER_MODE_PTR</ref><sp/><ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL</ref>,<sp/>*<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__pwm__timer_8h_abf2b866d8aaac40908b3372ae897b305_1abf2b866d8aaac40908b3372ae897b305" kindref="member">dw_pwm_timer_open</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__pwm__timer_8h_a57ee00e89584d1d5fa12c59f91ea709e_1a57ee00e89584d1d5fa12c59f91ea709e" kindref="member">dw_pwm_timer_close</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__pwm__timer_8h_a1e7bea71974c2210e61595eef2891152_1a1e7bea71974c2210e61595eef2891152" kindref="member">dw_pwm_timer_read</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/>uint32_t<sp/>ch,<sp/>uint32_t<sp/>*mode,<sp/>uint32_t<sp/>*freq,<sp/>uint32_t<sp/>*dc);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__pwm__timer_8h_a62bfd755bd055a3653deb4ce23fe31e5_1a62bfd755bd055a3653deb4ce23fe31e5" kindref="member">dw_pwm_timer_write</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/>uint32_t<sp/>ch,<sp/>uint32_t<sp/>mode,<sp/>uint32_t<sp/>freq,<sp/>uint32_t<sp/>dc);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__pwm__timer_8h_abfd14db51539df2ec35a4e8f1b3ccafd_1abfd14db51539df2ec35a4e8f1b3ccafd" kindref="member">dw_pwm_timer_control</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/>uint32_t<sp/>ch,<sp/>uint32_t<sp/>cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__pwm__timer_8h_a55d0d88dd401fe63458633160d4e0744_1a55d0d88dd401fe63458633160d4e0744" kindref="member">dw_pwm_timer_isr_handler</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_DW_PWM_TIMER<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h"/>
+  </compounddef>
+</doxygen>

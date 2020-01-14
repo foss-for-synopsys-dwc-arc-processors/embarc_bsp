@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__SPI__REG" kind="struct" prot="public">
+    <compoundname>DW_SPI_REG</compoundname>
+    <includes refid="dw__spi_8h" local="no">dw_spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__SPI__REG_a6a35be456beff12cf29c0130eb82ed15_1a6a35be456beff12cf29c0130eb82ed15" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::CTRLR0</definition>
+        <argsstring></argsstring>
+        <name>CTRLR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Control Register</para><para>&lt; SPI Control Register 0 (0x0) SPI Control Register 1 (0x4) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="70" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a34d7d9f557d877e3ea0983294ae9bad3_1a34d7d9f557d877e3ea0983294ae9bad3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::CTRLR1</definition>
+        <argsstring></argsstring>
+        <name>CTRLR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable Register SPI Enable Register (0x8) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a269fee1123809b550cc9ec2f8e74b423_1a269fee1123809b550cc9ec2f8e74b423" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::SSIENR</definition>
+        <argsstring></argsstring>
+        <name>SSIENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Microwire Control Register (0xC) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="75" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_abfcb47da3bc22a32ec660ac3d1cf9e64_1abfcb47da3bc22a32ec660ac3d1cf9e64" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::MWCR</definition>
+        <argsstring></argsstring>
+        <name>MWCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Slave Enable Register (0x10) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_afc56c971a4f262df754341b06061829a_1afc56c971a4f262df754341b06061829a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::SER</definition>
+        <argsstring></argsstring>
+        <name>SER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Baud Rate Select Register (0x14) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="79" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a246a34b93365a5fa261d39cf75d96b32_1a246a34b93365a5fa261d39cf75d96b32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::BAUDR</definition>
+        <argsstring></argsstring>
+        <name>BAUDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TX and RX FIFO Control Register SPI Transmit FIFO Threshold Level Register (0x18) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a153e9788c9f27831fe7161834f469a54_1a153e9788c9f27831fe7161834f469a54" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::TXFTLR</definition>
+        <argsstring></argsstring>
+        <name>TXFTLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Receive FIFO Threshold Level Register (0x1C) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="84" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a4365f0ed34d6ee8ebeedcb7d321c6a0a_1a4365f0ed34d6ee8ebeedcb7d321c6a0a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::RXFTLR</definition>
+        <argsstring></argsstring>
+        <name>RXFTLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Transmit FIFO Level Register (0x20) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="86" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_ade081014fdb1573cff276bf3afb7e931_1ade081014fdb1573cff276bf3afb7e931" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::TXFLR</definition>
+        <argsstring></argsstring>
+        <name>TXFLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Receive FIFO Level Register (0x24) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a0c564ad0dea77ac910a463fe00a5dfcc_1a0c564ad0dea77ac910a463fe00a5dfcc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::RXFLR</definition>
+        <argsstring></argsstring>
+        <name>RXFLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Status Register (0x28) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="90" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a5c3c7ffc6531d042e8d15679b0efa0b9_1a5c3c7ffc6531d042e8d15679b0efa0b9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt Enable/Disable/Control Registers SPI Interrupt Mask Register (0x2C) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="92" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_aa421301f1533557c27e8add853aaa7b0_1aa421301f1533557c27e8add853aaa7b0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::IMR</definition>
+        <argsstring></argsstring>
+        <name>IMR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Interrupt Status Register (0x30) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="95" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a2bb6f9b52aecf91b5ea5900dea14a1bc_1a2bb6f9b52aecf91b5ea5900dea14a1bc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Raw Interrupt Status Register (0x34) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="97" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a2dc697d8206bc16fe9fa156bc7108e76_1a2dc697d8206bc16fe9fa156bc7108e76" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::RISR</definition>
+        <argsstring></argsstring>
+        <name>RISR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Transmit FIFO Overflow Interrupt Clear Register (0x38) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="99" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_ae6d83a249e5f9276dc6fac90a6ba32ee_1ae6d83a249e5f9276dc6fac90a6ba32ee" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::TXOICR</definition>
+        <argsstring></argsstring>
+        <name>TXOICR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Receive FIFO Overflow Interrupt Clear Register (0x3C) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_af35a561cb05c405f5a380e616de1a097_1af35a561cb05c405f5a380e616de1a097" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::RXOICR</definition>
+        <argsstring></argsstring>
+        <name>RXOICR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Receive FIFO Underflow Interrupt Clear Register (0x40) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="103" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a0a3ed0454e65e2884aa3d9c85bce9ea1_1a0a3ed0454e65e2884aa3d9c85bce9ea1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::RXUICR</definition>
+        <argsstring></argsstring>
+        <name>RXUICR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Multi-Master Interrupt Clear Register (0x44) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_aac43263860114fe3c4e87c4514e904f9_1aac43263860114fe3c4e87c4514e904f9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::MSTICR</definition>
+        <argsstring></argsstring>
+        <name>MSTICR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Interrupt Clear Register (0x48) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a9cb5b2e605e7aed5a021510917cab79c_1a9cb5b2e605e7aed5a021510917cab79c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::ICR</definition>
+        <argsstring></argsstring>
+        <name>ICR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Control Register (0x4C) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a80d8a58b677f44abe78eb7e7c4e03d05_1a80d8a58b677f44abe78eb7e7c4e03d05" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::DMACR</definition>
+        <argsstring></argsstring>
+        <name>DMACR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Transmit Data Level (0x50) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a25083ed35b12fcec502e6b4a56b31e58_1a25083ed35b12fcec502e6b4a56b31e58" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::DMATDLR</definition>
+        <argsstring></argsstring>
+        <name>DMATDLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Receive Data Level (0x54) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="113" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_ace5a4462b09eb99f83a2f9dae5ebdf0a_1ace5a4462b09eb99f83a2f9dae5ebdf0a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::DMARDLR</definition>
+        <argsstring></argsstring>
+        <name>DMARDLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI Identification Register (0x58) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a08cae239d414f020934c6a889f9c5789_1a08cae239d414f020934c6a889f9c5789" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::IDR</definition>
+        <argsstring></argsstring>
+        <name>IDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI CoreKit ID Register (Value after Reset : 0x3332322A) (0x5C) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="117" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_ac055c1fd3b96d94669ab73866e8e2481_1ac055c1fd3b96d94669ab73866e8e2481" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::SSI_VER_ID</definition>
+        <argsstring></argsstring>
+        <name>SSI_VER_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data Register SPI DATA Register for both Read and Write (0x60) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="119" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a8e7b0e0bb08bf979fef476c2ee425122_1a8e7b0e0bb08bf979fef476c2ee425122" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::DATAREG</definition>
+        <argsstring></argsstring>
+        <name>DATAREG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>More SPI DATA Register for both Read and Write (0x64-0xEC) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="122" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a2553de6d468b6dec356bf439a8fba611_1a2553de6d468b6dec356bf439a8fba611" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::DRS[35]</definition>
+        <argsstring>[35]</argsstring>
+        <name>DRS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a02dd5719d017b0c2c7e556e30c91983a_1a02dd5719d017b0c2c7e556e30c91983a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::RX_SAMPLE_DLY</definition>
+        <argsstring></argsstring>
+        <name>RX_SAMPLE_DLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0xF0, RxD Sample Delay Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="126" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__REG_a2595ea29ce3a82ce14d0f08d9f7fd646_1a2595ea29ce3a82ce14d0f08d9f7fd646" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_REG::SPI_CTRLR0</definition>
+        <argsstring></argsstring>
+        <name>SPI_CTRLR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0xF4, SPI Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for DesignWare SPI register. </para>    </briefdescription>
+    <detaileddescription>
+<para>detailed description of DesignWare SPI register information</para><para>Structure type for DesignWare SPI block register information, implementation </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="67" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="67" bodyend="129"/>
+    <listofallmembers>
+      <member refid="structDW__SPI__REG_a246a34b93365a5fa261d39cf75d96b32_1a246a34b93365a5fa261d39cf75d96b32" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>BAUDR</name></member>
+      <member refid="structDW__SPI__REG_a6a35be456beff12cf29c0130eb82ed15_1a6a35be456beff12cf29c0130eb82ed15" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>CTRLR0</name></member>
+      <member refid="structDW__SPI__REG_a34d7d9f557d877e3ea0983294ae9bad3_1a34d7d9f557d877e3ea0983294ae9bad3" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>CTRLR1</name></member>
+      <member refid="structDW__SPI__REG_a8e7b0e0bb08bf979fef476c2ee425122_1a8e7b0e0bb08bf979fef476c2ee425122" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>DATAREG</name></member>
+      <member refid="structDW__SPI__REG_a80d8a58b677f44abe78eb7e7c4e03d05_1a80d8a58b677f44abe78eb7e7c4e03d05" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>DMACR</name></member>
+      <member refid="structDW__SPI__REG_ace5a4462b09eb99f83a2f9dae5ebdf0a_1ace5a4462b09eb99f83a2f9dae5ebdf0a" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>DMARDLR</name></member>
+      <member refid="structDW__SPI__REG_a25083ed35b12fcec502e6b4a56b31e58_1a25083ed35b12fcec502e6b4a56b31e58" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>DMATDLR</name></member>
+      <member refid="structDW__SPI__REG_a2553de6d468b6dec356bf439a8fba611_1a2553de6d468b6dec356bf439a8fba611" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>DRS</name></member>
+      <member refid="structDW__SPI__REG_a9cb5b2e605e7aed5a021510917cab79c_1a9cb5b2e605e7aed5a021510917cab79c" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>ICR</name></member>
+      <member refid="structDW__SPI__REG_a08cae239d414f020934c6a889f9c5789_1a08cae239d414f020934c6a889f9c5789" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>IDR</name></member>
+      <member refid="structDW__SPI__REG_aa421301f1533557c27e8add853aaa7b0_1aa421301f1533557c27e8add853aaa7b0" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>IMR</name></member>
+      <member refid="structDW__SPI__REG_a2bb6f9b52aecf91b5ea5900dea14a1bc_1a2bb6f9b52aecf91b5ea5900dea14a1bc" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>ISR</name></member>
+      <member refid="structDW__SPI__REG_aac43263860114fe3c4e87c4514e904f9_1aac43263860114fe3c4e87c4514e904f9" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>MSTICR</name></member>
+      <member refid="structDW__SPI__REG_abfcb47da3bc22a32ec660ac3d1cf9e64_1abfcb47da3bc22a32ec660ac3d1cf9e64" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>MWCR</name></member>
+      <member refid="structDW__SPI__REG_a2dc697d8206bc16fe9fa156bc7108e76_1a2dc697d8206bc16fe9fa156bc7108e76" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>RISR</name></member>
+      <member refid="structDW__SPI__REG_a02dd5719d017b0c2c7e556e30c91983a_1a02dd5719d017b0c2c7e556e30c91983a" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>RX_SAMPLE_DLY</name></member>
+      <member refid="structDW__SPI__REG_a0c564ad0dea77ac910a463fe00a5dfcc_1a0c564ad0dea77ac910a463fe00a5dfcc" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>RXFLR</name></member>
+      <member refid="structDW__SPI__REG_a4365f0ed34d6ee8ebeedcb7d321c6a0a_1a4365f0ed34d6ee8ebeedcb7d321c6a0a" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>RXFTLR</name></member>
+      <member refid="structDW__SPI__REG_af35a561cb05c405f5a380e616de1a097_1af35a561cb05c405f5a380e616de1a097" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>RXOICR</name></member>
+      <member refid="structDW__SPI__REG_a0a3ed0454e65e2884aa3d9c85bce9ea1_1a0a3ed0454e65e2884aa3d9c85bce9ea1" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>RXUICR</name></member>
+      <member refid="structDW__SPI__REG_afc56c971a4f262df754341b06061829a_1afc56c971a4f262df754341b06061829a" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>SER</name></member>
+      <member refid="structDW__SPI__REG_a2595ea29ce3a82ce14d0f08d9f7fd646_1a2595ea29ce3a82ce14d0f08d9f7fd646" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>SPI_CTRLR0</name></member>
+      <member refid="structDW__SPI__REG_a5c3c7ffc6531d042e8d15679b0efa0b9_1a5c3c7ffc6531d042e8d15679b0efa0b9" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>SR</name></member>
+      <member refid="structDW__SPI__REG_ac055c1fd3b96d94669ab73866e8e2481_1ac055c1fd3b96d94669ab73866e8e2481" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>SSI_VER_ID</name></member>
+      <member refid="structDW__SPI__REG_a269fee1123809b550cc9ec2f8e74b423_1a269fee1123809b550cc9ec2f8e74b423" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>SSIENR</name></member>
+      <member refid="structDW__SPI__REG_ade081014fdb1573cff276bf3afb7e931_1ade081014fdb1573cff276bf3afb7e931" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>TXFLR</name></member>
+      <member refid="structDW__SPI__REG_a153e9788c9f27831fe7161834f469a54_1a153e9788c9f27831fe7161834f469a54" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>TXFTLR</name></member>
+      <member refid="structDW__SPI__REG_ae6d83a249e5f9276dc6fac90a6ba32ee_1ae6d83a249e5f9276dc6fac90a6ba32ee" prot="public" virt="non-virtual"><scope>DW_SPI_REG</scope><name>TXOICR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

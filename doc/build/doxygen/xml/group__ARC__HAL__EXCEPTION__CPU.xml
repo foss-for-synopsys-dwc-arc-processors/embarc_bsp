@@ -1,0 +1,831 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__ARC__HAL__EXCEPTION__CPU" kind="group">
+    <compoundname>ARC_HAL_EXCEPTION_CPU</compoundname>
+    <title>CPU Exception</title>
+    <innerfile refid="arc__exc__asm_8s">arc_exc_asm.s</innerfile>
+    <innerfile refid="arc__exception_8c">arc_exception.c</innerfile>
+    <innerfile refid="arc__exception_8h">arc_exception.h</innerfile>
+    <innerclass refid="structAUX__IRQ__CTRL__FIELD__T" prot="public">AUX_IRQ_CTRL_FIELD_T</innerclass>
+    <innerclass refid="unionAUX__IRQ__CTRL__T" prot="public">AUX_IRQ_CTRL_T</innerclass>
+    <innerclass refid="structEMBARC__PACKED" prot="public">EMBARC_PACKED</innerclass>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gac7dbb1861e25fce9d97d20987ad64df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>exc_entry_cpu</definition>
+        <argsstring>(void)</argsstring>
+        <name>exc_entry_cpu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Default entry of CPU exceptions, such as TLB miss and swap. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default CPU exception entry. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="511" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga3d9c822d87f512a468d2247f4c150cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>exc_entry_int</definition>
+        <argsstring>(void)</argsstring>
+        <name>exc_entry_int</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Normal interrupt exception entry. In default, all interrupt exceptions are installed with normal entry. If FIRQ is required, exc_entry_firq should be the entry. </para>        </briefdescription>
+        <detaileddescription>
+<para>Interrupt exception entry. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="522" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga541500458eabf04464413fbda1c03b32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>exc_entry_firq</definition>
+        <argsstring>(void)</argsstring>
+        <name>exc_entry_firq</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>firq exception entry </para>        </briefdescription>
+        <detaileddescription>
+<para>Fast interrupt exception entry. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="517" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gabe24c383d1e553174241984dec0f5c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>exc_entry_reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>exc_entry_reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reset entry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="506" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__ARC__HAL__EXCEPTION__CPU_1ga43d6413c0c263defa56d3cec8851485b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>EXC_ENTRY_T</definition>
+        <argsstring>)(void)</argsstring>
+        <name>EXC_ENTRY_T</name>
+        <briefdescription>
+<para>Data type for exception entry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="481" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__ARC__HAL__EXCEPTION__CPU_1ga9a301e8a87e130c4e011c70f87fc1db9" prot="public" static="no">
+        <type>void(*</type>
+        <definition>EXC_HANDLER_T</definition>
+        <argsstring>)(void *exc_frame)</argsstring>
+        <name>EXC_HANDLER_T</name>
+        <briefdescription>
+<para>Data type for exception handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="486" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__ARC__HAL__EXCEPTION__CPU_1ga66b52625373d41fbdbb76ef3e86aae63" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _f_stack[]</definition>
+        <argsstring>[]</argsstring>
+        <name>_f_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__ARC__HAL__EXCEPTION__CPU_1ga7f19edb2bb5a5e518171a0d3eb8325eb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref></type>
+        <definition>EXC_ENTRY_T exc_entry_table</definition>
+        <argsstring>[(16+9)]</argsstring>
+        <name>exc_entry_table</name>
+        <briefdescription>
+<para>exception entry table </para>        </briefdescription>
+        <detaileddescription>
+<para>Install exception entry table to ARC_AUX_INT_VECT_BASE in startup. According to ARCv2 ISA, vectors are fetched in instruction space and thus may be present in ICCM, Instruction Cache, or main memory accessed by instruction fetch logic. So it is put into a specific section .vector.</para><para>Please note that the exc_entry_table maybe cached in ARC. Some functions is defined in .s files. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="496" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gaaa967b5a9b8869279d8bbe9b57fc7a9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void exc_handler_default</definition>
+        <argsstring>(void *p_excinf)</argsstring>
+        <name>exc_handler_default</name>
+        <param>
+          <type>void *</type>
+          <declname>p_excinf</declname>
+        </param>
+        <briefdescription>
+<para>Install default cpu exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_excinf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the exception frame </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="303" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="303" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gaff188f19c90ccab522207c930f5f63cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t exc_entry_install</definition>
+        <argsstring>(const uint32_t excno, EXC_ENTRY_T entry)</argsstring>
+        <name>exc_entry_install</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref></type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+<para>Install a CPU exception entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception entry to install </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="444" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="444" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gaa4b5c673e573e320b929709ba930b45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga43d6413c0c263defa56d3cec8851485b_1ga43d6413c0c263defa56d3cec8851485b" kindref="member">EXC_ENTRY_T</ref></type>
+        <definition>EXC_ENTRY_T exc_entry_get</definition>
+        <argsstring>(const uint32_t excno)</argsstring>
+        <name>exc_entry_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <briefdescription>
+<para>Get the installed CPU exception entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The installed CPU exception entry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="483" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="483" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga69b337215e6300f4b4d85e34ebb26d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t exc_handler_install</definition>
+        <argsstring>(const uint32_t excno, EXC_HANDLER_T handler)</argsstring>
+        <name>exc_handler_install</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Install an exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The installed CPU exception handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="497" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="497" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gab088d390d0f2aaf7f3308a269523f62b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9a301e8a87e130c4e011c70f87fc1db9_1ga9a301e8a87e130c4e011c70f87fc1db9" kindref="member">EXC_HANDLER_T</ref></type>
+        <definition>EXC_HANDLER_T exc_handler_get</definition>
+        <argsstring>(const uint32_t excno)</argsstring>
+        <name>exc_handler_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>excno</declname>
+        </param>
+        <briefdescription>
+<para>Get the installed exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>excno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The installed exception handler or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="513" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="513" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gaa06cd81d78d066c1cdc46dde7dabeb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_disable</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_disable</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Disable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="528" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="528" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gab709d97aa7dcc618975fc7e8d5860c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_enable</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_enable</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="543" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="543" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga7f54b17cdd6f65442850e1bdcf10c272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_enabled</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_enabled</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get interrupt enable state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 disabled, 1 enabled, &lt; 0 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="559" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="559" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga653e2bfd8567c76dc56578aad0585517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_ipm_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>int_ipm_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Interrupt priority masking threshold, negative num </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="574" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="574" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gab54915b2976f68cc96681374cbd0f023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_ipm_set</definition>
+        <argsstring>(int32_t intpri)</argsstring>
+        <name>int_ipm_set</name>
+        <param>
+          <type>int32_t</type>
+          <declname>intpri</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intpri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt priority masking threshold </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="584" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="584" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga155d43c83556ee963e5291c8a25c1dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_pri_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_pri_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get current interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 interrupt priority, 0 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="600" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="600" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gab670f0f6729ebec51cc2de8f98c74a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_pri_set</definition>
+        <argsstring>(const uint32_t intno, int32_t intpri)</argsstring>
+        <name>int_pri_set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>intpri</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt priority. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intpri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt priority </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 error, 0 ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="616" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="616" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gafef73153596413e6c51edbe558b01c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_secure_set</definition>
+        <argsstring>(const uint32_t intno, uint32_t secure)</argsstring>
+        <name>int_secure_set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>secure</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt secure or not secure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>secure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for normal, &gt; 0 for secure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 error, 0 ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="636" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="636" bodyend="644"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga9126c0df90c318b678022ab7b4d470c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_probe</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_probe</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Probe interrupt pending state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 pending, 0 no pending, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="653" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="653" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga136b8b6cdc3fd044879e2e3779041c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_sw_trigger</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_sw_trigger</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Trigger interrupt through software. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 ok, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="667" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="667" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gafb4ee7c403bef57f56452190d13e93ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_level_config</definition>
+        <argsstring>(const uint32_t intno, const uint32_t level)</argsstring>
+        <name>int_level_config</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Configure interrupt trigger mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0-level triggered, 1-pulse triggered </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 ok, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="683" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="683" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga46223bbf586c1a4af4d5d4082d3484e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_level_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_level_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get interrupt request mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="697" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="697" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga733e45f48f9fe46022e47acd9677d980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_lock</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_lock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>lock cpu, disable interrupts </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="708" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="708" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gaa93883b650c91f0e9b31a4cd6e935dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_unlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_unlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unlock cpu to enable interrupts. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="716" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="716" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga8801f275b2a194a99f6d673a0e72cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t cpu_lock_save</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_lock_save</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Lock cpu and return status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>CPU status </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="726" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="726" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gacb9f94a852339140f2d1d4ab8411c9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_unlock_restore</definition>
+        <argsstring>(const uint32_t status)</argsstring>
+        <name>cpu_unlock_restore</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Unlock cpu with the specific status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU status saved by cpu_lock_save </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="736" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="736" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gad14255ed8d12d245bc83636c252f1e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_firq_stack_set</definition>
+        <argsstring>(uint8_t *firq_sp)</argsstring>
+        <name>arc_firq_stack_set</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>firq_sp</declname>
+        </param>
+        <briefdescription>
+<para>Set the stack pointer for firq handling. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>firq_sp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="779" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="779" bodyend="811"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1gafab1dd6432df25f8e591639c4cf97347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void arc_vector_base_write</definition>
+        <argsstring>(uint32_t vec_base)</argsstring>
+        <name>arc_vector_base_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>vec_base</declname>
+        </param>
+        <briefdescription>
+<para>Write exception vector base. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target vector base </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="217" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_1ga96acfc21ce10cb30230dc56c548a269c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t arc_vector_base_read</definition>
+        <argsstring>(void)</argsstring>
+        <name>arc_vector_base_read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Read current exception vector base. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Exception vector base (uint32_t) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="228" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="228" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__ARC__HAL__EXCEPTION__CPU_1ga1443e9a11bdf7ee0540d79c6ebcc321f" prot="public" static="no">
+        <name>NUM_EXC_CPU</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; number of CPU exceptions number of interrupt exceptions, defined in <ref refid="arc__feature__config_8h" kindref="compound">arc_feature_config.h</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__EXCEPTION__CPU_1ga07e2a217a7f54496ed4ad507d48d894d" prot="public" static="no">
+        <name>NUM_EXC_INT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>total number of exceptions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="58" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__EXCEPTION__CPU_1gae5139fa9096875ad9a126741fce30e03" prot="public" static="no">
+        <name>NUM_EXC_ALL</name>
+        <initializer>(<ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref> + <ref refid="group__ARC__HAL__EXCEPTION__CPU_ga07e2a217a7f54496ed4ad507d48d894d_1ga07e2a217a7f54496ed4ad507d48d894d" kindref="member">NUM_EXC_INT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="62" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__EXCEPTION__CPU_1gae98cba7141c4a35385a94bdb527c1d87" prot="public" static="no">
+        <name>ARC_PROCESSOR_FRAME_T_SIZE</name>
+        <initializer>(sizeof(PROCESSOR_FRAME_T) / sizeof(uint32_t))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="207" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__EXCEPTION__CPU_1ga00a590cc8a51a2b8183d1ca9c6386e43" prot="public" static="no">
+        <name>ARC_INT_EXC_FRAME_T_SIZE</name>
+        <initializer>(sizeof(INT_EXC_FRAME_T) / sizeof(uint32_t))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="208" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__EXCEPTION__CPU_1gacb38f2a5596c5c04f0bba3343021c866" prot="public" static="no">
+        <name>ARC_CALLEE_FRAME_T_SIZE</name>
+        <initializer>(sizeof(CALLEE_FRAME_T) / sizeof(uint32_t))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="209" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Core exception management. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

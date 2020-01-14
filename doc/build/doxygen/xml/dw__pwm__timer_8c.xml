@@ -1,0 +1,885 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__pwm__timer_8c" kind="file">
+    <compoundname>dw_pwm_timer.c</compoundname>
+    <includes refid="embARC__toolchain_8h" local="yes">embARC_toolchain.h</includes>
+    <includes refid="embARC__error_8h" local="yes">embARC_error.h</includes>
+    <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
+    <includes refid="dw__pwm__timer_8h" local="yes">device/designware/dw_pwm_timer.h</includes>
+    <incdepgraph>
+      <node id="3042">
+        <label>device/ip_hal/dev_pwm_timer.h</label>
+        <link refid="dev__pwm__timer_8h"/>
+        <childnode refid="3043" relation="include">
+        </childnode>
+      </node>
+      <node id="3035">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3031">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="3032" relation="include">
+        </childnode>
+        <childnode refid="3033" relation="include">
+        </childnode>
+        <childnode refid="3034" relation="include">
+        </childnode>
+        <childnode refid="3035" relation="include">
+        </childnode>
+      </node>
+      <node id="3032">
+        <label>stdint.h</label>
+      </node>
+      <node id="3036">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3032" relation="include">
+        </childnode>
+        <childnode refid="3037" relation="include">
+        </childnode>
+      </node>
+      <node id="3034">
+        <label>stddef.h</label>
+      </node>
+      <node id="3038">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3039" relation="include">
+        </childnode>
+      </node>
+      <node id="3033">
+        <label>limits.h</label>
+      </node>
+      <node id="3041">
+        <label>device/designware/dw_pwm_timer.h</label>
+        <link refid="dw__pwm__timer_8h"/>
+        <childnode refid="3042" relation="include">
+        </childnode>
+        <childnode refid="3040" relation="include">
+        </childnode>
+      </node>
+      <node id="3039">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3030">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</label>
+        <link refid="dw_pwm_timer.c"/>
+        <childnode refid="3031" relation="include">
+        </childnode>
+        <childnode refid="3036" relation="include">
+        </childnode>
+        <childnode refid="3040" relation="include">
+        </childnode>
+        <childnode refid="3041" relation="include">
+        </childnode>
+      </node>
+      <node id="3043">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="3031" relation="include">
+        </childnode>
+      </node>
+      <node id="3040">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3037" relation="include">
+        </childnode>
+      </node>
+      <node id="3037">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3031" relation="include">
+        </childnode>
+        <childnode refid="3038" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" prot="public" static="no">
+        <name>DW_PWM_TIMER_CHECK_EXP</name>
+        <param><defname>EXPR</defname></param>
+        <param><defname>ERROR_CODE</defname></param>
+        <initializer><ref refid="group__EMBARC__ERROR_ga8bd781723e5f3f1a4cbf2b785e92c71c_1ga8bd781723e5f3f1a4cbf2b785e92c71c" kindref="member">CHECK_EXP</ref>(EXPR, ercd, ERROR_CODE, error_exit)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check expressions used in DesignWare PWM_TIMER driver implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="37" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" prot="public" static="no">
+        <name>VALID_CHK_PWM_TIMER_INFO_OBJECT</name>
+        <param><defname>pwm_timerinfo_obj_ptr</defname></param>
+        <initializer>{				  \
+		<ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((pwm_timerinfo_obj_ptr) != NULL, <ref refid="group__EMBARC__ERROR_ga33dcdca4c2e85d1b2899272d9d176553_1ga33dcdca4c2e85d1b2899272d9d176553" kindref="member">E_OBJ</ref>);			  \
+		<ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(((pwm_timerinfo_obj_ptr)-&gt;pwm_timer_ctrl) != NULL, <ref refid="group__EMBARC__ERROR_ga33dcdca4c2e85d1b2899272d9d176553_1ga33dcdca4c2e85d1b2899272d9d176553" kindref="member">E_OBJ</ref>); \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>valid check of uart info object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="41" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dw__pwm__timer_8c_abab48819df76a2af977cb403d4d1023c_1abab48819df76a2af977cb403d4d1023c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_pwm_timer_int_read_status</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port)</argsstring>
+        <name>dw_pwm_timer_int_read_status</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_pwm_timer_timer_enable</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint32_t ch)</argsstring>
+        <name>dw_pwm_timer_timer_enable</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="58" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_pwm_timer_timer_disable</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint32_t ch)</argsstring>
+        <name>dw_pwm_timer_timer_disable</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a79714e060480cc6e424b10842ec4e91c_1a79714e060480cc6e424b10842ec4e91c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_pwm_timer_pwm_enable</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint32_t ch)</argsstring>
+        <name>dw_pwm_timer_pwm_enable</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="74" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_pwm_timer_pwm_disable</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint32_t ch)</argsstring>
+        <name>dw_pwm_timer_pwm_disable</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_adb809f7314bbbf677977d1ad9cc9b200_1adb809f7314bbbf677977d1ad9cc9b200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_pwm_timer_count_set</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint8_t ch, uint16_t val)</argsstring>
+        <name>dw_pwm_timer_count_set</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="90" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_ac3f1abbec40a74fca3d1e0e5b6de4f5e_1ac3f1abbec40a74fca3d1e0e5b6de4f5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint16_t</type>
+        <definition>uint16_t dw_pwm_timer_count_get</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint8_t ch)</argsstring>
+        <name>dw_pwm_timer_count_get</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="98" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_aa9f70d1acacfb9145d203644e52d9f6e_1aa9f70d1acacfb9145d203644e52d9f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_pwm_timer_count2_set</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint8_t ch, uint16_t val)</argsstring>
+        <name>dw_pwm_timer_count2_set</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_aa61c3d94554826b647d2427fb5145a99_1aa61c3d94554826b647d2427fb5145a99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint16_t</type>
+        <definition>uint16_t dw_pwm_timer_count2_get</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint8_t ch)</argsstring>
+        <name>dw_pwm_timer_count2_get</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a6146e898df284e65c60ce9350780b77a_1a6146e898df284e65c60ce9350780b77a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_pwm_timer_int_clear_all</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port)</argsstring>
+        <name>dw_pwm_timer_int_clear_all</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="119" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="119" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a229e73613a78137691ccc3a754438c78_1a229e73613a78137691ccc3a754438c78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_pwm_timer_int_clear</definition>
+        <argsstring>(DW_PWM_TIMER_CTRL_PTR port, uint32_t ch)</argsstring>
+        <name>dw_pwm_timer_int_clear</name>
+        <param>
+          <type><ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="126" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_abf2b866d8aaac40908b3372ae897b305_1abf2b866d8aaac40908b3372ae897b305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_open</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj)</argsstring>
+        <name>dw_pwm_timer_open</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Open designware pwm_timer device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="135" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="135" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a57ee00e89584d1d5fa12c59f91ea709e_1a57ee00e89584d1d5fa12c59f91ea709e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_close</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj)</argsstring>
+        <name>dw_pwm_timer_close</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close designware pwm_timer device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="165" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="165" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a1e7bea71974c2210e61595eef2891152_1a1e7bea71974c2210e61595eef2891152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_read</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, uint32_t ch, uint32_t *mode, uint32_t *freq, uint32_t *dc)</argsstring>
+        <name>dw_pwm_timer_read</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read designware pwm_timer device value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="197" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="197" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a62bfd755bd055a3653deb4ce23fe31e5_1a62bfd755bd055a3653deb4ce23fe31e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_write</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, uint32_t ch, uint32_t mode, uint32_t freq, uint32_t dc)</argsstring>
+        <name>dw_pwm_timer_write</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write designware pwm_timer device value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="239" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="239" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_ac8c29094e2ce2db6cd8d7dcda5603ae1_1ac8c29094e2ce2db6cd8d7dcda5603ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_control</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, uint32_t ch, uint32_t ctrl_cmd, void *par)</argsstring>
+        <name>dw_pwm_timer_control</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>par</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control designware pwm_timer device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="289" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="289" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__pwm__timer_8c_a55d0d88dd401fe63458633160d4e0744_1a55d0d88dd401fe63458633160d4e0744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_pwm_timer_isr_handler</definition>
+        <argsstring>(DEV_PWM_TIMER *pwm_timer_obj, void *ptr)</argsstring>
+        <name>dw_pwm_timer_isr_handler</name>
+        <param>
+          <type><ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref> *</type>
+          <declname>pwm_timer_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware pwm_timer interrupt process </para>        </detaileddescription>
+        <inbodydescription>
+<para>read interrupt status</para><para>clear this bit interrupt </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" line="365" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c" bodystart="365" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__toolchain_8h" kindref="compound">embARC_toolchain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__error_8h" kindref="compound">embARC_error.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc/arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__pwm__timer_8h" kindref="compound">device/designware/dw_pwm_timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#define<sp/>DW_PWM_TIMER_CHECK_EXP(EXPR,<sp/>ERROR_CODE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK_EXP(EXPR,<sp/>ercd,<sp/>ERROR_CODE,<sp/>error_exit)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DISABLE_DEVICE_OBJECT_VALID_CHECK</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#define<sp/>VALID_CHK_PWM_TIMER_INFO_OBJECT(pwm_timerinfo_obj_ptr)<sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DW_PWM_TIMER_CHECK_EXP((pwm_timerinfo_obj_ptr)<sp/>!=<sp/>NULL,<sp/>E_OBJ);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DW_PWM_TIMER_CHECK_EXP(((pwm_timerinfo_obj_ptr)-&gt;pwm_timer_ctrl)<sp/>!=<sp/>NULL,<sp/>E_OBJ);<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/>uint32_t<sp/><ref refid="dw__pwm__timer_8c_abab48819df76a2af977cb403d4d1023c_1abab48819df76a2af977cb403d4d1023c" kindref="member">dw_pwm_timer_int_read_status</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a19e922485b9651bdd153f9406f966a2d_1a19e922485b9651bdd153f9406f966a2d" kindref="member">PWM_TIMERS_INT_STATUS</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" kindref="member">dw_pwm_timer_timer_enable</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint32_t<sp/>ch)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" kindref="member">CONTROL_REG</ref><sp/>|=<sp/>0x03;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" kindref="member">dw_pwm_timer_timer_disable</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint32_t<sp/>ch)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" kindref="member">CONTROL_REG</ref><sp/>&amp;=<sp/>(~0x03);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_a79714e060480cc6e424b10842ec4e91c_1a79714e060480cc6e424b10842ec4e91c" kindref="member">dw_pwm_timer_pwm_enable</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint32_t<sp/>ch)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" kindref="member">CONTROL_REG</ref><sp/>|=<sp/>0x08;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" kindref="member">dw_pwm_timer_pwm_disable</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint32_t<sp/>ch)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_a454af1b180c64c4f1ec9e2f96c52aa0c_1a454af1b180c64c4f1ec9e2f96c52aa0c" kindref="member">CONTROL_REG</ref><sp/>&amp;=<sp/>(~0x08);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_adb809f7314bbbf677977d1ad9cc9b200_1adb809f7314bbbf677977d1ad9cc9b200" kindref="member">dw_pwm_timer_count_set</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint8_t<sp/>ch,<sp/>uint16_t<sp/>val)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_adceee45af88436f8ba4190c790426cde_1adceee45af88436f8ba4190c790426cde" kindref="member">LOAD_COUNT</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/>uint16_t<sp/><ref refid="dw__pwm__timer_8c_ac3f1abbec40a74fca3d1e0e5b6de4f5e_1ac3f1abbec40a74fca3d1e0e5b6de4f5e" kindref="member">dw_pwm_timer_count_get</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint8_t<sp/>ch)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_adceee45af88436f8ba4190c790426cde_1adceee45af88436f8ba4190c790426cde" kindref="member">LOAD_COUNT</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_aa9f70d1acacfb9145d203644e52d9f6e_1aa9f70d1acacfb9145d203644e52d9f6e" kindref="member">dw_pwm_timer_count2_set</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint8_t<sp/>ch,<sp/>uint16_t<sp/>val)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a4071398d5a59964a598b7afdfa4a6b3e_1a4071398d5a59964a598b7afdfa4a6b3e" kindref="member">LOAD_COUNT2</ref>[ch]<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref><sp/>uint16_t<sp/><ref refid="dw__pwm__timer_8c_aa61c3d94554826b647d2427fb5145a99_1aa61c3d94554826b647d2427fb5145a99" kindref="member">dw_pwm_timer_count2_get</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint8_t<sp/>ch)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a4071398d5a59964a598b7afdfa4a6b3e_1a4071398d5a59964a598b7afdfa4a6b3e" kindref="member">LOAD_COUNT2</ref>[ch];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_a6146e898df284e65c60ce9350780b77a_1a6146e898df284e65c60ce9350780b77a" kindref="member">dw_pwm_timer_int_clear_all</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>reg_val;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>reg_val<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_ae899c06cd83351f3d6b4f8e4ad8bbd2b_1ae899c06cd83351f3d6b4f8e4ad8bbd2b" kindref="member">PWM_TIMERS_EOI</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__pwm__timer_8c_a229e73613a78137691ccc3a754438c78_1a229e73613a78137691ccc3a754438c78" kindref="member">dw_pwm_timer_int_clear</ref>(<ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port,<sp/>uint32_t<sp/>ch)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>reg_val;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>reg_val<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ad2069a629a2d954f7bb8bc7bdbb2a95e_1ad2069a629a2d954f7bb8bc7bdbb2a95e" kindref="member">regs</ref>-&gt;<ref refid="structDW__PWM__TIMER__REG_a857b050c86e372edfcb0cd275466101a_1a857b050c86e372edfcb0cd275466101a" kindref="member">CTRL</ref>[ch].<ref refid="structCH__CTRL_aa5f6e58b4be1e59ab85317dc5c5e2f64_1aa5f6e58b4be1e59ab85317dc5c5e2f64" kindref="member">EOI</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>interface<sp/>for<sp/>DEV_PWM_TIMER<sp/>*/</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">int32_t<sp/><ref refid="dw__pwm__timer_8c_abf2b866d8aaac40908b3372ae897b305_1abf2b866d8aaac40908b3372ae897b305" kindref="member">dw_pwm_timer_open</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO_PTR</ref><sp/>port_info_ptr<sp/>=<sp/>&amp;(pwm_timer_obj-&gt;<ref refid="structDEV__PWM__TIMER_a21767a16a462fedb8cbc4f6fe83730be_1a21767a16a462fedb8cbc4f6fe83730be" kindref="member">pwm_timer_info</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>START<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" kindref="member">VALID_CHK_PWM_TIMER_INFO_OBJECT</ref>(port_info_ptr);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>END<sp/>OF<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port<sp/>=<sp/>(<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>)(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" kindref="member">pwm_timer_ctrl</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref>++;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref><sp/>&gt;<sp/>1)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>opened<sp/>before<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>!=<sp/><ref refid="dw__pwm__timer_8h_a807ef6415717b890eb177e2226bddd93_1a807ef6415717b890eb177e2226bddd93" kindref="member">DW_PWM_TIMER_INVALID_INTNO</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ae65dc00496447dbe265b09b36a707ebf_1ae65dc00496447dbe265b09b36a707ebf" kindref="member">ch_num</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" kindref="member">dw_pwm_timer_timer_disable</ref>(port,<sp/>i);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" kindref="member">dw_pwm_timer_pwm_disable</ref>(port,<sp/>i);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga75a43aab696debc012bc72b6de13e30a_1ga75a43aab696debc012bc72b6de13e30a" kindref="member">int_handler_install</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>i,<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a2b17d120143a1b2728cc4dd886d3425b_1a2b17d120143a1b2728cc4dd886d3425b" kindref="member">int_handler</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">int32_t<sp/><ref refid="dw__pwm__timer_8c_a57ee00e89584d1d5fa12c59f91ea709e_1a57ee00e89584d1d5fa12c59f91ea709e" kindref="member">dw_pwm_timer_close</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO_PTR</ref><sp/>port_info_ptr<sp/>=<sp/>&amp;(pwm_timer_obj-&gt;<ref refid="structDEV__PWM__TIMER_a21767a16a462fedb8cbc4f6fe83730be_1a21767a16a462fedb8cbc4f6fe83730be" kindref="member">pwm_timer_info</ref>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>START<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" kindref="member">VALID_CHK_PWM_TIMER_INFO_OBJECT</ref>(port_info_ptr);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>END<sp/>OF<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port<sp/>=<sp/>(<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>)(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" kindref="member">pwm_timer_ctrl</ref>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref><sp/>&gt;<sp/>0,<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref>--;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>!=<sp/><ref refid="dw__pwm__timer_8h_a807ef6415717b890eb177e2226bddd93_1a807ef6415717b890eb177e2226bddd93" kindref="member">DW_PWM_TIMER_INVALID_INTNO</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ae65dc00496447dbe265b09b36a707ebf_1ae65dc00496447dbe265b09b36a707ebf" kindref="member">ch_num</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" kindref="member">dw_pwm_timer_timer_disable</ref>(port,<sp/>i);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" kindref="member">dw_pwm_timer_pwm_disable</ref>(port,<sp/>i);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">int32_t<sp/><ref refid="dw__pwm__timer_8c_a1e7bea71974c2210e61595eef2891152_1a1e7bea71974c2210e61595eef2891152" kindref="member">dw_pwm_timer_read</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/>uint32_t<sp/>ch,<sp/>uint32_t<sp/>*mode,<sp/>uint32_t<sp/>*freq,<sp/>uint32_t<sp/>*dc)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO_PTR</ref><sp/>port_info_ptr<sp/>=<sp/>&amp;(pwm_timer_obj-&gt;<ref refid="structDEV__PWM__TIMER_a21767a16a462fedb8cbc4f6fe83730be_1a21767a16a462fedb8cbc4f6fe83730be" kindref="member">pwm_timer_info</ref>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>START<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" kindref="member">VALID_CHK_PWM_TIMER_INFO_OBJECT</ref>(port_info_ptr);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>END<sp/>OF<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port<sp/>=<sp/>(<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>)(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" kindref="member">pwm_timer_ctrl</ref>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref><sp/>&gt;<sp/>0,<sp/><ref refid="group__EMBARC__ERROR_gac4e674c971a46afe82377d02a2d19451_1gac4e674c971a46afe82377d02a2d19451" kindref="member">E_CLSED</ref>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((ch<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(ch<sp/>&lt;<sp/>port-&gt;ch_num),<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>count_low<sp/>=<sp/><ref refid="dw__pwm__timer_8c_ac3f1abbec40a74fca3d1e0e5b6de4f5e_1ac3f1abbec40a74fca3d1e0e5b6de4f5e" kindref="member">dw_pwm_timer_count_get</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>count_high<sp/>=<sp/><ref refid="dw__pwm__timer_8c_aa61c3d94554826b647d2427fb5145a99_1aa61c3d94554826b647d2427fb5145a99" kindref="member">dw_pwm_timer_count2_get</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>*mode<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch];</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*mode<sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01af171a7ee7661cd6af16ecbf01e995f2b" kindref="member">DEV_PWM_TIMER_MODE_TIMER</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dc<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count_low<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*freq<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ab9bb68f3ed76dccfad130a3a2d8598ff_1ab9bb68f3ed76dccfad130a3a2d8598ff" kindref="member">clock</ref><sp/>/<sp/>(count_low<sp/>*<sp/>2);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*freq<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*mode<sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01a6aec2ed0d6fe6db8c641cba35fc89be4" kindref="member">DEV_PWM_TIMER_MODE_PWM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count_low<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>count_high<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dc<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*freq<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dc<sp/>=<sp/>(count_high<sp/>*<sp/>100)<sp/>/<sp/>(count_high<sp/>+<sp/>count_low);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*freq<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ab9bb68f3ed76dccfad130a3a2d8598ff_1ab9bb68f3ed76dccfad130a3a2d8598ff" kindref="member">clock</ref><sp/>/<sp/>(count_high<sp/>+<sp/>count_low);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dc<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*freq<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">int32_t<sp/><ref refid="dw__pwm__timer_8c_a62bfd755bd055a3653deb4ce23fe31e5_1a62bfd755bd055a3653deb4ce23fe31e5" kindref="member">dw_pwm_timer_write</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/>uint32_t<sp/>ch,<sp/>uint32_t<sp/>mode,<sp/>uint32_t<sp/>freq,<sp/>uint32_t<sp/>dc)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>count,<sp/>count_high;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO_PTR</ref><sp/>port_info_ptr<sp/>=<sp/>&amp;(pwm_timer_obj-&gt;<ref refid="structDEV__PWM__TIMER_a21767a16a462fedb8cbc4f6fe83730be_1a21767a16a462fedb8cbc4f6fe83730be" kindref="member">pwm_timer_info</ref>);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>START<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" kindref="member">VALID_CHK_PWM_TIMER_INFO_OBJECT</ref>(port_info_ptr);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>END<sp/>OF<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port<sp/>=<sp/>(<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>)(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" kindref="member">pwm_timer_ctrl</ref>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref><sp/>&gt;<sp/>0,<sp/><ref refid="group__EMBARC__ERROR_gac4e674c971a46afe82377d02a2d19451_1gac4e674c971a46afe82377d02a2d19451" kindref="member">E_CLSED</ref>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((ch<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(ch<sp/>&lt;<sp/>port-&gt;ch_num),<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((dc<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(dc<sp/>&lt;=<sp/>100),<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01af171a7ee7661cd6af16ecbf01e995f2b" kindref="member">DEV_PWM_TIMER_MODE_TIMER</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(freq<sp/>&gt;<sp/>0,<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch]<sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ab9bb68f3ed76dccfad130a3a2d8598ff_1ab9bb68f3ed76dccfad130a3a2d8598ff" kindref="member">clock</ref><sp/>/<sp/>freq;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_adb809f7314bbbf677977d1ad9cc9b200_1adb809f7314bbbf677977d1ad9cc9b200" kindref="member">dw_pwm_timer_count_set</ref>(port,<sp/>ch,<sp/>count<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aa9f70d1acacfb9145d203644e52d9f6e_1aa9f70d1acacfb9145d203644e52d9f6e" kindref="member">dw_pwm_timer_count2_set</ref>(port,<sp/>ch,<sp/>0);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" kindref="member">dw_pwm_timer_timer_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" kindref="member">dw_pwm_timer_pwm_disable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" kindref="member">int_enable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>ch);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01a6aec2ed0d6fe6db8c641cba35fc89be4" kindref="member">DEV_PWM_TIMER_MODE_PWM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(freq<sp/>&gt;<sp/>0,<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch]<sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_ab9bb68f3ed76dccfad130a3a2d8598ff_1ab9bb68f3ed76dccfad130a3a2d8598ff" kindref="member">clock</ref><sp/>/<sp/>freq;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count_high<sp/>=<sp/>(count<sp/>*<sp/>dc)<sp/>/<sp/>100;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_adb809f7314bbbf677977d1ad9cc9b200_1adb809f7314bbbf677977d1ad9cc9b200" kindref="member">dw_pwm_timer_count_set</ref>(port,<sp/>ch,<sp/>count<sp/>-<sp/>count_high);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aa9f70d1acacfb9145d203644e52d9f6e_1aa9f70d1acacfb9145d203644e52d9f6e" kindref="member">dw_pwm_timer_count2_set</ref>(port,<sp/>ch,<sp/>count_high);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" kindref="member">dw_pwm_timer_timer_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a79714e060480cc6e424b10842ec4e91c_1a79714e060480cc6e424b10842ec4e91c" kindref="member">dw_pwm_timer_pwm_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>ch);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01ae6d703585a9f1825b10e2469e1a238c7" kindref="member">DEV_PWM_TIMER_MODE_CLOSE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch]<sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_adb809f7314bbbf677977d1ad9cc9b200_1adb809f7314bbbf677977d1ad9cc9b200" kindref="member">dw_pwm_timer_count_set</ref>(port,<sp/>ch,<sp/>0);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aa9f70d1acacfb9145d203644e52d9f6e_1aa9f70d1acacfb9145d203644e52d9f6e" kindref="member">dw_pwm_timer_count2_set</ref>(port,<sp/>ch,<sp/>0);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" kindref="member">dw_pwm_timer_timer_disable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" kindref="member">dw_pwm_timer_pwm_disable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>ch);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">int32_t<sp/><ref refid="dw__pwm__timer_8c_ac8c29094e2ce2db6cd8d7dcda5603ae1_1ac8c29094e2ce2db6cd8d7dcda5603ae1" kindref="member">dw_pwm_timer_control</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/>uint32_t<sp/>ch,<sp/>uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*par)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO_PTR</ref><sp/>port_info_ptr<sp/>=<sp/>&amp;(pwm_timer_obj-&gt;<ref refid="structDEV__PWM__TIMER_a21767a16a462fedb8cbc4f6fe83730be_1a21767a16a462fedb8cbc4f6fe83730be" kindref="member">pwm_timer_info</ref>);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>START<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" kindref="member">VALID_CHK_PWM_TIMER_INFO_OBJECT</ref>(port_info_ptr);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>END<sp/>OF<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port<sp/>=<sp/>(<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>)(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" kindref="member">pwm_timer_ctrl</ref>);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" kindref="member">opn_cnt</ref><sp/>&gt;<sp/>0,<sp/><ref refid="group__EMBARC__ERROR_gac4e674c971a46afe82377d02a2d19451_1gac4e674c971a46afe82377d02a2d19451" kindref="member">E_CLSED</ref>);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((ch<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(ch<sp/>&lt;<sp/>port-&gt;ch_num),<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__CFG" kindref="compound">DEV_PWM_TIMER_CFG</ref><sp/>*cfg_ptr;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ctrl_cmd)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_gacd4dd0179fd19be60dd7835ca95c02d8_1gacd4dd0179fd19be60dd7835ca95c02d8" kindref="member">PWM_TIMER_CMD_SET_CFG</ref>:</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cfg_ptr<sp/>=<sp/>(<ref refid="structDEV__PWM__TIMER__CFG" kindref="compound">DEV_PWM_TIMER_CFG</ref><sp/>*)<sp/>par;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_adb809f7314bbbf677977d1ad9cc9b200_1adb809f7314bbbf677977d1ad9cc9b200" kindref="member">dw_pwm_timer_count_set</ref>(port,<sp/>ch,<sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a4f25f953f731cb19711fcb4212f9f75a_1a4f25f953f731cb19711fcb4212f9f75a" kindref="member">count_low</ref>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aa9f70d1acacfb9145d203644e52d9f6e_1aa9f70d1acacfb9145d203644e52d9f6e" kindref="member">dw_pwm_timer_count2_set</ref>(port,<sp/>ch,<sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_ab62e539f96e54adada9fc7065cb9bf68_1ab62e539f96e54adada9fc7065cb9bf68" kindref="member">count_high</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a65a5ee80f4e99c890e14c5358118130a_1a65a5ee80f4e99c890e14c5358118130a" kindref="member">isr_hander</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>[ch]<sp/>=<sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a65a5ee80f4e99c890e14c5358118130a_1a65a5ee80f4e99c890e14c5358118130a" kindref="member">isr_hander</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref><sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01af171a7ee7661cd6af16ecbf01e995f2b" kindref="member">DEV_PWM_TIMER_MODE_TIMER</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch]<sp/>=<sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" kindref="member">dw_pwm_timer_timer_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" kindref="member">int_enable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>ch);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref><sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01a6aec2ed0d6fe6db8c641cba35fc89be4" kindref="member">DEV_PWM_TIMER_MODE_PWM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch]<sp/>=<sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" kindref="member">dw_pwm_timer_timer_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a79714e060480cc6e424b10842ec4e91c_1a79714e060480cc6e424b10842ec4e91c" kindref="member">dw_pwm_timer_pwm_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref><sp/>==<sp/><ref refid="group__DEVICE__HAL__PWM__TIMER_ga3e39f88347afc6ecef04c70844b3eb01_1gga3e39f88347afc6ecef04c70844b3eb01ae6d703585a9f1825b10e2469e1a238c7" kindref="member">DEV_PWM_TIMER_MODE_CLOSE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch]<sp/>=<sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" kindref="member">dw_pwm_timer_timer_disable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a28ca17aa040a730d46ff03884fd64d28_1a28ca17aa040a730d46ff03884fd64d28" kindref="member">dw_pwm_timer_pwm_disable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_ga06f2b83935013182f86896e4c259c35b_1ga06f2b83935013182f86896e4c259c35b" kindref="member">PWM_TIMER_CMD_GET_CFG</ref>:</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cfg_ptr<sp/>=<sp/>(<ref refid="structDEV__PWM__TIMER__CFG" kindref="compound">DEV_PWM_TIMER_CFG</ref><sp/>*)<sp/>par;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a4f25f953f731cb19711fcb4212f9f75a_1a4f25f953f731cb19711fcb4212f9f75a" kindref="member">count_low</ref><sp/>=<sp/><ref refid="dw__pwm__timer_8c_ac3f1abbec40a74fca3d1e0e5b6de4f5e_1ac3f1abbec40a74fca3d1e0e5b6de4f5e" kindref="member">dw_pwm_timer_count_get</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_ab62e539f96e54adada9fc7065cb9bf68_1ab62e539f96e54adada9fc7065cb9bf68" kindref="member">count_high</ref><sp/>=<sp/><ref refid="dw__pwm__timer_8c_aa61c3d94554826b647d2427fb5145a99_1aa61c3d94554826b647d2427fb5145a99" kindref="member">dw_pwm_timer_count2_get</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a65a5ee80f4e99c890e14c5358118130a_1a65a5ee80f4e99c890e14c5358118130a" kindref="member">isr_hander</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a65a5ee80f4e99c890e14c5358118130a_1a65a5ee80f4e99c890e14c5358118130a" kindref="member">isr_hander</ref><sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>[ch];</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cfg_ptr-&gt;<ref refid="structDEV__PWM__TIMER__CFG_a35fc289d1b38942ca7a5869bc34f7d12_1a35fc289d1b38942ca7a5869bc34f7d12" kindref="member">mode</ref><sp/>=<sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a680c79c77944eb67dca9b48591dee12d_1a680c79c77944eb67dca9b48591dee12d" kindref="member">mode</ref>[ch];</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_gacf5b4efaf1ebdd7b965de9bb0bd61760_1gacf5b4efaf1ebdd7b965de9bb0bd61760" kindref="member">PWM_TIMER_CMD_DIS_CH</ref>:</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aaf712ff9e78d0706b78026bc8bc0543a_1aaf712ff9e78d0706b78026bc8bc0543a" kindref="member">dw_pwm_timer_timer_disable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_gaa8b0ba08914838e2e2a99e7f468fe058_1gaa8b0ba08914838e2e2a99e7f468fe058" kindref="member">PWM_TIMER_CMD_ENA_CH</ref>:</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a369c83ca1f875d78708317aa84c6534f_1a369c83ca1f875d78708317aa84c6534f" kindref="member">dw_pwm_timer_timer_enable</ref>(port,<sp/>ch);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_ga688110f35e187f869d072ebf8b956f8c_1ga688110f35e187f869d072ebf8b956f8c" kindref="member">PWM_TIMER_CMD_DIS_ISR</ref>:</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>ch);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_ga756650cc9232bf7abfdc005b6f5da383_1ga756650cc9232bf7abfdc005b6f5da383" kindref="member">PWM_TIMER_CMD_ENA_ISR</ref>:</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" kindref="member">int_enable</ref>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_acc8986f04f9f256fd4726a7b9c79db42_1acc8986f04f9f256fd4726a7b9c79db42" kindref="member">intno</ref><sp/>+<sp/>ch);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_gad7d9edeaf04256499793deee13f9006a_1gad7d9edeaf04256499793deee13f9006a" kindref="member">PWM_TIMER_CMD_SET_ISR</ref>:</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((par<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/><ref refid="group__EMBARC__ERROR_gace3d588dc25676d080bcf53ee3522d63_1gace3d588dc25676d080bcf53ee3522d63" kindref="member">CHECK_ALIGN_4BYTES</ref>(par),<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>[ch]<sp/>=<sp/>(<ref refid="group__DEVICE__HAL__PWM__TIMER_ga8db6fd35a0475f738f2afa833bcb69d5_1ga8db6fd35a0475f738f2afa833bcb69d5" kindref="member">DEV_PWM_TIMER_HANDLER</ref>)par;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__PWM__TIMER__CTRLCMD_ga1a7acd47b7ed55315532d915f7ecf529_1ga1a7acd47b7ed55315532d915f7ecf529" kindref="member">PWM_TIMER_CMD_GET_ISR</ref>:</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a57075d6811bf99b8efd5d617dc02071d_1a57075d6811bf99b8efd5d617dc02071d" kindref="member">DW_PWM_TIMER_CHECK_EXP</ref>((par<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/><ref refid="group__EMBARC__ERROR_gace3d588dc25676d080bcf53ee3522d63_1gace3d588dc25676d080bcf53ee3522d63" kindref="member">CHECK_ALIGN_4BYTES</ref>(par),<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>par<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>[ch]);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_gac05cde47c29052935fd39d6d8a6c5ff4_1gac05cde47c29052935fd39d6d8a6c5ff4" kindref="member">E_NOSPT</ref>;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal">int32_t<sp/><ref refid="dw__pwm__timer_8c_a55d0d88dd401fe63458633160d4e0744_1a55d0d88dd401fe63458633160d4e0744" kindref="member">dw_pwm_timer_isr_handler</ref>(<ref refid="structDEV__PWM__TIMER" kindref="compound">DEV_PWM_TIMER</ref><sp/>*pwm_timer_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__PWM__TIMER__INFO" kindref="compound">DEV_PWM_TIMER_INFO_PTR</ref><sp/>port_info_ptr<sp/>=<sp/>&amp;(pwm_timer_obj-&gt;<ref refid="structDEV__PWM__TIMER_a21767a16a462fedb8cbc4f6fe83730be_1a21767a16a462fedb8cbc4f6fe83730be" kindref="member">pwm_timer_info</ref>);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>START<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_aab4c30daed19037e0f17b943ece4f797_1aab4c30daed19037e0f17b943ece4f797" kindref="member">VALID_CHK_PWM_TIMER_INFO_OBJECT</ref>(port_info_ptr);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>END<sp/>OF<sp/>ERROR<sp/>CHECK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__PWM__TIMER__CTRL" kindref="compound">DW_PWM_TIMER_CTRL_PTR</ref><sp/>port<sp/>=<sp/>(<ref refid="dw__pwm__timer_8h_a5bcddb17667161a62c299256bc4e6b83_1a5bcddb17667161a62c299256bc4e6b83" kindref="member">DW_PWM_TIMER_CTRL_PTR</ref>)(port_info_ptr-&gt;<ref refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" kindref="member">pwm_timer_ctrl</ref>);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i,<sp/>pwm_timer_bit_isr_state;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>max_int_bit_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>pwm_timer_bit_isr_state<sp/>=<sp/><ref refid="dw__pwm__timer_8c_abab48819df76a2af977cb403d4d1023c_1abab48819df76a2af977cb403d4d1023c" kindref="member">dw_pwm_timer_int_read_status</ref>(port);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_int_bit_count<sp/>=<sp/>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_ab93871f5853748ba000fc9f8e1f532d6_1ab93871f5853748ba000fc9f8e1f532d6" kindref="member">int_ch_max_cnt</ref>);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a6146e898df284e65c60ce9350780b77a_1a6146e898df284e65c60ce9350780b77a" kindref="member">dw_pwm_timer_int_clear_all</ref>(port);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>max_int_bit_count;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pwm_timer_bit_isr_state<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>i))<sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>this<sp/>bit<sp/>interrupt<sp/>enabled<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>[i])<sp/>{</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port-&gt;<ref refid="structDW__PWM__TIMER__CTRL_a75fd677e592a6e5f164abe3dfec62762_1a75fd677e592a6e5f164abe3dfec62762" kindref="member">ch_isr</ref>-&gt;<ref refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" kindref="member">int_ch_handler_ptr</ref>[i](pwm_timer_obj);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__pwm__timer_8c_a229e73613a78137691ccc3a754438c78_1a229e73613a78137691ccc3a754438c78" kindref="member">dw_pwm_timer_int_clear</ref>(port,<sp/>i);<sp/></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c"/>
+  </compounddef>
+</doxygen>

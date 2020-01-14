@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__GPIO__BIT__ISR" kind="struct" prot="public">
+    <compoundname>DW_GPIO_BIT_ISR</compoundname>
+    <includes refid="dw__gpio_8h" local="no">dw_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__GPIO__BIT__ISR_afbef4d1abf0e3671a66b929c60e66979_1afbef4d1abf0e3671a66b929c60e66979" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_BIT_ISR::int_bit_max_cnt</definition>
+        <argsstring></argsstring>
+        <name>int_bit_max_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>max bit count for each port </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="96" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__BIT__ISR_aabb49a13a0651931557b035c1612c3aa_1aabb49a13a0651931557b035c1612c3aa" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga8b480cf689e0b43585d081d51d1b6ff6_1ga8b480cf689e0b43585d081d51d1b6ff6" kindref="member">DEV_GPIO_HANDLER</ref> *</type>
+        <definition>DEV_GPIO_HANDLER* DW_GPIO_BIT_ISR::int_bit_handler_ptr</definition>
+        <argsstring></argsstring>
+        <name>int_bit_handler_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt handler pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="97" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>interrupt handler for each port bit </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="95" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="95" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structDW__GPIO__BIT__ISR_aabb49a13a0651931557b035c1612c3aa_1aabb49a13a0651931557b035c1612c3aa" prot="public" virt="non-virtual"><scope>DW_GPIO_BIT_ISR</scope><name>int_bit_handler_ptr</name></member>
+      <member refid="structDW__GPIO__BIT__ISR_afbef4d1abf0e3671a66b929c60e66979_1afbef4d1abf0e3671a66b929c60e66979" prot="public" virt="non-virtual"><scope>DW_GPIO_BIT_ISR</scope><name>int_bit_max_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

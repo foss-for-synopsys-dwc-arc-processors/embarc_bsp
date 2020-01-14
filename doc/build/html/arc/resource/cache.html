@@ -1,0 +1,676 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cache &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="uDMA" href="udma.html" />
+    <link rel="prev" title="Internal timers" href="timer.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">ARC Processors</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#overview">Overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../start.html">Start up in embARC BSP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exception_interrupt.html">Exception and Interrupt Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../build_in.html">Built-In Functions</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../resource.html">Resource Definitions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="timer.html">Internal timers</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="udma.html">uDMA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mpu.html">MPU</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#related-files">Related files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">ARC Processors</a> &raquo;</li>
+        
+          <li><a href="../resource.html">Resource Definitions</a> &raquo;</li>
+        
+      <li>Cache</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cache">
+<span id="arc-hal-res-cache"></span><h1>Cache<a class="headerlink" href="#cache" title="Permalink to this headline">¶</a></h1>
+<p>DesignWare® ARC® processors can be configured with both data cache (dcache) and
+instruction cache (icache). The cache configuration can be selected as
+desired. The cache can be controlled through specific auxiliary registers.</p>
+<p>embARC provides unified interfaces to enable/disable, flush, invalidate, lock,
+and unlock cache lines and to access cache-internal RAM.</p>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<dl class="group">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__CACHE"></span><em>group</em> <code class="sig-name descname">ARC_HAL_MISC_CACHE</code></dt>
+<dd><p>Cache related definitions and functions. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Marco definitions for cache control</p>
+<dl class="macro">
+<dt id="c.IC_CTRL_IC_ENABLE">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga89588be391940bb908fac67345fbc64b"></span><code class="sig-name descname">IC_CTRL_IC_ENABLE</code><a class="headerlink" href="#c.IC_CTRL_IC_ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>enable instruction cache </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.IC_CTRL_IC_DISABLE">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga8b1837f2e109d4394dded75f3b680be2"></span><code class="sig-name descname">IC_CTRL_IC_DISABLE</code><a class="headerlink" href="#c.IC_CTRL_IC_DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>disable instruction cache </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.IC_CTRL_DIRECT_ACCESS">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga58b146a52b956f6f1d0e0329ea17ccc1"></span><code class="sig-name descname">IC_CTRL_DIRECT_ACCESS</code><a class="headerlink" href="#c.IC_CTRL_DIRECT_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>direct access mode </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.IC_CTRL_INDIRECT_ACCESS">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1gad9d26d7c4d98f519c5d20fa9031eeaee"></span><code class="sig-name descname">IC_CTRL_INDIRECT_ACCESS</code><a class="headerlink" href="#c.IC_CTRL_INDIRECT_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>indirect access mode </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.IC_CTRL_OP_SUCCEEDED">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga69a15333c7c721cf4ef4a62f5ada1711"></span><code class="sig-name descname">IC_CTRL_OP_SUCCEEDED</code><a class="headerlink" href="#c.IC_CTRL_OP_SUCCEEDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>instruction cache operation succeeded </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Marco definitions for data cache control</p>
+<dl class="macro">
+<dt id="c.IC_CTRL_I">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga639cae40b38816d74ef5f622c6e9bfe7"></span><code class="sig-name descname">IC_CTRL_I</code><a class="headerlink" href="#c.IC_CTRL_I" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_DC_ENABLE">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga94b39308cfd002663d63689cda868a09"></span><code class="sig-name descname">DC_CTRL_DC_ENABLE</code><a class="headerlink" href="#c.DC_CTRL_DC_ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>enable data cache </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_DC_DISABLE">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga5c1a63346f607c480d88d68b40ac3cef"></span><code class="sig-name descname">DC_CTRL_DC_DISABLE</code><a class="headerlink" href="#c.DC_CTRL_DC_DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>disable data cache </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_INVALID_ONLY">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga65272db83521f6977dfd0a46468952ba"></span><code class="sig-name descname">DC_CTRL_INVALID_ONLY</code><a class="headerlink" href="#c.DC_CTRL_INVALID_ONLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>invalid data cache only </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_INVALID_FLUSH">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1gad39e2ba72c52a7531bed72e5c53ceb64"></span><code class="sig-name descname">DC_CTRL_INVALID_FLUSH</code><a class="headerlink" href="#c.DC_CTRL_INVALID_FLUSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>invalid and flush data cache </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_ENABLE_FLUSH_LOCKED">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1gae0adad0cc819a38dfa21b2a8ce5a77b5"></span><code class="sig-name descname">DC_CTRL_ENABLE_FLUSH_LOCKED</code><a class="headerlink" href="#c.DC_CTRL_ENABLE_FLUSH_LOCKED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the locked data cache can be flushed </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_DISABLE_FLUSH_LOCKED">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga8dcb9d71ecace8c648c4b525a8bc6190"></span><code class="sig-name descname">DC_CTRL_DISABLE_FLUSH_LOCKED</code><a class="headerlink" href="#c.DC_CTRL_DISABLE_FLUSH_LOCKED" title="Permalink to this definition">¶</a></dt>
+<dd><p>the locked data cache cannot be flushed </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_FLUSH_STATUS">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1gac2f3f57da7299e52cdb89ec2e53b4de8"></span><code class="sig-name descname">DC_CTRL_FLUSH_STATUS</code><a class="headerlink" href="#c.DC_CTRL_FLUSH_STATUS" title="Permalink to this definition">¶</a></dt>
+<dd><p>flush status </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_DIRECT_ACCESS">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1ga2e9537539df989260d4041b86212db79"></span><code class="sig-name descname">DC_CTRL_DIRECT_ACCESS</code><a class="headerlink" href="#c.DC_CTRL_DIRECT_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>direct access mode </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_INDIRECT_ACCESS">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1gab6018a2516d040b1f7cab03b37883eb1"></span><code class="sig-name descname">DC_CTRL_INDIRECT_ACCESS</code><a class="headerlink" href="#c.DC_CTRL_INDIRECT_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd><p>indirect access mode </p>
+</dd></dl>
+
+<dl class="macro">
+<dt id="c.DC_CTRL_OP_SUCCEEDED">
+<span class="target" id="group__ARC__HAL__MISC__CACHE_1gacb1e748794870e28d437a192b88b60b3"></span><code class="sig-name descname">DC_CTRL_OP_SUCCEEDED</code><a class="headerlink" href="#c.DC_CTRL_OP_SUCCEEDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>data cache operation succeeded </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">instruction cache related inline function</p>
+<dl class="function">
+<dt id="_CPPv416icache_availablev">
+<span id="_CPPv316icache_availablev"></span><span id="_CPPv216icache_availablev"></span><span id="icache_available__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga8e1ae0cff12a4279ca994f0df8f1bc30"></span>uint32_t <code class="sig-name descname">icache_available</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416icache_availablev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether instruction cache is available,. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0 for not available, &gt;0 for available </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv413icache_enable8uint32_t">
+<span id="_CPPv313icache_enable8uint32_t"></span><span id="_CPPv213icache_enable8uint32_t"></span><span id="icache_enable__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga0eb613ef234830ebb8fdb5b69ebdc21a"></span>void <code class="sig-name descname">icache_enable</code><span class="sig-paren">(</span>uint32_t <em>icache_en_mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413icache_enable8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enable instruction cache. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">icache_en_mask</span></code>: operation mask </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv414icache_disablev">
+<span id="_CPPv314icache_disablev"></span><span id="_CPPv214icache_disablev"></span><span id="icache_disable__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1gab37364e2f6a851faa045186434063dc6"></span>void <code class="sig-name descname">icache_disable</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414icache_disablev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disable instruction cache. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv417icache_invalidatev">
+<span id="_CPPv317icache_invalidatev"></span><span id="_CPPv217icache_invalidatev"></span><span id="icache_invalidate__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga090d5a46c2dd09d034f4cc5ce33fb732"></span>void <code class="sig-name descname">icache_invalidate</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417icache_invalidatev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Invalidate the entire instruction cache. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv422icache_invalidate_line8uint32_t">
+<span id="_CPPv322icache_invalidate_line8uint32_t"></span><span id="_CPPv222icache_invalidate_line8uint32_t"></span><span id="icache_invalidate_line__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga9be89cc489a04fe4c45c84d6bc9e92e9"></span>void <code class="sig-name descname">icache_invalidate_line</code><span class="sig-paren">(</span>uint32_t <em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422icache_invalidate_line8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Invalidate specific cache line. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">address</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv416icache_lock_line8uint32_t">
+<span id="_CPPv316icache_lock_line8uint32_t"></span><span id="_CPPv216icache_lock_line8uint32_t"></span><span id="icache_lock_line__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga4db14300fbe84e72f2dff8f5746c8f93"></span>int32_t <code class="sig-name descname">icache_lock_line</code><span class="sig-paren">(</span>uint32_t <em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416icache_lock_line8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Lock specific cache line. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">address</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418icache_access_mode8uint32_t">
+<span id="_CPPv318icache_access_mode8uint32_t"></span><span id="_CPPv218icache_access_mode8uint32_t"></span><span id="icache_access_mode__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga5ecd2496ace0f6f053d8166dd199b078"></span>void <code class="sig-name descname">icache_access_mode</code><span class="sig-paren">(</span>uint32_t <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418icache_access_mode8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set icache access mode. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code>: access mode, 1: indirect access 0:direct access </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">data cache related inline functions</p>
+<dl class="function">
+<dt id="_CPPv416dcache_availablev">
+<span id="_CPPv316dcache_availablev"></span><span id="_CPPv216dcache_availablev"></span><span id="dcache_available__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga33e49b74bc6d63ea4c7c9675e0cc3ec8"></span>uint32_t <code class="sig-name descname">dcache_available</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416dcache_availablev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether data cache is available, 0 for not available, &gt;0 for available. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv417dcache_invalidatev">
+<span id="_CPPv317dcache_invalidatev"></span><span id="_CPPv217dcache_invalidatev"></span><span id="dcache_invalidate__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga6d0dd9250492278511535b265c3c8d0f"></span>void <code class="sig-name descname">dcache_invalidate</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dcache_invalidatev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Invalidate the entire data cache. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv422dcache_invalidate_line8uint32_t">
+<span id="_CPPv322dcache_invalidate_line8uint32_t"></span><span id="_CPPv222dcache_invalidate_line8uint32_t"></span><span id="dcache_invalidate_line__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga6496f7c13308fd783aa71a55dc606116"></span>void <code class="sig-name descname">dcache_invalidate_line</code><span class="sig-paren">(</span>uint32_t <em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422dcache_invalidate_line8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Invalidate the specific cache line. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">address</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv413dcache_enable8uint32_t">
+<span id="_CPPv313dcache_enable8uint32_t"></span><span id="_CPPv213dcache_enable8uint32_t"></span><span id="dcache_enable__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga776803ac7c72e6e799d27ca7e7092822"></span>void <code class="sig-name descname">dcache_enable</code><span class="sig-paren">(</span>uint32_t <em>dcache_en_mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413dcache_enable8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Enable data cache. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">dcache_en_mask</span></code>: Operation mask </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv414dcache_disablev">
+<span id="_CPPv314dcache_disablev"></span><span id="_CPPv214dcache_disablev"></span><span id="dcache_disable__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1gaa52b3839dbcb6a29e95dbe3e5c6b94b7"></span>void <code class="sig-name descname">dcache_disable</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414dcache_disablev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disable data cache. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv412dcache_flushv">
+<span id="_CPPv312dcache_flushv"></span><span id="_CPPv212dcache_flushv"></span><span id="dcache_flush__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1gaad2dd04d2506953bbd0af3ecc8aa52bc"></span>void <code class="sig-name descname">dcache_flush</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412dcache_flushv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flush data cache. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv417dcache_flush_line8uint32_t">
+<span id="_CPPv317dcache_flush_line8uint32_t"></span><span id="_CPPv217dcache_flush_line8uint32_t"></span><span id="dcache_flush_line__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga7bddc47357297db8e6bf3b29cb77d471"></span>void <code class="sig-name descname">dcache_flush_line</code><span class="sig-paren">(</span>uint32_t <em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dcache_flush_line8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flush the specific data cache line. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">address</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv416dcache_lock_line8uint32_t">
+<span id="_CPPv316dcache_lock_line8uint32_t"></span><span id="_CPPv216dcache_lock_line8uint32_t"></span><span id="dcache_lock_line__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1gae8bb6ef8f92a4a92c31bb2686de82c72"></span>int32_t <code class="sig-name descname">dcache_lock_line</code><span class="sig-paren">(</span>uint32_t <em>address</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416dcache_lock_line8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Lock the specific data cache line. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">address</span></code>: Memory address </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418dcache_access_mode8uint32_t">
+<span id="_CPPv318dcache_access_mode8uint32_t"></span><span id="_CPPv218dcache_access_mode8uint32_t"></span><span id="dcache_access_mode__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga305bb2e6267926afa83c23a05f07613d"></span>void <code class="sig-name descname">dcache_access_mode</code><span class="sig-paren">(</span>uint32_t <em>mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dcache_access_mode8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set dcache access mode. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code>: Access mode, 1: indirect access 0:direct access </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">declarations of cache related functions</p>
+<dl class="function">
+<dt id="_CPPv424icache_invalidate_mlines8uint32_t8uint32_t">
+<span id="_CPPv324icache_invalidate_mlines8uint32_t8uint32_t"></span><span id="_CPPv224icache_invalidate_mlines8uint32_t8uint32_t"></span><span id="icache_invalidate_mlines__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga6f0c3d1cb5e164571bf826622a20c65e"></span>int32_t <code class="sig-name descname">icache_invalidate_mlines</code><span class="sig-paren">(</span>uint32_t <em>start_addr</em>, uint32_t <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424icache_invalidate_mlines8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Invalidate instruction cache lines. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">start_addr</span></code>: Start address in instruction cache </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>: Bytes to be invalidated </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418icache_lock_mlines8uint32_t8uint32_t">
+<span id="_CPPv318icache_lock_mlines8uint32_t8uint32_t"></span><span id="_CPPv218icache_lock_mlines8uint32_t8uint32_t"></span><span id="icache_lock_mlines__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga48f9fb90008431f06fcb385d9f67fc8c"></span>int32_t <code class="sig-name descname">icache_lock_mlines</code><span class="sig-paren">(</span>uint32_t <em>start_addr</em>, uint32_t <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418icache_lock_mlines8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Lock instruction cache lines. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed (cache already locked or other reasons) </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">start_addr</span></code>: Start address in instruction cache </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>: Bytes to be locked </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv419icache_direct_write8uint32_t8uint32_t8uint32_t">
+<span id="_CPPv319icache_direct_write8uint32_t8uint32_t8uint32_t"></span><span id="_CPPv219icache_direct_write8uint32_t8uint32_t8uint32_t"></span><span id="icache_direct_write__uint32_t.uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga3efe68d04d6fd03795066a79f032059f"></span>int32_t <code class="sig-name descname">icache_direct_write</code><span class="sig-paren">(</span>uint32_t <em>cache_addr</em>, uint32_t <em>tag</em>, uint32_t <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419icache_direct_write8uint32_t8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418icache_direct_read8uint32_tP8uint32_tP8uint32_t">
+<span id="_CPPv318icache_direct_read8uint32_tP8uint32_tP8uint32_t"></span><span id="_CPPv218icache_direct_read8uint32_tP8uint32_tP8uint32_t"></span><span id="icache_direct_read__uint32_t.uint32_tP.uint32_tP"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga6444cdd20acd74647d4959dea9a2dd36"></span>int32_t <code class="sig-name descname">icache_direct_read</code><span class="sig-paren">(</span>uint32_t <em>cache_addr</em>, uint32_t *<em>tag</em>, uint32_t *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418icache_direct_read8uint32_tP8uint32_tP8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv420icache_indirect_read8uint32_tP8uint32_tP8uint32_t">
+<span id="_CPPv320icache_indirect_read8uint32_tP8uint32_tP8uint32_t"></span><span id="_CPPv220icache_indirect_read8uint32_tP8uint32_tP8uint32_t"></span><span id="icache_indirect_read__uint32_t.uint32_tP.uint32_tP"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga438d802e1198870ae27d3ff22512ef20"></span>int32_t <code class="sig-name descname">icache_indirect_read</code><span class="sig-paren">(</span>uint32_t <em>mem_addr</em>, uint32_t *<em>tag</em>, uint32_t *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420icache_indirect_read8uint32_tP8uint32_tP8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv424dcache_invalidate_mlines8uint32_t8uint32_t">
+<span id="_CPPv324dcache_invalidate_mlines8uint32_t8uint32_t"></span><span id="_CPPv224dcache_invalidate_mlines8uint32_t8uint32_t"></span><span id="dcache_invalidate_mlines__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga59d602ce2dc5882749c4efb11d4afd45"></span>int32_t <code class="sig-name descname">dcache_invalidate_mlines</code><span class="sig-paren">(</span>uint32_t <em>start_addr</em>, uint32_t <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dcache_invalidate_mlines8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Invalidate data cache lines. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">start_addr</span></code>: Start address in data cache </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>: Bytes to be invalidated </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv419dcache_flush_mlines8uint32_t8uint32_t">
+<span id="_CPPv319dcache_flush_mlines8uint32_t8uint32_t"></span><span id="_CPPv219dcache_flush_mlines8uint32_t8uint32_t"></span><span id="dcache_flush_mlines__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga22809d879f9791c65001e86ff559434c"></span>int32_t <code class="sig-name descname">dcache_flush_mlines</code><span class="sig-paren">(</span>uint32_t <em>start_addr</em>, uint32_t <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419dcache_flush_mlines8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Flush data cache lines to memory. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">start_addr</span></code>: Start address </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>: Bytes to be flushed </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418dcache_lock_mlines8uint32_t8uint32_t">
+<span id="_CPPv318dcache_lock_mlines8uint32_t8uint32_t"></span><span id="_CPPv218dcache_lock_mlines8uint32_t8uint32_t"></span><span id="dcache_lock_mlines__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga04d4e5c837e79cc0eaffe1e462b744bc"></span>int32_t <code class="sig-name descname">dcache_lock_mlines</code><span class="sig-paren">(</span>uint32_t <em>start_addr</em>, uint32_t <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dcache_lock_mlines8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Lock data cache lines. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">start_addr</span></code>: Start address in data cache </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>: Bytes to be locked </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv419dcache_direct_write8uint32_t8uint32_t8uint32_t">
+<span id="_CPPv319dcache_direct_write8uint32_t8uint32_t8uint32_t"></span><span id="_CPPv219dcache_direct_write8uint32_t8uint32_t8uint32_t"></span><span id="dcache_direct_write__uint32_t.uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1gabfdca8296f41bd31cc9e5643a8d24e32"></span>int32_t <code class="sig-name descname">dcache_direct_write</code><span class="sig-paren">(</span>uint32_t <em>cache_addr</em>, uint32_t <em>tag</em>, uint32_t <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419dcache_direct_write8uint32_t8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Directly write dcache internal ram. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cache_addr</span></code>: Dcache internal address(way+index+offset) </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tag</span></code>: Cache tag to write </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: Cache data to write </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv418dcache_direct_read8uint32_tP8uint32_tP8uint32_t">
+<span id="_CPPv318dcache_direct_read8uint32_tP8uint32_tP8uint32_t"></span><span id="_CPPv218dcache_direct_read8uint32_tP8uint32_tP8uint32_t"></span><span id="dcache_direct_read__uint32_t.uint32_tP.uint32_tP"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga10472449765a96cb2eeab9fb89f188da"></span>int32_t <code class="sig-name descname">dcache_direct_read</code><span class="sig-paren">(</span>uint32_t <em>cache_addr</em>, uint32_t *<em>tag</em>, uint32_t *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dcache_direct_read8uint32_tP8uint32_tP8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Directly read dcache internal ram. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cache_addr</span></code>: Dcache internal address(way+index+offset) </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tag</span></code>: Cache tag to read </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: Cache data to read </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv420dcache_indirect_read8uint32_tP8uint32_tP8uint32_t">
+<span id="_CPPv320dcache_indirect_read8uint32_tP8uint32_tP8uint32_t"></span><span id="_CPPv220dcache_indirect_read8uint32_tP8uint32_tP8uint32_t"></span><span id="dcache_indirect_read__uint32_t.uint32_tP.uint32_tP"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga9c6a7e168e8daf46938f6c8a63318e1f"></span>int32_t <code class="sig-name descname">dcache_indirect_read</code><span class="sig-paren">(</span>uint32_t <em>mem_addr</em>, uint32_t *<em>tag</em>, uint32_t *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dcache_indirect_read8uint32_tP8uint32_tP8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Indirectly read dcache internal ram. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>0, succeeded, -1, failed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mem_addr</span></code>: Memory address(tag+index+offset) </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tag</span></code>: Cache tag to read </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: Cache data to read </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv414arc_cache_initv">
+<span id="_CPPv314arc_cache_initv"></span><span id="_CPPv214arc_cache_initv"></span><span id="arc_cache_init__void"></span><span class="target" id="group__ARC__HAL__MISC__CACHE_1ga6bda12adc92ba421f24f6e836051db9c"></span>void <code class="sig-name descname">arc_cache_init</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414arc_cache_initv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialize cache. </p>
+<p><ol class="arabic simple">
+<li><p>invalidate icache and dcache</p></li>
+<li><p>Only support ARCv2 cache </p></li>
+</ol>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__IIC__SCL__CNT" kind="struct" prot="public">
+    <compoundname>DW_IIC_SCL_CNT</compoundname>
+    <includes refid="dw__iic_8h" local="no">dw_iic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__IIC__SCL__CNT_ab3e464e74345ff9431921f506b878c2e_1ab3e464e74345ff9431921f506b878c2e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SCL_CNT::ss_scl_hcnt</definition>
+        <argsstring></argsstring>
+        <name>ss_scl_hcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_SS_SCL_HCNT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="122" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__SCL__CNT_a5def6c65b52776cc063d3dc8b992fa66_1a5def6c65b52776cc063d3dc8b992fa66" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SCL_CNT::ss_scl_lcnt</definition>
+        <argsstring></argsstring>
+        <name>ss_scl_lcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_SS_SCL_LCNT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="123" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__SCL__CNT_a23e225a79c82845ee5e6d2fef2b32fe2_1a23e225a79c82845ee5e6d2fef2b32fe2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SCL_CNT::fs_scl_hcnt</definition>
+        <argsstring></argsstring>
+        <name>fs_scl_hcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_FS_SCL_HCNT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__SCL__CNT_a116216fb59b55ddcaeebefef73bacb62_1a116216fb59b55ddcaeebefef73bacb62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SCL_CNT::fs_scl_lcnt</definition>
+        <argsstring></argsstring>
+        <name>fs_scl_lcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_FS_SCL_LCNT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="125" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__SCL__CNT_a1f2eb6adcc16915a6bb7e546a90d5088_1a1f2eb6adcc16915a6bb7e546a90d5088" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SCL_CNT::hs_scl_hcnt</definition>
+        <argsstring></argsstring>
+        <name>hs_scl_hcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_HS_SCL_HCNT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="126" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__IIC__SCL__CNT_a859a377afd50f33a042bb03b0dc007b7_1a859a377afd50f33a042bb03b0dc007b7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_IIC_SCL_CNT::hs_scl_lcnt</definition>
+        <argsstring></argsstring>
+        <name>hs_scl_lcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>value for IC_HS_SCL_LCNT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="127" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>IIC Clock SCL High and Low Count Configurations for Different Speed </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="121" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="121" bodyend="128"/>
+    <listofallmembers>
+      <member refid="structDW__IIC__SCL__CNT_a23e225a79c82845ee5e6d2fef2b32fe2_1a23e225a79c82845ee5e6d2fef2b32fe2" prot="public" virt="non-virtual"><scope>DW_IIC_SCL_CNT</scope><name>fs_scl_hcnt</name></member>
+      <member refid="structDW__IIC__SCL__CNT_a116216fb59b55ddcaeebefef73bacb62_1a116216fb59b55ddcaeebefef73bacb62" prot="public" virt="non-virtual"><scope>DW_IIC_SCL_CNT</scope><name>fs_scl_lcnt</name></member>
+      <member refid="structDW__IIC__SCL__CNT_a1f2eb6adcc16915a6bb7e546a90d5088_1a1f2eb6adcc16915a6bb7e546a90d5088" prot="public" virt="non-virtual"><scope>DW_IIC_SCL_CNT</scope><name>hs_scl_hcnt</name></member>
+      <member refid="structDW__IIC__SCL__CNT_a859a377afd50f33a042bb03b0dc007b7_1a859a377afd50f33a042bb03b0dc007b7" prot="public" virt="non-virtual"><scope>DW_IIC_SCL_CNT</scope><name>hs_scl_lcnt</name></member>
+      <member refid="structDW__IIC__SCL__CNT_ab3e464e74345ff9431921f506b878c2e_1ab3e464e74345ff9431921f506b878c2e" prot="public" virt="non-virtual"><scope>DW_IIC_SCL_CNT</scope><name>ss_scl_hcnt</name></member>
+      <member refid="structDW__IIC__SCL__CNT_a5def6c65b52776cc063d3dc8b992fa66_1a5def6c65b52776cc063d3dc8b992fa66" prot="public" virt="non-virtual"><scope>DW_IIC_SCL_CNT</scope><name>ss_scl_lcnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

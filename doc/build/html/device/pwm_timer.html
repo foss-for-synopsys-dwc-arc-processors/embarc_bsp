@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PWM_TIMER HAL &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Boards" href="../board/board.html" />
+    <link rel="prev" title="TRNG HAL" href="trng.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="device.html">Devices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="device.html#overview">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="device.html#id1">Device HAL</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="gpio.html">GPIO HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c.html">I2C HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s.html">I2S HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi.html">SPI HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uart.html">UART HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdio.html">SDIO HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trng.html">TRNG HAL</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PWM_TIMER HAL</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="device.html#ip-drivers">IP Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="device.html#driver-instantiation">Driver Instantiation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="device.html">Devices</a> &raquo;</li>
+        
+      <li>PWM_TIMER HAL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pwm-timer-hal">
+<span id="device-hal-pwm-timer"></span><h1>PWM_TIMER HAL<a class="headerlink" href="#pwm-timer-hal" title="Permalink to this headline">¶</a></h1>
+<p>The PWM_TIMER HAL definitions is in <code class="docutils literal notranslate"><span class="pre">dev_pwm_timer.h</span></code>, it provide interfaces for pwm_timer
+driver to implement.</p>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<dl class="group">
+<dt>
+<span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT"></span><em>group</em> <code class="sig-name descname">DEVICE_HAL_PWM_TIMER_DEVSTRUCT</code></dt>
+<dd><p>Structure definition for pwm_timer device. </p>
+<p>This structure will be used in user implemented code, which was called Device Driver Implement Layer for pwm_timer to use in implementation code. Application developer should use the PWM_TIMER API provided here to access to PWM_TIMER devices. BSP developer should follow the API definition to implement PWM_TIMER device drivers. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Typedefs</p>
+<dl class="type">
+<dt id="_CPPv422DEV_PWM_TIMER_INFO_PTR">
+<span id="_CPPv322DEV_PWM_TIMER_INFO_PTR"></span><span id="_CPPv222DEV_PWM_TIMER_INFO_PTR"></span><span id="DEV_PWM_TIMER_INFO_PTR"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gaf1d551e4d3304688a25070fefcc5e7eb"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv418DEV_PWM_TIMER_INFO" title="DEV_PWM_TIMER_INFO">DEV_PWM_TIMER_INFO</a> *<code class="sig-name descname">DEV_PWM_TIMER_INFO_PTR</code><a class="headerlink" href="#_CPPv422DEV_PWM_TIMER_INFO_PTR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="type">
+<dt id="_CPPv417DEV_PWM_TIMER_PTR">
+<span id="_CPPv317DEV_PWM_TIMER_PTR"></span><span id="_CPPv217DEV_PWM_TIMER_PTR"></span><span id="DEV_PWM_TIMER_PTR"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gac1d25b2a23177d0a36d857bb6733489c"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv413DEV_PWM_TIMER" title="DEV_PWM_TIMER">DEV_PWM_TIMER</a> *<code class="sig-name descname">DEV_PWM_TIMER_PTR</code><a class="headerlink" href="#_CPPv417DEV_PWM_TIMER_PTR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Variables</p>
+<dl class="member">
+<dt id="_CPPv4N13DEV_PWM_TIMER14pwm_timer_openE">
+<span id="_CPPv3N13DEV_PWM_TIMER14pwm_timer_openE"></span><span id="_CPPv2N13DEV_PWM_TIMER14pwm_timer_openE"></span><span id="DEV_PWM_TIMER::pwm_timer_open__int32_tP"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1ga8f523fcf30525a9f5e09c33a21240706"></span>int32_t *<code class="sig-name descname">pwm_timer_open</code><a class="headerlink" href="#_CPPv4N13DEV_PWM_TIMER14pwm_timer_openE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Open pwm_timer device</p>
+<p>Open pwm_timer device <dl class="simple">
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Open successfully without any issues </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OPNED</span></code>: If device was opened before with different parameters, then just increase the opn_cnt and return E_OPNED </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_NOSPT</span></code>: Open settings are not supported </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N13DEV_PWM_TIMER15pwm_timer_closeE">
+<span id="_CPPv3N13DEV_PWM_TIMER15pwm_timer_closeE"></span><span id="_CPPv2N13DEV_PWM_TIMER15pwm_timer_closeE"></span><span id="DEV_PWM_TIMER::pwm_timer_close__int32_tP"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gaeaeca5e6b75111aa5742f2b498434864"></span>int32_t *<code class="sig-name descname">pwm_timer_close</code><a class="headerlink" href="#_CPPv4N13DEV_PWM_TIMER15pwm_timer_closeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Close pwm_timer device</p>
+<p>Close an pwm_timer device, just decrease the opn_cnt, if opn_cnt equals 0, then close the device <dl class="simple">
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Close successfully without any issues(including scenario that device is already closed) </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OPNED</span></code>: Device is still opened, the device opn_cnt decreased by 1 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N13DEV_PWM_TIMER17pwm_timer_controlE">
+<span id="_CPPv3N13DEV_PWM_TIMER17pwm_timer_controlE"></span><span id="_CPPv2N13DEV_PWM_TIMER17pwm_timer_controlE"></span><span id="DEV_PWM_TIMER::pwm_timer_control__int32_tP"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1gac3aa5e0a9cfef137dd0dfa82c1db68d1"></span>int32_t *<code class="sig-name descname">pwm_timer_control</code><a class="headerlink" href="#_CPPv4N13DEV_PWM_TIMER17pwm_timer_controlE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Control pwm_timer device</p>
+<p>Control a pwm_timer device [channel number: ch] by ctrl_cmd, with passed param. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">ch</span></code>: Channel number of pwm_timer to control, must &gt;= 0 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">ctrl_cmd</span></code>: Control command, to change or get some thing related to pwm_timer </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[inout]</span> <span class="pre">param</span></code>: Parameters that maybe argument of the command, or return values of the command </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Control device successfully </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_CLSED</span></code>: Device is not opened </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid or not exists </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid for current control command </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Control device failed, due to hardware issues, such as device is disabled </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_CTX</span></code>: Control device failed, due to different reasons like in transfer state </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_NOSPT</span></code>: Control command is not supported or not valid </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N13DEV_PWM_TIMER15pwm_timer_writeE">
+<span id="_CPPv3N13DEV_PWM_TIMER15pwm_timer_writeE"></span><span id="_CPPv2N13DEV_PWM_TIMER15pwm_timer_writeE"></span><span id="DEV_PWM_TIMER::pwm_timer_write__int32_tP"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1ga690e5bbaf88d7661836130a9fb1b6d32"></span>int32_t *<code class="sig-name descname">pwm_timer_write</code><a class="headerlink" href="#_CPPv4N13DEV_PWM_TIMER15pwm_timer_writeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the configuration of pwm_timer</p>
+<p>Set the configuration of pwm_timer. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">ch</span></code>: Channel number of pwm_timer to write, must &gt;= 0 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">mode</span></code>: Set the mode of pwm_timer, must not be NULL </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">freq</span></code>: Set the frequency of pwm_timer, must not be NULL </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">dc</span></code>: Set the duty cycle of pwm_timer, must not be NULL </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Set device successfully </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid or not exists </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Can’t receive data from hardware due to hardware issues, such as device is disabled </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N13DEV_PWM_TIMER14pwm_timer_readE">
+<span id="_CPPv3N13DEV_PWM_TIMER14pwm_timer_readE"></span><span id="_CPPv2N13DEV_PWM_TIMER14pwm_timer_readE"></span><span id="DEV_PWM_TIMER::pwm_timer_read__int32_tP"></span><span class="target" id="group__DEVICE__HAL__PWM__TIMER__DEVSTRUCT_1ga7d9edf4b50d2a264ae02ad4c292a6d09"></span>int32_t *<code class="sig-name descname">pwm_timer_read</code><a class="headerlink" href="#_CPPv4N13DEV_PWM_TIMER14pwm_timer_readE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Read the configuration of pwm_timer</p>
+<p>Read the configuration of pwm_timer. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">ch</span></code>: Channel number of pwm_timer to read, must &gt;= 0 </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[out]</span> <span class="pre">mode</span></code>: Pointer to data mode of pwm_timer, must not be NULL </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[out]</span> <span class="pre">freq</span></code>: Pointer to data frequency of pwm_timer, must not be NULL </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[out]</span> <span class="pre">dc</span></code>: Pointer to data duty cycle of pwm_timer, must not be NULL </p></li>
+</ul>
+</dd>
+<dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OK</span></code>: Read device successfully </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_OBJ</span></code>: Device object is not valid or not exists </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_PAR</span></code>: Parameter is not valid </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E_SYS</span></code>: Can’t receive data from hardware due to hardware issues, such as device is disabled </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv418DEV_PWM_TIMER_INFO">
+<span id="_CPPv318DEV_PWM_TIMER_INFO"></span><span id="_CPPv218DEV_PWM_TIMER_INFO"></span><span id="DEV_PWM_TIMER_INFO"></span><span class="target" id="structDEV__PWM__TIMER__INFO"></span><em class="property">struct </em><code class="sig-name descname">DEV_PWM_TIMER_INFO</code><a class="headerlink" href="#_CPPv418DEV_PWM_TIMER_INFO" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;dev_pwm_timer.h&gt;</em><p>PWM_TIMER information struct definition. </p>
+<p>Informations about pwm_timer open count, working status, pwm_timer registers and ctrl structure </p>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv413DEV_PWM_TIMER">
+<span id="_CPPv313DEV_PWM_TIMER"></span><span id="_CPPv213DEV_PWM_TIMER"></span><span id="DEV_PWM_TIMER"></span><span class="target" id="structDEV__PWM__TIMER"></span><em class="property">struct </em><code class="sig-name descname">DEV_PWM_TIMER</code><a class="headerlink" href="#_CPPv413DEV_PWM_TIMER" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;dev_pwm_timer.h&gt;</em><p>PWM_TIMER device interface definition. </p>
+<p>Define pwm_timer device interface, like pwm_timer information structure, provide functions to open/close/control pwm_timer, send/receive data by pwm_timer <dl class="simple">
+<dt><strong>Note</strong></dt><dd><p>All this details are implemented by user in user porting code </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

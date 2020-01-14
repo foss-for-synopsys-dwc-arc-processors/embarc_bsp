@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__COMMON" kind="group">
+    <compoundname>DEVICE_HAL_COMMON</compoundname>
+    <title>Common Device Layer Definitions</title>
+    <innerfile refid="dev__common_8h">dev_common.h</innerfile>
+    <innerclass refid="structDEV__BUFFER" prot="public">DEV_BUFFER</innerclass>
+    <innergroup refid="group__DEVICE__HAL__COMMON__DEFCMD">Common Device Defining Command</innergroup>
+    <innergroup refid="group__DEVICE__HAL__COMMON__DEVSTATE">Common Device State</innergroup>
+    <innergroup refid="group__DEVICE__HAL__COMMON__DEVSTATUS">Common Device Status</innergroup>
+    <innergroup refid="group__DEVICE__HAL__COMMON__DEVMTHD">Common Device Working Method</innergroup>
+    <innergroup refid="group__DEVICE__HAL__COMMON__DEVMODE">Common Device Working Mode</innergroup>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__COMMON_1ga91091c2a8f895b2d00ae61e6b607335e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* DEV_CALLBACK)(void *ptr)</definition>
+        <argsstring>)(void *ptr)</argsstring>
+        <name>DEV_CALLBACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Device callback function typedef. This is usually used in device callback settings, and <bold>ptr</bold> should be the device object pointer, such as <ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> * </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/dev_common.h" line="173" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/dev_common.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__DEVICE__HAL__COMMON_1ga1c959a409ad6e952dc79b876f8e9b861" prot="public" static="no">
+        <name>DEV_INTNO_INVALID</name>
+        <initializer>(0xFFFFFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invalid Interrupt Vector Number When interrupt number is set to this value, all interrupt related function in the device driver source code shouldn&apos;t be called, that means the interrupt processing maybe done in outside of device driver, maybe done in the device object instantiation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/dev_common.h" line="127" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/dev_common.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__COMMON_1ga116434ee0f8c4f969194decd4fae00a7" prot="public" static="no">
+        <name>DEV_BUFFER_INIT</name>
+        <param><defname>devbuf</defname></param>
+        <param><defname>buffer</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>{ \
+		(devbuf)-&gt;buf = (void *)(buffer); \
+		(devbuf)-&gt;len = (uint32_t)(size); \
+		(devbuf)-&gt;ofs = (uint32_t)(0);	  \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init device buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/dev_common.h" line="162" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/dev_common.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Common definitions for device layer (<ref refid="dev__common_8h" kindref="compound">dev_common.h</ref>) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

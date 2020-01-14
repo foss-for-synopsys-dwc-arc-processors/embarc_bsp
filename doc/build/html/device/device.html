@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Devices &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GPIO HAL" href="gpio.html" />
+    <link rel="prev" title="MPU" href="../arc/resource/mpu.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Devices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Device HAL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gpio.html">GPIO HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c.html">I2C HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s.html">I2S HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi.html">SPI HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uart.html">UART HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdio.html">SDIO HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trng.html">TRNG HAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pwm_timer.html">PWM_TIMER HAL</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ip-drivers">IP Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#driver-instantiation">Driver Instantiation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Devices</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="devices">
+<span id="device-hal"></span><h1>Devices<a class="headerlink" href="#devices" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>In the root directory of embARC, the <code class="docutils literal notranslate"><span class="pre">device</span></code> folder contains the necessary software APIs
+and implementations for common device IP and external peripheral drivers.
+The device layer consists of the following components:</p>
+<ul class="simple">
+<li><p><strong>Device HAL</strong>: a device hardware abstraction layer including UART (Universal Asynchronous
+Receiver/Transmitter), SPI (Serial Peripheral Interface), IIC (Inter-
+Integrated Circuit), I2S (Inter-IC Sound), GPIO (General Purpose Input Output) and SDIO (Secure
+Digital Input and Output).</p></li>
+<li><p><strong>IP Driver Implementation</strong>: Based on the device HAL, the IP drivers
+include DesignWare IP implementations of UART, IIC, SPI, GPIO and
+SDIO devices and Designware ARC Subsystem IP implementation.</p></li>
+<li><p><strong>Peripheral Driver Implementation</strong>: on-board peripheral driver implementations such as
+flash, ADC, sensors.</p></li>
+</ul>
+<img alt="embARC Device HAL" class="align-center" src="../_images/embARC_device_hal.png" />
+</div>
+<div class="section" id="id1">
+<h2>Device HAL<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The Device HAL provides abstraction for the following devices:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gpio.html">GPIO HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i2c.html">I2C HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i2s.html">I2S HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spi.html">SPI HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uart.html">UART HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sdio.html">SDIO HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trng.html">TRNG HAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pwm_timer.html">PWM_TIMER HAL</a></li>
+</ul>
+</div>
+<p>These *.h files in <code class="docutils literal notranslate"><span class="pre">device/inc</span></code> and <code class="docutils literal notranslate"><span class="pre">device/ip/up_hal/inc</span></code> provide abstraction APIs and macros that require corresponding
+implementations. embARC BSP provides the device implementations in
+<code class="docutils literal notranslate"><span class="pre">device/ip/designware</span></code>, <code class="docutils literal notranslate"><span class="pre">device/ip/subsystem</span></code>, <code class="docutils literal notranslate"><span class="pre">device/peripheral</span></code>, and <code class="docutils literal notranslate"><span class="pre">board/xxxx/drivers</span></code>.</p>
+<p>Different device features are abstracted in the device HAL, such as UART, IIC,
+and SPI. Object-oriented concepts are adopted to provide common device
+operation APIs and device access APIs.</p>
+</div>
+<div class="section" id="ip-drivers">
+<h2>IP Drivers<a class="headerlink" href="#ip-drivers" title="Permalink to this headline">¶</a></h2>
+<p>The IP drivers are placed in <code class="docutils literal notranslate"><span class="pre">device/ip</span></code> folder. Currently, the following
+Designware IP drivers are supported:</p>
+<ul class="simple">
+<li><p>GPIO</p></li>
+<li><p>I2S</p></li>
+<li><p>I2C</p></li>
+<li><p>PWM_TIMER</p></li>
+<li><p>SDIO</p></li>
+<li><p>SPI</p></li>
+<li><p>TRNG</p></li>
+<li><p>UART</p></li>
+</ul>
+<p>and the follong Designware ARC subsystem IP drivers are supported:</p>
+<ul class="simple">
+<li><p>GPIO</p></li>
+<li><p>UART</p></li>
+<li><p>I2C master</p></li>
+<li><p>SPI master</p></li>
+<li><p>I2S master</p></li>
+</ul>
+<p>In the future, more Designware IP drivers will be added, e.g., USB, ethernet</p>
+<p>Not limited to Designware IP drivers, other IP drivers can be easily supported which
+can take Designware IP drivers as a reference.</p>
+</div>
+<div class="section" id="driver-instantiation">
+<h2>Driver Instantiation<a class="headerlink" href="#driver-instantiation" title="Permalink to this headline">¶</a></h2>
+<p>The device drivers will be instantiated in board BSP based on specific hardware
+information. Taking EMSK board as an example, its drivers’ instantiation is located in
+<code class="docutils literal notranslate"><span class="pre">board/emsk/drivers/ip/designware</span></code>. Different instantiations of same type driver will be
+differentiated through ID.</p>
+<p>There are 3 UART ports in EMSK, their instantiations locate in <code class="docutils literal notranslate"><span class="pre">dw_uart_obj.c</span></code>.
+ID allocations as well as other related definitions are in <code class="docutils literal notranslate"><span class="pre">dw_uart_obj.h</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

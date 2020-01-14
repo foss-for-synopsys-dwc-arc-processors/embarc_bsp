@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c" kind="file">
+    <compoundname>dw_uart_obj.c</compoundname>
+    <includes refid="dw__uart_8h" local="yes">device/designware/dw_uart.h</includes>
+    <includes refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" local="yes">dw_uart_obj.h</includes>
+    <includes refid="axs_8h" local="yes">axs/axs.h</includes>
+    <incdepgraph>
+      <node id="483">
+        <label>stdbool.h</label>
+      </node>
+      <node id="479">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>stdint.h</label>
+      </node>
+      <node id="489">
+        <label>axs/axs.h</label>
+        <link refid="axs_8h"/>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>stddef.h</label>
+      </node>
+      <node id="486">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="axs/drivers/ip/designware/uart/dw_uart_obj.c"/>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>dw_uart_obj.h</label>
+        <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="477" relation="include">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>device/designware/dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>limits.h</label>
+      </node>
+      <node id="487">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="494">
+        <label>axs_hardware.h</label>
+        <link refid="axs__hardware_8h"/>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>device/ip_hal/dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="478">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>device/designware/dw_uart.h</label>
+        <link refid="dw__uart_8h"/>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>axc003_gpio.h</label>
+        <link refid="axc003__gpio_8h"/>
+        <childnode refid="491" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="485" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>arc/arc_hs.h</label>
+        <link refid="arc__hs_8h"/>
+        <childnode refid="486" relation="include">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>axs_103_interrupt.h</label>
+        <link refid="axs__103__interrupt_8h"/>
+      </node>
+      <node id="491">
+        <label>drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="492" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="user-defined">
+      <header>AXS DesignWare UART 0 Object Instantiation</header>
+      <memberdef kind="define" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a2e64af6d82f6b504c142d8aeab3e460d_1a2e64af6d82f6b504c142d8aeab3e460d" prot="public" static="no">
+        <name>DW_UART_0_INTNO</name>
+        <initializer>(<ref refid="axs__hardware_8h_a7eaa0e6e2363b846e661a206ec411d0f_1a7eaa0e6e2363b846e661a206ec411d0f" kindref="member">ICTL_INTNO_UART0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="42" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref></type>
+        <definition>DEV_UART dw_uart_0</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="44" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ad08a61ec2dd0d8cb8cf6b4132890d125_1ad08a61ec2dd0d8cb8cf6b4132890d125" prot="public" static="no" mutable="no">
+        <type><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref></type>
+        <definition>DW_UART_CTRL dw_uart_0_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_0_ctrl</name>
+        <initializer>= {                 
+	<ref refid="axs__hardware_8h_a65ef08c4e0597d2a5030cf7f4ed7f342_1a65ef08c4e0597d2a5030cf7f4ed7f342" kindref="member">REGBASE_UART0</ref>, <ref refid="axs__hardware_8h_ae0d32a42c9c56d61c403f9b6d121a1de_1ae0d32a42c9c56d61c403f9b6d121a1de" kindref="member">CLK_UART</ref>,  (<ref refid="axs__hardware_8h_a7eaa0e6e2363b846e661a206ec411d0f_1a7eaa0e6e2363b846e661a206ec411d0f" kindref="member">ICTL_INTNO_UART0</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>,
+	 32 ,  32 , 0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_0_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_uart_0_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 interrupt rountine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="41" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aae11e5b8471fdfd4437481ac5be509cc_1aae11e5b8471fdfd4437481ac5be509cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_open</definition>
+        <argsstring>(uint32_t baud)</argsstring>
+        <name>dw_uart_0_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="51" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a210e2c054be71e307f0f4affcf09b2bb_1a210e2c054be71e307f0f4affcf09b2bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_0_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_abdc562db81bd8c2183975fe16ed540c1_1abdc562db81bd8c2183975fe16ed540c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_uart_0_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ab66fb27ec00191eb382d8915b4542f36_1ab66fb27ec00191eb382d8915b4542f36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_write</definition>
+        <argsstring>(const void *data, uint32_t len)</argsstring>
+        <name>dw_uart_0_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a9f9f257f755be460e66e09214bdb58f0_1a9f9f257f755be460e66e09214bdb58f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_read</definition>
+        <argsstring>(void *data, uint32_t len)</argsstring>
+        <name>dw_uart_0_read</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a539eef22064d5a5da5aa8df55343bda5_1a539eef22064d5a5da5aa8df55343bda5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_0_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_0_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>install designware uart 0 to system </para>        </detaileddescription>
+        <inbodydescription>
+<para>uart info init</para><para>uart dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="81" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AXS DesignWare UART 1 Object Instantiation</header>
+      <memberdef kind="define" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a0ffafa7522db686a52c98d906febf2dc_1a0ffafa7522db686a52c98d906febf2dc" prot="public" static="no">
+        <name>DW_UART_1_INTNO</name>
+        <initializer>(<ref refid="axs__hardware_8h_ac08da7aad5ffa39d0b396dd865853345_1ac08da7aad5ffa39d0b396dd865853345" kindref="member">ICTL_INTNO_UART1</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="110" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref></type>
+        <definition>DEV_UART dw_uart_1</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="112" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_afcd04a82b10149227bbc3c6b7a3d0708_1afcd04a82b10149227bbc3c6b7a3d0708" prot="public" static="no" mutable="no">
+        <type><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref></type>
+        <definition>DW_UART_CTRL dw_uart_1_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_1_ctrl</name>
+        <initializer>= {                 
+	<ref refid="axs__hardware_8h_aa281e7aefe05d498fc297b6a1bbcccce_1aa281e7aefe05d498fc297b6a1bbcccce" kindref="member">REGBASE_UART1</ref>, <ref refid="axs__hardware_8h_ae0d32a42c9c56d61c403f9b6d121a1de_1ae0d32a42c9c56d61c403f9b6d121a1de" kindref="member">CLK_UART</ref>,  (<ref refid="axs__hardware_8h_ac08da7aad5ffa39d0b396dd865853345_1ac08da7aad5ffa39d0b396dd865853345" kindref="member">ICTL_INTNO_UART1</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a1e2fe69afd8f659db3f2861f450aedce_1a1e2fe69afd8f659db3f2861f450aedce" kindref="member">dw_uart_1_isr</ref>,
+	 32 ,  32 , 0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="113" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a1e2fe69afd8f659db3f2861f450aedce_1a1e2fe69afd8f659db3f2861f450aedce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_1_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_uart_1_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 interrupt routine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a45741c7dbff3b7d45a040fe0a91dad39_1a45741c7dbff3b7d45a040fe0a91dad39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_1_open</definition>
+        <argsstring>(uint32_t baud)</argsstring>
+        <name>dw_uart_1_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="119" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aa134423f83a7ad146e2ff1e3455be669_1aa134423f83a7ad146e2ff1e3455be669" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_1_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_1_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a0e39b35a32fe3ca3ec0365e6c9e09bf7_1a0e39b35a32fe3ca3ec0365e6c9e09bf7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_1_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_uart_1_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="129" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a5119ed58e3c32d994373f70714cd95bd_1a5119ed58e3c32d994373f70714cd95bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_1_write</definition>
+        <argsstring>(const void *data, uint32_t len)</argsstring>
+        <name>dw_uart_1_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6214f35c6bfcdd5ea52ab731a431319f_1a6214f35c6bfcdd5ea52ab731a431319f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_1_read</definition>
+        <argsstring>(void *data, uint32_t len)</argsstring>
+        <name>dw_uart_1_read</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="139" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aa5054c66d3299d07452455dbb00b53a5_1aa5054c66d3299d07452455dbb00b53a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_1_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_1_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>install designware uart 1 to system </para>        </detaileddescription>
+        <inbodydescription>
+<para>uart info init</para><para>uart dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="149" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="149" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AXS DesignWare UART 2 Object Instantiation</header>
+      <memberdef kind="define" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a4886cc7e890d2b6b8823ad762b536bdb_1a4886cc7e890d2b6b8823ad762b536bdb" prot="public" static="no">
+        <name>DW_UART_2_INTNO</name>
+        <initializer>(<ref refid="axs__hardware_8h_a0e414aaaa50eeffd324a64686b7f3843_1a0e414aaaa50eeffd324a64686b7f3843" kindref="member">ICTL_INTNO_UART2</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="177" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref></type>
+        <definition>DEV_UART dw_uart_2</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="179" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ac9518a1e663bfa6e5b008d5812113b79_1ac9518a1e663bfa6e5b008d5812113b79" prot="public" static="no" mutable="no">
+        <type><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref></type>
+        <definition>DW_UART_CTRL dw_uart_2_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_2_ctrl</name>
+        <initializer>= {                 
+	<ref refid="axs__hardware_8h_ad2b9c83a9291c1630aa829382a745c90_1ad2b9c83a9291c1630aa829382a745c90" kindref="member">REGBASE_UART2</ref>, <ref refid="axs__hardware_8h_ae0d32a42c9c56d61c403f9b6d121a1de_1ae0d32a42c9c56d61c403f9b6d121a1de" kindref="member">CLK_UART</ref>,  (<ref refid="axs__hardware_8h_a0e414aaaa50eeffd324a64686b7f3843_1a0e414aaaa50eeffd324a64686b7f3843" kindref="member">ICTL_INTNO_UART2</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a7c254b0eb89da16f95e9f9d860d7e428_1a7c254b0eb89da16f95e9f9d860d7e428" kindref="member">dw_uart_2_isr</ref>,
+	 32 ,  32 , 0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="180" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a7c254b0eb89da16f95e9f9d860d7e428_1a7c254b0eb89da16f95e9f9d860d7e428" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_2_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_uart_2_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 interrupt routine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="176" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a9e9a56c553f179a6a11236b8e57ce40d_1a9e9a56c553f179a6a11236b8e57ce40d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_2_open</definition>
+        <argsstring>(uint32_t baud)</argsstring>
+        <name>dw_uart_2_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="186" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a19f7c6bb9e2211dc58beb3a2ca69a7f1_1a19f7c6bb9e2211dc58beb3a2ca69a7f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_2_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_2_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="191" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a031be63e1a011f6b81daaf48f90f1bc8_1a031be63e1a011f6b81daaf48f90f1bc8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_2_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_uart_2_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="196" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3dec6539a621d9b7e81b89b7a111c6df_1a3dec6539a621d9b7e81b89b7a111c6df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_2_write</definition>
+        <argsstring>(const void *data, uint32_t len)</argsstring>
+        <name>dw_uart_2_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 1 write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="201" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ad8355cac920fab73e1feff895fa767b2_1ad8355cac920fab73e1feff895fa767b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_2_read</definition>
+        <argsstring>(void *data, uint32_t len)</argsstring>
+        <name>dw_uart_2_read</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 2 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="206" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_af8d76d452b107dd59317fb61900c0301_1af8d76d452b107dd59317fb61900c0301" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_2_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_2_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>install designware uart 2 to system </para>        </detaileddescription>
+        <inbodydescription>
+<para>uart info init</para><para>uart dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="216" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="216" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" prot="public" static="no">
+        <name>DW_UART_FIFO_LEN</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="35" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a155e6d8d16891fa5458dc3f711da7264_1a155e6d8d16891fa5458dc3f711da7264" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_all_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_all_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>install all uart objects </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><bold>MUST</bold> be called during system init </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="242" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="242" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga39a2c3e3c12141f19ed62130a86dfe04_1ga39a2c3e3c12141f19ed62130a86dfe04" kindref="member">DEV_UART_PTR</ref></type>
+        <definition>DEV_UART_PTR uart_get_dev</definition>
+        <argsstring>(int32_t uart_id)</argsstring>
+        <name>uart_get_dev</name>
+        <param>
+          <type>int32_t</type>
+          <declname>uart_id</declname>
+        </param>
+        <briefdescription>
+<para>Get an <ref refid="structDEV__UART" kindref="compound">uart device</ref> by uart device id. For how to use uart device hal refer to <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT" kindref="compound">Functions in uart device structure</ref> param[in] uart_id ID of uart, defined by user. </para>        </briefdescription>
+        <detaileddescription>
+<para>get one designware device structure </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" line="256" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="256" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__uart_8h" kindref="compound">device/designware/dw_uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" kindref="compound">dw_uart_obj.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="axs_8h" kindref="compound">axs/axs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_UART_FIFO_LEN<sp/><sp/><sp/><sp/>32</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">#if<sp/>(USE_DW_UART_0)</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_UART_0_INTNO<sp/><sp/><sp/><sp/><sp/>(ICTL_INTNO_UART0)<sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">DEV_UART<sp/>dw_uart_0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">DW_UART_CTRL<sp/>dw_uart_0_ctrl<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>REGBASE_UART0,<sp/>CLK_UART,<sp/>DW_UART_0_INTNO,<sp/>(INT_HANDLER_T)dw_uart_0_isr,</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" kindref="member">DW_UART_FIFO_LEN</ref>,<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" kindref="member">DW_UART_FIFO_LEN</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aae11e5b8471fdfd4437481ac5be509cc_1aae11e5b8471fdfd4437481ac5be509cc" kindref="member">dw_uart_0_open</ref>(uint32_t<sp/>baud)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a49c3f35887ad36260c0576c58614db71_1a49c3f35887ad36260c0576c58614db71" kindref="member">dw_uart_open</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>baud);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a210e2c054be71e307f0f4affcf09b2bb_1a210e2c054be71e307f0f4affcf09b2bb" kindref="member">dw_uart_0_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a40287dfa053b6bc49bcaf66c35d73b1c_1a40287dfa053b6bc49bcaf66c35d73b1c" kindref="member">dw_uart_close</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_abdc562db81bd8c2183975fe16ed540c1_1abdc562db81bd8c2183975fe16ed540c1" kindref="member">dw_uart_0_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_aad6c59b900e3f9b72b1eac4ca889f317_1aad6c59b900e3f9b72b1eac4ca889f317" kindref="member">dw_uart_control</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ab66fb27ec00191eb382d8915b4542f36_1ab66fb27ec00191eb382d8915b4542f36" kindref="member">dw_uart_0_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a66f55a5d83c8d575ff0c2add94e6ec51_1a66f55a5d83c8d575ff0c2add94e6ec51" kindref="member">dw_uart_write</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a9f9f257f755be460e66e09214bdb58f0_1a9f9f257f755be460e66e09214bdb58f0" kindref="member">dw_uart_0_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a9f48bb55260aea46433c78bfd0935c69_1a9f48bb55260aea46433c78bfd0935c69" kindref="member">dw_uart_read</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__uart_8h_a931f15b8f8a5a29ab3a7344aa3cb10d2_1a931f15b8f8a5a29ab3a7344aa3cb10d2" kindref="member">dw_uart_isr</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>ptr);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a539eef22064d5a5da5aa8df55343bda5_1a539eef22064d5a5da5aa8df55343bda5" kindref="member">dw_uart_0_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref><sp/>*dw_uart_ptr<sp/>=<sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref><sp/>*dw_uart_info_ptr<sp/>=<sp/>&amp;(<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>.<ref refid="structDEV__UART_ae4b6a665925b840b9c75ae93fd045d3f_1ae4b6a665925b840b9c75ae93fd045d3f" kindref="member">uart_info</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref><sp/>*dw_uart_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ad08a61ec2dd0d8cb8cf6b4132890d125_1ad08a61ec2dd0d8cb8cf6b4132890d125" kindref="member">dw_uart_0_ctrl</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" kindref="member">uart_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_uart_ctrl_ptr;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" kindref="member">baudrate</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__UART__BAUD_ga7ba5033e1e1547d07d7683d0542c1f4a_1ga7ba5033e1e1547d07d7683d0542c1f4a" kindref="member">UART_BAUDRATE_115200</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>default<sp/>115200bps<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga860ca9f9693e4f1552590565dc961869_1ga860ca9f9693e4f1552590565dc961869" kindref="member">uart_open</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aae11e5b8471fdfd4437481ac5be509cc_1aae11e5b8471fdfd4437481ac5be509cc" kindref="member">dw_uart_0_open</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga7b7ce7a7e10f7bed01eb94f21c23b65f_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" kindref="member">uart_close</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a210e2c054be71e307f0f4affcf09b2bb_1a210e2c054be71e307f0f4affcf09b2bb" kindref="member">dw_uart_0_close</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6b40883d5dfbfabd632ba125e128d1e5_1ga6b40883d5dfbfabd632ba125e128d1e5" kindref="member">uart_control</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_abdc562db81bd8c2183975fe16ed540c1_1abdc562db81bd8c2183975fe16ed540c1" kindref="member">dw_uart_0_control</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" kindref="member">uart_write</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ab66fb27ec00191eb382d8915b4542f36_1ab66fb27ec00191eb382d8915b4542f36" kindref="member">dw_uart_0_write</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" kindref="member">uart_read</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a9f9f257f755be460e66e09214bdb58f0_1a9f9f257f755be460e66e09214bdb58f0" kindref="member">dw_uart_0_read</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor">#if<sp/>(USE_DW_UART_1)</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a1e2fe69afd8f659db3f2861f450aedce_1a1e2fe69afd8f659db3f2861f450aedce" kindref="member">dw_uart_1_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_UART_1_INTNO<sp/><sp/><sp/><sp/><sp/>(ICTL_INTNO_UART1)<sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor">DEV_UART<sp/>dw_uart_1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor">DW_UART_CTRL<sp/>dw_uart_1_ctrl<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>REGBASE_UART1,<sp/>CLK_UART,<sp/>DW_UART_1_INTNO,<sp/>(INT_HANDLER_T)dw_uart_1_isr,</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" kindref="member">DW_UART_FIFO_LEN</ref>,<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" kindref="member">DW_UART_FIFO_LEN</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a45741c7dbff3b7d45a040fe0a91dad39_1a45741c7dbff3b7d45a040fe0a91dad39" kindref="member">dw_uart_1_open</ref>(uint32_t<sp/>baud)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a49c3f35887ad36260c0576c58614db71_1a49c3f35887ad36260c0576c58614db71" kindref="member">dw_uart_open</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>,<sp/>baud);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aa134423f83a7ad146e2ff1e3455be669_1aa134423f83a7ad146e2ff1e3455be669" kindref="member">dw_uart_1_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a40287dfa053b6bc49bcaf66c35d73b1c_1a40287dfa053b6bc49bcaf66c35d73b1c" kindref="member">dw_uart_close</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a0e39b35a32fe3ca3ec0365e6c9e09bf7_1a0e39b35a32fe3ca3ec0365e6c9e09bf7" kindref="member">dw_uart_1_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_aad6c59b900e3f9b72b1eac4ca889f317_1aad6c59b900e3f9b72b1eac4ca889f317" kindref="member">dw_uart_control</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a5119ed58e3c32d994373f70714cd95bd_1a5119ed58e3c32d994373f70714cd95bd" kindref="member">dw_uart_1_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a66f55a5d83c8d575ff0c2add94e6ec51_1a66f55a5d83c8d575ff0c2add94e6ec51" kindref="member">dw_uart_write</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6214f35c6bfcdd5ea52ab731a431319f_1a6214f35c6bfcdd5ea52ab731a431319f" kindref="member">dw_uart_1_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a9f48bb55260aea46433c78bfd0935c69_1a9f48bb55260aea46433c78bfd0935c69" kindref="member">dw_uart_read</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a1e2fe69afd8f659db3f2861f450aedce_1a1e2fe69afd8f659db3f2861f450aedce" kindref="member">dw_uart_1_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__uart_8h_a931f15b8f8a5a29ab3a7344aa3cb10d2_1a931f15b8f8a5a29ab3a7344aa3cb10d2" kindref="member">dw_uart_isr</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>,<sp/>ptr);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aa5054c66d3299d07452455dbb00b53a5_1aa5054c66d3299d07452455dbb00b53a5" kindref="member">dw_uart_1_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref><sp/>*dw_uart_ptr<sp/>=<sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref><sp/>*dw_uart_info_ptr<sp/>=<sp/>&amp;(<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>.<ref refid="structDEV__UART_ae4b6a665925b840b9c75ae93fd045d3f_1ae4b6a665925b840b9c75ae93fd045d3f" kindref="member">uart_info</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref><sp/>*dw_uart_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_afcd04a82b10149227bbc3c6b7a3d0708_1afcd04a82b10149227bbc3c6b7a3d0708" kindref="member">dw_uart_1_ctrl</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" kindref="member">uart_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_uart_ctrl_ptr;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" kindref="member">baudrate</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__UART__BAUD_ga7ba5033e1e1547d07d7683d0542c1f4a_1ga7ba5033e1e1547d07d7683d0542c1f4a" kindref="member">UART_BAUDRATE_115200</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>default<sp/>115200bps<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga860ca9f9693e4f1552590565dc961869_1ga860ca9f9693e4f1552590565dc961869" kindref="member">uart_open</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a45741c7dbff3b7d45a040fe0a91dad39_1a45741c7dbff3b7d45a040fe0a91dad39" kindref="member">dw_uart_1_open</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga7b7ce7a7e10f7bed01eb94f21c23b65f_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" kindref="member">uart_close</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aa134423f83a7ad146e2ff1e3455be669_1aa134423f83a7ad146e2ff1e3455be669" kindref="member">dw_uart_1_close</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6b40883d5dfbfabd632ba125e128d1e5_1ga6b40883d5dfbfabd632ba125e128d1e5" kindref="member">uart_control</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a0e39b35a32fe3ca3ec0365e6c9e09bf7_1a0e39b35a32fe3ca3ec0365e6c9e09bf7" kindref="member">dw_uart_1_control</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" kindref="member">uart_write</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a5119ed58e3c32d994373f70714cd95bd_1a5119ed58e3c32d994373f70714cd95bd" kindref="member">dw_uart_1_write</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" kindref="member">uart_read</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6214f35c6bfcdd5ea52ab731a431319f_1a6214f35c6bfcdd5ea52ab731a431319f" kindref="member">dw_uart_1_read</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_1<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor">#if<sp/>(USE_DW_UART_2)</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a7c254b0eb89da16f95e9f9d860d7e428_1a7c254b0eb89da16f95e9f9d860d7e428" kindref="member">dw_uart_2_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_UART_2_INTNO<sp/><sp/><sp/><sp/><sp/>(ICTL_INTNO_UART2)<sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor">DEV_UART<sp/>dw_uart_2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor">DW_UART_CTRL<sp/>dw_uart_2_ctrl<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>REGBASE_UART2,<sp/>CLK_UART,<sp/>DW_UART_2_INTNO,<sp/>(INT_HANDLER_T)dw_uart_2_isr,</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" kindref="member">DW_UART_FIFO_LEN</ref>,<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a47033b59aaaf8d166e9b34977fb2da60_1a47033b59aaaf8d166e9b34977fb2da60" kindref="member">DW_UART_FIFO_LEN</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a9e9a56c553f179a6a11236b8e57ce40d_1a9e9a56c553f179a6a11236b8e57ce40d" kindref="member">dw_uart_2_open</ref>(uint32_t<sp/>baud)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a49c3f35887ad36260c0576c58614db71_1a49c3f35887ad36260c0576c58614db71" kindref="member">dw_uart_open</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>,<sp/>baud);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a19f7c6bb9e2211dc58beb3a2ca69a7f1_1a19f7c6bb9e2211dc58beb3a2ca69a7f1" kindref="member">dw_uart_2_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a40287dfa053b6bc49bcaf66c35d73b1c_1a40287dfa053b6bc49bcaf66c35d73b1c" kindref="member">dw_uart_close</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a031be63e1a011f6b81daaf48f90f1bc8_1a031be63e1a011f6b81daaf48f90f1bc8" kindref="member">dw_uart_2_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_aad6c59b900e3f9b72b1eac4ca889f317_1aad6c59b900e3f9b72b1eac4ca889f317" kindref="member">dw_uart_control</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3dec6539a621d9b7e81b89b7a111c6df_1a3dec6539a621d9b7e81b89b7a111c6df" kindref="member">dw_uart_2_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a66f55a5d83c8d575ff0c2add94e6ec51_1a66f55a5d83c8d575ff0c2add94e6ec51" kindref="member">dw_uart_write</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ad8355cac920fab73e1feff895fa767b2_1ad8355cac920fab73e1feff895fa767b2" kindref="member">dw_uart_2_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a9f48bb55260aea46433c78bfd0935c69_1a9f48bb55260aea46433c78bfd0935c69" kindref="member">dw_uart_read</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a7c254b0eb89da16f95e9f9d860d7e428_1a7c254b0eb89da16f95e9f9d860d7e428" kindref="member">dw_uart_2_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__uart_8h_a931f15b8f8a5a29ab3a7344aa3cb10d2_1a931f15b8f8a5a29ab3a7344aa3cb10d2" kindref="member">dw_uart_isr</ref>(&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>,<sp/>ptr);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_af8d76d452b107dd59317fb61900c0301_1af8d76d452b107dd59317fb61900c0301" kindref="member">dw_uart_2_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref><sp/>*dw_uart_ptr<sp/>=<sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref><sp/>*dw_uart_info_ptr<sp/>=<sp/>&amp;(<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>.<ref refid="structDEV__UART_ae4b6a665925b840b9c75ae93fd045d3f_1ae4b6a665925b840b9c75ae93fd045d3f" kindref="member">uart_info</ref>);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref><sp/>*dw_uart_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ac9518a1e663bfa6e5b008d5812113b79_1ac9518a1e663bfa6e5b008d5812113b79" kindref="member">dw_uart_2_ctrl</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" kindref="member">uart_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_uart_ctrl_ptr;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" kindref="member">baudrate</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__UART__BAUD_ga7ba5033e1e1547d07d7683d0542c1f4a_1ga7ba5033e1e1547d07d7683d0542c1f4a" kindref="member">UART_BAUDRATE_115200</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>default<sp/>115200bps<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga860ca9f9693e4f1552590565dc961869_1ga860ca9f9693e4f1552590565dc961869" kindref="member">uart_open</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a9e9a56c553f179a6a11236b8e57ce40d_1a9e9a56c553f179a6a11236b8e57ce40d" kindref="member">dw_uart_2_open</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga7b7ce7a7e10f7bed01eb94f21c23b65f_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" kindref="member">uart_close</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a19f7c6bb9e2211dc58beb3a2ca69a7f1_1a19f7c6bb9e2211dc58beb3a2ca69a7f1" kindref="member">dw_uart_2_close</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6b40883d5dfbfabd632ba125e128d1e5_1ga6b40883d5dfbfabd632ba125e128d1e5" kindref="member">uart_control</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a031be63e1a011f6b81daaf48f90f1bc8_1a031be63e1a011f6b81daaf48f90f1bc8" kindref="member">dw_uart_2_control</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" kindref="member">uart_write</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3dec6539a621d9b7e81b89b7a111c6df_1a3dec6539a621d9b7e81b89b7a111c6df" kindref="member">dw_uart_2_write</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" kindref="member">uart_read</ref><sp/>=<sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_ad8355cac920fab73e1feff895fa767b2_1ad8355cac920fab73e1feff895fa767b2" kindref="member">dw_uart_2_read</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_2<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="242"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a155e6d8d16891fa5458dc3f711da7264_1a155e6d8d16891fa5458dc3f711da7264" kindref="member">dw_uart_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_UART_0)</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a539eef22064d5a5da5aa8df55343bda5_1a539eef22064d5a5da5aa8df55343bda5" kindref="member">dw_uart_0_install</ref>();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_UART_1)</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aa5054c66d3299d07452455dbb00b53a5_1aa5054c66d3299d07452455dbb00b53a5" kindref="member">dw_uart_1_install</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_UART_2)</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_af8d76d452b107dd59317fb61900c0301_1af8d76d452b107dd59317fb61900c0301" kindref="member">dw_uart_2_install</ref>();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><ref refid="structDEV__UART" kindref="compound">DEV_UART_PTR</ref><sp/><ref refid="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" kindref="member">uart_get_dev</ref>(int32_t<sp/>uart_id)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>intall<sp/>device<sp/>objects<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(install_flag<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>install_flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a155e6d8d16891fa5458dc3f711da7264_1a155e6d8d16891fa5458dc3f711da7264" kindref="member">dw_uart_all_install</ref>();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(uart_id)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_UART_0)</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h_a61cfe53266aacb4cb6a0f8b879507dee_1a61cfe53266aacb4cb6a0f8b879507dee" kindref="member">DW_UART_0_ID</ref>:</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_UART_1)</highlight></codeline>
+<codeline lineno="273"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h_a5fb2a0672ce7e3c57ea515366808fe56_1a5fb2a0672ce7e3c57ea515366808fe56" kindref="member">DW_UART_1_ID</ref>:</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_aed9bdd3cce9985baa328d3110e07fd71_1aed9bdd3cce9985baa328d3110e07fd71" kindref="member">dw_uart_1</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_UART_2)</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h_af791cda00d95454c6e8a0fe977398606_1af791cda00d95454c6e8a0fe977398606" kindref="member">DW_UART_2_ID</ref>:</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a6c64fb5bde9a1d3f435763ec6fcbbeda_1a6c64fb5bde9a1d3f435763ec6fcbbeda" kindref="member">dw_uart_2</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c"/>
+  </compounddef>
+</doxygen>

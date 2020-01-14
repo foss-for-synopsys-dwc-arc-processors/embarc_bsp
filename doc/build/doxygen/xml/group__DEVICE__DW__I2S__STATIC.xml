@@ -1,0 +1,1174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__DW__I2S__STATIC" kind="group">
+    <compoundname>DEVICE_DW_I2S_STATIC</compoundname>
+    <title>DesignWare I2S Driver Static Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga26507001d32cf3e103112f7cd8b19b5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>Inline void dw_i2s_rx_disable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="79" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga0ac24ced6177cef5106dd377cb6551b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_enable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S RX and flush all FIFOs. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enable DesignWare I2S RX IP. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gaaa228f7b0bec0ef6d915f1e8fac4f96e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_disable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S TX and flush all FIFOs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="97" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga848615823a0ff88da0cb2fc88209b8ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_enable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S TX IP. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga487cb703292259b7730d345542b9dc88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_block_disable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_block_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S RX block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga160b920c1c243e86efeddfb63672bfb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_block_enable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_block_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S RX block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga78693b188ef10ee2e31d67def64a4bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_block_disable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_block_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S TX block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="133" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga77dcd8176b7d4f1f1cb72404ddb355df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_block_enable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_block_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S TX block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="142" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gab05746efde5fb4ff756ab9028aba98b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_channel_disable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_channel_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S RX channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="151" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="151" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gafd91363f9a6aa5df0eb5a772467a7225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_channel_enable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_channel_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S RX channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="175" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="175" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga005008e8229ecc673492b0838a530c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_channel_disable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_channel_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S TX channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="199" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="199" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gaea0b1a40135cdde4433b4f9a296d581d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_channel_enable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_channel_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S TX channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="223" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="223" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga83f112c35cbecbd48134ac3fce165c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_clear_overrun_interrupt</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_clear_overrun_interrupt</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Clear DesignWare I2S RX overrun interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="249" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="249" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga874c0aed28ed0075bbf0a1e5715603b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_clear_overrun_interrupt</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_clear_overrun_interrupt</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Clear DesignWare I2S TX overrun interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="273" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="273" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga8e21d76ffdc1b3e1eec74b0ab599f4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_unmask_interrupt</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t mask, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_unmask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S RX bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="297" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="297" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga930a78acd3b6f81f7d29000cc5ed03ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_mask_interrupt</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t mask, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_mask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S RX bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="321" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="321" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gab2e980731d0c6c5f9a089915a4e1ca6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_unmask_interrupt</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t mask, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_unmask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S TX bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="345" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="345" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gaa2e61eaa27fd62b8249e39c63efc23ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_mask_interrupt</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t mask, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_mask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S TX bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="369" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="369" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga820fbe23f696a41cfa8bcb31c47143e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_i2s_tx_get_txchet</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_get_txchet</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Get DesignWare I2S Transmit Channel Empty Trigger (TXCHET) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="393" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="393" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga16fc5fe445ba10f45fca3aabb44f9e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_set_txchet</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t level, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_set_txchet</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Set DesignWare I2S Transmit Channel Empty Trigger (TXCHET) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="420" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="420" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga24868c8787c39ca27e8e6a64ae864f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_i2s_rx_get_rxchdt</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_get_rxchdt</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Get DesignWare I2S Receive Channel Data Available Trigger (RXCHDT) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="444" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="444" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga11d32d5f4b8841e575e2e6f67bb9bc6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_set_rxchdt</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t level, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_set_rxchdt</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Set DesignWare I2S Receiver Channel Data Available Trigger (RXCHDT) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="471" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="471" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gacfabac7f34acc5921c08282300983062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_clock_enable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_clock_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S TX clock generation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="493" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="493" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gadedf75b8e8be4845cf60a31409c91731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_clock_disable</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_clock_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S TX clock generation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="502" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="502" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gae300535496699de9ebef4c094c4bc8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_clock_enable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_clock_enable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare I2S RX clock generation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="511" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="511" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gad4b88c8c24c956e1c88c49dc8b6a2fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_clock_disable</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_clock_disable</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable DesignWare I2S RX clock generation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="520" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="520" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga1ae71b071c3afce8d4a7806d579aa901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_set_wss</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t word_select)</argsstring>
+        <name>dw_i2s_tx_set_wss</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>word_select</declname>
+        </param>
+        <briefdescription>
+<para>Set DesignWare I2S TX clock configuration word select line (ws_out) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="529" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="529" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gaa4784471f32588e80b2aee148f3a9c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_set_wss</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t word_select)</argsstring>
+        <name>dw_i2s_rx_set_wss</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>word_select</declname>
+        </param>
+        <briefdescription>
+<para>Set DesignWare I2S RX clock configuration word select line (ws_out) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="539" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="539" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga1c98e6b74411692b3ef7ee9ebbf69b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_flush_fifo</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_flush_fifo</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reset DesignWare I2S RX FIFO, flush all the RX FIFOs (a self clearing bit) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="549" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="549" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga5dc169878a769b51286dd60bbd8b66cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_flush_fifo</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_flush_fifo</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reset DesignWare I2S TX FIFO, flush all the TX FIFOs (a self clearing bit) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="558" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="558" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga9ea08b3596a291ef8761f2ce01cacbc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_i2s_rx_get_fifo_len</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr)</argsstring>
+        <name>dw_i2s_rx_get_fifo_len</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get RX FIFO length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="567" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="567" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gab708b10b613cc41f3be4d60fd4dceda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_i2s_tx_get_fifo_len</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr)</argsstring>
+        <name>dw_i2s_tx_get_fifo_len</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get TX FIFO length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="594" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="594" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gac57a46647ad30505d239489bcb34cb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_tx_set_sclkg</definition>
+        <argsstring>(DW_I2S_TX_REG *i2s_tx_reg_ptr, uint32_t clkg)</argsstring>
+        <name>dw_i2s_tx_set_sclkg</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+          <declname>i2s_tx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>clkg</declname>
+        </param>
+        <briefdescription>
+<para>Set DesignWare I2S TX clock configuration SCLKG (gating of sclk) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="621" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="621" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gab9a8ec8acf5b511f11d30b474e5044e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_i2s_rx_set_sclkg</definition>
+        <argsstring>(DW_I2S_RX_REG *i2s_rx_reg_ptr, uint32_t clkg)</argsstring>
+        <name>dw_i2s_rx_set_sclkg</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+          <declname>i2s_rx_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>clkg</declname>
+        </param>
+        <briefdescription>
+<para>Set DesignWare I2S RX clock configuration SCLKG (gating of sclk) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="631" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="631" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga89720aa303e6f3a8fb0a0712a5279358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_i2s_get_wlen_bits</definition>
+        <argsstring>(uint32_t resolution)</argsstring>
+        <name>dw_i2s_get_wlen_bits</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+<para>Set RX/TX WLEN. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="641" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="641" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga299feb1e35258b84281b4c00be7f82a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_rx_set_wlen</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_set_wlen</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="670" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="670" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga034bb7bee6ba51a51562c487577b8d7b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_tx_set_wlen</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_set_wlen</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="701" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="701" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga28732e42d166ce94c49032b9cafaf43d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_rx_disable_interrupt</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_disable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="734" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="734" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga8e684bab9f89565008d01bc48ba5f1f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_tx_disable_interrupt</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_disable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="755" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="755" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga23c5fe7112ff9d26a61a832e6d56cfa6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_disable_dev_intr</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_disable_dev_intr</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="778" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="778" bodyend="786"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gafe5884a00ea73d3d970d9a93c7c516d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_rx_enable_interrupt</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_enable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="789" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="789" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga5e3323b4319b111391e8354b0df88f4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_tx_enable_interrupt</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_enable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="810" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="810" bodyend="830"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gab04ae31c036084f6fc8e8dd0d0bd6646" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_enable_dev_intr</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_enable_dev_intr</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="833" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="833" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga0f36218069f39b33b9a83dd70662123c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_enable_device</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_enable_device</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="843" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="843" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga8664322370187b7a3b7b55fd060fec34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_disable_device</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t channel)</argsstring>
+        <name>dw_i2s_disable_device</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="868" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="868" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gaa47fc8c37fdb6f8f182a6a0524443835" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_disable_device_all</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr)</argsstring>
+        <name>dw_i2s_disable_device_all</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="893" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="893" bodyend="941"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga199482314bb22f137c04bca216456b1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_reset_device</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr)</argsstring>
+        <name>dw_i2s_reset_device</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="944" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="944" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga395eb2491fba82f1385251fd8ad5a613" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_flush</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr)</argsstring>
+        <name>dw_i2s_flush</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="993" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="993" bodyend="1011"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gab6a00cc8f0a0cdd02cd0f9def079bd19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_enable_all_channel_intr</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr)</argsstring>
+        <name>dw_i2s_enable_all_channel_intr</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1014" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1014" bodyend="1031"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gae9e6c27c0a28d4b24d90c81f0f9d385f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_disable_all_channel_intr</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr)</argsstring>
+        <name>dw_i2s_disable_all_channel_intr</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1034" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1034" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga0c5ad75021729512587bba76bc500dcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_dis_cbr</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t cbrtn, uint32_t channel)</argsstring>
+        <name>dw_i2s_dis_cbr</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; RX ready to receive callback</para><para>&lt; TX ready to send callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1054" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1054" bodyend="1072"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gabfc9df949b5754c66b90dde38ada20f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_tx_write_left_hold_reg</definition>
+        <argsstring>(DW_I2S_TX_CTRL *i2s_tx_ctrl_ptr, uint32_t data, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_write_left_hold_reg</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__CTRL" kindref="compound">DW_I2S_TX_CTRL</ref> *</type>
+          <declname>i2s_tx_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1075" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1075" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga276b1c9cf94629838a2b620dfa059f16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_tx_write_right_hold_reg</definition>
+        <argsstring>(DW_I2S_TX_CTRL *i2s_tx_ctrl_ptr, uint32_t data, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_write_right_hold_reg</name>
+        <param>
+          <type><ref refid="structDW__I2S__TX__CTRL" kindref="compound">DW_I2S_TX_CTRL</ref> *</type>
+          <declname>i2s_tx_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1091" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1091" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gaf54ca194f49fb6e48ae411f5ec509339" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_rx_read_left_hold_reg</definition>
+        <argsstring>(DW_I2S_RX_CTRL *i2s_rx_ctrl_ptr, uint32_t *data, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_read_left_hold_reg</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__CTRL" kindref="compound">DW_I2S_RX_CTRL</ref> *</type>
+          <declname>i2s_rx_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1107" bodyend="1119"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gac82282d8a0684441dbac695805ac3899" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_i2s_rx_read_right_hold_reg</definition>
+        <argsstring>(DW_I2S_RX_CTRL *i2s_rx_ctrl_ptr, uint32_t *data, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_read_right_hold_reg</name>
+        <param>
+          <type><ref refid="structDW__I2S__RX__CTRL" kindref="compound">DW_I2S_RX_CTRL</ref> *</type>
+          <declname>i2s_rx_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1122" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1122" bodyend="1134"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1gac3cc58ad7089eb2f60dabd4ac26928d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_i2s_tx_write_samples</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t count, uint32_t channel)</argsstring>
+        <name>dw_i2s_tx_write_samples</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1143" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1143" bodyend="1182"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__STATIC_1ga59ee995ee8860d31fa5460a395f2da5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_i2s_rx_read_samples</definition>
+        <argsstring>(DEV_I2S_INFO *i2s_info_ptr, uint32_t count, uint32_t channel)</argsstring>
+        <name>dw_i2s_rx_read_samples</name>
+        <param>
+          <type><ref refid="structDEV__I2S__INFO" kindref="compound">DEV_I2S_INFO</ref> *</type>
+          <declname>i2s_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" line="1191" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1191" bodyend="1235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static or inline functions, variables for DesignWare I2S handle I2S operations, only used in this file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

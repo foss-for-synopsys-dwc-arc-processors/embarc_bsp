@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__UART__REG" kind="struct" prot="public">
+    <compoundname>DW_UART_REG</compoundname>
+    <includes refid="dw__uart_8h" local="no">dw_uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__UART__REG_abaf92af860d2aa518ca8a3dbce2c038c_1abaf92af860d2aa518ca8a3dbce2c038c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::DATA</definition>
+        <argsstring></argsstring>
+        <name>DATA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data in/out and DLL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="53" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a88ac74d7b15be384d32e7a496cd99f06_1a88ac74d7b15be384d32e7a496cd99f06" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::IER</definition>
+        <argsstring></argsstring>
+        <name>IER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt enable register and DLH </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="54" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_aa4ad6108d5b70892b6e862751488b421_1aa4ad6108d5b70892b6e862751488b421" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::IIR</definition>
+        <argsstring></argsstring>
+        <name>IIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt Id register and FCR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="55" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a1a7f793561bd7febe4851bde4a97a889_1a1a7f793561bd7febe4851bde4a97a889" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::LCR</definition>
+        <argsstring></argsstring>
+        <name>LCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Line control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_acdd06bacacbc2156e31b00e97f5c4b68_1acdd06bacacbc2156e31b00e97f5c4b68" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::MCR</definition>
+        <argsstring></argsstring>
+        <name>MCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modem control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="57" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a6444283340d62a1397a209a473a83efa_1a6444283340d62a1397a209a473a83efa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::LSR</definition>
+        <argsstring></argsstring>
+        <name>LSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Line Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="58" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a5b6ec374f087b4858f386cc7382c791b_1a5b6ec374f087b4858f386cc7382c791b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::MSR</definition>
+        <argsstring></argsstring>
+        <name>MSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modem status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="59" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_aa0ea47ef82ccca79fc7baeda69f3ace4_1aa0ea47ef82ccca79fc7baeda69f3ace4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SCRATCHPAD</definition>
+        <argsstring></argsstring>
+        <name>SCRATCHPAD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Uart scratch pad register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="60" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a9afabd664f0e8041d1510546e4dd571c_1a9afabd664f0e8041d1510546e4dd571c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::LPDLL</definition>
+        <argsstring></argsstring>
+        <name>LPDLL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Low Power Divisor Latch (Low) Reg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a366cfeba8c7591a0c2b98565a87f4095_1a366cfeba8c7591a0c2b98565a87f4095" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::LPDLH</definition>
+        <argsstring></argsstring>
+        <name>LPDLH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Low Power Divisor Latch (High) Reg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="62" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a0175fdb29dba69e89524d17e7f797d15_1a0175fdb29dba69e89524d17e7f797d15" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::RES1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RES1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="63" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_aa95b4fea274c894b24f18c45a1cf7ead_1aa95b4fea274c894b24f18c45a1cf7ead" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SHR[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>SHR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow data register(SRBR and STHR) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="64" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_aaa0ba926581de39b6babfadcaf8ae489_1aaa0ba926581de39b6babfadcaf8ae489" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::FAR</definition>
+        <argsstring></argsstring>
+        <name>FAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIFO Access register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="65" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a11e7b8d09badaf8e9f837ce1306f11e5_1a11e7b8d09badaf8e9f837ce1306f11e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::TFR</definition>
+        <argsstring></argsstring>
+        <name>TFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmit FIFO Read </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a2d3ba1c4df295e4ed03fc0e8ed24919f_1a2d3ba1c4df295e4ed03fc0e8ed24919f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::RFW</definition>
+        <argsstring></argsstring>
+        <name>RFW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive FIFO write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="67" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a0927fb033fd8d27780e817eae6b2f1a3_1a0927fb033fd8d27780e817eae6b2f1a3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::USR</definition>
+        <argsstring></argsstring>
+        <name>USR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART status register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="68" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a018f42eb3bebb177241ec4aee2a34b66_1a018f42eb3bebb177241ec4aee2a34b66" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::TFL</definition>
+        <argsstring></argsstring>
+        <name>TFL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmit FIFO level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="69" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a83fbd54ad5d1c527c1830886c0991c4b_1a83fbd54ad5d1c527c1830886c0991c4b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::RFL</definition>
+        <argsstring></argsstring>
+        <name>RFL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive FIFO level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="70" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a454987264b031f560df01f40121bdfe2_1a454987264b031f560df01f40121bdfe2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SRR</definition>
+        <argsstring></argsstring>
+        <name>SRR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Software reset register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a5ca80b1b24956dc98eb40c7dad7446c8_1a5ca80b1b24956dc98eb40c7dad7446c8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SRTS</definition>
+        <argsstring></argsstring>
+        <name>SRTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow request to send </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a7e09f08df28a029f2e70d58b10e85cd0_1a7e09f08df28a029f2e70d58b10e85cd0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SBCR</definition>
+        <argsstring></argsstring>
+        <name>SBCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow break control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="73" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_aa13f25876427bfc5255916b570dc13d9_1aa13f25876427bfc5255916b570dc13d9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SDMAM</definition>
+        <argsstring></argsstring>
+        <name>SDMAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow DMA mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="74" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a19ad9d78198f07e1e5fdf484cce77b41_1a19ad9d78198f07e1e5fdf484cce77b41" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SFE</definition>
+        <argsstring></argsstring>
+        <name>SFE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow FIFO enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="75" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a4829d3ef6bc30e8ed561d699dd26eea6_1a4829d3ef6bc30e8ed561d699dd26eea6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::SRT</definition>
+        <argsstring></argsstring>
+        <name>SRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow RCVR Trigger </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="76" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a14403be22b34610ec9aa2518485519c6_1a14403be22b34610ec9aa2518485519c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::STET</definition>
+        <argsstring></argsstring>
+        <name>STET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Shadow TX empty register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a681b97d38c2d20bc9120c4d16aac0292_1a681b97d38c2d20bc9120c4d16aac0292" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::HTX</definition>
+        <argsstring></argsstring>
+        <name>HTX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Halt TX </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="78" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a46638002951a9bd6e2a5069065f6efa2_1a46638002951a9bd6e2a5069065f6efa2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::DMASA</definition>
+        <argsstring></argsstring>
+        <name>DMASA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA Software ACK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="79" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_ab08b508d3f6016fb2acddaa75f6f37d2_1ab08b508d3f6016fb2acddaa75f6f37d2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::RES2[18]</definition>
+        <argsstring>[18]</argsstring>
+        <name>RES2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a9fb6547c256c3206d3d343c09061ecd0_1a9fb6547c256c3206d3d343c09061ecd0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::CPR</definition>
+        <argsstring></argsstring>
+        <name>CPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camponent parameter register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_a01947a71462c54bb6a6bf31fe1f44c4a_1a01947a71462c54bb6a6bf31fe1f44c4a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::UCV</definition>
+        <argsstring></argsstring>
+        <name>UCV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Component Version </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__REG_ae8a7663add3cd27899509a34466849a0_1ae8a7663add3cd27899509a34466849a0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_REG::CTR</definition>
+        <argsstring></argsstring>
+        <name>CTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Component typw register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="83" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for DesignWare UART register. </para>    </briefdescription>
+    <detaileddescription>
+<para>contains definitions of DesignWare UART register structure.</para><para>Structure type for DesignWare UART block register information, implementation </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="52" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="52" bodyend="84"/>
+    <listofallmembers>
+      <member refid="structDW__UART__REG_a9fb6547c256c3206d3d343c09061ecd0_1a9fb6547c256c3206d3d343c09061ecd0" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>CPR</name></member>
+      <member refid="structDW__UART__REG_ae8a7663add3cd27899509a34466849a0_1ae8a7663add3cd27899509a34466849a0" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>CTR</name></member>
+      <member refid="structDW__UART__REG_abaf92af860d2aa518ca8a3dbce2c038c_1abaf92af860d2aa518ca8a3dbce2c038c" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>DATA</name></member>
+      <member refid="structDW__UART__REG_a46638002951a9bd6e2a5069065f6efa2_1a46638002951a9bd6e2a5069065f6efa2" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>DMASA</name></member>
+      <member refid="structDW__UART__REG_aaa0ba926581de39b6babfadcaf8ae489_1aaa0ba926581de39b6babfadcaf8ae489" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>FAR</name></member>
+      <member refid="structDW__UART__REG_a681b97d38c2d20bc9120c4d16aac0292_1a681b97d38c2d20bc9120c4d16aac0292" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>HTX</name></member>
+      <member refid="structDW__UART__REG_a88ac74d7b15be384d32e7a496cd99f06_1a88ac74d7b15be384d32e7a496cd99f06" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>IER</name></member>
+      <member refid="structDW__UART__REG_aa4ad6108d5b70892b6e862751488b421_1aa4ad6108d5b70892b6e862751488b421" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>IIR</name></member>
+      <member refid="structDW__UART__REG_a1a7f793561bd7febe4851bde4a97a889_1a1a7f793561bd7febe4851bde4a97a889" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>LCR</name></member>
+      <member refid="structDW__UART__REG_a366cfeba8c7591a0c2b98565a87f4095_1a366cfeba8c7591a0c2b98565a87f4095" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>LPDLH</name></member>
+      <member refid="structDW__UART__REG_a9afabd664f0e8041d1510546e4dd571c_1a9afabd664f0e8041d1510546e4dd571c" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>LPDLL</name></member>
+      <member refid="structDW__UART__REG_a6444283340d62a1397a209a473a83efa_1a6444283340d62a1397a209a473a83efa" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>LSR</name></member>
+      <member refid="structDW__UART__REG_acdd06bacacbc2156e31b00e97f5c4b68_1acdd06bacacbc2156e31b00e97f5c4b68" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>MCR</name></member>
+      <member refid="structDW__UART__REG_a5b6ec374f087b4858f386cc7382c791b_1a5b6ec374f087b4858f386cc7382c791b" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>MSR</name></member>
+      <member refid="structDW__UART__REG_a0175fdb29dba69e89524d17e7f797d15_1a0175fdb29dba69e89524d17e7f797d15" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>RES1</name></member>
+      <member refid="structDW__UART__REG_ab08b508d3f6016fb2acddaa75f6f37d2_1ab08b508d3f6016fb2acddaa75f6f37d2" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>RES2</name></member>
+      <member refid="structDW__UART__REG_a83fbd54ad5d1c527c1830886c0991c4b_1a83fbd54ad5d1c527c1830886c0991c4b" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>RFL</name></member>
+      <member refid="structDW__UART__REG_a2d3ba1c4df295e4ed03fc0e8ed24919f_1a2d3ba1c4df295e4ed03fc0e8ed24919f" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>RFW</name></member>
+      <member refid="structDW__UART__REG_a7e09f08df28a029f2e70d58b10e85cd0_1a7e09f08df28a029f2e70d58b10e85cd0" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SBCR</name></member>
+      <member refid="structDW__UART__REG_aa0ea47ef82ccca79fc7baeda69f3ace4_1aa0ea47ef82ccca79fc7baeda69f3ace4" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SCRATCHPAD</name></member>
+      <member refid="structDW__UART__REG_aa13f25876427bfc5255916b570dc13d9_1aa13f25876427bfc5255916b570dc13d9" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SDMAM</name></member>
+      <member refid="structDW__UART__REG_a19ad9d78198f07e1e5fdf484cce77b41_1a19ad9d78198f07e1e5fdf484cce77b41" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SFE</name></member>
+      <member refid="structDW__UART__REG_aa95b4fea274c894b24f18c45a1cf7ead_1aa95b4fea274c894b24f18c45a1cf7ead" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SHR</name></member>
+      <member refid="structDW__UART__REG_a454987264b031f560df01f40121bdfe2_1a454987264b031f560df01f40121bdfe2" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SRR</name></member>
+      <member refid="structDW__UART__REG_a4829d3ef6bc30e8ed561d699dd26eea6_1a4829d3ef6bc30e8ed561d699dd26eea6" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SRT</name></member>
+      <member refid="structDW__UART__REG_a5ca80b1b24956dc98eb40c7dad7446c8_1a5ca80b1b24956dc98eb40c7dad7446c8" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>SRTS</name></member>
+      <member refid="structDW__UART__REG_a14403be22b34610ec9aa2518485519c6_1a14403be22b34610ec9aa2518485519c6" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>STET</name></member>
+      <member refid="structDW__UART__REG_a018f42eb3bebb177241ec4aee2a34b66_1a018f42eb3bebb177241ec4aee2a34b66" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>TFL</name></member>
+      <member refid="structDW__UART__REG_a11e7b8d09badaf8e9f837ce1306f11e5_1a11e7b8d09badaf8e9f837ce1306f11e5" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>TFR</name></member>
+      <member refid="structDW__UART__REG_a01947a71462c54bb6a6bf31fe1f44c4a_1a01947a71462c54bb6a6bf31fe1f44c4a" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>UCV</name></member>
+      <member refid="structDW__UART__REG_a0927fb033fd8d27780e817eae6b2f1a3_1a0927fb033fd8d27780e817eae6b2f1a3" prot="public" virt="non-virtual"><scope>DW_UART_REG</scope><name>USR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

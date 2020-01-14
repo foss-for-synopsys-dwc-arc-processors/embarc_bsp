@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__TRNG__REG" kind="struct" prot="public">
+    <compoundname>DW_TRNG_REG</compoundname>
+    <includes refid="dw__trng_8h" local="no">dw_trng.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__TRNG__REG_a1eec076b2245789b25cd5917c17627d7_1a1eec076b2245789b25cd5917c17627d7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::CTRL</definition>
+        <argsstring></argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="42" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_ad31d77166c38713d3621849dab96610e_1ad31d77166c38713d3621849dab96610e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::STAT</definition>
+        <argsstring></argsstring>
+        <name>STAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="43" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_abb60100e70123e959c366d28f9a3c166_1abb60100e70123e959c366d28f9a3c166" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::MODE</definition>
+        <argsstring></argsstring>
+        <name>MODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="44" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a8ad19ef5017706914f619083279fac08_1a8ad19ef5017706914f619083279fac08" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SMODE</definition>
+        <argsstring></argsstring>
+        <name>SMODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_ae0450f5a0c95ada5bb32f25980428853_1ae0450f5a0c95ada5bb32f25980428853" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::IE</definition>
+        <argsstring></argsstring>
+        <name>IE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="46" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a81372d6f3511b8f22f549c84d152286d_1a81372d6f3511b8f22f549c84d152286d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::ISTAT</definition>
+        <argsstring></argsstring>
+        <name>ISTAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="47" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a7fa76bdd5017ff41baf9f6cb74ccbff5_1a7fa76bdd5017ff41baf9f6cb74ccbff5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::COREKIT_REL</definition>
+        <argsstring></argsstring>
+        <name>COREKIT_REL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="48" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a81c522ad4fba7102b0555a83c833d60e_1a81c522ad4fba7102b0555a83c833d60e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::FEATURES</definition>
+        <argsstring></argsstring>
+        <name>FEATURES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="49" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_affbd62a3b2cd7461c2c4151241979553_1affbd62a3b2cd7461c2c4151241979553" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND0</definition>
+        <argsstring></argsstring>
+        <name>RAND0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_ad76a3f338fc569c9eae864fdf85fabc5_1ad76a3f338fc569c9eae864fdf85fabc5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND1</definition>
+        <argsstring></argsstring>
+        <name>RAND1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="51" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a980fdf2d1dcf3ab6aac949f4c6329117_1a980fdf2d1dcf3ab6aac949f4c6329117" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND2</definition>
+        <argsstring></argsstring>
+        <name>RAND2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="52" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_aaae68c1a058288762b58ca1e47b9ccde_1aaae68c1a058288762b58ca1e47b9ccde" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND3</definition>
+        <argsstring></argsstring>
+        <name>RAND3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="53" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a06158201e43bcbce1683ae40d037af28_1a06158201e43bcbce1683ae40d037af28" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND4</definition>
+        <argsstring></argsstring>
+        <name>RAND4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="54" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a0d2c64e3b93c971b05a169f6a0560f45_1a0d2c64e3b93c971b05a169f6a0560f45" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND5</definition>
+        <argsstring></argsstring>
+        <name>RAND5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="55" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_aca5e4c6475e1b2bf68362228de743589_1aca5e4c6475e1b2bf68362228de743589" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND6</definition>
+        <argsstring></argsstring>
+        <name>RAND6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a3dd452493a59c075ba28e753c1a6a5f4_1a3dd452493a59c075ba28e753c1a6a5f4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::RAND7</definition>
+        <argsstring></argsstring>
+        <name>RAND7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="57" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_afefd774adfd71faaa909624c133b6139_1afefd774adfd71faaa909624c133b6139" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED0</definition>
+        <argsstring></argsstring>
+        <name>SEED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="58" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_aa3e4434951f95fed9bbedb1fff40bcf2_1aa3e4434951f95fed9bbedb1fff40bcf2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED1</definition>
+        <argsstring></argsstring>
+        <name>SEED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="59" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_aa28c82a3af665f54c657e97aa996fe9f_1aa28c82a3af665f54c657e97aa996fe9f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED2</definition>
+        <argsstring></argsstring>
+        <name>SEED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="60" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_ac02dce5a39939c7a57cdac556658a932_1ac02dce5a39939c7a57cdac556658a932" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED3</definition>
+        <argsstring></argsstring>
+        <name>SEED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_acc7472c4881324c6e2164758cf7d2ad1_1acc7472c4881324c6e2164758cf7d2ad1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED4</definition>
+        <argsstring></argsstring>
+        <name>SEED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="62" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a392769cc15eb7cc6a88a33c22cbab39a_1a392769cc15eb7cc6a88a33c22cbab39a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED5</definition>
+        <argsstring></argsstring>
+        <name>SEED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="63" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_af43c9161efe2e382910b543b18c39358_1af43c9161efe2e382910b543b18c39358" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED6</definition>
+        <argsstring></argsstring>
+        <name>SEED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="64" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a267ef9ffd3fb2fdcf72a979bb378e251_1a267ef9ffd3fb2fdcf72a979bb378e251" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::SEED7</definition>
+        <argsstring></argsstring>
+        <name>SEED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="65" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a5fe3bb0740f54df61b5b6d5ff543dc57_1a5fe3bb0740f54df61b5b6d5ff543dc57" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::AUTO_RQSTS</definition>
+        <argsstring></argsstring>
+        <name>AUTO_RQSTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a5e1ad92b084ff6529b81de22db8ca72a_1a5e1ad92b084ff6529b81de22db8ca72a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::AUTO_AGE</definition>
+        <argsstring></argsstring>
+        <name>AUTO_AGE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="67" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__TRNG__REG_a3586ea4aa97f10a32e25e370d5087493_1a3586ea4aa97f10a32e25e370d5087493" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_TRNG_REG::BUILD_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>BUILD_CONFIG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="68" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" line="41" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_trng.h" bodystart="41" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structDW__TRNG__REG_a5e1ad92b084ff6529b81de22db8ca72a_1a5e1ad92b084ff6529b81de22db8ca72a" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>AUTO_AGE</name></member>
+      <member refid="structDW__TRNG__REG_a5fe3bb0740f54df61b5b6d5ff543dc57_1a5fe3bb0740f54df61b5b6d5ff543dc57" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>AUTO_RQSTS</name></member>
+      <member refid="structDW__TRNG__REG_a3586ea4aa97f10a32e25e370d5087493_1a3586ea4aa97f10a32e25e370d5087493" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>BUILD_CONFIG</name></member>
+      <member refid="structDW__TRNG__REG_a7fa76bdd5017ff41baf9f6cb74ccbff5_1a7fa76bdd5017ff41baf9f6cb74ccbff5" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>COREKIT_REL</name></member>
+      <member refid="structDW__TRNG__REG_a1eec076b2245789b25cd5917c17627d7_1a1eec076b2245789b25cd5917c17627d7" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>CTRL</name></member>
+      <member refid="structDW__TRNG__REG_a81c522ad4fba7102b0555a83c833d60e_1a81c522ad4fba7102b0555a83c833d60e" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>FEATURES</name></member>
+      <member refid="structDW__TRNG__REG_ae0450f5a0c95ada5bb32f25980428853_1ae0450f5a0c95ada5bb32f25980428853" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>IE</name></member>
+      <member refid="structDW__TRNG__REG_a81372d6f3511b8f22f549c84d152286d_1a81372d6f3511b8f22f549c84d152286d" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>ISTAT</name></member>
+      <member refid="structDW__TRNG__REG_abb60100e70123e959c366d28f9a3c166_1abb60100e70123e959c366d28f9a3c166" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>MODE</name></member>
+      <member refid="structDW__TRNG__REG_affbd62a3b2cd7461c2c4151241979553_1affbd62a3b2cd7461c2c4151241979553" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND0</name></member>
+      <member refid="structDW__TRNG__REG_ad76a3f338fc569c9eae864fdf85fabc5_1ad76a3f338fc569c9eae864fdf85fabc5" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND1</name></member>
+      <member refid="structDW__TRNG__REG_a980fdf2d1dcf3ab6aac949f4c6329117_1a980fdf2d1dcf3ab6aac949f4c6329117" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND2</name></member>
+      <member refid="structDW__TRNG__REG_aaae68c1a058288762b58ca1e47b9ccde_1aaae68c1a058288762b58ca1e47b9ccde" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND3</name></member>
+      <member refid="structDW__TRNG__REG_a06158201e43bcbce1683ae40d037af28_1a06158201e43bcbce1683ae40d037af28" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND4</name></member>
+      <member refid="structDW__TRNG__REG_a0d2c64e3b93c971b05a169f6a0560f45_1a0d2c64e3b93c971b05a169f6a0560f45" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND5</name></member>
+      <member refid="structDW__TRNG__REG_aca5e4c6475e1b2bf68362228de743589_1aca5e4c6475e1b2bf68362228de743589" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND6</name></member>
+      <member refid="structDW__TRNG__REG_a3dd452493a59c075ba28e753c1a6a5f4_1a3dd452493a59c075ba28e753c1a6a5f4" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>RAND7</name></member>
+      <member refid="structDW__TRNG__REG_afefd774adfd71faaa909624c133b6139_1afefd774adfd71faaa909624c133b6139" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED0</name></member>
+      <member refid="structDW__TRNG__REG_aa3e4434951f95fed9bbedb1fff40bcf2_1aa3e4434951f95fed9bbedb1fff40bcf2" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED1</name></member>
+      <member refid="structDW__TRNG__REG_aa28c82a3af665f54c657e97aa996fe9f_1aa28c82a3af665f54c657e97aa996fe9f" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED2</name></member>
+      <member refid="structDW__TRNG__REG_ac02dce5a39939c7a57cdac556658a932_1ac02dce5a39939c7a57cdac556658a932" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED3</name></member>
+      <member refid="structDW__TRNG__REG_acc7472c4881324c6e2164758cf7d2ad1_1acc7472c4881324c6e2164758cf7d2ad1" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED4</name></member>
+      <member refid="structDW__TRNG__REG_a392769cc15eb7cc6a88a33c22cbab39a_1a392769cc15eb7cc6a88a33c22cbab39a" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED5</name></member>
+      <member refid="structDW__TRNG__REG_af43c9161efe2e382910b543b18c39358_1af43c9161efe2e382910b543b18c39358" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED6</name></member>
+      <member refid="structDW__TRNG__REG_a267ef9ffd3fb2fdcf72a979bb378e251_1a267ef9ffd3fb2fdcf72a979bb378e251" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SEED7</name></member>
+      <member refid="structDW__TRNG__REG_a8ad19ef5017706914f619083279fac08_1a8ad19ef5017706914f619083279fac08" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>SMODE</name></member>
+      <member refid="structDW__TRNG__REG_ad31d77166c38713d3621849dab96610e_1ad31d77166c38713d3621849dab96610e" prot="public" virt="non-virtual"><scope>DW_TRNG_REG</scope><name>STAT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

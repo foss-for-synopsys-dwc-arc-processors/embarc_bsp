@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__I2S__WORKING__STATE" kind="group">
+    <compoundname>I2S_WORKING_STATE</compoundname>
+    <title>I2S Working State</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__I2S__WORKING__STATE_1gab5011ec947a4bed263cbb79c8d940a39" prot="public" static="no">
+        <name>I2S_WORKING_STATE</name>
+        <enumvalue id="group__I2S__WORKING__STATE_gab5011ec947a4bed263cbb79c8d940a39_1ggab5011ec947a4bed263cbb79c8d940a39a7e0bd35eae6fd8994aa85f69c2692777" prot="public">
+          <name>I2S_FREE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in I2S device free state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__WORKING__STATE_gab5011ec947a4bed263cbb79c8d940a39_1ggab5011ec947a4bed263cbb79c8d940a39a72959205b5463e7315287fc6f0468aa7" prot="public">
+          <name>I2S_IN_TX</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in I2S master transmit state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__WORKING__STATE_gab5011ec947a4bed263cbb79c8d940a39_1ggab5011ec947a4bed263cbb79c8d940a39af22c2ba1386c443582947c7984b5af0d" prot="public">
+          <name>I2S_IN_RX</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Currently in I2S master receive state </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="111" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for I2S working state. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

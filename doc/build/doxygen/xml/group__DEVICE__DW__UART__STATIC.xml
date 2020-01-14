@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__DW__UART__STATIC" kind="group">
+    <compoundname>DEVICE_DW_UART_STATIC</compoundname>
+    <title>DesignWare UART Driver Static Functions</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__DEVICE__DW__UART__STATIC_1gacde67c4589b7545d916585f051bc2cdf" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t dw_uart_databits[]</definition>
+        <argsstring>[]</argsstring>
+        <name>dw_uart_databits</name>
+        <initializer>= {		      
+	<ref refid="dw__uart__hal_8h_a85c5919c361c5cb9a488020967fe07a9_1a85c5919c361c5cb9a488020967fe07a9" kindref="member">DW_UART_LCR_WORD_LEN5</ref>, <ref refid="dw__uart__hal_8h_a2d99211e3ab859fe4c08b583c52d5705_1a2d99211e3ab859fe4c08b583c52d5705" kindref="member">DW_UART_LCR_WORD_LEN6</ref>, 
+	<ref refid="dw__uart__hal_8h_a072b7d1c17fda024745cd8ea6872b1c2_1a072b7d1c17fda024745cd8ea6872b1c2" kindref="member">DW_UART_LCR_WORD_LEN7</ref>, <ref refid="dw__uart__hal_8h_a5a6cfacdd9cf0f2cfa95496d7dbcf25d_1a5a6cfacdd9cf0f2cfa95496d7dbcf25d" kindref="member">DW_UART_LCR_WORD_LEN8</ref>
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__DW__UART__STATIC_1ga556033b93cfcc60100dc0fe792b84bf4" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t dw_uart_parity[]</definition>
+        <argsstring>[]</argsstring>
+        <name>dw_uart_parity</name>
+        <initializer>= {
+	<ref refid="dw__uart__hal_8h_ab56fa38d1e9dbd810ee23433722cfe02_1ab56fa38d1e9dbd810ee23433722cfe02" kindref="member">DW_UART_LCR_PARITY_NONE</ref>, <ref refid="dw__uart__hal_8h_a9e39ac1683bdf23f8aa9bb5fa36ae2a7_1a9e39ac1683bdf23f8aa9bb5fa36ae2a7" kindref="member">DW_UART_LCR_PARITY_ODD</ref>,
+	<ref refid="dw__uart__hal_8h_a349b0fa4b89500d8c9c2a9ca3ddff368_1a349b0fa4b89500d8c9c2a9ca3ddff368" kindref="member">DW_UART_LCR_PARITY_EVEN</ref>, <ref refid="dw__uart__hal_8h_a235dccbc3c9ab9ead3eaa94b94aafd4b_1a235dccbc3c9ab9ead3eaa94b94aafd4b" kindref="member">DW_UART_LCR_PARITY_MASK</ref>,
+	<ref refid="dw__uart__hal_8h_a0af71701dad61a2736dd154807542ced_1a0af71701dad61a2736dd154807542ced" kindref="member">DW_UART_LCR_PARITY_SPACE</ref>
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="75" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__DEVICE__DW__UART__STATIC_1gaa85824a21e026ecebca6cd01f36a59a3" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t dw_uart_stopbits[]</definition>
+        <argsstring>[]</argsstring>
+        <name>dw_uart_stopbits</name>
+        <initializer>= {
+	<ref refid="dw__uart__hal_8h_ac8af6809d02f69c738786e2056dfd96a_1ac8af6809d02f69c738786e2056dfd96a" kindref="member">DW_UART_LCR_1_STOP_BIT</ref>, <ref refid="dw__uart__hal_8h_a4c44b27c9a1aeb87004836c2b314d30e_1a4c44b27c9a1aeb87004836c2b314d30e" kindref="member">DW_UART_LCR_1D5_STOP_BIT</ref>,
+	<ref refid="dw__uart__hal_8h_a1278fe4f2cf57fd541bfe51d0396d606_1a1278fe4f2cf57fd541bfe51d0396d606" kindref="member">DW_UART_LCR_2_STOP_BIT</ref>
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga5e9dba55767cdfd596f0d6fbe50d6abd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_uart_putready</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_putready</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Test whether uart is ready to send, 1 ready, 0 not ready. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="89" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="89" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga95b7911597cd9d386ed99f6ff5a437ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_uart_getready</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_getready</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Test whether uart is ready to receive, 1 ready, 0 not ready. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="102" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gac4344753a1f1cf3f87540d466620ddcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_uart_putchar</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, char chr)</argsstring>
+        <name>dw_uart_putchar</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chr</declname>
+        </param>
+        <briefdescription>
+<para>Write char to uart send fifo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga2913d268fd216616d9505d298c71cc04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_uart_getchar</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_getchar</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Read data from uart receive fifo, return data received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gac26364738ccf1f597263134b1dfe2745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_uart_snd_chr</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, char chr)</argsstring>
+        <name>dw_uart_snd_chr</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chr</declname>
+        </param>
+        <briefdescription>
+<para>Send char through designware uart when available, mostly used in interrupt method, non-blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">chr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char to sent </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Send successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not ready to send data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="137" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="137" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gabd19876c103c437f1968c06b709bc3b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_uart_rcv_chr</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_rcv_chr</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Receive one char through designware uart, mostly used in interrupt routine, non-blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data received </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="152" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga9a633aef423657a3b131e2273d01733d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_uart_psnd_chr</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, char chr)</argsstring>
+        <name>dw_uart_psnd_chr</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>chr</declname>
+        </param>
+        <briefdescription>
+<para>Send char through designware uart in poll method, blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">chr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Char to sent </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>wait until uart is ready to send</para><para>send char </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="162" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="162" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga7eef85dc8a52cea140f647e4ab027e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_uart_prcv_chr</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_prcv_chr</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Receive one char through designware uart in poll method, blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data received </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>wait until uart is ready to receive</para><para>receive data </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="177" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="177" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gaacbe47fcc6fd08b7b9aaa0581fd11b8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_set_dps</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, UART_DPS_FORMAT *dps)</argsstring>
+        <name>dw_uart_set_dps</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structUART__DPS__FORMAT" kindref="compound">UART_DPS_FORMAT</ref> *</type>
+          <declname>dps</declname>
+        </param>
+        <briefdescription>
+<para>Set designware uart DPS value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data bits/parity bit/stop bits parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set ok </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>!0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="194" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="194" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga80f4fd4e33a6e7758998c8562290a76e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_set_baud</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, uint32_t baud_divisor)</argsstring>
+        <name>dw_uart_set_baud</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud_divisor</declname>
+        </param>
+        <briefdescription>
+<para>Set designware uart baudrate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baud_divisor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart baudrate divisor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>setting uart baudrate registers</para><para>&lt; DLL</para><para>&lt; DLH</para><para>disable DLAB </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="228" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="228" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gaadfe5d51541bc2fb962107355c8231bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_uart_software_reset</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_software_reset</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Do uart software reset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="246" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="246" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gab528eba58066212798ba5fcedfbfa6de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_set_hwfc</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, UART_HW_FLOW_CONTROL hwfc)</argsstring>
+        <name>dw_uart_set_hwfc</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" kindref="member">UART_HW_FLOW_CONTROL</ref></type>
+          <declname>hwfc</declname>
+        </param>
+        <briefdescription>
+<para>Set designware uart baudrate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hwfc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart hardware flow control type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Need to set corresponding pin functions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="260" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="260" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga75dc17b8200d755deb873719f450f591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>Inline void dw_uart_set_break</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_set_break</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="276" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gaaf4185afdab471643293981fab2021a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_uart_clr_break</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr)</argsstring>
+        <name>dw_uart_clr_break</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="284" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga2e6916f0af485cf8578374b0c6cb95eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_init</definition>
+        <argsstring>(DW_UART_REG *uart_reg_ptr, uint32_t baud_divisor, UART_DPS_FORMAT *dps, UART_HW_FLOW_CONTROL hwfc)</argsstring>
+        <name>dw_uart_init</name>
+        <param>
+          <type><ref refid="structDW__UART__REG" kindref="compound">DW_UART_REG</ref> *</type>
+          <declname>uart_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud_divisor</declname>
+        </param>
+        <param>
+          <type><ref refid="structUART__DPS__FORMAT" kindref="compound">UART_DPS_FORMAT</ref> *</type>
+          <declname>dps</declname>
+        </param>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" kindref="member">UART_HW_FLOW_CONTROL</ref></type>
+          <declname>hwfc</declname>
+        </param>
+        <briefdescription>
+<para>Initialise designware uart with selected baud rate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">baud_divisor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart databits/parity/stopbits </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">hwfc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart flow control method </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>enable uart fifo (FCR IIR is the same)</para><para>disable all uart interrupt </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="296" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="296" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga296ed0af981331eed09ff311cf9b17e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_flush_output</definition>
+        <argsstring>(DEV_UART_INFO *uart_info_ptr)</argsstring>
+        <name>dw_uart_flush_output</name>
+        <param>
+          <type><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+          <declname>uart_info_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set designware uart baud rate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uart_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart information structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="312" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="312" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga996db08e5110d96068b8bee2f1108bfa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_dis_cbr</definition>
+        <argsstring>(DEV_UART_INFO *uart_info_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_uart_dis_cbr</name>
+        <param>
+          <type><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+          <declname>uart_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware uart send or receive interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart information structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbrtn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control code of callback routine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="346" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="346" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga34b6916c9c6d6336d813a95986d6beac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_ena_cbr</definition>
+        <argsstring>(DEV_UART_INFO *uart_info_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_uart_ena_cbr</name>
+        <param>
+          <type><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+          <declname>uart_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare UART send or receive interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart information structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbrtn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control code of callback routine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="378" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="378" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gab989ee3c9df5d9163650670273df8283" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_disable_interrupt</definition>
+        <argsstring>(DEV_UART_INFO *uart_info_ptr)</argsstring>
+        <name>dw_uart_disable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+          <declname>uart_info_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware uart interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uart_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Uart information structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>disable uart send&amp;receive interrupt after disable uart interrupt</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="409" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="409" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gac84e8d6126193d255334f825885681ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_enable_device</definition>
+        <argsstring>(DEV_UART_INFO *uart_info_ptr)</argsstring>
+        <name>dw_uart_enable_device</name>
+        <param>
+          <type><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+          <declname>uart_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable designware uart </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="424" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="424" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga6dd5da5a303245d2c1a95564d8cbe980" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_disable_device</definition>
+        <argsstring>(DEV_UART_INFO *uart_info_ptr)</argsstring>
+        <name>dw_uart_disable_device</name>
+        <param>
+          <type><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+          <declname>uart_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable designware uart </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="436" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="436" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga74b2995571a4daecb84808b56a12e3e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_abort_tx</definition>
+        <argsstring>(DEV_UART *uart_obj)</argsstring>
+        <name>dw_uart_abort_tx</name>
+        <param>
+          <type><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref> *</type>
+          <declname>uart_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt transmit transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="448" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="448" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1ga17cb2aa3d8fa1de710018838f34b2da6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_abort_rx</definition>
+        <argsstring>(DEV_UART *uart_obj)</argsstring>
+        <name>dw_uart_abort_rx</name>
+        <param>
+          <type><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref> *</type>
+          <declname>uart_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt receive transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="464" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="464" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gad3d9c1f9d9820d9358be93c1dbc95fe6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_get_txavail</definition>
+        <argsstring>(DW_UART_CTRL *uart_ctrl_ptr)</argsstring>
+        <name>dw_uart_get_txavail</name>
+        <param>
+          <type><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref> *</type>
+          <declname>uart_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get available transmit fifo count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="480" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="480" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__UART__STATIC_1gaac62cb6213fa0e985e4da95ef4270aa2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_get_rxavail</definition>
+        <argsstring>(DW_UART_CTRL *uart_ctrl_ptr)</argsstring>
+        <name>dw_uart_get_rxavail</name>
+        <param>
+          <type><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref> *</type>
+          <declname>uart_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get available receive fifo count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" line="498" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c" bodystart="498" bodyend="513"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static or inline functions, variables for DesignWare UART handle UART operations, only used in this file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

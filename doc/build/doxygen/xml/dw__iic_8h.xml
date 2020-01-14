@@ -1,0 +1,1126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__iic_8h" kind="file">
+    <compoundname>dw_iic.h</compoundname>
+    <includes refid="dev__iic_8h" local="yes">device/ip_hal/dev_iic.h</includes>
+    <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
+    <includedby refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c</includedby>
+    <includedby refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c</includedby>
+    <includedby refid="dw__iic_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c</includedby>
+    <incdepgraph>
+      <node id="4178">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4174">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4175" relation="include">
+        </childnode>
+        <childnode refid="4176" relation="include">
+        </childnode>
+        <childnode refid="4177" relation="include">
+        </childnode>
+        <childnode refid="4178" relation="include">
+        </childnode>
+      </node>
+      <node id="4171">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h</label>
+        <link refid="dw_iic.h"/>
+        <childnode refid="4172" relation="include">
+        </childnode>
+        <childnode refid="4179" relation="include">
+        </childnode>
+      </node>
+      <node id="4175">
+        <label>stdint.h</label>
+      </node>
+      <node id="4177">
+        <label>stddef.h</label>
+      </node>
+      <node id="4181">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4182" relation="include">
+        </childnode>
+      </node>
+      <node id="4176">
+        <label>limits.h</label>
+      </node>
+      <node id="4182">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4173">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="4174" relation="include">
+        </childnode>
+      </node>
+      <node id="4179">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="4180" relation="include">
+        </childnode>
+      </node>
+      <node id="4180">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4174" relation="include">
+        </childnode>
+        <childnode refid="4181" relation="include">
+        </childnode>
+      </node>
+      <node id="4172">
+        <label>device/ip_hal/dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="4173" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4183">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h</label>
+        <link refid="dw_iic.h"/>
+        <childnode refid="4184" relation="include">
+        </childnode>
+        <childnode refid="4185" relation="include">
+        </childnode>
+        <childnode refid="4186" relation="include">
+        </childnode>
+      </node>
+      <node id="4184">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="4186">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c</label>
+        <link refid="dw__iic_8c"/>
+      </node>
+      <node id="4185">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structDW__IIC__REG" prot="public">DW_IIC_REG</innerclass>
+    <innerclass refid="structDW__IIC__SPKLEN" prot="public">DW_IIC_SPKLEN</innerclass>
+    <innerclass refid="structDW__IIC__SCL__CNT" prot="public">DW_IIC_SCL_CNT</innerclass>
+    <innerclass refid="structDW__IIC__BUFFER" prot="public">DW_IIC_BUFFER</innerclass>
+    <innerclass refid="structDW__IIC__CTRL" prot="public">DW_IIC_CTRL</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__iic_8h_a686d1aba51aa9ce63427a18efade41d9_1a686d1aba51aa9ce63427a18efade41d9" prot="public" static="no">
+        <name>DEVICE_USE_DESIGNWARE_IIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this header file is included, will indicate that this designware iic device is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="42" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_acfcefe0d62276098440b81c0216b0466_1acfcefe0d62276098440b81c0216b0466" prot="public" static="no">
+        <name>DW_IIC_MASTER_SUPPORTED</name>
+        <initializer>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware IIC Master Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="44" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a857d13cb0b37e0aa5efdfd886f5d859f_1a857d13cb0b37e0aa5efdfd886f5d859f" prot="public" static="no">
+        <name>DW_IIC_SLAVE_SUPPORTED</name>
+        <initializer>(0x2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware IIC Slave Mode Support Designware IIC Both Master and Slave Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="45" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_aadca31a022beb763a4e256c264f6bb2f_1aadca31a022beb763a4e256c264f6bb2f" prot="public" static="no">
+        <name>DW_IIC_BOTH_SUPPORTED</name>
+        <initializer>(<ref refid="dw__iic_8h_acfcefe0d62276098440b81c0216b0466_1acfcefe0d62276098440b81c0216b0466" kindref="member">DW_IIC_MASTER_SUPPORTED</ref> | <ref refid="dw__iic_8h_a857d13cb0b37e0aa5efdfd886f5d859f_1a857d13cb0b37e0aa5efdfd886f5d859f" kindref="member">DW_IIC_SLAVE_SUPPORTED</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="47" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_af32a3a4ac37235611cd4c81a0a58f635_1af32a3a4ac37235611cd4c81a0a58f635" prot="public" static="no">
+        <name>DW_IIC_INVALID_INTNO</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__COMMON_ga1c959a409ad6e952dc79b876f8e9b861_1ga1c959a409ad6e952dc79b876f8e9b861" kindref="member">DEV_INTNO_INVALID</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="49" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_ad147fb4d3e48ce1d0df6bd14ccfb975a_1ad147fb4d3e48ce1d0df6bd14ccfb975a" prot="public" static="no">
+        <name>DW_IIC_GINT_DISABLED</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware interrupt disabled for control iic irq/fiq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="130" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_ab0509ef4816530066c19a6ae16179c2a_1ab0509ef4816530066c19a6ae16179c2a" prot="public" static="no">
+        <name>DW_IIC_GINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware interrupt enabled for control iic irq/fiq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="131" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_aff63376ae7c2948cc57d99bc87dc15e2_1aff63376ae7c2948cc57d99bc87dc15e2" prot="public" static="no">
+        <name>DW_IIC_TXINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware interrupt enabled for control transmit process </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="132" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a5dc29a268b2193cc94e214dd84f6ad6b_1a5dc29a268b2193cc94e214dd84f6ad6b" prot="public" static="no">
+        <name>DW_IIC_RXINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware interrupt enabled for control transmit process </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="133" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a49faa4ff35ed5bebe06df813faecfb33_1a49faa4ff35ed5bebe06df813faecfb33" prot="public" static="no">
+        <name>DW_IIC_MAX_RETRY_COUNT</name>
+        <initializer>(100000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="167" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a2d70e8169a5755c6ede481976d3d061b_1a2d70e8169a5755c6ede481976d3d061b" prot="public" static="no">
+        <name>DW_IIC_FS_SPKLEN_NS</name>
+        <initializer>(50)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="169" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_af7e9ead716f17c1c151dbc3e913b4c94_1af7e9ead716f17c1c151dbc3e913b4c94" prot="public" static="no">
+        <name>DW_IIC_HS_SPKLEN_NS</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="170" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a2c11f51301cd3bfba1a128f9fa275c84_1a2c11f51301cd3bfba1a128f9fa275c84" prot="public" static="no">
+        <name>MIN_DW_IIC_SS_SCL_LCNT</name>
+        <param><defname>spklen</defname></param>
+        <initializer>((spklen) + 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="172" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a1b49a7c24b2193e0655545f576071e1b_1a1b49a7c24b2193e0655545f576071e1b" prot="public" static="no">
+        <name>MIN_DW_IIC_FS_SCL_LCNT</name>
+        <param><defname>spklen</defname></param>
+        <initializer>((spklen) + 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="173" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a1dd1a6f773a16d4877795f0fdcde32b0_1a1dd1a6f773a16d4877795f0fdcde32b0" prot="public" static="no">
+        <name>MIN_DW_IIC_SS_SCL_HCNT</name>
+        <param><defname>spklen</defname></param>
+        <initializer>((spklen) + 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="175" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_adda1838221c0e8887f6caaf10d266b99_1adda1838221c0e8887f6caaf10d266b99" prot="public" static="no">
+        <name>MIN_DW_IIC_FS_SCL_HCNT</name>
+        <param><defname>spklen</defname></param>
+        <initializer>((spklen) + 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="176" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_adcf025566047a9df9a17c78f42980460_1adcf025566047a9df9a17c78f42980460" prot="public" static="no">
+        <name>MIN_DW_IIC_HS_SCL_LCNT</name>
+        <param><defname>spklen</defname></param>
+        <initializer>((spklen) + 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="178" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a3933c11c2ae2a6ca5ff1482aa7558fd8_1a3933c11c2ae2a6ca5ff1482aa7558fd8" prot="public" static="no">
+        <name>MIN_DW_IIC_HS_SCL_HCNT</name>
+        <param><defname>spklen</defname></param>
+        <initializer>((spklen) + 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="179" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a2faf2c304ba2f92c8bb0e9f1990ef3b0_1a2faf2c304ba2f92c8bb0e9f1990ef3b0" prot="public" static="no">
+        <name>MIN_DW_IIC_SS_HIGH_TIME_NS</name>
+        <initializer>(4000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="181" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_aba218611406987e29961c41de4954d01_1aba218611406987e29961c41de4954d01" prot="public" static="no">
+        <name>MIN_DW_IIC_SS_LOW_TIME_NS</name>
+        <initializer>(4700)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="182" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_af7b05e4873b374b4b67a0ad16a2c1326_1af7b05e4873b374b4b67a0ad16a2c1326" prot="public" static="no">
+        <name>MIN_DW_IIC_FS_HIGH_TIME_NS</name>
+        <initializer>(600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="184" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a064fc04b81a52069409c8d938be4c8a4_1a064fc04b81a52069409c8d938be4c8a4" prot="public" static="no">
+        <name>MIN_DW_IIC_FS_LOW_TIME_NS</name>
+        <initializer>(1300)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="185" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a0d5e69e1e2c60e93e85d250547b55d27_1a0d5e69e1e2c60e93e85d250547b55d27" prot="public" static="no">
+        <name>MIN_DW_IIC_HS_100PF_HIGH_TIME_NS</name>
+        <initializer>(60)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="187" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a877686cd5597e7c567a2f2b6a8eac012_1a877686cd5597e7c567a2f2b6a8eac012" prot="public" static="no">
+        <name>MIN_DW_IIC_HS_100PF_LOW_TIME_NS</name>
+        <initializer>(160)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="188" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_ac94981d0bc25a25531820d32362c548a_1ac94981d0bc25a25531820d32362c548a" prot="public" static="no">
+        <name>MIN_DW_IIC_HS_400PF_HIGH_TIME_NS</name>
+        <initializer>(120)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="190" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__iic_8h_a770dbb3cd985f1a2aff1e1cfc912eb36_1a770dbb3cd985f1a2aff1e1cfc912eb36" prot="public" static="no">
+        <name>MIN_DW_IIC_HS_400PF_LOW_TIME_NS</name>
+        <initializer>(320)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="191" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7a7511537256969b4e432d679580fd1da4" prot="public">
+          <name>DW_IIC_CAP_LOADING_100PF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7af2d42f77a3c4483d26bdab58689242ea" prot="public">
+          <name>DW_IIC_CAP_LOADING_400PF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="51" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__DW__IIC__REGSTRUCT_ga020f5eaf202907b5a4e1b8b60afb2e57_1ga020f5eaf202907b5a4e1b8b60afb2e57" prot="public" static="no">
+        <type>struct <ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+        <definition>typedef  struct DW_IIC_REG * DW_IIC_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_IIC_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__iic_8h_a90b82078f04ec675944082d260ba7679_1a90b82078f04ec675944082d260ba7679" prot="public" static="no">
+        <type>struct <ref refid="structDW__IIC__SPKLEN" kindref="compound">DW_IIC_SPKLEN</ref> *</type>
+        <definition>typedef  struct DW_IIC_SPKLEN * DW_IIC_SPKLEN_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_IIC_SPKLEN_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__iic_8h_a807c7dde260f60e364126c3bd743658b_1a807c7dde260f60e364126c3bd743658b" prot="public" static="no">
+        <type>struct <ref refid="structDW__IIC__SCL__CNT" kindref="compound">DW_IIC_SCL_CNT</ref> *</type>
+        <definition>typedef  struct DW_IIC_SCL_CNT * DW_IIC_SCL_CNT_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_IIC_SCL_CNT_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__iic_8h_a7a86b18895fae6230ab64147fd4ce849_1a7a86b18895fae6230ab64147fd4ce849" prot="public" static="no">
+        <type>struct <ref refid="structDW__IIC__BUFFER" kindref="compound">DW_IIC_BUFFER</ref> *</type>
+        <definition>typedef  struct DW_IIC_BUFFER * DW_IIC_BUFFER_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_IIC_BUFFER_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__iic_8h_aabc76865f4f9841179605f40d6df508b_1aabc76865f4f9841179605f40d6df508b" prot="public" static="no">
+        <type>struct <ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+        <definition>typedef  struct DW_IIC_CTRL * DW_IIC_CTRL_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_IIC_CTRL_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One possible value for <ref refid="structDW__IIC__CTRL_a3f3143450fae89dac4bfad61c9848345_1a3f3143450fae89dac4bfad61c9848345" kindref="member">DW_IIC_CTRL::retry_cnt</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="166" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_gad75471c3a8e98385a58d6b887316f8f5_1gad75471c3a8e98385a58d6b887316f8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_open</definition>
+        <argsstring>(DEV_IIC *iic_obj, uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_iic_open</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Open a designware iic device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC working mode (master or slave) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When mode is <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_ga9b1ad5abdf677288f655dd4bc9dc188d_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">DEV_MASTER_MODE</ref>, param stands for <ref refid="structDEV__IIC__INFO_a213aa9047e646054a94eb9b01511ef4b_1a213aa9047e646054a94eb9b01511ef4b" kindref="member">speed mode</ref>, when mode is <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_gaf070489d9f19e9000cb9700bb859a079_1gaf070489d9f19e9000cb9700bb859a079" kindref="member">DEV_SLAVE_MODE</ref>, param stands for <ref refid="structDEV__IIC__INFO_a02c5b22bcf451165a97a194dc425e6a4_1a02c5b22bcf451165a97a194dc425e6a4" kindref="member">slave device 7bit address</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structDEV__IIC__INFO_a9fecc198c59fa4714eaec0cbbf8ac7c7_1a9fecc198c59fa4714eaec0cbbf8ac7c7" kindref="member">opn_cnt</ref> and return <ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is opened for different mode before, if you want to open it with different mode, you need to fully close it first. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Check opened before use case</para><para>install iic interrupt into system </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="197" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1248" bodyend="1342"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_ga0d998694893c2cb383ff14e0d0bb7fc7_1ga0d998694893c2cb383ff14e0d0bb7fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_close</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_close</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+<para>Close a DesignWare IIC device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including secenary that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__IIC__INFO_a9fecc198c59fa4714eaec0cbbf8ac7c7_1a9fecc198c59fa4714eaec0cbbf8ac7c7" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="198" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1351" bodyend="1379"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_ga9b0726e986686e7279abb1c4005ce93d_1ga9b0726e986686e7279abb1c4005ce93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_control</definition>
+        <argsstring>(DEV_IIC *iic_obj, uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_iic_control</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Control iic by ctrl command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__DEVICE__HAL__IIC__CTRLCMD" kindref="compound">control command</ref>, to change or get some thing related to iic </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters that maybe argument of the command, or return values of the command, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>to receive unsigned int value</para><para>When device is disabled, only IIC_CMD_ENA_DEV, IIC_CMD_DIS_DEV, IIC_CMD_GET_STATUS, IIC_CMD_RESET are available, other commands will return E_SYS</para><para>&lt; ready to send callback</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="199" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1395" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_ga303d46be4dadd7fedf77e96e1144d14e_1ga303d46be4dadd7fedf77e96e1144d14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_write</definition>
+        <argsstring>(DEV_IIC *iic_obj, const void *data, uint32_t len)</argsstring>
+        <name>dw_iic_write</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Poll transmit data through DesignWare IIC as master or slave. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send (data must be uint8_t type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length to send </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully sent for poll method, it might can&apos;t send that much due to <ref refid="structDEV__IIC__INFO_a595a6d037fbfd9d715e94730c113e8a6_1a595a6d037fbfd9d715e94730c113e8a6" kindref="member">different error state</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t write data to hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="200" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1616" bodyend="1673"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_ga4f612550978cf8c1543325ed9b4a5dbd_1ga4f612550978cf8c1543325ed9b4a5dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_read</definition>
+        <argsstring>(DEV_IIC *iic_obj, void *data, uint32_t len)</argsstring>
+        <name>dw_iic_read</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Read data through DesignWare IIC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data that need to read (data must be uint8_t type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length need to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully received for poll method, it might can&apos;t send that much due to <ref refid="structDEV__IIC__INFO_a595a6d037fbfd9d715e94730c113e8a6_1a595a6d037fbfd9d715e94730c113e8a6" kindref="member">different error state</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="201" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1687" bodyend="1750"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_gacd0ef0be9b50cb36286b1ec5ca663d64_1gacd0ef0be9b50cb36286b1ec5ca663d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_iic_isr</definition>
+        <argsstring>(DEV_IIC *iic_obj, void *ptr)</argsstring>
+        <name>dw_iic_isr</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>DesignWare IIC interrupt processing handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extra information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h" line="202" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1757" bodyend="1778"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_DW_IIC</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_DW_IIC</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__iic_8h" kindref="compound">device/ip_hal/dev_iic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc/arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="dw__iic_8h_a686d1aba51aa9ce63427a18efade41d9_1a686d1aba51aa9ce63427a18efade41d9" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_USE_DESIGNWARE_IIC</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="dw__iic_8h_acfcefe0d62276098440b81c0216b0466_1acfcefe0d62276098440b81c0216b0466" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_MASTER_SUPPORTED<sp/><sp/><sp/><sp/><sp/>(0x1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="dw__iic_8h_a857d13cb0b37e0aa5efdfd886f5d859f_1a857d13cb0b37e0aa5efdfd886f5d859f" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_SLAVE_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/>(0x2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="dw__iic_8h_aadca31a022beb763a4e256c264f6bb2f_1aadca31a022beb763a4e256c264f6bb2f" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_BOTH_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_IIC_MASTER_SUPPORTED<sp/>|<sp/>DW_IIC_SLAVE_SUPPORTED)</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="dw__iic_8h_af32a3a4ac37235611cd4c81a0a58f635_1af32a3a4ac37235611cd4c81a0a58f635" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_INVALID_INTNO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DEV_INTNO_INVALID)</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7a7511537256969b4e432d679580fd1da4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7a7511537256969b4e432d679580fd1da4" kindref="member">DW_IIC_CAP_LOADING_100PF</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="53" refid="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7af2d42f77a3c4483d26bdab58689242ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__iic_8h_adf764cbdea00d65edcd07bb9953ad2b7_1adf764cbdea00d65edcd07bb9953ad2b7af2d42f77a3c4483d26bdab58689242ea" kindref="member">DW_IIC_CAP_LOADING_400PF</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structDW__IIC__REG" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65" refid="structDW__IIC__REG_adb55c038ce60496df09ed58c88efccd4_1adb55c038ce60496df09ed58c88efccd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_adb55c038ce60496df09ed58c88efccd4_1adb55c038ce60496df09ed58c88efccd4" kindref="member">IC_CON</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="structDW__IIC__REG_a47c757085d3bd458b9b4c3f35df6d1f6_1a47c757085d3bd458b9b4c3f35df6d1f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a47c757085d3bd458b9b4c3f35df6d1f6_1a47c757085d3bd458b9b4c3f35df6d1f6" kindref="member">IC_TAR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="structDW__IIC__REG_a891360debe964b38d9989dcf2720f5be_1a891360debe964b38d9989dcf2720f5be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a891360debe964b38d9989dcf2720f5be_1a891360debe964b38d9989dcf2720f5be" kindref="member">IC_SAR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="structDW__IIC__REG_aa3fd3dab3deee27569238d9960b8a0ca_1aa3fd3dab3deee27569238d9960b8a0ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_aa3fd3dab3deee27569238d9960b8a0ca_1aa3fd3dab3deee27569238d9960b8a0ca" kindref="member">IC_HS_MADDR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="structDW__IIC__REG_a31bcc05a0415827a4b2f663ce8ee2f72_1a31bcc05a0415827a4b2f663ce8ee2f72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a31bcc05a0415827a4b2f663ce8ee2f72_1a31bcc05a0415827a4b2f663ce8ee2f72" kindref="member">IC_DATA_CMD</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="structDW__IIC__REG_a06ede7178bcb1bdcf2a8330529a491e2_1a06ede7178bcb1bdcf2a8330529a491e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a06ede7178bcb1bdcf2a8330529a491e2_1a06ede7178bcb1bdcf2a8330529a491e2" kindref="member">IC_SS_SCL_HCNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="structDW__IIC__REG_ad35d3564be87f286faa3699cfbd6d366_1ad35d3564be87f286faa3699cfbd6d366" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ad35d3564be87f286faa3699cfbd6d366_1ad35d3564be87f286faa3699cfbd6d366" kindref="member">IC_SS_SCL_LCNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="structDW__IIC__REG_a6db3e0b03c70304040ecea1ef0d9ff13_1a6db3e0b03c70304040ecea1ef0d9ff13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a6db3e0b03c70304040ecea1ef0d9ff13_1a6db3e0b03c70304040ecea1ef0d9ff13" kindref="member">IC_FS_SCL_HCNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="structDW__IIC__REG_ae649e2a90209cccee4cc911cde07fe75_1ae649e2a90209cccee4cc911cde07fe75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ae649e2a90209cccee4cc911cde07fe75_1ae649e2a90209cccee4cc911cde07fe75" kindref="member">IC_FS_SCL_LCNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="structDW__IIC__REG_a31c9964cf48bc3d34616d2d2a741930f_1a31c9964cf48bc3d34616d2d2a741930f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a31c9964cf48bc3d34616d2d2a741930f_1a31c9964cf48bc3d34616d2d2a741930f" kindref="member">IC_HS_SCL_HCNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="structDW__IIC__REG_ad704e2ad022940de6c1fba6f0935aefc_1ad704e2ad022940de6c1fba6f0935aefc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ad704e2ad022940de6c1fba6f0935aefc_1ad704e2ad022940de6c1fba6f0935aefc" kindref="member">IC_HS_SCL_LCNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="structDW__IIC__REG_a89ce002d8fde2b8767b3c337278c5f3e_1a89ce002d8fde2b8767b3c337278c5f3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a89ce002d8fde2b8767b3c337278c5f3e_1a89ce002d8fde2b8767b3c337278c5f3e" kindref="member">IC_INTR_STAT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="structDW__IIC__REG_a18386429a2d69ccc8485d18b8e74623d_1a18386429a2d69ccc8485d18b8e74623d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a18386429a2d69ccc8485d18b8e74623d_1a18386429a2d69ccc8485d18b8e74623d" kindref="member">IC_INTR_MASK</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="structDW__IIC__REG_a245c44db41fd2b727fd062173950bbb6_1a245c44db41fd2b727fd062173950bbb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a245c44db41fd2b727fd062173950bbb6_1a245c44db41fd2b727fd062173950bbb6" kindref="member">IC_RAW_INTR_STAT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="structDW__IIC__REG_a9627c6d26f171740a339c13cf64cd9e6_1a9627c6d26f171740a339c13cf64cd9e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a9627c6d26f171740a339c13cf64cd9e6_1a9627c6d26f171740a339c13cf64cd9e6" kindref="member">IC_RX_TL</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="structDW__IIC__REG_ae5fc8ea732739ffaa2b9c79f3917df4f_1ae5fc8ea732739ffaa2b9c79f3917df4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ae5fc8ea732739ffaa2b9c79f3917df4f_1ae5fc8ea732739ffaa2b9c79f3917df4f" kindref="member">IC_TX_TL</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="structDW__IIC__REG_a642b05e8185225bb725b3dbdc62834d7_1a642b05e8185225bb725b3dbdc62834d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a642b05e8185225bb725b3dbdc62834d7_1a642b05e8185225bb725b3dbdc62834d7" kindref="member">IC_CLR_INTR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="structDW__IIC__REG_a20a8adc9c67ae38b1878040cceac11e1_1a20a8adc9c67ae38b1878040cceac11e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a20a8adc9c67ae38b1878040cceac11e1_1a20a8adc9c67ae38b1878040cceac11e1" kindref="member">IC_CLR_RX_UNDER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="structDW__IIC__REG_a894eb5a78873faea492c46ed82cf37aa_1a894eb5a78873faea492c46ed82cf37aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a894eb5a78873faea492c46ed82cf37aa_1a894eb5a78873faea492c46ed82cf37aa" kindref="member">IC_CLR_RX_OVER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="structDW__IIC__REG_a54cd0097c81666905afdbae90ebe529b_1a54cd0097c81666905afdbae90ebe529b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a54cd0097c81666905afdbae90ebe529b_1a54cd0097c81666905afdbae90ebe529b" kindref="member">IC_CLR_TX_OVER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="structDW__IIC__REG_a2f9af209c00ddf18d6b4de46e1b7bc3e_1a2f9af209c00ddf18d6b4de46e1b7bc3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a2f9af209c00ddf18d6b4de46e1b7bc3e_1a2f9af209c00ddf18d6b4de46e1b7bc3e" kindref="member">IC_CLR_RD_REQ</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="structDW__IIC__REG_a9451b354c42a7cc8833393b73cad6db8_1a9451b354c42a7cc8833393b73cad6db8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a9451b354c42a7cc8833393b73cad6db8_1a9451b354c42a7cc8833393b73cad6db8" kindref="member">IC_CLR_TX_ABRT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="structDW__IIC__REG_a0db85667278807e55bc8a4d1b6cc7d36_1a0db85667278807e55bc8a4d1b6cc7d36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a0db85667278807e55bc8a4d1b6cc7d36_1a0db85667278807e55bc8a4d1b6cc7d36" kindref="member">IC_CLR_RX_DONE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="structDW__IIC__REG_ad4ceb6c035d5a45679270628379c5909_1ad4ceb6c035d5a45679270628379c5909" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ad4ceb6c035d5a45679270628379c5909_1ad4ceb6c035d5a45679270628379c5909" kindref="member">IC_CLR_ACTIVITY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="structDW__IIC__REG_a2ff2d5aa0503b7a295e3128ca25b46fa_1a2ff2d5aa0503b7a295e3128ca25b46fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a2ff2d5aa0503b7a295e3128ca25b46fa_1a2ff2d5aa0503b7a295e3128ca25b46fa" kindref="member">IC_CLR_STOP_DET</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structDW__IIC__REG_a125a7202d6e986ad775c3fc65675c2d8_1a125a7202d6e986ad775c3fc65675c2d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a125a7202d6e986ad775c3fc65675c2d8_1a125a7202d6e986ad775c3fc65675c2d8" kindref="member">IC_CLR_START_DET</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="structDW__IIC__REG_a2e10f69505982f255cf01d5f3ee780ce_1a2e10f69505982f255cf01d5f3ee780ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a2e10f69505982f255cf01d5f3ee780ce_1a2e10f69505982f255cf01d5f3ee780ce" kindref="member">IC_CLR_GEN_CALL</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="structDW__IIC__REG_a2fc1c58f944e4d970c4985a55f9600a4_1a2fc1c58f944e4d970c4985a55f9600a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a2fc1c58f944e4d970c4985a55f9600a4_1a2fc1c58f944e4d970c4985a55f9600a4" kindref="member">IC_ENABLE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="structDW__IIC__REG_a1e480753f63bba47096d992baa122ab6_1a1e480753f63bba47096d992baa122ab6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a1e480753f63bba47096d992baa122ab6_1a1e480753f63bba47096d992baa122ab6" kindref="member">IC_STATUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="structDW__IIC__REG_a397a410ff1b283dbd649d00560c948f2_1a397a410ff1b283dbd649d00560c948f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a397a410ff1b283dbd649d00560c948f2_1a397a410ff1b283dbd649d00560c948f2" kindref="member">IC_TXFLR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="structDW__IIC__REG_a603e432d3ea288dc8e59ba8ace497b4b_1a603e432d3ea288dc8e59ba8ace497b4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a603e432d3ea288dc8e59ba8ace497b4b_1a603e432d3ea288dc8e59ba8ace497b4b" kindref="member">IC_RXFLR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="structDW__IIC__REG_ab5fce5ef4fc8d27fb92c9749fd1802bd_1ab5fce5ef4fc8d27fb92c9749fd1802bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ab5fce5ef4fc8d27fb92c9749fd1802bd_1ab5fce5ef4fc8d27fb92c9749fd1802bd" kindref="member">IC_SDA_HOLD</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="structDW__IIC__REG_adfc964b1a25aa5ae3edee72517267e5e_1adfc964b1a25aa5ae3edee72517267e5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_adfc964b1a25aa5ae3edee72517267e5e_1adfc964b1a25aa5ae3edee72517267e5e" kindref="member">IC_TX_ABRT_SOURCE</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="structDW__IIC__REG_afc7d13e84f921c29decb521fd4dca011_1afc7d13e84f921c29decb521fd4dca011" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_afc7d13e84f921c29decb521fd4dca011_1afc7d13e84f921c29decb521fd4dca011" kindref="member">IC_SLV_DATA_NACK_ONLY</ref>;<sp/></highlight></codeline>
+<codeline lineno="99" refid="structDW__IIC__REG_a741811c416d405c858c4ab2622147a93_1a741811c416d405c858c4ab2622147a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a741811c416d405c858c4ab2622147a93_1a741811c416d405c858c4ab2622147a93" kindref="member">IC_DMA_CR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="structDW__IIC__REG_a935ccd09d76a2303e2bc170f938b4dfd_1a935ccd09d76a2303e2bc170f938b4dfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a935ccd09d76a2303e2bc170f938b4dfd_1a935ccd09d76a2303e2bc170f938b4dfd" kindref="member">IC_DMA_TDLR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="structDW__IIC__REG_a8a52bdd969958c8fc20b507688077fc0_1a8a52bdd969958c8fc20b507688077fc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a8a52bdd969958c8fc20b507688077fc0_1a8a52bdd969958c8fc20b507688077fc0" kindref="member">IC_DMA_RDLR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="structDW__IIC__REG_ac21601ea0c455874ffdf62b14d8abb36_1ac21601ea0c455874ffdf62b14d8abb36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ac21601ea0c455874ffdf62b14d8abb36_1ac21601ea0c455874ffdf62b14d8abb36" kindref="member">IC_SDA_SETUP</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="structDW__IIC__REG_a45a1028a05ce1be2a8a1640e97dabc2d_1a45a1028a05ce1be2a8a1640e97dabc2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a45a1028a05ce1be2a8a1640e97dabc2d_1a45a1028a05ce1be2a8a1640e97dabc2d" kindref="member">IC_ACK_GENERAL_CALL</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="structDW__IIC__REG_a31441763ce69fc6b21beb87dc956d698_1a31441763ce69fc6b21beb87dc956d698" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a31441763ce69fc6b21beb87dc956d698_1a31441763ce69fc6b21beb87dc956d698" kindref="member">IC_ENABLE_STATUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="structDW__IIC__REG_a3d2e9d773c2ed47438c09f780d6f4f12_1a3d2e9d773c2ed47438c09f780d6f4f12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a3d2e9d773c2ed47438c09f780d6f4f12_1a3d2e9d773c2ed47438c09f780d6f4f12" kindref="member">IC_FS_SPKLEN</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="structDW__IIC__REG_a1b1b262aa25eab4305c3702e936f8abf_1a1b1b262aa25eab4305c3702e936f8abf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a1b1b262aa25eab4305c3702e936f8abf_1a1b1b262aa25eab4305c3702e936f8abf" kindref="member">IC_HS_SPKLEN</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="structDW__IIC__REG_a8070d74cb8ff62703bcd60946374cbe4_1a8070d74cb8ff62703bcd60946374cbe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED[19];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="structDW__IIC__REG_a8eaead0f5afe5eb06a85bc7c0383231a_1a8eaead0f5afe5eb06a85bc7c0383231a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a8eaead0f5afe5eb06a85bc7c0383231a_1a8eaead0f5afe5eb06a85bc7c0383231a" kindref="member">IC_COMP_PARAM_1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="structDW__IIC__REG_a1b64f112b0c17eb4ff75fd2cd1a9e253_1a1b64f112b0c17eb4ff75fd2cd1a9e253" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_a1b64f112b0c17eb4ff75fd2cd1a9e253_1a1b64f112b0c17eb4ff75fd2cd1a9e253" kindref="member">IC_COMP_VERSION</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="structDW__IIC__REG_ab74763228417ea5a627b9d4bdc53307c_1ab74763228417ea5a627b9d4bdc53307c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__REG_ab74763228417ea5a627b9d4bdc53307c_1ab74763228417ea5a627b9d4bdc53307c" kindref="member">IC_COMP_TYPE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref>,<sp/>*<ref refid="group__DEVICE__DW__IIC__REGSTRUCT_ga020f5eaf202907b5a4e1b8b60afb2e57_1ga020f5eaf202907b5a4e1b8b60afb2e57" kindref="member">DW_IIC_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="115" refid="structDW__IIC__SPKLEN" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116" refid="structDW__IIC__SPKLEN_a68db660c9495fbdf50d54f63aea2948a_1a68db660c9495fbdf50d54f63aea2948a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SPKLEN_a68db660c9495fbdf50d54f63aea2948a_1a68db660c9495fbdf50d54f63aea2948a" kindref="member">fs_spklen</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="structDW__IIC__SPKLEN_a4d32cc7940b9a17a5be01ddcd4df6755_1a4d32cc7940b9a17a5be01ddcd4df6755" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SPKLEN_a4d32cc7940b9a17a5be01ddcd4df6755_1a4d32cc7940b9a17a5be01ddcd4df6755" kindref="member">hs_spklen</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/><ref refid="structDW__IIC__SPKLEN" kindref="compound">DW_IIC_SPKLEN</ref>,<sp/>*<ref refid="dw__iic_8h_a90b82078f04ec675944082d260ba7679_1a90b82078f04ec675944082d260ba7679" kindref="member">DW_IIC_SPKLEN_PTR</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structDW__IIC__SCL__CNT" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122" refid="structDW__IIC__SCL__CNT_ab3e464e74345ff9431921f506b878c2e_1ab3e464e74345ff9431921f506b878c2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SCL__CNT_ab3e464e74345ff9431921f506b878c2e_1ab3e464e74345ff9431921f506b878c2e" kindref="member">ss_scl_hcnt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="structDW__IIC__SCL__CNT_a5def6c65b52776cc063d3dc8b992fa66_1a5def6c65b52776cc063d3dc8b992fa66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SCL__CNT_a5def6c65b52776cc063d3dc8b992fa66_1a5def6c65b52776cc063d3dc8b992fa66" kindref="member">ss_scl_lcnt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="structDW__IIC__SCL__CNT_a23e225a79c82845ee5e6d2fef2b32fe2_1a23e225a79c82845ee5e6d2fef2b32fe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SCL__CNT_a23e225a79c82845ee5e6d2fef2b32fe2_1a23e225a79c82845ee5e6d2fef2b32fe2" kindref="member">fs_scl_hcnt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="structDW__IIC__SCL__CNT_a116216fb59b55ddcaeebefef73bacb62_1a116216fb59b55ddcaeebefef73bacb62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SCL__CNT_a116216fb59b55ddcaeebefef73bacb62_1a116216fb59b55ddcaeebefef73bacb62" kindref="member">fs_scl_lcnt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="structDW__IIC__SCL__CNT_a1f2eb6adcc16915a6bb7e546a90d5088_1a1f2eb6adcc16915a6bb7e546a90d5088" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SCL__CNT_a1f2eb6adcc16915a6bb7e546a90d5088_1a1f2eb6adcc16915a6bb7e546a90d5088" kindref="member">hs_scl_hcnt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="structDW__IIC__SCL__CNT_a859a377afd50f33a042bb03b0dc007b7_1a859a377afd50f33a042bb03b0dc007b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__SCL__CNT_a859a377afd50f33a042bb03b0dc007b7_1a859a377afd50f33a042bb03b0dc007b7" kindref="member">hs_scl_lcnt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="structDW__IIC__SCL__CNT" kindref="compound">DW_IIC_SCL_CNT</ref>,<sp/>*<ref refid="dw__iic_8h_a807c7dde260f60e364126c3bd743658b_1a807c7dde260f60e364126c3bd743658b" kindref="member">DW_IIC_SCL_CNT_PTR</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="dw__iic_8h_ad147fb4d3e48ce1d0df6bd14ccfb975a_1ad147fb4d3e48ce1d0df6bd14ccfb975a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_GINT_DISABLED<sp/><sp/><sp/><sp/>(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="dw__iic_8h_ab0509ef4816530066c19a6ae16179c2a_1ab0509ef4816530066c19a6ae16179c2a" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_GINT_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="dw__iic_8h_aff63376ae7c2948cc57d99bc87dc15e2_1aff63376ae7c2948cc57d99bc87dc15e2" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_TXINT_ENABLE<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="dw__iic_8h_a5dc29a268b2193cc94e214dd84f6ad6b_1a5dc29a268b2193cc94e214dd84f6ad6b" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_RXINT_ENABLE<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="structDW__IIC__BUFFER" refkind="compound"><highlight class="preprocessor">typedef<sp/>struct<sp/>{</highlight></codeline>
+<codeline lineno="136" refid="structDW__IIC__BUFFER_a76236dc9284eadaa9776381701c25c51_1a76236dc9284eadaa9776381701c25c51" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref><sp/>*<ref refid="structDW__IIC__BUFFER_a76236dc9284eadaa9776381701c25c51_1a76236dc9284eadaa9776381701c25c51" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="137" refid="structDW__IIC__BUFFER_a4cfd03be316799939193eca19af15541_1a4cfd03be316799939193eca19af15541" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__BUFFER_a4cfd03be316799939193eca19af15541_1a4cfd03be316799939193eca19af15541" kindref="member">ofs</ref>;</highlight></codeline>
+<codeline lineno="138" refid="structDW__IIC__BUFFER_ad0350ab6babe03629446c3a4adfaa660_1ad0350ab6babe03629446c3a4adfaa660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__BUFFER_ad0350ab6babe03629446c3a4adfaa660_1ad0350ab6babe03629446c3a4adfaa660" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/><ref refid="structDW__IIC__BUFFER" kindref="compound">DW_IIC_BUFFER</ref>,<sp/>*<ref refid="dw__iic_8h_a7a86b18895fae6230ab64147fd4ce849_1a7a86b18895fae6230ab64147fd4ce849" kindref="member">DW_IIC_BUFFER_PTR</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="structDW__IIC__CTRL" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146" refid="structDW__IIC__CTRL_a49e260ed2cbd197d9389a638e0dd6bca_1a49e260ed2cbd197d9389a638e0dd6bca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref><sp/>*<ref refid="structDW__IIC__CTRL_a49e260ed2cbd197d9389a638e0dd6bca_1a49e260ed2cbd197d9389a638e0dd6bca" kindref="member">dw_iic_regs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>should<sp/>be<sp/>set<sp/>during<sp/>object<sp/>implementation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structDW__IIC__CTRL_ae386921c6a925e9fda6d7efe02f9cd32_1ae386921c6a925e9fda6d7efe02f9cd32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_ae386921c6a925e9fda6d7efe02f9cd32_1ae386921c6a925e9fda6d7efe02f9cd32" kindref="member">ic_clkhz</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="structDW__IIC__CTRL_ac9402066bed45f8909e445b1bfa8b2c7_1ac9402066bed45f8909e445b1bfa8b2c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_ac9402066bed45f8909e445b1bfa8b2c7_1ac9402066bed45f8909e445b1bfa8b2c7" kindref="member">ic_caploading</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="structDW__IIC__CTRL_a29d744f94b724932c7f827e6061bac95_1a29d744f94b724932c7f827e6061bac95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a29d744f94b724932c7f827e6061bac95_1a29d744f94b724932c7f827e6061bac95" kindref="member">support_modes</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="structDW__IIC__CTRL_a43cee2cdeafa458cdd5f773677c2588f_1a43cee2cdeafa458cdd5f773677c2588f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a43cee2cdeafa458cdd5f773677c2588f_1a43cee2cdeafa458cdd5f773677c2588f" kindref="member">tx_fifo_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="structDW__IIC__CTRL_a734e2daa5cd40ddefe5c7cf440ceb9fa_1a734e2daa5cd40ddefe5c7cf440ceb9fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a734e2daa5cd40ddefe5c7cf440ceb9fa_1a734e2daa5cd40ddefe5c7cf440ceb9fa" kindref="member">rx_fifo_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structDW__IIC__CTRL_a6590bcb485c51a281add22ba8a260c9e_1a6590bcb485c51a281add22ba8a260c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a6590bcb485c51a281add22ba8a260c9e_1a6590bcb485c51a281add22ba8a260c9e" kindref="member">iic_master_code</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structDW__IIC__CTRL_a3f3143450fae89dac4bfad61c9848345_1a3f3143450fae89dac4bfad61c9848345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a3f3143450fae89dac4bfad61c9848345_1a3f3143450fae89dac4bfad61c9848345" kindref="member">retry_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="structDW__IIC__CTRL_a823027f0ceffa797e86f8ab20c528b7c_1a823027f0ceffa797e86f8ab20c528b7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a823027f0ceffa797e86f8ab20c528b7c_1a823027f0ceffa797e86f8ab20c528b7c" kindref="member">intno</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="structDW__IIC__CTRL_a68b28b0e0d2d4c7419fe9350e39ca5f9_1a68b28b0e0d2d4c7419fe9350e39ca5f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="structDW__IIC__CTRL_a68b28b0e0d2d4c7419fe9350e39ca5f9_1a68b28b0e0d2d4c7419fe9350e39ca5f9" kindref="member">dw_iic_int_handler</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="structDW__IIC__CTRL_a92a97d1be7dbe392dbc19921d95c11c7_1a92a97d1be7dbe392dbc19921d95c11c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__IIC__SPKLEN" kindref="compound">DW_IIC_SPKLEN</ref><sp/><ref refid="structDW__IIC__CTRL_a92a97d1be7dbe392dbc19921d95c11c7_1a92a97d1be7dbe392dbc19921d95c11c7" kindref="member">iic_spklen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="structDW__IIC__CTRL_a90b4460c300678eebdf4bd85d18c0391_1a90b4460c300678eebdf4bd85d18c0391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__IIC__SCL__CNT" kindref="compound">DW_IIC_SCL_CNT</ref><sp/><ref refid="structDW__IIC__CTRL_a90b4460c300678eebdf4bd85d18c0391_1a90b4460c300678eebdf4bd85d18c0391" kindref="member">iic_scl_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>iic<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="structDW__IIC__CTRL_a796b979b0f68270a7f4db61b1310871d_1a796b979b0f68270a7f4db61b1310871d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_a796b979b0f68270a7f4db61b1310871d_1a796b979b0f68270a7f4db61b1310871d" kindref="member">int_status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="structDW__IIC__CTRL_aca33ad3554a9886999523e040b89aad2_1aca33ad3554a9886999523e040b89aad2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_aca33ad3554a9886999523e040b89aad2_1aca33ad3554a9886999523e040b89aad2" kindref="member">iic_tx_over</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="structDW__IIC__CTRL_ab65ac333c8acfcf1aa942836ce620f33_1ab65ac333c8acfcf1aa942836ce620f33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__IIC__CTRL_ab65ac333c8acfcf1aa942836ce620f33_1ab65ac333c8acfcf1aa942836ce620f33" kindref="member">iic_rx_over</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="structDW__IIC__CTRL_a784f62c279a3e339dc19d6ed1518a19e_1a784f62c279a3e339dc19d6ed1518a19e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__IIC__BUFFER" kindref="compound">DW_IIC_BUFFER</ref><sp/><ref refid="structDW__IIC__CTRL_a784f62c279a3e339dc19d6ed1518a19e_1a784f62c279a3e339dc19d6ed1518a19e" kindref="member">dw_iic_rxbuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref>,<sp/>*<ref refid="dw__iic_8h_aabc76865f4f9841179605f40d6df508b_1aabc76865f4f9841179605f40d6df508b" kindref="member">DW_IIC_CTRL_PTR</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="dw__iic_8h_a49faa4ff35ed5bebe06df813faecfb33_1a49faa4ff35ed5bebe06df813faecfb33" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_MAX_RETRY_COUNT<sp/><sp/><sp/><sp/><sp/><sp/>(100000)</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="dw__iic_8h_a2d70e8169a5755c6ede481976d3d061b_1a2d70e8169a5755c6ede481976d3d061b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_FS_SPKLEN_NS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(50)</highlight></codeline>
+<codeline lineno="170" refid="dw__iic_8h_af7e9ead716f17c1c151dbc3e913b4c94_1af7e9ead716f17c1c151dbc3e913b4c94" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_HS_SPKLEN_NS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="dw__iic_8h_a2c11f51301cd3bfba1a128f9fa275c84_1a2c11f51301cd3bfba1a128f9fa275c84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_SS_SCL_LCNT(spklen)<sp/><sp/><sp/><sp/><sp/><sp/>((spklen)<sp/>+<sp/>7)</highlight></codeline>
+<codeline lineno="173" refid="dw__iic_8h_a1b49a7c24b2193e0655545f576071e1b_1a1b49a7c24b2193e0655545f576071e1b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_FS_SCL_LCNT(spklen)<sp/><sp/><sp/><sp/><sp/><sp/>((spklen)<sp/>+<sp/>7)</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="dw__iic_8h_a1dd1a6f773a16d4877795f0fdcde32b0_1a1dd1a6f773a16d4877795f0fdcde32b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_SS_SCL_HCNT(spklen)<sp/><sp/><sp/><sp/><sp/><sp/>((spklen)<sp/>+<sp/>5)</highlight></codeline>
+<codeline lineno="176" refid="dw__iic_8h_adda1838221c0e8887f6caaf10d266b99_1adda1838221c0e8887f6caaf10d266b99" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_FS_SCL_HCNT(spklen)<sp/><sp/><sp/><sp/><sp/><sp/>((spklen)<sp/>+<sp/>5)</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="dw__iic_8h_adcf025566047a9df9a17c78f42980460_1adcf025566047a9df9a17c78f42980460" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_HS_SCL_LCNT(spklen)<sp/><sp/><sp/><sp/><sp/><sp/>((spklen)<sp/>+<sp/>7)</highlight></codeline>
+<codeline lineno="179" refid="dw__iic_8h_a3933c11c2ae2a6ca5ff1482aa7558fd8_1a3933c11c2ae2a6ca5ff1482aa7558fd8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_HS_SCL_HCNT(spklen)<sp/><sp/><sp/><sp/><sp/><sp/>((spklen)<sp/>+<sp/>5)</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="dw__iic_8h_a2faf2c304ba2f92c8bb0e9f1990ef3b0_1a2faf2c304ba2f92c8bb0e9f1990ef3b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_SS_HIGH_TIME_NS<sp/><sp/><sp/><sp/><sp/><sp/>(4000)</highlight></codeline>
+<codeline lineno="182" refid="dw__iic_8h_aba218611406987e29961c41de4954d01_1aba218611406987e29961c41de4954d01" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_SS_LOW_TIME_NS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4700)</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="dw__iic_8h_af7b05e4873b374b4b67a0ad16a2c1326_1af7b05e4873b374b4b67a0ad16a2c1326" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_FS_HIGH_TIME_NS<sp/><sp/><sp/><sp/><sp/><sp/>(600)</highlight></codeline>
+<codeline lineno="185" refid="dw__iic_8h_a064fc04b81a52069409c8d938be4c8a4_1a064fc04b81a52069409c8d938be4c8a4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_FS_LOW_TIME_NS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1300)</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="dw__iic_8h_a0d5e69e1e2c60e93e85d250547b55d27_1a0d5e69e1e2c60e93e85d250547b55d27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_HS_100PF_HIGH_TIME_NS<sp/><sp/><sp/><sp/>(60)</highlight></codeline>
+<codeline lineno="188" refid="dw__iic_8h_a877686cd5597e7c567a2f2b6a8eac012_1a877686cd5597e7c567a2f2b6a8eac012" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_HS_100PF_LOW_TIME_NS<sp/><sp/><sp/><sp/><sp/>(160)</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="dw__iic_8h_ac94981d0bc25a25531820d32362c548a_1ac94981d0bc25a25531820d32362c548a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_HS_400PF_HIGH_TIME_NS<sp/><sp/><sp/><sp/>(120)</highlight></codeline>
+<codeline lineno="191" refid="dw__iic_8h_a770dbb3cd985f1a2aff1e1cfc912eb36_1a770dbb3cd985f1a2aff1e1cfc912eb36" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIN_DW_IIC_HS_400PF_LOW_TIME_NS<sp/><sp/><sp/><sp/><sp/>(320)</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__IIC__IMPLEMENT_gad75471c3a8e98385a58d6b887316f8f5_1gad75471c3a8e98385a58d6b887316f8f5" kindref="member">dw_iic_open</ref>(<ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref><sp/>*iic_obj,<sp/>uint32_t<sp/>mode,<sp/>uint32_t<sp/>param);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__IIC__IMPLEMENT_ga0d998694893c2cb383ff14e0d0bb7fc7_1ga0d998694893c2cb383ff14e0d0bb7fc7" kindref="member">dw_iic_close</ref>(<ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref><sp/>*iic_obj);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__IIC__IMPLEMENT_ga9b0726e986686e7279abb1c4005ce93d_1ga9b0726e986686e7279abb1c4005ce93d" kindref="member">dw_iic_control</ref>(<ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref><sp/>*iic_obj,<sp/>uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__IIC__IMPLEMENT_ga303d46be4dadd7fedf77e96e1144d14e_1ga303d46be4dadd7fedf77e96e1144d14e" kindref="member">dw_iic_write</ref>(<ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref><sp/>*iic_obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__IIC__IMPLEMENT_ga4f612550978cf8c1543325ed9b4a5dbd_1ga4f612550978cf8c1543325ed9b4a5dbd" kindref="member">dw_iic_read</ref>(<ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref><sp/>*iic_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__DW__IIC__IMPLEMENT_gacd0ef0be9b50cb36286b1ec5ca663d64_1gacd0ef0be9b50cb36286b1ec5ca663d64" kindref="member">dw_iic_isr</ref>(<ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref><sp/>*iic_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_DW_IIC<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_iic.h"/>
+  </compounddef>
+</doxygen>

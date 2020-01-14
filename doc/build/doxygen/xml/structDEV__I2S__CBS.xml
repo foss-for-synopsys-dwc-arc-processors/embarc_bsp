@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__I2S__CBS" kind="struct" prot="public">
+    <compoundname>DEV_I2S_CBS</compoundname>
+    <includes refid="dev__i2s_8h" local="no">dev_i2s.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__I2S__CBS_a49528218aa7d7f18af310728f0847c80_1a49528218aa7d7f18af310728f0847c80" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_I2S_CBS::tx_cb</definition>
+        <argsstring></argsstring>
+        <name>tx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S data transmit success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="320" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__I2S__CBS_a141a9f87cd9263cfdbde7ba0ecdcd5b3_1a141a9f87cd9263cfdbde7ba0ecdcd5b3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_I2S_CBS::rx_cb</definition>
+        <argsstring></argsstring>
+        <name>rx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S data receive success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="321" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__I2S__CBS_a8107fc92a0db204d0ccb51fa82d06448_1a8107fc92a0db204d0ccb51fa82d06448" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_I2S_CBS::err_cb</definition>
+        <argsstring></argsstring>
+        <name>err_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S error callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="322" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="319" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="319" bodyend="323"/>
+    <listofallmembers>
+      <member refid="structDEV__I2S__CBS_a8107fc92a0db204d0ccb51fa82d06448_1a8107fc92a0db204d0ccb51fa82d06448" prot="public" virt="non-virtual"><scope>DEV_I2S_CBS</scope><name>err_cb</name></member>
+      <member refid="structDEV__I2S__CBS_a141a9f87cd9263cfdbde7ba0ecdcd5b3_1a141a9f87cd9263cfdbde7ba0ecdcd5b3" prot="public" virt="non-virtual"><scope>DEV_I2S_CBS</scope><name>rx_cb</name></member>
+      <member refid="structDEV__I2S__CBS_a49528218aa7d7f18af310728f0847c80_1a49528218aa7d7f18af310728f0847c80" prot="public" virt="non-virtual"><scope>DEV_I2S_CBS</scope><name>tx_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

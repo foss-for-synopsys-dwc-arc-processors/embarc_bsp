@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__SPI__TRANSFER" kind="struct" prot="public">
+    <compoundname>DW_SPI_TRANSFER</compoundname>
+    <includes refid="dw__spi_8h" local="no">dw_spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__SPI__TRANSFER_aefeff9d2957b870adb0e9f5b09bb6452_1aefeff9d2957b870adb0e9f5b09bb6452" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_TRANSFER::xfer_len</definition>
+        <argsstring></argsstring>
+        <name>xfer_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="133" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__TRANSFER_adbc95facf042bf2e1c0f243deedd5a33_1adbc95facf042bf2e1c0f243deedd5a33" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_TRANSFER::tx_idx</definition>
+        <argsstring></argsstring>
+        <name>tx_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__TRANSFER_aea2a990eb685fbb01865f33b58ebf210_1aea2a990eb685fbb01865f33b58ebf210" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_TRANSFER::rx_idx</definition>
+        <argsstring></argsstring>
+        <name>rx_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="135" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__TRANSFER_abda9b1d451c5830da8c074eabb7cb32b_1abda9b1d451c5830da8c074eabb7cb32b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SPI_TRANSFER::nbytes</definition>
+        <argsstring></argsstring>
+        <name>nbytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="136" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__TRANSFER_a14c389517bccfdd6a7dabfb254cf4de1_1a14c389517bccfdd6a7dabfb254cf4de1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga296ca50563d3df910743a6c1001946c6_1ga296ca50563d3df910743a6c1001946c6" kindref="member">DEV_SPI_TRANSFER</ref> *</type>
+        <definition>DEV_SPI_TRANSFER* DW_SPI_TRANSFER::tx_xfer</definition>
+        <argsstring></argsstring>
+        <name>tx_xfer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="137" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SPI__TRANSFER_a89df710384a78695b01258bd12b7be0d_1a89df710384a78695b01258bd12b7be0d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga296ca50563d3df910743a6c1001946c6_1ga296ca50563d3df910743a6c1001946c6" kindref="member">DEV_SPI_TRANSFER</ref> *</type>
+        <definition>DEV_SPI_TRANSFER* DW_SPI_TRANSFER::rx_xfer</definition>
+        <argsstring></argsstring>
+        <name>rx_xfer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="138" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Designware SPI Message Transfer </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="192">
+        <label>dev_spi_transfer</label>
+        <link refid="structdev__spi__transfer"/>
+        <childnode refid="192" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="191">
+        <label>DW_SPI_TRANSFER</label>
+        <link refid="structDW__SPI__TRANSFER"/>
+        <childnode refid="192" relation="usage">
+          <edgelabel>rx_xfer</edgelabel>
+          <edgelabel>tx_xfer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="132" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="132" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structDW__SPI__TRANSFER_abda9b1d451c5830da8c074eabb7cb32b_1abda9b1d451c5830da8c074eabb7cb32b" prot="public" virt="non-virtual"><scope>DW_SPI_TRANSFER</scope><name>nbytes</name></member>
+      <member refid="structDW__SPI__TRANSFER_aea2a990eb685fbb01865f33b58ebf210_1aea2a990eb685fbb01865f33b58ebf210" prot="public" virt="non-virtual"><scope>DW_SPI_TRANSFER</scope><name>rx_idx</name></member>
+      <member refid="structDW__SPI__TRANSFER_a89df710384a78695b01258bd12b7be0d_1a89df710384a78695b01258bd12b7be0d" prot="public" virt="non-virtual"><scope>DW_SPI_TRANSFER</scope><name>rx_xfer</name></member>
+      <member refid="structDW__SPI__TRANSFER_adbc95facf042bf2e1c0f243deedd5a33_1adbc95facf042bf2e1c0f243deedd5a33" prot="public" virt="non-virtual"><scope>DW_SPI_TRANSFER</scope><name>tx_idx</name></member>
+      <member refid="structDW__SPI__TRANSFER_a14c389517bccfdd6a7dabfb254cf4de1_1a14c389517bccfdd6a7dabfb254cf4de1" prot="public" virt="non-virtual"><scope>DW_SPI_TRANSFER</scope><name>tx_xfer</name></member>
+      <member refid="structDW__SPI__TRANSFER_aefeff9d2957b870adb0e9f5b09bb6452_1aefeff9d2957b870adb0e9f5b09bb6452" prot="public" virt="non-virtual"><scope>DW_SPI_TRANSFER</scope><name>xfer_len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

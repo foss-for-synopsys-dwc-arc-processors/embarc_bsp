@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__DW__IIC__IMPLEMENT" kind="group">
+    <compoundname>DEVICE_DW_IIC_IMPLEMENT</compoundname>
+    <title>DesignWare IIC Driver Function API Implement</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_1gad75471c3a8e98385a58d6b887316f8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_open</definition>
+        <argsstring>(DEV_IIC *iic_obj, uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_iic_open</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Open a designware iic device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC working mode (master or slave) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When mode is <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_ga9b1ad5abdf677288f655dd4bc9dc188d_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">DEV_MASTER_MODE</ref>, param stands for <ref refid="structDEV__IIC__INFO_a213aa9047e646054a94eb9b01511ef4b_1a213aa9047e646054a94eb9b01511ef4b" kindref="member">speed mode</ref>, when mode is <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_gaf070489d9f19e9000cb9700bb859a079_1gaf070489d9f19e9000cb9700bb859a079" kindref="member">DEV_SLAVE_MODE</ref>, param stands for <ref refid="structDEV__IIC__INFO_a02c5b22bcf451165a97a194dc425e6a4_1a02c5b22bcf451165a97a194dc425e6a4" kindref="member">slave device 7bit address</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structDEV__IIC__INFO_a9fecc198c59fa4714eaec0cbbf8ac7c7_1a9fecc198c59fa4714eaec0cbbf8ac7c7" kindref="member">opn_cnt</ref> and return <ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is opened for different mode before, if you want to open it with different mode, you need to fully close it first. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Check opened before use case</para><para>install iic interrupt into system </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1248" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1248" bodyend="1342"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_1ga0d998694893c2cb383ff14e0d0bb7fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_close</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_close</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+<para>Close a DesignWare IIC device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including secenary that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__IIC__INFO_a9fecc198c59fa4714eaec0cbbf8ac7c7_1a9fecc198c59fa4714eaec0cbbf8ac7c7" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1351" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1351" bodyend="1379"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_1ga9b0726e986686e7279abb1c4005ce93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_control</definition>
+        <argsstring>(DEV_IIC *iic_obj, uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_iic_control</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Control iic by ctrl command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__DEVICE__HAL__IIC__CTRLCMD" kindref="compound">control command</ref>, to change or get some thing related to iic </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters that maybe argument of the command, or return values of the command, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>to receive unsigned int value</para><para>When device is disabled, only IIC_CMD_ENA_DEV, IIC_CMD_DIS_DEV, IIC_CMD_GET_STATUS, IIC_CMD_RESET are available, other commands will return E_SYS</para><para>&lt; ready to send callback</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1395" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1395" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_1ga303d46be4dadd7fedf77e96e1144d14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_write</definition>
+        <argsstring>(DEV_IIC *iic_obj, const void *data, uint32_t len)</argsstring>
+        <name>dw_iic_write</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Poll transmit data through DesignWare IIC as master or slave. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send (data must be uint8_t type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length to send </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully sent for poll method, it might can&apos;t send that much due to <ref refid="structDEV__IIC__INFO_a595a6d037fbfd9d715e94730c113e8a6_1a595a6d037fbfd9d715e94730c113e8a6" kindref="member">different error state</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t write data to hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1616" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1616" bodyend="1673"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_1ga4f612550978cf8c1543325ed9b4a5dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_read</definition>
+        <argsstring>(DEV_IIC *iic_obj, void *data, uint32_t len)</argsstring>
+        <name>dw_iic_read</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Read data through DesignWare IIC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data that need to read (data must be uint8_t type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length need to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully received for poll method, it might can&apos;t send that much due to <ref refid="structDEV__IIC__INFO_a595a6d037fbfd9d715e94730c113e8a6_1a595a6d037fbfd9d715e94730c113e8a6" kindref="member">different error state</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1687" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1687" bodyend="1750"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__IMPLEMENT_1gacd0ef0be9b50cb36286b1ec5ca663d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_iic_isr</definition>
+        <argsstring>(DEV_IIC *iic_obj, void *ptr)</argsstring>
+        <name>dw_iic_isr</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>DesignWare IIC interrupt processing handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extra information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1757" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1757" bodyend="1778"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HAL IIC implemention with DesignWare IIC. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

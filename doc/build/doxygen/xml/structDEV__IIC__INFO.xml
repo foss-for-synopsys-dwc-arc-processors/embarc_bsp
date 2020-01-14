@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__IIC__INFO" kind="struct" prot="public">
+    <compoundname>DEV_IIC_INFO</compoundname>
+    <includes refid="dev__iic_8h" local="no">dev_iic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__IIC__INFO_ac501a906f70f001b75776adf716a465b_1ac501a906f70f001b75776adf716a465b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_IIC_INFO::iic_ctrl</definition>
+        <argsstring></argsstring>
+        <name>iic_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>iic control related pointer, implemented by bsp developer, and this should be set during iic object implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="383" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a9fecc198c59fa4714eaec0cbbf8ac7c7_1a9fecc198c59fa4714eaec0cbbf8ac7c7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::opn_cnt</definition>
+        <argsstring></argsstring>
+        <name>opn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>iic open count, open it will increase 1, close it will decrease 1, 0 for close, &gt;0 for open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="384" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a89375272abed7f1158e723f612e8f45e_1a89375272abed7f1158e723f612e8f45e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current working status, refer to <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS" kindref="compound">Common Device Status</ref>, this should be <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gaad1f383b0e8eb7feec60f52998730eff_1gaad1f383b0e8eb7feec60f52998730eff" kindref="member">DEV_ENABLED</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="385" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a54988e45ffd00ee713fb108c808e5f45_1a54988e45ffd00ee713fb108c808e5f45" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current working mode, which can be <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_ga9b1ad5abdf677288f655dd4bc9dc188d_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">master mode</ref> or <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_gaf070489d9f19e9000cb9700bb859a079_1gaf070489d9f19e9000cb9700bb859a079" kindref="member">slave mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="386" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a213aa9047e646054a94eb9b01511ef4b_1a213aa9047e646054a94eb9b01511ef4b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::speed_mode</definition>
+        <argsstring></argsstring>
+        <name>speed_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current working <ref refid="group__DEVICE__HAL__IIC__CFG_gae5c62fde306db5a15e4f5b0afad4c6b9_1gae5c62fde306db5a15e4f5b0afad4c6b9" kindref="member">iic speed mode</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="387" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_ae35da0f745de9c6cbf439df4ddecc719_1ae35da0f745de9c6cbf439df4ddecc719" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::cur_state</definition>
+        <argsstring></argsstring>
+        <name>cur_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__DEVICE__HAL__IIC__CFG_gaa45fd2c850f36eb7ca7d3f2678637f13_1gaa45fd2c850f36eb7ca7d3f2678637f13" kindref="member">current working state for iic device</ref>, this should be <ref refid="group__DEVICE__HAL__IIC__CFG_gaa45fd2c850f36eb7ca7d3f2678637f13_1ggaa45fd2c850f36eb7ca7d3f2678637f13a2c7ca026a008fb42a7bc2ac8a744ff28" kindref="member">IIC_FREE</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="388" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a595a6d037fbfd9d715e94730c113e8a6_1a595a6d037fbfd9d715e94730c113e8a6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::err_state</definition>
+        <argsstring></argsstring>
+        <name>err_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1ga4aee94b5522b7e2dfac949053f56fb75" kindref="member">current error state for iic device</ref>, this should be <ref refid="group__DEVICE__HAL__IIC__CFG_ga4aee94b5522b7e2dfac949053f56fb75_1gga4aee94b5522b7e2dfac949053f56fb75ac9c901374108da2d82f421e89d229101" kindref="member">IIC_ERR_NONE</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="389" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a349800743f835d75da3a1d16ae791105_1a349800743f835d75da3a1d16ae791105" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::addr_mode</definition>
+        <argsstring></argsstring>
+        <name>addr_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__DEVICE__HAL__IIC__CFG_ga96fb8fc07afe6021bc4101b61628161d_1ga96fb8fc07afe6021bc4101b61628161d" kindref="member">current addressing mode</ref>, this should be <ref refid="group__DEVICE__HAL__IIC__CFG_ga96fb8fc07afe6021bc4101b61628161d_1gga96fb8fc07afe6021bc4101b61628161da0d2d3865e7df7b55f8b71a8b29e688ac" kindref="member">IIC_7BIT_ADDRESS</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="390" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a02c5b22bcf451165a97a194dc425e6a4_1a02c5b22bcf451165a97a194dc425e6a4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::slv_addr</definition>
+        <argsstring></argsstring>
+        <name>slv_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>slave address when working as slave iic device, this should be 0 for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="391" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_abaa99e08ef32da33a8266963e3661131_1abaa99e08ef32da33a8266963e3661131" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::tar_addr</definition>
+        <argsstring></argsstring>
+        <name>tar_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>target slave device address when addressing that slave device, this should be 0 for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="392" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_ace68f6b03b5c74bf29cc43c202f52df8_1ace68f6b03b5c74bf29cc43c202f52df8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_IIC_INFO::next_cond</definition>
+        <argsstring></argsstring>
+        <name>next_cond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__DEVICE__HAL__IIC__CFG_gab39710098165ba749fcec91c79774368_1gab39710098165ba749fcec91c79774368" kindref="member">next condition for master transmit or receive</ref>, \ possible values are STOP or RESTART, it should be STOP for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="393" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a742ebcd213fefc93e75e945af30db840_1a742ebcd213fefc93e75e945af30db840" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref></type>
+        <definition>DEV_BUFFER DEV_IIC_INFO::tx_buf</definition>
+        <argsstring></argsstring>
+        <name>tx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transmit buffer via interrupt, this should be all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="395" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a5d89210d0ef348f5f6c71fe30a8abbdb_1a5d89210d0ef348f5f6c71fe30a8abbdb" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref></type>
+        <definition>DEV_BUFFER DEV_IIC_INFO::rx_buf</definition>
+        <argsstring></argsstring>
+        <name>rx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>receive buffer via interrupt, this should be all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="396" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a52514c405566763daab9bafc1163dd25_1a52514c405566763daab9bafc1163dd25" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__IIC__CBS" kindref="compound">DEV_IIC_CBS</ref></type>
+        <definition>DEV_IIC_CBS DEV_IIC_INFO::iic_cbs</definition>
+        <argsstring></argsstring>
+        <name>iic_cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>iic callbacks, for both master and slave mode, this should be all NULL for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="397" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__INFO_a7b76636e1b9139c0e42bc5502ef56848_1a7b76636e1b9139c0e42bc5502ef56848" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_IIC_INFO::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a extra pointer to get hook to applications which should not used by bsp developer, this should be NULL for first open and you can <ref refid="group__DEVICE__HAL__IIC__DEVSTRUCT_ga2b2874f0d63d9be74e65f0cad06c0af4_1ga2b2874f0d63d9be74e65f0cad06c0af4" kindref="member">set</ref> or <ref refid="group__DEVICE__HAL__IIC__DEVSTRUCT_ga8dd9dee0a52f1a8185dae6929530aa18_1ga8dd9dee0a52f1a8185dae6929530aa18" kindref="member">get</ref> the extra information pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="398" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IIC information struct definition. </para>    </briefdescription>
+    <detaileddescription>
+<para>Informations about iic open state, working state, baurate, iic registers, working method, interrupt number </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="57">
+        <label>DEV_IIC_INFO</label>
+        <link refid="structDEV__IIC__INFO"/>
+        <childnode refid="58" relation="usage">
+          <edgelabel>tx_buf</edgelabel>
+          <edgelabel>rx_buf</edgelabel>
+        </childnode>
+        <childnode refid="59" relation="usage">
+          <edgelabel>iic_cbs</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>DEV_IIC_CBS</label>
+        <link refid="structDEV__IIC__CBS"/>
+      </node>
+      <node id="58">
+        <label>DEV_BUFFER</label>
+        <link refid="structDEV__BUFFER"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="382" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="382" bodyend="401"/>
+    <listofallmembers>
+      <member refid="structDEV__IIC__INFO_a349800743f835d75da3a1d16ae791105_1a349800743f835d75da3a1d16ae791105" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>addr_mode</name></member>
+      <member refid="structDEV__IIC__INFO_ae35da0f745de9c6cbf439df4ddecc719_1ae35da0f745de9c6cbf439df4ddecc719" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>cur_state</name></member>
+      <member refid="structDEV__IIC__INFO_a595a6d037fbfd9d715e94730c113e8a6_1a595a6d037fbfd9d715e94730c113e8a6" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>err_state</name></member>
+      <member refid="structDEV__IIC__INFO_a7b76636e1b9139c0e42bc5502ef56848_1a7b76636e1b9139c0e42bc5502ef56848" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>extra</name></member>
+      <member refid="structDEV__IIC__INFO_a52514c405566763daab9bafc1163dd25_1a52514c405566763daab9bafc1163dd25" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>iic_cbs</name></member>
+      <member refid="structDEV__IIC__INFO_ac501a906f70f001b75776adf716a465b_1ac501a906f70f001b75776adf716a465b" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>iic_ctrl</name></member>
+      <member refid="structDEV__IIC__INFO_a54988e45ffd00ee713fb108c808e5f45_1a54988e45ffd00ee713fb108c808e5f45" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>mode</name></member>
+      <member refid="structDEV__IIC__INFO_ace68f6b03b5c74bf29cc43c202f52df8_1ace68f6b03b5c74bf29cc43c202f52df8" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>next_cond</name></member>
+      <member refid="structDEV__IIC__INFO_a9fecc198c59fa4714eaec0cbbf8ac7c7_1a9fecc198c59fa4714eaec0cbbf8ac7c7" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>opn_cnt</name></member>
+      <member refid="structDEV__IIC__INFO_a5d89210d0ef348f5f6c71fe30a8abbdb_1a5d89210d0ef348f5f6c71fe30a8abbdb" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>rx_buf</name></member>
+      <member refid="structDEV__IIC__INFO_a02c5b22bcf451165a97a194dc425e6a4_1a02c5b22bcf451165a97a194dc425e6a4" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>slv_addr</name></member>
+      <member refid="structDEV__IIC__INFO_a213aa9047e646054a94eb9b01511ef4b_1a213aa9047e646054a94eb9b01511ef4b" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>speed_mode</name></member>
+      <member refid="structDEV__IIC__INFO_a89375272abed7f1158e723f612e8f45e_1a89375272abed7f1158e723f612e8f45e" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>status</name></member>
+      <member refid="structDEV__IIC__INFO_abaa99e08ef32da33a8266963e3661131_1abaa99e08ef32da33a8266963e3661131" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>tar_addr</name></member>
+      <member refid="structDEV__IIC__INFO_a742ebcd213fefc93e75e945af30db840_1a742ebcd213fefc93e75e945af30db840" prot="public" virt="non-virtual"><scope>DEV_IIC_INFO</scope><name>tx_buf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

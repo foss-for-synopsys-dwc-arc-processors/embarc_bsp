@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__PWM__TIMER__INFO" kind="struct" prot="public">
+    <compoundname>DEV_PWM_TIMER_INFO</compoundname>
+    <includes refid="dev__pwm__timer_8h" local="no">dev_pwm_timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_PWM_TIMER_INFO::pwm_timer_ctrl</definition>
+        <argsstring></argsstring>
+        <name>pwm_timer_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_PWM_TIMER_INFO::opn_cnt</definition>
+        <argsstring></argsstring>
+        <name>opn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="135" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PWM_TIMER information struct definition. </para>    </briefdescription>
+    <detaileddescription>
+<para>Informations about pwm_timer open count, working status, pwm_timer registers and ctrl structure </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="133" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="133" bodyend="138"/>
+    <listofallmembers>
+      <member refid="structDEV__PWM__TIMER__INFO_a7760c6fa64db2e9c8c8baf0ef6a7776b_1a7760c6fa64db2e9c8c8baf0ef6a7776b" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_INFO</scope><name>opn_cnt</name></member>
+      <member refid="structDEV__PWM__TIMER__INFO_a89a14256551da8ad45af374e54b02dee_1a89a14256551da8ad45af374e54b02dee" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_INFO</scope><name>pwm_timer_ctrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

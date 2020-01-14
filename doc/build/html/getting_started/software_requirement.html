@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Software Requirement &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hardware Requirement" href="hardware_requirement.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#checking-out-the-embarc-bsp-source-code">Checking Out the embARC BSP source code</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="getting_started.html#setting-up-the-development-environment">Setting Up the Development Environment</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Software Requirement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#development-environment">Development Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Software Requirement</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#building-a-sample-application">Building a Sample Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#hardware-preparation">Hardware Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#running-a-sample-application">Running a Sample Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#advanced-topics">Advanced Topics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
+        
+      <li>Software Requirement</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-requirement">
+<span id="id1"></span><h1>Software Requirement<a class="headerlink" href="#software-requirement" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="development-environment">
+<h2>Development Environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Windows 10 / Windows 7</p></li>
+<li><p>Ubuntu 16.04</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>IF you need assistance with a different host environment, please file a GitHub Issue to get support from the embARC development team.</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Software Requirement<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><a class="reference external" href="https://www.synopsys.com/designware-ip/processor-solutions/arc-development-tools.html">ARC Development Tools</a></p>
+<blockquote>
+<div><p>Choose <strong>MetaWare Toolkit</strong> and/or <strong>ARC GNU Toolchain</strong> from the following list according to your requirement:</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>MetaWare Toolkit</p>
+<ul>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=sw_metaware">Premium MetaWare Development Toolkit</a>
+The DesignWare ARC MetaWare Development Toolkit builds upon a long legacy of industry-leading compiler and debugger products. It is a complete solution that contains all the components needed to support the development, debugging and tuning of embedded applications for the DesignWare ARC processors.</p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=sw_metaware">DesignWare ARC MetaWare Toolkit Lite</a>
+A demonstration/evaluation version of the MetaWare Development Toolkit is available for free from the Synopsys website. MetaWare Lite is a functioning demonstration of the MetaWare Development Toolkit, but has a number of restrictions, including a code-size limit of 32 Kilobytes and no runtime library sources. It is available for Microsoft Windows only.</p></li>
+</ul>
+</li>
+<li><p>ARC GNU Toolchain</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases">Open Source ARC GNU IDE</a>
+The ARC GNU Toolchain offers all of the benefits of open source tools, including complete source code and a large install base. The ARC GNU IDE Installer consists of Eclipse IDE with <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/arc_gnu_eclipse/releases">ARC GNU plugin for Eclipse</a>, <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases">ARC GNU prebuilt toolchain</a> and <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/openocd">OpenOCD for ARC</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://store.digilentinc.com/digilent-adept-2-download-only/">Digilent Adept Software</a> for Digilent JTAG-USB cable driver</p></li>
+<li><p><a class="reference external" href="https://ttssh2.osdn.jp/">Tera Term</a> or <a class="reference external" href="https://www.putty.org/">PuTTY</a> for serial terminal connection, 115200 baud, 8 bits data, 1 stop bit and no parity (115200-8-N-1) by default.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If using embARC BSP with the ARC GNU toolchain on Windows, install <a class="reference external" href="https://zadig.akeo.ie">Zadig</a> to replace FTDI driver with WinUSB driver. See <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/arc_gnu_eclipse/wiki/How-to-Use-OpenOCD-on-Windows">How to Use OpenOCD on Windows</a> for more information.</p>
+</div>
+<p>Check the following items and set your development environment</p>
+<ul class="simple">
+<li><p>Make sure the paths of the above required tools for the MetaWare toolkit and ARC GNU toolchain are added to the system variable <strong>PATH</strong> in your environment variables.</p></li>
+<li><p>We recommend users install the ARC GNU IDE in the default location. If installing to a different location, you will need to make additional changes as described below.</p>
+<ul>
+<li><p>If running and debugging embARC applications using <strong>arc-elf32-gdb</strong> and <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/openocd">OpenOCD for ARC</a>, make sure 1) the path of <strong>OpenOCD</strong> is added to the <strong>PATH</strong> in your environment variables, and 2) modify <strong>OPENOCD_SCRIPT_ROOT variable</strong> in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/toolchain/toolchain_gnu.mk</span></code> according to your <strong>OpenOCD</strong> root path.</p></li>
+<li><p>If running GNU program with using the GNU toolchain on Linux, modify the <strong>OpenOCD</strong> configuration file as Linux format with LF line terminators. <strong>dos2unix</strong> can be used to convert it.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check the version of your toolchain. The embARC BSP build system is purely makefile-based. make/gmake is provided in the MetaWare toolkit (gmake) and ARC GNU toolchain (make). &lt;embARC&gt; represents the location where you put the embARC source code in the example usage guide, e.g., <em>C:/embARC</em>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

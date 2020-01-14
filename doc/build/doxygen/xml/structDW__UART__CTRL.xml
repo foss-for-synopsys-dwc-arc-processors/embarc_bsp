@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__UART__CTRL" kind="struct" prot="public">
+    <compoundname>DW_UART_CTRL</compoundname>
+    <includes refid="dw__uart_8h" local="no">dw_uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__UART__CTRL_a7062e893f2319c940c5adce1fa0798e0_1a7062e893f2319c940c5adce1fa0798e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_CTRL::dw_uart_regbase</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_regbase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart ip register base </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="98" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__CTRL_ae4ac17d9ac926d9c9546e2216a1ec003_1ae4ac17d9ac926d9c9546e2216a1ec003" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_CTRL::dw_apb_bus_freq</definition>
+        <argsstring></argsstring>
+        <name>dw_apb_bus_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart ip apb bus frequency </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="99" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__CTRL_a78487b382e8fa9a4cdc4c6fbf50004c6_1a78487b382e8fa9a4cdc4c6fbf50004c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_CTRL::intno</definition>
+        <argsstring></argsstring>
+        <name>intno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart interrupt vector number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="100" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__CTRL_a5159f5d96367a574a08eaf094ff59960_1a5159f5d96367a574a08eaf094ff59960" prot="public" static="no" mutable="no">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T DW_UART_CTRL::dw_uart_int_handler</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_int_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__CTRL_a7d62ad97196cb1fb028d919c3c9f3694_1a7d62ad97196cb1fb028d919c3c9f3694" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_CTRL::tx_fifo_len</definition>
+        <argsstring></argsstring>
+        <name>tx_fifo_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transmit fifo length, set by user in object implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="102" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__CTRL_ade790f1d4bee20430d9549a7b397e425_1ade790f1d4bee20430d9549a7b397e425" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_CTRL::rx_fifo_len</definition>
+        <argsstring></argsstring>
+        <name>rx_fifo_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>receive fifo length, set by user in object implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="103" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__UART__CTRL_a29da6b4dceecf382b448d85883f5a8b3_1a29da6b4dceecf382b448d85883f5a8b3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_UART_CTRL::int_status</definition>
+        <argsstring></argsstring>
+        <name>int_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt status for designware uart </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for DesignWare UART control structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>Structure type for DesignWare UART implementation </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" line="97" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h" bodystart="97" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structDW__UART__CTRL_ae4ac17d9ac926d9c9546e2216a1ec003_1ae4ac17d9ac926d9c9546e2216a1ec003" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>dw_apb_bus_freq</name></member>
+      <member refid="structDW__UART__CTRL_a5159f5d96367a574a08eaf094ff59960_1a5159f5d96367a574a08eaf094ff59960" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>dw_uart_int_handler</name></member>
+      <member refid="structDW__UART__CTRL_a7062e893f2319c940c5adce1fa0798e0_1a7062e893f2319c940c5adce1fa0798e0" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>dw_uart_regbase</name></member>
+      <member refid="structDW__UART__CTRL_a29da6b4dceecf382b448d85883f5a8b3_1a29da6b4dceecf382b448d85883f5a8b3" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>int_status</name></member>
+      <member refid="structDW__UART__CTRL_a78487b382e8fa9a4cdc4c6fbf50004c6_1a78487b382e8fa9a4cdc4c6fbf50004c6" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>intno</name></member>
+      <member refid="structDW__UART__CTRL_ade790f1d4bee20430d9549a7b397e425_1ade790f1d4bee20430d9549a7b397e425" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>rx_fifo_len</name></member>
+      <member refid="structDW__UART__CTRL_a7d62ad97196cb1fb028d919c3c9f3694_1a7d62ad97196cb1fb028d919c3c9f3694" prot="public" virt="non-virtual"><scope>DW_UART_CTRL</scope><name>tx_fifo_len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

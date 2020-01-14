@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__PWM__TIMER__CH__ISR" kind="struct" prot="public">
+    <compoundname>DW_PWM_TIMER_CH_ISR</compoundname>
+    <includes refid="dw__pwm__timer_8h" local="no">dw_pwm_timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__PWM__TIMER__CH__ISR_ab93871f5853748ba000fc9f8e1f532d6_1ab93871f5853748ba000fc9f8e1f532d6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_PWM_TIMER_CH_ISR::int_ch_max_cnt</definition>
+        <argsstring></argsstring>
+        <name>int_ch_max_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>max channel count for each pwm_timer group </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="65" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__PWM__TIMER_ga8db6fd35a0475f738f2afa833bcb69d5_1ga8db6fd35a0475f738f2afa833bcb69d5" kindref="member">DEV_PWM_TIMER_HANDLER</ref> *</type>
+        <definition>DEV_PWM_TIMER_HANDLER* DW_PWM_TIMER_CH_ISR::int_ch_handler_ptr</definition>
+        <argsstring></argsstring>
+        <name>int_ch_handler_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt handler pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>interrupt handler for each pwm_timer channel </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" line="64" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h" bodystart="64" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structDW__PWM__TIMER__CH__ISR_a4e21283a037a3368b4335bf5df671e4f_1a4e21283a037a3368b4335bf5df671e4f" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_CH_ISR</scope><name>int_ch_handler_ptr</name></member>
+      <member refid="structDW__PWM__TIMER__CH__ISR_ab93871f5853748ba000fc9f8e1f532d6_1ab93871f5853748ba000fc9f8e1f532d6" prot="public" virt="non-virtual"><scope>DW_PWM_TIMER_CH_ISR</scope><name>int_ch_max_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

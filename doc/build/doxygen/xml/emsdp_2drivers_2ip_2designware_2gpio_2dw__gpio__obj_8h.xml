@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h" kind="file">
+    <compoundname>dw_gpio_obj.h</compoundname>
+    <includes refid="dw__gpio_8h" local="yes">device/designware/dw_gpio.h</includes>
+    <includedby refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</includedby>
+    <includedby refid="emsdp_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</includedby>
+    <incdepgraph>
+      <node id="415">
+        <label>stdbool.h</label>
+      </node>
+      <node id="411">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="410" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>stdint.h</label>
+      </node>
+      <node id="414">
+        <label>stddef.h</label>
+      </node>
+      <node id="418">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>device/designware/dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>limits.h</label>
+      </node>
+      <node id="419">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="410">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="433">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="431">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="425">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="424">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="430">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="428">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="432">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="423">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="427">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="426">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="429">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="422">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="420">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a7c81651c28007511a38dac6bedc34680_1a7c81651c28007511a38dac6bedc34680" prot="public" static="no">
+        <name>USE_DW_GPIO_PORT_A</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Designware GPIO Port Bank Control Macros </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="38" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a489889df218c36a7ab642edf22db5343_1a489889df218c36a7ab642edf22db5343" prot="public" static="no">
+        <name>USE_DW_GPIO_PORT_B</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="39" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ab401acad26783330053b4e812ec05624_1ab401acad26783330053b4e812ec05624" prot="public" static="no">
+        <name>USE_DW_GPIO_PORT_C</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="40" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a23d9a869b858de896b6b74dfacd70785_1a23d9a869b858de896b6b74dfacd70785" prot="public" static="no">
+        <name>USE_DW_GPIO_PORT_D</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="41" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ada5aab259b7cec6a823872386b20225a_1ada5aab259b7cec6a823872386b20225a" prot="public" static="no">
+        <name>EMSDP_GPIO_A_INT_MAX_COUNT</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Designware GPIO Port Interrupt Available Number Macros </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="46" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ad0af7884f8eaa198b9d141483a21b85a_1ad0af7884f8eaa198b9d141483a21b85a" prot="public" static="no">
+        <name>EMSDP_GPIO_B_INT_MAX_COUNT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="47" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a290bdf8169b019c3b7acf2742f8ab1d7_1a290bdf8169b019c3b7acf2742f8ab1d7" prot="public" static="no">
+        <name>EMSDP_GPIO_C_INT_MAX_COUNT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="48" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a4acb659dd978eed8297cd8d788de9ce7_1a4acb659dd978eed8297cd8d788de9ce7" prot="public" static="no">
+        <name>EMSDP_GPIO_D_INT_MAX_COUNT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="49" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ae6e6ebc27132278d3f84229268b6370e_1ae6e6ebc27132278d3f84229268b6370e" prot="public" static="no">
+        <name>EMSDP_GPIO_A_VALID_MASK</name>
+        <initializer><ref refid="dw__gpio_8h_aff5476769ac24bbf79518242017441af_1aff5476769ac24bbf79518242017441af" kindref="member">DW_GPIO_MASK_ALL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Designware GPIO Port Available Bits Macros </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="54" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a76a3abecbedf0287947688098afe53e1_1a76a3abecbedf0287947688098afe53e1" prot="public" static="no">
+        <name>EMSDP_GPIO_B_VALID_MASK</name>
+        <initializer><ref refid="dw__gpio_8h_aff5476769ac24bbf79518242017441af_1aff5476769ac24bbf79518242017441af" kindref="member">DW_GPIO_MASK_ALL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="55" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_afa9627ca19993637899172f008590d99_1afa9627ca19993637899172f008590d99" prot="public" static="no">
+        <name>EMSDP_GPIO_C_VALID_MASK</name>
+        <initializer><ref refid="dw__gpio_8h_aff5476769ac24bbf79518242017441af_1aff5476769ac24bbf79518242017441af" kindref="member">DW_GPIO_MASK_ALL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="56" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a8287f7a0d4b0cbe8eb51c896de37bfb7_1a8287f7a0d4b0cbe8eb51c896de37bfb7" prot="public" static="no">
+        <name>EMSDP_GPIO_D_VALID_MASK</name>
+        <initializer><ref refid="dw__gpio_8h_aff5476769ac24bbf79518242017441af_1aff5476769ac24bbf79518242017441af" kindref="member">DW_GPIO_MASK_ALL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="57" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ae5bc4c5daece4606b66a3bf685d6d318_1ae5bc4c5daece4606b66a3bf685d6d318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__GPIO__DEVSTRUCT_gab68cbad48685a69f71b32420fe9b3217_1gab68cbad48685a69f71b32420fe9b3217" kindref="member">DEV_GPIO_PTR</ref></type>
+        <definition>DEV_GPIO_PTR dw_gpio_get_dev</definition>
+        <argsstring>(int32_t)</argsstring>
+        <name>dw_gpio_get_dev</name>
+        <param>
+          <type>int32_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h" line="63" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c" bodystart="303" bodyend="330"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_DW_GPIO_OBJ</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_DW_GPIO_OBJ</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__gpio_8h" kindref="compound">device/designware/dw_gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a7c81651c28007511a38dac6bedc34680_1a7c81651c28007511a38dac6bedc34680" refkind="member"><highlight class="preprocessor">#define<sp/>USE_DW_GPIO_PORT_A<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="39" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a489889df218c36a7ab642edf22db5343_1a489889df218c36a7ab642edf22db5343" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_DW_GPIO_PORT_B<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="40" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ab401acad26783330053b4e812ec05624_1ab401acad26783330053b4e812ec05624" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_DW_GPIO_PORT_C<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="41" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a23d9a869b858de896b6b74dfacd70785_1a23d9a869b858de896b6b74dfacd70785" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_DW_GPIO_PORT_D<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="46" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ada5aab259b7cec6a823872386b20225a_1ada5aab259b7cec6a823872386b20225a" refkind="member"><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_A_INT_MAX_COUNT<sp/><sp/>32</highlight></codeline>
+<codeline lineno="47" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ad0af7884f8eaa198b9d141483a21b85a_1ad0af7884f8eaa198b9d141483a21b85a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_B_INT_MAX_COUNT<sp/><sp/>0</highlight></codeline>
+<codeline lineno="48" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a290bdf8169b019c3b7acf2742f8ab1d7_1a290bdf8169b019c3b7acf2742f8ab1d7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_C_INT_MAX_COUNT<sp/><sp/>0</highlight></codeline>
+<codeline lineno="49" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a4acb659dd978eed8297cd8d788de9ce7_1a4acb659dd978eed8297cd8d788de9ce7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_D_INT_MAX_COUNT<sp/><sp/>0</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="54" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ae6e6ebc27132278d3f84229268b6370e_1ae6e6ebc27132278d3f84229268b6370e" refkind="member"><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_A_VALID_MASK<sp/><sp/><sp/><sp/><sp/>DW_GPIO_MASK_ALL</highlight></codeline>
+<codeline lineno="55" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a76a3abecbedf0287947688098afe53e1_1a76a3abecbedf0287947688098afe53e1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_B_VALID_MASK<sp/><sp/><sp/><sp/><sp/>DW_GPIO_MASK_ALL</highlight></codeline>
+<codeline lineno="56" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_afa9627ca19993637899172f008590d99_1afa9627ca19993637899172f008590d99" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_C_VALID_MASK<sp/><sp/><sp/><sp/><sp/>DW_GPIO_MASK_ALL</highlight></codeline>
+<codeline lineno="57" refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a8287f7a0d4b0cbe8eb51c896de37bfb7_1a8287f7a0d4b0cbe8eb51c896de37bfb7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSDP_GPIO_D_VALID_MASK<sp/><sp/><sp/><sp/><sp/>DW_GPIO_MASK_ALL</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structDEV__GPIO" kindref="compound">DEV_GPIO_PTR</ref><sp/><ref refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ae5bc4c5daece4606b66a3bf685d6d318_1ae5bc4c5daece4606b66a3bf685d6d318" kindref="member">dw_gpio_get_dev</ref>(int32_t);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_DW_GPIO_OBJ*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.h"/>
+  </compounddef>
+</doxygen>

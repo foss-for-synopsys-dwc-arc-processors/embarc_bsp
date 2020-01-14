@@ -1,0 +1,1054 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__DW__IIC__STATIC" kind="group">
+    <compoundname>DEVICE_DW_IIC_STATIC</compoundname>
+    <title>DesignWare IIC Driver Static Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga3773480a002601c80a831970d74493c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_disable</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_disable</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware iic device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="73" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga049a4de9a149b2b55ec04d9d8f219238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_enable</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_enable</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable designware iic device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gac096173293d59da65d03b888d542fceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_clear_interrupt_all</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_clear_interrupt_all</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Clear all designware iic interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="91" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gacbe936ded6377c5cc92eb2fb6633bbfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_iic_putready</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_putready</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>test whether iic is ready to write, 1 ready, 0 not ready </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="100" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga465bba4266534936cd2db63c28bf8271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_iic_getready</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_getready</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>test whether iic is ready to receive, 1 ready, 0 not ready </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaddc2f4764a673ece4400a4bc926e71a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_putdata</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t data)</argsstring>
+        <name>dw_iic_putdata</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write data into IIC TX FIFO with STOP/RESTART Condition, and R/W bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaf1487f8daba264ab87352a22e3fce0a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_iic_getdata</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_getdata</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Read Data from IIC RX FIFO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="127" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga7aae5c1efd5a2451527b25ddfb35d412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_unmask_interrupt</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t mask)</argsstring>
+        <name>dw_iic_unmask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Enable designware iic bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="136" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gacaaea01d835de487c14243ae507dc2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_mask_interrupt</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t mask)</argsstring>
+        <name>dw_iic_mask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware iic bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="145" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gafb73a775d87a3f7c2529aa9e003dc11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_iic_get_txfifo_len</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_get_txfifo_len</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get TX FIFO Length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="154" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="154" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gad9c0111f6e35ee576827505f9464106c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_iic_get_rxfifo_len</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_get_rxfifo_len</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get RX FIFO Length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="167" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="167" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga72303d63141b5ce2d028ee9f8594d9d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_mstaddr_mode</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t mode)</argsstring>
+        <name>dw_iic_set_mstaddr_mode</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set designware iic transfer in 7bit of 10bit addressing mode as a master. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="180" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="180" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga0b01446558308b8247607ccf9001d5fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_slvaddr_mode</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t mode)</argsstring>
+        <name>dw_iic_set_slvaddr_mode</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set designware iic transfer in 7bit of 10bit addressing mode as a slave. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="203" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaa7007f9cc61fd1823e23872467fb4930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_taraddr</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t address)</argsstring>
+        <name>dw_iic_set_taraddr</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Set designware iic transfer target address for addressing any iic slave device as a master. </para>        </briefdescription>
+        <detaileddescription>
+<para>Set designware iic transfer target address for addressing any iic slave device as a master </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="219" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="219" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga68d43e330b1a9d4c3467cec576dc5504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_slvaddr</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t address)</argsstring>
+        <name>dw_iic_set_slvaddr</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Set designware iic slave address as a slave. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="236" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="236" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaabd7a39e8dd62633d3963c282f42ee4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>uint32_t dw_iic_select_speedmode</definition>
+        <argsstring>(uint32_t speedmode)</argsstring>
+        <name>dw_iic_select_speedmode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>speedmode</declname>
+        </param>
+        <briefdescription>
+<para>Select speed mode, and return proper speed mode configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="248" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="248" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga97ad546437466be0f6f2396eb53386f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_speedmode</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t speedmode)</argsstring>
+        <name>dw_iic_set_speedmode</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>speedmode</declname>
+        </param>
+        <briefdescription>
+<para>Set designware iic speed mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="270" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="270" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga889c48f7f9ec2d8d47b9c0ddce20fc2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_working_mode</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, uint32_t mode)</argsstring>
+        <name>dw_iic_set_working_mode</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set designware working mode as master or slave. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="285" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="285" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga94772e26e84343d828aac4b325260f40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_scl_cnt</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, DW_IIC_SCL_CNT *scl_cnt)</argsstring>
+        <name>dw_iic_set_scl_cnt</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structDW__IIC__SCL__CNT" kindref="compound">DW_IIC_SCL_CNT</ref> *</type>
+          <declname>scl_cnt</declname>
+        </param>
+        <briefdescription>
+<para>Set IC_CLK frequency by configuration the *CNT registers for different speed modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="303" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="303" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga4970a3112621f7820837ae0be2bbc0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_iic_calc_spklen</definition>
+        <argsstring>(uint32_t clk_khz, DW_IIC_SPKLEN *spklen)</argsstring>
+        <name>dw_iic_calc_spklen</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>clk_khz</declname>
+        </param>
+        <param>
+          <type><ref refid="structDW__IIC__SPKLEN" kindref="compound">DW_IIC_SPKLEN</ref> *</type>
+          <declname>spklen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="315" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="315" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gae4250303bbd5f286073debc0fe8820da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_iic_calc_sclcnt</definition>
+        <argsstring>(uint32_t clk_khz, uint32_t caploading, DW_IIC_SCL_CNT *scl_cnt, DW_IIC_SPKLEN *spklen)</argsstring>
+        <name>dw_iic_calc_sclcnt</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>clk_khz</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>caploading</declname>
+        </param>
+        <param>
+          <type><ref refid="structDW__IIC__SCL__CNT" kindref="compound">DW_IIC_SCL_CNT</ref> *</type>
+          <declname>scl_cnt</declname>
+        </param>
+        <param>
+          <type><ref refid="structDW__IIC__SPKLEN" kindref="compound">DW_IIC_SPKLEN</ref> *</type>
+          <declname>spklen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="339" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="339" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gadec721444d1e9755ec746208191f32c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_set_spike_len</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr, DW_IIC_SPKLEN *spklen)</argsstring>
+        <name>dw_iic_set_spike_len</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="structDW__IIC__SPKLEN" kindref="compound">DW_IIC_SPKLEN</ref> *</type>
+          <declname>spklen</declname>
+        </param>
+        <briefdescription>
+<para>Set spike suppression configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="424" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="424" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga480084e7ed08e419e4ed5ac7a787d4dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_flush_tx</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_flush_tx</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="435" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="435" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaf51f76243319a8aa8d1fde2b627bd641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_iic_flush_rx</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_flush_rx</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="443" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="443" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga2a53af7f582c7c686f96256809eaf47a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_iic_get_slv_state</definition>
+        <argsstring>(DW_IIC_REG *iic_reg_ptr)</argsstring>
+        <name>dw_iic_get_slv_state</name>
+        <param>
+          <type><ref refid="structDW__IIC__REG" kindref="compound">DW_IIC_REG</ref> *</type>
+          <declname>iic_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="447" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="447" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga883e78bd7bc27e4ae327b9ff92e7c178" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_master_init</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t speed_mode, uint32_t addr_mode, uint32_t tar_addr)</argsstring>
+        <name>dw_iic_master_init</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>speed_mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>addr_mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>tar_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init Designware IIC Device into Master mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="494" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="494" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaed32c5b1d223b76a7956307536dda950" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_slave_init</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t addr_mode, uint32_t slv_addr)</argsstring>
+        <name>dw_iic_slave_init</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>addr_mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>slv_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init Designware IIC Device into Slave mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="533" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="533" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaff59a24412dfacf28c40d1033c195632" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_mst_chkerr</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr)</argsstring>
+        <name>dw_iic_mst_chkerr</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check error for IIC master device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="562" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="562" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga8cd8876ece1eebaf22f1f850cc76bfc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_slv_chkerr</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr)</argsstring>
+        <name>dw_iic_slv_chkerr</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check error for IIC slave device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="596" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="596" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gab429edc5ef8f5e365bbcddc89eae5758" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_enable_device</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr)</argsstring>
+        <name>dw_iic_enable_device</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable designware iic </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="629" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="629" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaa920d810dee5e6336d731cca0e46f8f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_disable_device</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr)</argsstring>
+        <name>dw_iic_disable_device</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable designware iic </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="641" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="641" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaa31b65230fdad31c5d7c246a3d33d50e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_reset_device</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr)</argsstring>
+        <name>dw_iic_reset_device</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="656" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="656" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga98caea2a88ec15e97c634ea42136161d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_mst_dis_cbr</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_iic_mst_dis_cbr</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable iic master interrupt for transmit or receive </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="672" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="672" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga0c5ce2cae426e6be035814f2f1362cad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_slv_dis_cbr</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_iic_slv_dis_cbr</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable iic slave interrupt for transmit or receive </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="691" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="691" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaea201bf603b0beb90381026745fd4f73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_mst_ena_cbr</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_iic_mst_ena_cbr</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable iic master interrupt for transmit or receive </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="710" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="710" bodyend="726"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gad557fcd8f8029f4deb42a5ac0c17b481" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_slv_ena_cbr</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_iic_slv_ena_cbr</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable iic slave interrupt for transmit or receive </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="729" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="729" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga4294ad641aea08f46deafacdcf07ad11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_dis_cbr</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_iic_dis_cbr</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+<para>disable designware iic send or receive interrupt </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device information pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbrtn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>control code of callback routine of send or receive </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="752" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="752" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga26c7c147baa2add68f423ca274c5e75a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_ena_cbr</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_iic_ena_cbr</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare IIC send or receive interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC device information pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbrtn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control code of callback routine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="777" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="777" bodyend="795"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gad2549ce0ce873e54ed0d61aa7a0c4ded" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_enable_interrupt</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr)</argsstring>
+        <name>dw_iic_enable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable designware iic interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iic_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC information structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>enable iic interrupt </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="801" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="801" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga6fbae7ca12acf7924eddef838445514e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_disable_interrupt</definition>
+        <argsstring>(DEV_IIC_INFO *iic_info_ptr)</argsstring>
+        <name>dw_iic_disable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__IIC__INFO" kindref="compound">DEV_IIC_INFO</ref> *</type>
+          <declname>iic_info_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware iic interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iic_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IIC information structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>disable iic send&amp;receive interrupt after disable iic interrupt</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="817" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="817" bodyend="829"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaeabc4119586e0201a57b77ece5307a39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_abort_tx</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_abort_tx</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt transmit transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="832" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="832" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gaba89e631ee83b589d4968d103e831062" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_abort_rx</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_abort_rx</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt receive transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="848" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="848" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga8e98099681ea8c41f01ea65d91b80f58" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_get_txavail</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr)</argsstring>
+        <name>dw_iic_get_txavail</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get available transmit fifo count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="864" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="864" bodyend="879"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga2f980965fe20414d41fe02a153e0f4c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_get_rxavail</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr)</argsstring>
+        <name>dw_iic_get_rxavail</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get available receive fifo count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="882" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="882" bodyend="897"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga6d69ae6b2463526079a29e7227ae4884" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_mst_write_data</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t data, uint32_t next_cond)</argsstring>
+        <name>dw_iic_mst_write_data</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>next_cond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Master device transmit 1 data, next_cond can be <ref refid="dw__iic__hal_8h_af6f27688dbc31eb34671de4d5153524b_1af6f27688dbc31eb34671de4d5153524b" kindref="member">IC_DATA_CMD_STOP</ref>, <ref refid="dw__iic__hal_8h_a16d1e4772a530f8f497a8609e1235334_1a16d1e4772a530f8f497a8609e1235334" kindref="member">IC_DATA_CMD_RESTART</ref> and ref IC_DATA_CMD_NONE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="904" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="904" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gacdf17d2a10a6acdfdf1be12796933533" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_slv_write_data</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t data)</argsstring>
+        <name>dw_iic_slv_write_data</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Slave device transmit 1 data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="925" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="925" bodyend="960"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gab1790672c1112112bb4227bdf58ff881" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_mst_read_data</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t *data, uint32_t next_cond)</argsstring>
+        <name>dw_iic_mst_read_data</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>next_cond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Master device receive 1 data, next_cond can be <ref refid="dw__iic__hal_8h_af6f27688dbc31eb34671de4d5153524b_1af6f27688dbc31eb34671de4d5153524b" kindref="member">IC_DATA_CMD_STOP</ref>, <ref refid="dw__iic__hal_8h_a16d1e4772a530f8f497a8609e1235334_1a16d1e4772a530f8f497a8609e1235334" kindref="member">IC_DATA_CMD_RESTART</ref> and <ref refid="dw__iic__hal_8h_ad09ff40d527c777bcded251daa01d35f_1ad09ff40d527c777bcded251daa01d35f" kindref="member">IC_DATA_CMD_NONE</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="967" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="967" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga65f4b6a842a7a51ab49f9c245ce5f950" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_iic_slv_read_data</definition>
+        <argsstring>(DW_IIC_CTRL *iic_ctrl_ptr, uint32_t *data)</argsstring>
+        <name>dw_iic_slv_read_data</name>
+        <param>
+          <type><ref refid="structDW__IIC__CTRL" kindref="compound">DW_IIC_CTRL</ref> *</type>
+          <declname>iic_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Slave device receive 1 data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1000" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1000" bodyend="1034"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga7b1ef35775b39fcacf25a4e0edb14b55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_mst_int_write</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_mst_int_write</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Master transmit called in interrupt </para>        </detaileddescription>
+        <inbodydescription>
+<para>iic interrupt status</para><para>&lt; ready to send callback</para><para>&lt; ready to send callback</para><para>&lt; ready to send callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1037" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1037" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1ga3cfb7d2b7fe0fed58f124ff5357047a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_mst_int_read</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_mst_int_read</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Master receive called in interrupt </para>        </detaileddescription>
+        <inbodydescription>
+<para>iic interrupt status</para><para>&lt; ready to receive callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1104" bodyend="1182"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__IIC__STATIC_1gafb441be4cc0f33dd1695e7623292289c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_iic_slv_int_process</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_slv_int_process</name>
+        <param>
+          <type><ref refid="structDEV__IIC" kindref="compound">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IIC Slave transmit called in interrupt </para>        </detaileddescription>
+        <inbodydescription>
+<para>iic interrupt status</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" line="1185" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/iic/dw_iic.c" bodystart="1185" bodyend="1223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static or inline functions, variables for DesignWare IIC handle iic operations, only used in this file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

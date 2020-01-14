@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="unionSDIO__DATA_8____unnamed____" kind="union" prot="public">
+    <compoundname>SDIO_DATA.__unnamed__</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionSDIO__DATA_8____unnamed_____a13b5bfe96f3e2fe411c9f66f4a582adf_1a13b5bfe96f3e2fe411c9f66f4a582adf" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionSDIO__DATA_8____unnamed_____ac68271a63ddbc431c307beb7d2918275_1ac68271a63ddbc431c307beb7d2918275" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="80" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="78" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="78" bodyend="81"/>
+    <listofallmembers>
+      <member refid="unionSDIO__DATA_8____unnamed_____a13b5bfe96f3e2fe411c9f66f4a582adf_1a13b5bfe96f3e2fe411c9f66f4a582adf" prot="public" virt="non-virtual"><scope>SDIO_DATA.__unnamed__</scope><name>in</name></member>
+      <member refid="unionSDIO__DATA_8____unnamed_____ac68271a63ddbc431c307beb7d2918275_1ac68271a63ddbc431c307beb7d2918275" prot="public" virt="non-virtual"><scope>SDIO_DATA.__unnamed__</scope><name>out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

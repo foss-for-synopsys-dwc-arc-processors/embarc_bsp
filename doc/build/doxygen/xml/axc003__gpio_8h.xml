@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="axc003__gpio_8h" kind="file">
+    <compoundname>axc003_gpio.h</compoundname>
+    <includes refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h" local="yes">../../drivers/ip/designware/gpio/dw_gpio_obj.h</includes>
+    <includedby refid="axc003__gpio_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c</includedby>
+    <includedby refid="axs__hardware_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_hardware.h</includedby>
+    <includedby refid="axs__103__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_init.c</includedby>
+    <incdepgraph>
+      <node id="160">
+        <label>stdbool.h</label>
+      </node>
+      <node id="156">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>stdint.h</label>
+      </node>
+      <node id="159">
+        <label>stddef.h</label>
+      </node>
+      <node id="163">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>device/designware/dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>limits.h</label>
+      </node>
+      <node id="164">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="155">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h</label>
+        <link refid="axc003_gpio.h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>../../drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="168">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/axs.h</label>
+        <link refid="axs_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="167">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_hardware.h</label>
+        <link refid="axs__hardware_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_init.c</label>
+        <link refid="axs__103__init_8c"/>
+      </node>
+      <node id="166">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c</label>
+        <link refid="axc003__gpio_8c"/>
+      </node>
+      <node id="165">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h</label>
+        <link refid="axc003_gpio.h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>AXC003 LED Port A Configuration</header>
+      <memberdef kind="define" id="axc003__gpio_8h_a6044fbba690eb5fe2130933f795e4bcc_1a6044fbba690eb5fe2130933f795e4bcc" prot="public" static="no">
+        <name>AXC003_LEDA_MASK</name>
+        <initializer><ref refid="axc003__gpio_8h_a68a0ad63b456e8fdce125e3660f1202b_1a68a0ad63b456e8fdce125e3660f1202b" kindref="member">CPU_POARTA_DIR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="66" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a940ee3135f857d5507baf7f868c3657d_1a940ee3135f857d5507baf7f868c3657d" prot="public" static="no">
+        <name>AXC003_LEDA_PORT</name>
+        <initializer>(<ref refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a3ade879f639aa487adbe660a03ee2372_1a3ade879f639aa487adbe660a03ee2372" kindref="member">CPU_DW_GPIO_PORT_A</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="67" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a21b617ae7ea98d7a64722608879cde4c_1a21b617ae7ea98d7a64722608879cde4c" prot="public" static="no">
+        <name>AXC003_LEDA_DIR</name>
+        <initializer><ref refid="axc003__gpio_8h_a68a0ad63b456e8fdce125e3660f1202b_1a68a0ad63b456e8fdce125e3660f1202b" kindref="member">CPU_POARTA_DIR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="68" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AXC003 LED Port B Configuration</header>
+      <memberdef kind="define" id="axc003__gpio_8h_a11c737de7f6c30ac5b7636d42f76cf8e_1a11c737de7f6c30ac5b7636d42f76cf8e" prot="public" static="no">
+        <name>AXC003_LEDB_OFFSET</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="75" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a8c148d9121c99ef95243359cdc69030c_1a8c148d9121c99ef95243359cdc69030c" prot="public" static="no">
+        <name>AXC003_LEDB_MASK</name>
+        <initializer>((0xff) &lt;&lt; AXC003_LEDB_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="76" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a0d25decc9a97559b3b0a22fb67194f17_1a0d25decc9a97559b3b0a22fb67194f17" prot="public" static="no">
+        <name>AXC003_LEDB_PORT</name>
+        <initializer>(<ref refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ab140fce99f6397f296bd7ed477371509_1ab140fce99f6397f296bd7ed477371509" kindref="member">CPU_DW_GPIO_PORT_B</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="77" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_ac73e70971b0b3634173799ce97402d1e_1ac73e70971b0b3634173799ce97402d1e" prot="public" static="no">
+        <name>AXC003_LEDB_DIR</name>
+        <initializer>((0xff) &lt;&lt; AXC003_LEDB_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="78" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="define" id="axc003__gpio_8h_ad1ad71ddc008ff27c76b8063781f799f_1ad1ad71ddc008ff27c76b8063781f799f" prot="public" static="no">
+        <name>AXC003_7SEG_OFFSET</name>
+        <initializer>(16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>\name AXC003 7-segment Port Configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="85" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a2129d4865eef5e9b2a60b2d1f4c0fd07_1a2129d4865eef5e9b2a60b2d1f4c0fd07" prot="public" static="no">
+        <name>AXC003_7SEG_MASK</name>
+        <initializer>((0xffff) &lt;&lt; AXC003_7SEG_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="86" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a41739b267d94470429bdff9d2079aab2_1a41739b267d94470429bdff9d2079aab2" prot="public" static="no">
+        <name>AXC003_7SEG_PORT</name>
+        <initializer>(<ref refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_ab140fce99f6397f296bd7ed477371509_1ab140fce99f6397f296bd7ed477371509" kindref="member">CPU_DW_GPIO_PORT_B</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="87" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_af91e47c405efd47a775b94638baeaed9_1af91e47c405efd47a775b94638baeaed9" prot="public" static="no">
+        <name>AXC003_7SEG_DIR</name>
+        <initializer>((0xffff) &lt;&lt; AXC003_7SEG_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="88" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>AXC003 Button Port Configuration</header>
+      <memberdef kind="define" id="axc003__gpio_8h_aeead9b6f27e23ed668d94bdaf83e7a66_1aeead9b6f27e23ed668d94bdaf83e7a66" prot="public" static="no">
+        <name>AXC003_BUTTON_OFFSET</name>
+        <initializer>(20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="95" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_abe62c609fe78b397f3d30614e1cbe70d_1abe62c609fe78b397f3d30614e1cbe70d" prot="public" static="no">
+        <name>AXC003_BUTTON_MASK</name>
+        <initializer>((0xf) &lt;&lt; AXC003_BUTTON_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="96" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_aeb888edc017bb94e59b1d3ab074d4481_1aeb888edc017bb94e59b1d3ab074d4481" prot="public" static="no">
+        <name>AXC003_BUTTON_PORT</name>
+        <initializer>(<ref refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a3ade879f639aa487adbe660a03ee2372_1a3ade879f639aa487adbe660a03ee2372" kindref="member">CPU_DW_GPIO_PORT_A</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="97" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_ae3e4784c80da5560572e43cab65e0f0f_1ae3e4784c80da5560572e43cab65e0f0f" prot="public" static="no">
+        <name>AXC003_BUTTON_DIR</name>
+        <initializer>((0x0) &lt;&lt; AXC003_BUTTON_OFFSET)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="98" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a54c70126bb492d099861caddc3907e60_1a54c70126bb492d099861caddc3907e60" prot="public" static="no">
+        <name>AXC003_BUTTON_SW2504_OFFSET</name>
+        <initializer>(20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="100" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a705ec9404a61d87ac72de78018a3512e_1a705ec9404a61d87ac72de78018a3512e" prot="public" static="no">
+        <name>AXC003_BUTTON_SW2505_OFFSET</name>
+        <initializer>(22)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="101" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a2a51e581b649ccbba3eb7e4f5f3e7f6e_1a2a51e581b649ccbba3eb7e4f5f3e7f6e" prot="public" static="no">
+        <name>AXC003_BUTTON_SW2506_OFFSET</name>
+        <initializer>(21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="102" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_a2d3bf6297e70a8c26ab8572425c9a670_1a2d3bf6297e70a8c26ab8572425c9a670" prot="public" static="no">
+        <name>AXC003_BUTTON_SW2507_OFFSET</name>
+        <initializer>(23)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="103" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="axc003__gpio_8h_a68a0ad63b456e8fdce125e3660f1202b_1a68a0ad63b456e8fdce125e3660f1202b" prot="public" static="no">
+        <name>CPU_POARTA_DIR</name>
+        <initializer>0x18C63</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="axc003__gpio_8h_ad0e72f67f74ae0f6be165670bf6f7d25_1ad0e72f67f74ae0f6be165670bf6f7d25" prot="public" static="no">
+        <name>CPU_PORTB_DIR</name>
+        <initializer>0xFFFFFFF0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="60" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="axc003__gpio_8h_a458834f7b436dda8ba0dfa15cd302596_1a458834f7b436dda8ba0dfa15cd302596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void axc003_gpio_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>axc003_gpio_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>axc003 on board gpio init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c" bodystart="46" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="axc003__gpio_8h_ae3ae9c28ab249bbd265e14e9bc1ae639_1ae3ae9c28ab249bbd265e14e9bc1ae639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leda_write</definition>
+        <argsstring>(uint32_t led_val, uint32_t mask)</argsstring>
+        <name>leda_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>led_val</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write 1 to light on led bit, else light off led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c" bodystart="67" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="axc003__gpio_8h_a40eb42f17565d2858707a521c35d7040_1a40eb42f17565d2858707a521c35d7040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ledb_write</definition>
+        <argsstring>(uint32_t led_val, uint32_t mask)</argsstring>
+        <name>ledb_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>led_val</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write 1 to light on led bit, else light off led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="112" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="axc003__gpio_8h_a94b2557a37827d7b971b7475cf8e62f6_1a94b2557a37827d7b971b7475cf8e62f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void seven_seg_write</definition>
+        <argsstring>(uint32_t val)</argsstring>
+        <name>seven_seg_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="113" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c" bodystart="159" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="group__BOARD__EMSK__DRV__GPIO_ga1321d1f2d3e39b23315285b52acd0852_1ga1321d1f2d3e39b23315285b52acd0852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t button_read</definition>
+        <argsstring>(uint32_t mask)</argsstring>
+        <name>button_read</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>press down bit set to 1 else 0</para><para>Press down bit set to 1 else 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c" bodystart="99" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="axc003__gpio_8h_a7be27fed65a2a56ebc0bccdc3e8a02fa_1a7be27fed65a2a56ebc0bccdc3e8a02fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void button_install_isr</definition>
+        <argsstring>(uint32_t offset, void(*isr_ptr)(void *ptr))</argsstring>
+        <name>button_install_isr</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>void(*)(void *ptr)</type>
+          <declname>isr_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.c" bodystart="115" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_AXC003_GPIO</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_AXC003_GPIO</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../drivers/ip/designware/gpio/dw_gpio_obj.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>CPU<sp/>GPIO<sp/>PORT<sp/>A<sp/>description</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>bit<sp/>0<sp/>:<sp/>LED2501</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>bit<sp/>1<sp/>:<sp/>LED2502</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>bit<sp/>2-4<sp/>:<sp/>reserved</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>bit<sp/>5<sp/>:<sp/>LED2503</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>bit<sp/>6<sp/>:<sp/>LED2504</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>bit<sp/>7-9<sp/>:<sp/>reserved</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>bit<sp/>10<sp/>:<sp/>LED2505</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>bit<sp/>11<sp/>:<sp/>LED2506</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>bit<sp/>12<sp/>:<sp/>MB<sp/>ICTL<sp/>in</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>bit<sp/>13-14<sp/>:<sp/>reserved</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>bit<sp/>15<sp/>:<sp/>LED2507</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>bit<sp/>16<sp/>:<sp/>LED2508</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>bit<sp/>17-19<sp/>:<sp/>reserved</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>bit<sp/>20-23<sp/>:<sp/>SW2504-SW2507</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>bit<sp/>24-31<sp/>:<sp/>reserved</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="axc003__gpio_8h_a68a0ad63b456e8fdce125e3660f1202b_1a68a0ad63b456e8fdce125e3660f1202b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPU_POARTA_DIR<sp/>0x18C63</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>CPU<sp/>GPIO<sp/>PORT<sp/>B<sp/>description</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>bit<sp/>0-7<sp/>:<sp/>JP1201<sp/>-<sp/>JP1207</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>bit<sp/>8-15<sp/>:<sp/>LED0-7<sp/>on<sp/>cpu<sp/>card</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>bit<sp/>16-31<sp/>:<sp/>2<sp/>7-segments<sp/>display</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="axc003__gpio_8h_ad0e72f67f74ae0f6be165670bf6f7d25_1ad0e72f67f74ae0f6be165670bf6f7d25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPU_PORTB_DIR<sp/>0xFFFFFFF0</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="66" refid="axc003__gpio_8h_a6044fbba690eb5fe2130933f795e4bcc_1a6044fbba690eb5fe2130933f795e4bcc" refkind="member"><highlight class="preprocessor">#define<sp/>AXC003_LEDA_MASK<sp/><sp/><sp/><sp/>CPU_POARTA_DIR</highlight></codeline>
+<codeline lineno="67" refid="axc003__gpio_8h_a940ee3135f857d5507baf7f868c3657d_1a940ee3135f857d5507baf7f868c3657d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_LEDA_PORT<sp/><sp/><sp/><sp/>(CPU_DW_GPIO_PORT_A)</highlight></codeline>
+<codeline lineno="68" refid="axc003__gpio_8h_a21b617ae7ea98d7a64722608879cde4c_1a21b617ae7ea98d7a64722608879cde4c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_LEDA_DIR<sp/><sp/><sp/><sp/><sp/>CPU_POARTA_DIR</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="75" refid="axc003__gpio_8h_a11c737de7f6c30ac5b7636d42f76cf8e_1a11c737de7f6c30ac5b7636d42f76cf8e" refkind="member"><highlight class="preprocessor">#define<sp/>AXC003_LEDB_OFFSET<sp/><sp/>(8)</highlight></codeline>
+<codeline lineno="76" refid="axc003__gpio_8h_a8c148d9121c99ef95243359cdc69030c_1a8c148d9121c99ef95243359cdc69030c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_LEDB_MASK<sp/><sp/><sp/><sp/>((0xff)<sp/>&lt;&lt;<sp/>AXC003_LEDB_OFFSET)</highlight></codeline>
+<codeline lineno="77" refid="axc003__gpio_8h_a0d25decc9a97559b3b0a22fb67194f17_1a0d25decc9a97559b3b0a22fb67194f17" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_LEDB_PORT<sp/><sp/><sp/><sp/>(CPU_DW_GPIO_PORT_B)</highlight></codeline>
+<codeline lineno="78" refid="axc003__gpio_8h_ac73e70971b0b3634173799ce97402d1e_1ac73e70971b0b3634173799ce97402d1e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_LEDB_DIR<sp/><sp/><sp/><sp/><sp/>((0xff)<sp/>&lt;&lt;<sp/>AXC003_LEDB_OFFSET)</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="85" refid="axc003__gpio_8h_ad1ad71ddc008ff27c76b8063781f799f_1ad1ad71ddc008ff27c76b8063781f799f" refkind="member"><highlight class="preprocessor">#define<sp/>AXC003_7SEG_OFFSET<sp/><sp/>(16)</highlight></codeline>
+<codeline lineno="86" refid="axc003__gpio_8h_a2129d4865eef5e9b2a60b2d1f4c0fd07_1a2129d4865eef5e9b2a60b2d1f4c0fd07" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_7SEG_MASK<sp/><sp/><sp/><sp/>((0xffff)<sp/>&lt;&lt;<sp/>AXC003_7SEG_OFFSET)</highlight></codeline>
+<codeline lineno="87" refid="axc003__gpio_8h_a41739b267d94470429bdff9d2079aab2_1a41739b267d94470429bdff9d2079aab2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_7SEG_PORT<sp/><sp/><sp/><sp/>(CPU_DW_GPIO_PORT_B)</highlight></codeline>
+<codeline lineno="88" refid="axc003__gpio_8h_af91e47c405efd47a775b94638baeaed9_1af91e47c405efd47a775b94638baeaed9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_7SEG_DIR<sp/><sp/><sp/><sp/><sp/>((0xffff)<sp/>&lt;&lt;<sp/>AXC003_7SEG_OFFSET)</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="95" refid="axc003__gpio_8h_aeead9b6f27e23ed668d94bdaf83e7a66_1aeead9b6f27e23ed668d94bdaf83e7a66" refkind="member"><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_OFFSET<sp/><sp/><sp/><sp/>(20)</highlight></codeline>
+<codeline lineno="96" refid="axc003__gpio_8h_abe62c609fe78b397f3d30614e1cbe70d_1abe62c609fe78b397f3d30614e1cbe70d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_MASK<sp/><sp/><sp/><sp/><sp/><sp/>((0xf)<sp/>&lt;&lt;<sp/>AXC003_BUTTON_OFFSET)</highlight></codeline>
+<codeline lineno="97" refid="axc003__gpio_8h_aeb888edc017bb94e59b1d3ab074d4481_1aeb888edc017bb94e59b1d3ab074d4481" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_PORT<sp/><sp/><sp/><sp/><sp/><sp/>(CPU_DW_GPIO_PORT_A)</highlight></codeline>
+<codeline lineno="98" refid="axc003__gpio_8h_ae3e4784c80da5560572e43cab65e0f0f_1ae3e4784c80da5560572e43cab65e0f0f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_DIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((0x0)<sp/>&lt;&lt;<sp/>AXC003_BUTTON_OFFSET)</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="axc003__gpio_8h_a54c70126bb492d099861caddc3907e60_1a54c70126bb492d099861caddc3907e60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_SW2504_OFFSET<sp/>(20)</highlight></codeline>
+<codeline lineno="101" refid="axc003__gpio_8h_a705ec9404a61d87ac72de78018a3512e_1a705ec9404a61d87ac72de78018a3512e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_SW2505_OFFSET<sp/>(22)</highlight></codeline>
+<codeline lineno="102" refid="axc003__gpio_8h_a2a51e581b649ccbba3eb7e4f5f3e7f6e_1a2a51e581b649ccbba3eb7e4f5f3e7f6e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_SW2506_OFFSET<sp/>(21)</highlight></codeline>
+<codeline lineno="103" refid="axc003__gpio_8h_a2d3bf6297e70a8c26ab8572425c9a670_1a2d3bf6297e70a8c26ab8572425c9a670" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AXC003_BUTTON_SW2507_OFFSET<sp/>(23)</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axc003__gpio_8h_a458834f7b436dda8ba0dfa15cd302596_1a458834f7b436dda8ba0dfa15cd302596" kindref="member">axc003_gpio_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axc003__gpio_8h_ae3ae9c28ab249bbd265e14e9bc1ae639_1ae3ae9c28ab249bbd265e14e9bc1ae639" kindref="member">leda_write</ref>(uint32_t<sp/>led_val,<sp/>uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axc003__gpio_8h_a40eb42f17565d2858707a521c35d7040_1a40eb42f17565d2858707a521c35d7040" kindref="member">ledb_write</ref>(uint32_t<sp/>led_val,<sp/>uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axc003__gpio_8h_a94b2557a37827d7b971b7475cf8e62f6_1a94b2557a37827d7b971b7475cf8e62f6" kindref="member">seven_seg_write</ref>(uint32_t<sp/>val);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_ga1321d1f2d3e39b23315285b52acd0852_1ga1321d1f2d3e39b23315285b52acd0852" kindref="member">button_read</ref>(uint32_t<sp/>mask);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axc003__gpio_8h_a7be27fed65a2a56ebc0bccdc3e8a02fa_1a7be27fed65a2a56ebc0bccdc3e8a02fa" kindref="member">button_install_isr</ref>(uint32_t<sp/>offset,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*isr_ptr)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_AXC003_GPIO<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axc003_gpio.h"/>
+  </compounddef>
+</doxygen>

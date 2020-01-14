@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Build System Documentation &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Porting Guides" href="porting_guides.html" />
+    <link rel="prev" title="Application Development" href="application_development.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developer_guides.html">Developer Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html">Coding style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="application_development.html">Application Development</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Build System Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-targets">Make Targets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-options">Make Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#options-to-set-using-make-command">Options to Set Using Make Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#options-coded-in-application-makefile">Options Coded in Application Makefile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="porting_guides.html">Porting Guides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation_generation.html">embARC Documentation Generation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developer_guides.html">Developer Guides</a> &raquo;</li>
+        
+      <li>Build System Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="build-system-documentation">
+<span id="id1"></span><h1>Build System Documentation<a class="headerlink" href="#build-system-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The embARC build system is based on the makefile system as shown below. To add new components, add a new makefile to the system. All embARC components are compiled into libraries,
+which are then merged into one final library called <strong>libembarc.a</strong>. The application objects are then linked against <strong>libembarc.a</strong> to produce the target .elf file.</p>
+<div class="figure align-center" id="id2">
+<img alt="../_images/build.png" src="../_images/build.png" />
+<p class="caption"><span class="caption-text">embARC build system</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">options</span></code> directory under the embARC root folder contains the common makefiles as shown below.</p>
+<ul class="simple">
+<li><p><code class="file docutils literal notranslate"><span class="pre">debug.mk</span></code>: target debug options for the MetaWare debugger, which supports Ashling OpellaXD and Digilent USB-JTAG connections.</p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">files.mk</span></code>: files and directory collections in embARC.</p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">options.mk</span></code>: entry makefile with common definitions, path definitions, other makefiles, and so on.</p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">rule.mk</span></code>: make targets and rules.</p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">scripts.mk</span></code>: common makefile functions</p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">toolchain.mk</span></code>: general toolchain definitions, including <code class="docutils literal notranslate"><span class="pre">toolchain_gnu.mk</span></code> for the ARC GNU toolchain and <code class="docutils literal notranslate"><span class="pre">toolchain_mw.mk</span></code> for the MetaWare toolchain.</p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">toolchain_gnu.mk</span></code> &amp; <code class="file docutils literal notranslate"><span class="pre">toolchain_mw.mk</span></code>: toolchain specific compile and link options</p></li>
+</ul>
+</div>
+<div class="section" id="make-targets">
+<h2>Make Targets<a class="headerlink" href="#make-targets" title="Permalink to this headline">¶</a></h2>
+<p>embARC build system is based on make. It can be used for both the MetaWare and ARC GNU toolchains, Windows and Linux development hosts, and multiple ARC cores and boards.</p>
+<p>There are several targets to make and run embARC examples on the command line. These make targets are defined in <em>options/rules.mk</em>. All the commands below use the default make options
+provided in the embARC application makefile.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">help</span></code>: Show help document about how to use make in embARC.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">all</span></code>: Compile and link the target program.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">build</span></code>: Clean current configuration object files and rebuild configuration.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">run</span></code>: Compile and link the target program. For the MetaWare toolchain, call the MetaWare debugger (MDB) to load the target program to ARC board. For the ARC GNU toolchain, call arc-elf32-gdb and OpenOCD to load the target program to ARC board.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">gui</span></code>: Compile and link the target program. Launch the MetaWare debugger (MDB) in GUI mode for the MetaWare toolchain or arc-elf32-gdb in command-line mode for the ARC GNU toolchain to debug the target program.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code>: Clean object files for current build configuration.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">boardclean</span></code>: Clean all object files for currently selected board.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">distclean</span></code>: Clean all object files for different configurations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">cfg</span></code>: Print current configurations of embARC.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">opt</span></code>: Print detailed configuration properties of embARC.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If running <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/example/baremetal/bootloader</span></code> with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">run</span></code> in the command line, the default make options are enabled in the embARC application makefile. Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">cfg</span></code> to see the configuration for this application.</p>
+</div>
+</div>
+<div class="section" id="make-options">
+<span id="make-options-for-embarc"></span><h2>Make Options<a class="headerlink" href="#make-options" title="Permalink to this headline">¶</a></h2>
+<p>The make options are defined for embARC flexibility. They can be set through make command or hard-coded in the application makefile.</p>
+<div class="section" id="options-to-set-using-make-command">
+<h3>Options to Set Using Make Command<a class="headerlink" href="#options-to-set-using-make-command" title="Permalink to this headline">¶</a></h3>
+<p>Most options are located in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code>. If you change an option value in <em>&lt;embARC&gt;/options/options.mk</em>, it will affect all the applications. You can set the value of the options in your own application makefile for the specified hardware.</p>
+<ul class="simple">
+<li><p><strong>BOARD</strong>: Select the target board. The default value of this option is defined in <em>board/board.mk</em>. Optional values as below, the default value is emsk. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span></code> selects the EMSK board as the target board.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">Make option - BOARD</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BOARD</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>emsk</p></td>
+<td><p>EM Starter Kit</p></td>
+</tr>
+<tr class="row-odd"><td><p>axs</p></td>
+<td><p>AXS Board</p></td>
+</tr>
+<tr class="row-even"><td><p>nsim</p></td>
+<td><p>Virtual Board based on nSIM</p></td>
+</tr>
+<tr class="row-odd"><td><p>hsdk</p></td>
+<td><p>ARC HS Development Kit</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>BD_VER</strong>: Select the board version. The default value of this option is defined in one of the following makefiles according to the <strong>BOARD</strong> option. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span></code> selects 2.2 as the EMSK target board version.</p>
+<blockquote>
+<div><ul>
+<li><p>For the EMSK board, three versions are supported in embARC: 1.1, 2.2, and 2.3. The optional values of <strong>BD_VER</strong> are 11, 22 and 23. The default value of BD_VER for the emsk board is 22.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For EMSK 2.0, 2.1 and 2.2, you can upgrade the firmware version to 2.3, and for EMSK 1.0, you can upgrade the firmware version to 1.1.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>For the AXS board, one version is supported: 103. The optional value of <strong>BD_VER</strong> is 103. The default value of <strong>BD_VER</strong> for the AXS board is 103.</p></li>
+<li><p>For the nSIM board, two versions are supported: 10, 1506. The optional value of <strong>BD_VER</strong> is 1506 and 10. The default value of <strong>BD_VER</strong> for the nSIM board is 1506.</p></li>
+<li><p>For the HSDK board, one version is supported: 10. The optional value of <strong>BD_VER</strong> is 10. The default value of <strong>BD_VER</strong> for the HSDK board is 10.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Make option - BD_VER</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BOARD</p></th>
+<th class="head"><p>Location of BD_VER Definition</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>emsk</p></td>
+<td><p>board/emsk/emsk.mk</p></td>
+</tr>
+<tr class="row-odd"><td><p>axs</p></td>
+<td><p>board/axs/axs.mk</p></td>
+</tr>
+<tr class="row-even"><td><p>nsim</p></td>
+<td><p>board/nsim/nsim.mk</p></td>
+</tr>
+<tr class="row-odd"><td><p>iotdk</p></td>
+<td><p>board/iotdk/iotdk.mk</p></td>
+</tr>
+<tr class="row-even"><td><p>hsdk</p></td>
+<td><p>board/hsdk/hsdk.mk</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The BD_VER must match the target BOARD version. For example, programs built for 1.1 cannot run on an EMSK 2.x board.</p>
+</div>
+<ul>
+<li><p><strong>CUR_CORE</strong>: Select the core configuration for the specified board version. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem11d</span></code> selects the arcem11d core configuration for emsk 2.3.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For EMSK 1.1, the default value of this option is <code class="docutils literal notranslate"><span class="pre">arcem6</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/emsk/configs/11/core_config.mk</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-text">Make option - CUR_CORE for EMSK 1.1</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CUR_CORE</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>arcem4</p></td>
+<td><p>ARC EM4 core</p></td>
+</tr>
+<tr class="row-odd"><td><p>arcem4cr16</p></td>
+<td><p>ARC EM4CR16 core</p></td>
+</tr>
+<tr class="row-even"><td><p>arcem6</p></td>
+<td><p>ARC EM6 core</p></td>
+</tr>
+<tr class="row-odd"><td><p>arcem6gp</p></td>
+<td><p>ARC EM6GP core</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>For EMSK 2.2, the default value of this option is defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/emsk/configs/22/core_config.mk</span></code>. For EMSK 2.3, the default value of this option is defined in <code class="docutils literal notranslate"><span class="pre">board/emsk/configs/23/core_config.mk</span></code>. The default value for EMSK 2.2 and 2.3 is <code class="docutils literal notranslate"><span class="pre">arcem7d</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id6">
+<caption><span class="caption-text">Make option - CUR_CORE for EMSK 2.2 &amp; 2.3</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CUR_CORE</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>arcem7d</p></td>
+<td><p>ARC EM7D core</p></td>
+</tr>
+<tr class="row-odd"><td><p>arcem9d</p></td>
+<td><p>ARC EM9D core</p></td>
+</tr>
+<tr class="row-even"><td><p>arcem11d</p></td>
+<td><p>ARC EM11D core</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>For AXS, the default value of this option is <code class="docutils literal notranslate"><span class="pre">archs36</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/axs/configs/103/core_config.mk</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id7">
+<caption><span class="caption-text">Make option - CUR_CORE for AXS</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CUR_CORE</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>archs36</p></td>
+<td><p>ARC HS36 core</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>For nSIM 1506, the default value of this option is <code class="docutils literal notranslate"><span class="pre">arcemfull</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/nsim/configs/1506/core_config.mk</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id8">
+<caption><span class="caption-text">Make option - CUR_CORE for nSIM 1506</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CUR_CORE</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>arcemfull</p></td>
+<td><p>ARC EM core with full features</p></td>
+</tr>
+<tr class="row-odd"><td><p>archs</p></td>
+<td><p>ARC HS core</p></td>
+</tr>
+<tr class="row-even"><td><p>arcemsecureshield</p></td>
+<td><p>ARC EM core with secure feature</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>For nSIM 10, the default value of this option is <code class="docutils literal notranslate"><span class="pre">arcem</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/nsim/configs/10/core_config.mk</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id9">
+<caption><span class="caption-text">Make option - CUR_CORE for nSIM 10</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CUR_CORE</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>arcem</p></td>
+<td><p>ARC EM core</p></td>
+</tr>
+<tr class="row-odd"><td><p>archs</p></td>
+<td><p>ARC HS core</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>For HSDK, the default value of this option is <code class="docutils literal notranslate"><span class="pre">archs38_c0</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/hsdk/configs/10/core_config.mk</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id10">
+<caption><span class="caption-text">Make option - CUR_CORE for HSDK</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>CUR_CORE</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>archs38_c0</p></td>
+<td><p>ARC HS38x4 core 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>archs38_c1</p></td>
+<td><p>ARC HS38x4 core 1</p></td>
+</tr>
+<tr class="row-even"><td><p>archs38_c2</p></td>
+<td><p>ARC HS38x4 core 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>archs38_c3</p></td>
+<td><p>ARC HS38x4 core 3</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p><strong>TOOLCHAIN</strong>: Select the toolchain to compile the embARC software. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">TOOLCHAIN=gnu</span></code> selects the ARC GNU toolchain to compile embARC applications for EMSK 2.3, ARC EM11d. The default value of this option is <strong>mw</strong> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code></p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id11">
+<caption><span class="caption-text">Make option - TOOLCHAIN</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>TOOLCHAIN</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mw</p></td>
+<td><p>MetaWare Development Toolkit</p></td>
+</tr>
+<tr class="row-odd"><td><p>gnu</p></td>
+<td><p>ARC GNU Development Toolset</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>DIG_NAME</strong>: Specify the Digilent USB JTAG name. The default value of this option is empty defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It is not necessary to set it when just one JTAG is connected to your PC. It is useful when more than one EMSK JTAG cable is connected to your PC, for example, to debug two EMSK boards using one PC. See <a class="reference internal" href="application_development.html#application-development-debug-multiple-boards"><span class="std std-ref">Debug Multiple Boards</span></a> for details.</p></li>
+<li><p>This option is only available when the MetaWare toolchain is selected. This option is a simple wrapper of the <code class="docutils literal notranslate"><span class="pre">-prop=dig_device=name</span></code> option for the MetaWare debugger (mdb). See <em>MetaWare Debugger User’s Guide</em> for details.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>V</strong>: Control whether to show verbose compiling information. The default value of this option is <code class="docutils literal notranslate"><span class="pre">0</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code>.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id12">
+<caption><span class="caption-text">Make option - V</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>V</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Show basic compiling information</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Show verbose information</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>TCF</strong>: Select the tool configuration file (tcf). You can choose the specified tcf file by this option for the target board and core configuration.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This option uses an absolute file path or relative file path (relative to where your application makefile located) to specify the tcf file .</p></li>
+<li><p>This option is not supported for the nSIM 1506 board.</p></li>
+<li><p>For example, when the current board and core is EMSK 2.3 and ARC EM7D, you can pass your own tcf file arcem.tcf to replace the default one. Copy arcem.tcf file into the folder where application makefile located. Run <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TCF=arcem.tcf</span></code> to select it.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When selecting your tcf file, clean the project before build it.</p>
+</div>
+</div>
+<div class="section" id="options-coded-in-application-makefile">
+<h3>Options Coded in Application Makefile<a class="headerlink" href="#options-coded-in-application-makefile" title="Permalink to this headline">¶</a></h3>
+<p><strong>ARC related Options</strong></p>
+<ul>
+<li><p><strong>OLEVEL</strong>: Select the compiler optimization level, including <code class="docutils literal notranslate"><span class="pre">O</span></code>, <code class="docutils literal notranslate"><span class="pre">O0</span></code>, <code class="docutils literal notranslate"><span class="pre">O1</span></code>, <code class="docutils literal notranslate"><span class="pre">O2</span></code>, <code class="docutils literal notranslate"><span class="pre">O3</span></code>, <code class="docutils literal notranslate"><span class="pre">Os</span></code>, <code class="docutils literal notranslate"><span class="pre">Os1</span></code>, <code class="docutils literal notranslate"><span class="pre">Oz</span></code>, <code class="docutils literal notranslate"><span class="pre">Ofast</span></code>, <code class="docutils literal notranslate"><span class="pre">Og</span></code>. The default value of this option is defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code>. The OLEVEL can be blank to not select any optimization, like <code class="docutils literal notranslate"><span class="pre">OLEVEL=</span></code>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">OLEVEL=O2</span></code> selects optimization level <code class="docutils literal notranslate"><span class="pre">O2</span></code> of the ARC GNU toolchain to compile embARC applications for EMSK 2.2 and ARC EM11D.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>JTAG</strong>: Select the JTAG probe to load and debug the target program. The default value of this option is <code class="docutils literal notranslate"><span class="pre">usb</span></code> defined in <em>&lt;embARC&gt;/options/options.mk</em>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">OLEVEL=O2</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">run</span></code> selects the ARC GNU toolchain to compile embARC applications with optimization level O2 for EMSK 2.2, ARC EM11D, and load the applications using Digilent USB JTAG.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id13">
+<caption><span class="caption-text">Make option - JTAG</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>JTAG</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>usb</p></td>
+<td><p>Digilent USB JTAG cable</p></td>
+</tr>
+<tr class="row-odd"><td><p>opella</p></td>
+<td><p>Ashling Opella-XD JTAG probe</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>opella</strong> is only supported for the MetaWare Development Toolkit.</p>
+</div>
+<ul class="simple">
+<li><p><strong>LIB_SEL</strong>: Select libraries to be used in the embARC application. This option should be defined in your application makefile. All available libraries are located in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/library</span></code>. <code class="docutils literal notranslate"><span class="pre">clib</span></code> is set as default.</p></li>
+</ul>
+<table class="colwidths-given docutils align-default" id="id14">
+<caption><span class="caption-text">Make option - LIB_SEL</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>LIB_SEL</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>clib</p></td>
+<td><p>C Library Support</p></td>
+</tr>
+<tr class="row-odd"><td><p>common</p></td>
+<td><p>Basic printf() functionality</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is recommended to include <code class="docutils literal notranslate"><span class="pre">common</span></code> library to provide basic printf() functionality using xprintf().</p>
+</div>
+<ul>
+<li><p><strong>APPL_LIBS</strong>: Set extra required application libraries to be linked. This option should be defined in your application makefile.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This <strong>APP_LIBS</strong> option collects extra linker option to include extra libraries to be linked.</p></li>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">APPL_LIBS</span> <span class="pre">=</span> <span class="pre">-lm</span></code> means linking math library to the target program. <code class="docutils literal notranslate"><span class="pre">-lm</span></code> only support the ARC GNU toolchain.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>HEAPSZ</strong>: Set application heap size in bytes. This option should be defined in your application makefile. The default value of this option is <code class="docutils literal notranslate"><span class="pre">8192</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code>. It means the heap size of the application is set to 8192 bytes by default.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>HEAPSZ</strong> is useful for baremetal applications.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>STACKSZ</strong>: Set application stack size in bytes. This option should be defined in your application makefile. The default value of this option is <code class="docutils literal notranslate"><span class="pre">8192</span></code> defined in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/options/options.mk</span></code>. It means the stack size of the application is set to 8192 bytes as default.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For baremetal and Contiki applications, <strong>STACKSZ</strong> is useful for baremetal applications.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>EXT_DEV_LIST</strong>: Select peripheral device drivers used in your application.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Use <strong>EXT_DEV_LIST</strong> in the example’s makefile. If more than one peripheral device drivers are selected, please use space between each other, like <code class="docutils literal notranslate"><span class="pre">EXT_DEV_LIST</span> <span class="pre">+=</span> <span class="pre">EXT_DEV_LIST</span> <span class="pre">+=</span> <span class="pre">wifi/mrf24g</span> <span class="pre">sensor/temperature/adt7420</span></code>.</p></li>
+<li><p>Optional values for <strong>EXT_DEV_LIST</strong> can be found in <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/device/peripheral</span></code>. Select the target peripheral device drivers relative path, and add it to <strong>EXT_DEV_LIST</strong>.</p></li>
+<li><p>Some onboard peripheral device drivers are already selected according to the target board, you can check it in the target board makefile, such as <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/emsk/emsk.mk</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>WIFI_SEL is not available now. If choosing different WiFi, you need to change the EXT_DEV_LIST in your example makefile.</p>
+</div>
+<ul class="simple">
+<li><p><strong>EMBARC_ROOT</strong>: Set embARC source-code root directory path. This option should be defined in your application makefile to specify the path of the embARC source-code root. The path can be relative or absolute.</p></li>
+</ul>
+<p><strong>Application related Options</strong></p>
+<ul>
+<li><p><strong>APPL</strong>: Set embARC application name. <strong>APPL</strong> should be defined in your application makefile.</p></li>
+<li><p><strong>APPL_CSRC_DIR</strong>: Set the path of application C source-code directories. <strong>APPL_CSRC_DIR</strong> should be defined in your application makefile.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All C source-code directory paths including subfolders should be added.</p></li>
+<li><p>C source-code files should be suffixed with <code class="docutils literal notranslate"><span class="pre">c</span></code> or <code class="docutils literal notranslate"><span class="pre">C</span></code>, such as <code class="docutils literal notranslate"><span class="pre">.c</span></code> or <code class="docutils literal notranslate"><span class="pre">.C</span></code>.</p></li>
+<li><p>The paths are separated by whitespace.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>APPL_ASMSRC_DIR</strong>: Set the path of application assembly source-code directories. <strong>APPL_ASMSRC_DIR</strong> should be defined in your application makefile.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All Assembly source-code directory paths including subfolders should be added.</p></li>
+<li><p>Assembly source-code files should be suffixed with <code class="docutils literal notranslate"><span class="pre">s</span></code> or <code class="docutils literal notranslate"><span class="pre">S</span></code>, such as <code class="docutils literal notranslate"><span class="pre">.s</span></code> or <code class="docutils literal notranslate"><span class="pre">.S</span></code>.</p></li>
+<li><p>The paths are separated by whitespace.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>APPL_INC_DIR</strong>: Set the path of application include-file directories. <strong>APPL_INC_DIR</strong> should be defined in your application makefile.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All include-file directory paths including subfolders need to be added.</p></li>
+<li><p>The paths are separated by whitespace.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>APPL_DEFINES</strong>: Set extra macros defined from makefile for this application.  <strong>APPL_DEFINES</strong> should be defined in your application makefile.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All macro definitions are separated by whitespace.</p></li>
+<li><p>For example, if you want to define <code class="docutils literal notranslate"><span class="pre">USE_EMBARC=1</span></code>, then you should set the value to <code class="docutils literal notranslate"><span class="pre">-DUSE_EMBARC=1</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Additional compiler, assembler, and linker options</p>
+<ul class="simple">
+<li><p><strong>ADT_COPT</strong>: Additional compiler options. See the compiler manual for help.</p></li>
+<li><p><strong>ADT_AOPT</strong>: Additional assembler options. See the assembler manual for help.</p></li>
+<li><p><strong>ADT_LOPT</strong>: Additional linker options. See the linker manual for help.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

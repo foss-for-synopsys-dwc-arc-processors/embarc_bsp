@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__SDIO__CTRL" kind="struct" prot="public">
+    <compoundname>DW_SDIO_CTRL</compoundname>
+    <includes refid="dw__sdio_8h" local="no">dw_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__SDIO__CTRL_ad16f076fdb4723a36431c02a9e0f2ed3_1ad16f076fdb4723a36431c02a9e0f2ed3" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DW_SDIO_CTRL::reg_base</definition>
+        <argsstring></argsstring>
+        <name>reg_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sdio registers base </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" line="41" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SDIO__CTRL_a7db9bb4b961c269b956fc0d60912515b_1a7db9bb4b961c269b956fc0d60912515b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SDIO_CTRL::ref_clk</definition>
+        <argsstring></argsstring>
+        <name>ref_clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" line="42" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SDIO__CTRL_a6f2f1865f73f77280385d1c12a9ab455_1a6f2f1865f73f77280385d1c12a9ab455" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SDIO_CTRL::intno</definition>
+        <argsstring></argsstring>
+        <name>intno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" line="43" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__SDIO__CTRL_af8c126a2e5ecfec9e69f5e1bd57243f4_1af8c126a2e5ecfec9e69f5e1bd57243f4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_SDIO_CTRL::fifo_depth</definition>
+        <argsstring></argsstring>
+        <name>fifo_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" line="44" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for DesignWare SDIO control. </para>    </briefdescription>
+    <detaileddescription>
+<para>Structure type for DesignWare SDIO implementation </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" line="40" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio.h" bodystart="40" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structDW__SDIO__CTRL_af8c126a2e5ecfec9e69f5e1bd57243f4_1af8c126a2e5ecfec9e69f5e1bd57243f4" prot="public" virt="non-virtual"><scope>DW_SDIO_CTRL</scope><name>fifo_depth</name></member>
+      <member refid="structDW__SDIO__CTRL_a6f2f1865f73f77280385d1c12a9ab455_1a6f2f1865f73f77280385d1c12a9ab455" prot="public" virt="non-virtual"><scope>DW_SDIO_CTRL</scope><name>intno</name></member>
+      <member refid="structDW__SDIO__CTRL_a7db9bb4b961c269b956fc0d60912515b_1a7db9bb4b961c269b956fc0d60912515b" prot="public" virt="non-virtual"><scope>DW_SDIO_CTRL</scope><name>ref_clk</name></member>
+      <member refid="structDW__SDIO__CTRL_ad16f076fdb4723a36431c02a9e0f2ed3_1ad16f076fdb4723a36431c02a9e0f2ed3" prot="public" virt="non-virtual"><scope>DW_SDIO_CTRL</scope><name>reg_base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

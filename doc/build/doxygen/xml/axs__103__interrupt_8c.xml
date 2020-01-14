@@ -1,0 +1,1419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="axs__103__interrupt_8c" kind="file">
+    <compoundname>axs_103_interrupt.c</compoundname>
+    <includes refid="embARC_8h" local="yes">embARC.h</includes>
+    <includes refid="axs__103__interrupt_8h" local="yes">axs_103_interrupt.h</includes>
+    <incdepgraph>
+      <node id="195">
+        <label>stdbool.h</label>
+      </node>
+      <node id="191">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>stdint.h</label>
+      </node>
+      <node id="196">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="194">
+        <label>stddef.h</label>
+      </node>
+      <node id="198">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>arc/arc_mp.h</label>
+        <link refid="arc__mp_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>limits.h</label>
+      </node>
+      <node id="199">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="200">
+        <label>arc/arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c</label>
+        <link refid="axs_103_interrupt.c"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>axs_103_interrupt.h</label>
+        <link refid="axs__103__interrupt_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdw__ictl__reg" prot="public">dw_ictl_reg</innerclass>
+    <innerclass refid="structictl__gpio__reg" prot="public">ictl_gpio_reg</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="axs__103__interrupt_8c_a7b999b21e7277a252a979dbbb1bb7ca3_1a7b999b21e7277a252a979dbbb1bb7ca3" prot="public" static="no">
+        <type>struct <ref refid="structdw__ictl__reg" kindref="compound">dw_ictl_reg</ref></type>
+        <definition>typedef volatile struct dw_ictl_reg  DW_ICTL_REG</definition>
+        <argsstring></argsstring>
+        <name>DW_ICTL_REG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" prot="public" static="no">
+        <type>struct <ref refid="structdw__ictl__reg" kindref="compound">dw_ictl_reg</ref> *</type>
+        <definition>typedef volatile struct dw_ictl_reg * DW_ICTL_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_ICTL_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="axs__103__interrupt_8c_acdf627caf024f59181a4cd7d8291860b_1acdf627caf024f59181a4cd7d8291860b" prot="public" static="no">
+        <type>struct <ref refid="structictl__gpio__reg" kindref="compound">ictl_gpio_reg</ref></type>
+        <definition>typedef volatile struct ictl_gpio_reg  ICTL_GPIO_REG</definition>
+        <argsstring></argsstring>
+        <name>ICTL_GPIO_REG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" prot="public" static="no">
+        <type>struct <ref refid="structictl__gpio__reg" kindref="compound">ictl_gpio_reg</ref> *</type>
+        <definition>typedef volatile struct ictl_gpio_reg * ICTL_GPIO_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>ICTL_GPIO_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="61" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="axs__103__interrupt_8c_a8face2f1845569d59f3f8e51c258fb65_1a8face2f1845569d59f3f8e51c258fb65" prot="public" static="yes" mutable="no">
+        <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+        <definition>ICTL_GPIO_REG_PTR ictl_gpio_ptr</definition>
+        <argsstring></argsstring>
+        <name>ictl_gpio_ptr</name>
+        <initializer>= (<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref>)(<ref refid="axs__hardware_8h_a50839da69b3413147af23bc43f3fc724_1a50839da69b3413147af23bc43f3fc724" kindref="member">REGBASE_ICTL_CPU</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="185" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs__103__interrupt_8c_a90ea332a58293e351f708dbd9db81e8e_1a90ea332a58293e351f708dbd9db81e8e" prot="public" static="yes" mutable="no">
+        <type><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref></type>
+        <definition>DW_ICTL_REG_PTR dw_ictl_ptr</definition>
+        <argsstring></argsstring>
+        <name>dw_ictl_ptr</name>
+        <initializer>= (<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref>)(<ref refid="axs__hardware_8h_a587e5daf95ade87cf53443e93b416e06_1a587e5daf95ade87cf53443e93b416e06" kindref="member">REGBASE_ICTL</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="186" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="axs__103__interrupt_8c_ab10655d8c612d5ac06d7f26a6430389b_1ab10655d8c612d5ac06d7f26a6430389b" prot="public" static="yes" mutable="no">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T axs_103_int_handler_table[NUM_INT_ALL]</definition>
+        <argsstring>[NUM_INT_ALL]</argsstring>
+        <name>axs_103_int_handler_table</name>
+        <initializer>= {
+	[0 ... <ref refid="axs__hardware_8h_a400a3f3c94cded2d47316200898a960a_1a400a3f3c94cded2d47316200898a960a" kindref="member">NUM_INT_ALL</ref> - 1] = <ref refid="axs__103__interrupt_8c_a3b40672e5a70df6fd103fbdc0e729c27_1a3b40672e5a70df6fd103fbdc0e729c27" kindref="member">axs_103_int_handler_default</ref>
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="187" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="axs__103__interrupt_8c_a30e52747e6ec87bb31008075e84f1650_1a30e52747e6ec87bb31008075e84f1650" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_ictl_int_enable</definition>
+        <argsstring>(DW_ICTL_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>dw_ictl_int_enable</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="63" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="63" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a9f52fe8ac11b0e0835cffb9550e1df14_1a9f52fe8ac11b0e0835cffb9550e1df14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_ictl_int_disable</definition>
+        <argsstring>(DW_ICTL_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>dw_ictl_int_disable</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a91a9e0e2665ae6d26273eb8dedf838c6_1a91a9e0e2665ae6d26273eb8dedf838c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_ictl_int_enabled</definition>
+        <argsstring>(DW_ICTL_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>dw_ictl_int_enabled</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="81" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a85321e1bb71771ec2521056223ceb8bd_1a85321e1bb71771ec2521056223ceb8bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_ictl_int_probe</definition>
+        <argsstring>(DW_ICTL_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>dw_ictl_int_probe</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="93" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="93" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_ac03ed03afc4a3d03743279306b3b5955_1ac03ed03afc4a3d03743279306b3b5955" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_ictl_int_sw_trigger</definition>
+        <argsstring>(DW_ICTL_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>dw_ictl_int_sw_trigger</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a30d8c2d8517d141352d60b88ea1f36e6_1a30d8c2d8517d141352d60b88ea1f36e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ictl_gpio_int_enable</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>ictl_gpio_int_enable</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="112" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="112" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a9a68dc757e1deec71c1fec4604caf898_1a9a68dc757e1deec71c1fec4604caf898" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ictl_gpio_int_disable</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>ictl_gpio_int_disable</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="121" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="121" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a14c3105464e21af630b54ba8838027b2_1a14c3105464e21af630b54ba8838027b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t ictl_gpio_int_enabled</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>ictl_gpio_int_enabled</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="130" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="130" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a25c2bc0c1d958b603258e93e2c147207_1a25c2bc0c1d958b603258e93e2c147207" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t ictl_gpio_int_probe</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>ictl_gpio_int_probe</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="142" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="142" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a7a26f3bc3cbf9bf32b586d69a96fcf49_1a7a26f3bc3cbf9bf32b586d69a96fcf49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ictl_gpio_int_level_config</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno, uint32_t level)</argsstring>
+        <name>ictl_gpio_int_level_config</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="155" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="155" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a4cb6bb4d732ec9cba6ccfc150d372503_1a4cb6bb4d732ec9cba6ccfc150d372503" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ictl_gpio_int_polarity_config</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno, uint32_t polarity)</argsstring>
+        <name>ictl_gpio_int_polarity_config</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>polarity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="165" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="165" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a92f2ae176e00f5defe72af087982a65a_1a92f2ae176e00f5defe72af087982a65a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ictl_gpio_int_clear</definition>
+        <argsstring>(ICTL_GPIO_REG_PTR reg, uint32_t intno)</argsstring>
+        <name>ictl_gpio_int_clear</name>
+        <param>
+          <type><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref></type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="175" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a3b40672e5a70df6fd103fbdc0e729c27_1a3b40672e5a70df6fd103fbdc0e729c27" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void axs_103_int_handler_default</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>axs_103_int_handler_default</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="180" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a52dd271e68aa6a0cff66d469d8851e4a_1a52dd271e68aa6a0cff66d469d8851e4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_ictl_int_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_ictl_int_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="191" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="191" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a4f6ec610160ca6d77613b9d645d5ac87_1a4f6ec610160ca6d77613b9d645d5ac87" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ictl_gpio_int_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>ictl_gpio_int_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="205" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="205" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_disable</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_disable</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Disable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="219" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="219" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_enable</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_enable</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="239" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="239" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga7f54b17cdd6f65442850e1bdcf10c272_1ga7f54b17cdd6f65442850e1bdcf10c272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_enabled</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_enabled</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get interrupt enable state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 disabled, 1 enabled, &lt; 0 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="259" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="259" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga653e2bfd8567c76dc56578aad0585517_1ga653e2bfd8567c76dc56578aad0585517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_ipm_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>int_ipm_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Interrupt priority masking threshold, negative num </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="276" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab54915b2976f68cc96681374cbd0f023_1gab54915b2976f68cc96681374cbd0f023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_ipm_set</definition>
+        <argsstring>(int32_t intpri)</argsstring>
+        <name>int_ipm_set</name>
+        <param>
+          <type>int32_t</type>
+          <declname>intpri</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intpri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt priority masking threshold </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="281" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="281" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga155d43c83556ee963e5291c8a25c1dc5_1ga155d43c83556ee963e5291c8a25c1dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_pri_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_pri_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get current interrupt priority masking threshold. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 interrupt priority, 0 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="292" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="292" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gab670f0f6729ebec51cc2de8f98c74a40_1gab670f0f6729ebec51cc2de8f98c74a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_pri_set</definition>
+        <argsstring>(const uint32_t intno, int32_t intpri)</argsstring>
+        <name>int_pri_set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>intpri</declname>
+        </param>
+        <briefdescription>
+<para>Set interrupt priority. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intpri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt priority </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt; 0 error, 0 ok </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="309" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="309" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga9126c0df90c318b678022ab7b4d470c2_1ga9126c0df90c318b678022ab7b4d470c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_probe</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_probe</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Probe interrupt pending state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 pending, 0 no pending, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="330" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="330" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga136b8b6cdc3fd044879e2e3779041c3b_1ga136b8b6cdc3fd044879e2e3779041c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_sw_trigger</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_sw_trigger</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Trigger interrupt through software. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 ok, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="347" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="347" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gafb4ee7c403bef57f56452190d13e93ec_1gafb4ee7c403bef57f56452190d13e93ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_level_config</definition>
+        <argsstring>(const uint32_t intno, const uint32_t level)</argsstring>
+        <name>int_level_config</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Configure interrupt trigger mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0-level triggered, 1-pulse triggered </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 ok, -1 error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="366" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="366" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga733e45f48f9fe46022e47acd9677d980_1ga733e45f48f9fe46022e47acd9677d980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_lock</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_lock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Lock cpu to disable interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para>lock cpu, disable interrupts </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="388" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="388" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gaa93883b650c91f0e9b31a4cd6e935dc8_1gaa93883b650c91f0e9b31a4cd6e935dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_unlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_unlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>unlock cpu to enable interrupts </para>        </briefdescription>
+        <detaileddescription>
+<para>Unlock cpu to enable interrupts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="396" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="396" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t cpu_lock_save</definition>
+        <argsstring>(void)</argsstring>
+        <name>cpu_lock_save</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Lock cpu and return status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>CPU status </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="406" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cpu_unlock_restore</definition>
+        <argsstring>(const uint32_t status)</argsstring>
+        <name>cpu_unlock_restore</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Unlock cpu with the specific status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU status saved by cpu_lock_save </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="411" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="411" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__INTERRUPT_ga75a43aab696debc012bc72b6de13e30a_1ga75a43aab696debc012bc72b6de13e30a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t int_handler_install</definition>
+        <argsstring>(const uint32_t intno, INT_HANDLER_T handler)</argsstring>
+        <name>int_handler_install</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <param>
+          <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Install interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="416" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="416" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__EXCEPTION__INTERRUPT_gafeb182cdc708ccbeb49792ed1d4b7f7f_1gafeb182cdc708ccbeb49792ed1d4b7f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T int_handler_get</definition>
+        <argsstring>(const uint32_t intno)</argsstring>
+        <name>int_handler_get</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>intno</declname>
+        </param>
+        <briefdescription>
+<para>Get the installed interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The installed interrupt handler or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="435" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="435" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="axs__103__interrupt_8c_a121b830f2c1850c73b251a5373252e74_1a121b830f2c1850c73b251a5373252e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void axs_interrupt_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>axs_interrupt_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" line="452" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c" bodystart="452" bodyend="474"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC_8h" kindref="compound">embARC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="axs__103__interrupt_8h" kindref="compound">axs_103_interrupt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structdw__ictl__reg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdw__ictl__reg" kindref="compound">dw_ictl_reg</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_a7ca291dbe24b25430f17dce12a76c02c_1a7ca291dbe24b25430f17dce12a76c02c" kindref="member">ENABLE_L</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_a961f6450053711629b44ce80caf3f66f_1a961f6450053711629b44ce80caf3f66f" kindref="member">ENABLE_H</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_a4738416a399115cfafd8ecc34aeb2ab6_1a4738416a399115cfafd8ecc34aeb2ab6" kindref="member">MASK_L</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_a70e38715e25c67ce366fd160d45f75eb_1a70e38715e25c67ce366fd160d45f75eb" kindref="member">MASK_H</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_af73a041b4eefbf8066b2180a5c496c72_1af73a041b4eefbf8066b2180a5c496c72" kindref="member">FORCE_L</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_ad9697d51092a2891a98aa7e181581e24_1ad9697d51092a2891a98aa7e181581e24" kindref="member">FORCE_H</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_ad5da3311af6b0e9789d9101e5238b5a5_1ad5da3311af6b0e9789d9101e5238b5a5" kindref="member">RAWSTATUS_L</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_abbd63a786b04bb417755a85409b527e9_1abbd63a786b04bb417755a85409b527e9" kindref="member">RAWSTATUS_H</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_ac030a30370f62c514b09bd278279a5cf_1ac030a30370f62c514b09bd278279a5cf" kindref="member">STATUS_L</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_ade08ebd4134944956f52c759eb4cd108_1ade08ebd4134944956f52c759eb4cd108" kindref="member">STATUS_H</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_afef88cd7c6ff1dabab8ff8186132ef8d_1afef88cd7c6ff1dabab8ff8186132ef8d" kindref="member">MASKSTATUS_L</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_ae2b4454d3cd90fb003325151c98af55c_1ae2b4454d3cd90fb003325151c98af55c" kindref="member">MASKSTATUS_H</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_a5b781dc86fa56e22c7a9348a332b34c9_1a5b781dc86fa56e22c7a9348a332b34c9" kindref="member">FINALSTATUS_L</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structdw__ictl__reg_a64aa83379513a79cfb5732797840583f_1a64aa83379513a79cfb5732797840583f" kindref="member">FINALSTATUS_H</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>more<sp/>regs<sp/>to<sp/>be<sp/>added<sp/>according<sp/>to<sp/>dw_apb_ictl<sp/>databook<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="axs__103__interrupt_8c_a7b999b21e7277a252a979dbbb1bb7ca3_1a7b999b21e7277a252a979dbbb1bb7ca3" kindref="member">DW_ICTL_REG</ref>,<sp/>*<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structictl__gpio__reg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structictl__gpio__reg" kindref="compound">ictl_gpio_reg</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a94cc70c106af3928f3dbc81ec1d2ab5b_1a94cc70c106af3928f3dbc81ec1d2ab5b" kindref="member">reserved</ref>[12];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a0b97ee12d5dfe511b553a43ad5d9b424_1a0b97ee12d5dfe511b553a43ad5d9b424" kindref="member">INTEN</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a3215cd02633159dcb75351decbc7d9fb_1a3215cd02633159dcb75351decbc7d9fb" kindref="member">INTMASK</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a431b9da6f2002d93bfaec89d0604e931_1a431b9da6f2002d93bfaec89d0604e931" kindref="member">INTTYPE_LEVEL</ref>;<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a8171d50b47b2f51a4fe8cb0584d987b2_1a8171d50b47b2f51a4fe8cb0584d987b2" kindref="member">INT_POLARITY</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a3d46f23c98a3964a736c48785021c511_1a3d46f23c98a3964a736c48785021c511" kindref="member">INTSTATUS</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_a82d1212d31198d3f3ebde9349a012ea0_1a82d1212d31198d3f3ebde9349a012ea0" kindref="member">RAW_INTSTATUS</ref>;<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_af037d67391e0c39bcd3a4af8081d7ba7_1af037d67391e0c39bcd3a4af8081d7ba7" kindref="member">DEBOUNCE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structictl__gpio__reg_ae97cbecc300954cff0a2827ea3e8022d_1ae97cbecc300954cff0a2827ea3e8022d" kindref="member">PORTA_EOI</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="axs__103__interrupt_8c_acdf627caf024f59181a4cd7d8291860b_1acdf627caf024f59181a4cd7d8291860b" kindref="member">ICTL_GPIO_REG</ref>,<sp/>*<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a30e52747e6ec87bb31008075e84f1650_1a30e52747e6ec87bb31008075e84f1650" kindref="member">dw_ictl_int_enable</ref>(<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;ENABLE_L;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;ENABLE_L<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a9f52fe8ac11b0e0835cffb9550e1df14_1a9f52fe8ac11b0e0835cffb9550e1df14" kindref="member">dw_ictl_int_disable</ref>(<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;ENABLE_L;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;ENABLE_L<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs__103__interrupt_8c_a91a9e0e2665ae6d26273eb8dedf838c6_1a91a9e0e2665ae6d26273eb8dedf838c6" kindref="member">dw_ictl_int_enabled</ref>(<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;ENABLE_L;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>intno))<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs__103__interrupt_8c_a85321e1bb71771ec2521056223ceb8bd_1a85321e1bb71771ec2521056223ceb8bd" kindref="member">dw_ictl_int_probe</ref>(<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;FINALSTATUS_L;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>intno))<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_ac03ed03afc4a3d03743279306b3b5955_1ac03ed03afc4a3d03743279306b3b5955" kindref="member">dw_ictl_int_sw_trigger</ref>(<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;FORCE_L<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a30d8c2d8517d141352d60b88ea1f36e6_1a30d8c2d8517d141352d60b88ea1f36e6" kindref="member">ictl_gpio_int_enable</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;INTEN;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;INTEN<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a9a68dc757e1deec71c1fec4604caf898_1a9a68dc757e1deec71c1fec4604caf898" kindref="member">ictl_gpio_int_disable</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;INTEN;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;INTEN<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs__103__interrupt_8c_a14c3105464e21af630b54ba8838027b2_1a14c3105464e21af630b54ba8838027b2" kindref="member">ictl_gpio_int_enabled</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;INTEN;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>intno))<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="axs__103__interrupt_8c_a25c2bc0c1d958b603258e93e2c147207_1a25c2bc0c1d958b603258e93e2c147207" kindref="member">ictl_gpio_int_probe</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;INTSTATUS;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>intno))<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a7a26f3bc3cbf9bf32b586d69a96fcf49_1a7a26f3bc3cbf9bf32b586d69a96fcf49" kindref="member">ictl_gpio_int_level_config</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno,<sp/>uint32_t<sp/>level)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;INTTYPE_LEVEL;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>|=<sp/>(level<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;INTTYPE_LEVEL<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a4cb6bb4d732ec9cba6ccfc150d372503_1a4cb6bb4d732ec9cba6ccfc150d372503" kindref="member">ictl_gpio_int_polarity_config</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno,<sp/>uint32_t<sp/>polarity)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>val;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>=<sp/>reg-&gt;INT_POLARITY;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>|=<sp/>(polarity<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;INT_POLARITY<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a92f2ae176e00f5defe72af087982a65a_1a92f2ae176e00f5defe72af087982a65a" kindref="member">ictl_gpio_int_clear</ref>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/>reg,<sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>reg-&gt;PORTA_EOI<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>intno);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a3b40672e5a70df6fd103fbdc0e729c27_1a3b40672e5a70df6fd103fbdc0e729c27" kindref="member">axs_103_int_handler_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/>ptr;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref><sp/><ref refid="axs__103__interrupt_8c_a8face2f1845569d59f3f8e51c258fb65_1a8face2f1845569d59f3f8e51c258fb65" kindref="member">ictl_gpio_ptr</ref><sp/>=<sp/>(<ref refid="axs__103__interrupt_8c_a48818465472230a3c5c712f5a706c32b_1a48818465472230a3c5c712f5a706c32b" kindref="member">ICTL_GPIO_REG_PTR</ref>)(<ref refid="axs__hardware_8h_a50839da69b3413147af23bc43f3fc724_1a50839da69b3413147af23bc43f3fc724" kindref="member">REGBASE_ICTL_CPU</ref>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref><sp/><ref refid="axs__103__interrupt_8c_a90ea332a58293e351f708dbd9db81e8e_1a90ea332a58293e351f708dbd9db81e8e" kindref="member">dw_ictl_ptr</ref><sp/>=<sp/>(<ref refid="axs__103__interrupt_8c_a29ffa72bee9328242dfb332ea98eff73_1a29ffa72bee9328242dfb332ea98eff73" kindref="member">DW_ICTL_REG_PTR</ref>)(<ref refid="axs__hardware_8h_a587e5daf95ade87cf53443e93b416e06_1a587e5daf95ade87cf53443e93b416e06" kindref="member">REGBASE_ICTL</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="axs__103__interrupt_8c_ab10655d8c612d5ac06d7f26a6430389b_1ab10655d8c612d5ac06d7f26a6430389b" kindref="member">axs_103_int_handler_table</ref>[<ref refid="axs__hardware_8h_a400a3f3c94cded2d47316200898a960a_1a400a3f3c94cded2d47316200898a960a" kindref="member">NUM_INT_ALL</ref>]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>[0<sp/>...<sp/><ref refid="axs__hardware_8h_a400a3f3c94cded2d47316200898a960a_1a400a3f3c94cded2d47316200898a960a" kindref="member">NUM_INT_ALL</ref><sp/>-<sp/>1]<sp/>=<sp/><ref refid="axs__103__interrupt_8c_a3b40672e5a70df6fd103fbdc0e729c27_1a3b40672e5a70df6fd103fbdc0e729c27" kindref="member">axs_103_int_handler_default</ref></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a52dd271e68aa6a0cff66d469d8851e4a_1a52dd271e68aa6a0cff66d469d8851e4a" kindref="member">dw_ictl_int_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>dw_ictl_ptr-&gt;FINALSTATUS_L;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="axs__hardware_8h_aeed91e17f821ad0ef1834941011c0245_1aeed91e17f821ad0ef1834941011c0245" kindref="member">ICTL_INTNO_NUM</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>i))<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axs_103_int_handler_table[i]((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a4f6ec610160ca6d77613b9d645d5ac87_1a4f6ec610160ca6d77613b9d645d5ac87" kindref="member">ictl_gpio_int_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/>ictl_gpio_ptr-&gt;INTSTATUS;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="axs__hardware_8h_aeed91e17f821ad0ef1834941011c0245_1aeed91e17f821ad0ef1834941011c0245" kindref="member">ICTL_INTNO_NUM</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>i))<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axs_103_int_handler_table[i<sp/>+<sp/><ref refid="axs__hardware_8h_aeed91e17f821ad0ef1834941011c0245_1aeed91e17f821ad0ef1834941011c0245" kindref="member">ICTL_INTNO_NUM</ref>]((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa06cd81d78d066c1cdc46dde7dabeb57_1gaa06cd81d78d066c1cdc46dde7dabeb57" kindref="member">int_disable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga490e115d56eb5abb7a22ddadaa87735e_1ga490e115d56eb5abb7a22ddadaa87735e" kindref="member">arc_int_disable</ref>(sub_intno);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs__103__interrupt_8c_a9f52fe8ac11b0e0835cffb9550e1df14_1a9f52fe8ac11b0e0835cffb9550e1df14" kindref="member">dw_ictl_int_disable</ref>(dw_ictl_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs__103__interrupt_8c_a9a68dc757e1deec71c1fec4604caf898_1a9a68dc757e1deec71c1fec4604caf898" kindref="member">ictl_gpio_int_disable</ref>(ictl_gpio_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" kindref="member">int_enable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga3420c503406e5c6e76b6a1e73544e8f9_1ga3420c503406e5c6e76b6a1e73544e8f9" kindref="member">arc_int_enable</ref>(sub_intno);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs__103__interrupt_8c_a30e52747e6ec87bb31008075e84f1650_1a30e52747e6ec87bb31008075e84f1650" kindref="member">dw_ictl_int_enable</ref>(dw_ictl_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs__103__interrupt_8c_a30d8c2d8517d141352d60b88ea1f36e6_1a30d8c2d8517d141352d60b88ea1f36e6" kindref="member">ictl_gpio_int_enable</ref>(ictl_gpio_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga7f54b17cdd6f65442850e1bdcf10c272_1ga7f54b17cdd6f65442850e1bdcf10c272" kindref="member">int_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga0d131c8f99c5d2915cceff4d329f2d7c_1ga0d131c8f99c5d2915cceff4d329f2d7c" kindref="member">arc_int_enabled</ref>(sub_intno);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a91a9e0e2665ae6d26273eb8dedf838c6_1a91a9e0e2665ae6d26273eb8dedf838c6" kindref="member">dw_ictl_int_enabled</ref>(dw_ictl_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a14c3105464e21af630b54ba8838027b2_1a14c3105464e21af630b54ba8838027b2" kindref="member">ictl_gpio_int_enabled</ref>(ictl_gpio_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga653e2bfd8567c76dc56578aad0585517_1ga653e2bfd8567c76dc56578aad0585517" kindref="member">int_ipm_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaccb62bca19bc3aad58ff877770554803_1gaccb62bca19bc3aad58ff877770554803" kindref="member">arc_int_ipm_get</ref>()<sp/>+<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab54915b2976f68cc96681374cbd0f023_1gab54915b2976f68cc96681374cbd0f023" kindref="member">int_ipm_set</ref>(int32_t<sp/>intpri)</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(intpri<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref><sp/>&amp;&amp;<sp/>intpri<sp/>&lt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab0ae4780994cd452eef15ad91410d2fc_1gab0ae4780994cd452eef15ad91410d2fc" kindref="member">INT_PRI_MAX</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intpri<sp/>=<sp/>intpri<sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaa24e54ba34a493fecc82f7184a201fd9_1gaa24e54ba34a493fecc82f7184a201fd9" kindref="member">arc_int_ipm_set</ref>(intpri);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga155d43c83556ee963e5291c8a25c1dc5_1ga155d43c83556ee963e5291c8a25c1dc5" kindref="member">int_pri_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga12503138f3c2a7e70dc2f7612d67f3ea_1ga12503138f3c2a7e70dc2f7612d67f3ea" kindref="member">arc_int_pri_get</ref>(sub_intno)<sp/>+<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga12503138f3c2a7e70dc2f7612d67f3ea_1ga12503138f3c2a7e70dc2f7612d67f3ea" kindref="member">arc_int_pri_get</ref>(<ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref>)<sp/>+<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga12503138f3c2a7e70dc2f7612d67f3ea_1ga12503138f3c2a7e70dc2f7612d67f3ea" kindref="member">arc_int_pri_get</ref>(<ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref>)<sp/>+<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab670f0f6729ebec51cc2de8f98c74a40_1gab670f0f6729ebec51cc2de8f98c74a40" kindref="member">int_pri_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/>int32_t<sp/>intpri)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>intpri<sp/>=<sp/>intpri<sp/>-<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaabc533409696b211335240a4140ae844_1gaabc533409696b211335240a4140ae844" kindref="member">INT_PRI_MIN</ref>;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab4e3ed950ef95fecc947b3bd756b628c_1gab4e3ed950ef95fecc947b3bd756b628c" kindref="member">arc_int_pri_set</ref>(sub_intno,<sp/>(uint32_t)intpri);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab4e3ed950ef95fecc947b3bd756b628c_1gab4e3ed950ef95fecc947b3bd756b628c" kindref="member">arc_int_pri_set</ref>(<ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref>,<sp/>(uint32_t)intpri);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gab4e3ed950ef95fecc947b3bd756b628c_1gab4e3ed950ef95fecc947b3bd756b628c" kindref="member">arc_int_pri_set</ref>(<ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref>,<sp/>(uint32_t)intpri);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga9126c0df90c318b678022ab7b4d470c2_1ga9126c0df90c318b678022ab7b4d470c2" kindref="member">int_probe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga441529dec3254c566ceb10e6bfd0e28b_1ga441529dec3254c566ceb10e6bfd0e28b" kindref="member">arc_int_probe</ref>(sub_intno);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a85321e1bb71771ec2521056223ceb8bd_1a85321e1bb71771ec2521056223ceb8bd" kindref="member">dw_ictl_int_probe</ref>(dw_ictl_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a25c2bc0c1d958b603258e93e2c147207_1a25c2bc0c1d958b603258e93e2c147207" kindref="member">ictl_gpio_int_probe</ref>(ictl_gpio_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga136b8b6cdc3fd044879e2e3779041c3b_1ga136b8b6cdc3fd044879e2e3779041c3b" kindref="member">int_sw_trigger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga86b153983ea94a48bf42dae55b57a291_1ga86b153983ea94a48bf42dae55b57a291" kindref="member">arc_int_sw_trigger</ref>(sub_intno);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs__103__interrupt_8c_ac03ed03afc4a3d03743279306b3b5955_1ac03ed03afc4a3d03743279306b3b5955" kindref="member">dw_ictl_int_sw_trigger</ref>(dw_ictl_ptr,<sp/>sub_intno);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gafb4ee7c403bef57f56452190d13e93ec_1gafb4ee7c403bef57f56452190d13e93ec" kindref="member">int_level_config</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>level)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga8070fbc3833c231a4d677aa140ff9d9f_1ga8070fbc3833c231a4d677aa140ff9d9f" kindref="member">arc_int_level_config</ref>(sub_intno,<sp/>level);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="axs__103__interrupt_8c_a7a26f3bc3cbf9bf32b586d69a96fcf49_1a7a26f3bc3cbf9bf32b586d69a96fcf49" kindref="member">ictl_gpio_int_level_config</ref>(ictl_gpio_ptr,<sp/>sub_intno,<sp/>level);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga733e45f48f9fe46022e47acd9677d980_1ga733e45f48f9fe46022e47acd9677d980" kindref="member">cpu_lock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gaf577f14b54bb9faf12fb5dbbcb387039_1gaf577f14b54bb9faf12fb5dbbcb387039" kindref="member">arc_lock</ref>();</highlight></codeline>
+<codeline lineno="391"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gaa93883b650c91f0e9b31a4cd6e935dc8_1gaa93883b650c91f0e9b31a4cd6e935dc8" kindref="member">cpu_unlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="397"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga3cbe63282edd6624f71e5fc2c741a242_1ga3cbe63282edd6624f71e5fc2c741a242" kindref="member">arc_unlock</ref>();</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal">uint32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="407"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga30228a3464d0f5e2c1e22bfe7c296e4c_1ga30228a3464d0f5e2c1e22bfe7c296e4c" kindref="member">arc_lock_save</ref>();</highlight></codeline>
+<codeline lineno="409"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>status)</highlight></codeline>
+<codeline lineno="412"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga7df36b77b3cfa36e7e4d79abf99045fa_1ga7df36b77b3cfa36e7e4d79abf99045fa" kindref="member">arc_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga75a43aab696debc012bc72b6de13e30a_1ga75a43aab696debc012bc72b6de13e30a" kindref="member">int_handler_install</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno,<sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/>handler)</highlight></codeline>
+<codeline lineno="417"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga69b337215e6300f4b4d85e34ebb26d7c_1ga69b337215e6300f4b4d85e34ebb26d7c" kindref="member">exc_handler_install</ref>(sub_intno,<sp/>handler);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axs_103_int_handler_table[sub_intno]<sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axs_103_int_handler_table[sub_intno<sp/>+<sp/><ref refid="axs__hardware_8h_aeed91e17f821ad0ef1834941011c0245_1aeed91e17f821ad0ef1834941011c0245" kindref="member">ICTL_INTNO_NUM</ref>]<sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_gafeb182cdc708ccbeb49792ed1d4b7f7f_1gafeb182cdc708ccbeb49792ed1d4b7f7f" kindref="member">int_handler_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>intno)</highlight></codeline>
+<codeline lineno="436"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ictl<sp/>=<sp/>intno<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sub_intno<sp/>=<sp/>intno<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>sub_intno<sp/>&gt;=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga1443e9a11bdf7ee0540d79c6ebcc321f_1ga1443e9a11bdf7ee0540d79c6ebcc321f" kindref="member">NUM_EXC_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gae5139fa9096875ad9a126741fce30e03_1gae5139fa9096875ad9a126741fce30e03" kindref="member">NUM_EXC_ALL</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>arc<sp/>interrupt<sp/>controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab088d390d0f2aaf7f3308a269523f62b_1gab088d390d0f2aaf7f3308a269523f62b" kindref="member">exc_handler_get</ref>(sub_intno);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_aa101904aa941dce2e9720249b678aff6_1aa101904aa941dce2e9720249b678aff6" kindref="member">INTNO_ICTL_MB</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/>ICTL_INTNO_NUM)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>main<sp/>board<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>axs_103_int_handler_table[sub_intno];</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ictl<sp/>==<sp/><ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref><sp/>&amp;&amp;<sp/>sub_intno<sp/>&lt;=<sp/><ref refid="axs__hardware_8h_ace45856a7fbb9b107f4bac78b1061ff7_1ace45856a7fbb9b107f4bac78b1061ff7" kindref="member">CPU_ICTL_INTNO_NUM</ref>)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>card<sp/>ictl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>axs_103_int_handler_table[sub_intno<sp/>+<sp/><ref refid="axs__hardware_8h_aeed91e17f821ad0ef1834941011c0245_1aeed91e17f821ad0ef1834941011c0245" kindref="member">ICTL_INTNO_NUM</ref>];</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="axs__103__interrupt_8c_a121b830f2c1850c73b251a5373252e74_1a121b830f2c1850c73b251a5373252e74" kindref="member">axs_interrupt_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__GPIO__INT__CFG" kindref="compound">DEV_GPIO_INT_CFG</ref><sp/>int_cfg;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__GPIO__BIT__ISR" kindref="compound">DEV_GPIO_BIT_ISR</ref><sp/>bit_isr;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__GPIO" kindref="compound">DEV_GPIO</ref><sp/>*port_ptr;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/>port_ptr<sp/>=<sp/><ref refid="group__DEVICE__HAL__GPIO_gaa3ed54c8ec11f3ae9033d93c86e21c72_1gaa3ed54c8ec11f3ae9033d93c86e21c72" kindref="member">gpio_get_dev</ref>(<ref refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h_a3ade879f639aa487adbe660a03ee2372_1a3ade879f639aa487adbe660a03ee2372" kindref="member">CPU_DW_GPIO_PORT_A</ref>);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>int_cfg.<ref refid="structDEV__GPIO__INT__CFG_aa453e07dd83f231ad5861a0407deec9a_1aa453e07dd83f231ad5861a0407deec9a" kindref="member">int_bit_mask</ref><sp/>=<sp/><ref refid="axs__hardware_8h_ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1_1ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1" kindref="member">ICTL_GPIOA_LINE_MASK</ref>;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/>int_cfg.<ref refid="structDEV__GPIO__INT__CFG_ad06189567b15eeffab3afed8a18abcd8_1ad06189567b15eeffab3afed8a18abcd8" kindref="member">int_bit_type</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_gabbc8e9ff61ad3a75f61fcd778d3bf759_1gabbc8e9ff61ad3a75f61fcd778d3bf759" kindref="member">GPIO_INT_BITS_LEVEL_TRIG</ref>(<ref refid="axs__hardware_8h_ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1_1ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1" kindref="member">ICTL_GPIOA_LINE_MASK</ref>);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>int_cfg.<ref refid="structDEV__GPIO__INT__CFG_a6ccfc2c28842f273246cc842ead62e7c_1a6ccfc2c28842f273246cc842ead62e7c" kindref="member">int_bit_polarity</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga0d83ab7af0a4d58b56825313614bd7e1_1ga0d83ab7af0a4d58b56825313614bd7e1" kindref="member">GPIO_INT_BITS_POL_RISE_EDGE</ref>(<ref refid="axs__hardware_8h_ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1_1ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1" kindref="member">ICTL_GPIOA_LINE_MASK</ref>);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>int_cfg.<ref refid="structDEV__GPIO__INT__CFG_a3ed9f2bc54e4e679bd57e438091d70f0_1a3ed9f2bc54e4e679bd57e438091d70f0" kindref="member">int_bit_debounce</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__GPIO__INT__CFG__SET_ga890d93ea24a2d81c25478dca7fc81209_1ga890d93ea24a2d81c25478dca7fc81209" kindref="member">GPIO_INT_BITS_DIS_DEBOUNCE</ref>(<ref refid="axs__hardware_8h_ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1_1ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1" kindref="member">ICTL_GPIOA_LINE_MASK</ref>);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>port_ptr-&gt;<ref refid="group__DEVICE__HAL__GPIO__DEVSTRUCT_gaae02ea5fe11a646b8b929842d2ae7b78_1gaae02ea5fe11a646b8b929842d2ae7b78" kindref="member">gpio_control</ref>(<ref refid="group__DEVICE__HAL__GPIO__CTRLCMD_gada822221fb039eb5549af98e8c88ce9b_1gada822221fb039eb5549af98e8c88ce9b" kindref="member">GPIO_CMD_SET_BIT_INT_CFG</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)(&amp;int_cfg));</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>bit_isr.<ref refid="structDEV__GPIO__BIT__ISR_a8cd3bb5755aab129cfffb60edc10a0e5_1a8cd3bb5755aab129cfffb60edc10a0e5" kindref="member">int_bit_ofs</ref><sp/>=<sp/><ref refid="axs__hardware_8h_a6f38608323a01c9bdb8e1acd1dd61502_1a6f38608323a01c9bdb8e1acd1dd61502" kindref="member">ICTL_GPIOA_LINE</ref>;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/>bit_isr.<ref refid="structDEV__GPIO__BIT__ISR_a08675f3b307bafefbbc4add26e32b2ef_1a08675f3b307bafefbbc4add26e32b2ef" kindref="member">int_bit_handler</ref><sp/>=<sp/><ref refid="axs__103__interrupt_8c_a4f6ec610160ca6d77613b9d645d5ac87_1a4f6ec610160ca6d77613b9d645d5ac87" kindref="member">ictl_gpio_int_isr</ref>;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>port_ptr-&gt;<ref refid="group__DEVICE__HAL__GPIO__DEVSTRUCT_gaae02ea5fe11a646b8b929842d2ae7b78_1gaae02ea5fe11a646b8b929842d2ae7b78" kindref="member">gpio_control</ref>(<ref refid="group__DEVICE__HAL__GPIO__CTRLCMD_gad43d27e0971a8cbca838dc69af2639a7_1gad43d27e0971a8cbca838dc69af2639a7" kindref="member">GPIO_CMD_SET_BIT_ISR</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)(&amp;bit_isr));</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>port_ptr-&gt;<ref refid="group__DEVICE__HAL__GPIO__DEVSTRUCT_gaae02ea5fe11a646b8b929842d2ae7b78_1gaae02ea5fe11a646b8b929842d2ae7b78" kindref="member">gpio_control</ref>(<ref refid="group__DEVICE__HAL__GPIO__CTRLCMD_ga0dc3ba08f56ab2c5ca64e4beab70fed5_1ga0dc3ba08f56ab2c5ca64e4beab70fed5" kindref="member">GPIO_CMD_ENA_BIT_INT</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)<ref refid="axs__hardware_8h_ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1_1ac3b4dd5a2d9bf7e82811e4dcaa9fe0d1" kindref="member">ICTL_GPIOA_LINE_MASK</ref>);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga75a43aab696debc012bc72b6de13e30a_1ga75a43aab696debc012bc72b6de13e30a" kindref="member">int_handler_install</ref>(<ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref>,<sp/><ref refid="axs__103__interrupt_8c_a52dd271e68aa6a0cff66d469d8851e4a_1a52dd271e68aa6a0cff66d469d8851e4a" kindref="member">dw_ictl_int_isr</ref>);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gab709d97aa7dcc618975fc7e8d5860c7f_1gab709d97aa7dcc618975fc7e8d5860c7f" kindref="member">int_enable</ref>(<ref refid="axs__hardware_8h_a24064ab479da0b66c44d1bb1a8e6fe20_1a24064ab479da0b66c44d1bb1a8e6fe20" kindref="member">INTNO_ICTL_CPU</ref>);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c"/>
+  </compounddef>
+</doxygen>

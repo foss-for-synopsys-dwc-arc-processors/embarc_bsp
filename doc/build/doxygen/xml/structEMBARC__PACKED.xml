@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structEMBARC__PACKED" kind="struct" prot="public">
+    <compoundname>EMBARC_PACKED</compoundname>
+    <includes refid="arc__exception_8h" local="no">arc_exception.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEMBARC__PACKED_af46a45dcd036d669aba663f095f0d67d_1af46a45dcd036d669aba663f095f0d67d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::erbta</definition>
+        <argsstring></argsstring>
+        <name>erbta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a3479fa15bc0256dd88095e3359340b4b_1a3479fa15bc0256dd88095e3359340b4b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r30</definition>
+        <argsstring></argsstring>
+        <name>r30</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="103" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a8cca01bf7bc34c29ece4a205855deb67_1a8cca01bf7bc34c29ece4a205855deb67" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::ilink</definition>
+        <argsstring></argsstring>
+        <name>ilink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a789ab451e19c923573a6fdbea7fd96ba_1a789ab451e19c923573a6fdbea7fd96ba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::fp</definition>
+        <argsstring></argsstring>
+        <name>fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a475cf1d5fd346be083cf72a468c21cc4_1a475cf1d5fd346be083cf72a468c21cc4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::gp</definition>
+        <argsstring></argsstring>
+        <name>gp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ad9dffb71e56fef9ffbe114cef0a53b99_1ad9dffb71e56fef9ffbe114cef0a53b99" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r12</definition>
+        <argsstring></argsstring>
+        <name>r12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ab5d1cf5849b0f10bb974f7ba66e0f6c4_1ab5d1cf5849b0f10bb974f7ba66e0f6c4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r0</definition>
+        <argsstring></argsstring>
+        <name>r0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="116" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a232630e645d3970835faf251caeed467_1a232630e645d3970835faf251caeed467" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r1</definition>
+        <argsstring></argsstring>
+        <name>r1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="116" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_aa8d831d9ea47c9093f3c74aff367e641_1aa8d831d9ea47c9093f3c74aff367e641" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r2</definition>
+        <argsstring></argsstring>
+        <name>r2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="116" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ad1a33f9bb6e2b041f30549322bcc86b2_1ad1a33f9bb6e2b041f30549322bcc86b2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r3</definition>
+        <argsstring></argsstring>
+        <name>r3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="116" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a724fa41c75051bb0aab99598e8af559c_1a724fa41c75051bb0aab99598e8af559c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r4</definition>
+        <argsstring></argsstring>
+        <name>r4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_add69aaa0673fe99f7bcee071aca03bab_1add69aaa0673fe99f7bcee071aca03bab" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r5</definition>
+        <argsstring></argsstring>
+        <name>r5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a37c5fe4c71ed96a46c346b4a8d79a5c8_1a37c5fe4c71ed96a46c346b4a8d79a5c8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r6</definition>
+        <argsstring></argsstring>
+        <name>r6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ad537616100b8721eaf377e034961cb4e_1ad537616100b8721eaf377e034961cb4e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r7</definition>
+        <argsstring></argsstring>
+        <name>r7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ae3dca21c5dfe7a5d75513c7a6ced291e_1ae3dca21c5dfe7a5d75513c7a6ced291e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r8</definition>
+        <argsstring></argsstring>
+        <name>r8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_af889d1c3df30980d3bddf5ada26e40fa_1af889d1c3df30980d3bddf5ada26e40fa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r9</definition>
+        <argsstring></argsstring>
+        <name>r9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ab28d4906720768bf9d458f4b914052f4_1ab28d4906720768bf9d458f4b914052f4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r10</definition>
+        <argsstring></argsstring>
+        <name>r10</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="120" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_af3192154321017be33602866a1ed6751_1af3192154321017be33602866a1ed6751" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r11</definition>
+        <argsstring></argsstring>
+        <name>r11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="120" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a1b9aca26a2b45d4b12c1efa7265d2832_1a1b9aca26a2b45d4b12c1efa7265d2832" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::blink</definition>
+        <argsstring></argsstring>
+        <name>blink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="122" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a93d683a92f17a191779fb57f31e4c514_1a93d683a92f17a191779fb57f31e4c514" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::lp_end</definition>
+        <argsstring></argsstring>
+        <name>lp_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a52710bbceccae3c3c9088bc926fa1132_1a52710bbceccae3c3c9088bc926fa1132" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::lp_start</definition>
+        <argsstring></argsstring>
+        <name>lp_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a360dfb48a8e5c6b047864c9a82062297_1a360dfb48a8e5c6b047864c9a82062297" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::lp_count</definition>
+        <argsstring></argsstring>
+        <name>lp_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a74d51c5caadcf15b40dd1c79cada8549_1a74d51c5caadcf15b40dd1c79cada8549" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::ret</definition>
+        <argsstring></argsstring>
+        <name>ret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="130" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a2a9ebc63cca77481389863ca18c4f843_1a2a9ebc63cca77481389863ca18c4f843" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::status32</definition>
+        <argsstring></argsstring>
+        <name>status32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="131" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a6cedc6832e9cadaad20f504843ddf7f9_1a6cedc6832e9cadaad20f504843ddf7f9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::acc0_ghi</definition>
+        <argsstring></argsstring>
+        <name>acc0_ghi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="141" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a0294980fdeaf4de696e688e5e26ea920_1a0294980fdeaf4de696e688e5e26ea920" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::acc0_hi</definition>
+        <argsstring></argsstring>
+        <name>acc0_hi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="142" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a732d4ca8310677b31e8e73c60beb8c71_1a732d4ca8310677b31e8e73c60beb8c71" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::acc0_glo</definition>
+        <argsstring></argsstring>
+        <name>acc0_glo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="143" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a8275cb48e201d7aa5bfffb786b31161c_1a8275cb48e201d7aa5bfffb786b31161c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::acc0_lo</definition>
+        <argsstring></argsstring>
+        <name>acc0_lo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="144" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_af93a78f2f4b512752f2162385d415a96_1af93a78f2f4b512752f2162385d415a96" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::dsp_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dsp_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="145" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a1b5acd4819c192f94cc1d9ee65c69735_1a1b5acd4819c192f94cc1d9ee65c69735" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::fpu_status</definition>
+        <argsstring></argsstring>
+        <name>fpu_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="157" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a9d6626046dc72f079264bd408986ca3d_1a9d6626046dc72f079264bd408986ca3d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::fpu_ctrl</definition>
+        <argsstring></argsstring>
+        <name>fpu_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="158" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ad6779e3a3a05a911d66fe7b809887937_1ad6779e3a3a05a911d66fe7b809887937" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r25</definition>
+        <argsstring></argsstring>
+        <name>r25</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="186" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a59ac1ec93271d40035416ea8050867db_1a59ac1ec93271d40035416ea8050867db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r24</definition>
+        <argsstring></argsstring>
+        <name>r24</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="187" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a01af53e7db190decbd76937c0b3619e0_1a01af53e7db190decbd76937c0b3619e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r23</definition>
+        <argsstring></argsstring>
+        <name>r23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="188" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a0c697587cd025ca0fa6da06afb96b436_1a0c697587cd025ca0fa6da06afb96b436" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r22</definition>
+        <argsstring></argsstring>
+        <name>r22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="189" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a30f003aeb304c0342f9f9eb64392416e_1a30f003aeb304c0342f9f9eb64392416e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r21</definition>
+        <argsstring></argsstring>
+        <name>r21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="190" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a71aa58461e02988ae4bdd4b3e8296437_1a71aa58461e02988ae4bdd4b3e8296437" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r20</definition>
+        <argsstring></argsstring>
+        <name>r20</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="191" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a70b87b5ce493d0e90c5c7e5d840824e3_1a70b87b5ce493d0e90c5c7e5d840824e3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r19</definition>
+        <argsstring></argsstring>
+        <name>r19</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="192" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a8c104944ec0c21354d011752449a54d1_1a8c104944ec0c21354d011752449a54d1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r18</definition>
+        <argsstring></argsstring>
+        <name>r18</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="193" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a0864b97813e28007c5f7017ca3ef165b_1a0864b97813e28007c5f7017ca3ef165b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r17</definition>
+        <argsstring></argsstring>
+        <name>r17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="194" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_aa50a85d8908167d9b1c3debb7cc2af7e_1aa50a85d8908167d9b1c3debb7cc2af7e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r16</definition>
+        <argsstring></argsstring>
+        <name>r16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="195" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_afc78bf8e009f1e1e465213b91b1aedd7_1afc78bf8e009f1e1e465213b91b1aedd7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r15</definition>
+        <argsstring></argsstring>
+        <name>r15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="197" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a22f58a7cda63c3843e7d16f355921b81_1a22f58a7cda63c3843e7d16f355921b81" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r14</definition>
+        <argsstring></argsstring>
+        <name>r14</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="198" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_ab0f8b5329aa7468fcc6fa86ec69bc850_1ab0f8b5329aa7468fcc6fa86ec69bc850" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EMBARC_PACKED::r13</definition>
+        <argsstring></argsstring>
+        <name>r13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="199" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a9bb3c15e58fb0577274841b4e3dde106_1a9bb3c15e58fb0577274841b4e3dde106" prot="public" static="no" mutable="no">
+        <type>CALLEE_FRAME_T</type>
+        <definition>CALLEE_FRAME_T EMBARC_PACKED::callee_regs</definition>
+        <argsstring></argsstring>
+        <name>callee_regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="203" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEMBARC__PACKED_a9a7716ac65ddcaebb60c4f710489bb7e_1a9a7716ac65ddcaebb60c4f710489bb7e" prot="public" static="no" mutable="no">
+        <type>INT_EXC_FRAME_T</type>
+        <definition>INT_EXC_FRAME_T EMBARC_PACKED::exc_frame</definition>
+        <argsstring></argsstring>
+        <name>exc_frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="204" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" line="100" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_exception.h" bodystart="100" bodyend="132"/>
+    <listofallmembers>
+      <member refid="structEMBARC__PACKED_a6cedc6832e9cadaad20f504843ddf7f9_1a6cedc6832e9cadaad20f504843ddf7f9" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>acc0_ghi</name></member>
+      <member refid="structEMBARC__PACKED_a732d4ca8310677b31e8e73c60beb8c71_1a732d4ca8310677b31e8e73c60beb8c71" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>acc0_glo</name></member>
+      <member refid="structEMBARC__PACKED_a0294980fdeaf4de696e688e5e26ea920_1a0294980fdeaf4de696e688e5e26ea920" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>acc0_hi</name></member>
+      <member refid="structEMBARC__PACKED_a8275cb48e201d7aa5bfffb786b31161c_1a8275cb48e201d7aa5bfffb786b31161c" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>acc0_lo</name></member>
+      <member refid="structEMBARC__PACKED_a1b9aca26a2b45d4b12c1efa7265d2832_1a1b9aca26a2b45d4b12c1efa7265d2832" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>blink</name></member>
+      <member refid="structEMBARC__PACKED_a9bb3c15e58fb0577274841b4e3dde106_1a9bb3c15e58fb0577274841b4e3dde106" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>callee_regs</name></member>
+      <member refid="structEMBARC__PACKED_af93a78f2f4b512752f2162385d415a96_1af93a78f2f4b512752f2162385d415a96" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>dsp_ctrl</name></member>
+      <member refid="structEMBARC__PACKED_af46a45dcd036d669aba663f095f0d67d_1af46a45dcd036d669aba663f095f0d67d" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>erbta</name></member>
+      <member refid="structEMBARC__PACKED_a9a7716ac65ddcaebb60c4f710489bb7e_1a9a7716ac65ddcaebb60c4f710489bb7e" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>exc_frame</name></member>
+      <member refid="structEMBARC__PACKED_a789ab451e19c923573a6fdbea7fd96ba_1a789ab451e19c923573a6fdbea7fd96ba" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>fp</name></member>
+      <member refid="structEMBARC__PACKED_a9d6626046dc72f079264bd408986ca3d_1a9d6626046dc72f079264bd408986ca3d" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>fpu_ctrl</name></member>
+      <member refid="structEMBARC__PACKED_a1b5acd4819c192f94cc1d9ee65c69735_1a1b5acd4819c192f94cc1d9ee65c69735" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>fpu_status</name></member>
+      <member refid="structEMBARC__PACKED_a475cf1d5fd346be083cf72a468c21cc4_1a475cf1d5fd346be083cf72a468c21cc4" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>gp</name></member>
+      <member refid="structEMBARC__PACKED_a8cca01bf7bc34c29ece4a205855deb67_1a8cca01bf7bc34c29ece4a205855deb67" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>ilink</name></member>
+      <member refid="structEMBARC__PACKED_a360dfb48a8e5c6b047864c9a82062297_1a360dfb48a8e5c6b047864c9a82062297" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>lp_count</name></member>
+      <member refid="structEMBARC__PACKED_a93d683a92f17a191779fb57f31e4c514_1a93d683a92f17a191779fb57f31e4c514" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>lp_end</name></member>
+      <member refid="structEMBARC__PACKED_a52710bbceccae3c3c9088bc926fa1132_1a52710bbceccae3c3c9088bc926fa1132" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>lp_start</name></member>
+      <member refid="structEMBARC__PACKED_ab5d1cf5849b0f10bb974f7ba66e0f6c4_1ab5d1cf5849b0f10bb974f7ba66e0f6c4" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r0</name></member>
+      <member refid="structEMBARC__PACKED_a232630e645d3970835faf251caeed467_1a232630e645d3970835faf251caeed467" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r1</name></member>
+      <member refid="structEMBARC__PACKED_ab28d4906720768bf9d458f4b914052f4_1ab28d4906720768bf9d458f4b914052f4" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r10</name></member>
+      <member refid="structEMBARC__PACKED_af3192154321017be33602866a1ed6751_1af3192154321017be33602866a1ed6751" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r11</name></member>
+      <member refid="structEMBARC__PACKED_ad9dffb71e56fef9ffbe114cef0a53b99_1ad9dffb71e56fef9ffbe114cef0a53b99" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r12</name></member>
+      <member refid="structEMBARC__PACKED_ab0f8b5329aa7468fcc6fa86ec69bc850_1ab0f8b5329aa7468fcc6fa86ec69bc850" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r13</name></member>
+      <member refid="structEMBARC__PACKED_a22f58a7cda63c3843e7d16f355921b81_1a22f58a7cda63c3843e7d16f355921b81" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r14</name></member>
+      <member refid="structEMBARC__PACKED_afc78bf8e009f1e1e465213b91b1aedd7_1afc78bf8e009f1e1e465213b91b1aedd7" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r15</name></member>
+      <member refid="structEMBARC__PACKED_aa50a85d8908167d9b1c3debb7cc2af7e_1aa50a85d8908167d9b1c3debb7cc2af7e" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r16</name></member>
+      <member refid="structEMBARC__PACKED_a0864b97813e28007c5f7017ca3ef165b_1a0864b97813e28007c5f7017ca3ef165b" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r17</name></member>
+      <member refid="structEMBARC__PACKED_a8c104944ec0c21354d011752449a54d1_1a8c104944ec0c21354d011752449a54d1" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r18</name></member>
+      <member refid="structEMBARC__PACKED_a70b87b5ce493d0e90c5c7e5d840824e3_1a70b87b5ce493d0e90c5c7e5d840824e3" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r19</name></member>
+      <member refid="structEMBARC__PACKED_aa8d831d9ea47c9093f3c74aff367e641_1aa8d831d9ea47c9093f3c74aff367e641" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r2</name></member>
+      <member refid="structEMBARC__PACKED_a71aa58461e02988ae4bdd4b3e8296437_1a71aa58461e02988ae4bdd4b3e8296437" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r20</name></member>
+      <member refid="structEMBARC__PACKED_a30f003aeb304c0342f9f9eb64392416e_1a30f003aeb304c0342f9f9eb64392416e" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r21</name></member>
+      <member refid="structEMBARC__PACKED_a0c697587cd025ca0fa6da06afb96b436_1a0c697587cd025ca0fa6da06afb96b436" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r22</name></member>
+      <member refid="structEMBARC__PACKED_a01af53e7db190decbd76937c0b3619e0_1a01af53e7db190decbd76937c0b3619e0" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r23</name></member>
+      <member refid="structEMBARC__PACKED_a59ac1ec93271d40035416ea8050867db_1a59ac1ec93271d40035416ea8050867db" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r24</name></member>
+      <member refid="structEMBARC__PACKED_ad6779e3a3a05a911d66fe7b809887937_1ad6779e3a3a05a911d66fe7b809887937" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r25</name></member>
+      <member refid="structEMBARC__PACKED_ad1a33f9bb6e2b041f30549322bcc86b2_1ad1a33f9bb6e2b041f30549322bcc86b2" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r3</name></member>
+      <member refid="structEMBARC__PACKED_a3479fa15bc0256dd88095e3359340b4b_1a3479fa15bc0256dd88095e3359340b4b" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r30</name></member>
+      <member refid="structEMBARC__PACKED_a724fa41c75051bb0aab99598e8af559c_1a724fa41c75051bb0aab99598e8af559c" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r4</name></member>
+      <member refid="structEMBARC__PACKED_add69aaa0673fe99f7bcee071aca03bab_1add69aaa0673fe99f7bcee071aca03bab" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r5</name></member>
+      <member refid="structEMBARC__PACKED_a37c5fe4c71ed96a46c346b4a8d79a5c8_1a37c5fe4c71ed96a46c346b4a8d79a5c8" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r6</name></member>
+      <member refid="structEMBARC__PACKED_ad537616100b8721eaf377e034961cb4e_1ad537616100b8721eaf377e034961cb4e" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r7</name></member>
+      <member refid="structEMBARC__PACKED_ae3dca21c5dfe7a5d75513c7a6ced291e_1ae3dca21c5dfe7a5d75513c7a6ced291e" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r8</name></member>
+      <member refid="structEMBARC__PACKED_af889d1c3df30980d3bddf5ada26e40fa_1af889d1c3df30980d3bddf5ada26e40fa" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>r9</name></member>
+      <member refid="structEMBARC__PACKED_a74d51c5caadcf15b40dd1c79cada8549_1a74d51c5caadcf15b40dd1c79cada8549" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>ret</name></member>
+      <member refid="structEMBARC__PACKED_a2a9ebc63cca77481389863ca18c4f843_1a2a9ebc63cca77481389863ca18c4f843" prot="public" virt="non-virtual"><scope>EMBARC_PACKED</scope><name>status32</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

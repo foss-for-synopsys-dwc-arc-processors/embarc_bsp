@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDMA__CTRL__FIELD__T" kind="struct" prot="public">
+    <compoundname>DMA_CTRL_FIELD_T</compoundname>
+    <includes refid="arc__udma_8h" local="no">arc_udma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_ac96daa4694a07f430a968e99e3706847_1ac96daa4694a07f430a968e99e3706847" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>operation field </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="129" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_acd1b9ef621a2f139a6cc3d4b753f8dbf_1acd1b9ef621a2f139a6cc3d4b753f8dbf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::rt</definition>
+        <argsstring></argsstring>
+        <name>rt</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>request type field </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="130" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_aaa754739d8efd3699a4c682239c14d30_1aaa754739d8efd3699a4c682239c14d30" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::dtt</definition>
+        <argsstring></argsstring>
+        <name>dtt</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>source and destination target types field </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="131" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_af399c14491ac4a28fd14ff182ea565d9_1af399c14491ac4a28fd14ff182ea565d9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::dwinc</definition>
+        <argsstring></argsstring>
+        <name>dwinc</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data width and address increment field </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="132" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_afbaeeff4638a39e1e97d040d4ca87b2a_1afbaeeff4638a39e1e97d040d4ca87b2a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::blksz</definition>
+        <argsstring></argsstring>
+        <name>blksz</name>
+        <bitfield> 13</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data transfer in bytes field </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="133" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_a302b970e4da468a47d4b4ab7880b8b50_1a302b970e4da468a47d4b4ab7880b8b50" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::arb</definition>
+        <argsstring></argsstring>
+        <name>arb</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>arbitration size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_a755d5c213b11377227f3279f35d9b723_1a755d5c213b11377227f3279f35d9b723" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::intm</definition>
+        <argsstring></argsstring>
+        <name>intm</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt mode bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="135" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CTRL__FIELD__T_a32b4377f73904d3eb2ca00de45d0f2b1_1a32b4377f73904d3eb2ca00de45d0f2b1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_FIELD_T::am</definition>
+        <argsstring></argsstring>
+        <name>am</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>address mode field </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="136" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="128" bodyend="137"/>
+    <listofallmembers>
+      <member refid="structDMA__CTRL__FIELD__T_a32b4377f73904d3eb2ca00de45d0f2b1_1a32b4377f73904d3eb2ca00de45d0f2b1" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>am</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_a302b970e4da468a47d4b4ab7880b8b50_1a302b970e4da468a47d4b4ab7880b8b50" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>arb</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_afbaeeff4638a39e1e97d040d4ca87b2a_1afbaeeff4638a39e1e97d040d4ca87b2a" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>blksz</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_aaa754739d8efd3699a4c682239c14d30_1aaa754739d8efd3699a4c682239c14d30" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>dtt</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_af399c14491ac4a28fd14ff182ea565d9_1af399c14491ac4a28fd14ff182ea565d9" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>dwinc</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_a755d5c213b11377227f3279f35d9b723_1a755d5c213b11377227f3279f35d9b723" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>intm</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_ac96daa4694a07f430a968e99e3706847_1ac96daa4694a07f430a968e99e3706847" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>op</name></member>
+      <member refid="structDMA__CTRL__FIELD__T_acd1b9ef621a2f139a6cc3d4b753f8dbf_1acd1b9ef621a2f139a6cc3d4b753f8dbf" prot="public" virt="non-virtual"><scope>DMA_CTRL_FIELD_T</scope><name>rt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

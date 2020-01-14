@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__trng__obj_8c" kind="file">
+    <compoundname>dw_trng_obj.c</compoundname>
+    <includes refid="dw__trng__obj_8h" local="yes">dw_trng_obj.h</includes>
+    <includes refid="emsdp_8h" local="yes">emsdp/emsdp.h</includes>
+    <incdepgraph>
+      <node id="1228">
+        <label>device/ip_hal/dev_pwm_timer.h</label>
+        <link refid="dev__pwm__timer_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1207">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1229">
+        <label>drivers/ip/subsystem/spi/dfss_spi_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8h"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+      </node>
+      <node id="1203">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1198">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw_trng_obj.c"/>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>dw_trng_obj.h</label>
+        <link refid="dw__trng__obj_8h"/>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+      </node>
+      <node id="1204">
+        <label>stdint.h</label>
+      </node>
+      <node id="1236">
+        <label>device/ip_hal/dev_i2s.h</label>
+        <link refid="dev__i2s_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1215">
+        <label>drivers/ip/designware/spi/dw_spi_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h"/>
+        <childnode refid="1216" relation="include">
+        </childnode>
+      </node>
+      <node id="1212">
+        <label>device/designware/dw_nist_trng.h</label>
+        <link refid="dw__nist__trng_8h"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+      </node>
+      <node id="1233">
+        <label>drivers/ip/subsystem/iic/dfss_iic_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8h"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1234" relation="include">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>drivers/ip/subsystem/gpio/dfss_gpio_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8h"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+      </node>
+      <node id="1201">
+        <label>device/ip_hal/dev_trng.h</label>
+        <link refid="dev__trng_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1206">
+        <label>stddef.h</label>
+      </node>
+      <node id="1210">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="1211" relation="include">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>device/designware/dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
+        <childnode refid="1222" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+      </node>
+      <node id="1205">
+        <label>limits.h</label>
+      </node>
+      <node id="1227">
+        <label>device/designware/dw_pwm_timer.h</label>
+        <link refid="dw__pwm__timer_8h"/>
+        <childnode refid="1228" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+      </node>
+      <node id="1225">
+        <label>device/ip_hal/dev_sdio.h</label>
+        <link refid="dev__sdio_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1211">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="1241">
+        <label>board_emsdp.h</label>
+      </node>
+      <node id="1219">
+        <label>device/ip_hal/dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1239">
+        <label>emsdp_hardware.h</label>
+        <link refid="emsdp__hardware_8h"/>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+      </node>
+      <node id="1232">
+        <label>drivers/ip/subsystem/uart/dfss_uart_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+      </node>
+      <node id="1216">
+        <label>device/designware/dw_spi.h</label>
+        <link refid="dw__spi_8h"/>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+      </node>
+      <node id="1226">
+        <label>drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+      </node>
+      <node id="1230">
+        <label>io_config.h</label>
+      </node>
+      <node id="1237">
+        <label>device/dev_pinmux.h</label>
+        <link refid="dev__pinmux_8h"/>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1214">
+        <label>arc/arc_em.h</label>
+        <link refid="arc__em_8h"/>
+        <childnode refid="1210" relation="include">
+        </childnode>
+      </node>
+      <node id="1202">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1223">
+        <label>drivers/ip/designware/sdio/dw_sdio_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8h"/>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>device/designware/dw_trng.h</label>
+        <link refid="dw__trng_8h"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+      </node>
+      <node id="1224">
+        <label>device/designware/dw_sdio.h</label>
+        <link refid="dw__sdio_8h"/>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+      </node>
+      <node id="1208">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="1209" relation="include">
+        </childnode>
+      </node>
+      <node id="1218">
+        <label>drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="1219" relation="include">
+        </childnode>
+      </node>
+      <node id="1209">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+      </node>
+      <node id="1234">
+        <label>device/ip_hal/dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1217">
+        <label>device/ip_hal/dev_spi.h</label>
+        <link refid="dev__spi_8h"/>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1235">
+        <label>drivers/ip/subsystem/i2s/dfss_i2s_obj.h</label>
+        <link refid="dfss__i2s__obj_8h"/>
+        <childnode refid="1236" relation="include">
+        </childnode>
+      </node>
+      <node id="1240">
+        <label>apexextensions.h</label>
+      </node>
+      <node id="1213">
+        <label>emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1229" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1233" relation="include">
+        </childnode>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+      </node>
+      <node id="1238">
+        <label>common/emsdp_io.h</label>
+        <link refid="emsdp__io_8h"/>
+        <childnode refid="1222" relation="include">
+        </childnode>
+      </node>
+      <node id="1220">
+        <label>drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__trng__obj_8c_ac831a8573a6618375ffb17ee732ab6b6_1ac831a8573a6618375ffb17ee732ab6b6" prot="public" static="no">
+        <name>DW_TRNG_0_BASE</name>
+        <initializer>(<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_af105aaa431feb87f9f65e56f3d08d174_1af105aaa431feb87f9f65e56f3d08d174" kindref="member">EMSDP_TRNG_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="34" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng__obj_8c_a9aff07a5771cc23d39ac385afdc9dda4_1a9aff07a5771cc23d39ac385afdc9dda4" prot="public" static="no">
+        <name>DW_TRNG_0_INTNO</name>
+        <initializer>(<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_a38c39656401b27eb629e41aad6e6b99c_1a38c39656401b27eb629e41aad6e6b99c" kindref="member">EMSDP_NIST_TRNG_INTR</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="35" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dw__trng__obj_8c_ae4e80daaf8080a2eb99550b28a4309ed_1ae4e80daaf8080a2eb99550b28a4309ed" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG</ref></type>
+        <definition>DEV_TRNG dw_trng_0</definition>
+        <argsstring></argsstring>
+        <name>dw_trng_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware trng object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="37" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dw__trng__obj_8c_a68f062d307ad8cec8b8245f25dd4a257_1a68f062d307ad8cec8b8245f25dd4a257" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDW__TRNG__CTRL" kindref="compound">DW_TRNG_CTRL</ref></type>
+        <definition>DW_TRNG_CTRL dw_trng_0_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_trng_0_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware trng 0 ctrl </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="38" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dw__trng__obj_8c_acf81bee0fef874e39ee5b5371f79bad7_1acf81bee0fef874e39ee5b5371f79bad7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_0_open</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_trng_0_open</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="40" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_a34a23e1b6f2e0b71e5852d07018b94eb_1a34a23e1b6f2e0b71e5852d07018b94eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_0_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_trng_0_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_a38d5e1f6a0545f359c7a208a7c009464_1a38d5e1f6a0545f359c7a208a7c009464" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_0_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_trng_0_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_a0f9a48f738aa80bdf62ae6f25f8d3d94_1a0f9a48f738aa80bdf62ae6f25f8d3d94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_0_read</definition>
+        <argsstring>(uint32_t *data_buf)</argsstring>
+        <name>dw_trng_0_read</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="55" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_af52a88c1a25836c54b0a202259524813_1af52a88c1a25836c54b0a202259524813" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_0_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_trng_0_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="60" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_a15badd2f134feb94ea9da303fdbff3a2_1a15badd2f134feb94ea9da303fdbff3a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_0_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_trng_0_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>get absolute designware base address</para><para>trng info init</para><para>trng dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="65" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="65" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_a86f5e4d7db8c3d658f03f1a4d1a4810e_1a86f5e4d7db8c3d658f03f1a4d1a4810e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_all_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_trng_all_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Install all trng objects. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><bold>MUST</bold> be called during system init </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng__obj_8c_a58bc9da91e50253b3b9339df67e1a43a_1a58bc9da91e50253b3b9339df67e1a43a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga188ae76b37c7f9638ec146f754c4ea26_1ga188ae76b37c7f9638ec146f754c4ea26" kindref="member">DEV_TRNG_PTR</ref></type>
+        <definition>DEV_TRNG_PTR dw_trng_get_dev</definition>
+        <argsstring>(int32_t trng_id)</argsstring>
+        <name>dw_trng_get_dev</name>
+        <param>
+          <type>int32_t</type>
+          <declname>trng_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get one designware device structure </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Trng </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c" bodystart="114" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__trng__obj_8h" kindref="compound">dw_trng_obj.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emsdp_8h" kindref="compound">emsdp/emsdp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_TRNG_0)</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_0_BASE<sp/><sp/>(EMSDP_TRNG_BASE)</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_0_INTNO<sp/>(EMSDP_NIST_TRNG_INTR)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG</ref><sp/><ref refid="dw__trng__obj_8c_ae4e80daaf8080a2eb99550b28a4309ed_1ae4e80daaf8080a2eb99550b28a4309ed" kindref="member">dw_trng_0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDW__TRNG__CTRL" kindref="compound">DW_TRNG_CTRL</ref><sp/><ref refid="dw__trng__obj_8c_a68f062d307ad8cec8b8245f25dd4a257_1a68f062d307ad8cec8b8245f25dd4a257" kindref="member">dw_trng_0_ctrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng__obj_8c_acf81bee0fef874e39ee5b5371f79bad7_1acf81bee0fef874e39ee5b5371f79bad7" kindref="member">dw_trng_0_open</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8h_a8a7a8f9fd972e58fb564534316ae3581_1a8a7a8f9fd972e58fb564534316ae3581" kindref="member">dw_trng_open</ref>(&amp;dw_trng_0);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng__obj_8c_a34a23e1b6f2e0b71e5852d07018b94eb_1a34a23e1b6f2e0b71e5852d07018b94eb" kindref="member">dw_trng_0_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8h_a78cf2c79798d3c23901a666c6aa9d5ac_1a78cf2c79798d3c23901a666c6aa9d5ac" kindref="member">dw_trng_close</ref>(&amp;dw_trng_0);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng__obj_8c_a38d5e1f6a0545f359c7a208a7c009464_1a38d5e1f6a0545f359c7a208a7c009464" kindref="member">dw_trng_0_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8h_aa7453c656249243c48cf327a2b4ac267_1aa7453c656249243c48cf327a2b4ac267" kindref="member">dw_trng_control</ref>(&amp;dw_trng_0,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng__obj_8c_a0f9a48f738aa80bdf62ae6f25f8d3d94_1a0f9a48f738aa80bdf62ae6f25f8d3d94" kindref="member">dw_trng_0_read</ref>(uint32_t<sp/>*data_buf)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8h_a1a614a6f55f9c66dc84130308480b358_1a1a614a6f55f9c66dc84130308480b358" kindref="member">dw_trng_read</ref>(&amp;dw_trng_0,<sp/>data_buf);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng__obj_8c_af52a88c1a25836c54b0a202259524813_1af52a88c1a25836c54b0a202259524813" kindref="member">dw_trng_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__trng_8h_a951bd58ef01dd00069461e4a17b96d76_1a951bd58ef01dd00069461e4a17b96d76" kindref="member">dw_trng_isr</ref>(&amp;dw_trng_0,<sp/>ptr);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng__obj_8c_a15badd2f134feb94ea9da303fdbff3a2_1a15badd2f134feb94ea9da303fdbff3a2" kindref="member">dw_trng_0_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>trng_abs_base<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/>dw_trng_ptr<sp/>=<sp/>&amp;<ref refid="dw__trng__obj_8c_ae4e80daaf8080a2eb99550b28a4309ed_1ae4e80daaf8080a2eb99550b28a4309ed" kindref="member">dw_trng_0</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__TRNG__INFO" kindref="compound">DEV_TRNG_INFO_PTR</ref><sp/>dw_trng_info_ptr<sp/>=<sp/>&amp;dw_trng_0.<ref refid="structDEV__TRNG_a9ad1984f99df51d6e2a8bd2a9e27ea45_1a9ad1984f99df51d6e2a8bd2a9e27ea45" kindref="member">trng_info</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__CTRL" kindref="compound">DW_TRNG_CTRL_PTR</ref><sp/>dw_trng_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="dw__trng__obj_8c_a68f062d307ad8cec8b8245f25dd4a257_1a68f062d307ad8cec8b8245f25dd4a257" kindref="member">dw_trng_0_ctrl</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>dw_trng_reg_ptr;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>trng_abs_base<sp/>=<sp/>(uint32_t)<ref refid="dw__trng__obj_8c_ac831a8573a6618375ffb17ee732ab6b6_1ac831a8573a6618375ffb17ee732ab6b6" kindref="member">DW_TRNG_0_BASE</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_reg_ptr<sp/>=<sp/>(<ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref>)trng_abs_base;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_info_ptr-&gt;<ref refid="structDEV__TRNG__INFO_a86053a267b90f0f37211e0b3ea2e68ba_1a86053a267b90f0f37211e0b3ea2e68ba" kindref="member">trng_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_trng_ctrl_ptr;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_info_ptr-&gt;<ref refid="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_info_ptr-&gt;<ref refid="structDEV__TRNG__INFO_a6beac25df1b26a1539fe2c5d152acf2a_1a6beac25df1b26a1539fe2c5d152acf2a" kindref="member">length</ref><sp/>=<sp/>4;</highlight><highlight class="comment">//<sp/>default<sp/>output<sp/>length<sp/>is<sp/>4<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_info_ptr-&gt;<ref refid="structDEV__TRNG__INFO_afe5b18df5f99d8a1528acbce5336d3f3_1afe5b18df5f99d8a1528acbce5336d3f3" kindref="member">byte_generated</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>trng<sp/>ctrl<sp/>init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>should<sp/>be<sp/>set<sp/>during<sp/>object<sp/>implementation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_af3162d2b770f43299f66b952a1932a7f_1af3162d2b770f43299f66b952a1932a7f" kindref="member">dw_trng_regs</ref><sp/>=<sp/>dw_trng_reg_ptr;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_ad410879a0745796185b959df2e56a599_1ad410879a0745796185b959df2e56a599" kindref="member">intno</ref><sp/>=<sp/><ref refid="dw__trng__obj_8c_a9aff07a5771cc23d39ac385afdc9dda4_1a9aff07a5771cc23d39ac385afdc9dda4" kindref="member">DW_TRNG_0_INTNO</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_afeea3491205d027f5fb5e331fcfaf0ef_1afeea3491205d027f5fb5e331fcfaf0ef" kindref="member">dw_trng_int_handler</ref><sp/>=<sp/><ref refid="dw__trng__obj_8c_af52a88c1a25836c54b0a202259524813_1af52a88c1a25836c54b0a202259524813" kindref="member">dw_trng_0_isr</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>trng<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_acc266299b122f73a084258762ae455c9_1acc266299b122f73a084258762ae455c9" kindref="member">int_status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ptr-&gt;<ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga4687d130c24c13120b8befa2090f4d46_1ga4687d130c24c13120b8befa2090f4d46" kindref="member">trng_open</ref><sp/>=<sp/><ref refid="dw__trng__obj_8c_acf81bee0fef874e39ee5b5371f79bad7_1acf81bee0fef874e39ee5b5371f79bad7" kindref="member">dw_trng_0_open</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ptr-&gt;<ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga85bde14d494b0ab3d4c7476e3272308e_1ga85bde14d494b0ab3d4c7476e3272308e" kindref="member">trng_close</ref><sp/>=<sp/><ref refid="dw__trng__obj_8c_a34a23e1b6f2e0b71e5852d07018b94eb_1a34a23e1b6f2e0b71e5852d07018b94eb" kindref="member">dw_trng_0_close</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ptr-&gt;<ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga7ef78873506eefecf1f661aabce6c343_1ga7ef78873506eefecf1f661aabce6c343" kindref="member">trng_control</ref><sp/>=<sp/><ref refid="dw__trng__obj_8c_a38d5e1f6a0545f359c7a208a7c009464_1a38d5e1f6a0545f359c7a208a7c009464" kindref="member">dw_trng_0_control</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_trng_ptr-&gt;<ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga23b539c6ace603487daf21124707b8ce_1ga23b539c6ace603487daf21124707b8ce" kindref="member">trng_read</ref><sp/>=<sp/><ref refid="dw__trng__obj_8c_a0f9a48f738aa80bdf62ae6f25f8d3d94_1a0f9a48f738aa80bdf62ae6f25f8d3d94" kindref="member">dw_trng_0_read</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>USE_DW_TRNG_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng__obj_8c_a86f5e4d7db8c3d658f03f1a4d1a4810e_1a86f5e4d7db8c3d658f03f1a4d1a4810e" kindref="member">dw_trng_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_TRNG_0)</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__trng__obj_8c_a15badd2f134feb94ea9da303fdbff3a2_1a15badd2f134feb94ea9da303fdbff3a2" kindref="member">dw_trng_0_install</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/><ref refid="dw__trng__obj_8c_a58bc9da91e50253b3b9339df67e1a43a_1a58bc9da91e50253b3b9339df67e1a43a" kindref="member">dw_trng_get_dev</ref>(int32_t<sp/>trng_id)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>install<sp/>device<sp/>objects<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(install_flag<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>install_flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng__obj_8c_a86f5e4d7db8c3d658f03f1a4d1a4810e_1a86f5e4d7db8c3d658f03f1a4d1a4810e" kindref="member">dw_trng_all_install</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(trng_id)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_TRNG_0)</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="dw__trng__obj_8h_adb545680897ad6eee53598003512d669_1adb545680897ad6eee53598003512d669" kindref="member">DW_TRNG_0_ID</ref>:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="dw__trng__obj_8c_ae4e80daaf8080a2eb99550b28a4309ed_1ae4e80daaf8080a2eb99550b28a4309ed" kindref="member">dw_trng_0</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c"/>
+  </compounddef>
+</doxygen>

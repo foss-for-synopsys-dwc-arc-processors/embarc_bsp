@@ -1,0 +1,717 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__timer_8c" kind="file">
+    <compoundname>arc_timer.c</compoundname>
+    <includes refid="arc__timer_8h" local="yes">arc/arc_timer.h</includes>
+    <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
+    <incdepgraph>
+      <node id="69">
+        <label>stdbool.h</label>
+      </node>
+      <node id="65">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>stdint.h</label>
+      </node>
+      <node id="62">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c</label>
+        <link refid="arc_timer.c"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>stddef.h</label>
+      </node>
+      <node id="70">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>limits.h</label>
+      </node>
+      <node id="71">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="63">
+        <label>arc/arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arc__timer_8c_a680fc0a953bb30cab255f7abedb9b5dc_1a680fc0a953bb30cab255f7abedb9b5dc" prot="public" static="no">
+        <name>LPS_PREC</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="40" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="arc__timer_8c_a6b80a1e838b60bbddb2b3fc4fb47d0bb_1a6b80a1e838b60bbddb2b3fc4fb47d0bb" prot="public" static="yes" mutable="no">
+        <type>uint64_t</type>
+        <definition>volatile uint64_t gl_loops_per_jiffy</definition>
+        <argsstring></argsstring>
+        <name>gl_loops_per_jiffy</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="42" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arc__timer_8c_a62f7a1f8bd3de776617a6fd3e742be52_1a62f7a1f8bd3de776617a6fd3e742be52" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t gl_count</definition>
+        <argsstring></argsstring>
+        <name>gl_count</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="43" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_present</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>timer_present</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the specific timer present. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 present, 0 not present </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="50" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_start</definition>
+        <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
+        <name>timer_start</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Start a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer mode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer limit value (not for RTC) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="80" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_stop</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>timer_stop</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Stop timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="114" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_current</definition>
+        <argsstring>(const uint32_t no, void *val)</argsstring>
+        <name>timer_current</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Get timer current tick. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer current tick value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="147" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="147" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t timer_int_clear</definition>
+        <argsstring>(const uint32_t no)</argsstring>
+        <name>timer_int_clear</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Clear the interrupt pending bit of timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 success, -1 failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="175" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="175" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void timer_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>timer_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize internal timer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="199" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="199" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void arc_delay_us</definition>
+        <argsstring>(uint32_t usecs)</argsstring>
+        <name>arc_delay_us</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>usecs</declname>
+        </param>
+        <briefdescription>
+<para>Function for delaying execution for number of microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of us </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="374" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="374" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t timer_calibrate_delay</definition>
+        <argsstring>(uint32_t cpu_clock)</argsstring>
+        <name>timer_calibrate_delay</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>cpu_clock</declname>
+        </param>
+        <briefdescription>
+<para>Get calibration values for a given cpu clock source. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cpu_clock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>board CPU clock source to calibrate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>loops_per_jiffy Calibration value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="399" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="399" bodyend="447"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal timer implementation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__timer_8h" kindref="compound">arc/arc_timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc/arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LPS_PREC<sp/>8</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="arc__timer_8c_a6b80a1e838b60bbddb2b3fc4fb47d0bb_1a6b80a1e838b60bbddb2b3fc4fb47d0bb" kindref="member">gl_loops_per_jiffy</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="arc__timer_8c_a62f7a1f8bd3de776617a6fd3e742be52_1a62f7a1f8bd3de776617a6fd3e742be52" kindref="member">gl_count</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bcr<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaebfb0cbbd7e8404f9b8d97baae5c303f_1gaebfb0cbbd7e8404f9b8d97baae5c303f" kindref="member">AUX_BCR_TIMERS</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>(bcr<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>(bcr<sp/>&gt;&gt;<sp/>9)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>(bcr<sp/>&gt;&gt;<sp/>10)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>illegal<sp/>argument<sp/>so<sp/>return<sp/>false<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)bcr;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" kindref="member">timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gab4eef58f9f383201e64f9a9df6f56c31_1gab4eef58f9f383201e64f9a9df6f56c31" kindref="member">AUX_TIMER0_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga5426e56d1c27066e38966ccdddc3e9b3_1ga5426e56d1c27066e38966ccdddc3e9b3" kindref="member">AUX_TIMER0_LIMIT</ref>,<sp/>val);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gab4eef58f9f383201e64f9a9df6f56c31_1gab4eef58f9f383201e64f9a9df6f56c31" kindref="member">AUX_TIMER0_CTRL</ref>,<sp/>mode);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gae3dc4d9a0173cbb62bb5f6d3fdb682ba_1gae3dc4d9a0173cbb62bb5f6d3fdb682ba" kindref="member">AUX_TIMER1_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gabc67c489a0b9e42c505470b064ff6a30_1gabc67c489a0b9e42c505470b064ff6a30" kindref="member">AUX_TIMER1_LIMIT</ref>,<sp/>val);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gae3dc4d9a0173cbb62bb5f6d3fdb682ba_1gae3dc4d9a0173cbb62bb5f6d3fdb682ba" kindref="member">AUX_TIMER1_CTRL</ref>,<sp/>mode);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga64c7c606a9647d7ee1f0cad286d3fea3_1ga64c7c606a9647d7ee1f0cad286d3fea3" kindref="member">AUX_TIMER1_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga52c27982365fad45cfd7826e378e1b64_1ga52c27982365fad45cfd7826e378e1b64" kindref="member">AUX_RTC_CTRL</ref>,<sp/>mode);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gab4eef58f9f383201e64f9a9df6f56c31_1gab4eef58f9f383201e64f9a9df6f56c31" kindref="member">AUX_TIMER0_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga5426e56d1c27066e38966ccdddc3e9b3_1ga5426e56d1c27066e38966ccdddc3e9b3" kindref="member">AUX_TIMER0_LIMIT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gae3dc4d9a0173cbb62bb5f6d3fdb682ba_1gae3dc4d9a0173cbb62bb5f6d3fdb682ba" kindref="member">AUX_TIMER1_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gabc67c489a0b9e42c505470b064ff6a30_1gabc67c489a0b9e42c505470b064ff6a30" kindref="member">AUX_TIMER1_LIMIT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga64c7c606a9647d7ee1f0cad286d3fea3_1ga64c7c606a9647d7ee1f0cad286d3fea3" kindref="member">AUX_TIMER1_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga52c27982365fad45cfd7826e378e1b64_1ga52c27982365fad45cfd7826e378e1b64" kindref="member">AUX_RTC_CTRL</ref>,<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gab984a3b6054a19b5547fdefb3118bc89_1gab984a3b6054a19b5547fdefb3118bc89" kindref="member">TIMER_RTC_CLEAR</ref>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" kindref="member">timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((uint32_t<sp/>*)val)<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((uint32_t<sp/>*)val)<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga64c7c606a9647d7ee1f0cad286d3fea3_1ga64c7c606a9647d7ee1f0cad286d3fea3" kindref="member">AUX_TIMER1_CNT</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((uint64_t<sp/>*)val)<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga06f0a35cef295575cb6a4cd47d91b6b9_1ga06f0a35cef295575cb6a4cd47d91b6b9" kindref="member">AUX_RTC_LOW</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" kindref="member">timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gab4eef58f9f383201e64f9a9df6f56c31_1gab4eef58f9f383201e64f9a9df6f56c31" kindref="member">AUX_TIMER0_CTRL</ref>,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gab4eef58f9f383201e64f9a9df6f56c31_1gab4eef58f9f383201e64f9a9df6f56c31" kindref="member">AUX_TIMER0_CTRL</ref>)<sp/>&amp;<sp/>(~<ref refid="group__ARC__HAL__MISC__TIMER_gac3be2b7827aa154d07f55d2497190173_1gac3be2b7827aa154d07f55d2497190173" kindref="member">TIMER_CTRL_IP</ref>));</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gae3dc4d9a0173cbb62bb5f6d3fdb682ba_1gae3dc4d9a0173cbb62bb5f6d3fdb682ba" kindref="member">AUX_TIMER1_CTRL</ref>,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gae3dc4d9a0173cbb62bb5f6d3fdb682ba_1gae3dc4d9a0173cbb62bb5f6d3fdb682ba" kindref="member">AUX_TIMER1_CTRL</ref>)<sp/>&amp;<sp/>(~<ref refid="group__ARC__HAL__MISC__TIMER_gac3be2b7827aa154d07f55d2497190173_1gac3be2b7827aa154d07f55d2497190173" kindref="member">TIMER_CTRL_IP</ref>));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARC_FEATURE_SEC_TIMER1_PRESENT)<sp/>||<sp/>defined(ARC_FEATURE_SEC_TIMER0_PRESENT)</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bcr<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaebfb0cbbd7e8404f9b8d97baae5c303f_1gaebfb0cbbd7e8404f9b8d97baae5c303f" kindref="member">AUX_BCR_TIMERS</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>(bcr<sp/>&gt;&gt;<sp/>11)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>(bcr<sp/>&gt;&gt;<sp/>12)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>illegal<sp/>argument<sp/>so<sp/>return<sp/>false<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)bcr;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga44648e9bf965305b509a1169761c02ab_1ga44648e9bf965305b509a1169761c02ab" kindref="member">secure_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga3f75d0a7448654bd51c9a1f0462c2014_1ga3f75d0a7448654bd51c9a1f0462c2014" kindref="member">AUX_SECURE_TIMER0_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaa616d5b8dc43b99bdc41e727906f81d0_1gaa616d5b8dc43b99bdc41e727906f81d0" kindref="member">AUX_SECURE_TIMER0_LIMIT</ref>,<sp/>val);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga3f75d0a7448654bd51c9a1f0462c2014_1ga3f75d0a7448654bd51c9a1f0462c2014" kindref="member">AUX_SECURE_TIMER0_CTRL</ref>,<sp/>mode);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga725ba5472a7f1a68504f7d22e6216bcf_1ga725ba5472a7f1a68504f7d22e6216bcf" kindref="member">AUX_SECURE_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga31e418cc53a9409b65d14c36bd9af65d_1ga31e418cc53a9409b65d14c36bd9af65d" kindref="member">AUX_SECURE_TIMER1_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaeb9d349b10d742f47b1df15935b6169c_1gaeb9d349b10d742f47b1df15935b6169c" kindref="member">AUX_SECURE_TIMER1_LIMIT</ref>,<sp/>val);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga31e418cc53a9409b65d14c36bd9af65d_1ga31e418cc53a9409b65d14c36bd9af65d" kindref="member">AUX_SECURE_TIMER1_CTRL</ref>,<sp/>mode);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga686a184bedd55efee6282a456d009ceb_1ga686a184bedd55efee6282a456d009ceb" kindref="member">AUX_SECURE_TIMER1_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga3f75d0a7448654bd51c9a1f0462c2014_1ga3f75d0a7448654bd51c9a1f0462c2014" kindref="member">AUX_SECURE_TIMER0_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaa616d5b8dc43b99bdc41e727906f81d0_1gaa616d5b8dc43b99bdc41e727906f81d0" kindref="member">AUX_SECURE_TIMER0_LIMIT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga725ba5472a7f1a68504f7d22e6216bcf_1ga725ba5472a7f1a68504f7d22e6216bcf" kindref="member">AUX_SECURE_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga31e418cc53a9409b65d14c36bd9af65d_1ga31e418cc53a9409b65d14c36bd9af65d" kindref="member">AUX_SECURE_TIMER1_CTRL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaeb9d349b10d742f47b1df15935b6169c_1gaeb9d349b10d742f47b1df15935b6169c" kindref="member">AUX_SECURE_TIMER1_LIMIT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga686a184bedd55efee6282a456d009ceb_1ga686a184bedd55efee6282a456d009ceb" kindref="member">AUX_SECURE_TIMER1_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaab2aa4baf8219ebb86c9aad1148b0523_1gaab2aa4baf8219ebb86c9aad1148b0523" kindref="member">secure_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((uint32_t<sp/>*)val)<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga725ba5472a7f1a68504f7d22e6216bcf_1ga725ba5472a7f1a68504f7d22e6216bcf" kindref="member">AUX_SECURE_TIMER0_CNT</ref>);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((uint32_t<sp/>*)val)<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga686a184bedd55efee6282a456d009ceb_1ga686a184bedd55efee6282a456d009ceb" kindref="member">AUX_SECURE_TIMER1_CNT</ref>);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga517e9a555515b5c73549fb3703d7fed0_1ga517e9a555515b5c73549fb3703d7fed0" kindref="member">secure_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(no)<sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>:</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga3f75d0a7448654bd51c9a1f0462c2014_1ga3f75d0a7448654bd51c9a1f0462c2014" kindref="member">AUX_SECURE_TIMER0_CTRL</ref>,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga3f75d0a7448654bd51c9a1f0462c2014_1ga3f75d0a7448654bd51c9a1f0462c2014" kindref="member">AUX_SECURE_TIMER0_CTRL</ref>)<sp/>&amp;<sp/>(~<ref refid="group__ARC__HAL__MISC__TIMER_gac3be2b7827aa154d07f55d2497190173_1gac3be2b7827aa154d07f55d2497190173" kindref="member">TIMER_CTRL_IP</ref>));</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>:</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga31e418cc53a9409b65d14c36bd9af65d_1ga31e418cc53a9409b65d14c36bd9af65d" kindref="member">AUX_SECURE_TIMER1_CTRL</ref>,</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga31e418cc53a9409b65d14c36bd9af65d_1ga31e418cc53a9409b65d14c36bd9af65d" kindref="member">AUX_SECURE_TIMER1_CTRL</ref>)<sp/>&amp;<sp/>(~<ref refid="group__ARC__HAL__MISC__TIMER_gac3be2b7827aa154d07f55d2497190173_1gac3be2b7827aa154d07f55d2497190173" kindref="member">TIMER_CTRL_IP</ref>));</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaf453c9883df6ab97ef7c50cfb7a555f3_1gaf453c9883df6ab97ef7c50cfb7a555f3" kindref="member">secure_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ARC_FEATURE_SEC_TIMER1_PRESENT<sp/>&amp;&amp;<sp/>ARC_FEATURE_SEC_TIMER0_PRESENT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="368"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="374"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" kindref="member">arc_delay_us</ref>(uint32_t<sp/>usecs)</highlight></codeline>
+<codeline lineno="375"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(usecs<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>usecs<sp/>=<sp/>usecs<sp/>*<sp/><ref refid="arc__timer_8c_a6b80a1e838b60bbddb2b3fc4fb47d0bb_1a6b80a1e838b60bbddb2b3fc4fb47d0bb" kindref="member">gl_loops_per_jiffy</ref><sp/>/<sp/><ref refid="arc__timer_8c_a62f7a1f8bd3de776617a6fd3e742be52_1a62f7a1f8bd3de776617a6fd3e742be52" kindref="member">gl_count</ref>;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>__asm__<sp/>__volatile__<sp/>(</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>.align<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>mov<sp/>%%lp_count,<sp/>%0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>lp<sp/><sp/>1f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>nop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;1:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(usecs)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;lp_count&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal">uint64_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" kindref="member">timer_calibrate_delay</ref>(uint32_t<sp/>cpu_clock)</highlight></codeline>
+<codeline lineno="400"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>loopbit;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>lps_precision<sp/>=<sp/><ref refid="arc__timer_8c_a680fc0a953bb30cab255f7abedb9b5dc_1a680fc0a953bb30cab255f7abedb9b5dc" kindref="member">LPS_PREC</ref>;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint64_t<sp/>loops_per_jiffy;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>timer0_limit;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arc__timer_8c_a6b80a1e838b60bbddb2b3fc4fb47d0bb_1a6b80a1e838b60bbddb2b3fc4fb47d0bb" kindref="member">gl_loops_per_jiffy</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arc__timer_8c_a62f7a1f8bd3de776617a6fd3e742be52_1a62f7a1f8bd3de776617a6fd3e742be52" kindref="member">gl_count</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>cpu_clock<sp/>/=<sp/>1000;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_ga8801f275b2a194a99f6d673a0e72cd32_1ga8801f275b2a194a99f6d673a0e72cd32" kindref="member">cpu_lock_save</ref>();</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/>timer0_limit<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga5426e56d1c27066e38966ccdddc3e9b3_1ga5426e56d1c27066e38966ccdddc3e9b3" kindref="member">AUX_TIMER0_LIMIT</ref>);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga5426e56d1c27066e38966ccdddc3e9b3_1ga5426e56d1c27066e38966ccdddc3e9b3" kindref="member">AUX_TIMER0_LIMIT</ref>,<sp/>0xFFFFFFFF);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>loops_per_jiffy<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>4);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((loops_per_jiffy<sp/>&lt;&lt;=<sp/>1)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" kindref="member">arc_delay_us</ref>(loops_per_jiffy);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>)<sp/>&gt;<sp/>cpu_clock)<sp/>{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/>loops_per_jiffy<sp/>&gt;&gt;=<sp/>1;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/>loopbit<sp/>=<sp/>loops_per_jiffy;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(lps_precision--<sp/>&amp;&amp;<sp/>(loopbit<sp/>&gt;&gt;=<sp/>1))<sp/>{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loops_per_jiffy<sp/>|=<sp/>loopbit;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" kindref="member">arc_delay_us</ref>(loops_per_jiffy);</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>)<sp/>&gt;<sp/>cpu_clock)<sp/>{</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loops_per_jiffy<sp/>&amp;=<sp/>~loopbit;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arc__timer_8c_a6b80a1e838b60bbddb2b3fc4fb47d0bb_1a6b80a1e838b60bbddb2b3fc4fb47d0bb" kindref="member">gl_loops_per_jiffy</ref><sp/>=<sp/>loops_per_jiffy;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arc__timer_8c_a62f7a1f8bd3de776617a6fd3e742be52_1a62f7a1f8bd3de776617a6fd3e742be52" kindref="member">gl_count</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga09ab13132c163e6d01b021cec056ea32_1ga09ab13132c163e6d01b021cec056ea32" kindref="member">AUX_TIMER0_CNT</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__BUILTIN_ga7fc2bb3f493a46207d78c3d22abdb118_1ga7fc2bb3f493a46207d78c3d22abdb118" kindref="member">arc_aux_write</ref>(<ref refid="group__ARC__HAL__CORE__COMM_ga5426e56d1c27066e38966ccdddc3e9b3_1ga5426e56d1c27066e38966ccdddc3e9b3" kindref="member">AUX_TIMER0_LIMIT</ref>,<sp/>timer0_limit);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__CPU_gacb9f94a852339140f2d1d4ab8411c9c3_1gacb9f94a852339140f2d1d4ab8411c9c3" kindref="member">cpu_unlock_restore</ref>(status);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loops_per_jiffy;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c"/>
+  </compounddef>
+</doxygen>

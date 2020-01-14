@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__I2S__CALLBACK" kind="group">
+    <compoundname>DEVICE_HAL_I2S_CALLBACK</compoundname>
+    <title>I2S Interrupt Callback Functions</title>
+    <innerclass refid="structDEV__I2S__CBS" prot="public">DEV_I2S_CBS</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__I2S__CALLBACK_1gad26328f6d458df239933ba7ae180fb92" prot="public" static="no">
+        <type>struct <ref refid="structDEV__I2S__CBS" kindref="compound">DEV_I2S_CBS</ref> *</type>
+        <definition>typedef  struct DEV_I2S_CBS * DEV_I2S_CBS_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_I2S_CBS_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="323" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definition for I2S device callback. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

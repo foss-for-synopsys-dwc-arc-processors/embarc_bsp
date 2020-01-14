@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__EMBARC__TEST" kind="group">
+    <compoundname>EMBARC_TEST</compoundname>
+    <title>Unit Test Framework</title>
+    <briefdescription>
+<para>Provide a basic unit test framework. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

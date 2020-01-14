@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__I2S__CONFIG" kind="struct" prot="public">
+    <compoundname>DW_I2S_CONFIG</compoundname>
+    <includes refid="dw__i2s_8h" local="no">dw_i2s.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_af1e589180d7fda28a8feb648addf031d_1af1e589180d7fda28a8feb648addf031d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::support_modes</definition>
+        <argsstring></argsstring>
+        <name>support_modes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Supported I2S modes, [DW_I2S_MASTER_SUPPORTED, DW_I2S_SLAVE_SUPPORTED] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="289" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_acea92260d4b8522dfb6bc660aa1948dc_1acea92260d4b8522dfb6bc660aa1948dc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::fifo_len</definition>
+        <argsstring></argsstring>
+        <name>fifo_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIFO length (uint: word) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="290" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_a852b10fc415707d720388d7343ea7e14_1a852b10fc415707d720388d7343ea7e14" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suppported channels, [DW_I2S_CHANNEL0_SUPPORTED, DW_I2S_CHANNEL3_SUPPORTED] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="291" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_aff690e3b6156cdd4f7b5658505fce4d3_1aff690e3b6156cdd4f7b5658505fce4d3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::ws_length</definition>
+        <argsstring></argsstring>
+        <name>ws_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of sclk cycles for which ws_out stays, related to WSS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="293" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_a6ddf1dd5d43186ab77ea2fd3c275a114_1a6ddf1dd5d43186ab77ea2fd3c275a114" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::sclk_gate</definition>
+        <argsstring></argsstring>
+        <name>sclk_gate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S gating of sclk </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="294" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_aa8688ff54ffa372f8452d86408ba7cea_1aa8688ff54ffa372f8452d86408ba7cea" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::data_res[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>data_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Desired audio data resolution, which can be <ref refid="group__I2S__AUD__DATA__RES" kindref="compound">I2S Audio Data Resolution</ref>, related WLEN </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="296" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_ab8803927a145fa29778fe67ca0736f96_1ab8803927a145fa29778fe67ca0736f96" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::sample_rate[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio sampling rate, which can be <ref refid="group__I2S__AUD__SAMPLE__RATE" kindref="compound">I2S Audio Sampling Rate</ref>, related to audio reference clk </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="297" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_a0ad496c8cee77a7232eb7efe7ed9783e_1a0ad496c8cee77a7232eb7efe7ed9783e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_CONFIG::intno[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>intno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S interrupt vector number, bit0-15 tx_emp_intr/rx_da_intr, bit16-31 tx_or_intr/rx_or_intr </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="298" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__CONFIG_aeccdf39e96327fb65bc9fa1e46e24846_1aeccdf39e96327fb65bc9fa1e46e24846" prot="public" static="no" mutable="no">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T DW_I2S_CONFIG::dw_i2s_int_handler</definition>
+        <argsstring></argsstring>
+        <name>dw_i2s_int_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="299" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="288" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="288" bodyend="300"/>
+    <listofallmembers>
+      <member refid="structDW__I2S__CONFIG_a852b10fc415707d720388d7343ea7e14_1a852b10fc415707d720388d7343ea7e14" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>channels</name></member>
+      <member refid="structDW__I2S__CONFIG_aa8688ff54ffa372f8452d86408ba7cea_1aa8688ff54ffa372f8452d86408ba7cea" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>data_res</name></member>
+      <member refid="structDW__I2S__CONFIG_aeccdf39e96327fb65bc9fa1e46e24846_1aeccdf39e96327fb65bc9fa1e46e24846" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>dw_i2s_int_handler</name></member>
+      <member refid="structDW__I2S__CONFIG_acea92260d4b8522dfb6bc660aa1948dc_1acea92260d4b8522dfb6bc660aa1948dc" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>fifo_len</name></member>
+      <member refid="structDW__I2S__CONFIG_a0ad496c8cee77a7232eb7efe7ed9783e_1a0ad496c8cee77a7232eb7efe7ed9783e" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>intno</name></member>
+      <member refid="structDW__I2S__CONFIG_ab8803927a145fa29778fe67ca0736f96_1ab8803927a145fa29778fe67ca0736f96" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>sample_rate</name></member>
+      <member refid="structDW__I2S__CONFIG_a6ddf1dd5d43186ab77ea2fd3c275a114_1a6ddf1dd5d43186ab77ea2fd3c275a114" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>sclk_gate</name></member>
+      <member refid="structDW__I2S__CONFIG_af1e589180d7fda28a8feb648addf031d_1af1e589180d7fda28a8feb648addf031d" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>support_modes</name></member>
+      <member refid="structDW__I2S__CONFIG_aff690e3b6156cdd4f7b5658505fce4d3_1aff690e3b6156cdd4f7b5658505fce4d3" prot="public" virt="non-virtual"><scope>DW_I2S_CONFIG</scope><name>ws_length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

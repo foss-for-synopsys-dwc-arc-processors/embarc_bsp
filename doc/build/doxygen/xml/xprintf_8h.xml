@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="xprintf_8h" kind="file">
+    <compoundname>xprintf.h</compoundname>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="embARC__toolchain_8h" local="yes">embARC_toolchain.h</includes>
+    <includedby refid="xprintf_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.c</includedby>
+    <incdepgraph>
+      <node id="5498">
+        <label>stdbool.h</label>
+      </node>
+      <node id="5493">
+        <label>stdarg.h</label>
+      </node>
+      <node id="5494">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="5495" relation="include">
+        </childnode>
+        <childnode refid="5496" relation="include">
+        </childnode>
+        <childnode refid="5497" relation="include">
+        </childnode>
+        <childnode refid="5498" relation="include">
+        </childnode>
+      </node>
+      <node id="5495">
+        <label>stdint.h</label>
+      </node>
+      <node id="5497">
+        <label>stddef.h</label>
+      </node>
+      <node id="5496">
+        <label>limits.h</label>
+      </node>
+      <node id="5492">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h</label>
+        <link refid="xprintf.h"/>
+        <childnode refid="5493" relation="include">
+        </childnode>
+        <childnode refid="5494" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5500">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.c</label>
+        <link refid="xprintf_8c"/>
+      </node>
+      <node id="5499">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h</label>
+        <link refid="xprintf.h"/>
+        <childnode refid="5500" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="xprintf_8h_a2b673624e92194c8feec3279371fc8f2_1a2b673624e92194c8feec3279371fc8f2" prot="public" static="no">
+        <name>XPRINTF_USE_XFUNC_OUT</name>
+        <initializer>1        /* 1: Use output functions */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="44" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_a3c0d0921ced7ea88c4014bfc04156d90_1a3c0d0921ced7ea88c4014bfc04156d90" prot="public" static="no">
+        <name>XPRINTF_CR_CRLF</name>
+        <initializer>1        /* 1: Convert \n ==&gt; \r\n in the output char */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="45" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_a6e494df9e0aee3a48334a3fb48422ce2_1a6e494df9e0aee3a48334a3fb48422ce2" prot="public" static="no">
+        <name>XPRINTF_USE_XFUNC_IN</name>
+        <initializer>1        /* 1: Use input function */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="47" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_a09f9f749bbb925e000e8085bf413d5b2_1a09f9f749bbb925e000e8085bf413d5b2" prot="public" static="no">
+        <name>XPRINTF_LINE_ECHO</name>
+        <initializer>1        /* 1: Echo back input chars in <ref refid="xprintf_8h_a3136ce42f8a9b1de9c3c2e1cffd9151d_1a3136ce42f8a9b1de9c3c2e1cffd9151d" kindref="member">xgets</ref> function */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="48" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_aadfd5b617482b99f68f305a778fc21d4_1aadfd5b617482b99f68f305a778fc21d4" prot="public" static="no">
+        <name>xdev_out</name>
+        <param><defname>func</defname></param>
+        <initializer><ref refid="xprintf_8h_ab245bb386deaaacbd14ee3c79370d6a8_1ab245bb386deaaacbd14ee3c79370d6a8" kindref="member">xfunc_out</ref> = (void (*)(uint8_t))(func)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="51" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_a7bf00e3030b1334aed523174bbef7b55_1a7bf00e3030b1334aed523174bbef7b55" prot="public" static="no">
+        <name>DW_8BIT</name>
+        <initializer>sizeof(uint8_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="61" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_a8bf0d5ab3dca6327ff14352735ae7aa0_1a8bf0d5ab3dca6327ff14352735ae7aa0" prot="public" static="no">
+        <name>DW_16BIT</name>
+        <initializer>sizeof(uint16_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="62" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_af7f8be6cff93892e2052fc149a2bd0d4_1af7f8be6cff93892e2052fc149a2bd0d4" prot="public" static="no">
+        <name>DW_32BIT</name>
+        <initializer>sizeof(uint32_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="63" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="xprintf_8h_ad6971aad6799232f0fe26d086c2487ee_1ad6971aad6799232f0fe26d086c2487ee" prot="public" static="no">
+        <name>xdev_in</name>
+        <param><defname>func</defname></param>
+        <initializer><ref refid="xprintf_8h_a815a0227aa33ad3fe4e5ed7038917351_1a815a0227aa33ad3fe4e5ed7038917351" kindref="member">xfunc_in</ref> = (uint8_t (*)(void))(func)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="67" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="xprintf_8h_ab245bb386deaaacbd14ee3c79370d6a8_1ab245bb386deaaacbd14ee3c79370d6a8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* xfunc_out)(uint8_t)</definition>
+        <argsstring>)(uint8_t)</argsstring>
+        <name>xfunc_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xprintf_8h_a815a0227aa33ad3fe4e5ed7038917351_1a815a0227aa33ad3fe4e5ed7038917351" prot="public" static="no" mutable="no">
+        <type>uint8_t(*</type>
+        <definition>uint8_t(* xfunc_in)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>xfunc_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="xprintf_8h_ac5c28a32fdc78f0a21b035ae35f51a47_1ac5c28a32fdc78f0a21b035ae35f51a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xputc</definition>
+        <argsstring>(uint8_t c)</argsstring>
+        <name>xputc</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_a8db9bf72d24ab05c12730d6412732abf_1a8db9bf72d24ab05c12730d6412732abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xputs</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>xputs</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_a2d623f54f215745b47a830f8a23f80e4_1a2d623f54f215745b47a830f8a23f80e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xfputs</definition>
+        <argsstring>(void(*func)(uint8_t), const char *str)</argsstring>
+        <name>xfputs</name>
+        <param>
+          <type>void(*)(uint8_t)</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_a8220aaf71cede378873486ecdc9cde38_1a8220aaf71cede378873486ecdc9cde38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xvprintf</definition>
+        <argsstring>(const char *fmt, va_list arp)</argsstring>
+        <name>xvprintf</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>arp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_a436beed4a23a397693377a5bb48b591f_1a436beed4a23a397693377a5bb48b591f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xprintf</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>xprintf</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_ac787d6eba63d053adadccf461d544c5d_1ac787d6eba63d053adadccf461d544c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xsprintf</definition>
+        <argsstring>(char *buff, const char *fmt,...)</argsstring>
+        <name>xsprintf</name>
+        <param>
+          <type>char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_af7a38b24f64a321dfb865f060559dfae_1af7a38b24f64a321dfb865f060559dfae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void xfprintf</definition>
+        <argsstring>(void(*func)(uint8_t), const char *fmt,...)</argsstring>
+        <name>xfprintf</name>
+        <param>
+          <type>void(*)(uint8_t)</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_add990adae6a52835853093949978645d_1add990adae6a52835853093949978645d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void put_dump</definition>
+        <argsstring>(const void *buff, uint32_t addr, int32_t len, int32_t width)</argsstring>
+        <name>put_dump</name>
+        <param>
+          <type>const void *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_a3136ce42f8a9b1de9c3c2e1cffd9151d_1a3136ce42f8a9b1de9c3c2e1cffd9151d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t xgets</definition>
+        <argsstring>(char *buff, int32_t len)</argsstring>
+        <name>xgets</name>
+        <param>
+          <type>char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_aef4ed845ba9d753aa605a50569f7c624_1aef4ed845ba9d753aa605a50569f7c624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t xfgets</definition>
+        <argsstring>(uint8_t(*func)(void), char *buff, int32_t len)</argsstring>
+        <name>xfgets</name>
+        <param>
+          <type>uint8_t(*)(void)</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="xprintf_8h_aae4973c5c51c5b65c6739e1b382ba408_1aae4973c5c51c5b65c6739e1b382ba408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t xatoi</definition>
+        <argsstring>(char **str, int32_t *res)</argsstring>
+        <name>xatoi</name>
+        <param>
+          <type>char **</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Universal<sp/>string<sp/>handler<sp/>for<sp/>user<sp/>console<sp/>interface<sp/><sp/>(C)ChaN,<sp/>2011<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_XPRINTF</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_XPRINTF</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__toolchain_8h" kindref="compound">embARC_toolchain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="xprintf_8h_a2b673624e92194c8feec3279371fc8f2_1a2b673624e92194c8feec3279371fc8f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XPRINTF_USE_XFUNC_OUT<sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>1:<sp/>Use<sp/>output<sp/>functions<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="45" refid="xprintf_8h_a3c0d0921ced7ea88c4014bfc04156d90_1a3c0d0921ced7ea88c4014bfc04156d90" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>XPRINTF_CR_CRLF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>1:<sp/>Convert<sp/>\n<sp/>==&gt;<sp/>\r\n<sp/>in<sp/>the<sp/>output<sp/>char<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="xprintf_8h_a6e494df9e0aee3a48334a3fb48422ce2_1a6e494df9e0aee3a48334a3fb48422ce2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XPRINTF_USE_XFUNC_IN<sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>1:<sp/>Use<sp/>input<sp/>function<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="48" refid="xprintf_8h_a09f9f749bbb925e000e8085bf413d5b2_1a09f9f749bbb925e000e8085bf413d5b2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>XPRINTF_LINE_ECHO<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>1:<sp/>Echo<sp/>back<sp/>input<sp/>chars<sp/>in<sp/>xgets<sp/>function<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>XPRINTF_USE_XFUNC_OUT</highlight></codeline>
+<codeline lineno="51" refid="xprintf_8h_aadfd5b617482b99f68f305a778fc21d4_1aadfd5b617482b99f68f305a778fc21d4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>xdev_out(func)<sp/>xfunc_out<sp/>=<sp/>(void<sp/>(*)(uint8_t))(func)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="xprintf_8h_ab245bb386deaaacbd14ee3c79370d6a8_1ab245bb386deaaacbd14ee3c79370d6a8" kindref="member">xfunc_out</ref>)(uint8_t);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_ac5c28a32fdc78f0a21b035ae35f51a47_1ac5c28a32fdc78f0a21b035ae35f51a47" kindref="member">xputc</ref>(uint8_t<sp/>c);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_a8db9bf72d24ab05c12730d6412732abf_1a8db9bf72d24ab05c12730d6412732abf" kindref="member">xputs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_a2d623f54f215745b47a830f8a23f80e4_1a2d623f54f215745b47a830f8a23f80e4" kindref="member">xfputs</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*func)(uint8_t),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_a8220aaf71cede378873486ecdc9cde38_1a8220aaf71cede378873486ecdc9cde38" kindref="member">xvprintf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>va_list<sp/>arp);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_a436beed4a23a397693377a5bb48b591f_1a436beed4a23a397693377a5bb48b591f" kindref="member">xprintf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_ac787d6eba63d053adadccf461d544c5d_1ac787d6eba63d053adadccf461d544c5d" kindref="member">xsprintf</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buff,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_af7a38b24f64a321dfb865f060559dfae_1af7a38b24f64a321dfb865f060559dfae" kindref="member">xfprintf</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*func)(uint8_t),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xprintf_8h_add990adae6a52835853093949978645d_1add990adae6a52835853093949978645d" kindref="member">put_dump</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buff,<sp/>uint32_t<sp/>addr,<sp/>int32_t<sp/>len,<sp/>int32_t<sp/>width);</highlight></codeline>
+<codeline lineno="61" refid="xprintf_8h_a7bf00e3030b1334aed523174bbef7b55_1a7bf00e3030b1334aed523174bbef7b55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_8BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(uint8_t)</highlight></codeline>
+<codeline lineno="62" refid="xprintf_8h_a8bf0d5ab3dca6327ff14352735ae7aa0_1a8bf0d5ab3dca6327ff14352735ae7aa0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_16BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(uint16_t)</highlight></codeline>
+<codeline lineno="63" refid="xprintf_8h_af7f8be6cff93892e2052fc149a2bd0d4_1af7f8be6cff93892e2052fc149a2bd0d4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_32BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(uint32_t)</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>XPRINTF_USE_XFUNC_IN</highlight></codeline>
+<codeline lineno="67" refid="xprintf_8h_ad6971aad6799232f0fe26d086c2487ee_1ad6971aad6799232f0fe26d086c2487ee" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>xdev_in(func)<sp/>xfunc_in<sp/>=<sp/>(uint8_t<sp/>(*)(void))(func)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>(*<ref refid="xprintf_8h_a815a0227aa33ad3fe4e5ed7038917351_1a815a0227aa33ad3fe4e5ed7038917351" kindref="member">xfunc_in</ref>)(void);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="xprintf_8h_a3136ce42f8a9b1de9c3c2e1cffd9151d_1a3136ce42f8a9b1de9c3c2e1cffd9151d" kindref="member">xgets</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buff,<sp/>int32_t<sp/>len);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="xprintf_8h_aef4ed845ba9d753aa605a50569f7c624_1aef4ed845ba9d753aa605a50569f7c624" kindref="member">xfgets</ref>(uint8_t<sp/>(*func)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">),<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buff,<sp/>int32_t<sp/>len);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="xprintf_8h_aae4973c5c51c5b65c6739e1b382ba408_1aae4973c5c51c5b65c6739e1b382ba408" kindref="member">xatoi</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**str,<sp/>int32_t<sp/>*res);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/xprintf/xprintf.h"/>
+  </compounddef>
+</doxygen>

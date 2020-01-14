@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__I2S__AUD__SAMPLE__RATE" kind="group">
+    <compoundname>I2S_AUD_SAMPLE_RATE</compoundname>
+    <title>I2S Audio Sampling Rate</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__I2S__AUD__SAMPLE__RATE_1gaf5d52f5502161669c85af92753969abc" prot="public" static="no">
+        <name>I2S_AUD_SAMPLE_RATE</name>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abcafe1f581418788e0cedf2726d50a3943e" prot="public">
+          <name>I2S_AUD_SR_NA</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>N/A audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abca50a926e4cfeb808d8495017d23e7643b" prot="public">
+          <name>I2S_AUD_SR_16K</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>16KHz audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abca385a13df60389f4edfad64bdb1603377" prot="public">
+          <name>I2S_AUD_SR_32K</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32KHz audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abca6239706fb93c6276dfc5470b5d2f7ce3" prot="public">
+          <name>I2S_AUD_SR_44_1K</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>44.1KHz audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abca12f922036b65b94330d6eb34fb5fffa3" prot="public">
+          <name>I2S_AUD_SR_48K</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>48KHz audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abca9000faa6ead73f12ec64b99d57b3cc96" prot="public">
+          <name>I2S_AUD_SR_96K</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>96KHz audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__SAMPLE__RATE_gaf5d52f5502161669c85af92753969abc_1ggaf5d52f5502161669c85af92753969abca3990820c310a30f80cab9952ebe62b1d" prot="public">
+          <name>I2S_AUD_SR_192K</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>192KHz audio sample rate </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="82" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for I2S audio sampling rate. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

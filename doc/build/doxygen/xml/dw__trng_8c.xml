@@ -1,0 +1,803 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__trng_8c" kind="file">
+    <compoundname>dw_trng.c</compoundname>
+    <includes refid="embARC__toolchain_8h" local="yes">embARC_toolchain.h</includes>
+    <includes refid="embARC__error_8h" local="yes">embARC_error.h</includes>
+    <includes refid="dw__trng_8h" local="yes">device/designware/dw_trng.h</includes>
+    <incdepgraph>
+      <node id="3103">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3099">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="3100" relation="include">
+        </childnode>
+        <childnode refid="3101" relation="include">
+        </childnode>
+        <childnode refid="3102" relation="include">
+        </childnode>
+        <childnode refid="3103" relation="include">
+        </childnode>
+      </node>
+      <node id="3100">
+        <label>stdint.h</label>
+      </node>
+      <node id="3104">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3100" relation="include">
+        </childnode>
+        <childnode refid="3105" relation="include">
+        </childnode>
+      </node>
+      <node id="3109">
+        <label>device/ip_hal/dev_trng.h</label>
+        <link refid="dev__trng_8h"/>
+        <childnode refid="3110" relation="include">
+        </childnode>
+      </node>
+      <node id="3102">
+        <label>stddef.h</label>
+      </node>
+      <node id="3106">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3107" relation="include">
+        </childnode>
+      </node>
+      <node id="3101">
+        <label>limits.h</label>
+      </node>
+      <node id="3107">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3098">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c</label>
+        <link refid="dw_trng.c"/>
+        <childnode refid="3099" relation="include">
+        </childnode>
+        <childnode refid="3104" relation="include">
+        </childnode>
+        <childnode refid="3108" relation="include">
+        </childnode>
+      </node>
+      <node id="3110">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="3099" relation="include">
+        </childnode>
+      </node>
+      <node id="3108">
+        <label>device/designware/dw_trng.h</label>
+        <link refid="dw__trng_8h"/>
+        <childnode refid="3109" relation="include">
+        </childnode>
+        <childnode refid="3111" relation="include">
+        </childnode>
+      </node>
+      <node id="3111">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3105" relation="include">
+        </childnode>
+      </node>
+      <node id="3105">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3099" relation="include">
+        </childnode>
+        <childnode refid="3106" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__trng_8c_ad4cabfa4c799ea8d4e805ef7e7a5bc5f_1ad4cabfa4c799ea8d4e805ef7e7a5bc5f" prot="public" static="no">
+        <name>DW_TRNG_CHECK_EXP</name>
+        <param><defname>EXPR</defname></param>
+        <param><defname>ERROR_CODE</defname></param>
+        <initializer><ref refid="group__EMBARC__ERROR_ga8bd781723e5f3f1a4cbf2b785e92c71c_1ga8bd781723e5f3f1a4cbf2b785e92c71c" kindref="member">CHECK_EXP</ref>(EXPR, ercd, ERROR_CODE, error_exit)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="37" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a4fab40437ef5f63b012527c065daf6a7_1a4fab40437ef5f63b012527c065daf6a7" prot="public" static="no">
+        <name>DW_TRNG_MODE_R256</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="39" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a40c6603dce8e730a42ecd94c7f950cd7_1a40c6603dce8e730a42ecd94c7f950cd7" prot="public" static="no">
+        <name>DW_TRNG_MODE_R256_OFFSET</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="40" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a2b7cebb967acc342ba6784c84c84e5c3_1a2b7cebb967acc342ba6784c84c84e5c3" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_RAND_RDY</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="42" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a59d7137f775b3ca2648843ba34463f5f_1a59d7137f775b3ca2648843ba34463f5f" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_RAND_RDY_OFFSET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="43" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a21526c023a7cebe0f303761d456cd582_1a21526c023a7cebe0f303761d456cd582" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_SEED_DONE</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="44" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a7e87a9925aacf2f84fd46f1f5126e5e8_1a7e87a9925aacf2f84fd46f1f5126e5e8" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_SEED_DONE_OFFSET</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="45" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a95651d8f4d24a452049f304f01e07646_1a95651d8f4d24a452049f304f01e07646" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_AGE_ALARM</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="46" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a3b1708066b7a2502a52e9b590bb1d805_1a3b1708066b7a2502a52e9b590bb1d805" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_AGE_ALARM_OFFSET</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="47" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_aff723ac09965cf26e73c493a542e9cd0_1aff723ac09965cf26e73c493a542e9cd0" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_RQST_ALARM</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="48" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a328a869cea02766c13b65b044035e1e5_1a328a869cea02766c13b65b044035e1e5" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_RQST_ALARM_OFFSET</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="49" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a83378383b18e94d0c8e69b3d17e2521c_1a83378383b18e94d0c8e69b3d17e2521c" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_LFSR_LOCKUP</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="50" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_aea24af09100417da583641fb5a147502_1aea24af09100417da583641fb5a147502" prot="public" static="no">
+        <name>DW_TRNG_ISTAT_LFSR_LOCKUP_OFFSET</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="51" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a8d54650bcb1b251b3f8fe5bab56adab0_1a8d54650bcb1b251b3f8fe5bab56adab0" prot="public" static="no">
+        <name>DW_TRNG_CMD_GEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a408c3c7aa2e25e22ff7e69c9b729c606_1a408c3c7aa2e25e22ff7e69c9b729c606" prot="public" static="no">
+        <name>DW_TRNG_CMD_RESEED</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="54" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__trng_8c_a736556a179fa03d7896c4f3831ab66f0_1a736556a179fa03d7896c4f3831ab66f0" prot="public" static="no">
+        <name>DW_TRNG_CMD_NONCE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="55" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dw__trng_8c_a7e9e7a866d4e56a09a795d218a1e1767_1a7e9e7a866d4e56a09a795d218a1e1767" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_cmd</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg, uint32_t cmd)</argsstring>
+        <name>dw_trng_cmd</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="57" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="57" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a8362e9c46b4303142486798142979945_1a8362e9c46b4303142486798142979945" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_get_mode</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg)</argsstring>
+        <name>dw_trng_get_mode</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a722cdde4d88302dbef801f8bd62eb437_1a722cdde4d88302dbef801f8bd62eb437" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_set_mode</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg, uint32_t r256)</argsstring>
+        <name>dw_trng_set_mode</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>r256</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="85" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="85" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_ad014306d66d52540d0ef62cbb6b69a6d_1ad014306d66d52540d0ef62cbb6b69a6d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_get_istat_rand_rdy</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg)</argsstring>
+        <name>dw_trng_get_istat_rand_rdy</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="94" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a0ed190a71861b1460d25e15f059a2161_1a0ed190a71861b1460d25e15f059a2161" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_clear_istat_rand_rdy</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg)</argsstring>
+        <name>dw_trng_clear_istat_rand_rdy</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="99" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_aad94bb3fa18dde6651c19916ca187ffb_1aad94bb3fa18dde6651c19916ca187ffb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_get_istat_seed_done</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg)</argsstring>
+        <name>dw_trng_get_istat_seed_done</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a80b876c2f66b86138500ebadd1f1e56d_1a80b876c2f66b86138500ebadd1f1e56d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_clear_istat_seed_done</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg)</argsstring>
+        <name>dw_trng_clear_istat_seed_done</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_ade74764ea332588b6073745a02bcbe7f_1ade74764ea332588b6073745a02bcbe7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_get_rand</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg, uint32_t *data)</argsstring>
+        <name>dw_trng_get_rand</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_ae893b2f118a2b946e31c4dbc63091169_1ae893b2f118a2b946e31c4dbc63091169" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_trng_get_stat</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg, uint32_t *stat)</argsstring>
+        <name>dw_trng_get_stat</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>stat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="128" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a80a6e246f5540a7254ad28f758b75267_1a80a6e246f5540a7254ad28f758b75267" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_trng_reseed</definition>
+        <argsstring>(DW_TRNG_REG_PTR trng_reg, uint32_t *nonce_buf)</argsstring>
+        <name>dw_trng_reseed</name>
+        <param>
+          <type><ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref></type>
+          <declname>trng_reg</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>nonce_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="134" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a8a7a8f9fd972e58fb564534316ae3581_1a8a7a8f9fd972e58fb564534316ae3581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_trng_open</definition>
+        <argsstring>(DEV_TRNG_PTR trng_obj)</argsstring>
+        <name>dw_trng_open</name>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga188ae76b37c7f9638ec146f754c4ea26_1ga188ae76b37c7f9638ec146f754c4ea26" kindref="member">DEV_TRNG_PTR</ref></type>
+          <declname>trng_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="149" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="149" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a78cf2c79798d3c23901a666c6aa9d5ac_1a78cf2c79798d3c23901a666c6aa9d5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_trng_close</definition>
+        <argsstring>(DEV_TRNG_PTR trng_obj)</argsstring>
+        <name>dw_trng_close</name>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga188ae76b37c7f9638ec146f754c4ea26_1ga188ae76b37c7f9638ec146f754c4ea26" kindref="member">DEV_TRNG_PTR</ref></type>
+          <declname>trng_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="162" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_aa7453c656249243c48cf327a2b4ac267_1aa7453c656249243c48cf327a2b4ac267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_trng_control</definition>
+        <argsstring>(DEV_TRNG_PTR trng_obj, uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_trng_control</name>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga188ae76b37c7f9638ec146f754c4ea26_1ga188ae76b37c7f9638ec146f754c4ea26" kindref="member">DEV_TRNG_PTR</ref></type>
+          <declname>trng_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="167" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="167" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a1a614a6f55f9c66dc84130308480b358_1a1a614a6f55f9c66dc84130308480b358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_trng_read</definition>
+        <argsstring>(DEV_TRNG_PTR trng_obj, uint32_t *data_buf)</argsstring>
+        <name>dw_trng_read</name>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga188ae76b37c7f9638ec146f754c4ea26_1ga188ae76b37c7f9638ec146f754c4ea26" kindref="member">DEV_TRNG_PTR</ref></type>
+          <declname>trng_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>data_buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="203" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="203" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__trng_8c_a951bd58ef01dd00069461e4a17b96d76_1a951bd58ef01dd00069461e4a17b96d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_trng_isr</definition>
+        <argsstring>(DEV_TRNG_PTR trng_obj, void *ptr)</argsstring>
+        <name>dw_trng_isr</name>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga188ae76b37c7f9638ec146f754c4ea26_1ga188ae76b37c7f9638ec146f754c4ea26" kindref="member">DEV_TRNG_PTR</ref></type>
+          <declname>trng_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" line="221" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c" bodystart="221" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__toolchain_8h" kindref="compound">embARC_toolchain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__error_8h" kindref="compound">embARC_error.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__trng_8h" kindref="compound">device/designware/dw_trng.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRNG_VERSION_NIST</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_CHECK_EXP(EXPR,<sp/>ERROR_CODE)<sp/><sp/><sp/><sp/><sp/>CHECK_EXP(EXPR,<sp/>ercd,<sp/>ERROR_CODE,<sp/>error_exit)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_MODE_R256<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_MODE_R256_OFFSET<sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_RAND_RDY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_RAND_RDY_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_SEED_DONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_SEED_DONE_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_AGE_ALARM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_AGE_ALARM_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_RQST_ALARM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_RQST_ALARM_OFFSET<sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_LFSR_LOCKUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_ISTAT_LFSR_LOCKUP_OFFSET<sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_CMD_GEN<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_CMD_RESEED<sp/><sp/>2</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_TRNG_CMD_NONCE<sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng_8c_a7e9e7a866d4e56a09a795d218a1e1767_1a7e9e7a866d4e56a09a795d218a1e1767" kindref="member">dw_trng_cmd</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg,<sp/>uint32_t<sp/>cmd)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(cmd)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a8d54650bcb1b251b3f8fe5bab56adab0_1a8d54650bcb1b251b3f8fe5bab56adab0" kindref="member">DW_TRNG_CMD_GEN</ref>:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a1eec076b2245789b25cd5917c17627d7_1a1eec076b2245789b25cd5917c17627d7" kindref="member">CTRL</ref><sp/>|=<sp/>cmd;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a408c3c7aa2e25e22ff7e69c9b729c606_1a408c3c7aa2e25e22ff7e69c9b729c606" kindref="member">DW_TRNG_CMD_RESEED</ref>:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a1eec076b2245789b25cd5917c17627d7_1a1eec076b2245789b25cd5917c17627d7" kindref="member">CTRL</ref><sp/>|=<sp/>cmd;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a736556a179fa03d7896c4f3831ab66f0_1a736556a179fa03d7896c4f3831ab66f0" kindref="member">DW_TRNG_CMD_NONCE</ref>:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a1eec076b2245789b25cd5917c17627d7_1a1eec076b2245789b25cd5917c17627d7" kindref="member">CTRL</ref><sp/>|=<sp/>cmd;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng_8c_a8362e9c46b4303142486798142979945_1a8362e9c46b4303142486798142979945" kindref="member">dw_trng_get_mode</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(trng_reg-&gt;<ref refid="structDW__TRNG__REG_abb60100e70123e959c366d28f9a3c166_1abb60100e70123e959c366d28f9a3c166" kindref="member">MODE</ref><sp/>&amp;<sp/><ref refid="dw__trng_8c_a4fab40437ef5f63b012527c065daf6a7_1a4fab40437ef5f63b012527c065daf6a7" kindref="member">DW_TRNG_MODE_R256</ref>)<sp/>&gt;&gt;<sp/>3;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a722cdde4d88302dbef801f8bd62eb437_1a722cdde4d88302dbef801f8bd62eb437" kindref="member">dw_trng_set_mode</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg,<sp/>uint32_t<sp/>r256)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r256)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_abb60100e70123e959c366d28f9a3c166_1abb60100e70123e959c366d28f9a3c166" kindref="member">MODE</ref><sp/>|=<sp/><ref refid="dw__trng_8c_a4fab40437ef5f63b012527c065daf6a7_1a4fab40437ef5f63b012527c065daf6a7" kindref="member">DW_TRNG_MODE_R256</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_abb60100e70123e959c366d28f9a3c166_1abb60100e70123e959c366d28f9a3c166" kindref="member">MODE</ref><sp/>&amp;=<sp/>~<ref refid="dw__trng_8c_a4fab40437ef5f63b012527c065daf6a7_1a4fab40437ef5f63b012527c065daf6a7" kindref="member">DW_TRNG_MODE_R256</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng_8c_ad014306d66d52540d0ef62cbb6b69a6d_1ad014306d66d52540d0ef62cbb6b69a6d" kindref="member">dw_trng_get_istat_rand_rdy</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(trng_reg-&gt;<ref refid="structDW__TRNG__REG_a81372d6f3511b8f22f549c84d152286d_1a81372d6f3511b8f22f549c84d152286d" kindref="member">ISTAT</ref><sp/>&amp;<sp/><ref refid="dw__trng_8c_a2b7cebb967acc342ba6784c84c84e5c3_1a2b7cebb967acc342ba6784c84c84e5c3" kindref="member">DW_TRNG_ISTAT_RAND_RDY</ref>)<sp/>&gt;&gt;<sp/><ref refid="dw__trng_8c_a59d7137f775b3ca2648843ba34463f5f_1a59d7137f775b3ca2648843ba34463f5f" kindref="member">DW_TRNG_ISTAT_RAND_RDY_OFFSET</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a0ed190a71861b1460d25e15f059a2161_1a0ed190a71861b1460d25e15f059a2161" kindref="member">dw_trng_clear_istat_rand_rdy</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a81372d6f3511b8f22f549c84d152286d_1a81372d6f3511b8f22f549c84d152286d" kindref="member">ISTAT</ref><sp/>=<sp/><ref refid="dw__trng_8c_a2b7cebb967acc342ba6784c84c84e5c3_1a2b7cebb967acc342ba6784c84c84e5c3" kindref="member">DW_TRNG_ISTAT_RAND_RDY</ref>;</highlight><highlight class="comment">//<sp/>write<sp/>1<sp/>to<sp/>clear<sp/>register<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng_8c_aad94bb3fa18dde6651c19916ca187ffb_1aad94bb3fa18dde6651c19916ca187ffb" kindref="member">dw_trng_get_istat_seed_done</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(trng_reg-&gt;<ref refid="structDW__TRNG__REG_a81372d6f3511b8f22f549c84d152286d_1a81372d6f3511b8f22f549c84d152286d" kindref="member">ISTAT</ref><sp/>&amp;<sp/><ref refid="dw__trng_8c_a21526c023a7cebe0f303761d456cd582_1a21526c023a7cebe0f303761d456cd582" kindref="member">DW_TRNG_ISTAT_SEED_DONE</ref>)<sp/>&gt;&gt;<sp/><ref refid="dw__trng_8c_a7e87a9925aacf2f84fd46f1f5126e5e8_1a7e87a9925aacf2f84fd46f1f5126e5e8" kindref="member">DW_TRNG_ISTAT_SEED_DONE_OFFSET</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a80b876c2f66b86138500ebadd1f1e56d_1a80b876c2f66b86138500ebadd1f1e56d" kindref="member">dw_trng_clear_istat_seed_done</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a81372d6f3511b8f22f549c84d152286d_1a81372d6f3511b8f22f549c84d152286d" kindref="member">ISTAT</ref><sp/>=<sp/><ref refid="dw__trng_8c_a21526c023a7cebe0f303761d456cd582_1a21526c023a7cebe0f303761d456cd582" kindref="member">DW_TRNG_ISTAT_SEED_DONE</ref>;</highlight><highlight class="comment">//<sp/>write<sp/>1<sp/>to<sp/>clear<sp/>register<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_ade74764ea332588b6073745a02bcbe7f_1ade74764ea332588b6073745a02bcbe7f" kindref="member">dw_trng_get_rand</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg,<sp/>uint32_t<sp/>*data)<sp/></highlight><highlight class="comment">//<sp/>read<sp/>from<sp/>rand0~3<sp/>or<sp/>rand0~7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>data[0]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_affbd62a3b2cd7461c2c4151241979553_1affbd62a3b2cd7461c2c4151241979553" kindref="member">RAND0</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>data[1]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_ad76a3f338fc569c9eae864fdf85fabc5_1ad76a3f338fc569c9eae864fdf85fabc5" kindref="member">RAND1</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>data[2]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a980fdf2d1dcf3ab6aac949f4c6329117_1a980fdf2d1dcf3ab6aac949f4c6329117" kindref="member">RAND2</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>data[3]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_aaae68c1a058288762b58ca1e47b9ccde_1aaae68c1a058288762b58ca1e47b9ccde" kindref="member">RAND3</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if(dw_trng_get_mode(trng_reg)<sp/>==<sp/>1<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>data[4]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a06158201e43bcbce1683ae40d037af28_1a06158201e43bcbce1683ae40d037af28" kindref="member">RAND4</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>data[5]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a0d2c64e3b93c971b05a169f6a0560f45_1a0d2c64e3b93c971b05a169f6a0560f45" kindref="member">RAND5</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>data[6]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_aca5e4c6475e1b2bf68362228de743589_1aca5e4c6475e1b2bf68362228de743589" kindref="member">RAND6</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>data[7]<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_a3dd452493a59c075ba28e753c1a6a5f4_1a3dd452493a59c075ba28e753c1a6a5f4" kindref="member">RAND7</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_ae893b2f118a2b946e31c4dbc63091169_1ae893b2f118a2b946e31c4dbc63091169" kindref="member">dw_trng_get_stat</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg,<sp/>uint32_t<sp/>*stat)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>*stat<sp/>=<sp/>trng_reg-&gt;<ref refid="structDW__TRNG__REG_ad31d77166c38713d3621849dab96610e_1ad31d77166c38713d3621849dab96610e" kindref="member">STAT</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__trng_8c_a80a6e246f5540a7254ad28f758b75267_1a80a6e246f5540a7254ad28f758b75267" kindref="member">dw_trng_reseed</ref>(<ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>trng_reg,<sp/>uint32_t<sp/>*nonce_buf)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nonce_buf<sp/>!=<sp/>NULL)<sp/>{</highlight><highlight class="comment">//<sp/>Nonce<sp/>Reseed<sp/>cmd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a7e9e7a866d4e56a09a795d218a1e1767_1a7e9e7a866d4e56a09a795d218a1e1767" kindref="member">dw_trng_cmd</ref>(trng_reg,<sp/><ref refid="dw__trng_8c_a736556a179fa03d7896c4f3831ab66f0_1a736556a179fa03d7896c4f3831ab66f0" kindref="member">DW_TRNG_CMD_NONCE</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight><highlight class="comment">//<sp/>Random<sp/>Reseed<sp/>cmd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a7e9e7a866d4e56a09a795d218a1e1767_1a7e9e7a866d4e56a09a795d218a1e1767" kindref="member">dw_trng_cmd</ref>(trng_reg,<sp/><ref refid="dw__trng_8c_a408c3c7aa2e25e22ff7e69c9b729c606_1a408c3c7aa2e25e22ff7e69c9b729c606" kindref="member">DW_TRNG_CMD_RESEED</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="dw__trng_8c_aad94bb3fa18dde6651c19916ca187ffb_1aad94bb3fa18dde6651c19916ca187ffb" kindref="member">dw_trng_get_istat_seed_done</ref>(trng_reg))<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>nothing,<sp/>wait<sp/>until<sp/>reseed<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a80b876c2f66b86138500ebadd1f1e56d_1a80b876c2f66b86138500ebadd1f1e56d" kindref="member">dw_trng_clear_istat_seed_done</ref>(trng_reg);</highlight><highlight class="comment">//<sp/>clear<sp/>ISTAT.RAND_RDY<sp/>bit<sp/>to<sp/>acknowledge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">int32_t<sp/><ref refid="dw__trng_8c_a8a7a8f9fd972e58fb564534316ae3581_1a8a7a8f9fd972e58fb564534316ae3581" kindref="member">dw_trng_open</ref>(<ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/>trng_obj)<sp/></highlight><highlight class="comment">//<sp/>reseed<sp/>with<sp/>internal<sp/>random<sp/>seed<sp/>generator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__TRNG__INFO" kindref="compound">DEV_TRNG_INFO_PTR</ref><sp/>ptrng_info<sp/>=<sp/>&amp;trng_obj-&gt;<ref refid="structDEV__TRNG_a9ad1984f99df51d6e2a8bd2a9e27ea45_1a9ad1984f99df51d6e2a8bd2a9e27ea45" kindref="member">trng_info</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__CTRL" kindref="compound">DW_TRNG_CTRL_PTR</ref><sp/>dw_trng_ctrl_ptr<sp/>=<sp/>ptrng_info-&gt;<ref refid="structDEV__TRNG__INFO_a86053a267b90f0f37211e0b3ea2e68ba_1a86053a267b90f0f37211e0b3ea2e68ba" kindref="member">trng_ctrl</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>ptrng<sp/>=<sp/>(<ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref>)<sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_af3162d2b770f43299f66b952a1932a7f_1af3162d2b770f43299f66b952a1932a7f" kindref="member">dw_trng_regs</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a80a6e246f5540a7254ad28f758b75267_1a80a6e246f5540a7254ad28f758b75267" kindref="member">dw_trng_reseed</ref>(ptrng,<sp/>NULL);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">int32_t<sp/><ref refid="dw__trng_8c_a78cf2c79798d3c23901a666c6aa9d5ac_1a78cf2c79798d3c23901a666c6aa9d5ac" kindref="member">dw_trng_close</ref>(<ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/>trng_obj)<sp/></highlight><highlight class="comment">//<sp/>do<sp/>nothing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">int32_t<sp/><ref refid="dw__trng_8c_aa7453c656249243c48cf327a2b4ac267_1aa7453c656249243c48cf327a2b4ac267" kindref="member">dw_trng_control</ref>(<ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/>trng_obj,<sp/>uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__TRNG__INFO" kindref="compound">DEV_TRNG_INFO_PTR</ref><sp/>ptrng_info<sp/>=<sp/>&amp;trng_obj-&gt;<ref refid="structDEV__TRNG_a9ad1984f99df51d6e2a8bd2a9e27ea45_1a9ad1984f99df51d6e2a8bd2a9e27ea45" kindref="member">trng_info</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__CTRL" kindref="compound">DW_TRNG_CTRL_PTR</ref><sp/>dw_trng_ctrl_ptr<sp/>=<sp/>ptrng_info-&gt;<ref refid="structDEV__TRNG__INFO_a86053a267b90f0f37211e0b3ea2e68ba_1a86053a267b90f0f37211e0b3ea2e68ba" kindref="member">trng_ctrl</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>ptrng<sp/>=<sp/>(<ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref>)<sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_af3162d2b770f43299f66b952a1932a7f_1af3162d2b770f43299f66b952a1932a7f" kindref="member">dw_trng_regs</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>uint32_t<sp/>val32;<sp/><sp/>/**<sp/>to<sp/>receive<sp/>unsigned<sp/>int<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>switch<sp/>(ctrl_cmd)<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__TRNG_gab48332d6d33b2a6f21a668004621113a_1gab48332d6d33b2a6f21a668004621113a" kindref="member">TRNG_CMD_SET_RAND_128_BIT_OUTPUT</ref>:</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a722cdde4d88302dbef801f8bd62eb437_1a722cdde4d88302dbef801f8bd62eb437" kindref="member">dw_trng_set_mode</ref>(ptrng,<sp/>0);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__TRNG_ga60ba52154ec478bbd6cb72caca4ee938_1ga60ba52154ec478bbd6cb72caca4ee938" kindref="member">TRNG_CMD_SET_RAND_256_BIT_OUTPUT</ref>:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a722cdde4d88302dbef801f8bd62eb437_1a722cdde4d88302dbef801f8bd62eb437" kindref="member">dw_trng_set_mode</ref>(ptrng,<sp/>1);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__TRNG_gae0c72572839e596057157c8d3c30d180_1gae0c72572839e596057157c8d3c30d180" kindref="member">TRNG_CMD_SET_RAND_RESEED_AUTO</ref>:</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a80a6e246f5540a7254ad28f758b75267_1a80a6e246f5540a7254ad28f758b75267" kindref="member">dw_trng_reseed</ref>(ptrng,<sp/>NULL);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__HAL__TRNG_ga2b10d091ac488f54cc515cd53e465eaa_1ga2b10d091ac488f54cc515cd53e465eaa" kindref="member">TRNG_CMD_SET_RAND_RESEED_NONCE</ref>:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga28d0303b78b18735ae91a99ecc11bc8e_1ga28d0303b78b18735ae91a99ecc11bc8e" kindref="member">E_PAR</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a80a6e246f5540a7254ad28f758b75267_1a80a6e246f5540a7254ad28f758b75267" kindref="member">dw_trng_reseed</ref>(ptrng,<sp/>param);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_gac05cde47c29052935fd39d6d8a6c5ff4_1gac05cde47c29052935fd39d6d8a6c5ff4" kindref="member">E_NOSPT</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">int32_t<sp/><ref refid="dw__trng_8c_a1a614a6f55f9c66dc84130308480b358_1a1a614a6f55f9c66dc84130308480b358" kindref="member">dw_trng_read</ref>(<ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/>trng_obj,<sp/>uint32_t<sp/>*data_buf)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/><ref refid="group__EMBARC__ERROR_ga1e7cc741c56207a8872ea58373276925_1ga1e7cc741c56207a8872ea58373276925" kindref="member">E_OK</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__TRNG__INFO" kindref="compound">DEV_TRNG_INFO_PTR</ref><sp/>ptrng_info<sp/>=<sp/>&amp;trng_obj-&gt;<ref refid="structDEV__TRNG_a9ad1984f99df51d6e2a8bd2a9e27ea45_1a9ad1984f99df51d6e2a8bd2a9e27ea45" kindref="member">trng_info</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__CTRL" kindref="compound">DW_TRNG_CTRL_PTR</ref><sp/>dw_trng_ctrl_ptr<sp/>=<sp/>ptrng_info-&gt;<ref refid="structDEV__TRNG__INFO_a86053a267b90f0f37211e0b3ea2e68ba_1a86053a267b90f0f37211e0b3ea2e68ba" kindref="member">trng_ctrl</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__TRNG__REG" kindref="compound">DW_TRNG_REG_PTR</ref><sp/>ptrng<sp/>=<sp/>(<ref refid="dw__trng_8h_aab3385d98eb80a0548f415d835e8a3f5_1aab3385d98eb80a0548f415d835e8a3f5" kindref="member">DW_TRNG_REG_PTR</ref>)<sp/>dw_trng_ctrl_ptr-&gt;<ref refid="structDW__TRNG__CTRL_af3162d2b770f43299f66b952a1932a7f_1af3162d2b770f43299f66b952a1932a7f" kindref="member">dw_trng_regs</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a7e9e7a866d4e56a09a795d218a1e1767_1a7e9e7a866d4e56a09a795d218a1e1767" kindref="member">dw_trng_cmd</ref>(ptrng,<sp/><ref refid="dw__trng_8c_a8d54650bcb1b251b3f8fe5bab56adab0_1a8d54650bcb1b251b3f8fe5bab56adab0" kindref="member">DW_TRNG_CMD_GEN</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="dw__trng_8c_ad014306d66d52540d0ef62cbb6b69a6d_1ad014306d66d52540d0ef62cbb6b69a6d" kindref="member">dw_trng_get_istat_rand_rdy</ref>(ptrng))<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>nothing,<sp/>wait<sp/>until<sp/>random<sp/>numbers<sp/>are<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_a0ed190a71861b1460d25e15f059a2161_1a0ed190a71861b1460d25e15f059a2161" kindref="member">dw_trng_clear_istat_rand_rdy</ref>(ptrng);</highlight><highlight class="comment">//<sp/>clear<sp/>ISTAT.RAND_RDY<sp/>bit<sp/>to<sp/>acknowledge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__trng_8c_ade74764ea332588b6073745a02bcbe7f_1ade74764ea332588b6073745a02bcbe7f" kindref="member">dw_trng_get_rand</ref>(ptrng,<sp/>data_buf);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">error_exit:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__trng_8c_a951bd58ef01dd00069461e4a17b96d76_1a951bd58ef01dd00069461e4a17b96d76" kindref="member">dw_trng_isr</ref>(<ref refid="structDEV__TRNG" kindref="compound">DEV_TRNG_PTR</ref><sp/>trng_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>polling<sp/>mode,<sp/>isr<sp/>not<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TRNG_VERSION_NIST<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c"/>
+  </compounddef>
+</doxygen>

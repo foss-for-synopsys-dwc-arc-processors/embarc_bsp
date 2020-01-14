@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__PWM__TIMER__CH__ISR" kind="struct" prot="public">
+    <compoundname>DEV_PWM_TIMER_CH_ISR</compoundname>
+    <includes refid="dev__pwm__timer_8h" local="no">dev_pwm_timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__CH__ISR_a76183d7205e91d1a4991928a73fa5c45_1a76183d7205e91d1a4991928a73fa5c45" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_PWM_TIMER_CH_ISR::int_ch_num</definition>
+        <argsstring></argsstring>
+        <name>int_ch_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm_timer channel num </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="95" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__PWM__TIMER__CH__ISR_a1279573cb7f21d64040b4454a717b6d1_1a1279573cb7f21d64040b4454a717b6d1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__PWM__TIMER_ga8db6fd35a0475f738f2afa833bcb69d5_1ga8db6fd35a0475f738f2afa833bcb69d5" kindref="member">DEV_PWM_TIMER_HANDLER</ref></type>
+        <definition>DEV_PWM_TIMER_HANDLER DEV_PWM_TIMER_CH_ISR::int_ch_handler</definition>
+        <argsstring></argsstring>
+        <name>int_ch_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="96" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>interrupt handler for each pwm_timer channel </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" line="94" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h" bodystart="94" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structDEV__PWM__TIMER__CH__ISR_a1279573cb7f21d64040b4454a717b6d1_1a1279573cb7f21d64040b4454a717b6d1" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_CH_ISR</scope><name>int_ch_handler</name></member>
+      <member refid="structDEV__PWM__TIMER__CH__ISR_a76183d7205e91d1a4991928a73fa5c45_1a76183d7205e91d1a4991928a73fa5c45" prot="public" virt="non-virtual"><scope>DEV_PWM_TIMER_CH_ISR</scope><name>int_ch_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

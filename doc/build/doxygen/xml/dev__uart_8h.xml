@@ -1,0 +1,1261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dev__uart_8h" kind="file">
+    <compoundname>dev_uart.h</compoundname>
+    <includes refid="dev__common_8h" local="yes">device/dev_common.h</includes>
+    <includedby refid="dw__uart_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h</includedby>
+    <includedby refid="ss__uart_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/ss_uart.h</includedby>
+    <includedby refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.h</includedby>
+    <includedby refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.h</includedby>
+    <includedby refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.h</includedby>
+    <includedby refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.h</includedby>
+    <includedby refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/uart/dw_uart_obj.h</includedby>
+    <includedby refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.h</includedby>
+    <includedby refid="nsim__uart__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.h</includedby>
+    <incdepgraph>
+      <node id="4852">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4848">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4849" relation="include">
+        </childnode>
+        <childnode refid="4850" relation="include">
+        </childnode>
+        <childnode refid="4851" relation="include">
+        </childnode>
+        <childnode refid="4852" relation="include">
+        </childnode>
+      </node>
+      <node id="4849">
+        <label>stdint.h</label>
+      </node>
+      <node id="4851">
+        <label>stddef.h</label>
+      </node>
+      <node id="4850">
+        <label>limits.h</label>
+      </node>
+      <node id="4846">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h</label>
+        <link refid="dev_uart.h"/>
+        <childnode refid="4847" relation="include">
+        </childnode>
+      </node>
+      <node id="4847">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="4848" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4878">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4877">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4860">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/ss_uart.h</label>
+        <link refid="ss__uart_8h"/>
+        <childnode refid="4861" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4863" relation="include">
+        </childnode>
+      </node>
+      <node id="4892">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/mux/mux.c</label>
+        <link refid="hsdk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4857">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4880">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4881" relation="include">
+        </childnode>
+      </node>
+      <node id="4890">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4872">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="4895">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
+        <link refid="dw__i2s__obj_8c"/>
+      </node>
+      <node id="4887">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/hsdk.h</label>
+        <link refid="hsdk_8h"/>
+        <childnode refid="4888" relation="include">
+        </childnode>
+        <childnode refid="4889" relation="include">
+        </childnode>
+        <childnode refid="4890" relation="include">
+        </childnode>
+        <childnode refid="4891" relation="include">
+        </childnode>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4892" relation="include">
+        </childnode>
+      </node>
+      <node id="4871">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4897">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4903">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/nsim.h</label>
+        <link refid="nsim_8h"/>
+        <childnode refid="4904" relation="include">
+        </childnode>
+      </node>
+      <node id="4876">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4881">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/emsk.h</label>
+        <link refid="emsk_8h"/>
+        <childnode refid="4882" relation="include">
+        </childnode>
+        <childnode refid="4883" relation="include">
+        </childnode>
+        <childnode refid="4884" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4885" relation="include">
+        </childnode>
+      </node>
+      <node id="4874">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4865">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/axs.h</label>
+        <link refid="axs_8h"/>
+        <childnode refid="4866" relation="include">
+        </childnode>
+        <childnode refid="4855" relation="include">
+        </childnode>
+      </node>
+      <node id="4904">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c</label>
+        <link refid="nsim__uart__obj_8c"/>
+      </node>
+      <node id="4902">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.h</label>
+        <link refid="nsim__uart__obj_8h"/>
+        <childnode refid="4903" relation="include">
+        </childnode>
+      </node>
+      <node id="4855">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4864">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="4865" relation="include">
+        </childnode>
+        <childnode refid="4855" relation="include">
+        </childnode>
+      </node>
+      <node id="4884">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4894">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/iotdk.h</label>
+        <link refid="iotdk_8h"/>
+        <childnode refid="4895" relation="include">
+        </childnode>
+        <childnode refid="4896" relation="include">
+        </childnode>
+        <childnode refid="4897" relation="include">
+        </childnode>
+        <childnode refid="4898" relation="include">
+        </childnode>
+        <childnode refid="4899" relation="include">
+        </childnode>
+        <childnode refid="4900" relation="include">
+        </childnode>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4901" relation="include">
+        </childnode>
+      </node>
+      <node id="4853">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h</label>
+        <link refid="dev_uart.h"/>
+        <childnode refid="4854" relation="include">
+        </childnode>
+        <childnode refid="4860" relation="include">
+        </childnode>
+        <childnode refid="4864" relation="include">
+        </childnode>
+        <childnode refid="4867" relation="include">
+        </childnode>
+        <childnode refid="4879" relation="include">
+        </childnode>
+        <childnode refid="4880" relation="include">
+        </childnode>
+        <childnode refid="4886" relation="include">
+        </childnode>
+        <childnode refid="4893" relation="include">
+        </childnode>
+        <childnode refid="4902" relation="include">
+        </childnode>
+      </node>
+      <node id="4861">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="4879">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h"/>
+        <childnode refid="4861" relation="include">
+        </childnode>
+        <childnode refid="4868" relation="include">
+        </childnode>
+      </node>
+      <node id="4883">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="4870">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4885">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/mux/mux.c</label>
+        <link refid="emsk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4854">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h</label>
+        <link refid="dw__uart_8h"/>
+        <childnode refid="4855" relation="include">
+        </childnode>
+        <childnode refid="4856" relation="include">
+        </childnode>
+        <childnode refid="4857" relation="include">
+        </childnode>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4859" relation="include">
+        </childnode>
+      </node>
+      <node id="4898">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4891">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4873">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="4889">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="4888">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="4900">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4856">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4867">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="4856" relation="include">
+        </childnode>
+        <childnode refid="4868" relation="include">
+        </childnode>
+      </node>
+      <node id="4901">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/mux/mux.c</label>
+        <link refid="iotdk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4863">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/ss_uart.c</label>
+        <link refid="ss__uart_8c"/>
+      </node>
+      <node id="4896">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
+      </node>
+      <node id="4875">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="4899">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4882">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="4859">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c</label>
+        <link refid="dw__uart_8c"/>
+      </node>
+      <node id="4858">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4886">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="4858" relation="include">
+        </childnode>
+        <childnode refid="4887" relation="include">
+        </childnode>
+      </node>
+      <node id="4868">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="4869" relation="include">
+        </childnode>
+        <childnode refid="4870" relation="include">
+        </childnode>
+        <childnode refid="4871" relation="include">
+        </childnode>
+        <childnode refid="4872" relation="include">
+        </childnode>
+        <childnode refid="4856" relation="include">
+        </childnode>
+        <childnode refid="4873" relation="include">
+        </childnode>
+        <childnode refid="4874" relation="include">
+        </childnode>
+        <childnode refid="4875" relation="include">
+        </childnode>
+        <childnode refid="4876" relation="include">
+        </childnode>
+        <childnode refid="4877" relation="include">
+        </childnode>
+        <childnode refid="4861" relation="include">
+        </childnode>
+        <childnode refid="4878" relation="include">
+        </childnode>
+      </node>
+      <node id="4862">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="4869">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="4893">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8h"/>
+        <childnode refid="4862" relation="include">
+        </childnode>
+        <childnode refid="4894" relation="include">
+        </childnode>
+      </node>
+      <node id="4866">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structUART__DPS__FORMAT" prot="public">UART_DPS_FORMAT</innerclass>
+    <innerclass refid="structDEV__UART__CBS" prot="public">DEV_UART_CBS</innerclass>
+    <innerclass refid="structDEV__UART__INFO" prot="public">DEV_UART_INFO</innerclass>
+    <innerclass refid="structDEV__UART" prot="public">DEV_UART</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga4a3329b8fac91a16ac344158c2d737e1_1ga4a3329b8fac91a16ac344158c2d737e1" prot="public" static="no">
+        <name>UART_BAUDRATE_110</name>
+        <initializer>(110)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 110bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="63" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga984eaff520c1e2e4a95a7ed37dba588c_1ga984eaff520c1e2e4a95a7ed37dba588c" prot="public" static="no">
+        <name>UART_BAUDRATE_300</name>
+        <initializer>(300)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 300bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="64" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_gaa9cf7d62a8d1c1d9e44157be1f71315c_1gaa9cf7d62a8d1c1d9e44157be1f71315c" prot="public" static="no">
+        <name>UART_BAUDRATE_600</name>
+        <initializer>(600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 600bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="65" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_gaf0c44b74f2cd26b50262948d63e808dc_1gaf0c44b74f2cd26b50262948d63e808dc" prot="public" static="no">
+        <name>UART_BAUDRATE_1200</name>
+        <initializer>(1200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 1200bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="66" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga61b7c6fd00cc5583e8dcdb735d2a9e84_1ga61b7c6fd00cc5583e8dcdb735d2a9e84" prot="public" static="no">
+        <name>UART_BAUDRATE_2400</name>
+        <initializer>(2400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 2400bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="67" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_gab94325ab3427db2f619491a4eaf54bf3_1gab94325ab3427db2f619491a4eaf54bf3" prot="public" static="no">
+        <name>UART_BAUDRATE_4800</name>
+        <initializer>(4800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 4800bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="68" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga4549807ebe0dd970e68e283921e80bb3_1ga4549807ebe0dd970e68e283921e80bb3" prot="public" static="no">
+        <name>UART_BAUDRATE_9600</name>
+        <initializer>(9600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 9600bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="69" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga337d2df4c41e6915dc7b343113772b85_1ga337d2df4c41e6915dc7b343113772b85" prot="public" static="no">
+        <name>UART_BAUDRATE_14400</name>
+        <initializer>(14400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 14400bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="70" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga61cfb7c7f0b8f41e5861a4cbd6b6ba64_1ga61cfb7c7f0b8f41e5861a4cbd6b6ba64" prot="public" static="no">
+        <name>UART_BAUDRATE_19200</name>
+        <initializer>(19200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 19200bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="71" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_gae2f23e760d5a0c3f83bc6b7ffc521c7d_1gae2f23e760d5a0c3f83bc6b7ffc521c7d" prot="public" static="no">
+        <name>UART_BAUDRATE_38400</name>
+        <initializer>(38400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 38400bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="72" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga1a68714374485a10c6f6170c64025447_1ga1a68714374485a10c6f6170c64025447" prot="public" static="no">
+        <name>UART_BAUDRATE_57600</name>
+        <initializer>(57600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 57600bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="73" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga7ba5033e1e1547d07d7683d0542c1f4a_1ga7ba5033e1e1547d07d7683d0542c1f4a" prot="public" static="no">
+        <name>UART_BAUDRATE_115200</name>
+        <initializer>(115200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 115200bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="74" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga2c3b5462bda445df5ca24a1c756c9e76_1ga2c3b5462bda445df5ca24a1c756c9e76" prot="public" static="no">
+        <name>UART_BAUDRATE_230400</name>
+        <initializer>(230400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 230400bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="75" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_gad6bfe17a5c0f2881d5d524e4d7d85051_1gad6bfe17a5c0f2881d5d524e4d7d85051" prot="public" static="no">
+        <name>UART_BAUDRATE_460800</name>
+        <initializer>(460800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 460800bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="76" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__BAUD_ga04adc5a61ac8bca86e1ba1524f9ff7a5_1ga04adc5a61ac8bca86e1ba1524f9ff7a5" prot="public" static="no">
+        <name>UART_BAUDRATE_921600</name>
+        <initializer>(921600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baudrate 921600bps </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="77" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__FORMAT_ga0c4e8d4a543444e2da86b7deacab3c74_1ga0c4e8d4a543444e2da86b7deacab3c74" prot="public" static="no">
+        <name>UART_DATABITS_DEFAULT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default data bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="116" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__FORMAT_ga196f96a14810730974e3b511b20b02eb_1ga196f96a14810730974e3b511b20b02eb" prot="public" static="no">
+        <name>UART_DPS_FORMAT_DEFAULT</name>
+        <param><defname>format</defname></param>
+        <initializer>format.databits = <ref refid="group__DEVICE__HAL__UART__FORMAT_ga0c4e8d4a543444e2da86b7deacab3c74_1ga0c4e8d4a543444e2da86b7deacab3c74" kindref="member">UART_DATABITS_DEFAULT</ref>; \
+	format.parity = <ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aaa80d2d8ea61454045ebe71d155e85b3d" kindref="member">UART_PARITY_NONE</ref>;	 \
+	format.stopbits = <ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8aea51a2d68f616b9bc1c36eef9dba3f" kindref="member">UART_STPBITS_ONE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default UART DPS format </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="119" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga764fa9e43d0e6386328e6123469dfd05_1ga764fa9e43d0e6386328e6123469dfd05" prot="public" static="no">
+        <name>UART_CMD_SET_BAUD</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" kindref="member">uart baudrate</ref>.<itemizedlist>
+<listitem><para>Param type : uint32_t</para></listitem><listitem><para>Param usage : uart baudrate, must above zero. Here is a list of <ref refid="group__DEVICE__HAL__UART__BAUD" kindref="compound">possible baudrates</ref></para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="161" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_gacf4d94078ba78b978a620c7e6b352736_1gacf4d94078ba78b978a620c7e6b352736" prot="public" static="no">
+        <name>UART_CMD_GET_STATUS</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get <ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">current device status</ref><itemizedlist>
+<listitem><para>Param type : uint32_t *</para></listitem><listitem><para>Param usage : store result of current status</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="168" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga778353469e5446cd8e540720792e39a8_1ga778353469e5446cd8e540720792e39a8" prot="public" static="no">
+        <name>UART_CMD_ENA_DEV</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable uart device<itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage : param is not required</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="175" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_gae7d733241c19376c55bb6873ba39abae_1gae7d733241c19376c55bb6873ba39abae" prot="public" static="no">
+        <name>UART_CMD_DIS_DEV</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable uart device, when device is disabled, only <ref refid="group__DEVICE__HAL__UART__CTRLCMD_ga778353469e5446cd8e540720792e39a8_1ga778353469e5446cd8e540720792e39a8" kindref="member">UART_CMD_ENA_DEV</ref>, <ref refid="group__DEVICE__HAL__UART__CTRLCMD_gae7d733241c19376c55bb6873ba39abae_1gae7d733241c19376c55bb6873ba39abae" kindref="member">UART_CMD_DIS_DEV</ref> and <ref refid="group__DEVICE__HAL__UART__CTRLCMD_gacf4d94078ba78b978a620c7e6b352736_1gacf4d94078ba78b978a620c7e6b352736" kindref="member">UART_CMD_GET_STATUS</ref> commands can be executed, other commands will return <ref refid="group__EMBARC__ERROR_gae5989e632e687010b35b613304089823_1gae5989e632e687010b35b613304089823" kindref="member">E_SYS</ref><itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage : param is not required</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="185" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_gae4fafef76cb1216e06523779ef842847_1gae4fafef76cb1216e06523779ef842847" prot="public" static="no">
+        <name>UART_CMD_FLUSH_OUTPUT</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flush uart device output<itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage : param is not required</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="192" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga3b38c556992512590acd208eda841c2c_1ga3b38c556992512590acd208eda841c2c" prot="public" static="no">
+        <name>UART_CMD_GET_TXAVAIL</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get how many bytes space in uart are available to transmit, this can be used in interrupt callback functions, cooperate with <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" kindref="member">uart_write</ref> API to realize non-blocked write<itemizedlist>
+<listitem><para>Param type : int32_t *</para></listitem><listitem><para>Param usage : store the write available bytes, &gt; 0 for available bytes, 0 for not available</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="201" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga8d2dc24b2777c4ad6ac72350c2d6b6c4_1ga8d2dc24b2777c4ad6ac72350c2d6b6c4" prot="public" static="no">
+        <name>UART_CMD_GET_RXAVAIL</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get how many bytes in uart are available to receive, this can be used in interrupt callback functions, cooperate with <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" kindref="member">uart_read</ref> API to realize non-blocked read<itemizedlist>
+<listitem><para>Param type : int32_t *</para></listitem><listitem><para>Param usage : store the read available bytes, &gt; 0 for available bytes, 0 for not available</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="210" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga1f80b681a44db548672e225872820439_1ga1f80b681a44db548672e225872820439" prot="public" static="no">
+        <name>UART_CMD_BREAK_SET</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cause a break condition to be transmitted to the receiving device<itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage : param is not required</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="217" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga27cc6b038a8cbfb6b04af889d0d4121c_1ga27cc6b038a8cbfb6b04af889d0d4121c" prot="public" static="no">
+        <name>UART_CMD_BREAK_CLR</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear break condition and return to normal<itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage : param is not required</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="224" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga814ea0d0efd24844998b46429c284c9e_1ga814ea0d0efd24844998b46429c284c9e" prot="public" static="no">
+        <name>UART_CMD_SET_DPS_FORMAT</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change uart <ref refid="structDEV__UART__INFO_a728beb5d2027c8ff3ab82f3d3900bb71_1a728beb5d2027c8ff3ab82f3d3900bb71" kindref="member">D/P/S(Data/Parity/Stop) format</ref><itemizedlist>
+<listitem><para>Param type : <ref refid="structUART__DPS__FORMAT" kindref="compound">UART_DPS_FORMAT</ref> *</para></listitem><listitem><para>Param usage : uart dps format including databits, parity and stopbits</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="231" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga7fac96ac8950657bf84be4086327d708_1ga7fac96ac8950657bf84be4086327d708" prot="public" static="no">
+        <name>UART_CMD_SET_HWFC</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set uart device <ref refid="structDEV__UART__INFO_abb7c19fc67ec964cdda1bd9e2f907f1e_1abb7c19fc67ec964cdda1bd9e2f907f1e" kindref="member">hardware flow control</ref><itemizedlist>
+<listitem><para>Param type : <ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" kindref="member">UART_HW_FLOW_CONTROL</ref></para></listitem><listitem><para>Param usage : uart dps format including databits, parity and stopbits</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="238" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga0479fa2c6d071ba12b44649df16ad9ae_1ga0479fa2c6d071ba12b44649df16ad9ae" prot="public" static="no">
+        <name>UART_CMD_SET_TXCB</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="structDEV__UART__CBS_a80ccaca0d2d3826ae8a91d2e8fb6be76_1a80ccaca0d2d3826ae8a91d2e8fb6be76" kindref="member">uart transmit success callback</ref> function when all required bytes are transmitted for interrupt method<itemizedlist>
+<listitem><para>Param type : <ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transmit success callback function for uart</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="246" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga18aa857d3b0815ca0235f41e4b6c1067_1ga18aa857d3b0815ca0235f41e4b6c1067" prot="public" static="no">
+        <name>UART_CMD_SET_RXCB</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="structDEV__UART__CBS_ade466313b1b02d6e011e12604510ef9e_1ade466313b1b02d6e011e12604510ef9e" kindref="member">uart receive success callback</ref> function when all required bytes are received for interrupt method<itemizedlist>
+<listitem><para>Param type : <ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : receive success callback function for uart</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="254" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga7161d329fc09ba91caf8196c949512ce_1ga7161d329fc09ba91caf8196c949512ce" prot="public" static="no">
+        <name>UART_CMD_SET_ERRCB</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="structDEV__UART__CBS_a764ed682bf6106d462c95e7b14423d25_1a764ed682bf6106d462c95e7b14423d25" kindref="member">uart transfer error callback</ref> function when something error happened for interrupt method<itemizedlist>
+<listitem><para>Param type : <ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transfer error callback function for uart</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="262" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga45de4c83687e1c2ccb305a5d9c26077a_1ga45de4c83687e1c2ccb305a5d9c26077a" prot="public" static="no">
+        <name>UART_CMD_SET_TXINT_BUF</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set transmit buffer via interrupt, and it will set <ref refid="structDEV__UART__INFO_a1c333ec589043dd20a566051e92bf1cf_1a1c333ec589043dd20a566051e92bf1cf" kindref="member">tx_buf</ref><itemizedlist>
+<listitem><para>Param type : <ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref> * or NULL</para></listitem><listitem><para>Param usage : buffer structure pointer, if param is NULL, then it will set tx_buf to NULL</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="269" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_gab41fc9f4e9745c1d30bf3bbd0733ab31_1gab41fc9f4e9745c1d30bf3bbd0733ab31" prot="public" static="no">
+        <name>UART_CMD_SET_RXINT_BUF</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set receive buffer via interrupt, and it will set <ref refid="structDEV__UART__INFO_a46a3dfad9be100563bf4101055780843_1a46a3dfad9be100563bf4101055780843" kindref="member">rx_buf</ref><itemizedlist>
+<listitem><para>Param type : <ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref> * or NULL</para></listitem><listitem><para>Param usage : buffer structure pointer, if param is NULL, then it will set rx_buf to NULL</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="276" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_gab3644b0ee0991f276c0e4d20d794ac96_1gab3644b0ee0991f276c0e4d20d794ac96" prot="public" static="no">
+        <name>UART_CMD_SET_TXINT</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable transmit interrupt<itemizedlist>
+<listitem><para>Param type : uint32_t</para></listitem><listitem><para>Param usage : enable(none-zero) or disable(zero) flag</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="283" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga04b7d1f98d6a94c3590677121a853105_1ga04b7d1f98d6a94c3590677121a853105" prot="public" static="no">
+        <name>UART_CMD_SET_RXINT</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable receive interrupt<itemizedlist>
+<listitem><para>Param type : uint32_t</para></listitem><listitem><para>Param usage : enable(none-zero) or disable(zero) flag</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="290" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga96ebb358e1b93a49dffb6fd08ea9d52e_1ga96ebb358e1b93a49dffb6fd08ea9d52e" prot="public" static="no">
+        <name>UART_CMD_ABORT_TX</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Abort current interrupt transmit operation if tx interrupt enabled, it will disable transmit interrupt, and set <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga80e3a2bfa3fca72a807e59da0bb3b2ee_1ga80e3a2bfa3fca72a807e59da0bb3b2ee" kindref="member">DEV_IN_TX_ABRT</ref> in <ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref> variable, and call the transmit callback function, when tx callback is finished, it will clear <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga80e3a2bfa3fca72a807e59da0bb3b2ee_1ga80e3a2bfa3fca72a807e59da0bb3b2ee" kindref="member">DEV_IN_TX_ABRT</ref> and return<itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage :</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="301" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__CTRLCMD_ga091e096b839d8f76f284fc80428f6431_1ga091e096b839d8f76f284fc80428f6431" prot="public" static="no">
+        <name>UART_CMD_ABORT_RX</name>
+        <initializer><ref refid="group__DEVICE__HAL__COMMON__DEFCMD_ga5560787ca52a8f1846d0aa7457ef45ee_1ga5560787ca52a8f1846d0aa7457ef45ee" kindref="member">DEV_SET_SYSCMD</ref>(19)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Abort current interrupt receive operation if rx interrupt enabled, it will disable receive interrupt, and set <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga80e3a2bfa3fca72a807e59da0bb3b2ee_1ga80e3a2bfa3fca72a807e59da0bb3b2ee" kindref="member">DEV_IN_TX_ABRT</ref> in <ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref> variable, and call the receive callback function, when rx callback is finished, it will clear <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga80e3a2bfa3fca72a807e59da0bb3b2ee_1ga80e3a2bfa3fca72a807e59da0bb3b2ee" kindref="member">DEV_IN_TX_ABRT</ref> and return<itemizedlist>
+<listitem><para>Param type : NULL</para></listitem><listitem><para>Param usage :</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="312" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__DEVSTRUCT_ga6150a860d3b101329e8521e178e3df38_1ga6150a860d3b101329e8521e178e3df38" prot="public" static="no">
+        <name>DEV_UART_INFO_SET_EXTRA_OBJECT</name>
+        <param><defname>uart_info_ptr</defname></param>
+        <param><defname>extra_info</defname></param>
+        <initializer>(uart_info_ptr)-&gt;extra = (void *)(extra_info)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set extra information pointer of uart info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="360" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__HAL__UART__DEVSTRUCT_ga62092f9afef6b9e2e7c6f27623ba87ff_1ga62092f9afef6b9e2e7c6f27623ba87ff" prot="public" static="no">
+        <name>DEV_UART_INFO_GET_EXTRA_OBJECT</name>
+        <param><defname>uart_info_ptr</defname></param>
+        <initializer>((uart_info_ptr)-&gt;extra)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get extra information pointer of uart info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="362" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1ga24fd4dba815fc40fbd8e8c37dbf87c7a" prot="public" static="no">
+        <name>UART_PARITY</name>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aaa80d2d8ea61454045ebe71d155e85b3d" prot="public">
+          <name>UART_PARITY_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>no parity bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aad90cc425f5ba447773a44a75be6593e2" prot="public">
+          <name>UART_PARITY_ODD</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>odd parity bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aad908a637b1dd23f93b149dd2d8bdfdb8" prot="public">
+          <name>UART_PARITY_EVEN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>even parity bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aae7cf865add5930722843f1caf6f30d3e" prot="public">
+          <name>UART_PARITY_MARK</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>mark parity bit, always logical 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aa9866e632545cc7de127aee8071528030" prot="public">
+          <name>UART_PARITY_SPACE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>space parity bit, always logical 0 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Device Parity Types Enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="90" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1gacbd51ac613ec824eeb73a5b6bf743ca6" prot="public" static="no">
+        <name>UART_STOPBITS</name>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8aea51a2d68f616b9bc1c36eef9dba3f" prot="public">
+          <name>UART_STPBITS_ONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1 stop bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a7824af7ef9977d9967cfd5bc34be15da" prot="public">
+          <name>UART_STPBITS_ONEHALF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1.5 stop bits </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8408cb794ac8f8e4003fb9e99b4e3b7d" prot="public">
+          <name>UART_STPBITS_TWO</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 stop bits </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Device Stop Bits Enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" prot="public" static="no">
+        <name>UART_HW_FLOW_CONTROL</name>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a542109175bf0b1928d4803f2702ce1ed" prot="public">
+          <name>UART_FC_DEFAULT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default hardware flow control method </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a527864f0ec595151e7db5ef909fcf9f0" prot="public">
+          <name>UART_FC_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Non hardware flow control </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5afc75cc759e85ee277ead4520fb1d0b90" prot="public">
+          <name>UART_FC_RTS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Request To Send </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a42eb1be010429695afe750de07e7ade6" prot="public">
+          <name>UART_FC_CTS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Clear To Send </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a666090870593651febac7ad9db862760" prot="public">
+          <name>UART_FC_BOTH</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Both hardware flow control methods </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART Device Hardware Flow Control Types Enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__UART__CALLBACK_ga6c398046d1aaeeb5087a2519ef328c0a_1ga6c398046d1aaeeb5087a2519ef328c0a" prot="public" static="no">
+        <type>struct <ref refid="structDEV__UART__CBS" kindref="compound">DEV_UART_CBS</ref> *</type>
+        <definition>typedef  struct DEV_UART_CBS * DEV_UART_CBS_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_UART_CBS_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__DEVICE__HAL__UART__DEVSTRUCT_gac789d3ad54a1fd17e47569f55af11e80_1gac789d3ad54a1fd17e47569f55af11e80" prot="public" static="no">
+        <type>struct <ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref> *</type>
+        <definition>typedef  struct DEV_UART_INFO * DEV_UART_INFO_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_UART_INFO_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__DEVICE__HAL__UART__DEVSTRUCT_ga39a2c3e3c12141f19ed62130a86dfe04_1ga39a2c3e3c12141f19ed62130a86dfe04" prot="public" static="no">
+        <type>struct <ref refid="structDEV__UART" kindref="compound">DEV_UART</ref> *</type>
+        <definition>typedef  struct DEV_UART * DEV_UART_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_UART_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="377" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga39a2c3e3c12141f19ed62130a86dfe04_1ga39a2c3e3c12141f19ed62130a86dfe04" kindref="member">DEV_UART_PTR</ref></type>
+        <definition>DEV_UART_PTR uart_get_dev</definition>
+        <argsstring>(int32_t uart_id)</argsstring>
+        <name>uart_get_dev</name>
+        <param>
+          <type>int32_t</type>
+          <declname>uart_id</declname>
+        </param>
+        <briefdescription>
+<para>Get an <ref refid="structDEV__UART" kindref="compound">uart device</ref> by uart device id. For how to use uart device hal refer to <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT" kindref="compound">Functions in uart device structure</ref> param[in] uart_id ID of uart, defined by user. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>!NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an <ref refid="structDEV__UART" kindref="compound">uart device structure</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to find the uart device by uart_id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Need to implemented by user in user code</para></simplesect>
+get one designware device structure</para><para>get one uart device structure </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 3 id macro </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="454" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="256" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for uart device hardware layer. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provide common definitions for uart device, then software developer can develop uart driver following this definitions, and the applications can directly call this definition to realize functions </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor">#ifndef<sp/>H_DEV_UART</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_DEV_UART</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__common_8h" kindref="compound">device/dev_common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>defines<sp/>for<sp/>uart<sp/>baudrates</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="group__DEVICE__HAL__UART__BAUD_ga4a3329b8fac91a16ac344158c2d737e1_1ga4a3329b8fac91a16ac344158c2d737e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_110<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(110)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="group__DEVICE__HAL__UART__BAUD_ga984eaff520c1e2e4a95a7ed37dba588c_1ga984eaff520c1e2e4a95a7ed37dba588c" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_300<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(300)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="group__DEVICE__HAL__UART__BAUD_gaa9cf7d62a8d1c1d9e44157be1f71315c_1gaa9cf7d62a8d1c1d9e44157be1f71315c" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(600)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="group__DEVICE__HAL__UART__BAUD_gaf0c44b74f2cd26b50262948d63e808dc_1gaf0c44b74f2cd26b50262948d63e808dc" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_1200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1200)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="group__DEVICE__HAL__UART__BAUD_ga61b7c6fd00cc5583e8dcdb735d2a9e84_1ga61b7c6fd00cc5583e8dcdb735d2a9e84" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_2400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2400)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="group__DEVICE__HAL__UART__BAUD_gab94325ab3427db2f619491a4eaf54bf3_1gab94325ab3427db2f619491a4eaf54bf3" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_4800<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4800)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="group__DEVICE__HAL__UART__BAUD_ga4549807ebe0dd970e68e283921e80bb3_1ga4549807ebe0dd970e68e283921e80bb3" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_9600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(9600)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="group__DEVICE__HAL__UART__BAUD_ga337d2df4c41e6915dc7b343113772b85_1ga337d2df4c41e6915dc7b343113772b85" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_14400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(14400)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="group__DEVICE__HAL__UART__BAUD_ga61cfb7c7f0b8f41e5861a4cbd6b6ba64_1ga61cfb7c7f0b8f41e5861a4cbd6b6ba64" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_19200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(19200)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="group__DEVICE__HAL__UART__BAUD_gae2f23e760d5a0c3f83bc6b7ffc521c7d_1gae2f23e760d5a0c3f83bc6b7ffc521c7d" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_38400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(38400)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="group__DEVICE__HAL__UART__BAUD_ga1a68714374485a10c6f6170c64025447_1ga1a68714374485a10c6f6170c64025447" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_57600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(57600)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="group__DEVICE__HAL__UART__BAUD_ga7ba5033e1e1547d07d7683d0542c1f4a_1ga7ba5033e1e1547d07d7683d0542c1f4a" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_115200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(115200)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="group__DEVICE__HAL__UART__BAUD_ga2c3b5462bda445df5ca24a1c756c9e76_1ga2c3b5462bda445df5ca24a1c756c9e76" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_230400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(230400)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="group__DEVICE__HAL__UART__BAUD_gad6bfe17a5c0f2881d5d524e4d7d85051_1gad6bfe17a5c0f2881d5d524e4d7d85051" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_460800<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(460800)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="group__DEVICE__HAL__UART__BAUD_ga04adc5a61ac8bca86e1ba1524f9ff7a5_1ga04adc5a61ac8bca86e1ba1524f9ff7a5" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_921600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(921600)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1ga24fd4dba815fc40fbd8e8c37dbf87c7a" refkind="member"><highlight class="preprocessor">typedef<sp/>enum<sp/>{</highlight></codeline>
+<codeline lineno="91" refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aaa80d2d8ea61454045ebe71d155e85b3d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aaa80d2d8ea61454045ebe71d155e85b3d" kindref="member">UART_PARITY_NONE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aad90cc425f5ba447773a44a75be6593e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aad90cc425f5ba447773a44a75be6593e2" kindref="member">UART_PARITY_ODD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aad908a637b1dd23f93b149dd2d8bdfdb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aad908a637b1dd23f93b149dd2d8bdfdb8" kindref="member">UART_PARITY_EVEN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aae7cf865add5930722843f1caf6f30d3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aae7cf865add5930722843f1caf6f30d3e" kindref="member">UART_PARITY_MARK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aa9866e632545cc7de127aee8071528030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1gga24fd4dba815fc40fbd8e8c37dbf87c7aa9866e632545cc7de127aee8071528030" kindref="member">UART_PARITY_SPACE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}<sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1ga24fd4dba815fc40fbd8e8c37dbf87c7a" kindref="member">UART_PARITY</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1gacbd51ac613ec824eeb73a5b6bf743ca6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="102" refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8aea51a2d68f616b9bc1c36eef9dba3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8aea51a2d68f616b9bc1c36eef9dba3f" kindref="member">UART_STPBITS_ONE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a7824af7ef9977d9967cfd5bc34be15da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a7824af7ef9977d9967cfd5bc34be15da" kindref="member">UART_STPBITS_ONEHALF</ref><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8408cb794ac8f8e4003fb9e99b4e3b7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1ggacbd51ac613ec824eeb73a5b6bf743ca6a8408cb794ac8f8e4003fb9e99b4e3b7d" kindref="member">UART_STPBITS_TWO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1gacbd51ac613ec824eeb73a5b6bf743ca6" kindref="member">UART_STOPBITS</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structUART__DPS__FORMAT" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111" refid="structUART__DPS__FORMAT_a905bbfcf110ccbcd667b19fb4d244579_1a905bbfcf110ccbcd667b19fb4d244579" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structUART__DPS__FORMAT_a905bbfcf110ccbcd667b19fb4d244579_1a905bbfcf110ccbcd667b19fb4d244579" kindref="member">databits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="structUART__DPS__FORMAT_a23a246156b82c3bf094cfcdf59a7b013_1a23a246156b82c3bf094cfcdf59a7b013" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1ga24fd4dba815fc40fbd8e8c37dbf87c7a" kindref="member">UART_PARITY</ref><sp/><ref refid="structUART__DPS__FORMAT_a23a246156b82c3bf094cfcdf59a7b013_1a23a246156b82c3bf094cfcdf59a7b013" kindref="member">parity</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="structUART__DPS__FORMAT_a5eac485895e67b08cd1ce9ba901284bb_1a5eac485895e67b08cd1ce9ba901284bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1gacbd51ac613ec824eeb73a5b6bf743ca6" kindref="member">UART_STOPBITS</ref><sp/><ref refid="structUART__DPS__FORMAT_a5eac485895e67b08cd1ce9ba901284bb_1a5eac485895e67b08cd1ce9ba901284bb" kindref="member">stopbits</ref>;<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}<sp/><ref refid="structUART__DPS__FORMAT" kindref="compound">UART_DPS_FORMAT</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="group__DEVICE__HAL__UART__FORMAT_ga0c4e8d4a543444e2da86b7deacab3c74_1ga0c4e8d4a543444e2da86b7deacab3c74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_DATABITS_DEFAULT<sp/><sp/><sp/>8<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="group__DEVICE__HAL__UART__FORMAT_ga196f96a14810730974e3b511b20b02eb_1ga196f96a14810730974e3b511b20b02eb" refkind="member"><highlight class="preprocessor">#define<sp/>UART_DPS_FORMAT_DEFAULT(format)<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>format.databits<sp/>=<sp/>UART_DATABITS_DEFAULT;<sp/>\</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>format.parity<sp/>=<sp/>UART_PARITY_NONE;<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>format.stopbits<sp/>=<sp/>UART_STPBITS_ONE</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="128" refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="129" refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a542109175bf0b1928d4803f2702ce1ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a542109175bf0b1928d4803f2702ce1ed" kindref="member">UART_FC_DEFAULT</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a527864f0ec595151e7db5ef909fcf9f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a527864f0ec595151e7db5ef909fcf9f0" kindref="member">UART_FC_NONE</ref><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5afc75cc759e85ee277ead4520fb1d0b90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5afc75cc759e85ee277ead4520fb1d0b90" kindref="member">UART_FC_RTS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a42eb1be010429695afe750de07e7ade6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a42eb1be010429695afe750de07e7ade6" kindref="member">UART_FC_CTS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a666090870593651febac7ad9db862760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a666090870593651febac7ad9db862760" kindref="member">UART_FC_BOTH</ref><sp/><sp/><sp/><sp/>=<sp/>3<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}<sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" kindref="member">UART_HW_FLOW_CONTROL</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="group__DEVICE__HAL__UART__CTRLCMD_ga764fa9e43d0e6386328e6123469dfd05_1ga764fa9e43d0e6386328e6123469dfd05" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_BAUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(0)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="168" refid="group__DEVICE__HAL__UART__CTRLCMD_gacf4d94078ba78b978a620c7e6b352736_1gacf4d94078ba78b978a620c7e6b352736" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_GET_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(1)</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="175" refid="group__DEVICE__HAL__UART__CTRLCMD_ga778353469e5446cd8e540720792e39a8_1ga778353469e5446cd8e540720792e39a8" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_ENA_DEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(2)</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="185" refid="group__DEVICE__HAL__UART__CTRLCMD_gae7d733241c19376c55bb6873ba39abae_1gae7d733241c19376c55bb6873ba39abae" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_DIS_DEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(3)</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="192" refid="group__DEVICE__HAL__UART__CTRLCMD_gae4fafef76cb1216e06523779ef842847_1gae4fafef76cb1216e06523779ef842847" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_FLUSH_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(4)</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="201" refid="group__DEVICE__HAL__UART__CTRLCMD_ga3b38c556992512590acd208eda841c2c_1ga3b38c556992512590acd208eda841c2c" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_GET_TXAVAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(5)</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="210" refid="group__DEVICE__HAL__UART__CTRLCMD_ga8d2dc24b2777c4ad6ac72350c2d6b6c4_1ga8d2dc24b2777c4ad6ac72350c2d6b6c4" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_GET_RXAVAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(6)</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="217" refid="group__DEVICE__HAL__UART__CTRLCMD_ga1f80b681a44db548672e225872820439_1ga1f80b681a44db548672e225872820439" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_BREAK_SET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(7)</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="224" refid="group__DEVICE__HAL__UART__CTRLCMD_ga27cc6b038a8cbfb6b04af889d0d4121c_1ga27cc6b038a8cbfb6b04af889d0d4121c" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_BREAK_CLR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(8)</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="231" refid="group__DEVICE__HAL__UART__CTRLCMD_ga814ea0d0efd24844998b46429c284c9e_1ga814ea0d0efd24844998b46429c284c9e" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_DPS_FORMAT<sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(9)</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="238" refid="group__DEVICE__HAL__UART__CTRLCMD_ga7fac96ac8950657bf84be4086327d708_1ga7fac96ac8950657bf84be4086327d708" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_HWFC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(10)</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="246" refid="group__DEVICE__HAL__UART__CTRLCMD_ga0479fa2c6d071ba12b44649df16ad9ae_1ga0479fa2c6d071ba12b44649df16ad9ae" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_TXCB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(11)</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="254" refid="group__DEVICE__HAL__UART__CTRLCMD_ga18aa857d3b0815ca0235f41e4b6c1067_1ga18aa857d3b0815ca0235f41e4b6c1067" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_RXCB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(12)</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="262" refid="group__DEVICE__HAL__UART__CTRLCMD_ga7161d329fc09ba91caf8196c949512ce_1ga7161d329fc09ba91caf8196c949512ce" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_ERRCB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(13)</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="269" refid="group__DEVICE__HAL__UART__CTRLCMD_ga45de4c83687e1c2ccb305a5d9c26077a_1ga45de4c83687e1c2ccb305a5d9c26077a" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_TXINT_BUF<sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(14)</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="276" refid="group__DEVICE__HAL__UART__CTRLCMD_gab41fc9f4e9745c1d30bf3bbd0733ab31_1gab41fc9f4e9745c1d30bf3bbd0733ab31" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_RXINT_BUF<sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(15)</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="283" refid="group__DEVICE__HAL__UART__CTRLCMD_gab3644b0ee0991f276c0e4d20d794ac96_1gab3644b0ee0991f276c0e4d20d794ac96" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_TXINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(16)</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="290" refid="group__DEVICE__HAL__UART__CTRLCMD_ga04b7d1f98d6a94c3590677121a853105_1ga04b7d1f98d6a94c3590677121a853105" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_SET_RXINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(17)</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="301" refid="group__DEVICE__HAL__UART__CTRLCMD_ga96ebb358e1b93a49dffb6fd08ea9d52e_1ga96ebb358e1b93a49dffb6fd08ea9d52e" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_ABORT_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(18)</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="312" refid="group__DEVICE__HAL__UART__CTRLCMD_ga091e096b839d8f76f284fc80428f6431_1ga091e096b839d8f76f284fc80428f6431" refkind="member"><highlight class="preprocessor">#define<sp/>UART_CMD_ABORT_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEV_SET_SYSCMD(19)</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="322" refid="structDEV__UART__CBS" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="323" refid="structDEV__UART__CBS_a80ccaca0d2d3826ae8a91d2e8fb6be76_1a80ccaca0d2d3826ae8a91d2e8fb6be76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref><sp/><ref refid="structDEV__UART__CBS_a80ccaca0d2d3826ae8a91d2e8fb6be76_1a80ccaca0d2d3826ae8a91d2e8fb6be76" kindref="member">tx_cb</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="324" refid="structDEV__UART__CBS_ade466313b1b02d6e011e12604510ef9e_1ade466313b1b02d6e011e12604510ef9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref><sp/><ref refid="structDEV__UART__CBS_ade466313b1b02d6e011e12604510ef9e_1ade466313b1b02d6e011e12604510ef9e" kindref="member">rx_cb</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="325" refid="structDEV__UART__CBS_a764ed682bf6106d462c95e7b14423d25_1a764ed682bf6106d462c95e7b14423d25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref><sp/><ref refid="structDEV__UART__CBS_a764ed682bf6106d462c95e7b14423d25_1a764ed682bf6106d462c95e7b14423d25" kindref="member">err_cb</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}<sp/><ref refid="structDEV__UART__CBS" kindref="compound">DEV_UART_CBS</ref>,<sp/>*<ref refid="group__DEVICE__HAL__UART__CALLBACK_ga6c398046d1aaeeb5087a2519ef328c0a_1ga6c398046d1aaeeb5087a2519ef328c0a" kindref="member">DEV_UART_CBS_PTR</ref>;</highlight></codeline>
+<codeline lineno="344" refid="structDEV__UART__INFO" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="345" refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" kindref="member">uart_ctrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="346" refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="347" refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="348" refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" kindref="member">baudrate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="349" refid="structDEV__UART__INFO_a728beb5d2027c8ff3ab82f3d3900bb71_1a728beb5d2027c8ff3ab82f3d3900bb71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUART__DPS__FORMAT" kindref="compound">UART_DPS_FORMAT</ref><sp/><ref refid="structDEV__UART__INFO_a728beb5d2027c8ff3ab82f3d3900bb71_1a728beb5d2027c8ff3ab82f3d3900bb71" kindref="member">dps_format</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="350" refid="structDEV__UART__INFO_abb7c19fc67ec964cdda1bd9e2f907f1e_1abb7c19fc67ec964cdda1bd9e2f907f1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" kindref="member">UART_HW_FLOW_CONTROL</ref><sp/><ref refid="structDEV__UART__INFO_abb7c19fc67ec964cdda1bd9e2f907f1e_1abb7c19fc67ec964cdda1bd9e2f907f1e" kindref="member">hwfc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="351" refid="structDEV__UART__INFO_a1c333ec589043dd20a566051e92bf1cf_1a1c333ec589043dd20a566051e92bf1cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref><sp/><ref refid="structDEV__UART__INFO_a1c333ec589043dd20a566051e92bf1cf_1a1c333ec589043dd20a566051e92bf1cf" kindref="member">tx_buf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="352" refid="structDEV__UART__INFO_a46a3dfad9be100563bf4101055780843_1a46a3dfad9be100563bf4101055780843" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref><sp/><ref refid="structDEV__UART__INFO_a46a3dfad9be100563bf4101055780843_1a46a3dfad9be100563bf4101055780843" kindref="member">rx_buf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353" refid="structDEV__UART__INFO_aec0917d316df9518fbd8c6ee7db1161b_1aec0917d316df9518fbd8c6ee7db1161b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART__CBS" kindref="compound">DEV_UART_CBS</ref><sp/><ref refid="structDEV__UART__INFO_aec0917d316df9518fbd8c6ee7db1161b_1aec0917d316df9518fbd8c6ee7db1161b" kindref="member">uart_cbs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="354" refid="structDEV__UART__INFO_af3156f595f1020fbffea67951a86d2f5_1af3156f595f1020fbffea67951a86d2f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structDEV__UART__INFO_af3156f595f1020fbffea67951a86d2f5_1af3156f595f1020fbffea67951a86d2f5" kindref="member">extra</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="357"><highlight class="normal">}<sp/><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref>,<sp/>*<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gac789d3ad54a1fd17e47569f55af11e80_1gac789d3ad54a1fd17e47569f55af11e80" kindref="member">DEV_UART_INFO_PTR</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6150a860d3b101329e8521e178e3df38_1ga6150a860d3b101329e8521e178e3df38" refkind="member"><highlight class="preprocessor">#define<sp/>DEV_UART_INFO_SET_EXTRA_OBJECT(uart_info_ptr,<sp/>extra_info)<sp/><sp/><sp/>(uart_info_ptr)-&gt;extra<sp/>=<sp/>(void<sp/>*)(extra_info)</highlight></codeline>
+<codeline lineno="361"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="362" refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga62092f9afef6b9e2e7c6f27623ba87ff_1ga62092f9afef6b9e2e7c6f27623ba87ff" refkind="member"><highlight class="preprocessor">#define<sp/>DEV_UART_INFO_GET_EXTRA_OBJECT(uart_info_ptr)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uart_info_ptr)-&gt;extra)</highlight></codeline>
+<codeline lineno="363"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="370" refid="structDEV__UART" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371" refid="structDEV__UART_ae4b6a665925b840b9c75ae93fd045d3f_1ae4b6a665925b840b9c75ae93fd045d3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref><sp/><ref refid="structDEV__UART_ae4b6a665925b840b9c75ae93fd045d3f_1ae4b6a665925b840b9c75ae93fd045d3f" kindref="member">uart_info</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="372" refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga860ca9f9693e4f1552590565dc961869_1ga860ca9f9693e4f1552590565dc961869" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>(*uart_open)(uint32_t<sp/>baud);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="373" refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga7b7ce7a7e10f7bed01eb94f21c23b65f_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>(*uart_close)(void);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="374" refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6b40883d5dfbfabd632ba125e128d1e5_1ga6b40883d5dfbfabd632ba125e128d1e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>(*uart_control)(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375" refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>(*uart_write)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="376" refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>(*uart_read)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="377"><highlight class="normal">}<sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref>,<sp/>*<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga39a2c3e3c12141f19ed62130a86dfe04_1ga39a2c3e3c12141f19ed62130a86dfe04" kindref="member">DEV_UART_PTR</ref>;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="443"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="445"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="454"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>DEV_UART_PTR<sp/><ref refid="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" kindref="member">uart_get_dev</ref>(int32_t<sp/>uart_id);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="457"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="459"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="461"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_DEV_UART<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h"/>
+  </compounddef>
+</doxygen>

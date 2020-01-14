@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__IIC__CBS" kind="struct" prot="public">
+    <compoundname>DEV_IIC_CBS</compoundname>
+    <includes refid="dev__iic_8h" local="no">dev_iic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__IIC__CBS_adaeaf8575aab5cd9b489e8d1309b1aa9_1adaeaf8575aab5cd9b489e8d1309b1aa9" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_IIC_CBS::tx_cb</definition>
+        <argsstring></argsstring>
+        <name>tx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>iic data transmit success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="363" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__CBS_a80adcb34b363ec6dc37357dfa636bf3b_1a80adcb34b363ec6dc37357dfa636bf3b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_IIC_CBS::rx_cb</definition>
+        <argsstring></argsstring>
+        <name>rx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>iic data receive success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="364" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__IIC__CBS_a844e0b0fafe41dc301d7d39e74afe973_1a844e0b0fafe41dc301d7d39e74afe973" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_IIC_CBS::err_cb</definition>
+        <argsstring></argsstring>
+        <name>err_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>iic error callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="365" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="362" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" bodystart="362" bodyend="366"/>
+    <listofallmembers>
+      <member refid="structDEV__IIC__CBS_a844e0b0fafe41dc301d7d39e74afe973_1a844e0b0fafe41dc301d7d39e74afe973" prot="public" virt="non-virtual"><scope>DEV_IIC_CBS</scope><name>err_cb</name></member>
+      <member refid="structDEV__IIC__CBS_a80adcb34b363ec6dc37357dfa636bf3b_1a80adcb34b363ec6dc37357dfa636bf3b" prot="public" virt="non-virtual"><scope>DEV_IIC_CBS</scope><name>rx_cb</name></member>
+      <member refid="structDEV__IIC__CBS_adaeaf8575aab5cd9b489e8d1309b1aa9_1adaeaf8575aab5cd9b489e8d1309b1aa9" prot="public" virt="non-virtual"><scope>DEV_IIC_CBS</scope><name>tx_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__i2s_8h" kind="file">
+    <compoundname>dw_i2s.h</compoundname>
+    <includes refid="dev__i2s_8h" local="yes">device/ip_hal/dev_i2s.h</includes>
+    <includes local="yes">stdio.h</includes>
+    <includes refid="embARC_8h" local="yes">embARC.h</includes>
+    <includes refid="embARC__debug_8h" local="yes">embARC_debug.h</includes>
+    <includedby refid="dw__i2s__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</includedby>
+    <includedby refid="dw__i2s_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</includedby>
+    <incdepgraph>
+      <node id="4148">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4144">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4145" relation="include">
+        </childnode>
+        <childnode refid="4146" relation="include">
+        </childnode>
+        <childnode refid="4147" relation="include">
+        </childnode>
+        <childnode refid="4148" relation="include">
+        </childnode>
+      </node>
+      <node id="4141">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h</label>
+        <link refid="dw_i2s.h"/>
+        <childnode refid="4142" relation="include">
+        </childnode>
+        <childnode refid="4149" relation="include">
+        </childnode>
+        <childnode refid="4150" relation="include">
+        </childnode>
+        <childnode refid="4159" relation="include">
+        </childnode>
+      </node>
+      <node id="4145">
+        <label>stdint.h</label>
+      </node>
+      <node id="4142">
+        <label>device/ip_hal/dev_i2s.h</label>
+        <link refid="dev__i2s_8h"/>
+        <childnode refid="4143" relation="include">
+        </childnode>
+      </node>
+      <node id="4151">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="4145" relation="include">
+        </childnode>
+        <childnode refid="4152" relation="include">
+        </childnode>
+      </node>
+      <node id="4158">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="4147">
+        <label>stddef.h</label>
+      </node>
+      <node id="4153">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4154" relation="include">
+        </childnode>
+      </node>
+      <node id="4157">
+        <label>arc/arc_mp.h</label>
+        <link refid="arc__mp_8h"/>
+        <childnode refid="4152" relation="include">
+        </childnode>
+      </node>
+      <node id="4146">
+        <label>limits.h</label>
+      </node>
+      <node id="4154">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4155">
+        <label>arc/arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="4152" relation="include">
+        </childnode>
+      </node>
+      <node id="4159">
+        <label>embARC_debug.h</label>
+        <link refid="embARC__debug_8h"/>
+        <childnode refid="4149" relation="include">
+        </childnode>
+      </node>
+      <node id="4143">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="4144" relation="include">
+        </childnode>
+      </node>
+      <node id="4156">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="4152" relation="include">
+        </childnode>
+      </node>
+      <node id="4152">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4144" relation="include">
+        </childnode>
+        <childnode refid="4153" relation="include">
+        </childnode>
+      </node>
+      <node id="4150">
+        <label>embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="4144" relation="include">
+        </childnode>
+        <childnode refid="4151" relation="include">
+        </childnode>
+        <childnode refid="4152" relation="include">
+        </childnode>
+        <childnode refid="4155" relation="include">
+        </childnode>
+        <childnode refid="4156" relation="include">
+        </childnode>
+        <childnode refid="4157" relation="include">
+        </childnode>
+        <childnode refid="4158" relation="include">
+        </childnode>
+      </node>
+      <node id="4149">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4160">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h</label>
+        <link refid="dw_i2s.h"/>
+        <childnode refid="4161" relation="include">
+        </childnode>
+        <childnode refid="4162" relation="include">
+        </childnode>
+      </node>
+      <node id="4162">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
+        <link refid="dw__i2s_8c"/>
+      </node>
+      <node id="4161">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
+        <link refid="dw__i2s__obj_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structDW__I2S__RX__REG" prot="public">DW_I2S_RX_REG</innerclass>
+    <innerclass refid="structDW__I2S__TX__REG" prot="public">DW_I2S_TX_REG</innerclass>
+    <innerclass refid="structDW__I2S__BUFFER" prot="public">DW_I2S_BUFFER</innerclass>
+    <innerclass refid="structDW__I2S__CONFIG" prot="public">DW_I2S_CONFIG</innerclass>
+    <innerclass refid="structDW__I2S__RX__CTRL" prot="public">DW_I2S_RX_CTRL</innerclass>
+    <innerclass refid="structDW__I2S__TX__CTRL" prot="public">DW_I2S_TX_CTRL</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__i2s_8h_a3416f2c7b752b7b23f572a5e8126a9ec_1a3416f2c7b752b7b23f572a5e8126a9ec" prot="public" static="no">
+        <name>DEVICE_USE_DESIGNWARE_I2S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this header file is included, will indicate that this designware I2S device is used.</para><para>sclk - serial clock ws - word select sd - serial data Transmitter - device that places data on the sd line and is clocked by sclk and ws Receiver - device that receives data from the sd line and is clocked by sclk and ws Master - when configured as a master, DW_apb_i2s initializes the ws signal and supplies the clock gating and clock enabling signals Slave - when configured as a slave, DW_apb_i2s responds to externally generated sclk and ws signals </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga64cee01f968a2e7e0602070a834d1081_1ga64cee01f968a2e7e0602070a834d1081" prot="public" static="no">
+        <name>DW_I2S_MASTER_SUPPORTED</name>
+        <initializer>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware I2S Master Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="61" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga733231eaf5720259904e95e8acd6d2ac_1ga733231eaf5720259904e95e8acd6d2ac" prot="public" static="no">
+        <name>DW_I2S_SLAVE_SUPPORTED</name>
+        <initializer>(0x2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware I2S Slave Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="62" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga0668610a0d5b514694b966e3ba63532a_1ga0668610a0d5b514694b966e3ba63532a" prot="public" static="no">
+        <name>DW_I2S_CHANNEL0_SUPPORTED</name>
+        <initializer>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware I2S TX/RX Channel 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="64" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_gac3a2072f116a09bc1b2f0bca0a80f3fc_1gac3a2072f116a09bc1b2f0bca0a80f3fc" prot="public" static="no">
+        <name>DW_I2S_CHANNEL1_SUPPORTED</name>
+        <initializer>(0x2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware I2S TX/RX Channel 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="65" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga9b679c93d234d1ab4ad1fbac0ff771c9_1ga9b679c93d234d1ab4ad1fbac0ff771c9" prot="public" static="no">
+        <name>DW_I2S_CHANNEL2_SUPPORTED</name>
+        <initializer>(0x4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware I2S TX/RX Channel 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="66" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga7e88ab69f8194f7cd08ffdcceaa392bc_1ga7e88ab69f8194f7cd08ffdcceaa392bc" prot="public" static="no">
+        <name>DW_I2S_CHANNEL3_SUPPORTED</name>
+        <initializer>(0x8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware I2S TX/RX Channel 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="67" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_gaf169634c64c0c6e2c39dc264878e8f1e_1gaf169634c64c0c6e2c39dc264878e8f1e" prot="public" static="no">
+        <name>DW_I2S_DATA_LENGTH_16</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the length of data 16 bits else 32 bits&gt; I2S TX/RX channel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="69" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_gab418ad4c43f7619944f5792631697cba_1gab418ad4c43f7619944f5792631697cba" prot="public" static="no">
+        <name>DW_I2S_GINT_DISABLED</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DesignWare interrupt disabled for control I2S irq/fiq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="95" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga988772f6e2c8fa7a45448e37b61b6e6e_1ga988772f6e2c8fa7a45448e37b61b6e6e" prot="public" static="no">
+        <name>DW_I2S_GINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DesignWare interrupt enabled for control I2S irq/fiq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="96" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_gaf9bf324cb58c44f52ad55c13bdcc8451_1gaf9bf324cb58c44f52ad55c13bdcc8451" prot="public" static="no">
+        <name>DW_I2S_TXINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DesignWare interrupt enabled for control transmit process </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="97" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__DEVICE__DW__I2S__INFO_ga68f576a3b2ce71c67bc9608702d898c9_1ga68f576a3b2ce71c67bc9608702d898c9" prot="public" static="no">
+        <name>DW_I2S_RXINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DesignWare interrupt enabled for control transmit process </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="98" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1gae703cbe19e303471c9247f8bd16ccfb0" prot="public" static="no">
+        <name>DW_I2S_CHANNEL</name>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a0c98e53afc84991bdab403cf9015d4df" prot="public">
+          <name>DW_I2S_CHANNEL0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S TX/RX channel 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0aa258a56ecf02c752d0b985e9b759c7b2" prot="public">
+          <name>DW_I2S_CHANNEL1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S TX/RX channel 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a0c97f61e9ce9e8cf5143e5b661e46832" prot="public">
+          <name>DW_I2S_CHANNEL2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S TX/RX channel 2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a3554475e7d9398d3c1e001959a87d1ff" prot="public">
+          <name>DW_I2S_CHANNEL3</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S TX/RX channel 3 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="72" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1gaad6c64cf8d8e6bcdaa54b701375e2c28" prot="public" static="no">
+        <name>DW_I2S_WSS</name>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28a69c68159677511da3c4a3097b2f225a9" prot="public">
+          <name>DW_I2S_WSS_16_CLK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>16 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28ab2cbdfdf3777d3b2366832c43ee68a23" prot="public">
+          <name>DW_I2S_WSS_24_CLK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>24 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28a469250c7fc43656c19100131a925be5a" prot="public">
+          <name>DW_I2S_WSS_32_CLK</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1ga9c754a3373ec1b2a888f6b2134265778" prot="public" static="no">
+        <name>DW_I2S_SCLKG</name>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778afd07cad3fc9f220ae113452fef361773" prot="public">
+          <name>DW_I2S_SCLKG_NO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No clock gating </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a631a7c96c4c48b3198c17cf2b76d1956" prot="public">
+          <name>DW_I2S_SCLKG_12_CLK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Gate after 12 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a224357066d159cbebc678c9e8998b89e" prot="public">
+          <name>DW_I2S_SCLKG_16_CLK</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Gate after 16 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a6ce0829a1f067c7997b8695d37723624" prot="public">
+          <name>DW_I2S_SCLKG_20_CLK</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Gate after 20 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a8ffa48dcd7d93e4b6f57bdc145e8daed" prot="public">
+          <name>DW_I2S_SCLKG_24_CLK</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Gate after 24 clock cycles </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="87" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__DW__I2S__REGSTRUCT_ga907a9c4972d86d08cbc873890225afeb_1ga907a9c4972d86d08cbc873890225afeb" prot="public" static="no">
+        <type>struct <ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref> *</type>
+        <definition>typedef  struct DW_I2S_RX_REG * DW_I2S_RX_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_I2S_RX_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__DEVICE__DW__I2S__REGSTRUCT_gaa2affc196dc6e0b3f0a833b7533cdc93_1gaa2affc196dc6e0b3f0a833b7533cdc93" prot="public" static="no">
+        <type>struct <ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref> *</type>
+        <definition>typedef  struct DW_I2S_TX_REG * DW_I2S_TX_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_I2S_TX_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__i2s_8h_a49d6745163a9a887749140d39e1d6421_1a49d6745163a9a887749140d39e1d6421" prot="public" static="no">
+        <type>struct <ref refid="structDW__I2S__BUFFER" kindref="compound">DW_I2S_BUFFER</ref> *</type>
+        <definition>typedef  struct DW_I2S_BUFFER * DW_I2S_BUFFER_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_I2S_BUFFER_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__i2s_8h_a61f41e3da56214c709bde2284c1e9424_1a61f41e3da56214c709bde2284c1e9424" prot="public" static="no">
+        <type>struct <ref refid="structDW__I2S__CONFIG" kindref="compound">DW_I2S_CONFIG</ref> *</type>
+        <definition>typedef  struct DW_I2S_CONFIG * DW_I2S_CONFIG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_I2S_CONFIG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__i2s_8h_a772471cf6a1971fd3f4acd54e589fb3a_1a772471cf6a1971fd3f4acd54e589fb3a" prot="public" static="no">
+        <type>struct <ref refid="structDW__I2S__RX__CTRL" kindref="compound">DW_I2S_RX_CTRL</ref> *</type>
+        <definition>typedef  struct DW_I2S_RX_CTRL * DW_I2S_RX_CTRL_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_I2S_RX_CTRL_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__i2s_8h_a4a16024795c14e10560bac1d4c23f282_1a4a16024795c14e10560bac1d4c23f282" prot="public" static="no">
+        <type>struct <ref refid="structDW__I2S__TX__CTRL" kindref="compound">DW_I2S_TX_CTRL</ref> *</type>
+        <definition>typedef  struct DW_I2S_TX_CTRL * DW_I2S_TX_CTRL_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_I2S_TX_CTRL_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="318" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_ga6a4534490dd26815ce82893adb36867c_1ga6a4534490dd26815ce82893adb36867c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_i2s_open</definition>
+        <argsstring>(DEV_I2S *i2s_obj, uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_i2s_open</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Open a designware i2s device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Working mode (<ref refid="group__DEVICE__HAL__COMMON__DEVMODE_ga9b1ad5abdf677288f655dd4bc9dc188d_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">master</ref> or <ref refid="group__DEVICE__HAL__COMMON__DEVMODE_gaf070489d9f19e9000cb9700bb859a079_1gaf070489d9f19e9000cb9700bb859a079" kindref="member">slave</ref>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device type (<ref refid="group__I2S__DEVICE__TYPE_ga9f91b0bd8d7c5f4a8efe4ca701d7d680_1gga9f91b0bd8d7c5f4a8efe4ca701d7d680ab3c8bedf88d7ae02593d28719246ef48" kindref="member">transmitter</ref> OR <ref refid="group__I2S__DEVICE__TYPE_ga9f91b0bd8d7c5f4a8efe4ca701d7d680_1gga9f91b0bd8d7c5f4a8efe4ca701d7d680a3fafd3ba0b838d8ef620f6c4dd47b2d6" kindref="member">receiver</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device was opened before </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device initialized parameters are different with parameters in IP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Check FIFO length</para><para>Check opened before use case</para><para>Clear I2S TX/RX buffer and callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="331" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1423" bodyend="1602"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_ga9d7c24093650665f8fa04e3548b9f713_1ga9d7c24093650665f8fa04e3548b9f713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_i2s_close</definition>
+        <argsstring>(DEV_I2S *i2s_obj)</argsstring>
+        <name>dw_i2s_close</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <briefdescription>
+<para>Close a designware i2s device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues (including that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__I2S__INFO_ad73cefabfc95bd83575733d2db91665d_1ad73cefabfc95bd83575733d2db91665d" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Clear I2S TX/RX buffer and callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="332" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1611" bodyend="1666"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_ga8366ac5ab4d9028eaa17b5d7fadaa83a_1ga8366ac5ab4d9028eaa17b5d7fadaa83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_i2s_control</definition>
+        <argsstring>(DEV_I2S *i2s_obj, uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_i2s_control</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Control i2s by ctrl command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__DEVICE__HAL__I2S__CTRLCMD" kindref="compound">control command</ref>, to change or get some thing related to i2s </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters that maybe argument of the command, or return values of the command, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>When device is disabled, only I2S_CMD_ENA_DEV, I2S_CMD_DIS_DEV, I2S_CMD_GET_STATUS, I2S_CMD_RESET are available, other commands will return E_SYS</para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="333" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1682" bodyend="1921"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_gafefa16859094c71c6aa91918acc3a017_1gafefa16859094c71c6aa91918acc3a017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_i2s_write</definition>
+        <argsstring>(DEV_I2S *i2s_obj, const void *data, uint32_t len, uint32_t channel)</argsstring>
+        <name>dw_i2s_write</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Poll transmit data through designware i2s as master or slave. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length to send, no timeout check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Send data via specified channel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte count that was successfully sent for poll method, it might can&apos;t send that much due to <ref refid="structDEV__I2S__INFO_a9f6062f791e24450ec3d340c75ede15d_1a9f6062f791e24450ec3d340c75ede15d" kindref="member">I2S_ERROR_STATE</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t write data to hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="334" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="1936" bodyend="2006"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_ga1d9ef7056c96a5d52a6fe3ef1cb132e4_1ga1d9ef7056c96a5d52a6fe3ef1cb132e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_i2s_read</definition>
+        <argsstring>(DEV_I2S *i2s_obj, void *data, uint32_t len, uint32_t channel)</argsstring>
+        <name>dw_i2s_read</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Read data through designware i2s as master or slave. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data received (data must be uint32_t type), uint32_t(left) and uint32_t(right) alternating </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device channel to read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length need to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte count that was successfully received for poll method, it might can&apos;t send that much due to <ref refid="structDEV__I2S__INFO_a9f6062f791e24450ec3d340c75ede15d_1a9f6062f791e24450ec3d340c75ede15d" kindref="member">I2S_ERROR_STATE</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in receive state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t read data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="335" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="2021" bodyend="2087"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_gaf4cb924b26c2588b8bdd238961413636_1gaf4cb924b26c2588b8bdd238961413636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_i2s_isr_tx</definition>
+        <argsstring>(DEV_I2S *i2s_obj, void *ptr)</argsstring>
+        <name>dw_i2s_isr_tx</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>DesignWare i2s tx interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extra information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="336" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="2094" bodyend="2114"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_ga7b75a256555426e52cf2584c78b98c7b_1ga7b75a256555426e52cf2584c78b98c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_i2s_isr_rx</definition>
+        <argsstring>(DEV_I2S *i2s_obj, void *ptr)</argsstring>
+        <name>dw_i2s_isr_rx</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>DesignWare i2s rx interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2S device pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="337" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c" bodystart="2121" bodyend="2141"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__I2S__FUNCDLR_ga9b58616b1e26b104116830e8e1ad6ff9_1ga9b58616b1e26b104116830e8e1ad6ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t dw_i2s_write2</definition>
+        <argsstring>(DEV_I2S *i2s_obj, const void *data, uint32_t len, uint32_t channel)</argsstring>
+        <name>dw_i2s_write2</name>
+        <param>
+          <type><ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref> *</type>
+          <declname>i2s_obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="338" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_DW_I2S</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_DW_I2S</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__i2s_8h" kindref="compound">device/ip_hal/dev_i2s.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>embARC<sp/>HAL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC_8h" kindref="compound">embARC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__debug_8h" kindref="compound">embARC_debug.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="dw__i2s_8h_a3416f2c7b752b7b23f572a5e8126a9ec_1a3416f2c7b752b7b23f572a5e8126a9ec" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_USE_DESIGNWARE_I2S</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="61" refid="group__DEVICE__DW__I2S__INFO_ga64cee01f968a2e7e0602070a834d1081_1ga64cee01f968a2e7e0602070a834d1081" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_MASTER_SUPPORTED<sp/><sp/><sp/><sp/><sp/>(0x1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="group__DEVICE__DW__I2S__INFO_ga733231eaf5720259904e95e8acd6d2ac_1ga733231eaf5720259904e95e8acd6d2ac" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_SLAVE_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/>(0x2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="group__DEVICE__DW__I2S__INFO_ga0668610a0d5b514694b966e3ba63532a_1ga0668610a0d5b514694b966e3ba63532a" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_CHANNEL0_SUPPORTED<sp/><sp/><sp/>(0x1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="group__DEVICE__DW__I2S__INFO_gac3a2072f116a09bc1b2f0bca0a80f3fc_1gac3a2072f116a09bc1b2f0bca0a80f3fc" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_CHANNEL1_SUPPORTED<sp/><sp/><sp/>(0x2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="group__DEVICE__DW__I2S__INFO_ga9b679c93d234d1ab4ad1fbac0ff771c9_1ga9b679c93d234d1ab4ad1fbac0ff771c9" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_CHANNEL2_SUPPORTED<sp/><sp/><sp/>(0x4)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="group__DEVICE__DW__I2S__INFO_ga7e88ab69f8194f7cd08ffdcceaa392bc_1ga7e88ab69f8194f7cd08ffdcceaa392bc" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_CHANNEL3_SUPPORTED<sp/><sp/><sp/>(0x8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="group__DEVICE__DW__I2S__INFO_gaf169634c64c0c6e2c39dc264878e8f1e_1gaf169634c64c0c6e2c39dc264878e8f1e" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_DATA_LENGTH_16<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1gae703cbe19e303471c9247f8bd16ccfb0" refkind="member"><highlight class="preprocessor">typedef<sp/>enum<sp/>{</highlight></codeline>
+<codeline lineno="73" refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a0c98e53afc84991bdab403cf9015d4df" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a0c98e53afc84991bdab403cf9015d4df" kindref="member">DW_I2S_CHANNEL0</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0aa258a56ecf02c752d0b985e9b759c7b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0aa258a56ecf02c752d0b985e9b759c7b2" kindref="member">DW_I2S_CHANNEL1</ref><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a0c97f61e9ce9e8cf5143e5b661e46832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a0c97f61e9ce9e8cf5143e5b661e46832" kindref="member">DW_I2S_CHANNEL2</ref><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a3554475e7d9398d3c1e001959a87d1ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1ggae703cbe19e303471c9247f8bd16ccfb0a3554475e7d9398d3c1e001959a87d1ff" kindref="member">DW_I2S_CHANNEL3</ref><sp/>=<sp/>3<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/><ref refid="group__DEVICE__DW__I2S__INFO_gae703cbe19e303471c9247f8bd16ccfb0_1gae703cbe19e303471c9247f8bd16ccfb0" kindref="member">DW_I2S_CHANNEL</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1gaad6c64cf8d8e6bcdaa54b701375e2c28" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81" refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28a69c68159677511da3c4a3097b2f225a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28a69c68159677511da3c4a3097b2f225a9" kindref="member">DW_I2S_WSS_16_CLK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28ab2cbdfdf3777d3b2366832c43ee68a23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28ab2cbdfdf3777d3b2366832c43ee68a23" kindref="member">DW_I2S_WSS_24_CLK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28a469250c7fc43656c19100131a925be5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1ggaad6c64cf8d8e6bcdaa54b701375e2c28a469250c7fc43656c19100131a925be5a" kindref="member">DW_I2S_WSS_32_CLK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/><ref refid="group__DEVICE__DW__I2S__INFO_gaad6c64cf8d8e6bcdaa54b701375e2c28_1gaad6c64cf8d8e6bcdaa54b701375e2c28" kindref="member">DW_I2S_WSS</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1ga9c754a3373ec1b2a888f6b2134265778" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="88" refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778afd07cad3fc9f220ae113452fef361773" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778afd07cad3fc9f220ae113452fef361773" kindref="member">DW_I2S_SCLKG_NO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a631a7c96c4c48b3198c17cf2b76d1956" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a631a7c96c4c48b3198c17cf2b76d1956" kindref="member">DW_I2S_SCLKG_12_CLK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a224357066d159cbebc678c9e8998b89e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a224357066d159cbebc678c9e8998b89e" kindref="member">DW_I2S_SCLKG_16_CLK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a6ce0829a1f067c7997b8695d37723624" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a6ce0829a1f067c7997b8695d37723624" kindref="member">DW_I2S_SCLKG_20_CLK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a8ffa48dcd7d93e4b6f57bdc145e8daed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1gga9c754a3373ec1b2a888f6b2134265778a8ffa48dcd7d93e4b6f57bdc145e8daed" kindref="member">DW_I2S_SCLKG_24_CLK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>4<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<sp/><ref refid="group__DEVICE__DW__I2S__INFO_ga9c754a3373ec1b2a888f6b2134265778_1ga9c754a3373ec1b2a888f6b2134265778" kindref="member">DW_I2S_SCLKG</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group__DEVICE__DW__I2S__INFO_gab418ad4c43f7619944f5792631697cba_1gab418ad4c43f7619944f5792631697cba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_I2S_GINT_DISABLED<sp/><sp/><sp/><sp/>(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="group__DEVICE__DW__I2S__INFO_ga988772f6e2c8fa7a45448e37b61b6e6e_1ga988772f6e2c8fa7a45448e37b61b6e6e" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_GINT_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="group__DEVICE__DW__I2S__INFO_gaf9bf324cb58c44f52ad55c13bdcc8451_1gaf9bf324cb58c44f52ad55c13bdcc8451" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_TXINT_ENABLE<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="group__DEVICE__DW__I2S__INFO_ga68f576a3b2ce71c67bc9608702d898c9_1ga68f576a3b2ce71c67bc9608702d898c9" refkind="member"><highlight class="preprocessor">#define<sp/>DW_I2S_RXINT_ENABLE<sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="structDW__I2S__RX__REG" refkind="compound"><highlight class="preprocessor">typedef<sp/>volatile<sp/>struct<sp/>{</highlight></codeline>
+<codeline lineno="114" refid="structDW__I2S__RX__REG_ad78b051d058e3638a486f80225391b62_1ad78b051d058e3638a486f80225391b62" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ad78b051d058e3638a486f80225391b62_1ad78b051d058e3638a486f80225391b62" kindref="member">IER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="structDW__I2S__RX__REG_a97d6dd2ef8f9f3131d501979864d5b64_1a97d6dd2ef8f9f3131d501979864d5b64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a97d6dd2ef8f9f3131d501979864d5b64_1a97d6dd2ef8f9f3131d501979864d5b64" kindref="member">IRER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="structDW__I2S__RX__REG_a43fbbc7ff8c26cbe18838c80d1ba9dd9_1a43fbbc7ff8c26cbe18838c80d1ba9dd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a43fbbc7ff8c26cbe18838c80d1ba9dd9_1a43fbbc7ff8c26cbe18838c80d1ba9dd9" kindref="member">ITER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="structDW__I2S__RX__REG_aa3d313d5a87e5bb11082802182e359c9_1aa3d313d5a87e5bb11082802182e359c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_aa3d313d5a87e5bb11082802182e359c9_1aa3d313d5a87e5bb11082802182e359c9" kindref="member">CER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="structDW__I2S__RX__REG_a8a0b449e112ca79073f056281e2ed98c_1a8a0b449e112ca79073f056281e2ed98c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a8a0b449e112ca79073f056281e2ed98c_1a8a0b449e112ca79073f056281e2ed98c" kindref="member">CCR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="structDW__I2S__RX__REG_ac36a4c038bef3a6f264d777da6c9bd24_1ac36a4c038bef3a6f264d777da6c9bd24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ac36a4c038bef3a6f264d777da6c9bd24_1ac36a4c038bef3a6f264d777da6c9bd24" kindref="member">RXFFR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="structDW__I2S__RX__REG_a72db60f5f0dc36d80c19f07cb4dc7c36_1a72db60f5f0dc36d80c19f07cb4dc7c36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a72db60f5f0dc36d80c19f07cb4dc7c36_1a72db60f5f0dc36d80c19f07cb4dc7c36" kindref="member">TXFFR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="structDW__I2S__RX__REG_afb1799d64ea7c9f9a729050d22dfaa55_1afb1799d64ea7c9f9a729050d22dfaa55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_afb1799d64ea7c9f9a729050d22dfaa55_1afb1799d64ea7c9f9a729050d22dfaa55" kindref="member">RESERVED0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="structDW__I2S__RX__REG_adce44d6135f9bd71012e3f126df0ad96_1adce44d6135f9bd71012e3f126df0ad96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_adce44d6135f9bd71012e3f126df0ad96_1adce44d6135f9bd71012e3f126df0ad96" kindref="member">LRBR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="structDW__I2S__RX__REG_a66554056ddb622f76e07a32a398e26ef_1a66554056ddb622f76e07a32a398e26ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a66554056ddb622f76e07a32a398e26ef_1a66554056ddb622f76e07a32a398e26ef" kindref="member">RRBR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="structDW__I2S__RX__REG_ad549f1ad233ab83e4edf48ef6fce7e81_1ad549f1ad233ab83e4edf48ef6fce7e81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ad549f1ad233ab83e4edf48ef6fce7e81_1ad549f1ad233ab83e4edf48ef6fce7e81" kindref="member">RER0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="structDW__I2S__RX__REG_a54135465cbcade339b55e9bbae976677_1a54135465cbcade339b55e9bbae976677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a54135465cbcade339b55e9bbae976677_1a54135465cbcade339b55e9bbae976677" kindref="member">TER0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="structDW__I2S__RX__REG_a5ec35d7b1d5f19eb383cbd6b17e30503_1a5ec35d7b1d5f19eb383cbd6b17e30503" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a5ec35d7b1d5f19eb383cbd6b17e30503_1a5ec35d7b1d5f19eb383cbd6b17e30503" kindref="member">RCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="structDW__I2S__RX__REG_a84d06060f61e6c53418ab271b2747bc6_1a84d06060f61e6c53418ab271b2747bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a84d06060f61e6c53418ab271b2747bc6_1a84d06060f61e6c53418ab271b2747bc6" kindref="member">TCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="structDW__I2S__RX__REG_a26cea516ae0db8d3162597a224bb828c_1a26cea516ae0db8d3162597a224bb828c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a26cea516ae0db8d3162597a224bb828c_1a26cea516ae0db8d3162597a224bb828c" kindref="member">ISR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="structDW__I2S__RX__REG_a279539180e685fe4e3f782762066453f_1a279539180e685fe4e3f782762066453f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a279539180e685fe4e3f782762066453f_1a279539180e685fe4e3f782762066453f" kindref="member">IMR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="structDW__I2S__RX__REG_a0275f03a303430fbc43b024ba5368498_1a0275f03a303430fbc43b024ba5368498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a0275f03a303430fbc43b024ba5368498_1a0275f03a303430fbc43b024ba5368498" kindref="member">ROR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="structDW__I2S__RX__REG_a58dc9a6ec94712c40f0af6d124b1241b_1a58dc9a6ec94712c40f0af6d124b1241b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a58dc9a6ec94712c40f0af6d124b1241b_1a58dc9a6ec94712c40f0af6d124b1241b" kindref="member">TOR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="structDW__I2S__RX__REG_afa5256c1109027e219423ca9a9988c3c_1afa5256c1109027e219423ca9a9988c3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_afa5256c1109027e219423ca9a9988c3c_1afa5256c1109027e219423ca9a9988c3c" kindref="member">RFCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="structDW__I2S__RX__REG_af1dd2550c205e1f5256db49b2557e131_1af1dd2550c205e1f5256db49b2557e131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_af1dd2550c205e1f5256db49b2557e131_1af1dd2550c205e1f5256db49b2557e131" kindref="member">TFCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="structDW__I2S__RX__REG_aad74b556e652ff56eda937191c9bbc4b_1aad74b556e652ff56eda937191c9bbc4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_aad74b556e652ff56eda937191c9bbc4b_1aad74b556e652ff56eda937191c9bbc4b" kindref="member">RFF0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="structDW__I2S__RX__REG_a127645b72026f6b30b6f1c746985d75f_1a127645b72026f6b30b6f1c746985d75f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a127645b72026f6b30b6f1c746985d75f_1a127645b72026f6b30b6f1c746985d75f" kindref="member">TFF0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="structDW__I2S__RX__REG_a2bfc37d7c5e7738796d945e7540479f1_1a2bfc37d7c5e7738796d945e7540479f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED1[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="structDW__I2S__RX__REG_a3168ad7efed401e965743219dfda9064_1a3168ad7efed401e965743219dfda9064" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a3168ad7efed401e965743219dfda9064_1a3168ad7efed401e965743219dfda9064" kindref="member">LRBR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138" refid="structDW__I2S__RX__REG_a833348086c30039c6a0f41cbd9200723_1a833348086c30039c6a0f41cbd9200723" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a833348086c30039c6a0f41cbd9200723_1a833348086c30039c6a0f41cbd9200723" kindref="member">RRBR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="structDW__I2S__RX__REG_acf8f33acd503221245be25820a058b17_1acf8f33acd503221245be25820a058b17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_acf8f33acd503221245be25820a058b17_1acf8f33acd503221245be25820a058b17" kindref="member">RER1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="structDW__I2S__RX__REG_a28bb21c58a36956e088b7f914d296fdb_1a28bb21c58a36956e088b7f914d296fdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a28bb21c58a36956e088b7f914d296fdb_1a28bb21c58a36956e088b7f914d296fdb" kindref="member">TER1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="structDW__I2S__RX__REG_afbba77a195c47a88e1f11f4f5bea52e4_1afbba77a195c47a88e1f11f4f5bea52e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_afbba77a195c47a88e1f11f4f5bea52e4_1afbba77a195c47a88e1f11f4f5bea52e4" kindref="member">RCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="structDW__I2S__RX__REG_a18bdfc8dcb69e608b55fea5545d03e50_1a18bdfc8dcb69e608b55fea5545d03e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a18bdfc8dcb69e608b55fea5545d03e50_1a18bdfc8dcb69e608b55fea5545d03e50" kindref="member">TCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="structDW__I2S__RX__REG_a12497d4fef89ca29ff9792ec11e1d760_1a12497d4fef89ca29ff9792ec11e1d760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a12497d4fef89ca29ff9792ec11e1d760_1a12497d4fef89ca29ff9792ec11e1d760" kindref="member">ISR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="structDW__I2S__RX__REG_a84192a2fefc95a0468f0672136aae54e_1a84192a2fefc95a0468f0672136aae54e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a84192a2fefc95a0468f0672136aae54e_1a84192a2fefc95a0468f0672136aae54e" kindref="member">IMR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="structDW__I2S__RX__REG_a3e50b11c1932b1a040eae5b2aa2996c6_1a3e50b11c1932b1a040eae5b2aa2996c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a3e50b11c1932b1a040eae5b2aa2996c6_1a3e50b11c1932b1a040eae5b2aa2996c6" kindref="member">ROR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="structDW__I2S__RX__REG_a6b0ed7f4d9613f801e15bf08c90f8742_1a6b0ed7f4d9613f801e15bf08c90f8742" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a6b0ed7f4d9613f801e15bf08c90f8742_1a6b0ed7f4d9613f801e15bf08c90f8742" kindref="member">TOR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="structDW__I2S__RX__REG_a5bc0e7dd708e2179469502cfb2b693b6_1a5bc0e7dd708e2179469502cfb2b693b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a5bc0e7dd708e2179469502cfb2b693b6_1a5bc0e7dd708e2179469502cfb2b693b6" kindref="member">RFCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="structDW__I2S__RX__REG_ad4972c6ccb4a09991a222e2d4ec598e1_1ad4972c6ccb4a09991a222e2d4ec598e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ad4972c6ccb4a09991a222e2d4ec598e1_1ad4972c6ccb4a09991a222e2d4ec598e1" kindref="member">TFCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="structDW__I2S__RX__REG_a106f7cea0b3fefca1f73876814d14148_1a106f7cea0b3fefca1f73876814d14148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a106f7cea0b3fefca1f73876814d14148_1a106f7cea0b3fefca1f73876814d14148" kindref="member">RFF1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="structDW__I2S__RX__REG_a83a749957aa25fcbb7362cc75cd40982_1a83a749957aa25fcbb7362cc75cd40982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a83a749957aa25fcbb7362cc75cd40982_1a83a749957aa25fcbb7362cc75cd40982" kindref="member">TFF1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="structDW__I2S__RX__REG_a366798ed4cb6b971d1a926ed9c646030_1a366798ed4cb6b971d1a926ed9c646030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED2[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="structDW__I2S__RX__REG_a6ae253511ffab08b2701ea8b8e6ada83_1a6ae253511ffab08b2701ea8b8e6ada83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a6ae253511ffab08b2701ea8b8e6ada83_1a6ae253511ffab08b2701ea8b8e6ada83" kindref="member">LRBR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structDW__I2S__RX__REG_af9fe4a250edc808aca86fbb7db0edc70_1af9fe4a250edc808aca86fbb7db0edc70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_af9fe4a250edc808aca86fbb7db0edc70_1af9fe4a250edc808aca86fbb7db0edc70" kindref="member">RRBR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structDW__I2S__RX__REG_a2671c83726a9337bc08c1839260243d4_1a2671c83726a9337bc08c1839260243d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a2671c83726a9337bc08c1839260243d4_1a2671c83726a9337bc08c1839260243d4" kindref="member">RER2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="structDW__I2S__RX__REG_a90930bd92eece09d813bf337ae22634f_1a90930bd92eece09d813bf337ae22634f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a90930bd92eece09d813bf337ae22634f_1a90930bd92eece09d813bf337ae22634f" kindref="member">TER2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="structDW__I2S__RX__REG_a8f051fc3d604ad337181fa444026cd63_1a8f051fc3d604ad337181fa444026cd63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a8f051fc3d604ad337181fa444026cd63_1a8f051fc3d604ad337181fa444026cd63" kindref="member">RCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="structDW__I2S__RX__REG_a4c050b89247a9a7184c620602dca3d6a_1a4c050b89247a9a7184c620602dca3d6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a4c050b89247a9a7184c620602dca3d6a_1a4c050b89247a9a7184c620602dca3d6a" kindref="member">TCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="structDW__I2S__RX__REG_af31173dff14321526630254f9446a210_1af31173dff14321526630254f9446a210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_af31173dff14321526630254f9446a210_1af31173dff14321526630254f9446a210" kindref="member">ISR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="structDW__I2S__RX__REG_a0a49a940ea57314988ea161aff779446_1a0a49a940ea57314988ea161aff779446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a0a49a940ea57314988ea161aff779446_1a0a49a940ea57314988ea161aff779446" kindref="member">IMR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="structDW__I2S__RX__REG_a665d86aeef140b52a4a8ea48724c4c82_1a665d86aeef140b52a4a8ea48724c4c82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a665d86aeef140b52a4a8ea48724c4c82_1a665d86aeef140b52a4a8ea48724c4c82" kindref="member">ROR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161" refid="structDW__I2S__RX__REG_a2553506e4ecfe50fb8c4b100e491e8e2_1a2553506e4ecfe50fb8c4b100e491e8e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a2553506e4ecfe50fb8c4b100e491e8e2_1a2553506e4ecfe50fb8c4b100e491e8e2" kindref="member">TOR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="structDW__I2S__RX__REG_ab35000b214d5ae5778907562ec97eb9e_1ab35000b214d5ae5778907562ec97eb9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ab35000b214d5ae5778907562ec97eb9e_1ab35000b214d5ae5778907562ec97eb9e" kindref="member">RFCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="structDW__I2S__RX__REG_a32c4f902ac9eb1f5f1d62e0c83944caa_1a32c4f902ac9eb1f5f1d62e0c83944caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a32c4f902ac9eb1f5f1d62e0c83944caa_1a32c4f902ac9eb1f5f1d62e0c83944caa" kindref="member">TFCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="structDW__I2S__RX__REG_a4cc98ee1154c77db8a9c4d1f6bdbf2b7_1a4cc98ee1154c77db8a9c4d1f6bdbf2b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a4cc98ee1154c77db8a9c4d1f6bdbf2b7_1a4cc98ee1154c77db8a9c4d1f6bdbf2b7" kindref="member">RFF2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="structDW__I2S__RX__REG_afb2647bc40e6c68a6e6a801a486cea2b_1afb2647bc40e6c68a6e6a801a486cea2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_afb2647bc40e6c68a6e6a801a486cea2b_1afb2647bc40e6c68a6e6a801a486cea2b" kindref="member">TFF2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="structDW__I2S__RX__REG_a7d3fa0cd423c347cd4a096898f080c59_1a7d3fa0cd423c347cd4a096898f080c59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED3[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="structDW__I2S__RX__REG_a6a67d77af8a01a7f81062b75e5ba245d_1a6a67d77af8a01a7f81062b75e5ba245d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a6a67d77af8a01a7f81062b75e5ba245d_1a6a67d77af8a01a7f81062b75e5ba245d" kindref="member">LRBR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="structDW__I2S__RX__REG_a23204526a05db53b92c629b3f4cd77e1_1a23204526a05db53b92c629b3f4cd77e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a23204526a05db53b92c629b3f4cd77e1_1a23204526a05db53b92c629b3f4cd77e1" kindref="member">RRBR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="structDW__I2S__RX__REG_ae21473049d63a1cf6fe97b50f5d4d37b_1ae21473049d63a1cf6fe97b50f5d4d37b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ae21473049d63a1cf6fe97b50f5d4d37b_1ae21473049d63a1cf6fe97b50f5d4d37b" kindref="member">RER3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="structDW__I2S__RX__REG_a90d29b497a67b6378f102f7d570c84d4_1a90d29b497a67b6378f102f7d570c84d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a90d29b497a67b6378f102f7d570c84d4_1a90d29b497a67b6378f102f7d570c84d4" kindref="member">TER3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="structDW__I2S__RX__REG_a177115fee3ee6c83f2a00c9922e77609_1a177115fee3ee6c83f2a00c9922e77609" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a177115fee3ee6c83f2a00c9922e77609_1a177115fee3ee6c83f2a00c9922e77609" kindref="member">RCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="structDW__I2S__RX__REG_ac4042bda7a55deb5bac93b13e8687fef_1ac4042bda7a55deb5bac93b13e8687fef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ac4042bda7a55deb5bac93b13e8687fef_1ac4042bda7a55deb5bac93b13e8687fef" kindref="member">TCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="structDW__I2S__RX__REG_aeff61bc184c12ee8c81d381886e30352_1aeff61bc184c12ee8c81d381886e30352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_aeff61bc184c12ee8c81d381886e30352_1aeff61bc184c12ee8c81d381886e30352" kindref="member">ISR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="structDW__I2S__RX__REG_a5c65be067f83cdcc462d654792af8334_1a5c65be067f83cdcc462d654792af8334" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a5c65be067f83cdcc462d654792af8334_1a5c65be067f83cdcc462d654792af8334" kindref="member">IMR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175" refid="structDW__I2S__RX__REG_a34ee36e6a212d938a78def69643d6c53_1a34ee36e6a212d938a78def69643d6c53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a34ee36e6a212d938a78def69643d6c53_1a34ee36e6a212d938a78def69643d6c53" kindref="member">ROR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="structDW__I2S__RX__REG_a7f737d017b005d2e77203ca442a6f699_1a7f737d017b005d2e77203ca442a6f699" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a7f737d017b005d2e77203ca442a6f699_1a7f737d017b005d2e77203ca442a6f699" kindref="member">TOR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177" refid="structDW__I2S__RX__REG_a63d582b3033efb5297a60a71b6befaa1_1a63d582b3033efb5297a60a71b6befaa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a63d582b3033efb5297a60a71b6befaa1_1a63d582b3033efb5297a60a71b6befaa1" kindref="member">RFCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="structDW__I2S__RX__REG_ae8b2861bbe29cd3e4ea75f91cbb36552_1ae8b2861bbe29cd3e4ea75f91cbb36552" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ae8b2861bbe29cd3e4ea75f91cbb36552_1ae8b2861bbe29cd3e4ea75f91cbb36552" kindref="member">TFCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179" refid="structDW__I2S__RX__REG_a340afd06e4c07c8498efe707ba218e84_1a340afd06e4c07c8498efe707ba218e84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a340afd06e4c07c8498efe707ba218e84_1a340afd06e4c07c8498efe707ba218e84" kindref="member">RFF3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180" refid="structDW__I2S__RX__REG_a4c854f985c4f351e071bb28241b91037_1a4c854f985c4f351e071bb28241b91037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a4c854f985c4f351e071bb28241b91037_1a4c854f985c4f351e071bb28241b91037" kindref="member">TFF3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181" refid="structDW__I2S__RX__REG_a4621cee6817d736387aab3fabfd918e3_1a4621cee6817d736387aab3fabfd918e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED4[42];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182" refid="structDW__I2S__RX__REG_ad6f26311dacfde2e0f606c31a8e06e7e_1ad6f26311dacfde2e0f606c31a8e06e7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ad6f26311dacfde2e0f606c31a8e06e7e_1ad6f26311dacfde2e0f606c31a8e06e7e" kindref="member">RXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183" refid="structDW__I2S__RX__REG_a157b443fd70592eea939ed7ec1c64fc3_1a157b443fd70592eea939ed7ec1c64fc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a157b443fd70592eea939ed7ec1c64fc3_1a157b443fd70592eea939ed7ec1c64fc3" kindref="member">RRXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184" refid="structDW__I2S__RX__REG_ac7d3d33fefd40b3a82928abd0ebe0c8c_1ac7d3d33fefd40b3a82928abd0ebe0c8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ac7d3d33fefd40b3a82928abd0ebe0c8c_1ac7d3d33fefd40b3a82928abd0ebe0c8c" kindref="member">TXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="structDW__I2S__RX__REG_a9a6bd0a56d2ecb0200c990821014f010_1a9a6bd0a56d2ecb0200c990821014f010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a9a6bd0a56d2ecb0200c990821014f010_1a9a6bd0a56d2ecb0200c990821014f010" kindref="member">RTXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186" refid="structDW__I2S__RX__REG_a8e3ded26d3baa4388e6083f5bfc93a09_1a8e3ded26d3baa4388e6083f5bfc93a09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED5[8];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187" refid="structDW__I2S__RX__REG_ad3ab44bbe446841455a8a13236a23cfa_1ad3ab44bbe446841455a8a13236a23cfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ad3ab44bbe446841455a8a13236a23cfa_1ad3ab44bbe446841455a8a13236a23cfa" kindref="member">I2S_COMP_PARAM_2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188" refid="structDW__I2S__RX__REG_af70784d44e460db67001d26524a7d64d_1af70784d44e460db67001d26524a7d64d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_af70784d44e460db67001d26524a7d64d_1af70784d44e460db67001d26524a7d64d" kindref="member">I2S_COMP_PARAM_1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189" refid="structDW__I2S__RX__REG_ad91fbb85f7379e217a8107b0a5bb99bd_1ad91fbb85f7379e217a8107b0a5bb99bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_ad91fbb85f7379e217a8107b0a5bb99bd_1ad91fbb85f7379e217a8107b0a5bb99bd" kindref="member">I2S_COMP_VERSION</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190" refid="structDW__I2S__RX__REG_a10a6506674af852d938434734236e2f9_1a10a6506674af852d938434734236e2f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__RX__REG_a10a6506674af852d938434734236e2f9_1a10a6506674af852d938434734236e2f9" kindref="member">I2S_COMP_TYPE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<sp/><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref>,<sp/>*<ref refid="group__DEVICE__DW__I2S__REGSTRUCT_ga907a9c4972d86d08cbc873890225afeb_1ga907a9c4972d86d08cbc873890225afeb" kindref="member">DW_I2S_RX_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="structDW__I2S__TX__REG" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198" refid="structDW__I2S__TX__REG_a17017e3b3ecdcc7ebc9517181163d396_1a17017e3b3ecdcc7ebc9517181163d396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a17017e3b3ecdcc7ebc9517181163d396_1a17017e3b3ecdcc7ebc9517181163d396" kindref="member">IER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199" refid="structDW__I2S__TX__REG_a6db7a48552c7c57f007091efa36f311f_1a6db7a48552c7c57f007091efa36f311f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a6db7a48552c7c57f007091efa36f311f_1a6db7a48552c7c57f007091efa36f311f" kindref="member">IRER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="200" refid="structDW__I2S__TX__REG_ae794f44e7773c6add3f8f64389ab39e0_1ae794f44e7773c6add3f8f64389ab39e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ae794f44e7773c6add3f8f64389ab39e0_1ae794f44e7773c6add3f8f64389ab39e0" kindref="member">ITER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201" refid="structDW__I2S__TX__REG_a8eb7fcd105fa19947a412d8f9e863168_1a8eb7fcd105fa19947a412d8f9e863168" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a8eb7fcd105fa19947a412d8f9e863168_1a8eb7fcd105fa19947a412d8f9e863168" kindref="member">CER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202" refid="structDW__I2S__TX__REG_a55732d61a3a0007239ba4e14cde7b154_1a55732d61a3a0007239ba4e14cde7b154" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a55732d61a3a0007239ba4e14cde7b154_1a55732d61a3a0007239ba4e14cde7b154" kindref="member">CCR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203" refid="structDW__I2S__TX__REG_ab5c2d71f286475c5d998e562a62ec464_1ab5c2d71f286475c5d998e562a62ec464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ab5c2d71f286475c5d998e562a62ec464_1ab5c2d71f286475c5d998e562a62ec464" kindref="member">RXFFR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204" refid="structDW__I2S__TX__REG_a99c305c1f58f29b6b98d578440f25977_1a99c305c1f58f29b6b98d578440f25977" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a99c305c1f58f29b6b98d578440f25977_1a99c305c1f58f29b6b98d578440f25977" kindref="member">TXFFR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205" refid="structDW__I2S__TX__REG_af37b0193d1938e47f0e39ecc6d6635c4_1af37b0193d1938e47f0e39ecc6d6635c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_af37b0193d1938e47f0e39ecc6d6635c4_1af37b0193d1938e47f0e39ecc6d6635c4" kindref="member">RESERVED0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206" refid="structDW__I2S__TX__REG_a45aaa9c71d33004c84a3e9759b428416_1a45aaa9c71d33004c84a3e9759b428416" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a45aaa9c71d33004c84a3e9759b428416_1a45aaa9c71d33004c84a3e9759b428416" kindref="member">LTHR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207" refid="structDW__I2S__TX__REG_a00c509c5ea35b616dd0ff44b65d71108_1a00c509c5ea35b616dd0ff44b65d71108" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a00c509c5ea35b616dd0ff44b65d71108_1a00c509c5ea35b616dd0ff44b65d71108" kindref="member">RTHR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208" refid="structDW__I2S__TX__REG_aaedd6c549cb1ccb5dc3ec477c8c0c6ed_1aaedd6c549cb1ccb5dc3ec477c8c0c6ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aaedd6c549cb1ccb5dc3ec477c8c0c6ed_1aaedd6c549cb1ccb5dc3ec477c8c0c6ed" kindref="member">RER0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209" refid="structDW__I2S__TX__REG_ae1429a981d4eb4b310d583ddf23d59c8_1ae1429a981d4eb4b310d583ddf23d59c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ae1429a981d4eb4b310d583ddf23d59c8_1ae1429a981d4eb4b310d583ddf23d59c8" kindref="member">TER0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210" refid="structDW__I2S__TX__REG_a6c5d4b77b484b25bb73774b576d63e67_1a6c5d4b77b484b25bb73774b576d63e67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a6c5d4b77b484b25bb73774b576d63e67_1a6c5d4b77b484b25bb73774b576d63e67" kindref="member">RCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211" refid="structDW__I2S__TX__REG_ad5e7efcc22437f1484c66aa0de29892a_1ad5e7efcc22437f1484c66aa0de29892a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ad5e7efcc22437f1484c66aa0de29892a_1ad5e7efcc22437f1484c66aa0de29892a" kindref="member">TCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212" refid="structDW__I2S__TX__REG_afa997a86e54edc2c0056d0e05481a5fe_1afa997a86e54edc2c0056d0e05481a5fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_afa997a86e54edc2c0056d0e05481a5fe_1afa997a86e54edc2c0056d0e05481a5fe" kindref="member">ISR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213" refid="structDW__I2S__TX__REG_aaa6e228b32c99bc5e071dee6a6fe7024_1aaa6e228b32c99bc5e071dee6a6fe7024" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aaa6e228b32c99bc5e071dee6a6fe7024_1aaa6e228b32c99bc5e071dee6a6fe7024" kindref="member">IMR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214" refid="structDW__I2S__TX__REG_a48b61a801a5ebd45c9c850c299c0be31_1a48b61a801a5ebd45c9c850c299c0be31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a48b61a801a5ebd45c9c850c299c0be31_1a48b61a801a5ebd45c9c850c299c0be31" kindref="member">ROR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215" refid="structDW__I2S__TX__REG_a4d571092fa9de952da5c7a8ebbe7f756_1a4d571092fa9de952da5c7a8ebbe7f756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a4d571092fa9de952da5c7a8ebbe7f756_1a4d571092fa9de952da5c7a8ebbe7f756" kindref="member">TOR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216" refid="structDW__I2S__TX__REG_aaf4b08a579ceb9f22913046b3fe94a71_1aaf4b08a579ceb9f22913046b3fe94a71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aaf4b08a579ceb9f22913046b3fe94a71_1aaf4b08a579ceb9f22913046b3fe94a71" kindref="member">RFCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217" refid="structDW__I2S__TX__REG_ab867dc98a16ea183d9ff2655b70221cb_1ab867dc98a16ea183d9ff2655b70221cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ab867dc98a16ea183d9ff2655b70221cb_1ab867dc98a16ea183d9ff2655b70221cb" kindref="member">TFCR0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218" refid="structDW__I2S__TX__REG_a424b13fb8323966c38efef3d509d82b6_1a424b13fb8323966c38efef3d509d82b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a424b13fb8323966c38efef3d509d82b6_1a424b13fb8323966c38efef3d509d82b6" kindref="member">RFF0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219" refid="structDW__I2S__TX__REG_ad2e30723964c851ded9cf11c53f7dcdd_1ad2e30723964c851ded9cf11c53f7dcdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ad2e30723964c851ded9cf11c53f7dcdd_1ad2e30723964c851ded9cf11c53f7dcdd" kindref="member">TFF0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220" refid="structDW__I2S__TX__REG_a350e42fdaebc944f8ba3e726dc7ce70b_1a350e42fdaebc944f8ba3e726dc7ce70b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED1[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="221" refid="structDW__I2S__TX__REG_a96bf6c8097d8074636d67788d38cc5b7_1a96bf6c8097d8074636d67788d38cc5b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a96bf6c8097d8074636d67788d38cc5b7_1a96bf6c8097d8074636d67788d38cc5b7" kindref="member">LTHR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222" refid="structDW__I2S__TX__REG_a4448ddc00ac42dd27e94f4011b8e4651_1a4448ddc00ac42dd27e94f4011b8e4651" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a4448ddc00ac42dd27e94f4011b8e4651_1a4448ddc00ac42dd27e94f4011b8e4651" kindref="member">RTHR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223" refid="structDW__I2S__TX__REG_a2077838faf9a9d3666c17a8a969e63ce_1a2077838faf9a9d3666c17a8a969e63ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a2077838faf9a9d3666c17a8a969e63ce_1a2077838faf9a9d3666c17a8a969e63ce" kindref="member">RER1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224" refid="structDW__I2S__TX__REG_aac071ae3814c2a27655b87e601629c82_1aac071ae3814c2a27655b87e601629c82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aac071ae3814c2a27655b87e601629c82_1aac071ae3814c2a27655b87e601629c82" kindref="member">TER1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225" refid="structDW__I2S__TX__REG_a442be3967ee46b26ccd33b8479607b06_1a442be3967ee46b26ccd33b8479607b06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a442be3967ee46b26ccd33b8479607b06_1a442be3967ee46b26ccd33b8479607b06" kindref="member">RCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226" refid="structDW__I2S__TX__REG_acac88f766252d0d409fa9e06cbb5c214_1acac88f766252d0d409fa9e06cbb5c214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_acac88f766252d0d409fa9e06cbb5c214_1acac88f766252d0d409fa9e06cbb5c214" kindref="member">TCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227" refid="structDW__I2S__TX__REG_aedbe852c7895ead5d0455023ad2cb993_1aedbe852c7895ead5d0455023ad2cb993" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aedbe852c7895ead5d0455023ad2cb993_1aedbe852c7895ead5d0455023ad2cb993" kindref="member">ISR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228" refid="structDW__I2S__TX__REG_a31f619045283ecde9259c1e816d6e706_1a31f619045283ecde9259c1e816d6e706" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a31f619045283ecde9259c1e816d6e706_1a31f619045283ecde9259c1e816d6e706" kindref="member">IMR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229" refid="structDW__I2S__TX__REG_a16d5915f8f6d737def1f2ef3190a5c31_1a16d5915f8f6d737def1f2ef3190a5c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a16d5915f8f6d737def1f2ef3190a5c31_1a16d5915f8f6d737def1f2ef3190a5c31" kindref="member">ROR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230" refid="structDW__I2S__TX__REG_aa2cab19b7da7c5c1d96156ffbb8b896d_1aa2cab19b7da7c5c1d96156ffbb8b896d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aa2cab19b7da7c5c1d96156ffbb8b896d_1aa2cab19b7da7c5c1d96156ffbb8b896d" kindref="member">TOR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231" refid="structDW__I2S__TX__REG_a53985f7dc3d562d824c92694aaafed42_1a53985f7dc3d562d824c92694aaafed42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a53985f7dc3d562d824c92694aaafed42_1a53985f7dc3d562d824c92694aaafed42" kindref="member">RFCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232" refid="structDW__I2S__TX__REG_a4735df3deb41ca9d4bd4a1b861c69e91_1a4735df3deb41ca9d4bd4a1b861c69e91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a4735df3deb41ca9d4bd4a1b861c69e91_1a4735df3deb41ca9d4bd4a1b861c69e91" kindref="member">TFCR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="233" refid="structDW__I2S__TX__REG_abbeb12afabc1e21143151a74c32bb4f7_1abbeb12afabc1e21143151a74c32bb4f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_abbeb12afabc1e21143151a74c32bb4f7_1abbeb12afabc1e21143151a74c32bb4f7" kindref="member">RFF1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234" refid="structDW__I2S__TX__REG_abf7501759d02e79b0798b4ad3e9a00ce_1abf7501759d02e79b0798b4ad3e9a00ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_abf7501759d02e79b0798b4ad3e9a00ce_1abf7501759d02e79b0798b4ad3e9a00ce" kindref="member">TFF1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235" refid="structDW__I2S__TX__REG_a68d9f5e4fa569fd65572aed3577f6305_1a68d9f5e4fa569fd65572aed3577f6305" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED2[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="structDW__I2S__TX__REG_aec14f4f3020eaa1bf025a49854876901_1aec14f4f3020eaa1bf025a49854876901" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aec14f4f3020eaa1bf025a49854876901_1aec14f4f3020eaa1bf025a49854876901" kindref="member">LTHR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="structDW__I2S__TX__REG_a1072dbe931287471b0be3a4006df8f52_1a1072dbe931287471b0be3a4006df8f52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a1072dbe931287471b0be3a4006df8f52_1a1072dbe931287471b0be3a4006df8f52" kindref="member">RTHR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="structDW__I2S__TX__REG_aaae3d431a5178826909abb0f02b29d78_1aaae3d431a5178826909abb0f02b29d78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aaae3d431a5178826909abb0f02b29d78_1aaae3d431a5178826909abb0f02b29d78" kindref="member">RER2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239" refid="structDW__I2S__TX__REG_aa12ceebc36c79e777990f8feabf20e73_1aa12ceebc36c79e777990f8feabf20e73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aa12ceebc36c79e777990f8feabf20e73_1aa12ceebc36c79e777990f8feabf20e73" kindref="member">TER2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240" refid="structDW__I2S__TX__REG_a607291a6a3788df3836d979ad180ee36_1a607291a6a3788df3836d979ad180ee36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a607291a6a3788df3836d979ad180ee36_1a607291a6a3788df3836d979ad180ee36" kindref="member">RCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241" refid="structDW__I2S__TX__REG_a125b76b460e3ca5ee730e9ea7f61e5e0_1a125b76b460e3ca5ee730e9ea7f61e5e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a125b76b460e3ca5ee730e9ea7f61e5e0_1a125b76b460e3ca5ee730e9ea7f61e5e0" kindref="member">TCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242" refid="structDW__I2S__TX__REG_a74121e4987c2cb797f5cff2e56ff0fb4_1a74121e4987c2cb797f5cff2e56ff0fb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a74121e4987c2cb797f5cff2e56ff0fb4_1a74121e4987c2cb797f5cff2e56ff0fb4" kindref="member">ISR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243" refid="structDW__I2S__TX__REG_ace1b0bdd5e0b7a09095e305465912045_1ace1b0bdd5e0b7a09095e305465912045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ace1b0bdd5e0b7a09095e305465912045_1ace1b0bdd5e0b7a09095e305465912045" kindref="member">IMR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244" refid="structDW__I2S__TX__REG_a98abfe89079230e39951c0e813f692de_1a98abfe89079230e39951c0e813f692de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a98abfe89079230e39951c0e813f692de_1a98abfe89079230e39951c0e813f692de" kindref="member">ROR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245" refid="structDW__I2S__TX__REG_a1c715dd95204a9c326079b8ef456d148_1a1c715dd95204a9c326079b8ef456d148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a1c715dd95204a9c326079b8ef456d148_1a1c715dd95204a9c326079b8ef456d148" kindref="member">TOR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246" refid="structDW__I2S__TX__REG_a502b65c847df5cb290573bdbd3ded77d_1a502b65c847df5cb290573bdbd3ded77d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a502b65c847df5cb290573bdbd3ded77d_1a502b65c847df5cb290573bdbd3ded77d" kindref="member">RFCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="247" refid="structDW__I2S__TX__REG_af8b4011995693c0004e5626f24fd3c56_1af8b4011995693c0004e5626f24fd3c56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_af8b4011995693c0004e5626f24fd3c56_1af8b4011995693c0004e5626f24fd3c56" kindref="member">TFCR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248" refid="structDW__I2S__TX__REG_aea4531a5d83d1b164fc9e32209679446_1aea4531a5d83d1b164fc9e32209679446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aea4531a5d83d1b164fc9e32209679446_1aea4531a5d83d1b164fc9e32209679446" kindref="member">RFF2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="249" refid="structDW__I2S__TX__REG_ae9efe277bfed3872453cd85c59365bd6_1ae9efe277bfed3872453cd85c59365bd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ae9efe277bfed3872453cd85c59365bd6_1ae9efe277bfed3872453cd85c59365bd6" kindref="member">TFF2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="250" refid="structDW__I2S__TX__REG_a4fa9556930baac5e7edcc1f1a1d8345d_1a4fa9556930baac5e7edcc1f1a1d8345d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED3[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="251" refid="structDW__I2S__TX__REG_af67017965a3454bf58c2d09c140aae9a_1af67017965a3454bf58c2d09c140aae9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_af67017965a3454bf58c2d09c140aae9a_1af67017965a3454bf58c2d09c140aae9a" kindref="member">LTHR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="252" refid="structDW__I2S__TX__REG_ad05402c11d75dfbdc7efc4a1d04b9f34_1ad05402c11d75dfbdc7efc4a1d04b9f34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ad05402c11d75dfbdc7efc4a1d04b9f34_1ad05402c11d75dfbdc7efc4a1d04b9f34" kindref="member">RTHR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253" refid="structDW__I2S__TX__REG_adc8181d785cc8bd46beacf8409f8b3a3_1adc8181d785cc8bd46beacf8409f8b3a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_adc8181d785cc8bd46beacf8409f8b3a3_1adc8181d785cc8bd46beacf8409f8b3a3" kindref="member">RER3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="254" refid="structDW__I2S__TX__REG_af325866d122c83313bca4f2335995131_1af325866d122c83313bca4f2335995131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_af325866d122c83313bca4f2335995131_1af325866d122c83313bca4f2335995131" kindref="member">TER3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="255" refid="structDW__I2S__TX__REG_a4f5db9675d5e99f0fbed40d41e415543_1a4f5db9675d5e99f0fbed40d41e415543" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a4f5db9675d5e99f0fbed40d41e415543_1a4f5db9675d5e99f0fbed40d41e415543" kindref="member">RCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256" refid="structDW__I2S__TX__REG_adc2aaec0be5d8a4366413c8ec2b07393_1adc2aaec0be5d8a4366413c8ec2b07393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_adc2aaec0be5d8a4366413c8ec2b07393_1adc2aaec0be5d8a4366413c8ec2b07393" kindref="member">TCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="257" refid="structDW__I2S__TX__REG_abc8646c4fd0d8a01e0f95d8e19869f3e_1abc8646c4fd0d8a01e0f95d8e19869f3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_abc8646c4fd0d8a01e0f95d8e19869f3e_1abc8646c4fd0d8a01e0f95d8e19869f3e" kindref="member">ISR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258" refid="structDW__I2S__TX__REG_a1f422abab90fb0b44052047151f1ddf2_1a1f422abab90fb0b44052047151f1ddf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a1f422abab90fb0b44052047151f1ddf2_1a1f422abab90fb0b44052047151f1ddf2" kindref="member">IMR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="259" refid="structDW__I2S__TX__REG_a8374cfd43e2b4ca3c2e2b6889a8b74ef_1a8374cfd43e2b4ca3c2e2b6889a8b74ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a8374cfd43e2b4ca3c2e2b6889a8b74ef_1a8374cfd43e2b4ca3c2e2b6889a8b74ef" kindref="member">ROR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="260" refid="structDW__I2S__TX__REG_a083436fba15ef5596bc6ad5af60efc7b_1a083436fba15ef5596bc6ad5af60efc7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a083436fba15ef5596bc6ad5af60efc7b_1a083436fba15ef5596bc6ad5af60efc7b" kindref="member">TOR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="261" refid="structDW__I2S__TX__REG_afdcf8a43eb1fbac2df69fd635d64c1b2_1afdcf8a43eb1fbac2df69fd635d64c1b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_afdcf8a43eb1fbac2df69fd635d64c1b2_1afdcf8a43eb1fbac2df69fd635d64c1b2" kindref="member">RFCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="262" refid="structDW__I2S__TX__REG_aece1bf1b106b64eb2aef4a957b2046aa_1aece1bf1b106b64eb2aef4a957b2046aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aece1bf1b106b64eb2aef4a957b2046aa_1aece1bf1b106b64eb2aef4a957b2046aa" kindref="member">TFCR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="263" refid="structDW__I2S__TX__REG_aeb8fb1cfeb3f7e95d97c4916749bd3a3_1aeb8fb1cfeb3f7e95d97c4916749bd3a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aeb8fb1cfeb3f7e95d97c4916749bd3a3_1aeb8fb1cfeb3f7e95d97c4916749bd3a3" kindref="member">RFF3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="264" refid="structDW__I2S__TX__REG_a05db81795ddf0b10acf9c60411fb1550_1a05db81795ddf0b10acf9c60411fb1550" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a05db81795ddf0b10acf9c60411fb1550_1a05db81795ddf0b10acf9c60411fb1550" kindref="member">TFF3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="265" refid="structDW__I2S__TX__REG_ab2ce3cc7276f1b9b08cdcb89ca0cd593_1ab2ce3cc7276f1b9b08cdcb89ca0cd593" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED4[42];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="266" refid="structDW__I2S__TX__REG_a1eb42a243de3f8b27a6f55abd9ec5024_1a1eb42a243de3f8b27a6f55abd9ec5024" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a1eb42a243de3f8b27a6f55abd9ec5024_1a1eb42a243de3f8b27a6f55abd9ec5024" kindref="member">RXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="267" refid="structDW__I2S__TX__REG_aea0a9c5560cfba55fef113a98b4eb3fc_1aea0a9c5560cfba55fef113a98b4eb3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aea0a9c5560cfba55fef113a98b4eb3fc_1aea0a9c5560cfba55fef113a98b4eb3fc" kindref="member">RRXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="268" refid="structDW__I2S__TX__REG_aa8c2a0503066b6de089eec02ae4b4018_1aa8c2a0503066b6de089eec02ae4b4018" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aa8c2a0503066b6de089eec02ae4b4018_1aa8c2a0503066b6de089eec02ae4b4018" kindref="member">TXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="269" refid="structDW__I2S__TX__REG_ab3823ad73efa29a233a70193b7fc76a9_1ab3823ad73efa29a233a70193b7fc76a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ab3823ad73efa29a233a70193b7fc76a9_1ab3823ad73efa29a233a70193b7fc76a9" kindref="member">RTXDMA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="270" refid="structDW__I2S__TX__REG_ac8ad1ce0924cbb3ac48504eea8aff31b_1ac8ad1ce0924cbb3ac48504eea8aff31b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED5[8];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="271" refid="structDW__I2S__TX__REG_a7bf32b738461f59acbe9995bce584c52_1a7bf32b738461f59acbe9995bce584c52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a7bf32b738461f59acbe9995bce584c52_1a7bf32b738461f59acbe9995bce584c52" kindref="member">I2S_COMP_PARAM_2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272" refid="structDW__I2S__TX__REG_a11565b4ab0a73785cab56fae2c777deb_1a11565b4ab0a73785cab56fae2c777deb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_a11565b4ab0a73785cab56fae2c777deb_1a11565b4ab0a73785cab56fae2c777deb" kindref="member">I2S_COMP_PARAM_1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="273" refid="structDW__I2S__TX__REG_aaedbbf31806fa153522f081355deb34e_1aaedbbf31806fa153522f081355deb34e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_aaedbbf31806fa153522f081355deb34e_1aaedbbf31806fa153522f081355deb34e" kindref="member">I2S_COMP_VERSION</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="274" refid="structDW__I2S__TX__REG_ae0fe198503dc88d5809c15d54749a9d1_1ae0fe198503dc88d5809c15d54749a9d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__TX__REG_ae0fe198503dc88d5809c15d54749a9d1_1ae0fe198503dc88d5809c15d54749a9d1" kindref="member">I2S_COMP_TYPE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}<sp/><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref>,<sp/>*<ref refid="group__DEVICE__DW__I2S__REGSTRUCT_gaa2affc196dc6e0b3f0a833b7533cdc93_1gaa2affc196dc6e0b3f0a833b7533cdc93" kindref="member">DW_I2S_TX_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="278" refid="structDW__I2S__BUFFER" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DW_I2S_DATA_LENGTH_16</highlight></codeline>
+<codeline lineno="280" refid="structDW__I2S__BUFFER_a191850b854af1d3ad4a513fa9c24cbe6_1a191850b854af1d3ad4a513fa9c24cbe6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>*<ref refid="structDW__I2S__BUFFER_a191850b854af1d3ad4a513fa9c24cbe6_1a191850b854af1d3ad4a513fa9c24cbe6" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*buf;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="284" refid="structDW__I2S__BUFFER_a74ee06bb8c7806144d61ebdfb501db4d_1a74ee06bb8c7806144d61ebdfb501db4d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__BUFFER_a74ee06bb8c7806144d61ebdfb501db4d_1a74ee06bb8c7806144d61ebdfb501db4d" kindref="member">ofs</ref>;</highlight></codeline>
+<codeline lineno="285" refid="structDW__I2S__BUFFER_aa772356b8a93222607955ba3408d8ec0_1aa772356b8a93222607955ba3408d8ec0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__BUFFER_aa772356b8a93222607955ba3408d8ec0_1aa772356b8a93222607955ba3408d8ec0" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}<sp/><ref refid="structDW__I2S__BUFFER" kindref="compound">DW_I2S_BUFFER</ref>,<sp/>*<ref refid="dw__i2s_8h_a49d6745163a9a887749140d39e1d6421_1a49d6745163a9a887749140d39e1d6421" kindref="member">DW_I2S_BUFFER_PTR</ref>;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="structDW__I2S__CONFIG" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="289" refid="structDW__I2S__CONFIG_af1e589180d7fda28a8feb648addf031d_1af1e589180d7fda28a8feb648addf031d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__CONFIG_af1e589180d7fda28a8feb648addf031d_1af1e589180d7fda28a8feb648addf031d" kindref="member">support_modes</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="290" refid="structDW__I2S__CONFIG_acea92260d4b8522dfb6bc660aa1948dc_1acea92260d4b8522dfb6bc660aa1948dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__CONFIG_acea92260d4b8522dfb6bc660aa1948dc_1acea92260d4b8522dfb6bc660aa1948dc" kindref="member">fifo_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="291" refid="structDW__I2S__CONFIG_a852b10fc415707d720388d7343ea7e14_1a852b10fc415707d720388d7343ea7e14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__CONFIG_a852b10fc415707d720388d7343ea7e14_1a852b10fc415707d720388d7343ea7e14" kindref="member">channels</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Master<sp/>mode<sp/>only,<sp/>clock<sp/>generation,<sp/>not<sp/>available<sp/>in<sp/>slave<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="structDW__I2S__CONFIG_aff690e3b6156cdd4f7b5658505fce4d3_1aff690e3b6156cdd4f7b5658505fce4d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__CONFIG_aff690e3b6156cdd4f7b5658505fce4d3_1aff690e3b6156cdd4f7b5658505fce4d3" kindref="member">ws_length</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="294" refid="structDW__I2S__CONFIG_a6ddf1dd5d43186ab77ea2fd3c275a114_1a6ddf1dd5d43186ab77ea2fd3c275a114" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__I2S__CONFIG_a6ddf1dd5d43186ab77ea2fd3c275a114_1a6ddf1dd5d43186ab77ea2fd3c275a114" kindref="member">sclk_gate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Channel<sp/>setting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="structDW__I2S__CONFIG_aa8688ff54ffa372f8452d86408ba7cea_1aa8688ff54ffa372f8452d86408ba7cea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>data_res[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="297" refid="structDW__I2S__CONFIG_ab8803927a145fa29778fe67ca0736f96_1ab8803927a145fa29778fe67ca0736f96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>sample_rate[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="298" refid="structDW__I2S__CONFIG_a0ad496c8cee77a7232eb7efe7ed9783e_1a0ad496c8cee77a7232eb7efe7ed9783e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>intno[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="299" refid="structDW__I2S__CONFIG_aeccdf39e96327fb65bc9fa1e46e24846_1aeccdf39e96327fb65bc9fa1e46e24846" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="structDW__I2S__CONFIG_aeccdf39e96327fb65bc9fa1e46e24846_1aeccdf39e96327fb65bc9fa1e46e24846" kindref="member">dw_i2s_int_handler</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="normal">}<sp/><ref refid="structDW__I2S__CONFIG" kindref="compound">DW_I2S_CONFIG</ref>,<sp/>*<ref refid="dw__i2s_8h_a61f41e3da56214c709bde2284c1e9424_1a61f41e3da56214c709bde2284c1e9424" kindref="member">DW_I2S_CONFIG_PTR</ref>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="structDW__I2S__RX__CTRL" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307" refid="structDW__I2S__RX__CTRL_afb01016105a1a896e17686f9fd16f8b0_1afb01016105a1a896e17686f9fd16f8b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__I2S__RX__REG" kindref="compound">DW_I2S_RX_REG</ref><sp/>*<ref refid="structDW__I2S__RX__CTRL_afb01016105a1a896e17686f9fd16f8b0_1afb01016105a1a896e17686f9fd16f8b0" kindref="member">dw_i2s_regs</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>I2S<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="structDW__I2S__RX__CTRL_ab8743d98e0bc43dff25d7baa08ca54bd_1ab8743d98e0bc43dff25d7baa08ca54bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>int_status[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="310" refid="structDW__I2S__RX__CTRL_a80bf19f67393485c3bee5c31345ad396_1a80bf19f67393485c3bee5c31345ad396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__I2S__BUFFER" kindref="compound">DW_I2S_BUFFER</ref><sp/><ref refid="structDW__I2S__RX__CTRL_a80bf19f67393485c3bee5c31345ad396_1a80bf19f67393485c3bee5c31345ad396" kindref="member">dw_i2s_buf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}<sp/><ref refid="structDW__I2S__RX__CTRL" kindref="compound">DW_I2S_RX_CTRL</ref>,<sp/>*<ref refid="dw__i2s_8h_a772471cf6a1971fd3f4acd54e589fb3a_1a772471cf6a1971fd3f4acd54e589fb3a" kindref="member">DW_I2S_RX_CTRL_PTR</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="structDW__I2S__TX__CTRL" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="314" refid="structDW__I2S__TX__CTRL_ad15eefba2abe45d8acbbf8bbf3c682db_1ad15eefba2abe45d8acbbf8bbf3c682db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__I2S__TX__REG" kindref="compound">DW_I2S_TX_REG</ref><sp/>*<ref refid="structDW__I2S__TX__CTRL_ad15eefba2abe45d8acbbf8bbf3c682db_1ad15eefba2abe45d8acbbf8bbf3c682db" kindref="member">dw_i2s_regs</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>I2S<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="structDW__I2S__TX__CTRL_a4b26a1ebcf293485f9ae280e93748671_1a4b26a1ebcf293485f9ae280e93748671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>int_status[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="317" refid="structDW__I2S__TX__CTRL_a5aec5b824aff760939b80a10bf9d8956_1a5aec5b824aff760939b80a10bf9d8956" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__I2S__BUFFER" kindref="compound">DW_I2S_BUFFER</ref><sp/><ref refid="structDW__I2S__TX__CTRL_a5aec5b824aff760939b80a10bf9d8956_1a5aec5b824aff760939b80a10bf9d8956" kindref="member">dw_i2s_buf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}<sp/><ref refid="structDW__I2S__TX__CTRL" kindref="compound">DW_I2S_TX_CTRL</ref>,<sp/>*<ref refid="dw__i2s_8h_a4a16024795c14e10560bac1d4c23f282_1a4a16024795c14e10560bac1d4c23f282" kindref="member">DW_I2S_TX_CTRL_PTR</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="331"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_ga6a4534490dd26815ce82893adb36867c_1ga6a4534490dd26815ce82893adb36867c" kindref="member">dw_i2s_open</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/>uint32_t<sp/>mode,<sp/>uint32_t<sp/>param);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_ga9d7c24093650665f8fa04e3548b9f713_1ga9d7c24093650665f8fa04e3548b9f713" kindref="member">dw_i2s_close</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_ga8366ac5ab4d9028eaa17b5d7fadaa83a_1ga8366ac5ab4d9028eaa17b5d7fadaa83a" kindref="member">dw_i2s_control</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/>uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_gafefa16859094c71c6aa91918acc3a017_1gafefa16859094c71c6aa91918acc3a017" kindref="member">dw_i2s_write</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len,<sp/>uint32_t<sp/>channel);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_ga1d9ef7056c96a5d52a6fe3ef1cb132e4_1ga1d9ef7056c96a5d52a6fe3ef1cb132e4" kindref="member">dw_i2s_read</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len,<sp/>uint32_t<sp/>channel);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_gaf4cb924b26c2588b8bdd238961413636_1gaf4cb924b26c2588b8bdd238961413636" kindref="member">dw_i2s_isr_tx</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_ga7b75a256555426e52cf2584c78b98c7b_1ga7b75a256555426e52cf2584c78b98c7b" kindref="member">dw_i2s_isr_rx</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="group__DEVICE__DW__I2S__FUNCDLR_ga9b58616b1e26b104116830e8e1ad6ff9_1ga9b58616b1e26b104116830e8e1ad6ff9" kindref="member">dw_i2s_write2</ref>(<ref refid="structDEV__I2S" kindref="compound">DEV_I2S</ref><sp/>*i2s_obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len,<sp/>uint32_t<sp/>channel);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="340"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="342"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="345"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_DW_I2S<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h"/>
+  </compounddef>
+</doxygen>

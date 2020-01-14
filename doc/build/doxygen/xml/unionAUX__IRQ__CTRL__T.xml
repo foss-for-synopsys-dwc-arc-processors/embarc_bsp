@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="unionAUX__IRQ__CTRL__T" kind="union" prot="public">
+    <compoundname>AUX_IRQ_CTRL_T</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" prot="public" static="no" mutable="no">
+        <type><ref refid="structAUX__IRQ__CTRL__FIELD__T" kindref="compound">AUX_IRQ_CTRL_FIELD_T</ref></type>
+        <definition>AUX_IRQ_CTRL_FIELD_T AUX_IRQ_CTRL_T::bits</definition>
+        <argsstring></argsstring>
+        <name>bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="380" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionAUX__IRQ__CTRL__T_a81cc8f12d8b2033b1480750e62f0acfe_1a81cc8f12d8b2033b1480750e62f0acfe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t AUX_IRQ_CTRL_T::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="381" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>AUX_IRQ_CTRL_T</label>
+        <link refid="unionAUX__IRQ__CTRL__T"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>bits</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>AUX_IRQ_CTRL_FIELD_T</label>
+        <link refid="structAUX__IRQ__CTRL__FIELD__T"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" line="379" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_exception.c" bodystart="379" bodyend="382"/>
+    <listofallmembers>
+      <member refid="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401" prot="public" virt="non-virtual"><scope>AUX_IRQ_CTRL_T</scope><name>bits</name></member>
+      <member refid="unionAUX__IRQ__CTRL__T_a81cc8f12d8b2033b1480750e62f0acfe_1a81cc8f12d8b2033b1480750e62f0acfe" prot="public" virt="non-virtual"><scope>AUX_IRQ_CTRL_T</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1099 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__DW__SPI__STATIC" kind="group">
+    <compoundname>DEVICE_DW_SPI_STATIC</compoundname>
+    <title>DesignWare SPI Driver Static Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gac5a413f173a25179fabf7f5726e63c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_disable</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_disable</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware spi device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>disable spi operations, then program spi control regs is possible </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga3d102505fc7dea8b022bd41ee86d5246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_enable</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_enable</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable designware spi device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gabf6b1ea5c40b9ce221ed16fd7f12350e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_clear_interrupt_all</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_clear_interrupt_all</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Clear all designware spi interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="96" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gade7dfe635281327152308641f4db368d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_busy</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_busy</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Test whether spi is busy, busy return 1, else 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga8b555460a156bca77b3e07e20b3ba563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_putready</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_putready</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Test whether spi is ready to send, 1 ready, 0 not ready. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga1574839beed1d75375a6f878e753f02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_getready</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_getready</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Test whether spi is read to receive, 1 ready, 0 not ready. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="123" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga128e320e17a1b6300ffa3eab2242e4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_putdata</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, int32_t data)</argsstring>
+        <name>dw_spi_putdata</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write data to spi send fifo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="132" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga1ccdbe6dc3fbe1cc4b2cef570350323e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_getdata</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_getdata</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Read data from spi receive fifo, return data received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="141" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga638f34f5493b8b926219107174024a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_rxflr</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_rxflr</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get receive FIFO level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="150" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gacc31244dbc640d9887d00d6f98fe8f4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_snd_dat</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, int32_t data)</argsstring>
+        <name>dw_spi_snd_dat</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Send data through designware spi when available, mostly used in interrupt method, non-blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to sent </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Send successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not ready to send data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="163" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="163" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga8c69a9aeecc32d61ed233bff0ee0a4bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_rcv_dat</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_rcv_dat</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Receive one char through designware spi, mostly used in interrupt routine, non-blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi register structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data received </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="178" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gad49475886568ca2f50b198c622b63827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_psnd_dat</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, int32_t data)</argsstring>
+        <name>dw_spi_psnd_dat</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Send char through designware spi spi in poll method, blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi register structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>wait until spi is ready to send</para><para>send char </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="188" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="188" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga7c5cef7f9cbcca66954ed17beae9b125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>int32_t dw_spi_prcv_dat</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_prcv_dat</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Receive one char through designware spi in poll method, blocked function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_reg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi register structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data received </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>wait until spi is ready to receive</para><para>receive data </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="203" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="203" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga607bbb5d7acd55a7d6f93c3cb94c4dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_reset_fifo</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_reset_fifo</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Reset designware FIFO by disable spi device, then enable device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="217" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="217" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga58c120c6ece0bd5541aa0f6aa38eff5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_unmask_interrupt</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t mask)</argsstring>
+        <name>dw_spi_unmask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Enable designware spi bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="227" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gaee3de352d78492c0775ad9f48eb032fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_mask_interrupt</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t mask)</argsstring>
+        <name>dw_spi_mask_interrupt</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware spi bit interrupt with mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="236" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gae1eb207f375f859d9a731762eecaa822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>void dw_spi_set_freq</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr, uint32_t freq)</argsstring>
+        <name>dw_spi_set_freq</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Set designware spi device frequency. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="245" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="245" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga0305ff165506cdfe268f93fddbb1b2ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_set_dfs</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t dfs)</argsstring>
+        <name>dw_spi_set_dfs</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dfs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set designware spi device data frame size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="258" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="258" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gac52a17a3ec0fc0dbec50daee59426ffb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_quad_enable</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t len)</argsstring>
+        <name>dw_spi_quad_enable</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Designware spi enable quad mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="276" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="276" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga42e730391dc4891287d3a9ddd15d7920" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_quad_disable</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_quad_disable</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Designware spi disable quad mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="289" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="289" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga042199c4dae99c4f4c05220920640fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>Inline uint32_t dw_spi_select_clockmode</definition>
+        <argsstring>(uint32_t clk_mode)</argsstring>
+        <name>dw_spi_select_clockmode</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>clk_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Choose proper designware spi clock mode setting value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="301" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga31292fa0db0de072a31990cc62cbca34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>Inline int32_t dw_spi_set_clockmode</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t clk_mode)</argsstring>
+        <name>dw_spi_set_clockmode</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>clk_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set designware spi clock mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="307" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="307" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga63eb95bacc25186e3eb8efe1d0b71e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>Inline int32_t dw_spi_select_slave</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t slv_line)</argsstring>
+        <name>dw_spi_select_slave</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>slv_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select a spi slave with slv_line </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="320" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="320" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gae4cc5085c6555d4db1a5da73a37b6b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>Inline int32_t dw_spi_deselect_slave</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr, uint32_t slv_line)</argsstring>
+        <name>dw_spi_deselect_slave</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>slv_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deselect a spi device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="332" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="332" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga96aacdb7837ffa85d29316d0353a6eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>Inline void dw_spi_flush_tx</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_flush_tx</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="343" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="343" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga67b49a11ba7c2b451eaf3b2e03d8c1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> void</type>
+        <definition>Inline void dw_spi_flush_rx</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_flush_rx</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="348" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gab58ca6d48a92dadc758331f003fc600b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_spi_get_txfifo_len</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_get_txfifo_len</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get TX FIFO Length. calculate spi fifo length using fifo threshold method If you attempt to set bits [7:0] of this register to a value greater than or equal to the depth of the FIFO, this field is not written and retains its current value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="359" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="359" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga8460c33d165bd1a5fa7bfb795dff601c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_spi_get_rxfifo_len</definition>
+        <argsstring>(DW_SPI_REG *spi_reg_ptr)</argsstring>
+        <name>dw_spi_get_rxfifo_len</name>
+        <param>
+          <type><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+          <declname>spi_reg_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get RX FIFO Length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="384" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="384" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gae1df8a16591d7e2a7744d699de4157c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_hw_init</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr, uint32_t clk_mode, uint32_t dfs)</argsstring>
+        <name>dw_spi_hw_init</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>clk_mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dfs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init Designware SPI Hardware </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="409" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="409" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga5b25570c15c5d064e21031800cf5cccb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_enable_device</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_enable_device</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable designware spi </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="439" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="439" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gace3bd3b6506c4760269a03c564dc65df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_disable_device</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_disable_device</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable designware spi </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="451" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="451" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga164c2e79cf1a1d57e49b1c892786c042" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_dis_cbr</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_spi_dis_cbr</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware spi send or receive interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Informations about spi open state, working state, frequency, spi registers, working method, interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbrtn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control code of callback routine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to transfer callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="466" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="466" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga51bf6f3fc316c5ac639067bd49fee9b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_ena_cbr</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr, uint32_t cbrtn)</argsstring>
+        <name>dw_spi_ena_cbr</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cbrtn</declname>
+        </param>
+        <briefdescription>
+<para>Enable DesignWare SPI send or receive interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Informations about spi open state, working state, frequency, spi registers, working method, interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbrtn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control code of callback routine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to transfer callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="509" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="509" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gad6f89c07ba3b763e316f4e297b70eda0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_enable_interrupt</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_enable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Enable designware spi interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spi_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi information structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>enable spi interrupt </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="545" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="545" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gad615e4453364c290e8e06b4ebdbf0aa4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_disable_interrupt</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_disable_interrupt</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Disable designware spi interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spi_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dpi information structure pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>disable spi send&amp;receive interrupt after disable spi interrupt</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to transfer callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="562" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="562" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gaa306d69ca7514fd5c7c160fb6aca28a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_reset_device</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_reset_device</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="579" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="579" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga13376fc00966113150380726f41066f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_abort_tx</definition>
+        <argsstring>(DEV_SPI *spi_obj)</argsstring>
+        <name>dw_spi_abort_tx</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt transmit transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="591" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="591" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga99b253b213971a4cdcb3677f9b93d4ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_abort_rx</definition>
+        <argsstring>(DEV_SPI *spi_obj)</argsstring>
+        <name>dw_spi_abort_rx</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt receive transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to receive callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="611" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="611" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gaa9b6277c2a4ded8ccd4cc9e601dcc33d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_abort_xfer</definition>
+        <argsstring>(DEV_SPI *spi_obj)</argsstring>
+        <name>dw_spi_abort_xfer</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>abort current interrupt transfer </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to transfer callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="631" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="631" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gabfa72f8accdb54ab0c2d6aebbe469be6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_get_txavail</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_get_txavail</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get available transmit fifo count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="651" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="651" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga36dd7f3211fb20f63692bcee25178b77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_get_rxavail</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_get_rxavail</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get available receive fifo count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="672" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="672" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga57af6bb980a7fc8003c99b1c287512ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_spi_tx_max</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_tx_max</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="692" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="692" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gafe592af77f3c9da0160f8851dcf32d60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_spi_rx_max</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_rx_max</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="703" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="703" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga634a143544833eb6f3179956b345cfe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>Inline int32_t dw_spi_rx_end</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_rx_end</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="714" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="714" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gae2de4657d30e89fd6c42fe88c3dc8d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>Inline int32_t dw_spi_tx_end</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_tx_end</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="721" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="721" bodyend="726"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gaa78a44d250f82a25816239312035ebef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> int32_t</type>
+        <definition>Inline int32_t dw_spi_xfer_end</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr)</argsstring>
+        <name>dw_spi_xfer_end</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1 for end, 0 for not end </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="729" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="729" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga574e4d20c13b6d5d9e0de2d8b931cb2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_writer</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_writer</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="734" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="734" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gaba8ea5cdec6cb3dfdc3eb8b282f5fedc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_reader</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_reader</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="772" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="772" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gadefb6ed8358e251dfff391f83a3b3982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__TOOLCHAIN_ga66ac72ac51eb46131f009dfe028123e7_1ga66ac72ac51eb46131f009dfe028123e7" kindref="member">Inline</ref> uint32_t</type>
+        <definition>Inline uint32_t dw_spi_nbytes</definition>
+        <argsstring>(uint32_t dfs)</argsstring>
+        <name>dw_spi_nbytes</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>dfs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="808" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="808" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga27248c2c4699a3d5bf2636dcf1e23768" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_spi_init_transfer</definition>
+        <argsstring>(DW_SPI_CTRL *spi_ctrl_ptr, DEV_SPI_TRANSFER *xfer, uint32_t dfs)</argsstring>
+        <name>dw_spi_init_transfer</name>
+        <param>
+          <type><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+          <declname>spi_ctrl_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga296ca50563d3df910743a6c1001946c6_1ga296ca50563d3df910743a6c1001946c6" kindref="member">DEV_SPI_TRANSFER</ref> *</type>
+          <declname>xfer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dfs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calculate all transfer length </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="818" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="818" bodyend="836"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1ga8c953586f2545b558dfa24248ea5ac07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_spi_chk_xfer_aligned</definition>
+        <argsstring>(DEV_SPI_TRANSFER *xfer, uint32_t dfs)</argsstring>
+        <name>dw_spi_chk_xfer_aligned</name>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga296ca50563d3df910743a6c1001946c6_1ga296ca50563d3df910743a6c1001946c6" kindref="member">DEV_SPI_TRANSFER</ref> *</type>
+          <declname>xfer</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>dfs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="839" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="839" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gaa46331b8e4916df9b5fd358a8e4aa6d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_spi_poll_transfer</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr)</argsstring>
+        <name>dw_spi_poll_transfer</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="883" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="883" bodyend="896"/>
+      </memberdef>
+      <memberdef kind="function" id="group__DEVICE__DW__SPI__STATIC_1gac877de39c7f5ddd12bc520056d6ac825" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t dw_spi_quad_receive</definition>
+        <argsstring>(DEV_SPI_INFO *spi_info_ptr, DEV_SPI_PAK_PTR pak)</argsstring>
+        <name>dw_spi_quad_receive</name>
+        <param>
+          <type><ref refid="structDEV__SPI__INFO" kindref="compound">DEV_SPI_INFO</ref> *</type>
+          <declname>spi_info_ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="group__DEVICE__HAL__SPI__DEVSTRUCT_ga9c2b7129610aeae9da3fd46ab8dc9f36_1ga9c2b7129610aeae9da3fd46ab8dc9f36" kindref="member">DEV_SPI_PAK_PTR</ref></type>
+          <declname>pak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" line="898" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="898" bodyend="934"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static or inline functions, variables for DesignWare SPI handle SPI operations, only used in this file. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

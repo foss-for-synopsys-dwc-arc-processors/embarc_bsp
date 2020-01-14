@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structSDIO__DATA" kind="struct" prot="public">
+    <compoundname>SDIO_DATA</compoundname>
+    <includes refid="dev__sdio_8h" local="no">dev_sdio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSDIO__DATA_a53d9cb7a2df2840d48a0f83ca2f9df8b_1a53d9cb7a2df2840d48a0f83ca2f9df8b" prot="public" static="no" mutable="no">
+        <type>union SDIO_DATA::@2</type>
+        <definition>union SDIO_DATA::@2 SDIO_DATA::@3</definition>
+        <argsstring></argsstring>
+        <name>@3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSDIO__DATA_a5f8b2eef471481db2b28303542619bce_1a5f8b2eef471481db2b28303542619bce" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DATA::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSDIO__DATA_a17b42fe09b32d941cfb69e5c7217c5e6_1a17b42fe09b32d941cfb69e5c7217c5e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DATA::blkcnt</definition>
+        <argsstring></argsstring>
+        <name>blkcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="83" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSDIO__DATA_a781bd8e2fd65cad5560826f04d6a4408_1a781bd8e2fd65cad5560826f04d6a4408" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SDIO_DATA::blksz</definition>
+        <argsstring></argsstring>
+        <name>blksz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="84" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" line="77" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_sdio.h" bodystart="77" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structSDIO__DATA_a17b42fe09b32d941cfb69e5c7217c5e6_1a17b42fe09b32d941cfb69e5c7217c5e6" prot="public" virt="non-virtual"><scope>SDIO_DATA</scope><name>blkcnt</name></member>
+      <member refid="structSDIO__DATA_a781bd8e2fd65cad5560826f04d6a4408_1a781bd8e2fd65cad5560826f04d6a4408" prot="public" virt="non-virtual"><scope>SDIO_DATA</scope><name>blksz</name></member>
+      <member refid="structSDIO__DATA_a5f8b2eef471481db2b28303542619bce_1a5f8b2eef471481db2b28303542619bce" prot="public" virt="non-virtual"><scope>SDIO_DATA</scope><name>flags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

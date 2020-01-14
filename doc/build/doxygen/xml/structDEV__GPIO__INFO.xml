@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__GPIO__INFO" kind="struct" prot="public">
+    <compoundname>DEV_GPIO_INFO</compoundname>
+    <includes refid="dev__gpio_8h" local="no">dev_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__GPIO__INFO_a403704fe2eb6a93f6957a60233ce9cad_1a403704fe2eb6a93f6957a60233ce9cad" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_GPIO_INFO::gpio_ctrl</definition>
+        <argsstring></argsstring>
+        <name>gpio_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio control related pointer, implemented by bsp developer, and this should be set during gpio object implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="380" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INFO_af594668a9999e9ade09803dabdb017c6_1af594668a9999e9ade09803dabdb017c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INFO::opn_cnt</definition>
+        <argsstring></argsstring>
+        <name>opn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio open count, open it will increase 1, close it will decrease 1, 0 for close, &gt;0 for open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="381" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INFO_a83a0badfabca52ef673b19f282e5708a_1a83a0badfabca52ef673b19f282e5708a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INFO::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>each bit direction of this GPIO, default all <ref refid="group__DEVICE__HAL__GPIO__DEFDIR_ga4956087e24b3fc0ccf1f667b74cb967f_1ga4956087e24b3fc0ccf1f667b74cb967f" kindref="member">input</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="382" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INFO_ab0758e814b44eaf425cddb6eeb2ce2f7_1ab0758e814b44eaf425cddb6eeb2ce2f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INFO::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>int/poll method for each bit of GPIO, 0 for poll, 1 for interrupt, default all <ref refid="group__DEVICE__HAL__COMMON__DEVMTHD_ga8c26618746280e13545b7b45f59d75b3_1ga8c26618746280e13545b7b45f59d75b3" kindref="member">poll</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="383" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INFO_a6851182a2a6448f0a763992c40f53632_1a6851182a2a6448f0a763992c40f53632" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_GPIO_INFO::bitofs</definition>
+        <argsstring></argsstring>
+        <name>bitofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current in response interrupt pin offset </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="384" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__GPIO__INFO_a5a12d17333115ea52b78b92271ef0c30_1a5a12d17333115ea52b78b92271ef0c30" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_GPIO_INFO::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a extra pointer to get hook to applications which should not used by bsp developer, this should be NULL for first open and you can <ref refid="group__DEVICE__HAL__GPIO__DEVSTRUCT_gaec3eaf5c7fa6d44a27e58e65a864d8ac_1gaec3eaf5c7fa6d44a27e58e65a864d8ac" kindref="member">set</ref> or <ref refid="group__DEVICE__HAL__GPIO__DEVSTRUCT_gaf04d0e5061e455cf4a79b2eea7d26b4f_1gaf04d0e5061e455cf4a79b2eea7d26b4f" kindref="member">get</ref> the extra information pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="385" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Gpio information struct definition. </para>    </briefdescription>
+    <detaileddescription>
+<para>Informations about gpio open count, working status gpio registers and control block, gpio io direction and interrupt/poll for each bit of gpio <simplesect kind="note"><para>Only available for gpio with max 32bits </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" line="379" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_gpio.h" bodystart="379" bodyend="388"/>
+    <listofallmembers>
+      <member refid="structDEV__GPIO__INFO_a6851182a2a6448f0a763992c40f53632_1a6851182a2a6448f0a763992c40f53632" prot="public" virt="non-virtual"><scope>DEV_GPIO_INFO</scope><name>bitofs</name></member>
+      <member refid="structDEV__GPIO__INFO_a83a0badfabca52ef673b19f282e5708a_1a83a0badfabca52ef673b19f282e5708a" prot="public" virt="non-virtual"><scope>DEV_GPIO_INFO</scope><name>direction</name></member>
+      <member refid="structDEV__GPIO__INFO_a5a12d17333115ea52b78b92271ef0c30_1a5a12d17333115ea52b78b92271ef0c30" prot="public" virt="non-virtual"><scope>DEV_GPIO_INFO</scope><name>extra</name></member>
+      <member refid="structDEV__GPIO__INFO_a403704fe2eb6a93f6957a60233ce9cad_1a403704fe2eb6a93f6957a60233ce9cad" prot="public" virt="non-virtual"><scope>DEV_GPIO_INFO</scope><name>gpio_ctrl</name></member>
+      <member refid="structDEV__GPIO__INFO_ab0758e814b44eaf425cddb6eeb2ce2f7_1ab0758e814b44eaf425cddb6eeb2ce2f7" prot="public" virt="non-virtual"><scope>DEV_GPIO_INFO</scope><name>method</name></member>
+      <member refid="structDEV__GPIO__INFO_af594668a9999e9ade09803dabdb017c6_1af594668a9999e9ade09803dabdb017c6" prot="public" virt="non-virtual"><scope>DEV_GPIO_INFO</scope><name>opn_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

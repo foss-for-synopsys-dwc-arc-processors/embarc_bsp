@@ -1,0 +1,924 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dw__spi_8h" kind="file">
+    <compoundname>dw_spi.h</compoundname>
+    <includes refid="dev__spi_8h" local="yes">device/ip_hal/dev_spi.h</includes>
+    <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
+    <includedby refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.h</includedby>
+    <includedby refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/spi/dw_spi_obj.c</includedby>
+    <includedby refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/spi/dw_spi_obj.c</includedby>
+    <includedby refid="dw__spi_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c</includedby>
+    <incdepgraph>
+      <node id="4301">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4297">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="4298" relation="include">
+        </childnode>
+        <childnode refid="4299" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+      </node>
+      <node id="4298">
+        <label>stdint.h</label>
+      </node>
+      <node id="4300">
+        <label>stddef.h</label>
+      </node>
+      <node id="4304">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4305" relation="include">
+        </childnode>
+      </node>
+      <node id="4299">
+        <label>limits.h</label>
+      </node>
+      <node id="4305">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4294">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h</label>
+        <link refid="dw_spi.h"/>
+        <childnode refid="4295" relation="include">
+        </childnode>
+        <childnode refid="4302" relation="include">
+        </childnode>
+      </node>
+      <node id="4296">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="4297" relation="include">
+        </childnode>
+      </node>
+      <node id="4302">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="4303" relation="include">
+        </childnode>
+      </node>
+      <node id="4303">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4297" relation="include">
+        </childnode>
+        <childnode refid="4304" relation="include">
+        </childnode>
+      </node>
+      <node id="4295">
+        <label>device/ip_hal/dev_spi.h</label>
+        <link refid="dev__spi_8h"/>
+        <childnode refid="4296" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4320">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4318">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4312">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="4308">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4307">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h"/>
+        <childnode refid="4308" relation="include">
+        </childnode>
+        <childnode refid="4309" relation="include">
+        </childnode>
+      </node>
+      <node id="4317">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4315">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4321">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4319">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="4306">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h</label>
+        <link refid="dw_spi.h"/>
+        <childnode refid="4307" relation="include">
+        </childnode>
+        <childnode refid="4321" relation="include">
+        </childnode>
+        <childnode refid="4322" relation="include">
+        </childnode>
+        <childnode refid="4323" relation="include">
+        </childnode>
+      </node>
+      <node id="4311">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4323">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c</label>
+        <link refid="dw__spi_8c"/>
+      </node>
+      <node id="4322">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4314">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="4313">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4316">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="4309">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="4310" relation="include">
+        </childnode>
+        <childnode refid="4311" relation="include">
+        </childnode>
+        <childnode refid="4308" relation="include">
+        </childnode>
+        <childnode refid="4312" relation="include">
+        </childnode>
+        <childnode refid="4313" relation="include">
+        </childnode>
+        <childnode refid="4314" relation="include">
+        </childnode>
+        <childnode refid="4315" relation="include">
+        </childnode>
+        <childnode refid="4316" relation="include">
+        </childnode>
+        <childnode refid="4317" relation="include">
+        </childnode>
+        <childnode refid="4318" relation="include">
+        </childnode>
+        <childnode refid="4319" relation="include">
+        </childnode>
+        <childnode refid="4320" relation="include">
+        </childnode>
+      </node>
+      <node id="4310">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structDW__SPI__REG" prot="public">DW_SPI_REG</innerclass>
+    <innerclass refid="structDW__SPI__TRANSFER" prot="public">DW_SPI_TRANSFER</innerclass>
+    <innerclass refid="structDW__SPI__CTRL" prot="public">DW_SPI_CTRL</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dw__spi_8h_a3219a67a16a9349fd06b41b6b9b78305_1a3219a67a16a9349fd06b41b6b9b78305" prot="public" static="no">
+        <name>DEVICE_USE_DESIGNWARE_SPI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>if this header file is included, will indicate that this designware spi device is used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="42" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_ae0674a14c1a55c5b9b834ff7ed16fc49_1ae0674a14c1a55c5b9b834ff7ed16fc49" prot="public" static="no">
+        <name>DW_SPI_IN_FREE</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently not in spi transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="44" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_a6793bee0d1f51691b6d80f1f92690cc4_1a6793bee0d1f51691b6d80f1f92690cc4" prot="public" static="no">
+        <name>DW_SPI_IN_XFER</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gabad4496cce1f1daecb643321f0c65286_1gabad4496cce1f1daecb643321f0c65286" kindref="member">DEV_IN_TX</ref> | <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gabbf3025ea5ac97af532f1735226689f7_1gabbf3025ea5ac97af532f1735226689f7" kindref="member">DEV_IN_RX</ref> | <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga471d6e17a6848dc8df3da0ef27f50a83_1ga471d6e17a6848dc8df3da0ef27f50a83" kindref="member">DEV_IN_XFER</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently in spi transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="45" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_a20ef158f51cdec992a7d22c2c9b09ebf_1a20ef158f51cdec992a7d22c2c9b09ebf" prot="public" static="no">
+        <name>DW_SPI_IN_TX</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gabad4496cce1f1daecb643321f0c65286_1gabad4496cce1f1daecb643321f0c65286" kindref="member">DEV_IN_TX</ref> | <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga471d6e17a6848dc8df3da0ef27f50a83_1ga471d6e17a6848dc8df3da0ef27f50a83" kindref="member">DEV_IN_XFER</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently in spi tx </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="46" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_a3921c31f1201baf78aadbdd70d678139_1a3921c31f1201baf78aadbdd70d678139" prot="public" static="no">
+        <name>DW_SPI_IN_RX</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gabbf3025ea5ac97af532f1735226689f7_1gabbf3025ea5ac97af532f1735226689f7" kindref="member">DEV_IN_RX</ref> | <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_ga471d6e17a6848dc8df3da0ef27f50a83_1ga471d6e17a6848dc8df3da0ef27f50a83" kindref="member">DEV_IN_XFER</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently in spi rx </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="47" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_a08c7d007c718ca0e5f970eb39465d14b_1a08c7d007c718ca0e5f970eb39465d14b" prot="public" static="no">
+        <name>DW_SPI_GINT_DISABLED</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware interrupt disabled for control spi irq/fiq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="49" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_a73f28b7bbe5718335de15f075a87ba4b_1a73f28b7bbe5718335de15f075a87ba4b" prot="public" static="no">
+        <name>DW_SPI_GINT_ENABLE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware interrupt enabled for control spi irq/fiq </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="50" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_ad37884a4b1a83c3f6793074ea2beca3a_1ad37884a4b1a83c3f6793074ea2beca3a" prot="public" static="no">
+        <name>DW_SPI_MASTER_SUPPORTED</name>
+        <initializer>(0x1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware SPI Master Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="52" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_afbfa2ea32b0ebf05ce4b1cec7471e1ac_1afbfa2ea32b0ebf05ce4b1cec7471e1ac" prot="public" static="no">
+        <name>DW_SPI_SLAVE_SUPPORTED</name>
+        <initializer>(0x2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Support Designware SPI Slave Mode Support Designware SPI Both Master and Slave Mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_abf5bb11d431ec8e49ba33e2b105f7a2f_1abf5bb11d431ec8e49ba33e2b105f7a2f" prot="public" static="no">
+        <name>DW_SPI_BOTH_SUPPORTED</name>
+        <initializer>(<ref refid="dw__spi_8h_ad37884a4b1a83c3f6793074ea2beca3a_1ad37884a4b1a83c3f6793074ea2beca3a" kindref="member">DW_SPI_MASTER_SUPPORTED</ref> | <ref refid="dw__spi_8h_afbfa2ea32b0ebf05ce4b1cec7471e1ac_1afbfa2ea32b0ebf05ce4b1cec7471e1ac" kindref="member">DW_SPI_SLAVE_SUPPORTED</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="55" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dw__spi_8h_a6509531f525ce82a64ab31ad02dcefa2_1a6509531f525ce82a64ab31ad02dcefa2" prot="public" static="no">
+        <name>DW_SPI_INVALID_INTNO</name>
+        <initializer>(<ref refid="group__DEVICE__HAL__COMMON_ga1c959a409ad6e952dc79b876f8e9b861_1ga1c959a409ad6e952dc79b876f8e9b861" kindref="member">DEV_INTNO_INVALID</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="57" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dw__spi_8h_a76945cc57e115703274895def4b285c9_1a76945cc57e115703274895def4b285c9" prot="public" static="no">
+        <type>struct <ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref> *</type>
+        <definition>typedef  struct DW_SPI_REG * DW_SPI_REG_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_SPI_REG_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__spi_8h_a961e233ebe8bd8ae4a5092532b568e83_1a961e233ebe8bd8ae4a5092532b568e83" prot="public" static="no">
+        <type>struct <ref refid="structDW__SPI__TRANSFER" kindref="compound">DW_SPI_TRANSFER</ref> *</type>
+        <definition>typedef  struct DW_SPI_TRANSFER * DW_SPI_TRANSFER_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_SPI_TRANSFER_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dw__spi_8h_a6ac98b08186413b6b6b6d847daa2ce57_1a6ac98b08186413b6b6b6d847daa2ce57" prot="public" static="no">
+        <type>struct <ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref> *</type>
+        <definition>typedef  struct DW_SPI_CTRL * DW_SPI_CTRL_PTR</definition>
+        <argsstring></argsstring>
+        <name>DW_SPI_CTRL_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="158" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dw__spi_8h_a237c47561c92859edb1272a2446732d8_1a237c47561c92859edb1272a2446732d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_spi_open</definition>
+        <argsstring>(DEV_SPI *spi_obj, uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_spi_open</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Open a designware spi device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi object structure pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi working mode (master or slave) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter, for master, param is the freq, for slave, param is dfs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structDEV__SPI__INFO_a3f0f622e26f4dd34691f258af663f804_1a3f0f622e26f4dd34691f258af663f804" kindref="member">opn_cnt</ref> and return <ref refid="group__EMBARC__ERROR_gaa5935765e74b9d1a7e72c9c8f9018b42_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is opened for different mode before, if you want to open it with different mode, you need to fully close it first. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Check opened before use case</para><para>install spi interrupt into system </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="164" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="951" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__spi_8h_a3b3007ebdf775be7cb571b56a7bebe1f_1a3b3007ebdf775be7cb571b56a7bebe1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_spi_close</definition>
+        <argsstring>(DEV_SPI *spi_obj)</argsstring>
+        <name>dw_spi_close</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <briefdescription>
+<para>Close a DesignWare SPI device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including scenario that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structDEV__SPI__INFO_a3f0f622e26f4dd34691f258af663f804_1a3f0f622e26f4dd34691f258af663f804" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="165" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="1045" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__spi_8h_a9d8a5b3a14d5b4ef1ca1dfdc082854d2_1a9d8a5b3a14d5b4ef1ca1dfdc082854d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_spi_control</definition>
+        <argsstring>(DEV_SPI *spi_obj, uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_spi_control</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Control spi by ctrl command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__DEVICE__HAL__SPI__CTRLCMD" kindref="compound">control command</ref>, to change or get some thing related to spi </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameters that maybe argument of the command, or return values of the command, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>to receive unsigned int value</para><para>When device is disabled, only SPI_CMD_ENA_DEV, SPI_CMD_DIS_DEV, SPI_CMD_GET_STATUS, SPI_CMD_RESET are available, other commands will return E_SYS</para><para>&lt; ready to send callback</para><para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to transfer callback</para><para>&lt; ready to transfer callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="166" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="1090" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__spi_8h_ac28e8d5fb9a3b015086e05c7eb98d736_1ac28e8d5fb9a3b015086e05c7eb98d736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_spi_write</definition>
+        <argsstring>(DEV_SPI *spi_obj, const void *data, uint32_t len)</argsstring>
+        <name>dw_spi_write</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Send data through DesignWare SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spi device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to send </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length to send </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Byte count that was successfully sent for poll method </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t write data to hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="167" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="1336" bodyend="1367"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__spi_8h_aee5f5374c61563d6958326c2d492bee8_1aee5f5374c61563d6958326c2d492bee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_spi_read</definition>
+        <argsstring>(DEV_SPI *spi_obj, void *data, uint32_t len)</argsstring>
+        <name>dw_spi_read</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Read data through designware spi. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI device pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data received (data must be char type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data length need to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;=</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Data that was successfully received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&lt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 Other error code not defined here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="168" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="1380" bodyend="1411"/>
+      </memberdef>
+      <memberdef kind="function" id="dw__spi_8h_acd146c38391a37a6eeab52760e1b96ee_1acd146c38391a37a6eeab52760e1b96ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_spi_isr</definition>
+        <argsstring>(DEV_SPI *spi_obj, void *ptr)</argsstring>
+        <name>dw_spi_isr</name>
+        <param>
+          <type><ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref> *</type>
+          <declname>spi_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>DesignWare SPI interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">spi_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI device pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extra information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; ready to send callback</para><para>&lt; ready to receive callback</para><para>&lt; ready to transfer callback </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h" line="169" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c" bodystart="1418" bodyend="1477"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_DW_SPI</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_DW_SPI</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__spi_8h" kindref="compound">device/ip_hal/dev_spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc/arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="dw__spi_8h_a3219a67a16a9349fd06b41b6b9b78305_1a3219a67a16a9349fd06b41b6b9b78305" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_USE_DESIGNWARE_SPI</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="dw__spi_8h_ae0674a14c1a55c5b9b834ff7ed16fc49_1ae0674a14c1a55c5b9b834ff7ed16fc49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_IN_FREE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="dw__spi_8h_a6793bee0d1f51691b6d80f1f92690cc4_1a6793bee0d1f51691b6d80f1f92690cc4" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_IN_XFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DEV_IN_TX<sp/>|<sp/>DEV_IN_RX<sp/>|<sp/>DEV_IN_XFER)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="dw__spi_8h_a20ef158f51cdec992a7d22c2c9b09ebf_1a20ef158f51cdec992a7d22c2c9b09ebf" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_IN_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DEV_IN_TX<sp/>|<sp/>DEV_IN_XFER)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="dw__spi_8h_a3921c31f1201baf78aadbdd70d678139_1a3921c31f1201baf78aadbdd70d678139" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_IN_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DEV_IN_RX<sp/>|<sp/>DEV_IN_XFER)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="dw__spi_8h_a08c7d007c718ca0e5f970eb39465d14b_1a08c7d007c718ca0e5f970eb39465d14b" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_GINT_DISABLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="dw__spi_8h_a73f28b7bbe5718335de15f075a87ba4b_1a73f28b7bbe5718335de15f075a87ba4b" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_GINT_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="dw__spi_8h_ad37884a4b1a83c3f6793074ea2beca3a_1ad37884a4b1a83c3f6793074ea2beca3a" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_MASTER_SUPPORTED<sp/><sp/><sp/><sp/><sp/>(0x1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="dw__spi_8h_afbfa2ea32b0ebf05ce4b1cec7471e1ac_1afbfa2ea32b0ebf05ce4b1cec7471e1ac" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_SLAVE_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/>(0x2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="dw__spi_8h_abf5bb11d431ec8e49ba33e2b105f7a2f_1abf5bb11d431ec8e49ba33e2b105f7a2f" refkind="member"><highlight class="preprocessor">#define<sp/>DW_SPI_BOTH_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_SPI_MASTER_SUPPORTED<sp/>|<sp/>DW_SPI_SLAVE_SUPPORTED)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="dw__spi_8h_a6509531f525ce82a64ab31ad02dcefa2_1a6509531f525ce82a64ab31ad02dcefa2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_SPI_INVALID_INTNO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DEV_INTNO_INVALID)</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="67" refid="structDW__SPI__REG" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70" refid="structDW__SPI__REG_a6a35be456beff12cf29c0130eb82ed15_1a6a35be456beff12cf29c0130eb82ed15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a6a35be456beff12cf29c0130eb82ed15_1a6a35be456beff12cf29c0130eb82ed15" kindref="member">CTRLR0</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structDW__SPI__REG_a34d7d9f557d877e3ea0983294ae9bad3_1a34d7d9f557d877e3ea0983294ae9bad3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a34d7d9f557d877e3ea0983294ae9bad3_1a34d7d9f557d877e3ea0983294ae9bad3" kindref="member">CTRLR1</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structDW__SPI__REG_a269fee1123809b550cc9ec2f8e74b423_1a269fee1123809b550cc9ec2f8e74b423" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a269fee1123809b550cc9ec2f8e74b423_1a269fee1123809b550cc9ec2f8e74b423" kindref="member">SSIENR</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structDW__SPI__REG_abfcb47da3bc22a32ec660ac3d1cf9e64_1abfcb47da3bc22a32ec660ac3d1cf9e64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_abfcb47da3bc22a32ec660ac3d1cf9e64_1abfcb47da3bc22a32ec660ac3d1cf9e64" kindref="member">MWCR</ref>;</highlight></codeline>
+<codeline lineno="79" refid="structDW__SPI__REG_afc56c971a4f262df754341b06061829a_1afc56c971a4f262df754341b06061829a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_afc56c971a4f262df754341b06061829a_1afc56c971a4f262df754341b06061829a" kindref="member">SER</ref>;</highlight></codeline>
+<codeline lineno="81" refid="structDW__SPI__REG_a246a34b93365a5fa261d39cf75d96b32_1a246a34b93365a5fa261d39cf75d96b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a246a34b93365a5fa261d39cf75d96b32_1a246a34b93365a5fa261d39cf75d96b32" kindref="member">BAUDR</ref>;</highlight></codeline>
+<codeline lineno="84" refid="structDW__SPI__REG_a153e9788c9f27831fe7161834f469a54_1a153e9788c9f27831fe7161834f469a54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a153e9788c9f27831fe7161834f469a54_1a153e9788c9f27831fe7161834f469a54" kindref="member">TXFTLR</ref>;</highlight></codeline>
+<codeline lineno="86" refid="structDW__SPI__REG_a4365f0ed34d6ee8ebeedcb7d321c6a0a_1a4365f0ed34d6ee8ebeedcb7d321c6a0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a4365f0ed34d6ee8ebeedcb7d321c6a0a_1a4365f0ed34d6ee8ebeedcb7d321c6a0a" kindref="member">RXFTLR</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structDW__SPI__REG_ade081014fdb1573cff276bf3afb7e931_1ade081014fdb1573cff276bf3afb7e931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_ade081014fdb1573cff276bf3afb7e931_1ade081014fdb1573cff276bf3afb7e931" kindref="member">TXFLR</ref>;</highlight></codeline>
+<codeline lineno="90" refid="structDW__SPI__REG_a0c564ad0dea77ac910a463fe00a5dfcc_1a0c564ad0dea77ac910a463fe00a5dfcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a0c564ad0dea77ac910a463fe00a5dfcc_1a0c564ad0dea77ac910a463fe00a5dfcc" kindref="member">RXFLR</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structDW__SPI__REG_a5c3c7ffc6531d042e8d15679b0efa0b9_1a5c3c7ffc6531d042e8d15679b0efa0b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a5c3c7ffc6531d042e8d15679b0efa0b9_1a5c3c7ffc6531d042e8d15679b0efa0b9" kindref="member">SR</ref>;</highlight></codeline>
+<codeline lineno="95" refid="structDW__SPI__REG_aa421301f1533557c27e8add853aaa7b0_1aa421301f1533557c27e8add853aaa7b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_aa421301f1533557c27e8add853aaa7b0_1aa421301f1533557c27e8add853aaa7b0" kindref="member">IMR</ref>;</highlight></codeline>
+<codeline lineno="97" refid="structDW__SPI__REG_a2bb6f9b52aecf91b5ea5900dea14a1bc_1a2bb6f9b52aecf91b5ea5900dea14a1bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a2bb6f9b52aecf91b5ea5900dea14a1bc_1a2bb6f9b52aecf91b5ea5900dea14a1bc" kindref="member">ISR</ref>;</highlight></codeline>
+<codeline lineno="99" refid="structDW__SPI__REG_a2dc697d8206bc16fe9fa156bc7108e76_1a2dc697d8206bc16fe9fa156bc7108e76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a2dc697d8206bc16fe9fa156bc7108e76_1a2dc697d8206bc16fe9fa156bc7108e76" kindref="member">RISR</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structDW__SPI__REG_ae6d83a249e5f9276dc6fac90a6ba32ee_1ae6d83a249e5f9276dc6fac90a6ba32ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_ae6d83a249e5f9276dc6fac90a6ba32ee_1ae6d83a249e5f9276dc6fac90a6ba32ee" kindref="member">TXOICR</ref>;</highlight></codeline>
+<codeline lineno="103" refid="structDW__SPI__REG_af35a561cb05c405f5a380e616de1a097_1af35a561cb05c405f5a380e616de1a097" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_af35a561cb05c405f5a380e616de1a097_1af35a561cb05c405f5a380e616de1a097" kindref="member">RXOICR</ref>;</highlight></codeline>
+<codeline lineno="105" refid="structDW__SPI__REG_a0a3ed0454e65e2884aa3d9c85bce9ea1_1a0a3ed0454e65e2884aa3d9c85bce9ea1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a0a3ed0454e65e2884aa3d9c85bce9ea1_1a0a3ed0454e65e2884aa3d9c85bce9ea1" kindref="member">RXUICR</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structDW__SPI__REG_aac43263860114fe3c4e87c4514e904f9_1aac43263860114fe3c4e87c4514e904f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_aac43263860114fe3c4e87c4514e904f9_1aac43263860114fe3c4e87c4514e904f9" kindref="member">MSTICR</ref>;</highlight></codeline>
+<codeline lineno="109" refid="structDW__SPI__REG_a9cb5b2e605e7aed5a021510917cab79c_1a9cb5b2e605e7aed5a021510917cab79c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a9cb5b2e605e7aed5a021510917cab79c_1a9cb5b2e605e7aed5a021510917cab79c" kindref="member">ICR</ref>;</highlight></codeline>
+<codeline lineno="111" refid="structDW__SPI__REG_a80d8a58b677f44abe78eb7e7c4e03d05_1a80d8a58b677f44abe78eb7e7c4e03d05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a80d8a58b677f44abe78eb7e7c4e03d05_1a80d8a58b677f44abe78eb7e7c4e03d05" kindref="member">DMACR</ref>;</highlight></codeline>
+<codeline lineno="113" refid="structDW__SPI__REG_a25083ed35b12fcec502e6b4a56b31e58_1a25083ed35b12fcec502e6b4a56b31e58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a25083ed35b12fcec502e6b4a56b31e58_1a25083ed35b12fcec502e6b4a56b31e58" kindref="member">DMATDLR</ref>;</highlight></codeline>
+<codeline lineno="115" refid="structDW__SPI__REG_ace5a4462b09eb99f83a2f9dae5ebdf0a_1ace5a4462b09eb99f83a2f9dae5ebdf0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_ace5a4462b09eb99f83a2f9dae5ebdf0a_1ace5a4462b09eb99f83a2f9dae5ebdf0a" kindref="member">DMARDLR</ref>;</highlight></codeline>
+<codeline lineno="117" refid="structDW__SPI__REG_a08cae239d414f020934c6a889f9c5789_1a08cae239d414f020934c6a889f9c5789" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a08cae239d414f020934c6a889f9c5789_1a08cae239d414f020934c6a889f9c5789" kindref="member">IDR</ref>;</highlight></codeline>
+<codeline lineno="119" refid="structDW__SPI__REG_ac055c1fd3b96d94669ab73866e8e2481_1ac055c1fd3b96d94669ab73866e8e2481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_ac055c1fd3b96d94669ab73866e8e2481_1ac055c1fd3b96d94669ab73866e8e2481" kindref="member">SSI_VER_ID</ref>;</highlight></codeline>
+<codeline lineno="122" refid="structDW__SPI__REG_a8e7b0e0bb08bf979fef476c2ee425122_1a8e7b0e0bb08bf979fef476c2ee425122" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a8e7b0e0bb08bf979fef476c2ee425122_1a8e7b0e0bb08bf979fef476c2ee425122" kindref="member">DATAREG</ref>;</highlight></codeline>
+<codeline lineno="124" refid="structDW__SPI__REG_a2553de6d468b6dec356bf439a8fba611_1a2553de6d468b6dec356bf439a8fba611" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>DRS[35];</highlight></codeline>
+<codeline lineno="126" refid="structDW__SPI__REG_a02dd5719d017b0c2c7e556e30c91983a_1a02dd5719d017b0c2c7e556e30c91983a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a02dd5719d017b0c2c7e556e30c91983a_1a02dd5719d017b0c2c7e556e30c91983a" kindref="member">RX_SAMPLE_DLY</ref>;</highlight></codeline>
+<codeline lineno="128" refid="structDW__SPI__REG_a2595ea29ce3a82ce14d0f08d9f7fd646_1a2595ea29ce3a82ce14d0f08d9f7fd646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__REG_a2595ea29ce3a82ce14d0f08d9f7fd646_1a2595ea29ce3a82ce14d0f08d9f7fd646" kindref="member">SPI_CTRLR0</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}<sp/><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref>,<sp/>*<ref refid="dw__spi_8h_a76945cc57e115703274895def4b285c9_1a76945cc57e115703274895def4b285c9" kindref="member">DW_SPI_REG_PTR</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structDW__SPI__TRANSFER" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133" refid="structDW__SPI__TRANSFER_aefeff9d2957b870adb0e9f5b09bb6452_1aefeff9d2957b870adb0e9f5b09bb6452" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__TRANSFER_aefeff9d2957b870adb0e9f5b09bb6452_1aefeff9d2957b870adb0e9f5b09bb6452" kindref="member">xfer_len</ref>;</highlight></codeline>
+<codeline lineno="134" refid="structDW__SPI__TRANSFER_adbc95facf042bf2e1c0f243deedd5a33_1adbc95facf042bf2e1c0f243deedd5a33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__TRANSFER_adbc95facf042bf2e1c0f243deedd5a33_1adbc95facf042bf2e1c0f243deedd5a33" kindref="member">tx_idx</ref>;</highlight></codeline>
+<codeline lineno="135" refid="structDW__SPI__TRANSFER_aea2a990eb685fbb01865f33b58ebf210_1aea2a990eb685fbb01865f33b58ebf210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__TRANSFER_aea2a990eb685fbb01865f33b58ebf210_1aea2a990eb685fbb01865f33b58ebf210" kindref="member">rx_idx</ref>;</highlight></codeline>
+<codeline lineno="136" refid="structDW__SPI__TRANSFER_abda9b1d451c5830da8c074eabb7cb32b_1abda9b1d451c5830da8c074eabb7cb32b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__TRANSFER_abda9b1d451c5830da8c074eabb7cb32b_1abda9b1d451c5830da8c074eabb7cb32b" kindref="member">nbytes</ref>;</highlight></codeline>
+<codeline lineno="137" refid="structDW__SPI__TRANSFER_a14c389517bccfdd6a7dabfb254cf4de1_1a14c389517bccfdd6a7dabfb254cf4de1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdev__spi__transfer" kindref="compound">DEV_SPI_TRANSFER</ref><sp/>*<ref refid="structDW__SPI__TRANSFER_a14c389517bccfdd6a7dabfb254cf4de1_1a14c389517bccfdd6a7dabfb254cf4de1" kindref="member">tx_xfer</ref>;</highlight></codeline>
+<codeline lineno="138" refid="structDW__SPI__TRANSFER_a89df710384a78695b01258bd12b7be0d_1a89df710384a78695b01258bd12b7be0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdev__spi__transfer" kindref="compound">DEV_SPI_TRANSFER</ref><sp/>*<ref refid="structDW__SPI__TRANSFER_a89df710384a78695b01258bd12b7be0d_1a89df710384a78695b01258bd12b7be0d" kindref="member">rx_xfer</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/><ref refid="structDW__SPI__TRANSFER" kindref="compound">DW_SPI_TRANSFER</ref>,<sp/>*<ref refid="dw__spi_8h_a961e233ebe8bd8ae4a5092532b568e83_1a961e233ebe8bd8ae4a5092532b568e83" kindref="member">DW_SPI_TRANSFER_PTR</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="structDW__SPI__CTRL" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146" refid="structDW__SPI__CTRL_a58d19a051331b15da44d0407304947f9_1a58d19a051331b15da44d0407304947f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SPI__REG" kindref="compound">DW_SPI_REG</ref><sp/>*<ref refid="structDW__SPI__CTRL_a58d19a051331b15da44d0407304947f9_1a58d19a051331b15da44d0407304947f9" kindref="member">dw_spi_regs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>should<sp/>be<sp/>set<sp/>during<sp/>object<sp/>implementation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structDW__SPI__CTRL_ac6305df2586ed62fa2a6e308ef895091_1ac6305df2586ed62fa2a6e308ef895091" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_ac6305df2586ed62fa2a6e308ef895091_1ac6305df2586ed62fa2a6e308ef895091" kindref="member">support_modes</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="structDW__SPI__CTRL_a5e107109659fb477cbd296d77e9847e8_1a5e107109659fb477cbd296d77e9847e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_a5e107109659fb477cbd296d77e9847e8_1a5e107109659fb477cbd296d77e9847e8" kindref="member">intno</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="structDW__SPI__CTRL_a0fd621f8cf69ea500ce2150318d0e8f5_1a0fd621f8cf69ea500ce2150318d0e8f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_a0fd621f8cf69ea500ce2150318d0e8f5_1a0fd621f8cf69ea500ce2150318d0e8f5" kindref="member">dw_apb_bus_freq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="structDW__SPI__CTRL_a6ad1a520fc56228ea9f982f0f92be057_1a6ad1a520fc56228ea9f982f0f92be057" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_a6ad1a520fc56228ea9f982f0f92be057_1a6ad1a520fc56228ea9f982f0f92be057" kindref="member">rx_sampledly</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="structDW__SPI__CTRL_a11dbebb922ae54d3ad178721186c9e55_1a11dbebb922ae54d3ad178721186c9e55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_a11dbebb922ae54d3ad178721186c9e55_1a11dbebb922ae54d3ad178721186c9e55" kindref="member">tx_fifo_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structDW__SPI__CTRL_a01703b66eec346bf1671285b60cd313c_1a01703b66eec346bf1671285b60cd313c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_a01703b66eec346bf1671285b60cd313c_1a01703b66eec346bf1671285b60cd313c" kindref="member">rx_fifo_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structDW__SPI__CTRL_a475e0c805a0b45917697fa37205850aa_1a475e0c805a0b45917697fa37205850aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref><sp/><ref refid="structDW__SPI__CTRL_a475e0c805a0b45917697fa37205850aa_1a475e0c805a0b45917697fa37205850aa" kindref="member">dw_spi_int_handler</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variables<sp/>which<sp/>always<sp/>change<sp/>during<sp/>spi<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="structDW__SPI__CTRL_aa5746c133e16885c3cfb0c077f1a5ad1_1aa5746c133e16885c3cfb0c077f1a5ad1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structDW__SPI__CTRL_aa5746c133e16885c3cfb0c077f1a5ad1_1aa5746c133e16885c3cfb0c077f1a5ad1" kindref="member">int_status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="structDW__SPI__CTRL_ada6a590bf23c89e01e1ae87024501178_1ada6a590bf23c89e01e1ae87024501178" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__SPI__TRANSFER" kindref="compound">DW_SPI_TRANSFER</ref><sp/><ref refid="structDW__SPI__CTRL_ada6a590bf23c89e01e1ae87024501178_1ada6a590bf23c89e01e1ae87024501178" kindref="member">dw_xfer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}<sp/><ref refid="structDW__SPI__CTRL" kindref="compound">DW_SPI_CTRL</ref>,<sp/>*<ref refid="dw__spi_8h_a6ac98b08186413b6b6b6d847daa2ce57_1a6ac98b08186413b6b6b6d847daa2ce57" kindref="member">DW_SPI_CTRL_PTR</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__spi_8h_a237c47561c92859edb1272a2446732d8_1a237c47561c92859edb1272a2446732d8" kindref="member">dw_spi_open</ref>(<ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*spi_obj,<sp/>uint32_t<sp/>mode,<sp/>uint32_t<sp/>param);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__spi_8h_a3b3007ebdf775be7cb571b56a7bebe1f_1a3b3007ebdf775be7cb571b56a7bebe1f" kindref="member">dw_spi_close</ref>(<ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*spi_obj);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__spi_8h_a9d8a5b3a14d5b4ef1ca1dfdc082854d2_1a9d8a5b3a14d5b4ef1ca1dfdc082854d2" kindref="member">dw_spi_control</ref>(<ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*spi_obj,<sp/>uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__spi_8h_ac28e8d5fb9a3b015086e05c7eb98d736_1ac28e8d5fb9a3b015086e05c7eb98d736" kindref="member">dw_spi_write</ref>(<ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*spi_obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="dw__spi_8h_aee5f5374c61563d6958326c2d492bee8_1aee5f5374c61563d6958326c2d492bee8" kindref="member">dw_spi_read</ref>(<ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*spi_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dw__spi_8h_acd146c38391a37a6eeab52760e1b96ee_1acd146c38391a37a6eeab52760e1b96ee" kindref="member">dw_spi_isr</ref>(<ref refid="structDEV__SPI" kindref="compound">DEV_SPI</ref><sp/>*spi_obj,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>H_DW_SPI<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi.h"/>
+  </compounddef>
+</doxygen>

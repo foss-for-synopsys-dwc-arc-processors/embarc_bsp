@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__I2S__AUD__DATA__RES" kind="group">
+    <compoundname>I2S_AUD_DATA_RES</compoundname>
+    <title>I2S Audio Data Resolution</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__I2S__AUD__DATA__RES_1ga3346e411929e58f26a5e51c7c3227459" prot="public" static="no">
+        <name>I2S_AUD_DATA_RES</name>
+        <enumvalue id="group__I2S__AUD__DATA__RES_ga3346e411929e58f26a5e51c7c3227459_1gga3346e411929e58f26a5e51c7c3227459a40dc7280bd9a97ec463c445283ae82d3" prot="public">
+          <name>I2S_AUD_DATA_NA</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>N/A data resolution </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__DATA__RES_ga3346e411929e58f26a5e51c7c3227459_1gga3346e411929e58f26a5e51c7c3227459a7ca532de630e91d56f606cce51e640c5" prot="public">
+          <name>I2S_AUD_DATA_12B</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>12 bits audio data resolution </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__DATA__RES_ga3346e411929e58f26a5e51c7c3227459_1gga3346e411929e58f26a5e51c7c3227459a47cb560f642894b653e6b0982b2fce3b" prot="public">
+          <name>I2S_AUD_DATA_16B</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>16 bits audio data resolution </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__DATA__RES_ga3346e411929e58f26a5e51c7c3227459_1gga3346e411929e58f26a5e51c7c3227459ab0027dd189023c8e67725090d43c6be1" prot="public">
+          <name>I2S_AUD_DATA_20B</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>20 bits audio data resolution </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__DATA__RES_ga3346e411929e58f26a5e51c7c3227459_1gga3346e411929e58f26a5e51c7c3227459a5b3b3616e2ae25521de7c0e277021a6f" prot="public">
+          <name>I2S_AUD_DATA_24B</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>24 bits audio data resolution </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__AUD__DATA__RES_ga3346e411929e58f26a5e51c7c3227459_1gga3346e411929e58f26a5e51c7c3227459aca804ef81d48f3b43c8c212be6ec7f7b" prot="public">
+          <name>I2S_AUD_DATA_32B</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32 bits audio data resolution </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="66" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for I2S audio data resolution. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

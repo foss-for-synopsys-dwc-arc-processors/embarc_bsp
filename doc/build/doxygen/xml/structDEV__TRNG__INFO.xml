@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__TRNG__INFO" kind="struct" prot="public">
+    <compoundname>DEV_TRNG_INFO</compoundname>
+    <includes refid="dev__trng_8h" local="no">dev_trng.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_a86053a267b90f0f37211e0b3ea2e68ba_1a86053a267b90f0f37211e0b3ea2e68ba" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_TRNG_INFO::trng_ctrl</definition>
+        <argsstring></argsstring>
+        <name>trng_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trng control related pointer, implemented by bsp developer, and this should be set during trng object implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_TRNG_INFO::opn_cnt</definition>
+        <argsstring></argsstring>
+        <name>opn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>trng open count, open it will increase 1, close it will decrease 1, 0 for close, &gt;0 for open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="82" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_a6beac25df1b26a1539fe2c5d152acf2a_1a6beac25df1b26a1539fe2c5d152acf2a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_TRNG_INFO::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>output length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="83" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_afe5b18df5f99d8a1528acbce5336d3f3_1afe5b18df5f99d8a1528acbce5336d3f3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_TRNG_INFO::byte_generated</definition>
+        <argsstring></argsstring>
+        <name>byte_generated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count the bytes generated since last reseed, can be a reference and a reminder for next reseed operation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="84" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_ae370b3a14878273a01a60ce496fd68db_1ae370b3a14878273a01a60ce496fd68db" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref></type>
+        <definition>DEV_BUFFER DEV_TRNG_INFO::in_buf</definition>
+        <argsstring></argsstring>
+        <name>in_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>input buffer via interrupt, this should be all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="85" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_a1a002fb45428831550e56a952325878b_1a1a002fb45428831550e56a952325878b" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref></type>
+        <definition>DEV_BUFFER DEV_TRNG_INFO::out_buf</definition>
+        <argsstring></argsstring>
+        <name>out_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>output buffer via interrupt, this should be all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="86" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_ad502274a7bbc110d417afcbd6332f5fa_1ad502274a7bbc110d417afcbd6332f5fa" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__TRNG__CBS" kindref="compound">DEV_TRNG_CBS</ref></type>
+        <definition>DEV_TRNG_CBS DEV_TRNG_INFO::trng_cbs</definition>
+        <argsstring></argsstring>
+        <name>trng_cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__TRNG__INFO_aa57cba1cb173948b3ec041c588badcbf_1aa57cba1cb173948b3ec041c588badcbf" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_TRNG_INFO::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a extra pointer to get hook to applications which should not used by bsp developer, this should be NULL for first open and you can <ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_gab09960371ab78fc25db2c0c3271f2dfb_1gab09960371ab78fc25db2c0c3271f2dfb" kindref="member">set</ref> or <ref refid="group__DEVICE__HAL__TRNG__DEVSTRUCT_ga3e1b027e9e19df14f940828cd2eacac3_1ga3e1b027e9e19df14f940828cd2eacac3" kindref="member">get</ref> the extra information pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="88" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definitions for trng information. </para>    </briefdescription>
+    <detaileddescription>
+<para>Informations about trng open count, working status, baudrate, trng registers and ctrl structure, trng dps format </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>DEV_TRNG_INFO</label>
+        <link refid="structDEV__TRNG__INFO"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>out_buf</edgelabel>
+          <edgelabel>in_buf</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>trng_cbs</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>DEV_TRNG_CBS</label>
+        <link refid="structDEV__TRNG__CBS"/>
+      </node>
+      <node id="98">
+        <label>DEV_BUFFER</label>
+        <link refid="structDEV__BUFFER"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_trng.h" bodystart="80" bodyend="91"/>
+    <listofallmembers>
+      <member refid="structDEV__TRNG__INFO_afe5b18df5f99d8a1528acbce5336d3f3_1afe5b18df5f99d8a1528acbce5336d3f3" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>byte_generated</name></member>
+      <member refid="structDEV__TRNG__INFO_aa57cba1cb173948b3ec041c588badcbf_1aa57cba1cb173948b3ec041c588badcbf" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>extra</name></member>
+      <member refid="structDEV__TRNG__INFO_ae370b3a14878273a01a60ce496fd68db_1ae370b3a14878273a01a60ce496fd68db" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>in_buf</name></member>
+      <member refid="structDEV__TRNG__INFO_a6beac25df1b26a1539fe2c5d152acf2a_1a6beac25df1b26a1539fe2c5d152acf2a" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>length</name></member>
+      <member refid="structDEV__TRNG__INFO_a699731d392ad7f078d9484a08efbc01e_1a699731d392ad7f078d9484a08efbc01e" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>opn_cnt</name></member>
+      <member refid="structDEV__TRNG__INFO_a1a002fb45428831550e56a952325878b_1a1a002fb45428831550e56a952325878b" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>out_buf</name></member>
+      <member refid="structDEV__TRNG__INFO_ad502274a7bbc110d417afcbd6332f5fa_1ad502274a7bbc110d417afcbd6332f5fa" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>trng_cbs</name></member>
+      <member refid="structDEV__TRNG__INFO_a86053a267b90f0f37211e0b3ea2e68ba_1a86053a267b90f0f37211e0b3ea2e68ba" prot="public" virt="non-virtual"><scope>DEV_TRNG_INFO</scope><name>trng_ctrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

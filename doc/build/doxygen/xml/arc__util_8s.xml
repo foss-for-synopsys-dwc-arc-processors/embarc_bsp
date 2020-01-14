@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__util_8s" kind="file">
+    <compoundname>arc_util.s</compoundname>
+    <includes refid="arc_8h" local="yes">arc/arc.h</includes>
+    <includes refid="arc__asm__common_8h" local="yes">arc/arc_asm_common.h</includes>
+    <incdepgraph>
+      <node id="89">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="91">
+        <label>arc/arc_asm_common.h</label>
+        <link refid="arc__asm__common_8h"/>
+      </node>
+      <node id="88">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s</label>
+        <link refid="arc_util.s"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arc__util_8s_ab3889d8ac83e8f1b570bf29ce16efeb0_1ab3889d8ac83e8f1b570bf29ce16efeb0" prot="public" static="no">
+        <name>__ASSEMBLY__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="31" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="arc__util_8s_a516d876557f8cb5c990b1160cd4b74ae_1a516d876557f8cb5c990b1160cd4b74ae" prot="public" static="no" mutable="no">
+        <type>file arc_utils s text global arc_goto_usermode align</type>
+        <definition>file arc_utils s text global arc_goto_usermode align arc_goto_usermode</definition>
+        <argsstring></argsstring>
+        <name>arc_goto_usermode</name>
+        <briefdescription>
+<para>Go to user mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target address to run in user mode, 0 means next line of code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stack where the target address runs, 0 means using current stack </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="48" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" prot="public" static="no" mutable="no">
+        <type>file arc_utils s text global <ref refid="group__ARC__HAL__BUILTIN_ga8e10c190b7ebcee58c8651ac5526223e_1ga8e10c190b7ebcee58c8651ac5526223e" kindref="member">arc_goto_usermode</ref> align mov z</type>
+        <definition>file arc_utils s text global arc_goto_usermode align mov z blink cmp mov nz r1 sr lr bset AUX_STATUS_BIT_U sr lr bset AUX_STATUS_BIT_AE kflag r1 sr rtie text global arc_goto_kernelmode global exc_entry_arc_goto_kernelmode align mov z blink cmp mov z sp trap_s align r1 sr lr bclr AUX_STATUS_BIT_U sr r0</definition>
+        <argsstring></argsstring>
+        <name>r0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" prot="public" static="no" mutable="no">
+        <type>file arc_utils s text global <ref refid="group__ARC__HAL__BUILTIN_ga8e10c190b7ebcee58c8651ac5526223e_1ga8e10c190b7ebcee58c8651ac5526223e" kindref="member">arc_goto_usermode</ref> align mov z blink cmp</type>
+        <definition>file arc_utils s text global arc_goto_usermode align mov z blink cmp mov nz r1 sr lr bset AUX_STATUS_BIT_U sr lr bset AUX_STATUS_BIT_AE kflag r1 sr rtie text global arc_goto_kernelmode global exc_entry_arc_goto_kernelmode align mov z blink cmp mov z r1</definition>
+        <argsstring></argsstring>
+        <name>r1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="51" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" prot="public" static="no" mutable="no">
+        <type>file arc_utils s text global <ref refid="group__ARC__HAL__BUILTIN_ga8e10c190b7ebcee58c8651ac5526223e_1ga8e10c190b7ebcee58c8651ac5526223e" kindref="member">arc_goto_usermode</ref> align mov z blink cmp mov nz</type>
+        <definition>file arc_utils s text global arc_goto_usermode align mov z blink cmp mov nz r1 sr sp</definition>
+        <argsstring></argsstring>
+        <name>sp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="52" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arc__util_8s_ad6c380c25f349822c0253380999d88c2_1ad6c380c25f349822c0253380999d88c2" prot="public" static="no" mutable="no">
+        <type>file arc_utils s text global <ref refid="group__ARC__HAL__BUILTIN_ga8e10c190b7ebcee58c8651ac5526223e_1ga8e10c190b7ebcee58c8651ac5526223e" kindref="member">arc_goto_usermode</ref> align mov z blink cmp mov nz <ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref> sr lr bset <ref refid="group__ARC__HAL__CORE__COMM_ga644227154df14ed9a7d41979a32afb6d_1ga644227154df14ed9a7d41979a32afb6d" kindref="member">AUX_STATUS_BIT_U</ref> sr lr bset <ref refid="group__ARC__HAL__CORE__COMM_ga0048cfc329368d86657e5873cf819c5b_1ga0048cfc329368d86657e5873cf819c5b" kindref="member">AUX_STATUS_BIT_AE</ref> kflag <ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref> sr rtie text global arc_goto_kernelmode global <ref refid="group__ARC__HAL__BUILTIN_ga8f432a3d2628380c2b7a324c58b09490_1ga8f432a3d2628380c2b7a324c58b09490" kindref="member">exc_entry_arc_goto_kernelmode</ref> align</type>
+        <definition>file arc_utils s text global arc_goto_usermode align mov z blink cmp mov nz r1 sr lr bset AUX_STATUS_BIT_U sr lr bset AUX_STATUS_BIT_AE kflag r1 sr rtie text global arc_goto_kernelmode global exc_entry_arc_goto_kernelmode align arc_goto_kernelmode</definition>
+        <argsstring></argsstring>
+        <name>arc_goto_kernelmode</name>
+        <briefdescription>
+<para>go to kernel mode this function uses trap exception to do switch from user mode to kernel mode, please install exc_entry_arc_goto_kernelmode for trap exception before call this function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target address to run in kernel mode, 0 means next line of code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sp</parametername>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stack where the target address runs, 0 means using current stack </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arc__util_8s_ad34b12849a9b39e0fde7d18998e26df3_1ad34b12849a9b39e0fde7d18998e26df3" prot="public" static="no" mutable="no">
+        <type>file arc_utils s text global <ref refid="group__ARC__HAL__BUILTIN_ga8e10c190b7ebcee58c8651ac5526223e_1ga8e10c190b7ebcee58c8651ac5526223e" kindref="member">arc_goto_usermode</ref> align mov z blink cmp mov nz <ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref> sr lr bset <ref refid="group__ARC__HAL__CORE__COMM_ga644227154df14ed9a7d41979a32afb6d_1ga644227154df14ed9a7d41979a32afb6d" kindref="member">AUX_STATUS_BIT_U</ref> sr lr bset <ref refid="group__ARC__HAL__CORE__COMM_ga0048cfc329368d86657e5873cf819c5b_1ga0048cfc329368d86657e5873cf819c5b" kindref="member">AUX_STATUS_BIT_AE</ref> kflag <ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref> sr rtie text global <ref refid="group__ARC__HAL__BUILTIN_ga2731e64353037ea69a27a01401e08dc3_1ga2731e64353037ea69a27a01401e08dc3" kindref="member">arc_goto_kernelmode</ref> global exc_entry_arc_goto_kernelmode align mov z blink cmp mov z <ref refid="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" kindref="member">sp</ref> trap_s align</type>
+        <definition>file arc_utils s text global arc_goto_usermode align mov z blink cmp mov nz r1 sr lr bset AUX_STATUS_BIT_U sr lr bset AUX_STATUS_BIT_AE kflag r1 sr rtie text global arc_goto_kernelmode global exc_entry_arc_goto_kernelmode align mov z blink cmp mov z sp trap_s align exc_entry_arc_goto_kernelmode</definition>
+        <argsstring></argsstring>
+        <name>exc_entry_arc_goto_kernelmode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" line="87" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc_8h" kindref="compound">arc/arc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__asm__common_8h" kindref="compound">arc/arc_asm_common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>.file<sp/></highlight><highlight class="stringliteral">&quot;arc_utils.s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>.text</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>.global<sp/><ref refid="arc__util_8s_a516d876557f8cb5c990b1160cd4b74ae_1a516d876557f8cb5c990b1160cd4b74ae" kindref="member">arc_goto_usermode</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="arc__util_8s_a516d876557f8cb5c990b1160cd4b74ae_1a516d876557f8cb5c990b1160cd4b74ae" kindref="member">arc_goto_usermode</ref>:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>mov.z<sp/><sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>blink</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>mov.nz<sp/><sp/><ref refid="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" kindref="member">sp</ref>,<sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARC_FEATURE_SEC_PRESENT)</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/>(1<sp/>&lt;&lt;<sp/><ref refid="group__ARC__HAL__CORE__COMM_gaa968a3605000f541bf163b54811d80bc_1gaa968a3605000f541bf163b54811d80bc" kindref="member">AUX_ERSEC_STAT_BIT_ERM</ref>),<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga159e80b25305a97997e86dff2c663b64_1ga159e80b25305a97997e86dff2c663b64" kindref="member">AUX_ERSEC_STAT</ref>]</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/><ref refid="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" kindref="member">sp</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga2383b259d739d6c7fbe46741353f080a_1ga2383b259d739d6c7fbe46741353f080a" kindref="member">AUX_SEC_U_SP</ref>]</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/><ref refid="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" kindref="member">sp</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga7e2cd99d5a9fc31e3b0f860a9db1fe4d_1ga7e2cd99d5a9fc31e3b0f860a9db1fe4d" kindref="member">AUX_USER_SP</ref>]</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>lr<sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga8c8b02d290e7547a418792b37ae3bff1_1ga8c8b02d290e7547a418792b37ae3bff1" kindref="member">AUX_STATUS32</ref>]</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>bset<sp/><sp/><sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/><ref refid="group__ARC__HAL__CORE__COMM_ga644227154df14ed9a7d41979a32afb6d_1ga644227154df14ed9a7d41979a32afb6d" kindref="member">AUX_STATUS_BIT_U</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga49fee03f8e12dad45b431f328fcad731_1ga49fee03f8e12dad45b431f328fcad731" kindref="member">AUX_ERSTATUS</ref>]</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>lr<sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga8c8b02d290e7547a418792b37ae3bff1_1ga8c8b02d290e7547a418792b37ae3bff1" kindref="member">AUX_STATUS32</ref>]</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>bset<sp/><sp/><sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/><ref refid="group__ARC__HAL__CORE__COMM_ga0048cfc329368d86657e5873cf819c5b_1ga0048cfc329368d86657e5873cf819c5b" kindref="member">AUX_STATUS_BIT_AE</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_gafbc5603e557abbf645d214d67f8b4966_1gafbc5603e557abbf645d214d67f8b4966" kindref="member">AUX_ERRET</ref>]</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>.text</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>.global<sp/><ref refid="arc__util_8s_ad6c380c25f349822c0253380999d88c2_1ad6c380c25f349822c0253380999d88c2" kindref="member">arc_goto_kernelmode</ref></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>.global<sp/><ref refid="arc__util_8s_ad34b12849a9b39e0fde7d18998e26df3_1ad34b12849a9b39e0fde7d18998e26df3" kindref="member">exc_entry_arc_goto_kernelmode</ref></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="arc__util_8s_ad6c380c25f349822c0253380999d88c2_1ad6c380c25f349822c0253380999d88c2" kindref="member">arc_goto_kernelmode</ref>:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>mov.z<sp/><sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>blink</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>mov.z<sp/><sp/><sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref>,<sp/><ref refid="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" kindref="member">sp</ref></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>trap_s<sp/><sp/>0</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="arc__util_8s_ad34b12849a9b39e0fde7d18998e26df3_1ad34b12849a9b39e0fde7d18998e26df3" kindref="member">exc_entry_arc_goto_kernelmode</ref>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>mov<sp/><ref refid="arc__util_8s_a496b7f674efc14b97d32d08f2edca947_1a496b7f674efc14b97d32d08f2edca947" kindref="member">sp</ref>,<sp/><ref refid="arc__util_8s_ab25c288ece854d462b5ed47fc1e9d225_1ab25c288ece854d462b5ed47fc1e9d225" kindref="member">r1</ref></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_gafbc5603e557abbf645d214d67f8b4966_1gafbc5603e557abbf645d214d67f8b4966" kindref="member">AUX_ERRET</ref>]</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>lr<sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga49fee03f8e12dad45b431f328fcad731_1ga49fee03f8e12dad45b431f328fcad731" kindref="member">AUX_ERSTATUS</ref>]</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>bclr<sp/><sp/><sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/><ref refid="group__ARC__HAL__CORE__COMM_ga644227154df14ed9a7d41979a32afb6d_1ga644227154df14ed9a7d41979a32afb6d" kindref="member">AUX_STATUS_BIT_U</ref></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/><sp/><ref refid="arc__util_8s_a80cf70a06075c910b03b928a66606d16_1a80cf70a06075c910b03b928a66606d16" kindref="member">r0</ref>,<sp/>[<ref refid="group__ARC__HAL__CORE__COMM_ga49fee03f8e12dad45b431f328fcad731_1ga49fee03f8e12dad45b431f328fcad731" kindref="member">AUX_ERSTATUS</ref>]</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_util.s"/>
+  </compounddef>
+</doxygen>

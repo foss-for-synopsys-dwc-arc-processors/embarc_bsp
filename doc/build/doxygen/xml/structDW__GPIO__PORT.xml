@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__GPIO__PORT" kind="struct" prot="public">
+    <compoundname>DW_GPIO_PORT</compoundname>
+    <includes refid="dw__gpio_8h" local="no">dw_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__GPIO__PORT_a13eaffec919ddd52c08ef7eb0e268145_1a13eaffec919ddd52c08ef7eb0e268145" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_PORT::no</definition>
+        <argsstring></argsstring>
+        <name>no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio port number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__PORT_aa075094c383d28b8a6eeafe80f02f182_1aa075094c383d28b8a6eeafe80f02f182" prot="public" static="no" mutable="no">
+        <type><ref refid="dw__gpio_8h_aab28599973266a9346a7ef138d65df1f_1aab28599973266a9346a7ef138d65df1f" kindref="member">DW_GPIO_REG_PTR</ref></type>
+        <definition>DW_GPIO_REG_PTR DW_GPIO_PORT::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio port register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__PORT_a258f55939d7410c3bbbbf5f9b0067de0_1a258f55939d7410c3bbbbf5f9b0067de0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_PORT::intno</definition>
+        <argsstring></argsstring>
+        <name>intno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio interrupt vector number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__PORT_a7019bd8d55d9a8eb573a234aaeee99d0_1a7019bd8d55d9a8eb573a234aaeee99d0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_GPIO_PORT::valid_bit_mask</definition>
+        <argsstring></argsstring>
+        <name>valid_bit_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>valid bit mask of gpio port </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="108" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__PORT_a93d4945f7b6e4636388c08a416ee25a5_1a93d4945f7b6e4636388c08a416ee25a5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref></type>
+        <definition>INT_HANDLER_T DW_GPIO_PORT::int_handler</definition>
+        <argsstring></argsstring>
+        <name>int_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__GPIO__PORT_a55b613dd89d162b37b70dbbc8742ffc5_1a55b613dd89d162b37b70dbbc8742ffc5" prot="public" static="no" mutable="no">
+        <type><ref refid="dw__gpio_8h_af0591289221227f6cafeee073a617531_1af0591289221227f6cafeee073a617531" kindref="member">DW_GPIO_BIT_ISR_PTR</ref></type>
+        <definition>DW_GPIO_BIT_ISR_PTR DW_GPIO_PORT::gpio_bit_isr</definition>
+        <argsstring></argsstring>
+        <name>gpio_bit_isr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio bit handler struct </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DesignWare GPIO control structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>Structure type for gpio implementation </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="131">
+        <label>DW_GPIO_BIT_ISR</label>
+        <link refid="structDW__GPIO__BIT__ISR"/>
+      </node>
+      <node id="132">
+        <label>DW_GPIO_REG</label>
+        <link refid="structDW__GPIO__REG"/>
+        <childnode refid="133" relation="usage">
+          <edgelabel>SWPORTS</edgelabel>
+        </childnode>
+      </node>
+      <node id="133">
+        <label>PORT_CTRL</label>
+        <link refid="structPORT__CTRL"/>
+      </node>
+      <node id="130">
+        <label>DW_GPIO_PORT</label>
+        <link refid="structDW__GPIO__PORT"/>
+        <childnode refid="131" relation="usage">
+          <edgelabel>gpio_bit_isr</edgelabel>
+        </childnode>
+        <childnode refid="132" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_gpio.h" bodystart="104" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structDW__GPIO__PORT_a55b613dd89d162b37b70dbbc8742ffc5_1a55b613dd89d162b37b70dbbc8742ffc5" prot="public" virt="non-virtual"><scope>DW_GPIO_PORT</scope><name>gpio_bit_isr</name></member>
+      <member refid="structDW__GPIO__PORT_a93d4945f7b6e4636388c08a416ee25a5_1a93d4945f7b6e4636388c08a416ee25a5" prot="public" virt="non-virtual"><scope>DW_GPIO_PORT</scope><name>int_handler</name></member>
+      <member refid="structDW__GPIO__PORT_a258f55939d7410c3bbbbf5f9b0067de0_1a258f55939d7410c3bbbbf5f9b0067de0" prot="public" virt="non-virtual"><scope>DW_GPIO_PORT</scope><name>intno</name></member>
+      <member refid="structDW__GPIO__PORT_a13eaffec919ddd52c08ef7eb0e268145_1a13eaffec919ddd52c08ef7eb0e268145" prot="public" virt="non-virtual"><scope>DW_GPIO_PORT</scope><name>no</name></member>
+      <member refid="structDW__GPIO__PORT_aa075094c383d28b8a6eeafe80f02f182_1aa075094c383d28b8a6eeafe80f02f182" prot="public" virt="non-virtual"><scope>DW_GPIO_PORT</scope><name>regs</name></member>
+      <member refid="structDW__GPIO__PORT_a7019bd8d55d9a8eb573a234aaeee99d0_1a7019bd8d55d9a8eb573a234aaeee99d0" prot="public" virt="non-virtual"><scope>DW_GPIO_PORT</scope><name>valid_bit_mask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

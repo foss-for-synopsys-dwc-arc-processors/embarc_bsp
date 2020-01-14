@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDMA__STATE__T" kind="struct" prot="public">
+    <compoundname>DMA_STATE_T</compoundname>
+    <includes refid="arc__udma_8h" local="no">arc_udma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDMA__STATE__T_a9703298e5d965a0656838649425dabdc_1a9703298e5d965a0656838649425dabdc" prot="public" static="no" mutable="no">
+        <type><ref refid="structDMA__CHANNEL__T" kindref="compound">DMA_CHANNEL_T</ref> *</type>
+        <definition>volatile DMA_CHANNEL_T* DMA_STATE_T::dma_chns[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>dma_chns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="245" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structDMA__STATE__T_a1ca4c93adaba18e9b867b4f8155d7c98_1a1ca4c93adaba18e9b867b4f8155d7c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DMA_STATE_T::EMBARC_ALIGNED</definition>
+        <argsstring>(32) volatile uint32_t mem_dma_ptrs[2]</argsstring>
+        <name>EMBARC_ALIGNED</name>
+        <param>
+          <type>32</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All uDMA channel resources </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="242" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DMA state to maintain uDMA resources </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="126">
+        <label>DMA_DESC_T</label>
+        <link refid="structDMA__DESC__T"/>
+      </node>
+      <node id="124">
+        <label>DMA_STATE_T</label>
+        <link refid="structDMA__STATE__T"/>
+        <childnode refid="125" relation="usage">
+          <edgelabel>dma_chns</edgelabel>
+        </childnode>
+      </node>
+      <node id="125">
+        <label>DMA_CHANNEL_T</label>
+        <link refid="structDMA__CHANNEL__T"/>
+        <childnode refid="126" relation="usage">
+          <edgelabel>desc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="236" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="236" bodyend="246"/>
+    <listofallmembers>
+      <member refid="structDMA__STATE__T_a9703298e5d965a0656838649425dabdc_1a9703298e5d965a0656838649425dabdc" prot="public" virt="non-virtual"><scope>DMA_STATE_T</scope><name>dma_chns</name></member>
+      <member refid="structDMA__STATE__T_a1ca4c93adaba18e9b867b4f8155d7c98_1a1ca4c93adaba18e9b867b4f8155d7c98" prot="public" virt="non-virtual"><scope>DMA_STATE_T</scope><name>EMBARC_ALIGNED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Adding a New Board &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Adding a New Device" href="add_new_device.html" />
+    <link rel="prev" title="Porting Guides" href="porting_guides.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developer_guides.html">Developer Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html">Coding style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="application_development.html">Application Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="build_system_documentation.html">Build System Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="porting_guides.html">Porting Guides</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Adding a New Board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_device.html">Adding a New Device</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="documentation_generation.html">embARC Documentation Generation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developer_guides.html">Developer Guides</a> &raquo;</li>
+        
+          <li><a href="porting_guides.html">Porting Guides</a> &raquo;</li>
+        
+      <li>Adding a New Board</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="adding-a-new-board">
+<span id="add-new-board"></span><h1>Adding a New Board<a class="headerlink" href="#adding-a-new-board" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the process to add a new board named <code class="docutils literal notranslate"><span class="pre">myboard</span></code> in embARC BSP.</p>
+<ol class="arabic">
+<li><p>Create a sub-folder under <code class="docutils literal notranslate"><span class="pre">board</span></code> folder and named <code class="docutils literal notranslate"><span class="pre">myboard</span></code>. Create two new files <code class="docutils literal notranslate"><span class="pre">myboard.mk</span></code> and <code class="docutils literal notranslate"><span class="pre">myboard.h</span></code> in this folder.</p></li>
+<li><p>Create necessary sub-folders and files under <code class="docutils literal notranslate"><span class="pre">myboard</span></code>. The BSP for <code class="docutils literal notranslate"><span class="pre">myboard</span></code> is made up of these sub-folders and files. There are 3 folders required, <code class="docutils literal notranslate"><span class="pre">common</span></code>, <code class="docutils literal notranslate"><span class="pre">config</span></code> and <code class="docutils literal notranslate"><span class="pre">drivers</span></code>.</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">common</span></code>: contains the common routines for <code class="docutils literal notranslate"><span class="pre">myboard</span></code>. The <code class="docutils literal notranslate"><span class="pre">board_init</span></code> function and <code class="docutils literal notranslate"><span class="pre">board_timer_xxx</span></code> functions should also be implemented in this folder.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">configs</span></code>: contains board configuration information, including</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">target_memory.h</span></code> file containing memory information</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.tcf</span></code> file containing information about the arc configuration, compiler options, etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myboard_hardware.h</span></code> file containing necessary hardware definitions, e.g., peripheral address, interrupt number assignments, etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.mk</span></code> files, to be included in <code class="docutils literal notranslate"><span class="pre">myboard.mk</span></code> with required build system information.</p></li>
+<li><p>any other required files</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">drivers</span></code>: contains on-board driver implementations for <code class="docutils literal notranslate"><span class="pre">myboard</span></code> board</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">myboard.mk</span></code>.  Add necessary information in
+<code class="docutils literal notranslate"><span class="pre">virtual.mk</span></code>, such as source folders, include folders, object output
+folders and make rules. The build system will automatically compile all the
+source files (<code class="docutils literal notranslate"><span class="pre">.c</span></code>, <code class="docutils literal notranslate"><span class="pre">.s</span></code>) in the added folders and finally create a library named
+<code class="docutils literal notranslate"><span class="pre">libmyboard.a</span></code>.</p></li>
+<li><p>Modify the <code class="docutils literal notranslate"><span class="pre">myboard.h</span></code> and add it into <code class="docutils literal notranslate"><span class="pre">board.h</span></code>. <code class="docutils literal notranslate"><span class="pre">myboard.h</span></code> is the
+only place where board specific information should be exposed, e.g., function
+declarations, hardware definitions, macros.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For details, please refer to other existing board support folders such as <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/board/emsk</span></code> for reference.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hardware Requirement &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Peripheral Preparation" href="peripheral_preparation.html" />
+    <link rel="prev" title="Software Requirement" href="software_requirement.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#checking-out-the-embarc-bsp-source-code">Checking Out the embARC BSP source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#setting-up-the-development-environment">Setting Up the Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#building-a-sample-application">Building a Sample Application</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="getting_started.html#hardware-preparation">Hardware Preparation</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Hardware Requirement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#board-requirement">Board Requirement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#board-connections">Board Connections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-board-environment">Setting Board Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="peripheral_preparation.html">Peripheral Preparation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#running-a-sample-application">Running a Sample Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#advanced-topics">Advanced Topics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
+        
+      <li>Hardware Requirement</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hardware-requirement">
+<span id="id1"></span><h1>Hardware Requirement<a class="headerlink" href="#hardware-requirement" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="board-requirement">
+<h2>Board Requirement<a class="headerlink" href="#board-requirement" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>ARC Board</p>
+<ul>
+<li><p>ARC Software Development Platform</p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=arc_em_starter_kit">ARC EM Starter Kit</a></p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=arc-hs-development-kit">ARC HS Development Kit</a></p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=arc_iot_development_kit">ARC IoT Development Kit</a></p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=arc-software-development-platform">ARC AXS</a></p></li>
+<li><p><a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=sim_nSIM">ARC Virtual Board based on nSIM</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="board-connections">
+<h2>Board Connections<a class="headerlink" href="#board-connections" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>EMSK</p>
+<ul>
+<li><p>Pmod WiFi is connected to Pmod J5 connector.</p></li>
+<li><p>Pmod RF2 is connected to Pmod J6 connector.</p></li>
+<li><p>BLE HM-10 is connected to the Pmod J1 connector.</p></li>
+<li><p>Pmod AD2 is connected to the Pmod J2 connector.</p></li>
+<li><p>Pmod TMP2/TMP3 is connected to the Pmod J2 connector.</p></li>
+<li><p>SSD1306 OLED module is connected to the Pmod J2 or J4 connector, depending on your application.</p></li>
+<li><p>SD Card plugged into card slot J9.</p></li>
+</ul>
+</li>
+</ul>
+<div class="figure align-default" id="id2">
+<span id="emsk-board-settings"></span><a class="reference internal image-reference" href="../_images/emsk_board_settings.jpg"><img alt="emsk board setting" src="../_images/emsk_board_settings.jpg" style="width: 616.0px; height: 654.4000000000001px;" /></a>
+<p class="caption"><span class="caption-text">EMSK board connections</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>All versions of EMSK have the same board connections.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The above connections are set as default in the embARC BSP. You can set your board connections in <em>&lt;embARC&gt;/board</em>. The hardware may be damaged by wrong connections.</p>
+</div>
+</div>
+<div class="section" id="setting-board-environment">
+<h2>Setting Board Environment<a class="headerlink" href="#setting-board-environment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Set serial terminal</p>
+<ul>
+<li><p>The default UART baudrate is 115200 bps.</p></li>
+<li><p>For example, in the Tera Term menu, select <strong>Setup -&gt; Serial Port</strong> and change the settings for port and baudrate.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

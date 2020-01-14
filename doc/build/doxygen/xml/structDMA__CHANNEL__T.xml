@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDMA__CHANNEL__T" kind="struct" prot="public">
+    <compoundname>DMA_CHANNEL_T</compoundname>
+    <includes refid="arc__udma_8h" local="no">arc_udma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_a35ca7577073df9f04a5d1eabd2a468db_1a35ca7577073df9f04a5d1eabd2a468db" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t DMA_CHANNEL_T::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel ID binded to this transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="168" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_addcc7911abce048faa30ddfd648329f7_1addcc7911abce048faa30ddfd648329f7" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t DMA_CHANNEL_T::priority</definition>
+        <argsstring></argsstring>
+        <name>priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transfer priority </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="169" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_a272bcfe1e09e9594f23914821ca1c23c_1a272bcfe1e09e9594f23914821ca1c23c" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t DMA_CHANNEL_T::int_en</definition>
+        <argsstring></argsstring>
+        <name>int_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt enable status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="170" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_a0e4c5047e6ac0c1a4776e8028ddc05e6_1a0e4c5047e6ac0c1a4776e8028ddc05e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CHANNEL_T::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA request or trigger source for this transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="171" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_aba398042491db742881a83f41130c596_1aba398042491db742881a83f41130c596" prot="public" static="no" mutable="no">
+        <type><ref refid="structDMA__DESC__T" kindref="compound">DMA_DESC_T</ref> *</type>
+        <definition>DMA_DESC_T* DMA_CHANNEL_T::desc</definition>
+        <argsstring></argsstring>
+        <name>desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer descriptor for this transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="172" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_adc789c2521bf56fe2050e024d838a5a2_1adc789c2521bf56fe2050e024d838a5a2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t DMA_CHANNEL_T::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer status of this transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="173" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDMA__CHANNEL__T_ad673bd4b2562549c214c76bb23c97b0a_1ad673bd4b2562549c214c76bb23c97b0a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__ARC__HAL__MISC__UDMA_ga939d7b0dc401478b6429653943fb6978_1ga939d7b0dc401478b6429653943fb6978" kindref="member">DMA_CALLBACK_T</ref></type>
+        <definition>DMA_CALLBACK_T DMA_CHANNEL_T::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DMA transfer callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="174" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DMA Channel transfer structure </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="115">
+        <label>DMA_DESC_T</label>
+        <link refid="structDMA__DESC__T"/>
+      </node>
+      <node id="114">
+        <label>DMA_CHANNEL_T</label>
+        <link refid="structDMA__CHANNEL__T"/>
+        <childnode refid="115" relation="usage">
+          <edgelabel>desc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="167" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="167" bodyend="175"/>
+    <listofallmembers>
+      <member refid="structDMA__CHANNEL__T_ad673bd4b2562549c214c76bb23c97b0a_1ad673bd4b2562549c214c76bb23c97b0a" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>callback</name></member>
+      <member refid="structDMA__CHANNEL__T_a35ca7577073df9f04a5d1eabd2a468db_1a35ca7577073df9f04a5d1eabd2a468db" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>channel</name></member>
+      <member refid="structDMA__CHANNEL__T_aba398042491db742881a83f41130c596_1aba398042491db742881a83f41130c596" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>desc</name></member>
+      <member refid="structDMA__CHANNEL__T_a272bcfe1e09e9594f23914821ca1c23c_1a272bcfe1e09e9594f23914821ca1c23c" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>int_en</name></member>
+      <member refid="structDMA__CHANNEL__T_addcc7911abce048faa30ddfd648329f7_1addcc7911abce048faa30ddfd648329f7" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>priority</name></member>
+      <member refid="structDMA__CHANNEL__T_a0e4c5047e6ac0c1a4776e8028ddc05e6_1a0e4c5047e6ac0c1a4776e8028ddc05e6" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>source</name></member>
+      <member refid="structDMA__CHANNEL__T_adc789c2521bf56fe2050e024d838a5a2_1adc789c2521bf56fe2050e024d838a5a2" prot="public" virt="non-virtual"><scope>DMA_CHANNEL_T</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

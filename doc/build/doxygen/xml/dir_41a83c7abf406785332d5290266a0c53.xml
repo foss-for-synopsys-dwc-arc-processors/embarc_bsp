@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_41a83c7abf406785332d5290266a0c53" kind="dir">
+    <compoundname>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem</compoundname>
+    <innerdir refid="dir_0b4c5ecb25125c18dacfa531c990f415">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/creg</innerdir>
+    <innerdir refid="dir_3a268bae9e4d23014278aa74e65c3e0e">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/gpio</innerdir>
+    <innerdir refid="dir_0648a058eb64b01a72dcec5dab16e09c">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/i2s</innerdir>
+    <innerdir refid="dir_7ff56a68614915506db0f37c42718d98">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/iic</innerdir>
+    <innerdir refid="dir_3252543135030d7bf792adf49013e101">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/spi</innerdir>
+    <innerdir refid="dir_4f67142153a893da3e7055b2bdc0dc3a">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/"/>
+  </compounddef>
+</doxygen>

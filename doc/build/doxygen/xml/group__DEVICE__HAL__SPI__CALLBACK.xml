@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__SPI__CALLBACK" kind="group">
+    <compoundname>DEVICE_HAL_SPI_CALLBACK</compoundname>
+    <title>SPI Interrupt callback functions</title>
+    <innerclass refid="structDEV__SPI__CBS" prot="public">DEV_SPI_CBS</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__SPI__CALLBACK_1ga0d023992c3d55af05fc96714a2849d76" prot="public" static="no">
+        <type>struct <ref refid="structDEV__SPI__CBS" kindref="compound">DEV_SPI_CBS</ref> *</type>
+        <definition>typedef  struct DEV_SPI_CBS * DEV_SPI_CBS_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_SPI_CBS_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="342" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>callback function structure for SPI device </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

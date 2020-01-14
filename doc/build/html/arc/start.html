@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Start up in embARC BSP &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exception and Interrupt Management" href="exception_interrupt.html" />
+    <link rel="prev" title="ARC Processors" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ARC Processors</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#overview">Overview</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Start up in embARC BSP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#processor-level-start-up">Processor level start up</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#board-level-start-up">Board level start up</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exception_interrupt.html">Exception and Interrupt Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="build_in.html">Built-In Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="resource.html">Resource Definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#related-files">Related files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">ARC Processors</a> &raquo;</li>
+        
+      <li>Start up in embARC BSP</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="start-up-in-embarc-bsp">
+<span id="arc-hal-start"></span><h1>Start up in embARC BSP<a class="headerlink" href="#start-up-in-embarc-bsp" title="Permalink to this headline">¶</a></h1>
+<p>The start-up in embARC BSP can be divided into two parts.</p>
+<div class="section" id="processor-level-start-up">
+<h2>Processor level start up<a class="headerlink" href="#processor-level-start-up" title="Permalink to this headline">¶</a></h2>
+<p>The processor level start up process is implemented in <code class="docutils literal notranslate"><span class="pre">arc_startup.s</span></code>. The
+program jumps to the <code class="docutils literal notranslate"><span class="pre">board_main()</span></code> function after the startup process,
+which runs in three stages.</p>
+<img alt="processor-level start up" class="align-center" src="../_images/startup.png" />
+<ul class="simple">
+<li><p>Stage 1: Hardware Initialization</p>
+<ul>
+<li><p>Initialize necessary status and registers.</p></li>
+<li><p>Initialize system clock (if necessary, in user-defined <code class="docutils literal notranslate"><span class="pre">hardware_init_hook</span></code>).</p></li>
+<li><p>Initialize memory controller (if necessary, in user-defined <code class="docutils literal notranslate"><span class="pre">hardware_init_hook</span></code>).</p></li>
+</ul>
+</li>
+<li><p>Stage 2: C Runtime Initialization</p>
+<ul>
+<li><p>Initialize the stack.</p></li>
+<li><p>Copy section, e.g. data section, text section if necessary.</p></li>
+<li><p>Clear Block Started by Symbol (BSS) section.</p></li>
+</ul>
+</li>
+<li><p>Stage 3: Go to <code class="docutils literal notranslate"><span class="pre">board_main()</span></code></p>
+<ul>
+<li><p>Early initialization of software (if necessary, in user-defined <code class="docutils literal notranslate"><span class="pre">software_init_hook</span></code>).</p></li>
+<li><p>Call arc_exc_init, or other initialization functions.</p></li>
+<li><p>Jump to <code class="docutils literal notranslate"><span class="pre">board_main()</span></code> function.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="board-level-start-up">
+<h2>Board level start up<a class="headerlink" href="#board-level-start-up" title="Permalink to this headline">¶</a></h2>
+<p>The board level start up process is implemented <code class="docutils literal notranslate"><span class="pre">board.c</span></code> with an entry of <code class="docutils literal notranslate"><span class="pre">board_main</span></code>.</p>
+<p>The following pre-defined work is done in <code class="docutils literal notranslate"><span class="pre">board_main</span></code> function:</p>
+<ul class="simple">
+<li><p>board-level hardware initialization in <code class="docutils literal notranslate"><span class="pre">board_init</span></code></p></li>
+<li><p>Library initialization</p>
+<ul>
+<li><p>initialize the <code class="docutils literal notranslate"><span class="pre">xprintf</span></code> function to have a console output</p></li>
+</ul>
+</li>
+<li><p>jump to <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__em_8h" kind="file">
+    <compoundname>arc_em.h</compoundname>
+    <includes refid="arc_8h" local="yes">arc/arc.h</includes>
+    <includedby refid="emsdp_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</includedby>
+    <includedby refid="emsk_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/emsk.h</includedby>
+    <includedby refid="iotdk_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/iotdk.h</includedby>
+    <includedby refid="nsim_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/nsim.h</includedby>
+    <incdepgraph>
+      <node id="3693">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3694" relation="include">
+        </childnode>
+      </node>
+      <node id="3694">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3692">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h</label>
+        <link refid="arc_em.h"/>
+        <childnode refid="3693" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3708">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="3706">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="3713">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="3700">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="3716">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
+        <link refid="dw__i2s__obj_8c"/>
+      </node>
+      <node id="3699">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="3718">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="3724">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/nsim.h</label>
+        <link refid="nsim_8h"/>
+        <childnode refid="3725" relation="include">
+        </childnode>
+      </node>
+      <node id="3705">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="3709">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/emsk.h</label>
+        <link refid="emsk_8h"/>
+        <childnode refid="3710" relation="include">
+        </childnode>
+        <childnode refid="3711" relation="include">
+        </childnode>
+        <childnode refid="3712" relation="include">
+        </childnode>
+        <childnode refid="3713" relation="include">
+        </childnode>
+        <childnode refid="3714" relation="include">
+        </childnode>
+      </node>
+      <node id="3703">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="3725">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c</label>
+        <link refid="nsim__uart__obj_8c"/>
+      </node>
+      <node id="3712">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="3715">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/iotdk.h</label>
+        <link refid="iotdk_8h"/>
+        <childnode refid="3716" relation="include">
+        </childnode>
+        <childnode refid="3717" relation="include">
+        </childnode>
+        <childnode refid="3718" relation="include">
+        </childnode>
+        <childnode refid="3719" relation="include">
+        </childnode>
+        <childnode refid="3720" relation="include">
+        </childnode>
+        <childnode refid="3721" relation="include">
+        </childnode>
+        <childnode refid="3722" relation="include">
+        </childnode>
+        <childnode refid="3723" relation="include">
+        </childnode>
+      </node>
+      <node id="3707">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="3695">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h</label>
+        <link refid="arc_em.h"/>
+        <childnode refid="3696" relation="include">
+        </childnode>
+        <childnode refid="3709" relation="include">
+        </childnode>
+        <childnode refid="3715" relation="include">
+        </childnode>
+        <childnode refid="3724" relation="include">
+        </childnode>
+      </node>
+      <node id="3711">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="3698">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="3714">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/mux/mux.c</label>
+        <link refid="emsk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="3719">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="3702">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="3721">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="3701">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="3723">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/mux/mux.c</label>
+        <link refid="iotdk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="3717">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
+      </node>
+      <node id="3704">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="3720">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="3710">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="3696">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
+        <childnode refid="3697" relation="include">
+        </childnode>
+        <childnode refid="3698" relation="include">
+        </childnode>
+        <childnode refid="3699" relation="include">
+        </childnode>
+        <childnode refid="3700" relation="include">
+        </childnode>
+        <childnode refid="3701" relation="include">
+        </childnode>
+        <childnode refid="3702" relation="include">
+        </childnode>
+        <childnode refid="3703" relation="include">
+        </childnode>
+        <childnode refid="3704" relation="include">
+        </childnode>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3706" relation="include">
+        </childnode>
+        <childnode refid="3707" relation="include">
+        </childnode>
+        <childnode refid="3708" relation="include">
+        </childnode>
+      </node>
+      <node id="3722">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="3697">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>Address Generation Unit (AGU) related auxiliary register</header>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae7d11cea662ccb341878a666695df7ab_1gae7d11cea662ccb341878a666695df7ab" prot="public" static="no">
+        <name>AUX_AGU_AP0</name>
+        <initializer>(0x5c0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="51" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga9ccca52c1000636b1656f38e268732bd_1ga9ccca52c1000636b1656f38e268732bd" prot="public" static="no">
+        <name>AUX_AGU_AP1</name>
+        <initializer>(0x5c1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="52" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga6c92d6391df9eadaf18926c9caa1e21d_1ga6c92d6391df9eadaf18926c9caa1e21d" prot="public" static="no">
+        <name>AUX_AGU_AP2</name>
+        <initializer>(0x5c2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="53" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga36c900f6aecd0ca780f2a1683cb823ad_1ga36c900f6aecd0ca780f2a1683cb823ad" prot="public" static="no">
+        <name>AUX_AGU_AP3</name>
+        <initializer>(0x5c3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="54" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gad38ec97610fb059a8b514f2eab7519f7_1gad38ec97610fb059a8b514f2eab7519f7" prot="public" static="no">
+        <name>AUX_AGU_AP4</name>
+        <initializer>(0x5c4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="55" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga8e2a6fc164c38ff54979ca1b038be3aa_1ga8e2a6fc164c38ff54979ca1b038be3aa" prot="public" static="no">
+        <name>AUX_AGU_AP5</name>
+        <initializer>(0x5c5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="56" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gafd7aacaa2d438a8a2acc3e9fde668ff1_1gafd7aacaa2d438a8a2acc3e9fde668ff1" prot="public" static="no">
+        <name>AUX_AGU_AP6</name>
+        <initializer>(0x5c6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="57" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga924c6b9a1b7b93f4ccf17b25428ffe2e_1ga924c6b9a1b7b93f4ccf17b25428ffe2e" prot="public" static="no">
+        <name>AUX_AGU_AP7</name>
+        <initializer>(0x5c7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="58" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga53d590cb3bd5b2d04db7382d1af4dcec_1ga53d590cb3bd5b2d04db7382d1af4dcec" prot="public" static="no">
+        <name>AUX_AGU_AP8</name>
+        <initializer>(0x5c8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="59" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gaec42929f98a57bfa91c7973bc90dfe44_1gaec42929f98a57bfa91c7973bc90dfe44" prot="public" static="no">
+        <name>AUX_AGU_AP9</name>
+        <initializer>(0x5c9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="60" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga6974a8908089bf5be2e076dbc3e96648_1ga6974a8908089bf5be2e076dbc3e96648" prot="public" static="no">
+        <name>AUX_AGU_AP10</name>
+        <initializer>(0x5ca)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="61" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga77ade7e7be0e74f1325214b3dadf7ab4_1ga77ade7e7be0e74f1325214b3dadf7ab4" prot="public" static="no">
+        <name>AUX_AGU_AP11</name>
+        <initializer>(0x5cb)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="62" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gada8a3392c81b7e994e516a5dab92b351_1gada8a3392c81b7e994e516a5dab92b351" prot="public" static="no">
+        <name>AUX_AGU_AP12</name>
+        <initializer>(0x5cc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="63" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga334fc4b074592362c6000ddeb01ec63e_1ga334fc4b074592362c6000ddeb01ec63e" prot="public" static="no">
+        <name>AUX_AGU_AP13</name>
+        <initializer>(0x5cd)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="64" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gadfb26b434ab4f97d04c2964c7f2fcdb1_1gadfb26b434ab4f97d04c2964c7f2fcdb1" prot="public" static="no">
+        <name>AUX_AGU_AP14</name>
+        <initializer>(0x5ce)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="65" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga527317dbf581e7dea92d4689dd36893f_1ga527317dbf581e7dea92d4689dd36893f" prot="public" static="no">
+        <name>AUX_AGU_AP15</name>
+        <initializer>(0x5cf)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="66" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gadaa3dab0e52b5879190b6552cdb745f0_1gadaa3dab0e52b5879190b6552cdb745f0" prot="public" static="no">
+        <name>AUX_AGU_OS0</name>
+        <initializer>(0x5d0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="68" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae4a2a51ce472e6e0612da1934987fb9c_1gae4a2a51ce472e6e0612da1934987fb9c" prot="public" static="no">
+        <name>AUX_AGU_OS1</name>
+        <initializer>(0x5d1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="69" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga404d7c548a11752b56da977de8d912ac_1ga404d7c548a11752b56da977de8d912ac" prot="public" static="no">
+        <name>AUX_AGU_OS2</name>
+        <initializer>(0x5d2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="70" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gad430d5760bafe83551e4e25d1e37989d_1gad430d5760bafe83551e4e25d1e37989d" prot="public" static="no">
+        <name>AUX_AGU_OS3</name>
+        <initializer>(0x5d3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="71" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga172c1c037dc2664004aa726ac077a5f0_1ga172c1c037dc2664004aa726ac077a5f0" prot="public" static="no">
+        <name>AUX_AGU_OS4</name>
+        <initializer>(0x5d4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="72" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga1a516aaddbc14511958bd2455a35e608_1ga1a516aaddbc14511958bd2455a35e608" prot="public" static="no">
+        <name>AUX_AGU_OS5</name>
+        <initializer>(0x5d5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="73" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gadf23b6d2352fe42476a5af8cf389e48e_1gadf23b6d2352fe42476a5af8cf389e48e" prot="public" static="no">
+        <name>AUX_AGU_OS6</name>
+        <initializer>(0x5d6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="74" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga01f4290bfbd76655b667aa59ecb28b18_1ga01f4290bfbd76655b667aa59ecb28b18" prot="public" static="no">
+        <name>AUX_AGU_OS7</name>
+        <initializer>(0x5d7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="75" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae43b1089bba835a1368946639d05ca09_1gae43b1089bba835a1368946639d05ca09" prot="public" static="no">
+        <name>AUX_AGU_OS8</name>
+        <initializer>(0x5d8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="76" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga86ba487b2ddfa501dd3095bfe7b78a4f_1ga86ba487b2ddfa501dd3095bfe7b78a4f" prot="public" static="no">
+        <name>AUX_AGU_OS9</name>
+        <initializer>(0x5d9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="77" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae518e5b734af754ba2b5354bc18139ae_1gae518e5b734af754ba2b5354bc18139ae" prot="public" static="no">
+        <name>AUX_AGU_OS10</name>
+        <initializer>(0x5da)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="78" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gab808e26329c83ea2c64ee3678aa06ea5_1gab808e26329c83ea2c64ee3678aa06ea5" prot="public" static="no">
+        <name>AUX_AGU_OS11</name>
+        <initializer>(0x5db)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="79" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga4a01305ce4ba5faa8e3a5929249b4d6f_1ga4a01305ce4ba5faa8e3a5929249b4d6f" prot="public" static="no">
+        <name>AUX_AGU_OS12</name>
+        <initializer>(0x5dc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="80" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gad12a54b0ddffa3c2111edd8e96842d33_1gad12a54b0ddffa3c2111edd8e96842d33" prot="public" static="no">
+        <name>AUX_AGU_OS13</name>
+        <initializer>(0x5dd)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="81" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga783dce4053d56a92bc9948e76b27db58_1ga783dce4053d56a92bc9948e76b27db58" prot="public" static="no">
+        <name>AUX_AGU_OS14</name>
+        <initializer>(0x5de)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="82" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gab5df55c05809313087f66a044445f774_1gab5df55c05809313087f66a044445f774" prot="public" static="no">
+        <name>AUX_AGU_OS15</name>
+        <initializer>(0x5df)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="83" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gaca0d4cf8cd9c96f7d4bd2cb1cdc44efc_1gaca0d4cf8cd9c96f7d4bd2cb1cdc44efc" prot="public" static="no">
+        <name>AUX_AGU_MOD0</name>
+        <initializer>(0x5e0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="85" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gac0043f477051d7932d5be5bc2f964f6f_1gac0043f477051d7932d5be5bc2f964f6f" prot="public" static="no">
+        <name>AUX_AGU_MOD1</name>
+        <initializer>(0x5e1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="86" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga9767750a73d92a04cc84c27ec67701f2_1ga9767750a73d92a04cc84c27ec67701f2" prot="public" static="no">
+        <name>AUX_AGU_MOD2</name>
+        <initializer>(0x5e2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="87" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga55aa3a4d8c00fbb356032c8a1b9f2e38_1ga55aa3a4d8c00fbb356032c8a1b9f2e38" prot="public" static="no">
+        <name>AUX_AGU_MOD3</name>
+        <initializer>(0x5e3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="88" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga3067be3a8d4dfac512b64ec9ddcb03d8_1ga3067be3a8d4dfac512b64ec9ddcb03d8" prot="public" static="no">
+        <name>AUX_AGU_MOD4</name>
+        <initializer>(0x5e4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="89" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga77a9681b39515d8f38a10f2c6b63eb44_1ga77a9681b39515d8f38a10f2c6b63eb44" prot="public" static="no">
+        <name>AUX_AGU_MOD5</name>
+        <initializer>(0x5e5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="90" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae81d27f59a7bbbfdefbd9546f026f1ac_1gae81d27f59a7bbbfdefbd9546f026f1ac" prot="public" static="no">
+        <name>AUX_AGU_MOD6</name>
+        <initializer>(0x5e6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="91" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga8069704770a0b3fff47a1b9dcd7aac30_1ga8069704770a0b3fff47a1b9dcd7aac30" prot="public" static="no">
+        <name>AUX_AGU_MOD7</name>
+        <initializer>(0x5e7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="92" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga8e21687ec45cc4f67c9e52448531b9ef_1ga8e21687ec45cc4f67c9e52448531b9ef" prot="public" static="no">
+        <name>AUX_AGU_MOD8</name>
+        <initializer>(0x5e8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="93" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gab5afbf8249d4bd656d9675731c0ef0da_1gab5afbf8249d4bd656d9675731c0ef0da" prot="public" static="no">
+        <name>AUX_AGU_MOD9</name>
+        <initializer>(0x5e9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="94" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga2e1edf74c8cc0ed7a49fc501e2ec0dca_1ga2e1edf74c8cc0ed7a49fc501e2ec0dca" prot="public" static="no">
+        <name>AUX_AGU_MOD10</name>
+        <initializer>(0x5ea)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="95" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga734ce810188a287fd16c9494540fb1eb_1ga734ce810188a287fd16c9494540fb1eb" prot="public" static="no">
+        <name>AUX_AGU_MOD11</name>
+        <initializer>(0x5eb)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="96" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga3667959658d58056e8374df6a3f666ba_1ga3667959658d58056e8374df6a3f666ba" prot="public" static="no">
+        <name>AUX_AGU_MOD12</name>
+        <initializer>(0x5ec)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="97" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga64bd6dd0158b01a7ff492487bd50c340_1ga64bd6dd0158b01a7ff492487bd50c340" prot="public" static="no">
+        <name>AUX_AGU_MOD13</name>
+        <initializer>(0x5ed)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="98" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga64c230a2477a907152c957355beb64dc_1ga64c230a2477a907152c957355beb64dc" prot="public" static="no">
+        <name>AUX_AGU_MOD14</name>
+        <initializer>(0x5ee)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="99" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gab36c6c8d361a87d2ab54f704d80f1c5c_1gab36c6c8d361a87d2ab54f704d80f1c5c" prot="public" static="no">
+        <name>AUX_AGU_MOD15</name>
+        <initializer>(0x5ef)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="100" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga8ea57d684c44678bb45a3fec6a3f8b1e_1ga8ea57d684c44678bb45a3fec6a3f8b1e" prot="public" static="no">
+        <name>AUX_AGU_MOD16</name>
+        <initializer>(0x5f0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="101" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga1bc31e7c415e9d508a4fcb3d9a48eda3_1ga1bc31e7c415e9d508a4fcb3d9a48eda3" prot="public" static="no">
+        <name>AUX_AGU_MOD17</name>
+        <initializer>(0x5f1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="102" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gad167cab5f6b92043ce92c895727ec76b_1gad167cab5f6b92043ce92c895727ec76b" prot="public" static="no">
+        <name>AUX_AGU_MOD18</name>
+        <initializer>(0x5f2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="103" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gad9514bdf4af62506485abbeb32cbf76c_1gad9514bdf4af62506485abbeb32cbf76c" prot="public" static="no">
+        <name>AUX_AGU_MOD19</name>
+        <initializer>(0x5f3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="104" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gacc561e7eb2d67315d76f18abd804e7fa_1gacc561e7eb2d67315d76f18abd804e7fa" prot="public" static="no">
+        <name>AUX_AGU_MOD20</name>
+        <initializer>(0x5f4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="105" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gaf87f1cfa0e5c2c71fdd95517efae237e_1gaf87f1cfa0e5c2c71fdd95517efae237e" prot="public" static="no">
+        <name>AUX_AGU_MOD21</name>
+        <initializer>(0x5f5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="106" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga76f900dc71f4a73f32d71459bcbe9722_1ga76f900dc71f4a73f32d71459bcbe9722" prot="public" static="no">
+        <name>AUX_AGU_MOD22</name>
+        <initializer>(0x5f6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="107" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae9a73f9ea178df7703f46fddb2d6f9e7_1gae9a73f9ea178df7703f46fddb2d6f9e7" prot="public" static="no">
+        <name>AUX_AGU_MOD23</name>
+        <initializer>(0x5f7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="108" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_ga494a15b4589258030dc4752bb3ad8555_1ga494a15b4589258030dc4752bb3ad8555" prot="public" static="no">
+        <name>AUX_XCCM_BASE</name>
+        <initializer>(0x5f8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="111" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__ARC__HAL__CORE__EM_gae938207df71004a706f2e0f15c068415_1gae938207df71004a706f2e0f15c068415" prot="public" static="no">
+        <name>AUX_YCCM_BASE</name>
+        <initializer>(0x5f9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" line="112" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file of EM series. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">#ifndef<sp/>H_ARC_EM</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H_ARC_EM</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc_8h" kindref="compound">arc/arc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="group__ARC__HAL__CORE__EM_gae7d11cea662ccb341878a666695df7ab_1gae7d11cea662ccb341878a666695df7ab" refkind="member"><highlight class="preprocessor">#define<sp/>AUX_AGU_AP0<sp/><sp/><sp/><sp/><sp/>(0x5c0)</highlight></codeline>
+<codeline lineno="52" refid="group__ARC__HAL__CORE__EM_ga9ccca52c1000636b1656f38e268732bd_1ga9ccca52c1000636b1656f38e268732bd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP1<sp/><sp/><sp/><sp/><sp/>(0x5c1)</highlight></codeline>
+<codeline lineno="53" refid="group__ARC__HAL__CORE__EM_ga6c92d6391df9eadaf18926c9caa1e21d_1ga6c92d6391df9eadaf18926c9caa1e21d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP2<sp/><sp/><sp/><sp/><sp/>(0x5c2)</highlight></codeline>
+<codeline lineno="54" refid="group__ARC__HAL__CORE__EM_ga36c900f6aecd0ca780f2a1683cb823ad_1ga36c900f6aecd0ca780f2a1683cb823ad" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP3<sp/><sp/><sp/><sp/><sp/>(0x5c3)</highlight></codeline>
+<codeline lineno="55" refid="group__ARC__HAL__CORE__EM_gad38ec97610fb059a8b514f2eab7519f7_1gad38ec97610fb059a8b514f2eab7519f7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP4<sp/><sp/><sp/><sp/><sp/>(0x5c4)</highlight></codeline>
+<codeline lineno="56" refid="group__ARC__HAL__CORE__EM_ga8e2a6fc164c38ff54979ca1b038be3aa_1ga8e2a6fc164c38ff54979ca1b038be3aa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP5<sp/><sp/><sp/><sp/><sp/>(0x5c5)</highlight></codeline>
+<codeline lineno="57" refid="group__ARC__HAL__CORE__EM_gafd7aacaa2d438a8a2acc3e9fde668ff1_1gafd7aacaa2d438a8a2acc3e9fde668ff1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP6<sp/><sp/><sp/><sp/><sp/>(0x5c6)</highlight></codeline>
+<codeline lineno="58" refid="group__ARC__HAL__CORE__EM_ga924c6b9a1b7b93f4ccf17b25428ffe2e_1ga924c6b9a1b7b93f4ccf17b25428ffe2e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP7<sp/><sp/><sp/><sp/><sp/>(0x5c7)</highlight></codeline>
+<codeline lineno="59" refid="group__ARC__HAL__CORE__EM_ga53d590cb3bd5b2d04db7382d1af4dcec_1ga53d590cb3bd5b2d04db7382d1af4dcec" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP8<sp/><sp/><sp/><sp/><sp/>(0x5c8)</highlight></codeline>
+<codeline lineno="60" refid="group__ARC__HAL__CORE__EM_gaec42929f98a57bfa91c7973bc90dfe44_1gaec42929f98a57bfa91c7973bc90dfe44" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP9<sp/><sp/><sp/><sp/><sp/>(0x5c9)</highlight></codeline>
+<codeline lineno="61" refid="group__ARC__HAL__CORE__EM_ga6974a8908089bf5be2e076dbc3e96648_1ga6974a8908089bf5be2e076dbc3e96648" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP10<sp/><sp/><sp/><sp/>(0x5ca)</highlight></codeline>
+<codeline lineno="62" refid="group__ARC__HAL__CORE__EM_ga77ade7e7be0e74f1325214b3dadf7ab4_1ga77ade7e7be0e74f1325214b3dadf7ab4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP11<sp/><sp/><sp/><sp/>(0x5cb)</highlight></codeline>
+<codeline lineno="63" refid="group__ARC__HAL__CORE__EM_gada8a3392c81b7e994e516a5dab92b351_1gada8a3392c81b7e994e516a5dab92b351" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP12<sp/><sp/><sp/><sp/>(0x5cc)</highlight></codeline>
+<codeline lineno="64" refid="group__ARC__HAL__CORE__EM_ga334fc4b074592362c6000ddeb01ec63e_1ga334fc4b074592362c6000ddeb01ec63e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP13<sp/><sp/><sp/><sp/>(0x5cd)</highlight></codeline>
+<codeline lineno="65" refid="group__ARC__HAL__CORE__EM_gadfb26b434ab4f97d04c2964c7f2fcdb1_1gadfb26b434ab4f97d04c2964c7f2fcdb1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP14<sp/><sp/><sp/><sp/>(0x5ce)</highlight></codeline>
+<codeline lineno="66" refid="group__ARC__HAL__CORE__EM_ga527317dbf581e7dea92d4689dd36893f_1ga527317dbf581e7dea92d4689dd36893f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_AP15<sp/><sp/><sp/><sp/>(0x5cf)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group__ARC__HAL__CORE__EM_gadaa3dab0e52b5879190b6552cdb745f0_1gadaa3dab0e52b5879190b6552cdb745f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS0<sp/><sp/><sp/><sp/><sp/>(0x5d0)</highlight></codeline>
+<codeline lineno="69" refid="group__ARC__HAL__CORE__EM_gae4a2a51ce472e6e0612da1934987fb9c_1gae4a2a51ce472e6e0612da1934987fb9c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS1<sp/><sp/><sp/><sp/><sp/>(0x5d1)</highlight></codeline>
+<codeline lineno="70" refid="group__ARC__HAL__CORE__EM_ga404d7c548a11752b56da977de8d912ac_1ga404d7c548a11752b56da977de8d912ac" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS2<sp/><sp/><sp/><sp/><sp/>(0x5d2)</highlight></codeline>
+<codeline lineno="71" refid="group__ARC__HAL__CORE__EM_gad430d5760bafe83551e4e25d1e37989d_1gad430d5760bafe83551e4e25d1e37989d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS3<sp/><sp/><sp/><sp/><sp/>(0x5d3)</highlight></codeline>
+<codeline lineno="72" refid="group__ARC__HAL__CORE__EM_ga172c1c037dc2664004aa726ac077a5f0_1ga172c1c037dc2664004aa726ac077a5f0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS4<sp/><sp/><sp/><sp/><sp/>(0x5d4)</highlight></codeline>
+<codeline lineno="73" refid="group__ARC__HAL__CORE__EM_ga1a516aaddbc14511958bd2455a35e608_1ga1a516aaddbc14511958bd2455a35e608" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS5<sp/><sp/><sp/><sp/><sp/>(0x5d5)</highlight></codeline>
+<codeline lineno="74" refid="group__ARC__HAL__CORE__EM_gadf23b6d2352fe42476a5af8cf389e48e_1gadf23b6d2352fe42476a5af8cf389e48e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS6<sp/><sp/><sp/><sp/><sp/>(0x5d6)</highlight></codeline>
+<codeline lineno="75" refid="group__ARC__HAL__CORE__EM_ga01f4290bfbd76655b667aa59ecb28b18_1ga01f4290bfbd76655b667aa59ecb28b18" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS7<sp/><sp/><sp/><sp/><sp/>(0x5d7)</highlight></codeline>
+<codeline lineno="76" refid="group__ARC__HAL__CORE__EM_gae43b1089bba835a1368946639d05ca09_1gae43b1089bba835a1368946639d05ca09" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS8<sp/><sp/><sp/><sp/><sp/>(0x5d8)</highlight></codeline>
+<codeline lineno="77" refid="group__ARC__HAL__CORE__EM_ga86ba487b2ddfa501dd3095bfe7b78a4f_1ga86ba487b2ddfa501dd3095bfe7b78a4f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS9<sp/><sp/><sp/><sp/><sp/>(0x5d9)</highlight></codeline>
+<codeline lineno="78" refid="group__ARC__HAL__CORE__EM_gae518e5b734af754ba2b5354bc18139ae_1gae518e5b734af754ba2b5354bc18139ae" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS10<sp/><sp/><sp/><sp/>(0x5da)</highlight></codeline>
+<codeline lineno="79" refid="group__ARC__HAL__CORE__EM_gab808e26329c83ea2c64ee3678aa06ea5_1gab808e26329c83ea2c64ee3678aa06ea5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS11<sp/><sp/><sp/><sp/>(0x5db)</highlight></codeline>
+<codeline lineno="80" refid="group__ARC__HAL__CORE__EM_ga4a01305ce4ba5faa8e3a5929249b4d6f_1ga4a01305ce4ba5faa8e3a5929249b4d6f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS12<sp/><sp/><sp/><sp/>(0x5dc)</highlight></codeline>
+<codeline lineno="81" refid="group__ARC__HAL__CORE__EM_gad12a54b0ddffa3c2111edd8e96842d33_1gad12a54b0ddffa3c2111edd8e96842d33" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS13<sp/><sp/><sp/><sp/>(0x5dd)</highlight></codeline>
+<codeline lineno="82" refid="group__ARC__HAL__CORE__EM_ga783dce4053d56a92bc9948e76b27db58_1ga783dce4053d56a92bc9948e76b27db58" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS14<sp/><sp/><sp/><sp/>(0x5de)</highlight></codeline>
+<codeline lineno="83" refid="group__ARC__HAL__CORE__EM_gab5df55c05809313087f66a044445f774_1gab5df55c05809313087f66a044445f774" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_OS15<sp/><sp/><sp/><sp/>(0x5df)</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="group__ARC__HAL__CORE__EM_gaca0d4cf8cd9c96f7d4bd2cb1cdc44efc_1gaca0d4cf8cd9c96f7d4bd2cb1cdc44efc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD0<sp/><sp/><sp/><sp/>(0x5e0)</highlight></codeline>
+<codeline lineno="86" refid="group__ARC__HAL__CORE__EM_gac0043f477051d7932d5be5bc2f964f6f_1gac0043f477051d7932d5be5bc2f964f6f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD1<sp/><sp/><sp/><sp/>(0x5e1)</highlight></codeline>
+<codeline lineno="87" refid="group__ARC__HAL__CORE__EM_ga9767750a73d92a04cc84c27ec67701f2_1ga9767750a73d92a04cc84c27ec67701f2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD2<sp/><sp/><sp/><sp/>(0x5e2)</highlight></codeline>
+<codeline lineno="88" refid="group__ARC__HAL__CORE__EM_ga55aa3a4d8c00fbb356032c8a1b9f2e38_1ga55aa3a4d8c00fbb356032c8a1b9f2e38" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD3<sp/><sp/><sp/><sp/>(0x5e3)</highlight></codeline>
+<codeline lineno="89" refid="group__ARC__HAL__CORE__EM_ga3067be3a8d4dfac512b64ec9ddcb03d8_1ga3067be3a8d4dfac512b64ec9ddcb03d8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD4<sp/><sp/><sp/><sp/>(0x5e4)</highlight></codeline>
+<codeline lineno="90" refid="group__ARC__HAL__CORE__EM_ga77a9681b39515d8f38a10f2c6b63eb44_1ga77a9681b39515d8f38a10f2c6b63eb44" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD5<sp/><sp/><sp/><sp/>(0x5e5)</highlight></codeline>
+<codeline lineno="91" refid="group__ARC__HAL__CORE__EM_gae81d27f59a7bbbfdefbd9546f026f1ac_1gae81d27f59a7bbbfdefbd9546f026f1ac" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD6<sp/><sp/><sp/><sp/>(0x5e6)</highlight></codeline>
+<codeline lineno="92" refid="group__ARC__HAL__CORE__EM_ga8069704770a0b3fff47a1b9dcd7aac30_1ga8069704770a0b3fff47a1b9dcd7aac30" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD7<sp/><sp/><sp/><sp/>(0x5e7)</highlight></codeline>
+<codeline lineno="93" refid="group__ARC__HAL__CORE__EM_ga8e21687ec45cc4f67c9e52448531b9ef_1ga8e21687ec45cc4f67c9e52448531b9ef" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD8<sp/><sp/><sp/><sp/>(0x5e8)</highlight></codeline>
+<codeline lineno="94" refid="group__ARC__HAL__CORE__EM_gab5afbf8249d4bd656d9675731c0ef0da_1gab5afbf8249d4bd656d9675731c0ef0da" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD9<sp/><sp/><sp/><sp/>(0x5e9)</highlight></codeline>
+<codeline lineno="95" refid="group__ARC__HAL__CORE__EM_ga2e1edf74c8cc0ed7a49fc501e2ec0dca_1ga2e1edf74c8cc0ed7a49fc501e2ec0dca" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD10<sp/><sp/><sp/>(0x5ea)</highlight></codeline>
+<codeline lineno="96" refid="group__ARC__HAL__CORE__EM_ga734ce810188a287fd16c9494540fb1eb_1ga734ce810188a287fd16c9494540fb1eb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD11<sp/><sp/><sp/>(0x5eb)</highlight></codeline>
+<codeline lineno="97" refid="group__ARC__HAL__CORE__EM_ga3667959658d58056e8374df6a3f666ba_1ga3667959658d58056e8374df6a3f666ba" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD12<sp/><sp/><sp/>(0x5ec)</highlight></codeline>
+<codeline lineno="98" refid="group__ARC__HAL__CORE__EM_ga64bd6dd0158b01a7ff492487bd50c340_1ga64bd6dd0158b01a7ff492487bd50c340" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD13<sp/><sp/><sp/>(0x5ed)</highlight></codeline>
+<codeline lineno="99" refid="group__ARC__HAL__CORE__EM_ga64c230a2477a907152c957355beb64dc_1ga64c230a2477a907152c957355beb64dc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD14<sp/><sp/><sp/>(0x5ee)</highlight></codeline>
+<codeline lineno="100" refid="group__ARC__HAL__CORE__EM_gab36c6c8d361a87d2ab54f704d80f1c5c_1gab36c6c8d361a87d2ab54f704d80f1c5c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD15<sp/><sp/><sp/>(0x5ef)</highlight></codeline>
+<codeline lineno="101" refid="group__ARC__HAL__CORE__EM_ga8ea57d684c44678bb45a3fec6a3f8b1e_1ga8ea57d684c44678bb45a3fec6a3f8b1e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD16<sp/><sp/><sp/>(0x5f0)</highlight></codeline>
+<codeline lineno="102" refid="group__ARC__HAL__CORE__EM_ga1bc31e7c415e9d508a4fcb3d9a48eda3_1ga1bc31e7c415e9d508a4fcb3d9a48eda3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD17<sp/><sp/><sp/>(0x5f1)</highlight></codeline>
+<codeline lineno="103" refid="group__ARC__HAL__CORE__EM_gad167cab5f6b92043ce92c895727ec76b_1gad167cab5f6b92043ce92c895727ec76b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD18<sp/><sp/><sp/>(0x5f2)</highlight></codeline>
+<codeline lineno="104" refid="group__ARC__HAL__CORE__EM_gad9514bdf4af62506485abbeb32cbf76c_1gad9514bdf4af62506485abbeb32cbf76c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD19<sp/><sp/><sp/>(0x5f3)</highlight></codeline>
+<codeline lineno="105" refid="group__ARC__HAL__CORE__EM_gacc561e7eb2d67315d76f18abd804e7fa_1gacc561e7eb2d67315d76f18abd804e7fa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD20<sp/><sp/><sp/>(0x5f4)</highlight></codeline>
+<codeline lineno="106" refid="group__ARC__HAL__CORE__EM_gaf87f1cfa0e5c2c71fdd95517efae237e_1gaf87f1cfa0e5c2c71fdd95517efae237e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD21<sp/><sp/><sp/>(0x5f5)</highlight></codeline>
+<codeline lineno="107" refid="group__ARC__HAL__CORE__EM_ga76f900dc71f4a73f32d71459bcbe9722_1ga76f900dc71f4a73f32d71459bcbe9722" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD22<sp/><sp/><sp/>(0x5f6)</highlight></codeline>
+<codeline lineno="108" refid="group__ARC__HAL__CORE__EM_gae9a73f9ea178df7703f46fddb2d6f9e7_1gae9a73f9ea178df7703f46fddb2d6f9e7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_AGU_MOD23<sp/><sp/><sp/>(0x5f7)</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="111" refid="group__ARC__HAL__CORE__EM_ga494a15b4589258030dc4752bb3ad8555_1ga494a15b4589258030dc4752bb3ad8555" refkind="member"><highlight class="preprocessor">#define<sp/>AUX_XCCM_BASE<sp/><sp/><sp/>(0x5f8)</highlight></codeline>
+<codeline lineno="112" refid="group__ARC__HAL__CORE__EM_gae938207df71004a706f2e0f15c068415_1gae938207df71004a706f2e0f15c068415" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AUX_YCCM_BASE<sp/><sp/><sp/>(0x5f9)</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor">#ifndef<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__ASSEMBLY__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>H_ARC_EM<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_em.h"/>
+  </compounddef>
+</doxygen>

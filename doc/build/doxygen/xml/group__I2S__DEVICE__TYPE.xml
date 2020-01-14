@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__I2S__DEVICE__TYPE" kind="group">
+    <compoundname>I2S_DEVICE_TYPE</compoundname>
+    <title>I2S Device Type</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__I2S__DEVICE__TYPE_1ga9f91b0bd8d7c5f4a8efe4ca701d7d680" prot="public" static="no">
+        <name>I2S_DEVICE_TYPE</name>
+        <enumvalue id="group__I2S__DEVICE__TYPE_ga9f91b0bd8d7c5f4a8efe4ca701d7d680_1gga9f91b0bd8d7c5f4a8efe4ca701d7d680ab3c8bedf88d7ae02593d28719246ef48" prot="public">
+          <name>I2S_DEVICE_TRANSMITTER</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S TX device </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__I2S__DEVICE__TYPE_ga9f91b0bd8d7c5f4a8efe4ca701d7d680_1gga9f91b0bd8d7c5f4a8efe4ca701d7d680a3fafd3ba0b838d8ef620f6c4dd47b2d6" prot="public">
+          <name>I2S_DEVICE_RECEIVER</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S RX device </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" line="99" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_i2s.h" bodystart="99" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for I2S device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

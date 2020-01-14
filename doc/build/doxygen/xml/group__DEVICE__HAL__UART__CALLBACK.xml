@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__UART__CALLBACK" kind="group">
+    <compoundname>DEVICE_HAL_UART_CALLBACK</compoundname>
+    <title>UART Interrupt callback functions</title>
+    <innerclass refid="structDEV__UART__CBS" prot="public">DEV_UART_CBS</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DEVICE__HAL__UART__CALLBACK_1ga6c398046d1aaeeb5087a2519ef328c0a" prot="public" static="no">
+        <type>struct <ref refid="structDEV__UART__CBS" kindref="compound">DEV_UART_CBS</ref> *</type>
+        <definition>typedef  struct DEV_UART_CBS * DEV_UART_CBS_PTR</definition>
+        <argsstring></argsstring>
+        <name>DEV_UART_CBS_PTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="326" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definition for uart device callback. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

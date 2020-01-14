@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__SPI__CBS" kind="struct" prot="public">
+    <compoundname>DEV_SPI_CBS</compoundname>
+    <includes refid="dev__spi_8h" local="no">dev_spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__SPI__CBS_a0c5aeedf91022856ab9361d36f5809d3_1a0c5aeedf91022856ab9361d36f5809d3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_SPI_CBS::tx_cb</definition>
+        <argsstring></argsstring>
+        <name>tx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi data transmit success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="338" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__CBS_a3ebbee7c01e6d431bdc90422d7b01a44_1a3ebbee7c01e6d431bdc90422d7b01a44" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_SPI_CBS::rx_cb</definition>
+        <argsstring></argsstring>
+        <name>rx_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi data receive success required bytes callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="339" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__CBS_aa901bf96215af71307a4bb643cd31953_1aa901bf96215af71307a4bb643cd31953" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_SPI_CBS::err_cb</definition>
+        <argsstring></argsstring>
+        <name>err_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi error callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="340" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__SPI__CBS_a0a3923d67baa5c285649b6c37cd2b056_1a0a3923d67baa5c285649b6c37cd2b056" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__COMMON_ga91091c2a8f895b2d00ae61e6b607335e_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref></type>
+        <definition>DEV_CALLBACK DEV_SPI_CBS::xfer_cb</definition>
+        <argsstring></argsstring>
+        <name>xfer_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transfer callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="341" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" line="337" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_spi.h" bodystart="337" bodyend="342"/>
+    <listofallmembers>
+      <member refid="structDEV__SPI__CBS_aa901bf96215af71307a4bb643cd31953_1aa901bf96215af71307a4bb643cd31953" prot="public" virt="non-virtual"><scope>DEV_SPI_CBS</scope><name>err_cb</name></member>
+      <member refid="structDEV__SPI__CBS_a3ebbee7c01e6d431bdc90422d7b01a44_1a3ebbee7c01e6d431bdc90422d7b01a44" prot="public" virt="non-virtual"><scope>DEV_SPI_CBS</scope><name>rx_cb</name></member>
+      <member refid="structDEV__SPI__CBS_a0c5aeedf91022856ab9361d36f5809d3_1a0c5aeedf91022856ab9361d36f5809d3" prot="public" virt="non-virtual"><scope>DEV_SPI_CBS</scope><name>tx_cb</name></member>
+      <member refid="structDEV__SPI__CBS_a0a3923d67baa5c285649b6c37cd2b056_1a0a3923d67baa5c285649b6c37cd2b056" prot="public" virt="non-virtual"><scope>DEV_SPI_CBS</scope><name>xfer_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

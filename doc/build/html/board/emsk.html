@@ -1,0 +1,1521 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ARC EM Starter Kit &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ARC EM Software Development Platform" href="emsdp.html" />
+    <link rel="prev" title="ARC Software Development Platform" href="axs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="board.html">Boards</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="board.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="board.html#common-board-initialization-process">Common Board Initialization Process</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="board.html#supported-boards">Supported Boards</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="axs.html">ARC Software Development Platform</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ARC EM Starter Kit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#programming-and-debugging">Programming and Debugging</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="emsdp.html">ARC EM Software Development Platform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hsdk.html">ARC HS Development Kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="iotdk.html">ARC IoT Development Kit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nsim.html">Virtual Board based on ARC nSIM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="board.html#board-resource-unified-definitions">Board Resource Unified Definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="board.html">Boards</a> &raquo;</li>
+        
+      <li>ARC EM Starter Kit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="arc-em-starter-kit">
+<span id="board-emsk"></span><h1>ARC EM Starter Kit<a class="headerlink" href="#arc-em-starter-kit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The DesignWare® ARC® EM Starter Kit (EMSK, emsk) enables rapid
+software development, code porting, software debugging, and profiling for ARC
+EM4, EM6 (EMSK 1.1), EM5D, EM7D, EM9D and EM11D (EMSK 2.3) processors.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Caches are not integrated in EM5D and EM9D configurations. If program code runs in DDR memory, SPI and IIC devices should run at a slower frequency.
+EMSK 1.0 must be upgraded to EMSK 1.1 using EMSK 1.1’s firmware, EMSK 2.0, 2.1 and 2.2 must be upgraded to EMSK 2.3 using EMSK 2.3’s firmware.</p>
+</div>
+<p>The EMSK consists of a hardware platform and a software package, including
+pre-installed FPGA images of different configurations of the ARC EM Processor
+with peripherals.</p>
+<p>The development board is based on a Xilinx Spartan-6 LX45 FPGA. It
+supports hardware extensions using six 2x6 connectors supporting a total of 48
+user I/O pins (plus power and ground pins) that can be used to connect
+components such as sensors, actuators, memories, displays, buttons, switches,
+and communication devices. A Digilent Pmod™ compatible extension board
+containing a four-channel 12-bit A/D converter with an IIC interface and an AC
+power adapter are included in the package.</p>
+<img alt="EM Starter Kit Board" class="align-center" src="../_images/emsk_board.png" />
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="em-core-configurations">
+<h3>EM core configurations<a class="headerlink" href="#em-core-configurations" title="Permalink to this headline">¶</a></h3>
+<p>The FPGA board includes a SPI flash storage device pre-programmed with FPGA
+images containing different configurations of DesignWare® ARC EM cores.</p>
+<p>The FPGA image can be selected using the pins 1 and 2 of the SW1 switch on the
+board:</p>
+<img alt="EM Starter Kit DIP Switch" class="align-center" src="../_images/emsk_dipswitch.jpg" />
+<p>The following tables provide the details of supported EM Core configurations
+for different suported versions of EMSK board.</p>
+<ul class="simple">
+<li><p><strong>EMSK 1.1</strong></p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 9%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 6%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Bit 1</p></th>
+<th class="head" rowspan="2"><p>Bit 2</p></th>
+<th class="head" rowspan="2"><p>Core</p></th>
+<th class="head" colspan="7"><p>Configuration</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>ICCM</p></th>
+<th class="head"><p>DCCM</p></th>
+<th class="head"><p>Instruction Cache</p></th>
+<th class="head"><p>Data cache</p></th>
+<th class="head"><p>Timers</p></th>
+<th class="head"><p>Core Registers</p></th>
+<th class="head"><p>Address Width</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>OFF</p></td>
+<td><p>OFF</p></td>
+<td><p>ARC_EM4</p></td>
+<td><p>128KB</p></td>
+<td><p>64KB</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>2</p></td>
+<td><p>32</p></td>
+<td><p>32</p></td>
+</tr>
+<tr class="row-even"><td><p>ON</p></td>
+<td><p>OFF</p></td>
+<td><p>ARC_EM4_16CR</p></td>
+<td><p>128KB</p></td>
+<td><p>64KB</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>1</p></td>
+<td><p>16</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-odd"><td><p>OFF</p></td>
+<td><p>ON</p></td>
+<td><p>ARC_EM6</p></td>
+<td><p>32KB</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>32KB,4-way,Line Length 128</p></td>
+<td><p>32KB,4-way,Line Length 128</p></td>
+<td><p>2</p></td>
+<td><p>32</p></td>
+<td><p>32</p></td>
+</tr>
+<tr class="row-even"><td><p>ON</p></td>
+<td><p>ON</p></td>
+<td><p>ARC_EM6_GP</p></td>
+<td><p>32KB</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>16KB,2-way,Line Length 32</p></td>
+<td><p>16KB,2-way,Line Length 32</p></td>
+<td><p>1</p></td>
+<td><p>32</p></td>
+<td><p>32</p></td>
+</tr>
+</tbody>
+</table>
+<p>The system clock is 35 MHz in the ARC_EM4 and ARC_EM4_16CR configurations and 30 MHz in the ARC_EM6 and ARC_EM6_GP configurations. The peripheral clock is always 50 MHz.</p>
+<ul class="simple">
+<li><p><strong>EMSK 2.3</strong></p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 11%" />
+<col style="width: 8%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Bit 1</p></th>
+<th class="head" rowspan="2"><p>Bit 2</p></th>
+<th class="head" rowspan="2"><p>Core</p></th>
+<th class="head" colspan="12"><p>Configuration</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>ICCM</p></th>
+<th class="head"><p>DCCM</p></th>
+<th class="head"><p>DDR2</p></th>
+<th class="head"><p>Instruction Cache</p></th>
+<th class="head"><p>Data cache</p></th>
+<th class="head"><p>Timers</p></th>
+<th class="head"><p>XY</p></th>
+<th class="head"><p>Address Width</p></th>
+<th class="head"><p>DSP</p></th>
+<th class="head"><p>FPU</p></th>
+<th class="head"><p>MPU</p></th>
+<th class="head"><p>Fmax</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>OFF</p></td>
+<td><p>OFF</p></td>
+<td><p>ARC_EM7D</p></td>
+<td><p>256KB</p></td>
+<td><p>128KB</p></td>
+<td><p>128MB</p></td>
+<td><p>16KB</p></td>
+<td><p>16KB</p></td>
+<td><p>2</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>32</p></td>
+<td><p>complex</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>True</p></td>
+<td><p>25MHz</p></td>
+</tr>
+<tr class="row-even"><td><p>ON</p></td>
+<td><p>OFF</p></td>
+<td><p>ARC_EM9D</p></td>
+<td><p>256KB</p></td>
+<td><p>128KB</p></td>
+<td><p>128MB</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>2</p></td>
+<td><p>DCCM+X+Y,8K</p></td>
+<td><p>32</p></td>
+<td><p>complex,itu,accshift</p></td>
+<td><p>sigle precision-</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>20MHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>OFF</p></td>
+<td><p>ON</p></td>
+<td><p>ARC_EM11D</p></td>
+<td><p>64KB</p></td>
+<td><p>64KB</p></td>
+<td><p>128MB</p></td>
+<td><p>16KB</p></td>
+<td><p>16KB</p></td>
+<td><p>2</p></td>
+<td><p>DCCM+Y,8K</p></td>
+<td><p>32</p></td>
+<td><p>complex,itu,accshift</p></td>
+<td><p>sigle and double precision</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>20MHz</p></td>
+</tr>
+<tr class="row-even"><td><p>ON</p></td>
+<td><p>ON</p></td>
+<td><p>Reserved</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The select configuration is downloaded from the on-board SPI flash device automatically after power on or after you press the FPGA configure button located above the letter <code class="docutils literal notranslate"><span class="pre">C</span></code> pf the ARC logo on the baseboard.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After the FPGA is programmed, the DIP switches are available for user applications. They must be switched back to the position for the desired predefined FPGA image, before you press the FPGA configuration button and power the board up. The ARC EM4, ARC EM5 and ARC EM6 processors are subsets of ARC EM7D. So software may be built for ARC EM4, ARC EM5 and ARC EM6 processors but then run on the ARC EM7D.</p>
+</div>
+</div>
+<div class="section" id="peripherals">
+<h3>Peripherals<a class="headerlink" href="#peripherals" title="Permalink to this headline">¶</a></h3>
+<p>There are many peripheral devices available, such as SPI master, SPI slave,
+IIC, UART, GPIO. External hardware interface devices can be connected to the
+EMSK using Pmod Connectors. The Pmod connectors are controlled by Pmod mux
+controller.</p>
+<p>The peripheral memory mapping depends on the AHB address width. The
+configuration <em>ARC_EM4_16CR</em> uses an address width of 24 bits. The other
+configurations use an address width of 32 bits. The peripheral connections and
+memory mappings for different supported versions of EMSK board are shown below:</p>
+<ol class="arabic">
+<li><p>Peripheral Devices Connection to Pmods</p>
+<blockquote>
+<div><ul>
+<li><p><strong>EMSK 1.1</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Pmod</p></th>
+<th class="head" rowspan="2"><p>Pmod connectore</p></th>
+<th class="head" colspan="2"><p>Peripherals</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>MUX option 0</p></th>
+<th class="head"><p>MUX option 1</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>Pmod1</p></td>
+<td><p>J1</p></td>
+<td><p>GPIOs</p></td>
+<td><p>External SPI master + UART</p></td>
+</tr>
+<tr class="row-even"><td><p>Pmod2</p></td>
+<td><p>J2</p></td>
+<td><p>GPIOs</p></td>
+<td><p>ARC EM control/status signals + I2C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pmod3</p></td>
+<td><p>J3</p></td>
+<td><p>GPIOs</p></td>
+<td><p>GPIO + I2C</p></td>
+</tr>
+<tr class="row-even"><td><p>Pmod4</p></td>
+<td><p>J4</p></td>
+<td><p>GPIOs</p></td>
+<td><p>GPIO + I2C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pmod5</p></td>
+<td><p>J5</p></td>
+<td><p>GPIOs</p></td>
+<td><p>External SPI slaves 1 and 2</p></td>
+</tr>
+<tr class="row-even"><td><p>Pmod6</p></td>
+<td><p>J6</p></td>
+<td><p>GPIOs</p></td>
+<td><p>External SPI slaves 0 and CS outputs for all other SPI slaves + ARC EM control/status signals</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pmod7</p></td>
+<td><p>J20</p></td>
+<td><p>GPIOs</p></td>
+<td><p>ARC EM control/status signals</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The internal SPI slaves is not available fro ARC_EM6 and ARC_EM6_GP configurations. Consequently, an external SPI master can’t be connected to the Pmod1 connector for these configurations.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>EMSK 2.3</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Pmod</p></th>
+<th class="head" rowspan="2"><p>Pmod connectore</p></th>
+<th class="head" colspan="2"><p>Peripherals</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>MUX option 0</p></th>
+<th class="head"><p>MUX option 1</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>Pmod1</p></td>
+<td><p>J1</p></td>
+<td><p>GPIOs</p></td>
+<td><p>External SPI master + UART</p></td>
+</tr>
+<tr class="row-even"><td><p>Pmod2</p></td>
+<td><p>J2</p></td>
+<td><p>GPIOs</p></td>
+<td><p>ARC EM control/status signals + I2C_0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pmod3</p></td>
+<td><p>J3</p></td>
+<td><p>GPIOs</p></td>
+<td><p>Reserved</p></td>
+</tr>
+<tr class="row-even"><td><p>Pmod4</p></td>
+<td><p>J4</p></td>
+<td><p>GPIOs</p></td>
+<td><p>GPIO + I2C_1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pmod5</p></td>
+<td><p>J5</p></td>
+<td><p>GPIOs</p></td>
+<td><p>External SPI slaves 1 + UART2</p></td>
+</tr>
+<tr class="row-even"><td><p>Pmod6</p></td>
+<td><p>J6</p></td>
+<td><p>GPIOs</p></td>
+<td><p>External SPI slaves 0 and CS outputs for all other SPI slaves + ARC EM control/status signals</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pmod7</p></td>
+<td><p>J20</p></td>
+<td><p>GPIOs</p></td>
+<td><p>ARC EM control/status signals</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Peripheral Memory Mapping</p>
+<blockquote>
+<div><ul>
+<li><p><strong>EMSK 1.1</strong></p>
+<blockquote>
+<div><p>The peripheral memory mapping depending on the AHB address width. The configuration ARC_EM_16CR uses an address width of 24 bits. The other thress configurations use an address width of 32 bits.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Name</p></th>
+<th class="head" colspan="2"><p>Address width: 32 bit</p></th>
+<th class="head" colspan="2"><p>Address width: 24 bit</p></th>
+<th class="head" rowspan="2"><p>Size</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Start</p></th>
+<th class="head"><p>End</p></th>
+<th class="head"><p>Start</p></th>
+<th class="head"><p>End</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>Pin Mux Controller</p></td>
+<td><p>0xF0000000</p></td>
+<td><p>0xF0000FFF</p></td>
+<td><p>0xF00000</p></td>
+<td><p>0xF00FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>0xF0002000</p></td>
+<td><p>0xF0002FFF</p></td>
+<td><p>0xF02000</p></td>
+<td><p>0xF02FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C</p></td>
+<td><p>0xF0004000</p></td>
+<td><p>0xF0004FFF</p></td>
+<td><p>0xF04000</p></td>
+<td><p>0xF04FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>SPI Master</p></td>
+<td><p>0xF0006000</p></td>
+<td><p>0xF0006FFF</p></td>
+<td><p>0xF06000</p></td>
+<td><p>0xF06FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI Slave</p></td>
+<td><p>0xF0007000</p></td>
+<td><p>0xF0007FFF</p></td>
+<td><p>0xF07000</p></td>
+<td><p>0xF07FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>UART0</p></td>
+<td><p>0xF0008000</p></td>
+<td><p>0xF0008FFF</p></td>
+<td><p>0xF08000</p></td>
+<td><p>0xF08FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>UART1</p></td>
+<td><p>0xF0009000</p></td>
+<td><p>0xF0009FFF</p></td>
+<td><p>0xF09000</p></td>
+<td><p>0xF09FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p><strong>EMSK 2.3</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" rowspan="2"><p>Name</p></th>
+<th class="head" colspan="2"><p>Address width: 32 bit</p></th>
+<th class="head" rowspan="2"><p>Size</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Start</p></th>
+<th class="head"><p>End</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>CREG Controller</p></td>
+<td><p>0xF0000000</p></td>
+<td><p>0xF0000FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>0xF0002000</p></td>
+<td><p>0xF0002FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Timer</p></td>
+<td><p>0xF0003000</p></td>
+<td><p>0xF0003FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>I2C_0</p></td>
+<td><p>0xF0004000</p></td>
+<td><p>0xF0004FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C_1</p></td>
+<td><p>0xF0005000</p></td>
+<td><p>0xF0005FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>SPI Master</p></td>
+<td><p>0xF0006000</p></td>
+<td><p>0xF0006FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI Slave</p></td>
+<td><p>0xF0007000</p></td>
+<td><p>0xF0007FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>UART0</p></td>
+<td><p>0xF0008000</p></td>
+<td><p>0xF0008FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>UART1</p></td>
+<td><p>0xF0009000</p></td>
+<td><p>0xF0009FFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>UART2</p></td>
+<td><p>0xF000A000</p></td>
+<td><p>0xF000AFFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>WDT</p></td>
+<td><p>0xF000B000</p></td>
+<td><p>0xF000BFFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>Reserved</p></td>
+<td><p>0xF000C000</p></td>
+<td><p>0xF000CFFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reserved</p></td>
+<td><p>0xF000D000</p></td>
+<td><p>0xF000DFFF</p></td>
+<td><p>4KB</p></td>
+</tr>
+<tr class="row-even"><td><p>Reserved</p></td>
+<td><p>0xF000F000</p></td>
+<td><p>0xF000FFFF</p></td>
+<td><p>8KB</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="pmod-pins-definition">
+<h3>PMOD pins Definition<a class="headerlink" href="#pmod-pins-definition" title="Permalink to this headline">¶</a></h3>
+<p>The location of the pins on the PMOD connectors is shown:</p>
+<img alt="ARC EMSK Pinout Diagram of PMOD" class="align-center" src="../_images/iotdk_pinout_diagram_of_pmod.png" />
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>POMD1(J1)</p></th>
+<th class="head" colspan="3"><p>POMD2(J2)</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Pins</p></th>
+<th class="head"><p>CFG1</p></th>
+<th class="head"><p>CFG2</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>CFG1</p></th>
+<th class="head"><p>CFG2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Port C[8]</p></td>
+<td><p>UART1_CTS</p></td>
+<td><p>1</p></td>
+<td><p>Port C[12]</p></td>
+<td><p>run_req</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Port C[9]</p></td>
+<td><p>UART1_TXD</p></td>
+<td><p>2</p></td>
+<td><p>Port C[13]</p></td>
+<td><p>run_ack</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Port C[10]</p></td>
+<td><p>UART1_RXD</p></td>
+<td><p>3</p></td>
+<td><p>Port C[14]</p></td>
+<td><p>I2C0_SCL</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Port C[11]</p></td>
+<td><p>UART1_RTS</p></td>
+<td><p>4</p></td>
+<td><p>Port C[15]</p></td>
+<td><p>I2C0_SDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>5</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+<td><p>6</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Port A[8]</p></td>
+<td><p>SPI1_CS_N</p></td>
+<td><p>7</p></td>
+<td><p>Port A[12]</p></td>
+<td><p>halt_req</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>Port A[9]</p></td>
+<td><p>SPI1_MOSI</p></td>
+<td><p>8</p></td>
+<td><p>Port A[13]</p></td>
+<td><p>halt_ack</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>Port A[10]</p></td>
+<td><p>SPI1_MISO</p></td>
+<td><p>9</p></td>
+<td><p>Port A[14]</p></td>
+<td><p>N.C</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>Port A[11]</p></td>
+<td><p>SPI1_SCLK</p></td>
+<td><p>10</p></td>
+<td><p>Port A[15]</p></td>
+<td><p>N.C</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>11</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+<td><p>12</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>POMD3(J3)</p></th>
+<th class="head" colspan="3"><p>POMD4(J4)</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Pins</p></th>
+<th class="head"><p>CFG1</p></th>
+<th class="head"><p>CFG2</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>CFG1</p></th>
+<th class="head"><p>CFG2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Port C[16]</p></td>
+<td><p>N.C</p></td>
+<td><p>1</p></td>
+<td><p>Port C[20]</p></td>
+<td><p>Port D[4]</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Port C[17]</p></td>
+<td><p>N.C</p></td>
+<td><p>2</p></td>
+<td><p>Port C[21]</p></td>
+<td><p>Port D[5]</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Port C[18]</p></td>
+<td><p>N.C</p></td>
+<td><p>3</p></td>
+<td><p>Port C[22]</p></td>
+<td><p>I2C1_SCL</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Port C[19]</p></td>
+<td><p>N.C</p></td>
+<td><p>4</p></td>
+<td><p>Port C[23]</p></td>
+<td><p>i2C1_SDA</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>5</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+<td><p>6</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Port A[16]</p></td>
+<td><p>N.C</p></td>
+<td><p>7</p></td>
+<td><p>Port A[20]</p></td>
+<td><p>Port D[6]</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>Port A[17]</p></td>
+<td><p>N.C</p></td>
+<td><p>8</p></td>
+<td><p>Port A[21]</p></td>
+<td><p>Port D[7]</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>Port A[18]</p></td>
+<td><p>N.C</p></td>
+<td><p>9</p></td>
+<td><p>Port A[22]</p></td>
+<td><p>N.C</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>Port A[19]</p></td>
+<td><p>N.C</p></td>
+<td><p>10</p></td>
+<td><p>Port A[23]</p></td>
+<td><p>N.C</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>11</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+<td><p>12</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>POMD5(J5)</p></th>
+<th class="head" colspan="3"><p>POMD6(J6)</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>Pins</p></th>
+<th class="head"><p>CFG1</p></th>
+<th class="head"><p>CFG2</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>CFG1</p></th>
+<th class="head"><p>CFG2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Port C[24]</p></td>
+<td><p>SPI0_CS1_N</p></td>
+<td><p>1</p></td>
+<td><p>Port C[28]</p></td>
+<td><p>SPI0_CS0_N</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Port C[25]</p></td>
+<td><p>SPI0_MOSI</p></td>
+<td><p>2</p></td>
+<td><p>Port C[29]</p></td>
+<td><p>SPI0_MOSI</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Port C[26]</p></td>
+<td><p>SPI0_MISO</p></td>
+<td><p>3</p></td>
+<td><p>Port C[30]</p></td>
+<td><p>SPI0_MISO</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Port C[27]</p></td>
+<td><p>SPI0_SCLK</p></td>
+<td><p>4</p></td>
+<td><p>Port C[31]</p></td>
+<td><p>SPI0_SCLK</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>5</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+<td><p>6</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Port A[24]</p></td>
+<td><p>UART2_CTS</p></td>
+<td><p>7</p></td>
+<td><p>Port A[28]</p></td>
+<td><p>SPI0_CS1_N</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>Port A[25]</p></td>
+<td><p>UART2_TXD</p></td>
+<td><p>8</p></td>
+<td><p>Port A[29]</p></td>
+<td><p>SPI0_CS2_N</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>Port A[26]</p></td>
+<td><p>UART2_RXD</p></td>
+<td><p>9</p></td>
+<td><p>Port A[30]</p></td>
+<td><p>halt</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>Port A[27]</p></td>
+<td><p>UART2_RTS</p></td>
+<td><p>10</p></td>
+<td><p>Port A[31]</p></td>
+<td><p>sleep</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+<td><p>11</p></td>
+<td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+<td><p>12</p></td>
+<td><p>3V3</p></td>
+<td><p>3V3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="peripherals-interrupts">
+<h3>Peripherals interrupts<a class="headerlink" href="#peripherals-interrupts" title="Permalink to this headline">¶</a></h3>
+<p>Peripherals can generate interrupts to the CPU. The interrupt irq assignments
+are as follows.</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">EMSK 1.1 - Interrupts Connections</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Interrupt</p></th>
+<th class="head"><p>Component</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>irq_18</p></td>
+<td><p>GPIO controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_19</p></td>
+<td><p>I2C controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_20</p></td>
+<td><p>Reserved</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_21</p></td>
+<td><p>SPI Master controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_22</p></td>
+<td><p>SPI Slave controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_23</p></td>
+<td><p>UART0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_24</p></td>
+<td><p>UART1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The SPI Slave controller is not present in the ARC_EM6 and ARC_EM6_GP configurations.</p>
+</div>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">EMSK 2.0, 2.1 - Interrupts Connections</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Interrupt</p></th>
+<th class="head"><p>Component</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>irq_18</p></td>
+<td><p>GPIO controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_19</p></td>
+<td><p>I2C_0 controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_20</p></td>
+<td><p>I2C_1 controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_21</p></td>
+<td><p>SPI Master controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_22</p></td>
+<td><p>SPI Slave controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_23</p></td>
+<td><p>UART0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_24</p></td>
+<td><p>UART1</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_25</p></td>
+<td><p>UART2</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_26</p></td>
+<td><p>WDT</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_27</p></td>
+<td><p>DW Timer 0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_28</p></td>
+<td><p>DW Timer 1</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-text">EMSK 2.2 - Interrupts Connections</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Interrupt</p></th>
+<th class="head"><p>Component</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>irq_22</p></td>
+<td><p>GPIO controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_23</p></td>
+<td><p>I2C_0 controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_24</p></td>
+<td><p>I2C_1 controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_25</p></td>
+<td><p>SPI Master controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_26</p></td>
+<td><p>SPI Slave controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_27</p></td>
+<td><p>UART0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_28</p></td>
+<td><p>UART1</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_29</p></td>
+<td><p>UART2</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_30</p></td>
+<td><p>WDT</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_31</p></td>
+<td><p>DW Timer 0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_32</p></td>
+<td><p>DW Timer 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_33</p></td>
+<td><p>I2S_Master_In</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_34</p></td>
+<td><p>I2S_Master_Out</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_35</p></td>
+<td><p>GMAC</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">EMSK 2.3 - Interrupts Connections</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Interrupt</p></th>
+<th class="head"><p>Component</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>irq_0…irq_15</p></td>
+<td><p>Internal EM core interrupts</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_16</p></td>
+<td><p>Core Timer 0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_17</p></td>
+<td><p>Core Timer 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_20</p></td>
+<td><p>Core Secure Timer 0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_22</p></td>
+<td><p>Core DMA controller</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_23</p></td>
+<td><p>Core DMA controller</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_24</p></td>
+<td><p>GPIO controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_15</p></td>
+<td><p>I2C_0 controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_26</p></td>
+<td><p>I2C_1 controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_27</p></td>
+<td><p>SPI Master controllor</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_28</p></td>
+<td><p>SPI Slave controllor</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_29</p></td>
+<td><p>UART0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_30</p></td>
+<td><p>UART1</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_31</p></td>
+<td><p>UART2</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_32</p></td>
+<td><p>WDT</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_33</p></td>
+<td><p>Timer 0</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_34</p></td>
+<td><p>Timer 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_35</p></td>
+<td><p>Reserved</p></td>
+</tr>
+<tr class="row-even"><td><p>irq_36</p></td>
+<td><p>Reserved</p></td>
+</tr>
+<tr class="row-odd"><td><p>irq_36</p></td>
+<td><p>Reserved</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Core Secure Timer 0 and Core DMA controller only available for ARC EM7D base configuration.</p>
+</div>
+</div>
+</div>
+<div class="section" id="programming-and-debugging">
+<span id="getting-started-with-em-starter-kit"></span><h2>Programming and Debugging<a class="headerlink" href="#programming-and-debugging" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required-hardware-and-software">
+<h3>Required Hardware and Software<a class="headerlink" href="#required-hardware-and-software" title="Permalink to this headline">¶</a></h3>
+<p>To use embARC BSP applications on the IoTDK board, the following items are required</p>
+<ul class="simple">
+<li><p>USB Cable</p></li>
+<li><p>The USB cable provides power to the board (maximum 500 mA). However, if the board is to run
+standalone, the universal switching power adaptor (110-240V AC to 5V DC),
+can be used to power the board</p></li>
+<li><p><a class="reference internal" href="../getting_started/software_requirement.html#software-requirement"><span class="std std-ref">Software Requirement</span></a>.</p></li>
+<li><p>(optional) A collection of PMOD modules.</p></li>
+</ul>
+</div>
+<div class="section" id="set-up-the-emsk">
+<h3>Set up the EMSK<a class="headerlink" href="#set-up-the-emsk" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>The EMSK has a bank of DIP switches labeled SW1 that are used to select a configuration. For example, to select ARC EM11D for EMSK 2.3, set bit 2 to the ON position (down), and the others to OFF (up) as shown.</p></li>
+</ol>
+<img alt="DIP switch settings for ARC EM11D on EMSK 2.3" class="align-center" src="../_images/emsk23_dipswitch.jpg" />
+<p>For exact DIP switch settings for various ARC EM Starter Kit versions, refer to EM Starter Kit section in provided embARC documentation. For complete ARC EM Starter Kit information, see the <strong>EM Starter Kit User’s Guide</strong> provided with the ARC EM Starter Kit.</p>
+<ol class="arabic simple">
+<li><p>Connect the USB cable to connector J7 on the EMSK to USB port on your development host. If using the Ashling Opella-XD for ARC Debug Probe, connect it to the J15 connector on EMSK.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Despite the fact that EMSK 2.3 can be powered by connector J7, it is recommended to always use an AC adapter to supply power of the board.</p>
+</div>
+<ol class="arabic">
+<li><p>You can use any terminal emulation program to view UART output from the EMSK. The USB connection provides both the debug channel and RS232 transport. Use PuTTY application on Windows as an example.</p>
+<ul>
+<li><p>Determine which COM port the EMSK is using.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open the <strong>Windows Control Panel</strong> and select <strong>Device Manager</strong> in a Windows environment.</p></li>
+<li><p>Expand <strong>Ports (COM and LPT)</strong> in the list. Select <strong>USB Serial Port (COM x)</strong> and note the COM port number for the ARC board.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Configure serial terminal connection.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Launch PuTTY. Select <strong>Serial</strong> under <strong>Connection type</strong> and enter the appropriate COM port string under <strong>Serial line</strong>.</p></li>
+<li><p>Choose 115200 baud, 8 bits, 1 stop bit, no parity (115200-8-N-1) in settings.</p></li>
+<li><p>You can optionally save your settings so they can be easily retrieved every time PuTTY is launched.</p></li>
+<li><p>Click Open to open the console.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Test serial output with EMSK.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Press the middle (“R”eset) button above the <strong>ARC</strong> label on the EMSK board to reset the board and run the self-test.</p></li>
+<li><p>Use EMSK 2.3 as an example. Confirm that you can see the header and self-test message printed to the console.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">***********************************</span>
+<span class="go">**       Synopsys, Inc.          **</span>
+<span class="go">**     ARC EM Starter kit        **</span>
+<span class="go">**                               **</span>
+<span class="go">** Comprehensive software stacks **</span>
+<span class="go">**   available from embARC.org   **</span>
+<span class="go">**                               **</span>
+<span class="go">***********************************</span>
+<span class="go">Firmware   Feb 22 2017, v2.3</span>
+<span class="go">Bootloader Feb 22 2017, v1.1</span>
+<span class="go">ARC EM11D, core configuration #3</span>
+
+<span class="go">ARC IDENTITY = 0x43</span>
+<span class="go">RF_BUILD = 0xc902</span>
+<span class="go">TIMER_BUILD = 0x10304</span>
+<span class="go">ICCM_BUILD = 0x804</span>
+<span class="go">DCCM_BUILD = 0x10804</span>
+<span class="go">I_CACHE_BUILD = 0x135104</span>
+<span class="go">D_CACHE_BUILD = 0x215104</span>
+
+<span class="go">SelfTest PASSED</span>
+
+<span class="go">Info: No boot image found</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="building">
+<h3>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h3>
+<p>Take <a class="reference internal" href="../example/example/blinky/README.html#example-blinky"><span class="std std-ref">Blinky</span></a> as an example and use the em7d configuration of EMSK 2.2</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd embarc_bsp\example\baremetal\blinky</span>
+<span class="gp">#</span> <span class="k">for</span> ARC GNU toolchain
+<span class="go">make TOOLCHAIN=gnu BOARD=emsk BD_VER=22 CUR_CORE=arcem7d</span>
+<span class="gp">#</span> <span class="k">for</span> MWDT toolchain
+<span class="go">make TOOLCHAIN=mw  BOARD=emsk BD_VER=22 CUR_CORE=arcem7d</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running">
+<h3>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd embarc_bsp\example\baremetal\blinky</span>
+<span class="gp">#</span> <span class="k">for</span> ARC GNU toolchain
+<span class="go">make TOOLCHAIN=gnu  BOARD=emsk BD_VER=22 CUR_CORE=arcem7d</span>
+<span class="gp">#</span> <span class="k">for</span> MWDT toolchain
+<span class="go">make TOOLCHAIN=mw  BOARD=emsk BD_VER=22 CUR_CORE=arcem7d</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd embarc_bsp\example\baremetal\blinky</span>
+<span class="gp">#</span> <span class="k">for</span> ARC GNU toolchain
+<span class="go">make TOOLCHAIN=gnu  BOARD=emsk BD_VER=22 CUR_CORE=arcem7d</span>
+<span class="gp">#</span> <span class="k">for</span> MWDT toolchain
+<span class="go">make TOOLCHAIN=mw  BOARD=emsk BD_VER=22 CUR_CORE=arcem7d</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="flashing">
+<h3>Flashing<a class="headerlink" href="#flashing" title="Permalink to this headline">¶</a></h3>
+<p>EMSK has an on board SPI flash, but you cannot directly flash your
+application into EMSK through debugger. You need other tools/applications
+(e.g., embarc bootloader) to do this.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

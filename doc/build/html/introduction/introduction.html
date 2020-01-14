@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Overview &mdash; embARC BSP Project Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting Started" href="../getting_started/getting_started.html" />
+    <link rel="prev" title="embARC BSP Documentation" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> embARC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019.12
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Documentation Home</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolchain-support">Toolchain Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copyright-notice">Copyright Notice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fundamental-terms-and-concepts">Fundamental Terms and Concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arc/index.html">ARC Processors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../device/device.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/board.html">Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lib/library.html">Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/developer_guides.html">Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">embARC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="overview">
+<span id="introduction-embarc-bsp"></span><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The embARC <strong>Board support Package</strong> (BSP) is a software distribution aimed at facilitating the development and evaluation of embedded systems based on
+ARCv2 processors.</p>
+<p>Unlike the <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp">embARC OSP</a> which is a full-featured distribution for ARC embedded systems,
+the embARC BSP is designed to provide a minimalistic board support package for ARC users by defining consistent and simple software interfaces to the processors
+and onboard devices.</p>
+<p>The embARC BSP code is originated from embARC OSP. The code is reorganized with the same ARC HAL, device HAL and driver implementations for DesignWare IP
+peripherals. The operating systems, common libraries and applications are not included in the embARC BSP. The code in embARC BSP is
+independent from the build system. It can be ported to various build system easily. The lightweight makefile and Eclipse IDE are both supported in embARC BSP
+as reference.</p>
+<ul class="simple">
+<li><p>Support MetaWare &amp; ARC GNU toolchains</p></li>
+<li><p>Support various build systems and compiling environments, such as simple makefile, ARC MetaWare &amp; GNU IDE, makefile, IDE support</p></li>
+<li><p>Use embARC ARC Hardware Abstraction Layer (HAL), C &amp; C++ support, assembly support</p></li>
+<li><p>Simple UART and GPIO, I2C, SPI drivers</p></li>
+<li><p>No middleware, no OS</p></li>
+<li><p>Hello &amp; blinky example (UART, GPIO, timer)</p></li>
+</ul>
+</div>
+<div class="section" id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h2>
+<p>The embARC BSP general architecture and components are shown
+in the block diagram below.</p>
+<img alt="embARC" class="align-center" src="../_images/embARC.png" />
+<ul class="simple">
+<li><p><a class="reference internal" href="../arc/index.html#arc-hal"><span class="std std-ref">ARC Hardware Abstraction Layer (ARC HAL)</span></a> provides the
+necessary hardware abstraction for DesignWare® ARC® processors ISA compatible processors.</p></li>
+<li><p><a class="reference internal" href="../device/device.html#device-hal"><span class="std std-ref">Device Hardware Abstraction Layer (HAL)</span></a> provides hardware
+abstraction for common platform devices and implementation of DesignWare IP
+drivers, such as UART, IIC, and SPI.</p></li>
+<li><p><a class="reference internal" href="../board/board.html#board-bsp"><span class="std std-ref">Board Support Package (BSP) Layer</span></a> provides support for
+different boards based on the ARCv2 processors.</p></li>
+<li><p><a class="reference internal" href="../lib/library.html#library-layer"><span class="std std-ref">Library Layer</span></a> provides basic common library support
+for embedded systems, such as C library, dlmalloc library ,and SecureShield
+library.</p></li>
+</ul>
+<p>Many <a class="reference internal" href="../example/index.html#example"><span class="std std-ref">examples</span></a> are also provided to help get started quickly with DesignWare® ARC® processors and the embARC BSP software.</p>
+</div>
+<div class="section" id="toolchain-support">
+<h2>Toolchain Support<a class="headerlink" href="#toolchain-support" title="Permalink to this headline">¶</a></h2>
+<p>The embARC BSP software is supported by the following toolchain offerings from Synopsys:</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://www.synopsys.com/dw/ipdir.php?ds=sw_metaware">DesignWare ARC MetaWare Development Toolkit</a>
+builds on a long legacy of industry-leading compiler and debugger products for embedded applications.
+It is a complete solution that contains all the components needed to support the
+development, debugging and tuning of embedded applications for the DesignWare® ARC® processors.</p></li>
+<li><p>The <a class="reference external" href="https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases">GNU Toolchain for DesignWare ARC Processors</a>
+provides a pre-built GNU toolchain for DesignWare® ARC® processors integrated into the Eclipse IDE.
+The GNU tools are maintained by Synopsys with new releases being published at
+regular intervals.</p></li>
+<li><p>The <a class="reference external" href="https://www.synopsys.com/cgi-bin/arcmwtk_lite/reg1.cgi">DesignWare ARC MetaWare Development Toolkit Lite Edition</a>
+is a functioning demonstration of the MetaWare Development Toolkit, but has a
+number of restrictions, including a code-size limit of 32 Kb and no run-time
+library sources. It is available for free download and use for academic, personal,
+and non-competitive evaluation purposes.</p></li>
+</ul>
+</div>
+<div class="section" id="copyright-notice">
+<h2>Copyright Notice<a class="headerlink" href="#copyright-notice" title="Permalink to this headline">¶</a></h2>
+<p>Copyright (c) 2020, Synopsys, Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:</p>
+<ol class="arabic simple">
+<li><p>Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.</p></li>
+<li><p>Neither the name of the Synopsys, Inc., nor the names of its contributors
+may be used to endorse or promote products derived from this software without
+specific prior written permission.</p></li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. NY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p><strong>For complete embARC license information, please refer to the embARC FOSS Notice</strong>.</p>
+</div>
+<div class="section" id="fundamental-terms-and-concepts">
+<h2>Fundamental Terms and Concepts<a class="headerlink" href="#fundamental-terms-and-concepts" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference internal" href="../glossary.html#glossary"><span class="std std-ref">Glossary of Terms</span></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Synopsys
+      <span class="lastupdated">
+        Last updated on Jan 14, 2020.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

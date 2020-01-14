@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="unionDMA__CTRL__T" kind="union" prot="public">
+    <compoundname>DMA_CTRL_T</compoundname>
+    <includes refid="arc__udma_8h" local="no">arc_udma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionDMA__CTRL__T_a24a1928eb120a47b5b651ef5179f6492_1a24a1928eb120a47b5b651ef5179f6492" prot="public" static="no" mutable="no">
+        <type><ref refid="structDMA__CTRL__FIELD__T" kindref="compound">DMA_CTRL_FIELD_T</ref></type>
+        <definition>DMA_CTRL_FIELD_T DMA_CTRL_T::bits</definition>
+        <argsstring></argsstring>
+        <name>bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>control register in bits format </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="141" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionDMA__CTRL__T_a2861ace9a428c942702d66965e05f2e6_1a2861ace9a428c942702d66965e05f2e6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DMA_CTRL_T::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>control register in word format </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="142" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>DMA channel control register union </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="119">
+        <label>DMA_CTRL_T</label>
+        <link refid="unionDMA__CTRL__T"/>
+        <childnode refid="120" relation="usage">
+          <edgelabel>bits</edgelabel>
+        </childnode>
+      </node>
+      <node id="120">
+        <label>DMA_CTRL_FIELD_T</label>
+        <link refid="structDMA__CTRL__FIELD__T"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" line="140" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_udma.h" bodystart="140" bodyend="143"/>
+    <listofallmembers>
+      <member refid="unionDMA__CTRL__T_a24a1928eb120a47b5b651ef5179f6492_1a24a1928eb120a47b5b651ef5179f6492" prot="public" virt="non-virtual"><scope>DMA_CTRL_T</scope><name>bits</name></member>
+      <member refid="unionDMA__CTRL__T_a2861ace9a428c942702d66965e05f2e6_1a2861ace9a428c942702d66965e05f2e6" prot="public" virt="non-virtual"><scope>DMA_CTRL_T</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

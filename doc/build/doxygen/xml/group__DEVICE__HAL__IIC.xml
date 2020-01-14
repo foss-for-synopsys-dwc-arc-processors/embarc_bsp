@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__DEVICE__HAL__IIC" kind="group">
+    <compoundname>DEVICE_HAL_IIC</compoundname>
+    <title>IIC Device HAL Interface</title>
+    <innerfile refid="dev__iic_8h">dev_iic.h</innerfile>
+    <innergroup refid="group__DEVICE__HAL__IIC__CTRLCMD">IIC Device Control Commands</innergroup>
+    <innergroup refid="group__DEVICE__HAL__IIC__DEVSTRUCT">IIC Device Structure</innergroup>
+    <innergroup refid="group__DEVICE__HAL__IIC__CALLBACK">IIC Interrupt callback functions</innergroup>
+    <innergroup refid="group__DEVICE__HAL__IIC__CFG">IIC Related Configurations</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__DEVICE__HAL__IIC_1ga0ce322e609d92e655c3bd4a16d6bff6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__DEVICE__HAL__IIC__DEVSTRUCT_ga442abd3748c116e7fdf5bef6a9a60759_1ga442abd3748c116e7fdf5bef6a9a60759" kindref="member">DEV_IIC_PTR</ref></type>
+        <definition>DEV_IIC_PTR iic_get_dev</definition>
+        <argsstring>(int32_t iic_id)</argsstring>
+        <name>iic_get_dev</name>
+        <param>
+          <type>int32_t</type>
+          <declname>iic_id</declname>
+        </param>
+        <briefdescription>
+<para>Get an <ref refid="structDEV__IIC" kindref="compound">iic device</ref> by iic device id. For how to use iic device hal refer to <ref refid="group__DEVICE__HAL__IIC__DEVSTRUCT" kindref="compound">Functions in iic device structure</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of iic, defined by user </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>!NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an <ref refid="structDEV__IIC" kindref="compound">iic device structure</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Failed to find the iic device by iic_id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Need to implemented by user in user code</para></simplesect>
+get one designware device structure </para>        </detaileddescription>
+        <inbodydescription>
+<para>&lt; iic 0 id macro</para><para>&lt; iic 0 id macro</para><para>&lt; iic 1 id macro</para><para>&lt; iic 2 id macro </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_iic.h" line="508" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c" bodystart="166" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definitions for iic device hardware layer (<ref refid="dev__iic_8h" kindref="compound">dev_iic.h</ref>) </para>    </briefdescription>
+    <detaileddescription>
+<para>Provide interfaces for iic driver to implement </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

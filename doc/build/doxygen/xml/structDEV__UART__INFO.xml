@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDEV__UART__INFO" kind="struct" prot="public">
+    <compoundname>DEV_UART_INFO</compoundname>
+    <includes refid="dev__uart_8h" local="no">dev_uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_UART_INFO::uart_ctrl</definition>
+        <argsstring></argsstring>
+        <name>uart_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart control related pointer, implemented by bsp developer, and this should be set during uart object implementation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="345" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_UART_INFO::opn_cnt</definition>
+        <argsstring></argsstring>
+        <name>opn_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart open count, open it will increase 1, close it will decrease 1, 0 for close, &gt;0 for open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="346" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_UART_INFO::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current working status, refer to <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS" kindref="compound">Common Device Status</ref>, this should be <ref refid="group__DEVICE__HAL__COMMON__DEVSTATUS_gaad1f383b0e8eb7feec60f52998730eff_1gaad1f383b0e8eb7feec60f52998730eff" kindref="member">DEV_ENABLED</ref> for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="347" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DEV_UART_INFO::baudrate</definition>
+        <argsstring></argsstring>
+        <name>baudrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart baud rate, this should be the value of baud passing by uart_open if first successfully opened </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="348" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_a728beb5d2027c8ff3ab82f3d3900bb71_1a728beb5d2027c8ff3ab82f3d3900bb71" prot="public" static="no" mutable="no">
+        <type><ref refid="structUART__DPS__FORMAT" kindref="compound">UART_DPS_FORMAT</ref></type>
+        <definition>UART_DPS_FORMAT DEV_UART_INFO::dps_format</definition>
+        <argsstring></argsstring>
+        <name>dps_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>D/P/S format settings for uart device, here is <ref refid="group__DEVICE__HAL__UART__FORMAT_ga0c4e8d4a543444e2da86b7deacab3c74_1ga0c4e8d4a543444e2da86b7deacab3c74" kindref="member">default settings for first open</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="349" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_abb7c19fc67ec964cdda1bd9e2f907f1e_1abb7c19fc67ec964cdda1bd9e2f907f1e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1gaa79a1d08e403b54670b892c0c58d91d5" kindref="member">UART_HW_FLOW_CONTROL</ref></type>
+        <definition>UART_HW_FLOW_CONTROL DEV_UART_INFO::hwfc</definition>
+        <argsstring></argsstring>
+        <name>hwfc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UART hardware flow control, here is <ref refid="group__DEVICE__HAL__UART_gaa79a1d08e403b54670b892c0c58d91d5_1ggaa79a1d08e403b54670b892c0c58d91d5a542109175bf0b1928d4803f2702ce1ed" kindref="member">default hardware flow control settings for first open</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="350" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_a1c333ec589043dd20a566051e92bf1cf_1a1c333ec589043dd20a566051e92bf1cf" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref></type>
+        <definition>DEV_BUFFER DEV_UART_INFO::tx_buf</definition>
+        <argsstring></argsstring>
+        <name>tx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transmit buffer via interrupt, this should be all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="351" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_a46a3dfad9be100563bf4101055780843_1a46a3dfad9be100563bf4101055780843" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__BUFFER" kindref="compound">DEV_BUFFER</ref></type>
+        <definition>DEV_BUFFER DEV_UART_INFO::rx_buf</definition>
+        <argsstring></argsstring>
+        <name>rx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>receive buffer via interrupt, this should be all zero for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="352" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_aec0917d316df9518fbd8c6ee7db1161b_1aec0917d316df9518fbd8c6ee7db1161b" prot="public" static="no" mutable="no">
+        <type><ref refid="structDEV__UART__CBS" kindref="compound">DEV_UART_CBS</ref></type>
+        <definition>DEV_UART_CBS DEV_UART_INFO::uart_cbs</definition>
+        <argsstring></argsstring>
+        <name>uart_cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart callbacks, callback arguments should be <ref refid="structDEV__UART" kindref="compound">DEV_UART</ref> * or NULL, this should be all NULL for first open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="353" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDEV__UART__INFO_af3156f595f1020fbffea67951a86d2f5_1af3156f595f1020fbffea67951a86d2f5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* DEV_UART_INFO::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a extra pointer to get hook to applications which should not used by bsp developer, this should be NULL for first open and you can <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6150a860d3b101329e8521e178e3df38_1ga6150a860d3b101329e8521e178e3df38" kindref="member">set</ref> or <ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga62092f9afef6b9e2e7c6f27623ba87ff_1ga62092f9afef6b9e2e7c6f27623ba87ff" kindref="member">get</ref> the extra information pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="354" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure definition for uart information. </para>    </briefdescription>
+    <detaileddescription>
+<para>Informations about uart open count, working status, baudrate, uart registers and ctrl structure, uart dps format </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="110">
+        <label>DEV_UART_CBS</label>
+        <link refid="structDEV__UART__CBS"/>
+      </node>
+      <node id="109">
+        <label>DEV_UART_INFO</label>
+        <link refid="structDEV__UART__INFO"/>
+        <childnode refid="110" relation="usage">
+          <edgelabel>uart_cbs</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>tx_buf</edgelabel>
+          <edgelabel>rx_buf</edgelabel>
+        </childnode>
+        <childnode refid="112" relation="usage">
+          <edgelabel>dps_format</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>UART_DPS_FORMAT</label>
+        <link refid="structUART__DPS__FORMAT"/>
+      </node>
+      <node id="111">
+        <label>DEV_BUFFER</label>
+        <link refid="structDEV__BUFFER"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="344" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="344" bodyend="357"/>
+    <listofallmembers>
+      <member refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>baudrate</name></member>
+      <member refid="structDEV__UART__INFO_a728beb5d2027c8ff3ab82f3d3900bb71_1a728beb5d2027c8ff3ab82f3d3900bb71" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>dps_format</name></member>
+      <member refid="structDEV__UART__INFO_af3156f595f1020fbffea67951a86d2f5_1af3156f595f1020fbffea67951a86d2f5" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>extra</name></member>
+      <member refid="structDEV__UART__INFO_abb7c19fc67ec964cdda1bd9e2f907f1e_1abb7c19fc67ec964cdda1bd9e2f907f1e" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>hwfc</name></member>
+      <member refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>opn_cnt</name></member>
+      <member refid="structDEV__UART__INFO_a46a3dfad9be100563bf4101055780843_1a46a3dfad9be100563bf4101055780843" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>rx_buf</name></member>
+      <member refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>status</name></member>
+      <member refid="structDEV__UART__INFO_a1c333ec589043dd20a566051e92bf1cf_1a1c333ec589043dd20a566051e92bf1cf" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>tx_buf</name></member>
+      <member refid="structDEV__UART__INFO_aec0917d316df9518fbd8c6ee7db1161b_1aec0917d316df9518fbd8c6ee7db1161b" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>uart_cbs</name></member>
+      <member refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" prot="public" virt="non-virtual"><scope>DEV_UART_INFO</scope><name>uart_ctrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

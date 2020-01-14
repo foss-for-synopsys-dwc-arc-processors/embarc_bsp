@@ -1,0 +1,1094 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structDW__I2S__RX__REG" kind="struct" prot="public">
+    <compoundname>DW_I2S_RX_REG</compoundname>
+    <includes refid="dw__i2s_8h" local="no">dw_i2s.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ad78b051d058e3638a486f80225391b62_1ad78b051d058e3638a486f80225391b62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::IER</definition>
+        <argsstring></argsstring>
+        <name>IER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x000) : Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a97d6dd2ef8f9f3131d501979864d5b64_1a97d6dd2ef8f9f3131d501979864d5b64" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::IRER</definition>
+        <argsstring></argsstring>
+        <name>IRER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x004) : I2S Receiver Block Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="115" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a43fbbc7ff8c26cbe18838c80d1ba9dd9_1a43fbbc7ff8c26cbe18838c80d1ba9dd9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ITER</definition>
+        <argsstring></argsstring>
+        <name>ITER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0X008) : I2S Transmitter Block Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="116" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_aa3d313d5a87e5bb11082802182e359c9_1aa3d313d5a87e5bb11082802182e359c9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::CER</definition>
+        <argsstring></argsstring>
+        <name>CER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x00C) : Clock Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="117" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a8a0b449e112ca79073f056281e2ed98c_1a8a0b449e112ca79073f056281e2ed98c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x010) : Clock Configuration Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="118" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ac36a4c038bef3a6f264d777da6c9bd24_1ac36a4c038bef3a6f264d777da6c9bd24" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RXFFR</definition>
+        <argsstring></argsstring>
+        <name>RXFFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x014) : Receiver Block FIFO Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="119" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a72db60f5f0dc36d80c19f07cb4dc7c36_1a72db60f5f0dc36d80c19f07cb4dc7c36" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TXFFR</definition>
+        <argsstring></argsstring>
+        <name>TXFFR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x018) : Transmitter Block FIFO Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="120" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_afb1799d64ea7c9f9a729050d22dfaa55_1afb1799d64ea7c9f9a729050d22dfaa55" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x01C) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="121" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_adce44d6135f9bd71012e3f126df0ad96_1adce44d6135f9bd71012e3f126df0ad96" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::LRBR0</definition>
+        <argsstring></argsstring>
+        <name>LRBR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x020) : Left Receive Buffer 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="122" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a66554056ddb622f76e07a32a398e26ef_1a66554056ddb622f76e07a32a398e26ef" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RRBR0</definition>
+        <argsstring></argsstring>
+        <name>RRBR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x024) : Right Receive Buffer 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="123" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ad549f1ad233ab83e4edf48ef6fce7e81_1ad549f1ad233ab83e4edf48ef6fce7e81" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RER0</definition>
+        <argsstring></argsstring>
+        <name>RER0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x028) : Receive Enable Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="124" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a54135465cbcade339b55e9bbae976677_1a54135465cbcade339b55e9bbae976677" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TER0</definition>
+        <argsstring></argsstring>
+        <name>TER0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x02C) : Transmit Enable Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="125" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a5ec35d7b1d5f19eb383cbd6b17e30503_1a5ec35d7b1d5f19eb383cbd6b17e30503" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RCR0</definition>
+        <argsstring></argsstring>
+        <name>RCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x030) : Receive Configuration Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="126" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a84d06060f61e6c53418ab271b2747bc6_1a84d06060f61e6c53418ab271b2747bc6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TCR0</definition>
+        <argsstring></argsstring>
+        <name>TCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x034) : Transmit Configuration Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="127" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a26cea516ae0db8d3162597a224bb828c_1a26cea516ae0db8d3162597a224bb828c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ISR0</definition>
+        <argsstring></argsstring>
+        <name>ISR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x038) : Interrupt Status Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="128" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a279539180e685fe4e3f782762066453f_1a279539180e685fe4e3f782762066453f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::IMR0</definition>
+        <argsstring></argsstring>
+        <name>IMR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x03C) : Interrupt Mask Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="129" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a0275f03a303430fbc43b024ba5368498_1a0275f03a303430fbc43b024ba5368498" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ROR0</definition>
+        <argsstring></argsstring>
+        <name>ROR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x040) : Receive Overrun Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="130" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a58dc9a6ec94712c40f0af6d124b1241b_1a58dc9a6ec94712c40f0af6d124b1241b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TOR0</definition>
+        <argsstring></argsstring>
+        <name>TOR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x044) : Transmit Overrun Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="131" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_afa5256c1109027e219423ca9a9988c3c_1afa5256c1109027e219423ca9a9988c3c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFCR0</definition>
+        <argsstring></argsstring>
+        <name>RFCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x048) : Receive FIFO Configuration Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="132" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_af1dd2550c205e1f5256db49b2557e131_1af1dd2550c205e1f5256db49b2557e131" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFCR0</definition>
+        <argsstring></argsstring>
+        <name>TFCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x04C) : Transmit FIFO Configuration Register 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="133" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_aad74b556e652ff56eda937191c9bbc4b_1aad74b556e652ff56eda937191c9bbc4b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFF0</definition>
+        <argsstring></argsstring>
+        <name>RFF0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x050) : Receive FIFO Flush 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="134" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a127645b72026f6b30b6f1c746985d75f_1a127645b72026f6b30b6f1c746985d75f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFF0</definition>
+        <argsstring></argsstring>
+        <name>TFF0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x054) : Transmit FIFO Flush 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="135" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a2bfc37d7c5e7738796d945e7540479f1_1a2bfc37d7c5e7738796d945e7540479f1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RESERVED1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x058) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="136" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a3168ad7efed401e965743219dfda9064_1a3168ad7efed401e965743219dfda9064" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::LRBR1</definition>
+        <argsstring></argsstring>
+        <name>LRBR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x060) : Left Receive Buffer 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="137" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a833348086c30039c6a0f41cbd9200723_1a833348086c30039c6a0f41cbd9200723" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RRBR1</definition>
+        <argsstring></argsstring>
+        <name>RRBR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x064) : Right Receive Buffer 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="138" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_acf8f33acd503221245be25820a058b17_1acf8f33acd503221245be25820a058b17" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RER1</definition>
+        <argsstring></argsstring>
+        <name>RER1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x068) : Receive Enable Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="139" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a28bb21c58a36956e088b7f914d296fdb_1a28bb21c58a36956e088b7f914d296fdb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TER1</definition>
+        <argsstring></argsstring>
+        <name>TER1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x06C) : Transmit Enable Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="140" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_afbba77a195c47a88e1f11f4f5bea52e4_1afbba77a195c47a88e1f11f4f5bea52e4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RCR1</definition>
+        <argsstring></argsstring>
+        <name>RCR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x070) : Receive Configuration Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="141" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a18bdfc8dcb69e608b55fea5545d03e50_1a18bdfc8dcb69e608b55fea5545d03e50" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TCR1</definition>
+        <argsstring></argsstring>
+        <name>TCR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x074) : Transmit Configuration Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="142" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a12497d4fef89ca29ff9792ec11e1d760_1a12497d4fef89ca29ff9792ec11e1d760" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ISR1</definition>
+        <argsstring></argsstring>
+        <name>ISR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x078) : Interrupt Status Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="143" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a84192a2fefc95a0468f0672136aae54e_1a84192a2fefc95a0468f0672136aae54e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::IMR1</definition>
+        <argsstring></argsstring>
+        <name>IMR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x07C) : Interrupt Mask Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="144" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a3e50b11c1932b1a040eae5b2aa2996c6_1a3e50b11c1932b1a040eae5b2aa2996c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ROR1</definition>
+        <argsstring></argsstring>
+        <name>ROR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x080) : Receive Overrun Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="145" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a6b0ed7f4d9613f801e15bf08c90f8742_1a6b0ed7f4d9613f801e15bf08c90f8742" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TOR1</definition>
+        <argsstring></argsstring>
+        <name>TOR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x084) : Transmit Overrun Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="146" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a5bc0e7dd708e2179469502cfb2b693b6_1a5bc0e7dd708e2179469502cfb2b693b6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFCR1</definition>
+        <argsstring></argsstring>
+        <name>RFCR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x088) : Receive FIFO Configuration Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="147" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ad4972c6ccb4a09991a222e2d4ec598e1_1ad4972c6ccb4a09991a222e2d4ec598e1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFCR1</definition>
+        <argsstring></argsstring>
+        <name>TFCR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x08C) : Transmit FIFO Configuration Register 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="148" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a106f7cea0b3fefca1f73876814d14148_1a106f7cea0b3fefca1f73876814d14148" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFF1</definition>
+        <argsstring></argsstring>
+        <name>RFF1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x090) : Receive FIFO Flush 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="149" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a83a749957aa25fcbb7362cc75cd40982_1a83a749957aa25fcbb7362cc75cd40982" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFF1</definition>
+        <argsstring></argsstring>
+        <name>TFF1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x094) : Transmit FIFO Flush 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="150" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a366798ed4cb6b971d1a926ed9c646030_1a366798ed4cb6b971d1a926ed9c646030" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RESERVED2[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x098) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="151" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a6ae253511ffab08b2701ea8b8e6ada83_1a6ae253511ffab08b2701ea8b8e6ada83" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::LRBR2</definition>
+        <argsstring></argsstring>
+        <name>LRBR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0A0) : Left Receive Buffer 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="152" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_af9fe4a250edc808aca86fbb7db0edc70_1af9fe4a250edc808aca86fbb7db0edc70" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RRBR2</definition>
+        <argsstring></argsstring>
+        <name>RRBR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0A4) : Right Receive Buffer 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="153" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a2671c83726a9337bc08c1839260243d4_1a2671c83726a9337bc08c1839260243d4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RER2</definition>
+        <argsstring></argsstring>
+        <name>RER2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0A8) : Receive Enable Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="154" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a90930bd92eece09d813bf337ae22634f_1a90930bd92eece09d813bf337ae22634f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TER2</definition>
+        <argsstring></argsstring>
+        <name>TER2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0AC) : Transmit Enable Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="155" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a8f051fc3d604ad337181fa444026cd63_1a8f051fc3d604ad337181fa444026cd63" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RCR2</definition>
+        <argsstring></argsstring>
+        <name>RCR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0B0) : Receive Configuration Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="156" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a4c050b89247a9a7184c620602dca3d6a_1a4c050b89247a9a7184c620602dca3d6a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TCR2</definition>
+        <argsstring></argsstring>
+        <name>TCR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0B4) : Transmit Configuration Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="157" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_af31173dff14321526630254f9446a210_1af31173dff14321526630254f9446a210" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ISR2</definition>
+        <argsstring></argsstring>
+        <name>ISR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0B8) : Interrupt Status Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="158" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a0a49a940ea57314988ea161aff779446_1a0a49a940ea57314988ea161aff779446" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::IMR2</definition>
+        <argsstring></argsstring>
+        <name>IMR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0BC) : Interrupt Mask Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="159" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a665d86aeef140b52a4a8ea48724c4c82_1a665d86aeef140b52a4a8ea48724c4c82" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ROR2</definition>
+        <argsstring></argsstring>
+        <name>ROR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0C0) : Receive Overrun Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="160" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a2553506e4ecfe50fb8c4b100e491e8e2_1a2553506e4ecfe50fb8c4b100e491e8e2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TOR2</definition>
+        <argsstring></argsstring>
+        <name>TOR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0C4) : Transmit Overrun Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="161" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ab35000b214d5ae5778907562ec97eb9e_1ab35000b214d5ae5778907562ec97eb9e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFCR2</definition>
+        <argsstring></argsstring>
+        <name>RFCR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0C8) : Receive FIFO Configuration Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="162" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a32c4f902ac9eb1f5f1d62e0c83944caa_1a32c4f902ac9eb1f5f1d62e0c83944caa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFCR2</definition>
+        <argsstring></argsstring>
+        <name>TFCR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0CC) : Transmit FIFO Configuration Register 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="163" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a4cc98ee1154c77db8a9c4d1f6bdbf2b7_1a4cc98ee1154c77db8a9c4d1f6bdbf2b7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFF2</definition>
+        <argsstring></argsstring>
+        <name>RFF2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0D0) : Receive FIFO Flush 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="164" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_afb2647bc40e6c68a6e6a801a486cea2b_1afb2647bc40e6c68a6e6a801a486cea2b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFF2</definition>
+        <argsstring></argsstring>
+        <name>TFF2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0D4) : Transmit FIFO Flush 2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="165" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a7d3fa0cd423c347cd4a096898f080c59_1a7d3fa0cd423c347cd4a096898f080c59" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RESERVED3[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0D8) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="166" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a6a67d77af8a01a7f81062b75e5ba245d_1a6a67d77af8a01a7f81062b75e5ba245d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::LRBR3</definition>
+        <argsstring></argsstring>
+        <name>LRBR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0E0) : Left Receive Buffer 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="167" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a23204526a05db53b92c629b3f4cd77e1_1a23204526a05db53b92c629b3f4cd77e1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RRBR3</definition>
+        <argsstring></argsstring>
+        <name>RRBR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0E4) : Right Receive Buffer 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="168" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ae21473049d63a1cf6fe97b50f5d4d37b_1ae21473049d63a1cf6fe97b50f5d4d37b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RER3</definition>
+        <argsstring></argsstring>
+        <name>RER3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0E8) : Receive Enable Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="169" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a90d29b497a67b6378f102f7d570c84d4_1a90d29b497a67b6378f102f7d570c84d4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TER3</definition>
+        <argsstring></argsstring>
+        <name>TER3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0EC) : Transmit Enable Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="170" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a177115fee3ee6c83f2a00c9922e77609_1a177115fee3ee6c83f2a00c9922e77609" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RCR3</definition>
+        <argsstring></argsstring>
+        <name>RCR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0F0) : Receive Configuration Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="171" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ac4042bda7a55deb5bac93b13e8687fef_1ac4042bda7a55deb5bac93b13e8687fef" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TCR3</definition>
+        <argsstring></argsstring>
+        <name>TCR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0F4) : Transmit Configuration Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="172" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_aeff61bc184c12ee8c81d381886e30352_1aeff61bc184c12ee8c81d381886e30352" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ISR3</definition>
+        <argsstring></argsstring>
+        <name>ISR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0F8) : Interrupt Status Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="173" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a5c65be067f83cdcc462d654792af8334_1a5c65be067f83cdcc462d654792af8334" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::IMR3</definition>
+        <argsstring></argsstring>
+        <name>IMR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x0FC) : Interrupt Mask Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="174" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a34ee36e6a212d938a78def69643d6c53_1a34ee36e6a212d938a78def69643d6c53" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::ROR3</definition>
+        <argsstring></argsstring>
+        <name>ROR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x100) : Receive Overrun Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="175" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a7f737d017b005d2e77203ca442a6f699_1a7f737d017b005d2e77203ca442a6f699" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TOR3</definition>
+        <argsstring></argsstring>
+        <name>TOR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x104) : Transmit Overrun Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="176" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a63d582b3033efb5297a60a71b6befaa1_1a63d582b3033efb5297a60a71b6befaa1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFCR3</definition>
+        <argsstring></argsstring>
+        <name>RFCR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x108) : Receive FIFO Configuration Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="177" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ae8b2861bbe29cd3e4ea75f91cbb36552_1ae8b2861bbe29cd3e4ea75f91cbb36552" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFCR3</definition>
+        <argsstring></argsstring>
+        <name>TFCR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x10C) : Transmit FIFO Configuration Register 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="178" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a340afd06e4c07c8498efe707ba218e84_1a340afd06e4c07c8498efe707ba218e84" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RFF3</definition>
+        <argsstring></argsstring>
+        <name>RFF3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x110) : Receive FIFO Flush 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="179" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a4c854f985c4f351e071bb28241b91037_1a4c854f985c4f351e071bb28241b91037" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TFF3</definition>
+        <argsstring></argsstring>
+        <name>TFF3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x114) : Transmit FIFO Flush 3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="180" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a4621cee6817d736387aab3fabfd918e3_1a4621cee6817d736387aab3fabfd918e3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RESERVED4[42]</definition>
+        <argsstring>[42]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x118) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="181" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ad6f26311dacfde2e0f606c31a8e06e7e_1ad6f26311dacfde2e0f606c31a8e06e7e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RXDMA</definition>
+        <argsstring></argsstring>
+        <name>RXDMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1C0) : Receiver Block DMA Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="182" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a157b443fd70592eea939ed7ec1c64fc3_1a157b443fd70592eea939ed7ec1c64fc3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RRXDMA</definition>
+        <argsstring></argsstring>
+        <name>RRXDMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1C4) : Reset Receiver Block DMA Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="183" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ac7d3d33fefd40b3a82928abd0ebe0c8c_1ac7d3d33fefd40b3a82928abd0ebe0c8c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::TXDMA</definition>
+        <argsstring></argsstring>
+        <name>TXDMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1C8) : Transmitter Block DMA Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="184" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a9a6bd0a56d2ecb0200c990821014f010_1a9a6bd0a56d2ecb0200c990821014f010" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RTXDMA</definition>
+        <argsstring></argsstring>
+        <name>RTXDMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1CC) : Reset Transmitter Block DMA Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="185" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a8e3ded26d3baa4388e6083f5bfc93a09_1a8e3ded26d3baa4388e6083f5bfc93a09" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::RESERVED5[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1D0) : Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="186" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ad3ab44bbe446841455a8a13236a23cfa_1ad3ab44bbe446841455a8a13236a23cfa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::I2S_COMP_PARAM_2</definition>
+        <argsstring></argsstring>
+        <name>I2S_COMP_PARAM_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1F0) : Component Parameter 2 Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="187" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_af70784d44e460db67001d26524a7d64d_1af70784d44e460db67001d26524a7d64d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::I2S_COMP_PARAM_1</definition>
+        <argsstring></argsstring>
+        <name>I2S_COMP_PARAM_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1F4) : Component Parameter 1 Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="188" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_ad91fbb85f7379e217a8107b0a5bb99bd_1ad91fbb85f7379e217a8107b0a5bb99bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::I2S_COMP_VERSION</definition>
+        <argsstring></argsstring>
+        <name>I2S_COMP_VERSION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1F8) : Component Version ID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="189" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDW__I2S__RX__REG_a10a6506674af852d938434734236e2f9_1a10a6506674af852d938434734236e2f9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DW_I2S_RX_REG::I2S_COMP_TYPE</definition>
+        <argsstring></argsstring>
+        <name>I2S_COMP_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(0x1FC) : DesignWare Component Type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="190" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DesignWare I2S receiver register structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>Detailed struct description of DesignWare I2S receiver </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" line="113" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h" bodystart="113" bodyend="191"/>
+    <listofallmembers>
+      <member refid="structDW__I2S__RX__REG_a8a0b449e112ca79073f056281e2ed98c_1a8a0b449e112ca79073f056281e2ed98c" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>CCR</name></member>
+      <member refid="structDW__I2S__RX__REG_aa3d313d5a87e5bb11082802182e359c9_1aa3d313d5a87e5bb11082802182e359c9" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>CER</name></member>
+      <member refid="structDW__I2S__RX__REG_af70784d44e460db67001d26524a7d64d_1af70784d44e460db67001d26524a7d64d" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>I2S_COMP_PARAM_1</name></member>
+      <member refid="structDW__I2S__RX__REG_ad3ab44bbe446841455a8a13236a23cfa_1ad3ab44bbe446841455a8a13236a23cfa" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>I2S_COMP_PARAM_2</name></member>
+      <member refid="structDW__I2S__RX__REG_a10a6506674af852d938434734236e2f9_1a10a6506674af852d938434734236e2f9" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>I2S_COMP_TYPE</name></member>
+      <member refid="structDW__I2S__RX__REG_ad91fbb85f7379e217a8107b0a5bb99bd_1ad91fbb85f7379e217a8107b0a5bb99bd" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>I2S_COMP_VERSION</name></member>
+      <member refid="structDW__I2S__RX__REG_ad78b051d058e3638a486f80225391b62_1ad78b051d058e3638a486f80225391b62" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>IER</name></member>
+      <member refid="structDW__I2S__RX__REG_a279539180e685fe4e3f782762066453f_1a279539180e685fe4e3f782762066453f" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>IMR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a84192a2fefc95a0468f0672136aae54e_1a84192a2fefc95a0468f0672136aae54e" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>IMR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a0a49a940ea57314988ea161aff779446_1a0a49a940ea57314988ea161aff779446" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>IMR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a5c65be067f83cdcc462d654792af8334_1a5c65be067f83cdcc462d654792af8334" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>IMR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a97d6dd2ef8f9f3131d501979864d5b64_1a97d6dd2ef8f9f3131d501979864d5b64" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>IRER</name></member>
+      <member refid="structDW__I2S__RX__REG_a26cea516ae0db8d3162597a224bb828c_1a26cea516ae0db8d3162597a224bb828c" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ISR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a12497d4fef89ca29ff9792ec11e1d760_1a12497d4fef89ca29ff9792ec11e1d760" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ISR1</name></member>
+      <member refid="structDW__I2S__RX__REG_af31173dff14321526630254f9446a210_1af31173dff14321526630254f9446a210" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ISR2</name></member>
+      <member refid="structDW__I2S__RX__REG_aeff61bc184c12ee8c81d381886e30352_1aeff61bc184c12ee8c81d381886e30352" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ISR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a43fbbc7ff8c26cbe18838c80d1ba9dd9_1a43fbbc7ff8c26cbe18838c80d1ba9dd9" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ITER</name></member>
+      <member refid="structDW__I2S__RX__REG_adce44d6135f9bd71012e3f126df0ad96_1adce44d6135f9bd71012e3f126df0ad96" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>LRBR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a3168ad7efed401e965743219dfda9064_1a3168ad7efed401e965743219dfda9064" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>LRBR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a6ae253511ffab08b2701ea8b8e6ada83_1a6ae253511ffab08b2701ea8b8e6ada83" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>LRBR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a6a67d77af8a01a7f81062b75e5ba245d_1a6a67d77af8a01a7f81062b75e5ba245d" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>LRBR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a5ec35d7b1d5f19eb383cbd6b17e30503_1a5ec35d7b1d5f19eb383cbd6b17e30503" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RCR0</name></member>
+      <member refid="structDW__I2S__RX__REG_afbba77a195c47a88e1f11f4f5bea52e4_1afbba77a195c47a88e1f11f4f5bea52e4" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RCR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a8f051fc3d604ad337181fa444026cd63_1a8f051fc3d604ad337181fa444026cd63" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RCR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a177115fee3ee6c83f2a00c9922e77609_1a177115fee3ee6c83f2a00c9922e77609" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RCR3</name></member>
+      <member refid="structDW__I2S__RX__REG_ad549f1ad233ab83e4edf48ef6fce7e81_1ad549f1ad233ab83e4edf48ef6fce7e81" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RER0</name></member>
+      <member refid="structDW__I2S__RX__REG_acf8f33acd503221245be25820a058b17_1acf8f33acd503221245be25820a058b17" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RER1</name></member>
+      <member refid="structDW__I2S__RX__REG_a2671c83726a9337bc08c1839260243d4_1a2671c83726a9337bc08c1839260243d4" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RER2</name></member>
+      <member refid="structDW__I2S__RX__REG_ae21473049d63a1cf6fe97b50f5d4d37b_1ae21473049d63a1cf6fe97b50f5d4d37b" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RER3</name></member>
+      <member refid="structDW__I2S__RX__REG_afb1799d64ea7c9f9a729050d22dfaa55_1afb1799d64ea7c9f9a729050d22dfaa55" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RESERVED0</name></member>
+      <member refid="structDW__I2S__RX__REG_a2bfc37d7c5e7738796d945e7540479f1_1a2bfc37d7c5e7738796d945e7540479f1" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RESERVED1</name></member>
+      <member refid="structDW__I2S__RX__REG_a366798ed4cb6b971d1a926ed9c646030_1a366798ed4cb6b971d1a926ed9c646030" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RESERVED2</name></member>
+      <member refid="structDW__I2S__RX__REG_a7d3fa0cd423c347cd4a096898f080c59_1a7d3fa0cd423c347cd4a096898f080c59" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RESERVED3</name></member>
+      <member refid="structDW__I2S__RX__REG_a4621cee6817d736387aab3fabfd918e3_1a4621cee6817d736387aab3fabfd918e3" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RESERVED4</name></member>
+      <member refid="structDW__I2S__RX__REG_a8e3ded26d3baa4388e6083f5bfc93a09_1a8e3ded26d3baa4388e6083f5bfc93a09" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RESERVED5</name></member>
+      <member refid="structDW__I2S__RX__REG_afa5256c1109027e219423ca9a9988c3c_1afa5256c1109027e219423ca9a9988c3c" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFCR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a5bc0e7dd708e2179469502cfb2b693b6_1a5bc0e7dd708e2179469502cfb2b693b6" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFCR1</name></member>
+      <member refid="structDW__I2S__RX__REG_ab35000b214d5ae5778907562ec97eb9e_1ab35000b214d5ae5778907562ec97eb9e" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFCR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a63d582b3033efb5297a60a71b6befaa1_1a63d582b3033efb5297a60a71b6befaa1" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFCR3</name></member>
+      <member refid="structDW__I2S__RX__REG_aad74b556e652ff56eda937191c9bbc4b_1aad74b556e652ff56eda937191c9bbc4b" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFF0</name></member>
+      <member refid="structDW__I2S__RX__REG_a106f7cea0b3fefca1f73876814d14148_1a106f7cea0b3fefca1f73876814d14148" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFF1</name></member>
+      <member refid="structDW__I2S__RX__REG_a4cc98ee1154c77db8a9c4d1f6bdbf2b7_1a4cc98ee1154c77db8a9c4d1f6bdbf2b7" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFF2</name></member>
+      <member refid="structDW__I2S__RX__REG_a340afd06e4c07c8498efe707ba218e84_1a340afd06e4c07c8498efe707ba218e84" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RFF3</name></member>
+      <member refid="structDW__I2S__RX__REG_a0275f03a303430fbc43b024ba5368498_1a0275f03a303430fbc43b024ba5368498" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ROR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a3e50b11c1932b1a040eae5b2aa2996c6_1a3e50b11c1932b1a040eae5b2aa2996c6" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ROR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a665d86aeef140b52a4a8ea48724c4c82_1a665d86aeef140b52a4a8ea48724c4c82" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ROR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a34ee36e6a212d938a78def69643d6c53_1a34ee36e6a212d938a78def69643d6c53" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>ROR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a66554056ddb622f76e07a32a398e26ef_1a66554056ddb622f76e07a32a398e26ef" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RRBR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a833348086c30039c6a0f41cbd9200723_1a833348086c30039c6a0f41cbd9200723" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RRBR1</name></member>
+      <member refid="structDW__I2S__RX__REG_af9fe4a250edc808aca86fbb7db0edc70_1af9fe4a250edc808aca86fbb7db0edc70" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RRBR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a23204526a05db53b92c629b3f4cd77e1_1a23204526a05db53b92c629b3f4cd77e1" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RRBR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a157b443fd70592eea939ed7ec1c64fc3_1a157b443fd70592eea939ed7ec1c64fc3" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RRXDMA</name></member>
+      <member refid="structDW__I2S__RX__REG_a9a6bd0a56d2ecb0200c990821014f010_1a9a6bd0a56d2ecb0200c990821014f010" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RTXDMA</name></member>
+      <member refid="structDW__I2S__RX__REG_ad6f26311dacfde2e0f606c31a8e06e7e_1ad6f26311dacfde2e0f606c31a8e06e7e" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RXDMA</name></member>
+      <member refid="structDW__I2S__RX__REG_ac36a4c038bef3a6f264d777da6c9bd24_1ac36a4c038bef3a6f264d777da6c9bd24" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>RXFFR</name></member>
+      <member refid="structDW__I2S__RX__REG_a84d06060f61e6c53418ab271b2747bc6_1a84d06060f61e6c53418ab271b2747bc6" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TCR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a18bdfc8dcb69e608b55fea5545d03e50_1a18bdfc8dcb69e608b55fea5545d03e50" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TCR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a4c050b89247a9a7184c620602dca3d6a_1a4c050b89247a9a7184c620602dca3d6a" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TCR2</name></member>
+      <member refid="structDW__I2S__RX__REG_ac4042bda7a55deb5bac93b13e8687fef_1ac4042bda7a55deb5bac93b13e8687fef" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TCR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a54135465cbcade339b55e9bbae976677_1a54135465cbcade339b55e9bbae976677" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TER0</name></member>
+      <member refid="structDW__I2S__RX__REG_a28bb21c58a36956e088b7f914d296fdb_1a28bb21c58a36956e088b7f914d296fdb" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TER1</name></member>
+      <member refid="structDW__I2S__RX__REG_a90930bd92eece09d813bf337ae22634f_1a90930bd92eece09d813bf337ae22634f" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TER2</name></member>
+      <member refid="structDW__I2S__RX__REG_a90d29b497a67b6378f102f7d570c84d4_1a90d29b497a67b6378f102f7d570c84d4" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TER3</name></member>
+      <member refid="structDW__I2S__RX__REG_af1dd2550c205e1f5256db49b2557e131_1af1dd2550c205e1f5256db49b2557e131" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFCR0</name></member>
+      <member refid="structDW__I2S__RX__REG_ad4972c6ccb4a09991a222e2d4ec598e1_1ad4972c6ccb4a09991a222e2d4ec598e1" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFCR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a32c4f902ac9eb1f5f1d62e0c83944caa_1a32c4f902ac9eb1f5f1d62e0c83944caa" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFCR2</name></member>
+      <member refid="structDW__I2S__RX__REG_ae8b2861bbe29cd3e4ea75f91cbb36552_1ae8b2861bbe29cd3e4ea75f91cbb36552" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFCR3</name></member>
+      <member refid="structDW__I2S__RX__REG_a127645b72026f6b30b6f1c746985d75f_1a127645b72026f6b30b6f1c746985d75f" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFF0</name></member>
+      <member refid="structDW__I2S__RX__REG_a83a749957aa25fcbb7362cc75cd40982_1a83a749957aa25fcbb7362cc75cd40982" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFF1</name></member>
+      <member refid="structDW__I2S__RX__REG_afb2647bc40e6c68a6e6a801a486cea2b_1afb2647bc40e6c68a6e6a801a486cea2b" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFF2</name></member>
+      <member refid="structDW__I2S__RX__REG_a4c854f985c4f351e071bb28241b91037_1a4c854f985c4f351e071bb28241b91037" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TFF3</name></member>
+      <member refid="structDW__I2S__RX__REG_a58dc9a6ec94712c40f0af6d124b1241b_1a58dc9a6ec94712c40f0af6d124b1241b" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TOR0</name></member>
+      <member refid="structDW__I2S__RX__REG_a6b0ed7f4d9613f801e15bf08c90f8742_1a6b0ed7f4d9613f801e15bf08c90f8742" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TOR1</name></member>
+      <member refid="structDW__I2S__RX__REG_a2553506e4ecfe50fb8c4b100e491e8e2_1a2553506e4ecfe50fb8c4b100e491e8e2" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TOR2</name></member>
+      <member refid="structDW__I2S__RX__REG_a7f737d017b005d2e77203ca442a6f699_1a7f737d017b005d2e77203ca442a6f699" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TOR3</name></member>
+      <member refid="structDW__I2S__RX__REG_ac7d3d33fefd40b3a82928abd0ebe0c8c_1ac7d3d33fefd40b3a82928abd0ebe0c8c" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TXDMA</name></member>
+      <member refid="structDW__I2S__RX__REG_a72db60f5f0dc36d80c19f07cb4dc7c36_1a72db60f5f0dc36d80c19f07cb4dc7c36" prot="public" virt="non-virtual"><scope>DW_I2S_RX_REG</scope><name>TXFFR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

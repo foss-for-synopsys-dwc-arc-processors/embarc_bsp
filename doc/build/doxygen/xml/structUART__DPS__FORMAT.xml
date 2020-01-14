@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structUART__DPS__FORMAT" kind="struct" prot="public">
+    <compoundname>UART_DPS_FORMAT</compoundname>
+    <includes refid="dev__uart_8h" local="no">dev_uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUART__DPS__FORMAT_a905bbfcf110ccbcd667b19fb4d244579_1a905bbfcf110ccbcd667b19fb4d244579" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t UART_DPS_FORMAT::databits</definition>
+        <argsstring></argsstring>
+        <name>databits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUART__DPS__FORMAT_a23a246156b82c3bf094cfcdf59a7b013_1a23a246156b82c3bf094cfcdf59a7b013" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__UART__FORMAT_ga24fd4dba815fc40fbd8e8c37dbf87c7a_1ga24fd4dba815fc40fbd8e8c37dbf87c7a" kindref="member">UART_PARITY</ref></type>
+        <definition>UART_PARITY UART_DPS_FORMAT::parity</definition>
+        <argsstring></argsstring>
+        <name>parity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parity bit type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="112" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUART__DPS__FORMAT_a5eac485895e67b08cd1ce9ba901284bb_1a5eac485895e67b08cd1ce9ba901284bb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__DEVICE__HAL__UART__FORMAT_gacbd51ac613ec824eeb73a5b6bf743ca6_1gacbd51ac613ec824eeb73a5b6bf743ca6" kindref="member">UART_STOPBITS</ref></type>
+        <definition>UART_STOPBITS UART_DPS_FORMAT::stopbits</definition>
+        <argsstring></argsstring>
+        <name>stopbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stop bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="113" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>UART DPS Format: databits/parity/stopbits </para>    </detaileddescription>
+    <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" bodystart="110" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structUART__DPS__FORMAT_a905bbfcf110ccbcd667b19fb4d244579_1a905bbfcf110ccbcd667b19fb4d244579" prot="public" virt="non-virtual"><scope>UART_DPS_FORMAT</scope><name>databits</name></member>
+      <member refid="structUART__DPS__FORMAT_a23a246156b82c3bf094cfcdf59a7b013_1a23a246156b82c3bf094cfcdf59a7b013" prot="public" virt="non-virtual"><scope>UART_DPS_FORMAT</scope><name>parity</name></member>
+      <member refid="structUART__DPS__FORMAT_a5eac485895e67b08cd1ce9ba901284bb_1a5eac485895e67b08cd1ce9ba901284bb" prot="public" virt="non-virtual"><scope>UART_DPS_FORMAT</scope><name>stopbits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
