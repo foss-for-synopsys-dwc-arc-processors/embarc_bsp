@@ -51,7 +51,7 @@
  */
 
 #if defined(__GNU__)
-#include "embarc_toolchain.h"
+#include "embARC_toolchain.h"
 /* embARC's GNU C++ support takes reference from Zephyr (cpp_xxx.c) */
 
 /**
