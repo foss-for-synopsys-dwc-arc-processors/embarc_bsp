@@ -26,12 +26,12 @@ endif
 ifneq "$(EMBARC_CMD)" ""
 ## Check Cygwin##
 ifneq "$(findstring /cygdrive/,$(PATH))" ""
-	HOST_OS:=Cygwin
+	override HOST_OS:=Cygwin
 else
-	HOST_OS:=Windows
+	override HOST_OS:=Windows
 endif
 else ## Linux Environment ##
-	HOST_OS:=$(shell uname -o)
+	override HOST_OS:=$(shell uname -o)
 endif
 
 ##
