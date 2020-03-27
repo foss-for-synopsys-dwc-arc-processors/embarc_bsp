@@ -37,5 +37,5 @@
  */
 void board_init(void)
 {
-	timer_init();
+	arc_timer_int();
 }

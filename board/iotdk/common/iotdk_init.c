@@ -52,5 +52,5 @@ void board_init(void)
 	/* cpu to CLK_CPU */
 	pll_fout_config(CLK_CPU / 1000000);
 	iotdk_mux_init();
-	timer_init();
+	arc_timer_int();
 }

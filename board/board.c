@@ -90,7 +90,7 @@ static volatile uint32_t gl_ms_cnt = 0;
  */
 static void board_timer_isr(void *ptr)
 {
-	timer_int_clear(BOARD_SYS_TIMER_ID);
+	arc_timer_int_clear(BOARD_SYS_TIMER_ID);
 
 	board_timer_update(BOARD_SYS_TIMER_HZ);
 }
@@ -103,10 +103,10 @@ static void board_timer_isr(void *ptr)
  */
 static void board_timer_init(void)
 {
-	if (timer_present(BOARD_SYS_TIMER_ID)) {
+	if (arc_timer_present(BOARD_SYS_TIMER_ID)) {
 		int_disable(BOARD_SYS_TIMER_INTNO);                                             /* disable first then enable */
 		int_handler_install(BOARD_SYS_TIMER_INTNO, board_timer_isr);
-		timer_start(BOARD_SYS_TIMER_ID, TIMER_CTRL_IE | TIMER_CTRL_NH, cyc_hz_count);   /* start 1ms timer interrupt */
+		arc_timer_start(BOARD_SYS_TIMER_ID, TIMER_CTRL_IE | TIMER_CTRL_NH, cyc_hz_count);   /* start 1ms timer interrupt */
 
 		int_enable(BOARD_SYS_TIMER_INTNO);
 	}
@@ -196,7 +196,7 @@ uint64_t board_get_hwticks(void)
 	uint32_t sub_ticks;
 	uint64_t total_ticks;
 
-	timer_current(TIMER_0, &sub_ticks);
+	arc_timer_current(TIMER_0, &sub_ticks);
 
 	total_ticks = (uint64_t)GET_CUR_MS() * (BOARD_CPU_CLOCK / BOARD_SYS_TIMER_HZ);
 	total_ticks += (uint64_t)sub_ticks;
@@ -213,7 +213,7 @@ uint64_t board_get_cur_us(void)
 	uint32_t sub_us;
 	uint64_t total_us;
 
-	timer_current(TIMER_0, &sub_us);
+	arc_timer_current(TIMER_0, &sub_us);
 
 	sub_us = ((uint64_t)sub_us * 1000000) / BOARD_CPU_CLOCK;
 	total_us = ((uint64_t)GET_CUR_MS()) * 1000 + (uint64_t)sub_us;
