@@ -39,5 +39,5 @@
 void board_init(void)
 {
 	axs_hardware_init();
-	timer_init();
+	arc_timer_int();
 }

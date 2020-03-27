@@ -47,7 +47,7 @@ static volatile uint32_t gl_count = 1;
  * @param no Timer number
  * @return 1 present, 0 not present
  */
-int32_t timer_present(const uint32_t no)
+int32_t arc_timer_present(const uint32_t no)
 {
 	uint32_t bcr = arc_aux_read(AUX_BCR_TIMERS);
 
@@ -77,7 +77,7 @@ int32_t timer_present(const uint32_t no)
  * @param val Timer limit value (not for RTC)
  * @return 0 success, -1 failure
  */
-int32_t timer_start(const uint32_t no, const uint32_t mode, const uint32_t val)
+int32_t arc_timer_start(const uint32_t no, const uint32_t mode, const uint32_t val)
 {
 	int32_t ercd = 0;
 
@@ -111,7 +111,7 @@ int32_t timer_start(const uint32_t no, const uint32_t mode, const uint32_t val)
  * @param no Timer number
  * @return 0 success, -1 failure
  */
-int32_t timer_stop(const uint32_t no)
+int32_t arc_timer_stop(const uint32_t no)
 {
 	int32_t ercd = 0;
 
@@ -144,7 +144,7 @@ int32_t timer_stop(const uint32_t no)
  * @param val Timer current tick value
  * @return 0 success, -1 failure
  */
-int32_t timer_current(const uint32_t no, void *val)
+int32_t arc_timer_current(const uint32_t no, void *val)
 {
 	int32_t ercd = 0;
 
@@ -172,7 +172,7 @@ int32_t timer_current(const uint32_t no, void *val)
  * @param no Timer number
  * @return 0 success, -1 failure
  */
-int32_t timer_int_clear(const uint32_t no)
+int32_t arc_timer_int_clear(const uint32_t no)
 {
 	int32_t ercd = 0;
 
@@ -196,18 +196,18 @@ int32_t timer_int_clear(const uint32_t no)
 /**
  * @brief Initialize internal timer
  */
-void timer_init(void)
+void arc_timer_int(void)
 {
-	if (timer_present(TIMER_0)) {
-		timer_stop(TIMER_0);
+	if (arc_timer_present(TIMER_0)) {
+		arc_timer_stop(TIMER_0);
 	}
 
-	if (timer_present(TIMER_1)) {
-		timer_stop(TIMER_1);
+	if (arc_timer_present(TIMER_1)) {
+		arc_timer_stop(TIMER_1);
 	}
 
-	if (timer_present(TIMER_RTC)) {
-		timer_stop(TIMER_RTC);
+	if (arc_timer_present(TIMER_RTC)) {
+		arc_timer_stop(TIMER_RTC);
 	}
 }
 
@@ -217,7 +217,7 @@ void timer_init(void)
  * @param no Timer number
  * @return 1 present, 0 not present
  */
-int32_t secure_timer_present(const uint32_t no)
+int32_t arc_secure_timer_present(const uint32_t no)
 {
 	uint32_t bcr = arc_aux_read(AUX_BCR_TIMERS);
 
@@ -244,7 +244,7 @@ int32_t secure_timer_present(const uint32_t no)
  * @param val Timer limit value (not for RTC)
  * @return 0 success, -1 failure
  */
-int32_t secure_timer_start(const uint32_t no, const uint32_t mode, const uint32_t val)
+int32_t arc_secure_timer_start(const uint32_t no, const uint32_t mode, const uint32_t val)
 {
 	int32_t ercd = 0;
 
@@ -275,7 +275,7 @@ int32_t secure_timer_start(const uint32_t no, const uint32_t mode, const uint32_
  * @param no Timer number
  * @return 0 success, -1 failure
  */
-int32_t secure_timer_stop(const uint32_t no)
+int32_t arc_secure_timer_stop(const uint32_t no)
 {
 	int32_t ercd = 0;
 
@@ -305,7 +305,7 @@ int32_t secure_timer_stop(const uint32_t no)
  * @param val Timer value
  * @return 0 success, -1 failure
  */
-int32_t secure_timer_current(const uint32_t no, void *val)
+int32_t arc_secure_timer_current(const uint32_t no, void *val)
 {
 	int32_t ercd = 0;
 
@@ -330,7 +330,7 @@ int32_t secure_timer_current(const uint32_t no, void *val)
  * @param no Timer number
  * @return 0 success, -1 failure
  */
-int32_t secure_timer_int_clear(const uint32_t no)
+int32_t arc_secure_timer_int_clear(const uint32_t no)
 {
 	int32_t ercd = 0;
 
@@ -354,14 +354,14 @@ int32_t secure_timer_int_clear(const uint32_t no)
 /**
  * @brief Initialize internal secure timer
  */
-void secure_timer_init(void)
+void arc_secure_timer_init(void)
 {
-	if (secure_timer_present(SECURE_TIMER_0)) {
-		secure_timer_stop(SECURE_TIMER_0);
+	if (arc_secure_timer_present(SECURE_TIMER_0)) {
+		arc_secure_timer_stop(SECURE_TIMER_0);
 	}
 
-	if (secure_timer_present(SECURE_TIMER_1)) {
-		secure_timer_stop(SECURE_TIMER_1);
+	if (arc_secure_timer_present(SECURE_TIMER_1)) {
+		arc_secure_timer_stop(SECURE_TIMER_1);
 	}
 }
 #endif /* ARC_FEATURE_SEC_TIMER1_PRESENT && ARC_FEATURE_SEC_TIMER0_PRESENT */
@@ -396,7 +396,7 @@ void arc_delay_us(uint32_t usecs)
  * @param cpu_clock board CPU clock source to calibrate
  * @return loops_per_jiffy Calibration value
  */
-uint64_t timer_calibrate_delay(uint32_t cpu_clock)
+uint64_t arc_timer_calibrate_delay(uint32_t cpu_clock)
 {
 	uint64_t loopbit;
 	int32_t lps_precision = LPS_PREC;

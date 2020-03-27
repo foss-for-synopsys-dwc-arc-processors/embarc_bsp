@@ -41,5 +41,5 @@ void board_init(void)
 	io_mux_init();
 	hsdk_hardware_init();
 	hsdk_io_init();
-	timer_init();
+	arc_timer_int();
 }
