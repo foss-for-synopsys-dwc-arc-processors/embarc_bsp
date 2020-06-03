@@ -1,9 +1,11 @@
 ## CPU Related ##
 # CPU root declaration
-CPUS_ROOT = $(EMBARC_ROOT)/arc
+ARC_ISA_VER ?= 2
 
-EXTRA_CSRCDIR += $(EMBARC_ROOT)/arc/startup
-EXTRA_ASMSRCDIR += $(EMBARC_ROOT)/arc/startup
+CPUS_ROOT = $(EMBARC_ROOT)/arc/v$(ARC_ISA_VER)
+
+EXTRA_CSRCDIR += $(CPUS_ROOT)/startup
+EXTRA_ASMSRCDIR += $(CPUS_ROOT)/startup
 
 #-----------------------#
 ## ARC Related ##
@@ -27,7 +29,7 @@ CPU_ARC_OBJS = $(CPU_ARC_COBJS) $(CPU_ARC_ASMOBJS)
 CPU_ARC_DEPS = $(call get_deps, $(CPU_ARC_OBJS))
 
 # extra macros to be defined
-CPU_ARC_DEFINES =
+CPU_ARC_DEFINES += -DARC_ISA_VER=$(ARC_ISA_VER)
 
 # generate library
 CPU_LIB_ARC = $(OUT_DIR)/libcpuarc.a
