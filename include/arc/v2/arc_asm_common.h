@@ -47,14 +47,14 @@
 #if defined(__GNU__)
 #define MACRO_ARG(x) \ x
 #define ASM_MACRO1(name, arg1) name arg1
-#define ASM_MACRO2(name, arg1, arg2) name arg1 arg2
-#define ASM_MACRO3(name, arg1, arg2, arg3) name arg1 arg, agr3
-#define ASM_MACRO4(name, arg1, arg2, arg3, arg4) name arg1 arg2 arg3 arg4
+#define ASM_MACRO2(name, arg1, arg2) name arg1, arg2
+#define ASM_MACRO3(name, arg1, arg2, arg3) name, arg1, arg2, arg3
+#define ASM_MACRO4(name, arg1, arg2, arg3, arg4) name, arg1, arg2, arg3, arg4
 #else
 #define MACRO_ARG(x) x
 #define ASM_MACRO1(name, arg1) name, arg1
 #define ASM_MACRO2(name, arg1, arg2) name, arg1, arg2
-#define ASM_MACRO3(name, arg1, arg2, arg3) name, arg1, arg2, agr3
+#define ASM_MACRO3(name, arg1, arg2, arg3) name, arg1, arg2, arg3
 #define ASM_MACRO4(name, arg1, arg2, arg3, arg4) name, arg1, arg2, arg3, arg4
 #endif
 /* Note on the LD/ST addr modes with addr reg wback
