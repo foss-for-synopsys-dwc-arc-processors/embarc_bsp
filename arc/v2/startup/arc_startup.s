@@ -147,7 +147,7 @@ _s3_copy_text_loop:
 	ld.ab	r2, [r1, 4]
 	st.ab	r2, [r0, 4]
 	cmp	r0, r3
-	jlt	_s3_copy_text_loop
+	jls	_s3_copy_text_loop
 _s3_copy_rodata:
 	mov	r0, _f_rodata
 	mov	r1, _load_addr_rodata
@@ -160,7 +160,7 @@ _s3_copy_rodata_loop:
 	ld.ab	r2, [r1, 4]
 	st.ab	r2, [r0, 4]
 	cmp	r0, r3
-	jlt	_s3_copy_rodata_loop
+	jls	_s3_copy_rodata_loop
 _s3_copy_data:
 	mov	r0, _f_data
 	mov	r1, _load_addr_data
@@ -173,7 +173,7 @@ _s3_copy_data_loop:
 	ld.ab	r2, [r1, 4]
 	st.ab	r2, [r0, 4]
 	cmp	r0, r3
-	jlt	_s3_copy_data_loop
+	jls	_s3_copy_data_loop
 _s3_clear_bss:
 	mov	r0, _f_bss
 	mov	r1, _e_bss
@@ -183,7 +183,7 @@ _s3_clear_bss:
 _s3_clear_bss_loop:
 	st.ab	r2, [r0, 4]
 	cmp	r0, r1
-	jlt	_s3_clear_bss_loop
+	jls	_s3_clear_bss_loop
 
 /* STAGE 3: go to next level initialization */
 _arc_reset_call_main:
