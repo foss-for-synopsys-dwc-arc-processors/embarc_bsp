@@ -44,4 +44,16 @@ $(error $(CUR_CORE) is not supported in $(BOARD)-$(BD_VER), please check it!)
 endif
 endif
 
+ifeq ($(VALID_CUR_CORE), arc605)
+ARC_ISA_VER ?= 1
+endif
+
+ifeq ($(VALID_CUR_CORE), arc610d)
+ARC_ISA_VER ?= 1
+endif
+
+ifeq ($(VALID_CUR_CORE), arc710d)
+ARC_ISA_VER ?= 1
+endif
+
 CORE_DEFINES += -DCURRENT_CORE=$(VALID_CUR_CORE)
