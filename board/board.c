@@ -119,7 +119,11 @@ static void platform_print_banner(void)
 #if defined(__GNU__)
 	EMBARC_PRINTF("Compiler Version: ARC GNU, %s\r\n", __VERSION__);
 #else
+#if defined(__VERSION__)
 	EMBARC_PRINTF("Compiler Version: Metaware, %s\r\n\r\n", __VERSION__);
+#else
+	EMBARC_PRINTF("Compiler Version: Metaware, mcc\r\n\r\n");
+#endif
 #endif
 }
 
@@ -144,8 +148,10 @@ EMBARC_WEAK void board_main(void)
 #endif
 	/* init core level interrupt & exception management */
 	exc_int_init();
+#if ARC_FEATURE_ICACHE_PRESENT || ARC_FEATURE_DCACHE_PRESENT
 	/* init cache */
 	arc_cache_init();
+#endif
 	/* necessary board level init */
 	board_init();
 	/* Initialise bare-metal board timer and interrupt */

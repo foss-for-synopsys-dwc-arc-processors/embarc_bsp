@@ -63,6 +63,9 @@ static int32_t nsim_uart_0_read(void *data, uint32_t len)
 {
 	uint32_t i;
 	int32_t c;
+	uint8_t *buf;
+
+	buf = (uint8_t *)data;
 
 	for (i = 0; i < len; i++) {
 		c = getchar();
@@ -72,8 +75,8 @@ static int32_t nsim_uart_0_read(void *data, uint32_t len)
 		if (c == 10) {
 			c = 13;
 		}
-		*((uint8_t *)data) = (uint8_t)c;
-		data++;
+		*buf = (uint8_t)c;
+		buf++;
 	}
 
 	return i;
@@ -115,15 +118,9 @@ DEV_UART_PTR uart_get_dev(int32_t uart_id)
 		install_flag = 1;
 		nsim_uart_all_install();
 	}
-
-	switch (uart_id) {
 #if (USE_NSIM_UART_0)
-	case NSIM_UART_0_ID:
-		return &nsim_uart_0;
-		break;
-#endif
-	default:
-		break;
-	}
+	return &nsim_uart_0;
+#else
 	return NULL;
+#endif
 }

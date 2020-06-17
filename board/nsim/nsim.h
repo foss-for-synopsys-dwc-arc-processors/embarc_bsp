@@ -31,7 +31,6 @@
 #define H_NSIM
 
 #include "arc/arc_feature_config.h"
-#include "arc/arc_em.h"
 
 #include "drivers/uart/nsim_uart_obj.h"
 
