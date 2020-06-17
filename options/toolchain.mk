@@ -3,10 +3,11 @@
 # Select which TOOLCHAIN should be used
 # Supported toolchains:
 #
-#    mw  -Metaware development tools
+#    mw  -Metaware development tools (ccac)
+#    mw_mcc - Old Metware development tools (mcc)
 #    gnu -ARC GNU Tool chain
 ##
-SUPPORTED_TOOLCHAINS = gnu mw
+SUPPORTED_TOOLCHAINS = gnu mw mw_mcc
 ## Another define in options.mk
 TOOLCHAIN ?= mw
 
