@@ -23,6 +23,7 @@
 	-core6
 	-rf16
 	-Hccm
+	-Xtimer0
 ]]></string>
   </configuration>
   <configuration name="mw_debugger" filename="mdb.arg">
@@ -38,6 +39,7 @@
 	-dccm_base=0x00800000 
 	-iccm_size=0x80000 
 	-iccm_base=0 
+	-Xtimer0
 ]]></string>
   </configuration>
   <configuration name="nSIM" filename="nsim.props">

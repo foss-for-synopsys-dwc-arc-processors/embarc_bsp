@@ -126,7 +126,7 @@ help :
 	@$(ECHO) '  OLEVEL=Os|O0|O1|O2|O3                       - Specify Optimization level'
 	@$(ECHO) '  CUR_CORE=<core configuration>               - Specify core configuration'
 	@$(ECHO) '  TCF=path/to/your tcf                        - Specify customized tcf file'
-	@$(ECHO) '  TOOLCHAIN=mw|gnu                            - Specify toolchain'
+	@$(ECHO) '  TOOLCHAIN=mw|gnu|mw_mcc                     - Specify toolchain, mw_mcc is used for ARC600 or ARC700 series'
 	@$(ECHO) '  JTAG=usb|opella                             - Specify Hardware Debugger(Digilent JTAG or Ashling Opella-XD JTAG)'
 	@$(ECHO) '  OUT_DIR_ROOT=.|xxx                          - Specify where to generate object files'
 	@$(ECHO) '  SILENT=0|1                                  - Disable or enable message output'

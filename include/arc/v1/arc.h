@@ -120,12 +120,6 @@
 #define AUX_IRQ_LEV             (0x200) /*!< interrupt level programming register */
 #define AUX_IRQ_HINT            (0x201) /*!< software interrupt trigger */
 
-#define AUX_ERRET               (0x400) /*!< exception return address */
-#define AUX_ERBTA               (0x401) /*!< BTA saved on exception entry */
-#define AUX_ERSTATUS            (0x402) /*!< STATUS32 saved on exception */
-#define AUX_ECR                 (0x403) /*!< exception cause register */
-#define AUX_EFA                 (0x404) /*!< exception fault address */
-
 #define AUX_IRQ_CAUSE1          (0x40a) /*!< L1 interrupt cause register */
 #define AUX_IRQ_CAUSE2          (0x40b) /*!< L2 interrupt cause register */
 

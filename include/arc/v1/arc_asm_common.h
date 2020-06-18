@@ -59,7 +59,7 @@
 #endif
 
 
-/* ARC 600 has no rtie instruction， so use a macro her */
+/* ARC 600 has no rtie instruction, so use a macro here */
 #if ARC_FEATURE_CORE_600
 .macro ASM_MACRO1(rtie, reg)
 /* r0 is used to store into, now recover it */
@@ -173,7 +173,7 @@
       push r0
 
       push r12
-      
+
       SAVE_R58_R59
       push gp
       push fp
@@ -249,7 +249,7 @@
       push r0
 
       push r12
-      
+
       SAVE_R58_R59
       push gp
       push fp
