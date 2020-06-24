@@ -53,6 +53,11 @@ endif
 ifeq ($(DBG), mdb)
 ## Common options for mdb ##
 DBG_HW_FLAGS += -nooptions -nogoifmain -toggle=include_local_symbols=1
+ifeq ($(OS_SEL), freertos)
+ifeq ($(MAKECMDGOALS),gui)
+DBG_HW_FLAGS += -OS=FreeRTOS
+endif
+endif
 endif
 
 ifneq ($(BOARD), nsim) # start of non-nsim case #

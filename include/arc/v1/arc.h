@@ -54,6 +54,19 @@
 #define EXC_NO_MEM_ERR          (1)     /*!< external memory bus error */
 #define EXC_NO_INS_ERR          (2)     /*!< illegal instruction or illegal instruction sequence */
 
+#if ARC_FEATURE_CORE_600
+#define EXC_NO_TRAP             (2)    /*!< 600 series swi/trap instruction generate instruction error exception */
+#elif ARC_FEATURE_CORE_700
+#define EXC_NO_MAC_CHK          (32)    /*!< machine check error */
+#define EXC_NO_TLB_MISS_I       (33)    /*!< instruction TLB missing exception, useless without MMU */
+#define EXC_NO_TLB_MISS_D       (34)    /*!< data TLB missing exception, useless without MMU */
+#define EXC_NO_PRO_VIO          (35)    /*!< protection violation */
+#define EXC_NO_PRI_VIO          (36)    /*!< privilege violation */
+#define EXC_NO_TRAP             (37)    /*!< trap */
+#define EXC_NO_EXT              (38)    /*!< extension exception */
+/* ... ARC supports 255 interrupt vectors at most */
+#define EXC_NO_255              (255)   /*!< interrupt vector 255 */
+#endif
 /** @} */
 
 /**

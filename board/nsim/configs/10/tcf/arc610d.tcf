@@ -29,6 +29,7 @@
 	-Xmult32_cycles=3
 	-Hccm
 	-Xtimer0
+	-Xtimer1
 ]]></string>
   </configuration>
   <configuration name="mw_debugger" filename="mdb.arg">
@@ -47,6 +48,7 @@
 	-iccm_size=0x80000 
 	-iccm_base=0
 	-Xtimer0 
+	-Xtimer1
 ]]></string>
   </configuration>
   <configuration name="nSIM" filename="nsim.props">
@@ -65,6 +67,7 @@
 	nsim_isa_mult32=1
 	nsim_isa_shift_option=2
 	nsim_isa_enable_timer_0=1
+	nsim_isa_enable_timer_1=1
 	nsim_isa_number_of_interrupts=32
 	nsim_isa_intvbase_preset=0x0
 	dccm_size=0x80000

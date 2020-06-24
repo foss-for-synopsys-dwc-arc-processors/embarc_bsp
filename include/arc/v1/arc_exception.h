@@ -54,7 +54,11 @@ extern "C" {
 
 /*!< total number of interrupt and cpu exceptions, defined in arc_feature_config.h */
 #ifndef NUM_EXC_ALL
+#if ARC_FEATURE_CORE_700
+#define NUM_EXC_ALL     38
+#else
 #define NUM_EXC_ALL     16
+#endif
 #endif
 
 #ifndef NUM_EXC_INT
@@ -125,7 +129,7 @@ typedef struct {
 /**
  * @fn void arc_vector_base_write(uint32_t vec_base)
  * @brief Write exception vector base
- * 
+ *
  * @param vec_base Target vector base
  */
 Inline void arc_vector_base_write(uint32_t vec_base)
@@ -136,7 +140,7 @@ Inline void arc_vector_base_write(uint32_t vec_base)
 /**
  * @fn uint32_t arc_vector_base_read(void)
  * @brief Read current exception vector base
- * 
+ *
  * @return Exception vector base (uint32_t)
  */
 Inline uint32_t arc_vector_base_read(void)
@@ -149,39 +153,47 @@ Inline uint32_t arc_vector_base_read(void)
  * @addtogroup ARCV1_HAL_EXCEPTION_INTERRUPT
  * @{
  */
-#define INT_PRI_MIN -2        /*!< the minimum interrupt priority */
-#define INT_PRI_MAX -1        /*!< the maximum interrupt priority */
+#define INT_PRI_MIN (-2)        /*!< the minimum interrupt priority */
+#define INT_PRI_MAX (-1)        /*!< the maximum interrupt priority */
 
 
 /* ARC 600 has no interrupt enable register
- * ARC 700 has interrupt enable register 
+ * ARC 700 has interrupt enable register
  */
 /**
  * @fn void arc_int_disable(const uint32_t intno)
  * @brief Disable interrupt
- * 
+ *
  * @param intno Interrupt number
  */
 Inline void arc_int_disable(const uint32_t intno)
 {
-
+#if ARC_FEATURE_CORE_700
+	uint32_t val;
+	val = arc_aux_read(AUX_IRQ_ENABLE) & (~(1 << intno));
+	arc_aux_write(AUX_IRQ_ENABLE, val);
+#endif
 }
 
 /**
  * @fn void arc_int_enable(const uint32_t intno)
  * @brief Enable interrupt
- * 
+ *
  * @param intno Interrupt number
  */
 Inline void arc_int_enable(const uint32_t intno)
 {
-
+#if ARC_FEATURE_CORE_700
+	uint32_t val;
+	val = arc_aux_read(AUX_IRQ_ENABLE) | (1 << intno);
+	arc_aux_write(AUX_IRQ_ENABLE, val);
+#endif
 }
 
 /**
  * @fn uint32_t arc_int_enabled(const uint32_t intno)
  * @brief Check whether the specific interrupt is enabled
- * 
+ *
  * @param intno Interrupt number
  * @return 0 disabled, 1 enabled
  */
@@ -193,7 +205,7 @@ Inline uint32_t arc_int_enabled(const uint32_t intno)
 /**
  * @fn uint32_t arc_int_ipm_get(void)
  * @brief Get interrupt priority masking threshold
- * 
+ *
  * @return Interrupt priority masking threshold, negative num
  */
 Inline uint32_t arc_int_ipm_get(void)
@@ -204,7 +216,7 @@ Inline uint32_t arc_int_ipm_get(void)
 /**
  * @fn void arc_int_ipm_set(uint32_t intpri)
  * @brief Set interrupt priority masking threshold
- * 
+ *
  * @param intpri Interrupt priority masking threshold, negative num
  */
 Inline void arc_int_ipm_set(uint32_t intpri)
@@ -216,7 +228,7 @@ Inline void arc_int_ipm_set(uint32_t intpri)
 /**
  * @fn uint32_t arc_int_pri_get(const uint32_t intno)
  * @brief Get current interrupt priority masking threshold
- * 
+ *
  * @param intno Interrupt number
  */
 Inline uint32_t arc_int_pri_get(const uint32_t intno)
@@ -243,7 +255,7 @@ Inline void arc_int_pri_set(const uint32_t intno, uint32_t intpri)
 }
 
 /**
- * @fn uint32_t arc_int_probe(const uint32_t intno) 
+ * @fn uint32_t arc_int_probe(const uint32_t intno)
  * @brief Probe interrupt pending state
  *
  * @param intno Interrupt number

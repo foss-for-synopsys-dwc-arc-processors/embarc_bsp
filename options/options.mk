@@ -235,6 +235,11 @@ include $(EMBARC_ROOT)/arc/arc.mk
 # library makefile
 include $(EMBARC_ROOT)/library/library.mk
 
+ifdef OS_SEL
+override OS_SEL := $(strip $(OS_SEL))
+COMMON_COMPILE_PREREQUISITES += $(EMBARC_ROOT)/os/os.mk
+include $(EMBARC_ROOT)/os/os.mk
+endif
 ############## Post processing #############################################
 # source directories and include directories settings
 include $(EMBARC_ROOT)/options/files.mk

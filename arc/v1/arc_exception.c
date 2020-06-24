@@ -197,6 +197,11 @@ EXC_HANDLER_T exc_handler_get(const uint32_t excno)
  */
 int32_t int_disable(const uint32_t intno)
 {
+	if (intno >= NUM_EXC_CPU && intno < NUM_EXC_ALL) {
+		arc_int_disable(intno);
+		return 0;
+	}
+
 	return -1;
 }
 
@@ -207,6 +212,11 @@ int32_t int_disable(const uint32_t intno)
  */
 int32_t int_enable(const uint32_t intno)
 {
+	if (intno >= NUM_EXC_CPU && intno < NUM_EXC_ALL) {
+		arc_int_enable(intno);
+		return 0;
+	}
+
 	return -1;
 }
 
@@ -274,7 +284,7 @@ int32_t int_pri_set(const uint32_t intno, int32_t intpri)
 
 	if (intno >= NUM_EXC_CPU && intno < NUM_EXC_ALL) {
 		status = cpu_lock_save();
-		intpri = INT_PRI_MAX - intpri;
+		intpri = intpri - INT_PRI_MIN;
 		arc_int_pri_set(intno, (uint32_t)intpri);
 		cpu_unlock_restore(status);
 		return 0;

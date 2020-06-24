@@ -85,7 +85,7 @@ exc_entry_table:
 /* CPU exceptions */
 VECTOR _start  			  /* 0x0, Reset Vector                 (0x0) */
 #if ARC_FEATURE_CORE_600
-VECTOR exc_entry_mem      /* 0x8, Mem error exception          (0x1) */ 
+VECTOR exc_entry_mem      /* 0x8, Mem error exception          (0x1) */
 VECTOR exc_entry_instr    /* 0x10, Instruction error exception (0x2) */
 /* ARC 600 has no icause reg, the int no must be given in entry */
 VECTOR exc_entry_int3	/* irq 3 */
@@ -155,7 +155,7 @@ HANDLE_EXC exc_entry_int31, exc_entry_int, 31
 #endif
 
 #elif ARC_FEATURE_CORE_700
-VECTOR exc_entry_cpu    /* 0x8, Mem error exception          (0x1) */ 
+VECTOR exc_entry_cpu    /* 0x8, Mem error exception          (0x1) */
 VECTOR exc_entry_cpu    /* 0x10, Instruction error exception (0x2) */
 /* interrupt entries */
 VECTOR exc_entry_int	/* irq 3 */
@@ -187,11 +187,11 @@ VECTOR exc_entry_int	/* irq 28 */
 VECTOR exc_entry_int	/* irq 29 */
 VECTOR exc_entry_int	/* irq 30 */
 VECTOR exc_entry_int	/* irq 31 */
-VECTOR exc_entry_cpu    /* Machine check */ 
+VECTOR exc_entry_cpu    /* Machine check */
 VECTOR exc_entry_cpu    /* TLBMissI */
-VECTOR exc_entry_cpu    /* TLBMissD */ 
+VECTOR exc_entry_cpu    /* TLBMissD */
 VECTOR exc_entry_cpu    /* TLBProtV */
-VECTOR exc_entry_cpu    /* PrivilegeV */ 
+VECTOR exc_entry_cpu    /* PrivilegeV */
 VECTOR exc_entry_cpu    /* Trap */
 #endif
 

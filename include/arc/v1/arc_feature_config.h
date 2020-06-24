@@ -156,12 +156,14 @@
 #endif
 
 
-/** The number of interrupts */
+/** The number of exceptions/interrupts */
 #if !defined(NUM_EXC_ALL)
 #if core_config_bcr_vecbase_ac_build_E == 1
-#define NUM_EXC_ALL             (32)  /* 32 interrupts */
+#define NUM_EXC_ALL             (32)  /* 32 exceptions/interrupts */
+#elif core_config_bcr_vecbase_ac_build_E == 2
+#define NUM_EXC_ALL             (38)  /* 38 exceptions/interrupts */
 #else
-#define NUM_EXC_ALL             (16)  /* 16 interrupts */
+#define NUM_EXC_ALL             (16)  /* 16 exceptions/interrupts */
 #endif
 #endif
 

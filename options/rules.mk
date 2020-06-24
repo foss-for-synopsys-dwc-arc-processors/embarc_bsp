@@ -12,7 +12,7 @@ endif
 
 
 ## All defines ##
-ALL_DEFINES += $(CPU_DEFINES) $(BOARD_DEFINES) $(LIB_DEFINES) \
+ALL_DEFINES += $(CPU_DEFINES) $(BOARD_DEFINES) $(LIB_DEFINES) $(OS_DEFINES) \
 		$(TOOLCHAIN_DEFINES) $(EXTRA_DEFINES) $(APPL_DEFINES)
 
 ## all includes conversion  ##
@@ -32,7 +32,7 @@ ALL_GENERATED_DIRS_TMPFILES = $(sort $(call get_mkdir_tmps, $(ALL_GENERATED_DIRS
 ##
 # Collect all libraries
 ##
-ALL_LIBS = $(BOARD_LIB) $(CPU_LIBS) $(LIB_LIBS)
+ALL_LIBS = $(BOARD_LIB) $(CPU_LIBS) $(LIB_LIBS) $(OS_LIBS)
 EMBARC_LIB = $(OUT_DIR)/libembarc.a
 
 ##
