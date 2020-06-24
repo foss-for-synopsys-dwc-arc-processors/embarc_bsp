@@ -120,6 +120,10 @@
 #define AUX_IRQ_LEV             (0x200) /*!< interrupt level programming register */
 #define AUX_IRQ_HINT            (0x201) /*!< software interrupt trigger */
 
+/* stack checking registers */
+#define AUX_USTACK_TOP          (0x260)
+#define AUX_USTACK_BASE         (0x261)
+
 #define AUX_IRQ_CAUSE1          (0x40a) /*!< L1 interrupt cause register */
 #define AUX_IRQ_CAUSE2          (0x40b) /*!< L2 interrupt cause register */
 
@@ -150,13 +154,14 @@
 #define AUX_STATUS_BIT_DE       (6)     /*!< delayed branch is pending */
 #define AUX_STATUS_BIT_U        (7)     /*!< user mode */
 #define AUX_STATUS_BIT_L        (12)    /*!< zero-overhead loop enable */
+#define AUX_STATUS_BIT_SC       (14)    /*!< stack check bit, also called SE bit */
 
 /* masks correspond to STATUS32 bit-field */
 #define AUX_STATUS_MASK_AE      (1 << AUX_STATUS_BIT_AE)
 #define AUX_STATUS_MASK_HALT    (1 << AUX_STATUS_BIT_HALT)
 #define AUX_STATUS_MASK_U       (1 << AUX_STATUS_BIT_U)
 #define AUX_STATUS_MASK_L       (1 << AUX_STATUS_BIT_L)
-#define AUX_STATUS_MASK_DE      (1 << AUX_STATUS_BIT_DE) 
+#define AUX_STATUS_MASK_DE      (1 << AUX_STATUS_BIT_DE)
 #define AUX_STATUS_MASK_E1      (1 << AUX_STATUS_BIT_E1)
 #define AUX_STATUS_MASK_E2      (1 << AUX_STATUS_BIT_E2)
 #define AUX_STATUS_MASK_A1      (1 << AUX_STATUS_BIT_A1)

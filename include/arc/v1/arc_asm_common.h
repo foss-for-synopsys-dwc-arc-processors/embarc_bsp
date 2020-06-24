@@ -62,12 +62,31 @@
 /* ARC 600 has no rtie instruction, so use a macro here */
 #if ARC_FEATURE_CORE_600
 .macro ASM_MACRO1(rtie, reg)
-/* r0 is used to store into, now recover it */
+/* r0 is used to store info, now recover it, see macro HANDLE_EXC in arc_exc_asm.s */
       pop r0
       j.f [MACRO_ARG(reg)]
 .endm
 #endif
 
+.macro clri
+/* use r0 as temporary variable */
+      push r0
+      lr r0, [AUX_STATUS32]
+      bclr r0, r0, AUX_STATUS_BIT_E1
+      bclr r0, r0, AUX_STATUS_BIT_E2
+      flag r0
+      pop r0
+.endm
+
+.macro seti
+/* use r0 as temporary variable */
+      push r0
+      lr r0, [AUX_STATUS32]
+      bset r0, r0, AUX_STATUS_BIT_E1
+      bset r0, r0, AUX_STATUS_BIT_E2
+      flag r0
+      pop r0
+.endm
 
 .macro ASM_MACRO1(PUSHAX, aux)
       lr r10, [MACRO_ARG(aux)]
@@ -123,6 +142,22 @@
       pop r13
 .endm
 
+/* macro to save all non-caller saved regs */
+.macro SAVE_NONSCRATCH_REGS
+/* caller saved regs are saved by caller function */
+PUSH gp
+PUSH fp
+PUSH blink
+SAVE_CALLEE_REGS
+.endm
+
+/* macro to restore all non-caller saved regs */
+.macro RESTORE_NONSCRATCH_REGS
+RESTORE_CALLEE_REGS
+POP blink
+POP fp
+POP gp
+.endm
 
 .macro SAVE_R58_R59
 .endm

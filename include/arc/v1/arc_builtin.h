@@ -199,7 +199,7 @@ Inline uint32_t arc_clri(void)
 Inline void arc_seti(uint32_t key)
 {
 	uint32_t v = (arc_aux_read(AUX_STATUS32) & (~AUX_STATUS_MASK_IE));
-	
+
 	v =  v | (key & AUX_STATUS_MASK_IE);
 
 	arc_kflag(v);
