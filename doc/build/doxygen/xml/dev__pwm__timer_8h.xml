@@ -5,189 +5,179 @@
     <includes refid="dev__common_8h" local="yes">device/dev_common.h</includes>
     <includedby refid="dw__pwm__timer_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h</includedby>
     <incdepgraph>
-      <node id="4696">
+      <node id="4701">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h</label>
         <link refid="dev_pwm_timer.h"/>
-        <childnode refid="4697" relation="include">
-        </childnode>
-      </node>
-      <node id="4702">
-        <label>stdbool.h</label>
-      </node>
-      <node id="4698">
-        <label>embARC_toolchain.h</label>
-        <link refid="embARC__toolchain_8h"/>
-        <childnode refid="4699" relation="include">
-        </childnode>
-        <childnode refid="4700" relation="include">
-        </childnode>
-        <childnode refid="4701" relation="include">
-        </childnode>
         <childnode refid="4702" relation="include">
         </childnode>
       </node>
-      <node id="4699">
-        <label>stdint.h</label>
+      <node id="4707">
+        <label>stdbool.h</label>
       </node>
-      <node id="4701">
-        <label>stddef.h</label>
-      </node>
-      <node id="4700">
-        <label>limits.h</label>
-      </node>
-      <node id="4697">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="4698" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="4703">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h</label>
-        <link refid="dev_pwm_timer.h"/>
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
         <childnode refid="4704" relation="include">
         </childnode>
-      </node>
-      <node id="4719">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
-        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
-      </node>
-      <node id="4717">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
-      </node>
-      <node id="4711">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
-        <link refid="dw__trng__obj_8c"/>
-      </node>
-      <node id="4723">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
-        <link refid="dw__i2s__obj_8c"/>
-      </node>
-      <node id="4710">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
-      </node>
-      <node id="4724">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
-        <link refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
-      </node>
-      <node id="4716">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
-      </node>
-      <node id="4714">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
-      </node>
-      <node id="4704">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h</label>
-        <link refid="dw__pwm__timer_8h"/>
         <childnode refid="4705" relation="include">
         </childnode>
-        <childnode refid="4720" relation="include">
-        </childnode>
-        <childnode refid="4730" relation="include">
-        </childnode>
-      </node>
-      <node id="4730">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</label>
-        <link refid="dw__pwm__timer_8c"/>
-      </node>
-      <node id="4722">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/iotdk.h</label>
-        <link refid="iotdk_8h"/>
-        <childnode refid="4723" relation="include">
-        </childnode>
-        <childnode refid="4721" relation="include">
-        </childnode>
-        <childnode refid="4724" relation="include">
-        </childnode>
-        <childnode refid="4725" relation="include">
-        </childnode>
-        <childnode refid="4726" relation="include">
-        </childnode>
-        <childnode refid="4727" relation="include">
-        </childnode>
-        <childnode refid="4728" relation="include">
-        </childnode>
-        <childnode refid="4729" relation="include">
-        </childnode>
-      </node>
-      <node id="4718">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
-      </node>
-      <node id="4706">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
-      </node>
-      <node id="4705">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
-        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
         <childnode refid="4706" relation="include">
         </childnode>
         <childnode refid="4707" relation="include">
         </childnode>
       </node>
-      <node id="4709">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      <node id="4704">
+        <label>stdint.h</label>
       </node>
-      <node id="4725">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
-        <link refid="iotdk_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      <node id="4706">
+        <label>stddef.h</label>
       </node>
-      <node id="4713">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
-        <link refid="ip__obj__mgr_8c"/>
+      <node id="4705">
+        <label>limits.h</label>
       </node>
-      <node id="4727">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
-        <link refid="iotdk_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
-      </node>
-      <node id="4712">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
-        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
-      </node>
-      <node id="4729">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/mux/mux.c</label>
-        <link refid="iotdk_2drivers_2mux_2mux_8c"/>
-      </node>
-      <node id="4721">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
-        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
-      </node>
-      <node id="4720">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
-        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
-        <childnode refid="4721" relation="include">
-        </childnode>
-        <childnode refid="4722" relation="include">
+      <node id="4702">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="4703" relation="include">
         </childnode>
       </node>
-      <node id="4715">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
-        <link refid="dfss__i2s__obj_8c"/>
-      </node>
-      <node id="4726">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
-        <link refid="iotdk_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
-      </node>
-      <node id="4707">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
-        <link refid="emsdp_8h"/>
-        <childnode refid="4708" relation="include">
-        </childnode>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4708">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_pwm_timer.h</label>
+        <link refid="dev_pwm_timer.h"/>
         <childnode refid="4709" relation="include">
         </childnode>
+      </node>
+      <node id="4724">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/mux/mux.c</label>
+        <link refid="emsdp_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4722">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4716">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/trng/dw_trng_obj.c</label>
+        <link refid="dw__trng__obj_8c"/>
+      </node>
+      <node id="4728">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
+        <link refid="dw__i2s__obj_8c"/>
+      </node>
+      <node id="4715">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/spi/dw_spi_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="4729">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4721">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4719">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4709">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_pwm_timer.h</label>
+        <link refid="dw__pwm__timer_8h"/>
         <childnode refid="4710" relation="include">
         </childnode>
+        <childnode refid="4725" relation="include">
+        </childnode>
+        <childnode refid="4735" relation="include">
+        </childnode>
+      </node>
+      <node id="4735">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</label>
+        <link refid="dw__pwm__timer_8c"/>
+      </node>
+      <node id="4727">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/iotdk.h</label>
+        <link refid="iotdk_8h"/>
+        <childnode refid="4728" relation="include">
+        </childnode>
+        <childnode refid="4726" relation="include">
+        </childnode>
+        <childnode refid="4729" relation="include">
+        </childnode>
+        <childnode refid="4730" relation="include">
+        </childnode>
+        <childnode refid="4731" relation="include">
+        </childnode>
+        <childnode refid="4732" relation="include">
+        </childnode>
+        <childnode refid="4733" relation="include">
+        </childnode>
+        <childnode refid="4734" relation="include">
+        </childnode>
+      </node>
+      <node id="4723">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
+      </node>
+      <node id="4711">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
+      </node>
+      <node id="4710">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
         <childnode refid="4711" relation="include">
         </childnode>
         <childnode refid="4712" relation="include">
         </childnode>
+      </node>
+      <node id="4714">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/sdio/dw_sdio_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2sdio_2dw__sdio__obj_8c"/>
+      </node>
+      <node id="4730">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/gpio/dfss_gpio_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2gpio_2dfss__gpio__obj_8c"/>
+      </node>
+      <node id="4718">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/ip_obj_mgr.c</label>
+        <link refid="ip__obj__mgr_8c"/>
+      </node>
+      <node id="4732">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/spi/dfss_spi_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2spi_2dfss__spi__obj_8c"/>
+      </node>
+      <node id="4717">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
+        <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="4734">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/mux/mux.c</label>
+        <link refid="iotdk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="4726">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8c"/>
+      </node>
+      <node id="4725">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/pwm_timer/dw_pwm_timer_obj.h</label>
+        <link refid="iotdk_2drivers_2ip_2designware_2pwm__timer_2dw__pwm__timer__obj_8h"/>
+        <childnode refid="4726" relation="include">
+        </childnode>
+        <childnode refid="4727" relation="include">
+        </childnode>
+      </node>
+      <node id="4720">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/i2s/dfss_i2s_obj.c</label>
+        <link refid="dfss__i2s__obj_8c"/>
+      </node>
+      <node id="4731">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/iic/dfss_iic_obj.c</label>
+        <link refid="iotdk_2drivers_2ip_2subsystem_2iic_2dfss__iic__obj_8c"/>
+      </node>
+      <node id="4712">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/emsdp.h</label>
+        <link refid="emsdp_8h"/>
         <childnode refid="4713" relation="include">
         </childnode>
         <childnode refid="4714" relation="include">
@@ -202,12 +192,22 @@
         </childnode>
         <childnode refid="4719" relation="include">
         </childnode>
+        <childnode refid="4720" relation="include">
+        </childnode>
+        <childnode refid="4721" relation="include">
+        </childnode>
+        <childnode refid="4722" relation="include">
+        </childnode>
+        <childnode refid="4723" relation="include">
+        </childnode>
+        <childnode refid="4724" relation="include">
+        </childnode>
       </node>
-      <node id="4728">
+      <node id="4733">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
         <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
       </node>
-      <node id="4708">
+      <node id="4713">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/gpio/dw_gpio_obj.c</label>
         <link refid="emsdp_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
       </node>

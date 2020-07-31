@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,28 +11,30 @@
   
 
   
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="MPU" href="mpu.html" />
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> embARC
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> embARC
           
 
           
@@ -78,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -117,6 +119,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -155,7 +158,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="../index.html">ARC Processors</a> &raquo;</li>
         
@@ -200,441 +203,441 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 <dd><p>uDMA related definitions and functions </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Defines</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DCACHE_FLUSH_MLINES">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga28bd93c972ac793f94ab468270ba74a9"></span><code class="sig-name descname">DCACHE_FLUSH_MLINES</code><span class="sig-paren">(</span>addr, size<span class="sig-paren">)</span><a class="headerlink" href="#c.DCACHE_FLUSH_MLINES" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga28bd93c972ac793f94ab468270ba74a9"></span><code class="sig-name descname">DCACHE_FLUSH_MLINES</code><span class="sig-paren">(</span><em>addr</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DCACHE_FLUSH_MLINES" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.MEMORY_FENCE">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8b994cda4ca0a63288695a31e54c8d35"></span><code class="sig-name descname">MEMORY_FENCE</code><a class="headerlink" href="#c.MEMORY_FENCE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8b994cda4ca0a63288695a31e54c8d35"></span><code class="sig-name descname">MEMORY_FENCE</code><a class="headerlink" href="#c.MEMORY_FENCE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_INT_LEVEL_SENS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga386afb81446da54480731d9d3dd4d921"></span><code class="sig-name descname">DMA_INT_LEVEL_SENS</code><a class="headerlink" href="#c.DMA_INT_LEVEL_SENS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga386afb81446da54480731d9d3dd4d921"></span><code class="sig-name descname">DMA_INT_LEVEL_SENS</code><a class="headerlink" href="#c.DMA_INT_LEVEL_SENS" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_INT_OK_VECTOR">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga373a63440e363c118467735b04be349a"></span><code class="sig-name descname">DMA_INT_OK_VECTOR</code><span class="sig-paren">(</span>channel<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_INT_OK_VECTOR" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga373a63440e363c118467735b04be349a"></span><code class="sig-name descname">DMA_INT_OK_VECTOR</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_INT_OK_VECTOR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_INT_ERR_VECTOR">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga866d76e37a45411c2e95074f20981bdd"></span><code class="sig-name descname">DMA_INT_ERR_VECTOR</code><span class="sig-paren">(</span>channel<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_INT_ERR_VECTOR" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga866d76e37a45411c2e95074f20981bdd"></span><code class="sig-name descname">DMA_INT_ERR_VECTOR</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_INT_ERR_VECTOR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.CORE_DMAC_INTERNAL_VERSION">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae6d576ffb70ae165ab3cf26f1a5c24b0"></span><code class="sig-name descname">CORE_DMAC_INTERNAL_VERSION</code><a class="headerlink" href="#c.CORE_DMAC_INTERNAL_VERSION" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae6d576ffb70ae165ab3cf26f1a5c24b0"></span><code class="sig-name descname">CORE_DMAC_INTERNAL_VERSION</code><a class="headerlink" href="#c.CORE_DMAC_INTERNAL_VERSION" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Version of the DMA controller </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_MULTI_IRQ">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf6e87d0c5d43b4f136169f619243fe5a"></span><code class="sig-name descname">DMA_MULTI_IRQ</code><a class="headerlink" href="#c.DMA_MULTI_IRQ" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf6e87d0c5d43b4f136169f619243fe5a"></span><code class="sig-name descname">DMA_MULTI_IRQ</code><a class="headerlink" href="#c.DMA_MULTI_IRQ" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Multiple interrupts for DMA </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_IRQ_PRIO">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf16c6e745771a011277aabd659759eed"></span><code class="sig-name descname">DMA_IRQ_PRIO</code><a class="headerlink" href="#c.DMA_IRQ_PRIO" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf16c6e745771a011277aabd659759eed"></span><code class="sig-name descname">DMA_IRQ_PRIO</code><a class="headerlink" href="#c.DMA_IRQ_PRIO" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA IRQ priority </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_IRQ_NUM_START">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8e05b31d51dbe30264e2467c9d1650c9"></span><code class="sig-name descname">DMA_IRQ_NUM_START</code><a class="headerlink" href="#c.DMA_IRQ_NUM_START" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8e05b31d51dbe30264e2467c9d1650c9"></span><code class="sig-name descname">DMA_IRQ_NUM_START</code><a class="headerlink" href="#c.DMA_IRQ_NUM_START" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA IRQ start vector Number of all DMA channels </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_ALL_CHANNEL_NUM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga33e5192848954a63f872b0c7df80367a"></span><code class="sig-name descname">DMA_ALL_CHANNEL_NUM</code><a class="headerlink" href="#c.DMA_ALL_CHANNEL_NUM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga33e5192848954a63f872b0c7df80367a"></span><code class="sig-name descname">DMA_ALL_CHANNEL_NUM</code><a class="headerlink" href="#c.DMA_ALL_CHANNEL_NUM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Number of all aux-register based DMA channels </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_REGISTER_CHANNEL_NUM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga662e5971b9271b6855045bb9dbf1a654"></span><code class="sig-name descname">DMA_REGISTER_CHANNEL_NUM</code><a class="headerlink" href="#c.DMA_REGISTER_CHANNEL_NUM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga662e5971b9271b6855045bb9dbf1a654"></span><code class="sig-name descname">DMA_REGISTER_CHANNEL_NUM</code><a class="headerlink" href="#c.DMA_REGISTER_CHANNEL_NUM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Mask of all DMA channels at the most </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_ALL_CHANNEL_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1e656f95a8cb87b02d8a79853210ee0a"></span><code class="sig-name descname">DMA_ALL_CHANNEL_MASK</code><a class="headerlink" href="#c.DMA_ALL_CHANNEL_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1e656f95a8cb87b02d8a79853210ee0a"></span><code class="sig-name descname">DMA_ALL_CHANNEL_MASK</code><a class="headerlink" href="#c.DMA_ALL_CHANNEL_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_OP_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3b5573ef57629c751ae39c5f12de6f7d"></span><code class="sig-name descname">DMACTRLx_OP_OFS</code><a class="headerlink" href="#c.DMACTRLx_OP_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3b5573ef57629c751ae39c5f12de6f7d"></span><code class="sig-name descname">DMACTRLx_OP_OFS</code><a class="headerlink" href="#c.DMACTRLx_OP_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 0,1 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_R_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2899e234bca37fbfcff7beb307416e80"></span><code class="sig-name descname">DMACTRLx_R_OFS</code><a class="headerlink" href="#c.DMACTRLx_R_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2899e234bca37fbfcff7beb307416e80"></span><code class="sig-name descname">DMACTRLx_R_OFS</code><a class="headerlink" href="#c.DMACTRLx_R_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 2 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_DTT_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga086b211216c85d46ca879d01a4ed1e98"></span><code class="sig-name descname">DMACTRLx_DTT_OFS</code><a class="headerlink" href="#c.DMACTRLx_DTT_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga086b211216c85d46ca879d01a4ed1e98"></span><code class="sig-name descname">DMACTRLx_DTT_OFS</code><a class="headerlink" href="#c.DMACTRLx_DTT_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 3,4 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_DWINC_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad49f849bd52d48d3f2b53ea5130251c2"></span><code class="sig-name descname">DMACTRLx_DWINC_OFS</code><a class="headerlink" href="#c.DMACTRLx_DWINC_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad49f849bd52d48d3f2b53ea5130251c2"></span><code class="sig-name descname">DMACTRLx_DWINC_OFS</code><a class="headerlink" href="#c.DMACTRLx_DWINC_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 5,6,7 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_SIZE_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga93a80795d8f15775272ce151207655a8"></span><code class="sig-name descname">DMACTRLx_SIZE_OFS</code><a class="headerlink" href="#c.DMACTRLx_SIZE_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga93a80795d8f15775272ce151207655a8"></span><code class="sig-name descname">DMACTRLx_SIZE_OFS</code><a class="headerlink" href="#c.DMACTRLx_SIZE_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 8..20 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_ARB_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8c0257c0859578c2754b424f9ed6561c"></span><code class="sig-name descname">DMACTRLx_ARB_OFS</code><a class="headerlink" href="#c.DMACTRLx_ARB_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8c0257c0859578c2754b424f9ed6561c"></span><code class="sig-name descname">DMACTRLx_ARB_OFS</code><a class="headerlink" href="#c.DMACTRLx_ARB_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 21..28 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_INT_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga31a279ac20de678a5d95139520d61482"></span><code class="sig-name descname">DMACTRLx_INT_OFS</code><a class="headerlink" href="#c.DMACTRLx_INT_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga31a279ac20de678a5d95139520d61482"></span><code class="sig-name descname">DMACTRLx_INT_OFS</code><a class="headerlink" href="#c.DMACTRLx_INT_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 29 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_AM_OFS">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gade1850d1b521cc9dd20a7aaf0bb9c1fb"></span><code class="sig-name descname">DMACTRLx_AM_OFS</code><a class="headerlink" href="#c.DMACTRLx_AM_OFS" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gade1850d1b521cc9dd20a7aaf0bb9c1fb"></span><code class="sig-name descname">DMACTRLx_AM_OFS</code><a class="headerlink" href="#c.DMACTRLx_AM_OFS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field offset: bit 30,31 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_OP">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga41d979f2c6d3f1b38eb1b9e06702d6b3"></span><code class="sig-name descname">DMACTRLx_OP</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_OP" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga41d979f2c6d3f1b38eb1b9e06702d6b3"></span><code class="sig-name descname">DMACTRLx_OP</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_OP" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 0,1 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_R">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga52e6e61880941be08bfbb3de211e0229"></span><code class="sig-name descname">DMACTRLx_R</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_R" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga52e6e61880941be08bfbb3de211e0229"></span><code class="sig-name descname">DMACTRLx_R</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_R" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 2 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_DTT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gacf6a1f73d4a4ecff800fa48f715f9cbc"></span><code class="sig-name descname">DMACTRLx_DTT</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_DTT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gacf6a1f73d4a4ecff800fa48f715f9cbc"></span><code class="sig-name descname">DMACTRLx_DTT</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_DTT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 3,4 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_DWINC">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga37fcc916a26f83883a7fee1caaa0cde0"></span><code class="sig-name descname">DMACTRLx_DWINC</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_DWINC" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga37fcc916a26f83883a7fee1caaa0cde0"></span><code class="sig-name descname">DMACTRLx_DWINC</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_DWINC" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 5,6,7 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_SIZE">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gac2f590aac7504e3960cf3607c973f664"></span><code class="sig-name descname">DMACTRLx_SIZE</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_SIZE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gac2f590aac7504e3960cf3607c973f664"></span><code class="sig-name descname">DMACTRLx_SIZE</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_SIZE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 8..20 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_ARB">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga46a9c1990f09d7b7640534e5b396575a"></span><code class="sig-name descname">DMACTRLx_ARB</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_ARB" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga46a9c1990f09d7b7640534e5b396575a"></span><code class="sig-name descname">DMACTRLx_ARB</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_ARB" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 21..28 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_INT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad7b8fd9be8515f3be65b4809b66235f3"></span><code class="sig-name descname">DMACTRLx_INT</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_INT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad7b8fd9be8515f3be65b4809b66235f3"></span><code class="sig-name descname">DMACTRLx_INT</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_INT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 29 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_AM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6f6826c4c867b294c7744ae7ca10e1e0"></span><code class="sig-name descname">DMACTRLx_AM</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_AM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6f6826c4c867b294c7744ae7ca10e1e0"></span><code class="sig-name descname">DMACTRLx_AM</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACTRLx_AM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field value: bit 30,31 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_OP_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae24b57a3add49e83da7ca8726b611ab4"></span><code class="sig-name descname">DMACTRLx_OP_MASK</code><a class="headerlink" href="#c.DMACTRLx_OP_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae24b57a3add49e83da7ca8726b611ab4"></span><code class="sig-name descname">DMACTRLx_OP_MASK</code><a class="headerlink" href="#c.DMACTRLx_OP_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 0,1 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_R_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gab75c4448785d187e51cffe9fe3348f12"></span><code class="sig-name descname">DMACTRLx_R_MASK</code><a class="headerlink" href="#c.DMACTRLx_R_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gab75c4448785d187e51cffe9fe3348f12"></span><code class="sig-name descname">DMACTRLx_R_MASK</code><a class="headerlink" href="#c.DMACTRLx_R_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 2 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_DTT_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad31a9e4496940638ae397b4e98eb524b"></span><code class="sig-name descname">DMACTRLx_DTT_MASK</code><a class="headerlink" href="#c.DMACTRLx_DTT_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad31a9e4496940638ae397b4e98eb524b"></span><code class="sig-name descname">DMACTRLx_DTT_MASK</code><a class="headerlink" href="#c.DMACTRLx_DTT_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 3,4 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_DWINC_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaaae12efddb5d280847bfe8cec54dce80"></span><code class="sig-name descname">DMACTRLx_DWINC_MASK</code><a class="headerlink" href="#c.DMACTRLx_DWINC_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaaae12efddb5d280847bfe8cec54dce80"></span><code class="sig-name descname">DMACTRLx_DWINC_MASK</code><a class="headerlink" href="#c.DMACTRLx_DWINC_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 5,6,7 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_SIZE_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf0b85ea535b49f78caedc2c15c1bb743"></span><code class="sig-name descname">DMACTRLx_SIZE_MASK</code><a class="headerlink" href="#c.DMACTRLx_SIZE_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf0b85ea535b49f78caedc2c15c1bb743"></span><code class="sig-name descname">DMACTRLx_SIZE_MASK</code><a class="headerlink" href="#c.DMACTRLx_SIZE_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 8..20 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_ARB_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaea8174d2d67026a0e77aa8b6b00cd5f2"></span><code class="sig-name descname">DMACTRLx_ARB_MASK</code><a class="headerlink" href="#c.DMACTRLx_ARB_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaea8174d2d67026a0e77aa8b6b00cd5f2"></span><code class="sig-name descname">DMACTRLx_ARB_MASK</code><a class="headerlink" href="#c.DMACTRLx_ARB_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 21..28 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_INT_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga53d0a9711055e401c57d3d654b020879"></span><code class="sig-name descname">DMACTRLx_INT_MASK</code><a class="headerlink" href="#c.DMACTRLx_INT_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga53d0a9711055e401c57d3d654b020879"></span><code class="sig-name descname">DMACTRLx_INT_MASK</code><a class="headerlink" href="#c.DMACTRLx_INT_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 29 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACTRLx_AM_MASK">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf58c8da68a90d064668776f6c5cb7347"></span><code class="sig-name descname">DMACTRLx_AM_MASK</code><a class="headerlink" href="#c.DMACTRLx_AM_MASK" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf58c8da68a90d064668776f6c5cb7347"></span><code class="sig-name descname">DMACTRLx_AM_MASK</code><a class="headerlink" href="#c.DMACTRLx_AM_MASK" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>bit field mask: bit 30,31 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMACHANNEL">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1ec5fe68d27f31d10ef534096fd08145"></span><code class="sig-name descname">DMACHANNEL</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMACHANNEL" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1ec5fe68d27f31d10ef534096fd08145"></span><code class="sig-name descname">DMACHANNEL</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMACHANNEL" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Channel number to Bit </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_IDLE">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf374fb59919b4cfd20b088bbf8b80124"></span><code class="sig-name descname">DMA_IDLE</code><a class="headerlink" href="#c.DMA_IDLE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf374fb59919b4cfd20b088bbf8b80124"></span><code class="sig-name descname">DMA_IDLE</code><a class="headerlink" href="#c.DMA_IDLE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA working status enumeration Current DMA status is IDLE </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_BUSY">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaad8d757da712e20a5b6b3cca2902cf57"></span><code class="sig-name descname">DMA_BUSY</code><a class="headerlink" href="#c.DMA_BUSY" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaad8d757da712e20a5b6b3cca2902cf57"></span><code class="sig-name descname">DMA_BUSY</code><a class="headerlink" href="#c.DMA_BUSY" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Current DMA status is busy, in transfer </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_ERROR">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga16eb0563338fed885dbcaa491a7ab7c6"></span><code class="sig-name descname">DMA_ERROR</code><a class="headerlink" href="#c.DMA_ERROR" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga16eb0563338fed885dbcaa491a7ab7c6"></span><code class="sig-name descname">DMA_ERROR</code><a class="headerlink" href="#c.DMA_ERROR" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Current DMA status is error, in transfer error </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_STOP">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga75d041ea1ea3c5d6affcc5e196e1257d"></span><code class="sig-name descname">DMA_STOP</code><a class="headerlink" href="#c.DMA_STOP" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga75d041ea1ea3c5d6affcc5e196e1257d"></span><code class="sig-name descname">DMA_STOP</code><a class="headerlink" href="#c.DMA_STOP" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Current DMA is stop by user </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CHN_ANY">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9d0b061c89f56629feba02f00f700b87"></span><code class="sig-name descname">DMA_CHN_ANY</code><a class="headerlink" href="#c.DMA_CHN_ANY" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9d0b061c89f56629feba02f00f700b87"></span><code class="sig-name descname">DMA_CHN_ANY</code><a class="headerlink" href="#c.DMA_CHN_ANY" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Any channel, request one </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CHN_INVALID">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6c4d940e45d1aa3d554bd8a16fdcf5c6"></span><code class="sig-name descname">DMA_CHN_INVALID</code><a class="headerlink" href="#c.DMA_CHN_INVALID" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6c4d940e45d1aa3d554bd8a16fdcf5c6"></span><code class="sig-name descname">DMA_CHN_INVALID</code><a class="headerlink" href="#c.DMA_CHN_INVALID" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Invalid channel </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_REQ_SOFT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafbce73db02f90ec79b963b893885480f"></span><code class="sig-name descname">DMA_REQ_SOFT</code><a class="headerlink" href="#c.DMA_REQ_SOFT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafbce73db02f90ec79b963b893885480f"></span><code class="sig-name descname">DMA_REQ_SOFT</code><a class="headerlink" href="#c.DMA_REQ_SOFT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel request or trigger source enumeration Software trigger </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_REQ_PERIPHERAL">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gadc8e014bc2eac67f668eb25bcc78ccf0"></span><code class="sig-name descname">DMA_REQ_PERIPHERAL</code><a class="headerlink" href="#c.DMA_REQ_PERIPHERAL" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gadc8e014bc2eac67f668eb25bcc78ccf0"></span><code class="sig-name descname">DMA_REQ_PERIPHERAL</code><a class="headerlink" href="#c.DMA_REQ_PERIPHERAL" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Peripheral trigger </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_INVALID_TRANSFER">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2609dc6a8d164247377598a20296627f"></span><code class="sig-name descname">DMA_INVALID_TRANSFER</code><a class="headerlink" href="#c.DMA_INVALID_TRANSFER" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2609dc6a8d164247377598a20296627f"></span><code class="sig-name descname">DMA_INVALID_TRANSFER</code><a class="headerlink" href="#c.DMA_INVALID_TRANSFER" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel control bit field enumeration - DMA Operation (OP) Invalid channel </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_SINGLE_TRANSFER">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga37cbdb4c347b12dd7637911320177517"></span><code class="sig-name descname">DMA_SINGLE_TRANSFER</code><a class="headerlink" href="#c.DMA_SINGLE_TRANSFER" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga37cbdb4c347b12dd7637911320177517"></span><code class="sig-name descname">DMA_SINGLE_TRANSFER</code><a class="headerlink" href="#c.DMA_SINGLE_TRANSFER" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Single Block </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AUTO_LINKED_TRANSFER">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafca745abb0abe8e507d54af7b98ac529"></span><code class="sig-name descname">DMA_AUTO_LINKED_TRANSFER</code><a class="headerlink" href="#c.DMA_AUTO_LINKED_TRANSFER" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafca745abb0abe8e507d54af7b98ac529"></span><code class="sig-name descname">DMA_AUTO_LINKED_TRANSFER</code><a class="headerlink" href="#c.DMA_AUTO_LINKED_TRANSFER" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Link-List (Auto-Request) </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_MANUAL_LINKED_TRANSFER">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga88f3ba2b6c266d0749db601554f6b4d1"></span><code class="sig-name descname">DMA_MANUAL_LINKED_TRANSFER</code><a class="headerlink" href="#c.DMA_MANUAL_LINKED_TRANSFER" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga88f3ba2b6c266d0749db601554f6b4d1"></span><code class="sig-name descname">DMA_MANUAL_LINKED_TRANSFER</code><a class="headerlink" href="#c.DMA_MANUAL_LINKED_TRANSFER" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Link-List (Manual-Request) </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AUTO_REQUEST">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga71b9c5e4584a75375d93017e915731ac"></span><code class="sig-name descname">DMA_AUTO_REQUEST</code><a class="headerlink" href="#c.DMA_AUTO_REQUEST" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga71b9c5e4584a75375d93017e915731ac"></span><code class="sig-name descname">DMA_AUTO_REQUEST</code><a class="headerlink" href="#c.DMA_AUTO_REQUEST" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel control bit field enumeration - Request Type (RT) Auto-request following channel arbitration </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_MANUAL_REQUEST">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga54f5ebde516d67b0758af14724f4f780"></span><code class="sig-name descname">DMA_MANUAL_REQUEST</code><a class="headerlink" href="#c.DMA_MANUAL_REQUEST" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga54f5ebde516d67b0758af14724f4f780"></span><code class="sig-name descname">DMA_MANUAL_REQUEST</code><a class="headerlink" href="#c.DMA_MANUAL_REQUEST" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Manual-request following channel arbitration </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_MEM2MEM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa1ee99dcc45fe894b75a4ff87e040f86"></span><code class="sig-name descname">DMA_MEM2MEM</code><a class="headerlink" href="#c.DMA_MEM2MEM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa1ee99dcc45fe894b75a4ff87e040f86"></span><code class="sig-name descname">DMA_MEM2MEM</code><a class="headerlink" href="#c.DMA_MEM2MEM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel control bit field enumeration - Data Transfer Type (DTT) Memory to Memory </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_MEM2AUX">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga5f086268ae149787952ee28bd1051411"></span><code class="sig-name descname">DMA_MEM2AUX</code><a class="headerlink" href="#c.DMA_MEM2AUX" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga5f086268ae149787952ee28bd1051411"></span><code class="sig-name descname">DMA_MEM2AUX</code><a class="headerlink" href="#c.DMA_MEM2AUX" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Memory to Auxiliary </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AUX2MEM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaff0b1572aa1e08c4902e4d0301f73b5c"></span><code class="sig-name descname">DMA_AUX2MEM</code><a class="headerlink" href="#c.DMA_AUX2MEM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaff0b1572aa1e08c4902e4d0301f73b5c"></span><code class="sig-name descname">DMA_AUX2MEM</code><a class="headerlink" href="#c.DMA_AUX2MEM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Auxiliary to Memory </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AUX2AUX">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gadd449521a76881e69281e66ae036dd5c"></span><code class="sig-name descname">DMA_AUX2AUX</code><a class="headerlink" href="#c.DMA_AUX2AUX" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gadd449521a76881e69281e66ae036dd5c"></span><code class="sig-name descname">DMA_AUX2AUX</code><a class="headerlink" href="#c.DMA_AUX2AUX" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Auxiliary to Auxiliary </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW1INC1">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gabd91c9a9c2018f29a07f9e9658a273d7"></span><code class="sig-name descname">DMA_DW1INC1</code><a class="headerlink" href="#c.DMA_DW1INC1" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gabd91c9a9c2018f29a07f9e9658a273d7"></span><code class="sig-name descname">DMA_DW1INC1</code><a class="headerlink" href="#c.DMA_DW1INC1" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel control bit field enumeration - Data Width/Increment (DW/INC) dw=byte, inc=byte </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW1INC2">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3e67b89beaabedcad86f117f04071d25"></span><code class="sig-name descname">DMA_DW1INC2</code><a class="headerlink" href="#c.DMA_DW1INC2" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3e67b89beaabedcad86f117f04071d25"></span><code class="sig-name descname">DMA_DW1INC2</code><a class="headerlink" href="#c.DMA_DW1INC2" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>dw=byte, inc=half-word </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW1INC4">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga321acbb1a0c7f773d3782654e8ffc071"></span><code class="sig-name descname">DMA_DW1INC4</code><a class="headerlink" href="#c.DMA_DW1INC4" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga321acbb1a0c7f773d3782654e8ffc071"></span><code class="sig-name descname">DMA_DW1INC4</code><a class="headerlink" href="#c.DMA_DW1INC4" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>dw=byte, inc=word </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW2INC2">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2b19967dc6a795d5743301576b68e04c"></span><code class="sig-name descname">DMA_DW2INC2</code><a class="headerlink" href="#c.DMA_DW2INC2" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2b19967dc6a795d5743301576b68e04c"></span><code class="sig-name descname">DMA_DW2INC2</code><a class="headerlink" href="#c.DMA_DW2INC2" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>dw=half-word, inc=half-word </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW2INC4">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga50066286e842a598120d2289e62aa03a"></span><code class="sig-name descname">DMA_DW2INC4</code><a class="headerlink" href="#c.DMA_DW2INC4" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga50066286e842a598120d2289e62aa03a"></span><code class="sig-name descname">DMA_DW2INC4</code><a class="headerlink" href="#c.DMA_DW2INC4" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>dw=half-word, inc=word </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW4INC4">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga63456a38da21f4c5174ed42fe36f21c6"></span><code class="sig-name descname">DMA_DW4INC4</code><a class="headerlink" href="#c.DMA_DW4INC4" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga63456a38da21f4c5174ed42fe36f21c6"></span><code class="sig-name descname">DMA_DW4INC4</code><a class="headerlink" href="#c.DMA_DW4INC4" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>dw=word, inc=word </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DWINC_CLR">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae511b0d3832463bb198b8bfab3ec3e48"></span><code class="sig-name descname">DMA_DWINC_CLR</code><a class="headerlink" href="#c.DMA_DWINC_CLR" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae511b0d3832463bb198b8bfab3ec3e48"></span><code class="sig-name descname">DMA_DWINC_CLR</code><a class="headerlink" href="#c.DMA_DWINC_CLR" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>clear mode (dw=word, inc=word) </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_DW8INC8">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad61716db88205c5bdd7cb9a4a1972e6d"></span><code class="sig-name descname">DMA_DW8INC8</code><a class="headerlink" href="#c.DMA_DW8INC8" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gad61716db88205c5bdd7cb9a4a1972e6d"></span><code class="sig-name descname">DMA_DW8INC8</code><a class="headerlink" href="#c.DMA_DW8INC8" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>dw=double-word, inc=double-word(Only supported in HS) </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_INT_DISABLE">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga50e60c8b4abeea8716f5c6cb3355b61c"></span><code class="sig-name descname">DMA_INT_DISABLE</code><a class="headerlink" href="#c.DMA_INT_DISABLE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga50e60c8b4abeea8716f5c6cb3355b61c"></span><code class="sig-name descname">DMA_INT_DISABLE</code><a class="headerlink" href="#c.DMA_INT_DISABLE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel control bit field enumeration - Internal/External Interrupt enable (INT) Interrupt disabled, no interrupt raised is on completion of a data transfer </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_INT_ENABLE">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9f0fb284e21e576a1388971f9fc3f983"></span><code class="sig-name descname">DMA_INT_ENABLE</code><a class="headerlink" href="#c.DMA_INT_ENABLE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9f0fb284e21e576a1388971f9fc3f983"></span><code class="sig-name descname">DMA_INT_ENABLE</code><a class="headerlink" href="#c.DMA_INT_ENABLE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Interrupt enabled, a level interrupt raised on completion of a data transfer </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AM_SRCNOT_DSTNOT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga5fb09e31ee3ffc93ab7760edb0fafc53"></span><code class="sig-name descname">DMA_AM_SRCNOT_DSTNOT</code><a class="headerlink" href="#c.DMA_AM_SRCNOT_DSTNOT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga5fb09e31ee3ffc93ab7760edb0fafc53"></span><code class="sig-name descname">DMA_AM_SRCNOT_DSTNOT</code><a class="headerlink" href="#c.DMA_AM_SRCNOT_DSTNOT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel control bit field enumeration - Address update Mode (AM) No Source or Destination Address increment </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AM_SRCINC_DSTNOT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gabe3a292add3664ff8a129c91aef362ab"></span><code class="sig-name descname">DMA_AM_SRCINC_DSTNOT</code><a class="headerlink" href="#c.DMA_AM_SRCINC_DSTNOT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gabe3a292add3664ff8a129c91aef362ab"></span><code class="sig-name descname">DMA_AM_SRCINC_DSTNOT</code><a class="headerlink" href="#c.DMA_AM_SRCINC_DSTNOT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Source Address incremented, Destination Address not incremented </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AM_SRCNOT_DSTINC">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafc9c62af5111d7f1f543fbb4d8a1a7d5"></span><code class="sig-name descname">DMA_AM_SRCNOT_DSTINC</code><a class="headerlink" href="#c.DMA_AM_SRCNOT_DSTINC" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafc9c62af5111d7f1f543fbb4d8a1a7d5"></span><code class="sig-name descname">DMA_AM_SRCNOT_DSTINC</code><a class="headerlink" href="#c.DMA_AM_SRCNOT_DSTINC" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Source Address not incremented, Destination Address incremented </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_AM_SRCINC_DSTINC">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gadcce31c7e2701511690b5a772abb3cbe"></span><code class="sig-name descname">DMA_AM_SRCINC_DSTINC</code><a class="headerlink" href="#c.DMA_AM_SRCINC_DSTINC" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gadcce31c7e2701511690b5a772abb3cbe"></span><code class="sig-name descname">DMA_AM_SRCINC_DSTINC</code><a class="headerlink" href="#c.DMA_AM_SRCINC_DSTINC" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Source Address and Destination Address incremented </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CHN_NORM_PRIO">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9eca52291792d023ba8c0f77536d62d5"></span><code class="sig-name descname">DMA_CHN_NORM_PRIO</code><a class="headerlink" href="#c.DMA_CHN_NORM_PRIO" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9eca52291792d023ba8c0f77536d62d5"></span><code class="sig-name descname">DMA_CHN_NORM_PRIO</code><a class="headerlink" href="#c.DMA_CHN_NORM_PRIO" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>DMA channel priority enumeration Normal priority </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CHN_HIGH_PRIO">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa0202a0c409497b4092a8f123e935e55"></span><code class="sig-name descname">DMA_CHN_HIGH_PRIO</code><a class="headerlink" href="#c.DMA_CHN_HIGH_PRIO" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa0202a0c409497b4092a8f123e935e55"></span><code class="sig-name descname">DMA_CHN_HIGH_PRIO</code><a class="headerlink" href="#c.DMA_CHN_HIGH_PRIO" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>High priority </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_MEMORY_CHANNEL_NUM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga5bfc90842e558ba607b22779febaa55e"></span><code class="sig-name descname">DMA_MEMORY_CHANNEL_NUM</code><a class="headerlink" href="#c.DMA_MEMORY_CHANNEL_NUM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga5bfc90842e558ba607b22779febaa55e"></span><code class="sig-name descname">DMA_MEMORY_CHANNEL_NUM</code><a class="headerlink" href="#c.DMA_MEMORY_CHANNEL_NUM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Number of Memory based DMA Channel </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CHECK_REGISTER">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa05397c67f1ca927f140e195108d7334"></span><code class="sig-name descname">DMA_CHECK_REGISTER</code><span class="sig-paren">(</span>channel<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CHECK_REGISTER" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa05397c67f1ca927f140e195108d7334"></span><code class="sig-name descname">DMA_CHECK_REGISTER</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CHECK_REGISTER" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Check whether channel have register interface </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_OP">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga953064c2f0d009a5077daa2433a639e3"></span><code class="sig-name descname">DMA_CTRL_SET_OP</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_OP" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga953064c2f0d009a5077daa2433a639e3"></span><code class="sig-name descname">DMA_CTRL_SET_OP</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_OP" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - OP</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -646,9 +649,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_RT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae16af2522ce8a6ecba90d692fcf0af91"></span><code class="sig-name descname">DMA_CTRL_SET_RT</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_RT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae16af2522ce8a6ecba90d692fcf0af91"></span><code class="sig-name descname">DMA_CTRL_SET_RT</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_RT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - RT</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -660,9 +663,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_DTT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga27adf242d61f7b91b638bbc4ad95fd7e"></span><code class="sig-name descname">DMA_CTRL_SET_DTT</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_DTT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga27adf242d61f7b91b638bbc4ad95fd7e"></span><code class="sig-name descname">DMA_CTRL_SET_DTT</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_DTT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - DTT</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -674,9 +677,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_DWINC">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga4a69004fd86b7cb4f58337bf9b946989"></span><code class="sig-name descname">DMA_CTRL_SET_DWINC</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_DWINC" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga4a69004fd86b7cb4f58337bf9b946989"></span><code class="sig-name descname">DMA_CTRL_SET_DWINC</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_DWINC" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - DW/INC</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -688,9 +691,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_BLKSZ">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga40c309561706031ad808577793a4fdd7"></span><code class="sig-name descname">DMA_CTRL_BLKSZ</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_BLKSZ" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga40c309561706031ad808577793a4fdd7"></span><code class="sig-name descname">DMA_CTRL_BLKSZ</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_BLKSZ" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Calculate right size</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -705,9 +708,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_BLKSZ">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga32ba6fdd3f7b0d710ac4f8453bf0a186"></span><code class="sig-name descname">DMA_CTRL_SET_BLKSZ</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_BLKSZ" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga32ba6fdd3f7b0d710ac4f8453bf0a186"></span><code class="sig-name descname">DMA_CTRL_SET_BLKSZ</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_BLKSZ" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - BLOCKSIZE</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -719,9 +722,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_ARB">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga37aa2e14b2c8884f4b81d76c301e7c04"></span><code class="sig-name descname">DMA_CTRL_SET_ARB</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_ARB" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga37aa2e14b2c8884f4b81d76c301e7c04"></span><code class="sig-name descname">DMA_CTRL_SET_ARB</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_ARB" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - ARB</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -733,9 +736,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_INT">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1gade35d9b6153a6be05277b5d13841c91e"></span><code class="sig-name descname">DMA_CTRL_SET_INT</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_INT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gade35d9b6153a6be05277b5d13841c91e"></span><code class="sig-name descname">DMA_CTRL_SET_INT</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_INT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - I</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -747,9 +750,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_AM">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3149b76bdf33d26240875f72a7954182"></span><code class="sig-name descname">DMA_CTRL_SET_AM</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_AM" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3149b76bdf33d26240875f72a7954182"></span><code class="sig-name descname">DMA_CTRL_SET_AM</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_AM" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl bit field - AM</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -761,9 +764,9 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DMA_CTRL_SET_VALUE">
-<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3d1ae1072b84f3974de1105e8b03fdbb"></span><code class="sig-name descname">DMA_CTRL_SET_VALUE</code><span class="sig-paren">(</span>ctrl, val<span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_VALUE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga3d1ae1072b84f3974de1105e8b03fdbb"></span><code class="sig-name descname">DMA_CTRL_SET_VALUE</code><span class="sig-paren">(</span><em>ctrl</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DMA_CTRL_SET_VALUE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set <a class="reference internal" href="#unionDMA__CTRL__T"><span class="std std-ref">DMA_CTRL_T</span></a> structure ctrl value</p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -778,7 +781,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv414DMA_CALLBACK_T">
 <span id="_CPPv314DMA_CALLBACK_T"></span><span id="_CPPv214DMA_CALLBACK_T"></span><span id="DMA_CALLBACK_T"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga939d7b0dc401478b6429653943fb6978"></span><em class="property">typedef </em>void (*<code class="sig-name descname">DMA_CALLBACK_T</code>)<span class="sig-paren">(</span>void *param<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414DMA_CALLBACK_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Handler function for uDAM callback, param should be current dma channel transfer structure <a class="reference internal" href="#structDMA__CHANNEL__T"><span class="std std-ref">DMA_CHANNEL_T</span></a> </p>
@@ -787,184 +790,184 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv424dmac_interrupt_completedPv">
-<span id="_CPPv324dmac_interrupt_completedPv"></span><span id="_CPPv224dmac_interrupt_completedPv"></span><span id="dmac_interrupt_completed__voidP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga7dd9e5c5561f752bf58c238f7078a984"></span><em class="property">static</em> void <code class="sig-name descname">dmac_interrupt_completed</code><span class="sig-paren">(</span>void *<em>ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dmac_interrupt_completedPv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv324dmac_interrupt_completedPv"></span><span id="_CPPv224dmac_interrupt_completedPv"></span><span id="dmac_interrupt_completed__voidP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga7dd9e5c5561f752bf58c238f7078a984"></span>void <code class="sig-name descname">dmac_interrupt_completed</code><span class="sig-paren">(</span>void *<em>ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dmac_interrupt_completedPv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Interrupt about DMA transaction completion ! Sets the the “complete” status for completed DMA transaction and ! starts next transaction from queue. Reset DMA completion IRQ flags </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv432dmac_interrupt_completed_channel8uint32_t">
-<span id="_CPPv332dmac_interrupt_completed_channel8uint32_t"></span><span id="_CPPv232dmac_interrupt_completed_channel8uint32_t"></span><span id="dmac_interrupt_completed_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gab61c3f6c4457949ba161e564e14da819"></span><em class="property">static</em> void <code class="sig-name descname">dmac_interrupt_completed_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432dmac_interrupt_completed_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv332dmac_interrupt_completed_channel8uint32_t"></span><span id="_CPPv232dmac_interrupt_completed_channel8uint32_t"></span><span id="dmac_interrupt_completed_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gab61c3f6c4457949ba161e564e14da819"></span>void <code class="sig-name descname">dmac_interrupt_completed_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432dmac_interrupt_completed_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv420dmac_interrupt_errorPv">
-<span id="_CPPv320dmac_interrupt_errorPv"></span><span id="_CPPv220dmac_interrupt_errorPv"></span><span id="dmac_interrupt_error__voidP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8cf9724eb712dbee664a1af1a0fc1e9f"></span><em class="property">static</em> void <code class="sig-name descname">dmac_interrupt_error</code><span class="sig-paren">(</span>void *<em>ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_interrupt_errorPv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv320dmac_interrupt_errorPv"></span><span id="_CPPv220dmac_interrupt_errorPv"></span><span id="dmac_interrupt_error__voidP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8cf9724eb712dbee664a1af1a0fc1e9f"></span>void <code class="sig-name descname">dmac_interrupt_error</code><span class="sig-paren">(</span>void *<em>ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_interrupt_errorPv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Interrupt about DMA transaction completion with error ! Sets the the “complete with error” status for completed DMA transaction ! Reset the DMA channel. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv428dmac_interrupt_error_channel8uint32_t">
-<span id="_CPPv328dmac_interrupt_error_channel8uint32_t"></span><span id="_CPPv228dmac_interrupt_error_channel8uint32_t"></span><span id="dmac_interrupt_error_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gacb3e1dd57438f7e19c21c3eabba0eb08"></span><em class="property">static</em> void <code class="sig-name descname">dmac_interrupt_error_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv428dmac_interrupt_error_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv328dmac_interrupt_error_channel8uint32_t"></span><span id="_CPPv228dmac_interrupt_error_channel8uint32_t"></span><span id="dmac_interrupt_error_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gacb3e1dd57438f7e19c21c3eabba0eb08"></span>void <code class="sig-name descname">dmac_interrupt_error_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv428dmac_interrupt_error_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv411dmac_enablev">
-<span id="_CPPv311dmac_enablev"></span><span id="_CPPv211dmac_enablev"></span><span id="dmac_enable__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa10886e5936791d790cc500861ffe70e"></span>void <code class="sig-name descname">dmac_enable</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411dmac_enablev" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa10886e5936791d790cc500861ffe70e"></span><code class="sig-name descname">Inline void dmac_enable (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv412dmac_disablev">
-<span id="_CPPv312dmac_disablev"></span><span id="_CPPv212dmac_disablev"></span><span id="dmac_disable__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9158a327ee4338424d8ad96e34199285"></span>void <code class="sig-name descname">dmac_disable</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412dmac_disablev" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9158a327ee4338424d8ad96e34199285"></span><code class="sig-name descname">Inline void dmac_disable (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv419dmac_enable_channel8uint32_t">
-<span id="_CPPv319dmac_enable_channel8uint32_t"></span><span id="_CPPv219dmac_enable_channel8uint32_t"></span><span id="dmac_enable_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf2a0266256c3dc13f20d510b29b8d612"></span>void <code class="sig-name descname">dmac_enable_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419dmac_enable_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf2a0266256c3dc13f20d510b29b8d612"></span><code class="sig-name descname">Inline void dmac_enable_channel (uint32_t channel)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420dmac_enable_channels8uint32_t">
-<span id="_CPPv320dmac_enable_channels8uint32_t"></span><span id="_CPPv220dmac_enable_channels8uint32_t"></span><span id="dmac_enable_channels__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8ab45dd44b3fcb1b4b68f11285d2757f"></span>void <code class="sig-name descname">dmac_enable_channels</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_enable_channels8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga8ab45dd44b3fcb1b4b68f11285d2757f"></span><code class="sig-name descname">Inline void dmac_enable_channels (uint32_t mask)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv424dmac_enable_all_channelsv">
-<span id="_CPPv324dmac_enable_all_channelsv"></span><span id="_CPPv224dmac_enable_all_channelsv"></span><span id="dmac_enable_all_channels__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1efc1c8e76912bc2bc3f170ef245babb"></span>void <code class="sig-name descname">dmac_enable_all_channels</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dmac_enable_all_channelsv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1efc1c8e76912bc2bc3f170ef245babb"></span><code class="sig-name descname">Inline void dmac_enable_all_channels (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420dmac_disable_channel8uint32_t">
-<span id="_CPPv320dmac_disable_channel8uint32_t"></span><span id="_CPPv220dmac_disable_channel8uint32_t"></span><span id="dmac_disable_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga822c246c619e5cb6ff926481a079255d"></span>void <code class="sig-name descname">dmac_disable_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_disable_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga822c246c619e5cb6ff926481a079255d"></span><code class="sig-name descname">Inline void dmac_disable_channel (uint32_t channel)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv421dmac_disable_channels8uint32_t">
-<span id="_CPPv321dmac_disable_channels8uint32_t"></span><span id="_CPPv221dmac_disable_channels8uint32_t"></span><span id="dmac_disable_channels__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga30761093d3af870ef160c914fca2b223"></span>void <code class="sig-name descname">dmac_disable_channels</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421dmac_disable_channels8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga30761093d3af870ef160c914fca2b223"></span><code class="sig-name descname">Inline void dmac_disable_channels (uint32_t mask)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv425dmac_disable_all_channelsv">
-<span id="_CPPv325dmac_disable_all_channelsv"></span><span id="_CPPv225dmac_disable_all_channelsv"></span><span id="dmac_disable_all_channels__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaab50250b39ecdf43320aaa68f1a782d9"></span>void <code class="sig-name descname">dmac_disable_all_channels</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425dmac_disable_all_channelsv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaab50250b39ecdf43320aaa68f1a782d9"></span><code class="sig-name descname">Inline void dmac_disable_all_channels (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv418dmac_reset_channel8uint32_t">
-<span id="_CPPv318dmac_reset_channel8uint32_t"></span><span id="_CPPv218dmac_reset_channel8uint32_t"></span><span id="dmac_reset_channel__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaba394a0baa21caae5ee19236bfe803cb"></span>void <code class="sig-name descname">dmac_reset_channel</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_reset_channel8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaba394a0baa21caae5ee19236bfe803cb"></span><code class="sig-name descname">Inline void dmac_reset_channel (uint32_t channel)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv419dmac_reset_channels8uint32_t">
-<span id="_CPPv319dmac_reset_channels8uint32_t"></span><span id="_CPPv219dmac_reset_channels8uint32_t"></span><span id="dmac_reset_channels__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gafbcde5190abfa0e3a5817589860dbe30"></span>void <code class="sig-name descname">dmac_reset_channels</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419dmac_reset_channels8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gafbcde5190abfa0e3a5817589860dbe30"></span><code class="sig-name descname">Inline void dmac_reset_channels (uint32_t mask)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv423dmac_reset_all_channelsv">
-<span id="_CPPv323dmac_reset_all_channelsv"></span><span id="_CPPv223dmac_reset_all_channelsv"></span><span id="dmac_reset_all_channels__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga974402659af7c2441aa05a288a3e7807"></span>void <code class="sig-name descname">dmac_reset_all_channels</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423dmac_reset_all_channelsv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga974402659af7c2441aa05a288a3e7807"></span><code class="sig-name descname">Inline void dmac_reset_all_channels (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv417dmac_reset_statusv">
-<span id="_CPPv317dmac_reset_statusv"></span><span id="_CPPv217dmac_reset_statusv"></span><span id="dmac_reset_status__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga39bb17342cea1f23329a5470465f7172"></span>uint32_t <code class="sig-name descname">dmac_reset_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_reset_statusv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga39bb17342cea1f23329a5470465f7172"></span><code class="sig-name descname">Inline uint32_t dmac_reset_status (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv426dmac_set_high_pri_channels8uint32_t">
-<span id="_CPPv326dmac_set_high_pri_channels8uint32_t"></span><span id="_CPPv226dmac_set_high_pri_channels8uint32_t"></span><span id="dmac_set_high_pri_channels__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga611900b5ca31268fa5afe2ad6ce5c75d"></span>void <code class="sig-name descname">dmac_set_high_pri_channels</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426dmac_set_high_pri_channels8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga611900b5ca31268fa5afe2ad6ce5c75d"></span><code class="sig-name descname">Inline void dmac_set_high_pri_channels (uint32_t mask)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv428dmac_set_normal_pri_channels8uint32_t">
-<span id="_CPPv328dmac_set_normal_pri_channels8uint32_t"></span><span id="_CPPv228dmac_set_normal_pri_channels8uint32_t"></span><span id="dmac_set_normal_pri_channels__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf602d2799a7f9e5a7ca4a5e88b7072f5"></span>void <code class="sig-name descname">dmac_set_normal_pri_channels</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv428dmac_set_normal_pri_channels8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf602d2799a7f9e5a7ca4a5e88b7072f5"></span><code class="sig-name descname">Inline void dmac_set_normal_pri_channels (uint32_t mask)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv418dmac_start_trigger8uint32_t">
-<span id="_CPPv318dmac_start_trigger8uint32_t"></span><span id="_CPPv218dmac_start_trigger8uint32_t"></span><span id="dmac_start_trigger__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1f68fdc35b71c443d3ee9cfcad71a631"></span>void <code class="sig-name descname">dmac_start_trigger</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_start_trigger8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1f68fdc35b71c443d3ee9cfcad71a631"></span><code class="sig-name descname">Inline void dmac_start_trigger (uint32_t channel)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv423dmac_start_trigger_mask8uint32_t">
-<span id="_CPPv323dmac_start_trigger_mask8uint32_t"></span><span id="_CPPv223dmac_start_trigger_mask8uint32_t"></span><span id="dmac_start_trigger_mask__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gae1ffbcb3ef323aa0309f81112de044ef"></span>void <code class="sig-name descname">dmac_start_trigger_mask</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423dmac_start_trigger_mask8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gae1ffbcb3ef323aa0309f81112de044ef"></span><code class="sig-name descname">Inline void dmac_start_trigger_mask (uint32_t mask)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv414dmac_irq_clear8uint32_t">
-<span id="_CPPv314dmac_irq_clear8uint32_t"></span><span id="_CPPv214dmac_irq_clear8uint32_t"></span><span id="dmac_irq_clear__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga851f0aab0897393cc7a0e4dc427a2932"></span>void <code class="sig-name descname">dmac_irq_clear</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414dmac_irq_clear8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga851f0aab0897393cc7a0e4dc427a2932"></span><code class="sig-name descname">Inline void dmac_irq_clear (uint32_t channel)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv418dmac_irq_clear_allv">
-<span id="_CPPv318dmac_irq_clear_allv"></span><span id="_CPPv218dmac_irq_clear_allv"></span><span id="dmac_irq_clear_all__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga16a8303288d7ec2060a8ed71e026b211"></span>void <code class="sig-name descname">dmac_irq_clear_all</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_irq_clear_allv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga16a8303288d7ec2060a8ed71e026b211"></span><code class="sig-name descname">Inline void dmac_irq_clear_all (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv415dmac_irq_statusv">
-<span id="_CPPv315dmac_irq_statusv"></span><span id="_CPPv215dmac_irq_statusv"></span><span id="dmac_irq_status__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga919c22be1eab567ab43b368b967fd86c"></span>uint32_t <code class="sig-name descname">dmac_irq_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415dmac_irq_statusv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga919c22be1eab567ab43b368b967fd86c"></span><code class="sig-name descname">Inline uint32_t dmac_irq_status (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv419dmac_channel_statusv">
-<span id="_CPPv319dmac_channel_statusv"></span><span id="_CPPv219dmac_channel_statusv"></span><span id="dmac_channel_status__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gac2cd1cbbf493144f1a4679568e52e587"></span>uint32_t <code class="sig-name descname">dmac_channel_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419dmac_channel_statusv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gac2cd1cbbf493144f1a4679568e52e587"></span><code class="sig-name descname">Inline uint32_t dmac_channel_status (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420dmac_complete_statusv">
-<span id="_CPPv320dmac_complete_statusv"></span><span id="_CPPv220dmac_complete_statusv"></span><span id="dmac_complete_status__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6b2eb35637126478aa8db895e991b2fa"></span>uint32_t <code class="sig-name descname">dmac_complete_status</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_complete_statusv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6b2eb35637126478aa8db895e991b2fa"></span><code class="sig-name descname">Inline uint32_t dmac_complete_status (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv416dmac_clear_error8uint32_t">
-<span id="_CPPv316dmac_clear_error8uint32_t"></span><span id="_CPPv216dmac_clear_error8uint32_t"></span><span id="dmac_clear_error__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gada42425dec867e006e467571fbfe7e4d"></span>void <code class="sig-name descname">dmac_clear_error</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416dmac_clear_error8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1gada42425dec867e006e467571fbfe7e4d"></span><code class="sig-name descname">Inline void dmac_clear_error (uint32_t channel)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420dmac_clear_all_errorv">
-<span id="_CPPv320dmac_clear_all_errorv"></span><span id="_CPPv220dmac_clear_all_errorv"></span><span id="dmac_clear_all_error__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1e28affefe5e542cd06a74a7d746558f"></span>void <code class="sig-name descname">dmac_clear_all_error</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_clear_all_errorv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__MISC__UDMA_1ga1e28affefe5e542cd06a74a7d746558f"></span><code class="sig-name descname">Inline void dmac_clear_all_error (void)</code></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv424dmac_wait_channel_status8uint32_t">
-<span id="_CPPv324dmac_wait_channel_status8uint32_t"></span><span id="_CPPv224dmac_wait_channel_status8uint32_t"></span><span id="dmac_wait_channel_status__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga62bd5cf62790f9cb360bb72f1dc69854"></span><em class="property">static</em> uint32_t <code class="sig-name descname">dmac_wait_channel_status</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dmac_wait_channel_status8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv324dmac_wait_channel_status8uint32_t"></span><span id="_CPPv224dmac_wait_channel_status8uint32_t"></span><span id="dmac_wait_channel_status__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga62bd5cf62790f9cb360bb72f1dc69854"></span>uint32_t <code class="sig-name descname">dmac_wait_channel_status</code><span class="sig-paren">(</span>uint32_t <em>channel</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dmac_wait_channel_status8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv414dmac_wait_mask8uint32_t">
-<span id="_CPPv314dmac_wait_mask8uint32_t"></span><span id="_CPPv214dmac_wait_mask8uint32_t"></span><span id="dmac_wait_mask__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga640a1a14cc41ac1df69ef9be6279acd3"></span><em class="property">static</em> uint32_t <code class="sig-name descname">dmac_wait_mask</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414dmac_wait_mask8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv314dmac_wait_mask8uint32_t"></span><span id="_CPPv214dmac_wait_mask8uint32_t"></span><span id="dmac_wait_mask__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga640a1a14cc41ac1df69ef9be6279acd3"></span>uint32_t <code class="sig-name descname">dmac_wait_mask</code><span class="sig-paren">(</span>uint32_t <em>mask</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414dmac_wait_mask8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv420dmac_memory_addr_gap8uint32_t">
-<span id="_CPPv320dmac_memory_addr_gap8uint32_t"></span><span id="_CPPv220dmac_memory_addr_gap8uint32_t"></span><span id="dmac_memory_addr_gap__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9d3331b3bd28214b1c70596176fd359c"></span><em class="property">static</em> uint32_t <code class="sig-name descname">dmac_memory_addr_gap</code><span class="sig-paren">(</span>uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_memory_addr_gap8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv320dmac_memory_addr_gap8uint32_t"></span><span id="_CPPv220dmac_memory_addr_gap8uint32_t"></span><span id="dmac_memory_addr_gap__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga9d3331b3bd28214b1c70596176fd359c"></span>uint32_t <code class="sig-name descname">dmac_memory_addr_gap</code><span class="sig-paren">(</span>uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_memory_addr_gap8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417dmac_aux_addr_gap8uint32_t">
-<span id="_CPPv317dmac_aux_addr_gap8uint32_t"></span><span id="_CPPv217dmac_aux_addr_gap8uint32_t"></span><span id="dmac_aux_addr_gap__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga15f24045cf6c23b4f9853b95f6876c9b"></span><em class="property">static</em> uint32_t <code class="sig-name descname">dmac_aux_addr_gap</code><span class="sig-paren">(</span>uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_aux_addr_gap8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv317dmac_aux_addr_gap8uint32_t"></span><span id="_CPPv217dmac_aux_addr_gap8uint32_t"></span><span id="dmac_aux_addr_gap__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga15f24045cf6c23b4f9853b95f6876c9b"></span>uint32_t <code class="sig-name descname">dmac_aux_addr_gap</code><span class="sig-paren">(</span>uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_aux_addr_gap8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv421dmac_calc_dst_endaddr8uint32_t8uint32_t">
-<span id="_CPPv321dmac_calc_dst_endaddr8uint32_t8uint32_t"></span><span id="_CPPv221dmac_calc_dst_endaddr8uint32_t8uint32_t"></span><span id="dmac_calc_dst_endaddr__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2558c136d361e9ec9531cd46a8c440a5"></span><em class="property">static</em> uint32_t <code class="sig-name descname">dmac_calc_dst_endaddr</code><span class="sig-paren">(</span>uint32_t <em>dst_addr</em>, uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421dmac_calc_dst_endaddr8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv321dmac_calc_dst_endaddr8uint32_t8uint32_t"></span><span id="_CPPv221dmac_calc_dst_endaddr8uint32_t8uint32_t"></span><span id="dmac_calc_dst_endaddr__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga2558c136d361e9ec9531cd46a8c440a5"></span>uint32_t <code class="sig-name descname">dmac_calc_dst_endaddr</code><span class="sig-paren">(</span>uint32_t <em>dst_addr</em>, uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421dmac_calc_dst_endaddr8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv421dmac_calc_src_endaddr8uint32_t8uint32_t">
-<span id="_CPPv321dmac_calc_src_endaddr8uint32_t8uint32_t"></span><span id="_CPPv221dmac_calc_src_endaddr8uint32_t8uint32_t"></span><span id="dmac_calc_src_endaddr__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gad8a1cd4ab32b2313703df27cf43673dc"></span><em class="property">static</em> uint32_t <code class="sig-name descname">dmac_calc_src_endaddr</code><span class="sig-paren">(</span>uint32_t <em>src_addr</em>, uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421dmac_calc_src_endaddr8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv321dmac_calc_src_endaddr8uint32_t8uint32_t"></span><span id="_CPPv221dmac_calc_src_endaddr8uint32_t8uint32_t"></span><span id="dmac_calc_src_endaddr__uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gad8a1cd4ab32b2313703df27cf43673dc"></span>uint32_t <code class="sig-name descname">dmac_calc_src_endaddr</code><span class="sig-paren">(</span>uint32_t <em>src_addr</em>, uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421dmac_calc_src_endaddr8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv413dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t">
-<span id="_CPPv313dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t"></span><span id="_CPPv213dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t"></span><span id="dmac_set_desc__DMA_DESC_TP.uint32_tP.uint32_tP.uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga645d005376f94509977f8a2d7f073432"></span><em class="property">static</em> void <code class="sig-name descname">dmac_set_desc</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em>, uint32_t *<em>source</em>, uint32_t *<em>dest</em>, uint32_t <em>size</em>, uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv313dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t"></span><span id="_CPPv213dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t"></span><span id="dmac_set_desc__DMA_DESC_TP.uint32_tP.uint32_tP.uint32_t.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga645d005376f94509977f8a2d7f073432"></span>void <code class="sig-name descname">dmac_set_desc</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em>, uint32_t *<em>source</em>, uint32_t *<em>dest</em>, uint32_t <em>size</em>, uint32_t <em>dmac_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413dmac_set_descP10DMA_DESC_TP8uint32_tP8uint32_t8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv420dmac_fill_descriptor8uint32_tP10DMA_DESC_T">
-<span id="_CPPv320dmac_fill_descriptor8uint32_tP10DMA_DESC_T"></span><span id="_CPPv220dmac_fill_descriptor8uint32_tP10DMA_DESC_T"></span><span id="dmac_fill_descriptor__uint32_t.DMA_DESC_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga4a10316ecbf0a406bf72537b8882a462"></span><em class="property">static</em> void <code class="sig-name descname">dmac_fill_descriptor</code><span class="sig-paren">(</span>uint32_t <em>channel</em>, <a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_fill_descriptor8uint32_tP10DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv320dmac_fill_descriptor8uint32_tP10DMA_DESC_T"></span><span id="_CPPv220dmac_fill_descriptor8uint32_tP10DMA_DESC_T"></span><span id="dmac_fill_descriptor__uint32_t.DMA_DESC_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga4a10316ecbf0a406bf72537b8882a462"></span>void <code class="sig-name descname">dmac_fill_descriptor</code><span class="sig-paren">(</span>uint32_t <em>channel</em>, <a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_fill_descriptor8uint32_tP10DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv49dmac_initP11DMA_STATE_T">
 <span id="_CPPv39dmac_initP11DMA_STATE_T"></span><span id="_CPPv29dmac_initP11DMA_STATE_T"></span><span id="dmac_init__DMA_STATE_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gabe1f10d79b3fda52149d4f66986910e8"></span>int32_t <code class="sig-name descname">dmac_init</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv411DMA_STATE_T" title="DMA_STATE_T">DMA_STATE_T</a> *<em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49dmac_initP11DMA_STATE_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize uDMA controller with a valid <a class="reference internal" href="#structDMA__STATE__T"><span class="std std-ref">DMA_STATE_T</span></a> structure. </p>
@@ -983,29 +986,29 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417dmac_process_descP10DMA_DESC_T8uint32_t">
-<span id="_CPPv317dmac_process_descP10DMA_DESC_T8uint32_t"></span><span id="_CPPv217dmac_process_descP10DMA_DESC_T8uint32_t"></span><span id="dmac_process_desc__DMA_DESC_TP.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga850c86d72ecd80e3e61ba98d82e48a21"></span><em class="property">static</em> void <code class="sig-name descname">dmac_process_desc</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em>, uint32_t <em>ienable</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_process_descP10DMA_DESC_T8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv317dmac_process_descP10DMA_DESC_T8uint32_t"></span><span id="_CPPv217dmac_process_descP10DMA_DESC_T8uint32_t"></span><span id="dmac_process_desc__DMA_DESC_TP.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga850c86d72ecd80e3e61ba98d82e48a21"></span>void <code class="sig-name descname">dmac_process_desc</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em>, uint32_t <em>ienable</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_process_descP10DMA_DESC_T8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv418dmac_valid_channel7int32_tP10DMA_DESC_T">
-<span id="_CPPv318dmac_valid_channel7int32_tP10DMA_DESC_T"></span><span id="_CPPv218dmac_valid_channel7int32_tP10DMA_DESC_T"></span><span id="dmac_valid_channel__int32_t.DMA_DESC_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga23cb7b9aebaeb036994f1e0b16a5a36c"></span><em class="property">static</em> int32_t <code class="sig-name descname">dmac_valid_channel</code><span class="sig-paren">(</span>int32_t <em>channel</em>, <a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_valid_channel7int32_tP10DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv318dmac_valid_channel7int32_tP10DMA_DESC_T"></span><span id="_CPPv218dmac_valid_channel7int32_tP10DMA_DESC_T"></span><span id="dmac_valid_channel__int32_t.DMA_DESC_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga23cb7b9aebaeb036994f1e0b16a5a36c"></span>int32_t <code class="sig-name descname">dmac_valid_channel</code><span class="sig-paren">(</span>int32_t <em>channel</em>, <a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_valid_channel7int32_tP10DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t">
-<span id="_CPPv317dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t"></span><span id="_CPPv217dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t"></span><span id="dma_claim_channel__int32_t.DMA_CHANNEL_TP.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gabfa2150a8fb66b446f5faf10c1f7c1ef"></span><em class="property">static</em> void <code class="sig-name descname">dma_claim_channel</code><span class="sig-paren">(</span>int32_t <em>channel</em>, <a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em>, uint32_t <em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv317dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t"></span><span id="_CPPv217dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t"></span><span id="dma_claim_channel__int32_t.DMA_CHANNEL_TP.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gabfa2150a8fb66b446f5faf10c1f7c1ef"></span>void <code class="sig-name descname">dma_claim_channel</code><span class="sig-paren">(</span>int32_t <em>channel</em>, <a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em>, uint32_t <em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dma_claim_channel7int32_tP13DMA_CHANNEL_T8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv410dmac_closev">
 <span id="_CPPv310dmac_closev"></span><span id="_CPPv210dmac_closev"></span><span id="dmac_close__void"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaa077df81d09f99dc06f9f09746bee81a"></span>void <code class="sig-name descname">dmac_close</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410dmac_closev" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Close uDMA controller. </p>
 <p>This function disable all DMA channels. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv416dmac_config_descP10DMA_DESC_TPvPv8uint32_tP10DMA_CTRL_T">
 <span id="_CPPv316dmac_config_descP10DMA_DESC_TPvPv8uint32_tP10DMA_CTRL_T"></span><span id="_CPPv216dmac_config_descP10DMA_DESC_TPvPv8uint32_tP10DMA_CTRL_T"></span><span id="dmac_config_desc__DMA_DESC_TP.voidP.voidP.uint32_t.DMA_CTRL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga6c2645e2c3492c6d8b67c2041df46158"></span>int32_t <code class="sig-name descname">dmac_config_desc</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em>, void *<em>src</em>, void *<em>dst</em>, uint32_t <em>size</em>, <a class="reference internal" href="#_CPPv410DMA_CTRL_T" title="DMA_CTRL_T">DMA_CTRL_T</a> *<em>ctrl</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416dmac_config_descP10DMA_DESC_TPvPv8uint32_tP10DMA_CTRL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Configure uDMA descriptor with source/destination address, transfer size in bytes and ctrl mode. </p>
@@ -1029,7 +1032,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv420dmac_desc_add_linkedP10DMA_DESC_TP10DMA_DESC_T">
 <span id="_CPPv320dmac_desc_add_linkedP10DMA_DESC_TP10DMA_DESC_T"></span><span id="_CPPv220dmac_desc_add_linkedP10DMA_DESC_TP10DMA_DESC_T"></span><span id="dmac_desc_add_linked__DMA_DESC_TP.DMA_DESC_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gafca1f1fa507314a40e79217947adef6d"></span>int32_t <code class="sig-name descname">dmac_desc_add_linked</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>head</em>, <a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>next</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_desc_add_linkedP10DMA_DESC_TP10DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set uDMA channel linked-list pointer register, head -&gt; next. </p>
@@ -1048,7 +1051,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417dmac_init_channelP13DMA_CHANNEL_T">
 <span id="_CPPv317dmac_init_channelP13DMA_CHANNEL_T"></span><span id="_CPPv217dmac_init_channelP13DMA_CHANNEL_T"></span><span id="dmac_init_channel__DMA_CHANNEL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga53d90b6138b8df5b68122f9eb5226aa4"></span>int32_t <code class="sig-name descname">dmac_init_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_init_channelP13DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize a channel for DMA transfer. </p>
@@ -1068,7 +1071,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv419dmac_config_channelP13DMA_CHANNEL_TP10DMA_DESC_T">
 <span id="_CPPv319dmac_config_channelP13DMA_CHANNEL_TP10DMA_DESC_T"></span><span id="_CPPv219dmac_config_channelP13DMA_CHANNEL_TP10DMA_DESC_T"></span><span id="dmac_config_channel__DMA_CHANNEL_TP.DMA_DESC_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gad12af6a4849430107955660aae039a7e"></span>int32_t <code class="sig-name descname">dmac_config_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em>, <a class="reference internal" href="#_CPPv410DMA_DESC_T" title="DMA_DESC_T">DMA_DESC_T</a> *<em>desc</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419dmac_config_channelP13DMA_CHANNEL_TP10DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Configure channel for DMA transfer. </p>
@@ -1087,7 +1090,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv420dmac_reserve_channel7int32_tP13DMA_CHANNEL_T8uint32_t">
 <span id="_CPPv320dmac_reserve_channel7int32_tP13DMA_CHANNEL_T8uint32_t"></span><span id="_CPPv220dmac_reserve_channel7int32_tP13DMA_CHANNEL_T8uint32_t"></span><span id="dmac_reserve_channel__int32_t.DMA_CHANNEL_TP.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga0295616cd38d893a3299064492aa917d"></span>int32_t <code class="sig-name descname">dmac_reserve_channel</code><span class="sig-paren">(</span>int32_t <em>channel</em>, <a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em>, uint32_t <em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_reserve_channel7int32_tP13DMA_CHANNEL_T8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Reserve a DMA channel, bind it with dma_chn, and set the dma trigger source. </p>
@@ -1107,7 +1110,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv418dmac_start_channelP13DMA_CHANNEL_T14DMA_CALLBACK_T8uint32_t">
 <span id="_CPPv318dmac_start_channelP13DMA_CHANNEL_T14DMA_CALLBACK_T8uint32_t"></span><span id="_CPPv218dmac_start_channelP13DMA_CHANNEL_T14DMA_CALLBACK_T8uint32_t"></span><span id="dmac_start_channel__DMA_CHANNEL_TP.DMA_CALLBACK_T.uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga282f1785750e3ca7b9273125a28b0c60"></span>int32_t <code class="sig-name descname">dmac_start_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em>, <a class="reference internal" href="#_CPPv414DMA_CALLBACK_T" title="DMA_CALLBACK_T">DMA_CALLBACK_T</a> <em>callback</em>, uint32_t <em>priority</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_start_channelP13DMA_CHANNEL_T14DMA_CALLBACK_T8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Start uDMA transfer for dma_chn, set handler function for uDAM callback and transfer priority. </p>
@@ -1130,7 +1133,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417dmac_stop_channelP13DMA_CHANNEL_T">
 <span id="_CPPv317dmac_stop_channelP13DMA_CHANNEL_T"></span><span id="_CPPv217dmac_stop_channelP13DMA_CHANNEL_T"></span><span id="dmac_stop_channel__DMA_CHANNEL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaf8fe57c35476338282acc127301d16ec"></span>int32_t <code class="sig-name descname">dmac_stop_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_stop_channelP13DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Stop uDMA transfer. </p>
@@ -1148,7 +1151,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv418dmac_clear_channelP13DMA_CHANNEL_T">
 <span id="_CPPv318dmac_clear_channelP13DMA_CHANNEL_T"></span><span id="_CPPv218dmac_clear_channelP13DMA_CHANNEL_T"></span><span id="dmac_clear_channel__DMA_CHANNEL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga57e298efd5d09786c934bac3f5611b09"></span>int32_t <code class="sig-name descname">dmac_clear_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_clear_channelP13DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear channel transfer status and set it to DMA_IDLE. </p>
@@ -1166,7 +1169,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv420dmac_release_channelP13DMA_CHANNEL_T">
 <span id="_CPPv320dmac_release_channelP13DMA_CHANNEL_T"></span><span id="_CPPv220dmac_release_channelP13DMA_CHANNEL_T"></span><span id="dmac_release_channel__DMA_CHANNEL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gabe12957e565e2321b654cc6fdf882797"></span>int32_t <code class="sig-name descname">dmac_release_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420dmac_release_channelP13DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Release an uDMA channel. </p>
@@ -1184,7 +1187,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417dmac_wait_channelP13DMA_CHANNEL_T">
 <span id="_CPPv317dmac_wait_channelP13DMA_CHANNEL_T"></span><span id="_CPPv217dmac_wait_channelP13DMA_CHANNEL_T"></span><span id="dmac_wait_channel__DMA_CHANNEL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1gaea1ff54cdc15fb84a2574f9a9cd5f7f7"></span>int32_t <code class="sig-name descname">dmac_wait_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417dmac_wait_channelP13DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Wait until uDMA channel job is completed. </p>
@@ -1203,7 +1206,7 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv418dmac_check_channelP13DMA_CHANNEL_T">
 <span id="_CPPv318dmac_check_channelP13DMA_CHANNEL_T"></span><span id="_CPPv218dmac_check_channelP13DMA_CHANNEL_T"></span><span id="dmac_check_channel__DMA_CHANNEL_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga13b221e59cbdf4c1263a885b01bd740e"></span>int32_t <code class="sig-name descname">dmac_check_channel</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413DMA_CHANNEL_T" title="DMA_CHANNEL_T">DMA_CHANNEL_T</a> *<em>dma_chn</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418dmac_check_channelP13DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Check channel transfer status. </p>
@@ -1226,25 +1229,30 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Variables</p>
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv46g_dmac">
 <span id="_CPPv36g_dmac"></span><span id="_CPPv26g_dmac"></span><span id="g_dmac__DMA_STATE_TP"></span><span class="target" id="group__ARC__HAL__MISC__UDMA_1ga754b932154836b4b3c18edc7c62ff140"></span><a class="reference internal" href="#_CPPv411DMA_STATE_T" title="DMA_STATE_T">DMA_STATE_T</a> *<code class="sig-name descname">g_dmac</code> = NULL<a class="headerlink" href="#_CPPv46g_dmac" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
-<dl class="union">
+<dl class="cpp struct">
+<dt id="_CPPv416DMA_CTRL_FIELD_T">
+<span id="_CPPv316DMA_CTRL_FIELD_T"></span><span id="_CPPv216DMA_CTRL_FIELD_T"></span><span id="DMA_CTRL_FIELD_T"></span><span class="target" id="structDMA__CTRL__FIELD__T"></span><em class="property">struct </em><code class="sig-name descname">DMA_CTRL_FIELD_T</code><a class="headerlink" href="#_CPPv416DMA_CTRL_FIELD_T" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;arc_udma.h&gt;</em></dd></dl>
+
+<dl class="cpp union">
 <dt id="_CPPv410DMA_CTRL_T">
 <span id="_CPPv310DMA_CTRL_T"></span><span id="_CPPv210DMA_CTRL_T"></span><span class="target" id="unionDMA__CTRL__T"></span><em class="property">union </em><code class="sig-name descname">DMA_CTRL_T</code><a class="headerlink" href="#_CPPv410DMA_CTRL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;arc_udma.h&gt;</em><p>DMA channel control register union </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Members</p>
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv4N10DMA_CTRL_T4bitsE">
-<span id="_CPPv3N10DMA_CTRL_T4bitsE"></span><span id="_CPPv2N10DMA_CTRL_T4bitsE"></span><span id="DMA_CTRL_T::bits__DMA_CTRL_FIELD_T"></span><span class="target" id="unionDMA__CTRL__T_a24a1928eb120a47b5b651ef5179f6492_1a24a1928eb120a47b5b651ef5179f6492"></span>DMA_CTRL_FIELD_T <code class="sig-name descname">bits</code><a class="headerlink" href="#_CPPv4N10DMA_CTRL_T4bitsE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N10DMA_CTRL_T4bitsE"></span><span id="_CPPv2N10DMA_CTRL_T4bitsE"></span><span id="DMA_CTRL_T::bits__DMA_CTRL_FIELD_T"></span><span class="target" id="unionDMA__CTRL__T_a24a1928eb120a47b5b651ef5179f6492_1a24a1928eb120a47b5b651ef5179f6492"></span><a class="reference internal" href="#_CPPv416DMA_CTRL_FIELD_T" title="DMA_CTRL_FIELD_T">DMA_CTRL_FIELD_T</a> <code class="sig-name descname">bits</code><a class="headerlink" href="#_CPPv4N10DMA_CTRL_T4bitsE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>control register in bits format </p>
 </dd></dl>
 
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv4N10DMA_CTRL_T5valueE">
 <span id="_CPPv3N10DMA_CTRL_T5valueE"></span><span id="_CPPv2N10DMA_CTRL_T5valueE"></span><span id="DMA_CTRL_T::value__uint32_t"></span><span class="target" id="unionDMA__CTRL__T_a2861ace9a428c942702d66965e05f2e6_1a2861ace9a428c942702d66965e05f2e6"></span>uint32_t <code class="sig-name descname">value</code><a class="headerlink" href="#_CPPv4N10DMA_CTRL_T5valueE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>control register in word format </p>
@@ -1253,19 +1261,19 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 </div>
 </dd></dl>
 
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv410DMA_DESC_T">
 <span id="_CPPv310DMA_DESC_T"></span><span id="_CPPv210DMA_DESC_T"></span><span id="DMA_DESC_T"></span><span class="target" id="structDMA__DESC__T"></span><em class="property">struct </em><code class="sig-name descname">DMA_DESC_T</code><a class="headerlink" href="#_CPPv410DMA_DESC_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;arc_udma.h&gt;</em><p>DMA descriptor (DMA channel registers) </p>
 </dd></dl>
 
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv413DMA_CHANNEL_T">
 <span id="_CPPv313DMA_CHANNEL_T"></span><span id="_CPPv213DMA_CHANNEL_T"></span><span id="DMA_CHANNEL_T"></span><span class="target" id="structDMA__CHANNEL__T"></span><em class="property">struct </em><code class="sig-name descname">DMA_CHANNEL_T</code><a class="headerlink" href="#_CPPv413DMA_CHANNEL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;arc_udma.h&gt;</em><p>DMA Channel transfer structure </p>
 </dd></dl>
 
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv411DMA_STATE_T">
 <span id="_CPPv311DMA_STATE_T"></span><span id="_CPPv211DMA_STATE_T"></span><span id="DMA_STATE_T"></span><span class="target" id="structDMA__STATE__T"></span><em class="property">struct </em><code class="sig-name descname">DMA_STATE_T</code><a class="headerlink" href="#_CPPv411DMA_STATE_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;arc_udma.h&gt;</em><p>DMA state to maintain uDMA resources </p>
@@ -1287,9 +1295,10 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Synopsys
       <span class="lastupdated">
-        Last updated on Jan 14, 2020.
+        Last updated on Jul 31, 2020.
       </span>
 
     </p>
@@ -1304,7 +1313,6 @@ consumption DMA engine for use in the ARC EM 2.0 cores.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

@@ -2,35 +2,36 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="nsim__uart__obj_8c" kind="file">
     <compoundname>nsim_uart_obj.c</compoundname>
-    <includes local="no">stdio.h</includes>
+    <includes refid="dw__uart_8h" local="yes">device/designware/dw_uart.h</includes>
+    <includes refid="nsim__uart__obj_8h" local="yes">nsim_uart_obj.h</includes>
     <includes refid="nsim_8h" local="yes">nsim/nsim.h</includes>
     <incdepgraph>
-      <node id="2946">
+      <node id="2941">
         <label>stdbool.h</label>
       </node>
-      <node id="2942">
+      <node id="2937">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="2943" relation="include">
-        </childnode>
-        <childnode refid="2944" relation="include">
-        </childnode>
-        <childnode refid="2945" relation="include">
-        </childnode>
-        <childnode refid="2946" relation="include">
-        </childnode>
-      </node>
-      <node id="2943">
-        <label>stdint.h</label>
-      </node>
-      <node id="2935">
-        <label>nsim/nsim.h</label>
-        <link refid="nsim_8h"/>
-        <childnode refid="2936" relation="include">
-        </childnode>
-        <childnode refid="2937" relation="include">
+        <childnode refid="2938" relation="include">
         </childnode>
         <childnode refid="2939" relation="include">
+        </childnode>
+        <childnode refid="2940" relation="include">
+        </childnode>
+        <childnode refid="2941" relation="include">
+        </childnode>
+      </node>
+      <node id="2938">
+        <label>stdint.h</label>
+      </node>
+      <node id="2947">
+        <label>nsim/nsim.h</label>
+        <link refid="nsim_8h"/>
+        <childnode refid="2945" relation="include">
+        </childnode>
+        <childnode refid="2948" relation="include">
+        </childnode>
+        <childnode refid="2946" relation="include">
         </childnode>
       </node>
       <node id="2933">
@@ -38,54 +39,260 @@
         <link refid="nsim_uart_obj.c"/>
         <childnode refid="2934" relation="include">
         </childnode>
+        <childnode refid="2946" relation="include">
+        </childnode>
+        <childnode refid="2947" relation="include">
+        </childnode>
+      </node>
+      <node id="2946">
+        <label>nsim_uart_obj.h</label>
+        <link refid="nsim__uart__obj_8h"/>
         <childnode refid="2935" relation="include">
         </childnode>
       </node>
-      <node id="2939">
-        <label>drivers/uart/nsim_uart_obj.h</label>
-        <link refid="nsim__uart__obj_8h"/>
-        <childnode refid="2940" relation="include">
-        </childnode>
-      </node>
-      <node id="2945">
+      <node id="2940">
         <label>stddef.h</label>
       </node>
-      <node id="2938">
+      <node id="2944">
         <label>arc/arc.h</label>
         <link refid="arc_8h"/>
-        <childnode refid="2936" relation="include">
+        <childnode refid="2945" relation="include">
         </childnode>
       </node>
-      <node id="2944">
+      <node id="2939">
         <label>limits.h</label>
       </node>
-      <node id="2936">
+      <node id="2945">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="2940">
+      <node id="2935">
         <label>device/ip_hal/dev_uart.h</label>
         <link refid="dev__uart_8h"/>
-        <childnode refid="2941" relation="include">
+        <childnode refid="2936" relation="include">
         </childnode>
       </node>
-      <node id="2937">
+      <node id="2948">
         <label>arc/arc_em.h</label>
         <link refid="arc__em_8h"/>
-        <childnode refid="2938" relation="include">
+        <childnode refid="2944" relation="include">
         </childnode>
       </node>
-      <node id="2941">
+      <node id="2936">
         <label>device/dev_common.h</label>
         <link refid="dev__common_8h"/>
-        <childnode refid="2942" relation="include">
+        <childnode refid="2937" relation="include">
         </childnode>
       </node>
       <node id="2934">
-        <label>stdio.h</label>
+        <label>device/designware/dw_uart.h</label>
+        <link refid="dw__uart_8h"/>
+        <childnode refid="2935" relation="include">
+        </childnode>
+        <childnode refid="2942" relation="include">
+        </childnode>
+      </node>
+      <node id="2942">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="2943" relation="include">
+        </childnode>
+      </node>
+      <node id="2943">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="2937" relation="include">
+        </childnode>
+        <childnode refid="2944" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="nsim__uart__obj_8c_a43ef250d6540e379ad9270455d4c6c9f_1a43ef250d6540e379ad9270455d4c6c9f" prot="public" static="no">
+        <name>DW_UART_0_BASE</name>
+        <initializer>(0xf0000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 relative baseaddr </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="41" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nsim__uart__obj_8c_a2e64af6d82f6b504c142d8aeab3e460d_1a2e64af6d82f6b504c142d8aeab3e460d" prot="public" static="no">
+        <name>DW_UART_0_INTNO</name>
+        <initializer>(24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="42" column="9" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref></type>
+        <definition>DEV_UART dw_uart_0</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="44" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="nsim__uart__obj_8c_ad08a61ec2dd0d8cb8cf6b4132890d125_1ad08a61ec2dd0d8cb8cf6b4132890d125" prot="public" static="yes" mutable="no">
+        <type><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref></type>
+        <definition>DW_UART_CTRL dw_uart_0_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dw_uart_0_ctrl</name>
+        <initializer>= {          
+	0, 1000000,  (24)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="nsim__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>,
+	1, 1, 0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="45" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="nsim__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_0_isr</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>dw_uart_0_isr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NSIM UART 0 Object Instantiation</para><para>designware uart 0 interrupt rountine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="40" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="nsim__uart__obj_8c_aae11e5b8471fdfd4437481ac5be509cc_1aae11e5b8471fdfd4437481ac5be509cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_open</definition>
+        <argsstring>(uint32_t baud)</argsstring>
+        <name>dw_uart_0_open</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 open </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="51" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="nsim__uart__obj_8c_a210e2c054be71e307f0f4affcf09b2bb_1a210e2c054be71e307f0f4affcf09b2bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_0_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="56" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="nsim__uart__obj_8c_abdc562db81bd8c2183975fe16ed540c1_1abdc562db81bd8c2183975fe16ed540c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_control</definition>
+        <argsstring>(uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_uart_0_control</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 control </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="61" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="nsim__uart__obj_8c_ab66fb27ec00191eb382d8915b4542f36_1ab66fb27ec00191eb382d8915b4542f36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_write</definition>
+        <argsstring>(const void *data, uint32_t len)</argsstring>
+        <name>dw_uart_0_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="66" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="nsim__uart__obj_8c_a9f9f257f755be460e66e09214bdb58f0_1a9f9f257f755be460e66e09214bdb58f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t dw_uart_0_read</definition>
+        <argsstring>(void *data, uint32_t len)</argsstring>
+        <name>dw_uart_0_read</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>designware uart 0 close </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="71" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="nsim__uart__obj_8c_a539eef22064d5a5da5aa8df55343bda5_1a539eef22064d5a5da5aa8df55343bda5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dw_uart_0_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>dw_uart_0_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>install designware uart 0 to system </para>        </detaileddescription>
+        <inbodydescription>
+<para>get absolute designware base address</para><para>&lt; designware uart 0 relative baseaddr</para><para>uart info init</para><para>uart dev init </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="81" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="81" bodyend="107"/>
+      </memberdef>
       <memberdef kind="function" id="nsim__uart__obj_8c_ac178e4a0fa7983bceda162666266cd4b_1ac178e4a0fa7983bceda162666266cd4b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>static void nsim_uart_all_install</definition>
@@ -97,11 +304,11 @@
         <briefdescription>
 <para>install all uart objects </para>        </briefdescription>
         <detaileddescription>
-<para>NSIM UART 0 Object Instantiation <simplesect kind="note"><para><bold>MUST</bold> be called during system init </para></simplesect>
+<para><simplesect kind="note"><para><bold>MUST</bold> be called during system init </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="101" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="101" bodyend="106"/>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="114" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga39a2c3e3c12141f19ed62130a86dfe04_1ga39a2c3e3c12141f19ed62130a86dfe04" kindref="member">DEV_UART_PTR</ref></type>
@@ -117,8 +324,8 @@
         <detaileddescription>
 <para>get one uart device structure </para>        </detaileddescription>
         <inbodydescription>
-<para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 3 id macro </para>        </inbodydescription>
-        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="109" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="109" bodyend="129"/>
+<para>&lt; uart 0 id macro </para>        </inbodydescription>
+        <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" line="122" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="122" bodyend="142"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -155,90 +362,98 @@
 <codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nsim_8h" kindref="compound">nsim/nsim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
-<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref><sp/>nsim_uart_0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="41"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>nsim_uart_0_open(uint32_t<sp/>baud)</highlight></codeline>
-<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>need<sp/>to<sp/>open,<sp/>stdio<sp/>is<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="47"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>nsim_uart_0_close(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="52"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>nsim_uart_0_control(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="57"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>nsim_uart_0_write(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fwrite(data,<sp/>len,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint8_t),<sp/>stdout);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="62"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>nsim_uart_0_read(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
-<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>c;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>getchar();</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/>10)<sp/>{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>13;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*((uint8_t<sp/>*)data)<sp/>=<sp/>(uint8_t)c;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data++;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nsim_uart_0_install(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref><sp/>*nsim_uart_ptr<sp/>=<sp/>&amp;nsim_uart_0;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>nsim_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga860ca9f9693e4f1552590565dc961869_1ga860ca9f9693e4f1552590565dc961869" kindref="member">uart_open</ref><sp/>=<sp/>nsim_uart_0_open;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>nsim_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga7b7ce7a7e10f7bed01eb94f21c23b65f_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" kindref="member">uart_close</ref><sp/>=<sp/>nsim_uart_0_close;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>nsim_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6b40883d5dfbfabd632ba125e128d1e5_1ga6b40883d5dfbfabd632ba125e128d1e5" kindref="member">uart_control</ref><sp/>=<sp/>nsim_uart_0_control;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>nsim_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" kindref="member">uart_write</ref><sp/>=<sp/>nsim_uart_0_write;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>nsim_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" kindref="member">uart_read</ref><sp/>=<sp/>nsim_uart_0_read;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dw__uart_8h" kindref="compound">device/designware/dw_uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nsim__uart__obj_8h" kindref="compound">nsim_uart_obj.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nsim_8h" kindref="compound">nsim/nsim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_UART_0_BASE<sp/><sp/><sp/>(0xf0000000)<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">#define<sp/>DW_UART_0_INTNO<sp/><sp/>(24)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">static<sp/>DEV_UART<sp/>dw_uart_0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">static<sp/>DW_UART_CTRL<sp/>dw_uart_0_ctrl<sp/>=<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>0,<sp/>1000000,<sp/>DW_UART_0_INTNO,<sp/>(INT_HANDLER_T)dw_uart_0_isr,</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>1,<sp/>1,<sp/>0</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="nsim__uart__obj_8c_aae11e5b8471fdfd4437481ac5be509cc_1aae11e5b8471fdfd4437481ac5be509cc" kindref="member">dw_uart_0_open</ref>(uint32_t<sp/>baud)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a49c3f35887ad36260c0576c58614db71_1a49c3f35887ad36260c0576c58614db71" kindref="member">dw_uart_open</ref>(&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>baud);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="nsim__uart__obj_8c_a210e2c054be71e307f0f4affcf09b2bb_1a210e2c054be71e307f0f4affcf09b2bb" kindref="member">dw_uart_0_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a40287dfa053b6bc49bcaf66c35d73b1c_1a40287dfa053b6bc49bcaf66c35d73b1c" kindref="member">dw_uart_close</ref>(&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="nsim__uart__obj_8c_abdc562db81bd8c2183975fe16ed540c1_1abdc562db81bd8c2183975fe16ed540c1" kindref="member">dw_uart_0_control</ref>(uint32_t<sp/>ctrl_cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_aad6c59b900e3f9b72b1eac4ca889f317_1aad6c59b900e3f9b72b1eac4ca889f317" kindref="member">dw_uart_control</ref>(&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>ctrl_cmd,<sp/>param);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="nsim__uart__obj_8c_ab66fb27ec00191eb382d8915b4542f36_1ab66fb27ec00191eb382d8915b4542f36" kindref="member">dw_uart_0_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a66f55a5d83c8d575ff0c2add94e6ec51_1a66f55a5d83c8d575ff0c2add94e6ec51" kindref="member">dw_uart_write</ref>(&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="nsim__uart__obj_8c_a9f9f257f755be460e66e09214bdb58f0_1a9f9f257f755be460e66e09214bdb58f0" kindref="member">dw_uart_0_read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dw__uart_8h_a9f48bb55260aea46433c78bfd0935c69_1a9f48bb55260aea46433c78bfd0935c69" kindref="member">dw_uart_read</ref>(&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>data,<sp/>len);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dw__uart_8h_a931f15b8f8a5a29ab3a7344aa3cb10d2_1a931f15b8f8a5a29ab3a7344aa3cb10d2" kindref="member">dw_uart_isr</ref>(&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>,<sp/>ptr);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8c_a539eef22064d5a5da5aa8df55343bda5_1a539eef22064d5a5da5aa8df55343bda5" kindref="member">dw_uart_0_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>uart_abs_base<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART" kindref="compound">DEV_UART</ref><sp/>*dw_uart_ptr<sp/>=<sp/>&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDEV__UART__INFO" kindref="compound">DEV_UART_INFO</ref><sp/>*dw_uart_info_ptr<sp/>=<sp/>&amp;(<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>.<ref refid="structDEV__UART_ae4b6a665925b840b9c75ae93fd045d3f_1ae4b6a665925b840b9c75ae93fd045d3f" kindref="member">uart_info</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDW__UART__CTRL" kindref="compound">DW_UART_CTRL</ref><sp/>*dw_uart_ctrl_ptr<sp/>=<sp/>&amp;<ref refid="nsim__uart__obj_8c_ad08a61ec2dd0d8cb8cf6b4132890d125_1ad08a61ec2dd0d8cb8cf6b4132890d125" kindref="member">dw_uart_0_ctrl</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uart_abs_base<sp/>=<sp/>(uint32_t)<ref refid="nsim__uart__obj_8c_a43ef250d6540e379ad9270455d4c6c9f_1a43ef250d6540e379ad9270455d4c6c9f" kindref="member">DW_UART_0_BASE</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ctrl_ptr-&gt;<ref refid="structDW__UART__CTRL_a7062e893f2319c940c5adce1fa0798e0_1a7062e893f2319c940c5adce1fa0798e0" kindref="member">dw_uart_regbase</ref><sp/>=<sp/>uart_abs_base;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
-<codeline lineno="96"><highlight class="preprocessor"></highlight></codeline>
-<codeline lineno="101"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8c_ac178e4a0fa7983bceda162666266cd4b_1ac178e4a0fa7983bceda162666266cd4b" kindref="member">nsim_uart_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
-<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>nsim_uart_0_install();</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><ref refid="structDEV__UART" kindref="compound">DEV_UART_PTR</ref><sp/><ref refid="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" kindref="member">uart_get_dev</ref>(int32_t<sp/>uart_id)</highlight></codeline>
-<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>intall<sp/>device<sp/>objects<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(install_flag<sp/>==<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>install_flag<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nsim__uart__obj_8c_ac178e4a0fa7983bceda162666266cd4b_1ac178e4a0fa7983bceda162666266cd4b" kindref="member">nsim_uart_all_install</ref>();</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(uart_id)<sp/>{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
-<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8h_aa58d5c5132eb7df47a321e29ff103b32_1aa58d5c5132eb7df47a321e29ff103b32" kindref="member">NSIM_UART_0_ID</ref>:</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;nsim_uart_0;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
-<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_aa92add07634073b8e59cddb0bb1ac1a5_1aa92add07634073b8e59cddb0bb1ac1a5" kindref="member">uart_ctrl</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)dw_uart_ctrl_ptr;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_adde8c95dd69d642c1e08149d4bc457df_1adde8c95dd69d642c1e08149d4bc457df" kindref="member">opn_cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a7953a8568f0cb6e19684fc7bb35c7909_1a7953a8568f0cb6e19684fc7bb35c7909" kindref="member">status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_info_ptr-&gt;<ref refid="structDEV__UART__INFO_a715a194c21fdd3ca8b694c4656188bbf_1a715a194c21fdd3ca8b694c4656188bbf" kindref="member">baudrate</ref><sp/>=<sp/><ref refid="group__DEVICE__HAL__UART__BAUD_ga7ba5033e1e1547d07d7683d0542c1f4a_1ga7ba5033e1e1547d07d7683d0542c1f4a" kindref="member">UART_BAUDRATE_115200</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>default<sp/>115200bps<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga860ca9f9693e4f1552590565dc961869_1ga860ca9f9693e4f1552590565dc961869" kindref="member">uart_open</ref><sp/>=<sp/><ref refid="nsim__uart__obj_8c_aae11e5b8471fdfd4437481ac5be509cc_1aae11e5b8471fdfd4437481ac5be509cc" kindref="member">dw_uart_0_open</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga7b7ce7a7e10f7bed01eb94f21c23b65f_1ga7b7ce7a7e10f7bed01eb94f21c23b65f" kindref="member">uart_close</ref><sp/>=<sp/><ref refid="nsim__uart__obj_8c_a210e2c054be71e307f0f4affcf09b2bb_1a210e2c054be71e307f0f4affcf09b2bb" kindref="member">dw_uart_0_close</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga6b40883d5dfbfabd632ba125e128d1e5_1ga6b40883d5dfbfabd632ba125e128d1e5" kindref="member">uart_control</ref><sp/>=<sp/><ref refid="nsim__uart__obj_8c_abdc562db81bd8c2183975fe16ed540c1_1abdc562db81bd8c2183975fe16ed540c1" kindref="member">dw_uart_0_control</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_ga0104a456ec339fc30fe9d03070bbf4a7_1ga0104a456ec339fc30fe9d03070bbf4a7" kindref="member">uart_write</ref><sp/>=<sp/><ref refid="nsim__uart__obj_8c_ab66fb27ec00191eb382d8915b4542f36_1ab66fb27ec00191eb382d8915b4542f36" kindref="member">dw_uart_0_write</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>dw_uart_ptr-&gt;<ref refid="group__DEVICE__HAL__UART__DEVSTRUCT_gad5a2572b8fb96539bf2b348436bdd1bf_1gad5a2572b8fb96539bf2b348436bdd1bf" kindref="member">uart_read</ref><sp/>=<sp/><ref refid="nsim__uart__obj_8c_a9f9f257f755be460e66e09214bdb58f0_1a9f9f257f755be460e66e09214bdb58f0" kindref="member">dw_uart_0_read</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="114"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8c_ac178e4a0fa7983bceda162666266cd4b_1ac178e4a0fa7983bceda162666266cd4b" kindref="member">nsim_uart_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nsim__uart__obj_8c_a539eef22064d5a5da5aa8df55343bda5_1a539eef22064d5a5da5aa8df55343bda5" kindref="member">dw_uart_0_install</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="structDEV__UART" kindref="compound">DEV_UART_PTR</ref><sp/><ref refid="group__DEVICE__HAL__UART_gade938afe2174b43b8522bf05cdcb1202_1gade938afe2174b43b8522bf05cdcb1202" kindref="member">uart_get_dev</ref>(int32_t<sp/>uart_id)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>intall<sp/>device<sp/>objects<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(install_flag<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>install_flag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nsim__uart__obj_8c_ac178e4a0fa7983bceda162666266cd4b_1ac178e4a0fa7983bceda162666266cd4b" kindref="member">nsim_uart_all_install</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(uart_id)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="nsim__uart__obj_8h_aa58d5c5132eb7df47a321e29ff103b32_1aa58d5c5132eb7df47a321e29ff103b32" kindref="member">NSIM_UART_0_ID</ref>:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="nsim__uart__obj_8c_a3b6bf4f01e07d6db0be208fb03f16d84_1a3b6bf4f01e07d6db0be208fb03f16d84" kindref="member">dw_uart_0</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c"/>
   </compounddef>

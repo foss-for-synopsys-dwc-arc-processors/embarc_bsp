@@ -9,114 +9,114 @@
     <includes refid="ss__i2c__master_8h" local="yes">device/subsystem/ss_i2c_master.h</includes>
     <includes refid="i2c__priv_8h" local="yes">device/subsystem/i2c_priv.h</includes>
     <incdepgraph>
-      <node id="3266">
+      <node id="3268">
         <label>stdbool.h</label>
       </node>
-      <node id="3263">
+      <node id="3265">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3261" relation="include">
-        </childnode>
-        <childnode refid="3264" relation="include">
-        </childnode>
-        <childnode refid="3265" relation="include">
+        <childnode refid="3263" relation="include">
         </childnode>
         <childnode refid="3266" relation="include">
         </childnode>
-      </node>
-      <node id="3261">
-        <label>stdint.h</label>
-      </node>
-      <node id="3271">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="3269" relation="include">
+        <childnode refid="3267" relation="include">
         </childnode>
-        <childnode refid="3262" relation="include">
-        </childnode>
-      </node>
-      <node id="3260">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="3261" relation="include">
-        </childnode>
-        <childnode refid="3262" relation="include">
-        </childnode>
-      </node>
-      <node id="3265">
-        <label>stddef.h</label>
-      </node>
-      <node id="3267">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
         <childnode refid="3268" relation="include">
         </childnode>
       </node>
-      <node id="3264">
-        <label>limits.h</label>
+      <node id="3263">
+        <label>stdint.h</label>
       </node>
-      <node id="3268">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3270">
-        <label>device/subsystem/i2c_master.h</label>
-        <link refid="i2c__master_8h"/>
+      <node id="3273">
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
         <childnode refid="3271" relation="include">
         </childnode>
-      </node>
-      <node id="3274">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="3263" relation="include">
-        </childnode>
-      </node>
-      <node id="3275">
-        <label>device/subsystem/i2c_priv.h</label>
-        <link refid="i2c__priv_8h"/>
-        <childnode refid="3271" relation="include">
-        </childnode>
-      </node>
-      <node id="3272">
-        <label>device/subsystem/ss_i2c_master.h</label>
-        <link refid="ss__i2c__master_8h"/>
-        <childnode refid="3273" relation="include">
-        </childnode>
-      </node>
-      <node id="3269">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3262" relation="include">
+        <childnode refid="3264" relation="include">
         </childnode>
       </node>
       <node id="3262">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3263" relation="include">
+        </childnode>
+        <childnode refid="3264" relation="include">
+        </childnode>
+      </node>
+      <node id="3267">
+        <label>stddef.h</label>
+      </node>
+      <node id="3269">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3270" relation="include">
+        </childnode>
+      </node>
+      <node id="3266">
+        <label>limits.h</label>
+      </node>
+      <node id="3270">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3272">
+        <label>device/subsystem/i2c_master.h</label>
+        <link refid="i2c__master_8h"/>
+        <childnode refid="3273" relation="include">
+        </childnode>
+      </node>
+      <node id="3276">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="3265" relation="include">
+        </childnode>
+      </node>
+      <node id="3277">
+        <label>device/subsystem/i2c_priv.h</label>
+        <link refid="i2c__priv_8h"/>
+        <childnode refid="3273" relation="include">
+        </childnode>
+      </node>
+      <node id="3274">
+        <label>device/subsystem/ss_i2c_master.h</label>
+        <link refid="ss__i2c__master_8h"/>
+        <childnode refid="3275" relation="include">
+        </childnode>
+      </node>
+      <node id="3271">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3264" relation="include">
+        </childnode>
+      </node>
+      <node id="3264">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="3263" relation="include">
-        </childnode>
-        <childnode refid="3267" relation="include">
-        </childnode>
-      </node>
-      <node id="3273">
-        <label>device/ip_hal/dev_iic.h</label>
-        <link refid="dev__iic_8h"/>
-        <childnode refid="3274" relation="include">
-        </childnode>
-      </node>
-      <node id="3259">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/iic/ss_i2c_master.c</label>
-        <link refid="ss_i2c_master.c"/>
-        <childnode refid="3260" relation="include">
-        </childnode>
-        <childnode refid="3263" relation="include">
+        <childnode refid="3265" relation="include">
         </childnode>
         <childnode refid="3269" relation="include">
         </childnode>
-        <childnode refid="3270" relation="include">
+      </node>
+      <node id="3275">
+        <label>device/ip_hal/dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="3276" relation="include">
+        </childnode>
+      </node>
+      <node id="3261">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/iic/ss_i2c_master.c</label>
+        <link refid="ss_i2c_master.c"/>
+        <childnode refid="3262" relation="include">
+        </childnode>
+        <childnode refid="3265" relation="include">
+        </childnode>
+        <childnode refid="3271" relation="include">
         </childnode>
         <childnode refid="3272" relation="include">
         </childnode>
-        <childnode refid="3275" relation="include">
+        <childnode refid="3274" relation="include">
+        </childnode>
+        <childnode refid="3277" relation="include">
         </childnode>
       </node>
     </incdepgraph>

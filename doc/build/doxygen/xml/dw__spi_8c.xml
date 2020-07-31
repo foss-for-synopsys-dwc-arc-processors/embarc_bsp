@@ -9,109 +9,109 @@
     <includes refid="dw__spi__hal_8h" local="yes">device/designware/dw_spi_hal.h</includes>
     <includes refid="dw__spi_8h" local="yes">device/designware/dw_spi.h</includes>
     <incdepgraph>
-      <node id="3070">
+      <node id="3072">
         <label>stdbool.h</label>
       </node>
-      <node id="3066">
+      <node id="3068">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3067" relation="include">
-        </childnode>
-        <childnode refid="3068" relation="include">
-        </childnode>
         <childnode refid="3069" relation="include">
         </childnode>
         <childnode refid="3070" relation="include">
         </childnode>
-      </node>
-      <node id="3067">
-        <label>stdint.h</label>
-      </node>
-      <node id="3071">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="3067" relation="include">
+        <childnode refid="3071" relation="include">
         </childnode>
         <childnode refid="3072" relation="include">
         </childnode>
       </node>
       <node id="3069">
-        <label>stddef.h</label>
+        <label>stdint.h</label>
       </node>
       <node id="3073">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3069" relation="include">
+        </childnode>
         <childnode refid="3074" relation="include">
         </childnode>
       </node>
-      <node id="3068">
+      <node id="3071">
+        <label>stddef.h</label>
+      </node>
+      <node id="3075">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3076" relation="include">
+        </childnode>
+      </node>
+      <node id="3070">
         <label>limits.h</label>
       </node>
-      <node id="3074">
+      <node id="3076">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="3076">
+      <node id="3078">
         <label>device/designware/dw_spi_hal.h</label>
         <link refid="dw__spi__hal_8h"/>
+        <childnode refid="3079" relation="include">
+        </childnode>
+      </node>
+      <node id="3067">
+        <label>string.h</label>
+      </node>
+      <node id="3080">
+        <label>device/designware/dw_spi.h</label>
+        <link refid="dw__spi_8h"/>
+        <childnode refid="3081" relation="include">
+        </childnode>
         <childnode refid="3077" relation="include">
         </childnode>
       </node>
-      <node id="3065">
-        <label>string.h</label>
-      </node>
-      <node id="3078">
-        <label>device/designware/dw_spi.h</label>
-        <link refid="dw__spi_8h"/>
-        <childnode refid="3079" relation="include">
-        </childnode>
-        <childnode refid="3075" relation="include">
-        </childnode>
-      </node>
-      <node id="3080">
+      <node id="3082">
         <label>device/dev_common.h</label>
         <link refid="dev__common_8h"/>
-        <childnode refid="3066" relation="include">
+        <childnode refid="3068" relation="include">
         </childnode>
       </node>
-      <node id="3064">
+      <node id="3066">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c</label>
         <link refid="dw_spi.c"/>
-        <childnode refid="3065" relation="include">
+        <childnode refid="3067" relation="include">
         </childnode>
-        <childnode refid="3066" relation="include">
-        </childnode>
-        <childnode refid="3071" relation="include">
-        </childnode>
-        <childnode refid="3075" relation="include">
-        </childnode>
-        <childnode refid="3076" relation="include">
-        </childnode>
-        <childnode refid="3078" relation="include">
-        </childnode>
-      </node>
-      <node id="3077">
-        <label>device/designware/dw_spi_hal_cfg.h</label>
-        <link refid="dw__spi__hal__cfg_8h"/>
-      </node>
-      <node id="3075">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3072" relation="include">
-        </childnode>
-      </node>
-      <node id="3072">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3066" relation="include">
+        <childnode refid="3068" relation="include">
         </childnode>
         <childnode refid="3073" relation="include">
         </childnode>
+        <childnode refid="3077" relation="include">
+        </childnode>
+        <childnode refid="3078" relation="include">
+        </childnode>
+        <childnode refid="3080" relation="include">
+        </childnode>
       </node>
       <node id="3079">
+        <label>device/designware/dw_spi_hal_cfg.h</label>
+        <link refid="dw__spi__hal__cfg_8h"/>
+      </node>
+      <node id="3077">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3074" relation="include">
+        </childnode>
+      </node>
+      <node id="3074">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3068" relation="include">
+        </childnode>
+        <childnode refid="3075" relation="include">
+        </childnode>
+      </node>
+      <node id="3081">
         <label>device/ip_hal/dev_spi.h</label>
         <link refid="dev__spi_8h"/>
-        <childnode refid="3080" relation="include">
+        <childnode refid="3082" relation="include">
         </childnode>
       </node>
     </incdepgraph>

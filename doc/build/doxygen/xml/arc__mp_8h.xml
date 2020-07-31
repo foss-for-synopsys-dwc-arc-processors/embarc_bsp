@@ -7,123 +7,123 @@
     <includedby refid="arc__mp_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mp.c</includedby>
     <includedby refid="embARC_8h" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</includedby>
     <incdepgraph>
-      <node id="4022">
+      <node id="4026">
         <label>stdbool.h</label>
       </node>
-      <node id="4018">
+      <node id="4022">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="4019" relation="include">
+        <childnode refid="4023" relation="include">
         </childnode>
-        <childnode refid="4020" relation="include">
-        </childnode>
-        <childnode refid="4021" relation="include">
-        </childnode>
-        <childnode refid="4022" relation="include">
-        </childnode>
-      </node>
-      <node id="4019">
-        <label>stdint.h</label>
-      </node>
-      <node id="4021">
-        <label>stddef.h</label>
-      </node>
-      <node id="4023">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
         <childnode refid="4024" relation="include">
         </childnode>
+        <childnode refid="4025" relation="include">
+        </childnode>
+        <childnode refid="4026" relation="include">
+        </childnode>
       </node>
-      <node id="4016">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_mp.h</label>
-        <link refid="arc_mp.h"/>
-        <childnode refid="4017" relation="include">
+      <node id="4023">
+        <label>stdint.h</label>
+      </node>
+      <node id="4025">
+        <label>stddef.h</label>
+      </node>
+      <node id="4027">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4028" relation="include">
         </childnode>
       </node>
       <node id="4020">
-        <label>limits.h</label>
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_mp.h</label>
+        <link refid="arc_mp.h"/>
+        <childnode refid="4021" relation="include">
+        </childnode>
       </node>
       <node id="4024">
+        <label>limits.h</label>
+      </node>
+      <node id="4028">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="4017">
+      <node id="4021">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="4018" relation="include">
+        <childnode refid="4022" relation="include">
         </childnode>
-        <childnode refid="4023" relation="include">
+        <childnode refid="4027" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4029">
+      <node id="4033">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/clib/embARC_syscalls.c</label>
         <link refid="embARC__syscalls_8c"/>
       </node>
-      <node id="4027">
+      <node id="4031">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_mp.c</label>
         <link refid="arc__mp_8c"/>
       </node>
-      <node id="4031">
+      <node id="4035">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h</label>
         <link refid="dw__i2s_8h"/>
-        <childnode refid="4032" relation="include">
+        <childnode refid="4036" relation="include">
         </childnode>
-        <childnode refid="4033" relation="include">
+        <childnode refid="4037" relation="include">
         </childnode>
       </node>
-      <node id="4033">
+      <node id="4037">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
         <link refid="dw__i2s_8c"/>
       </node>
-      <node id="4032">
+      <node id="4036">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
         <link refid="dw__i2s__obj_8c"/>
       </node>
-      <node id="4026">
+      <node id="4030">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_connect.c</label>
         <link refid="arc__connect_8c"/>
       </node>
-      <node id="4035">
+      <node id="4039">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/board.c</label>
         <link refid="board_8c"/>
       </node>
-      <node id="4025">
+      <node id="4029">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_mp.h</label>
         <link refid="arc_mp.h"/>
-        <childnode refid="4026" relation="include">
-        </childnode>
-        <childnode refid="4027" relation="include">
-        </childnode>
-        <childnode refid="4028" relation="include">
-        </childnode>
-      </node>
-      <node id="4030">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/console_io.c</label>
-        <link refid="console__io_8c"/>
-      </node>
-      <node id="4028">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</label>
-        <link refid="embARC_8h"/>
-        <childnode refid="4029" relation="include">
-        </childnode>
         <childnode refid="4030" relation="include">
         </childnode>
         <childnode refid="4031" relation="include">
+        </childnode>
+        <childnode refid="4032" relation="include">
+        </childnode>
+      </node>
+      <node id="4034">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/console_io.c</label>
+        <link refid="console__io_8c"/>
+      </node>
+      <node id="4032">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="4033" relation="include">
         </childnode>
         <childnode refid="4034" relation="include">
         </childnode>
         <childnode refid="4035" relation="include">
         </childnode>
-        <childnode refid="4036" relation="include">
+        <childnode refid="4038" relation="include">
+        </childnode>
+        <childnode refid="4039" relation="include">
+        </childnode>
+        <childnode refid="4040" relation="include">
         </childnode>
       </node>
-      <node id="4034">
+      <node id="4038">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c</label>
         <link refid="axs__103__interrupt_8c"/>
       </node>
-      <node id="4036">
+      <node id="4040">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/configs/10/hsdk_interrupt.c</label>
         <link refid="hsdk__interrupt_8c"/>
       </node>

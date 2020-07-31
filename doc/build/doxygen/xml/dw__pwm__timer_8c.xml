@@ -7,92 +7,92 @@
     <includes refid="arc__exception_8h" local="yes">arc/arc_exception.h</includes>
     <includes refid="dw__pwm__timer_8h" local="yes">device/designware/dw_pwm_timer.h</includes>
     <incdepgraph>
-      <node id="3042">
+      <node id="3044">
         <label>device/ip_hal/dev_pwm_timer.h</label>
         <link refid="dev__pwm__timer_8h"/>
-        <childnode refid="3043" relation="include">
+        <childnode refid="3045" relation="include">
         </childnode>
       </node>
-      <node id="3035">
+      <node id="3037">
         <label>stdbool.h</label>
       </node>
-      <node id="3031">
+      <node id="3033">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3032" relation="include">
-        </childnode>
-        <childnode refid="3033" relation="include">
-        </childnode>
         <childnode refid="3034" relation="include">
         </childnode>
         <childnode refid="3035" relation="include">
         </childnode>
-      </node>
-      <node id="3032">
-        <label>stdint.h</label>
-      </node>
-      <node id="3036">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="3032" relation="include">
+        <childnode refid="3036" relation="include">
         </childnode>
         <childnode refid="3037" relation="include">
         </childnode>
       </node>
       <node id="3034">
-        <label>stddef.h</label>
+        <label>stdint.h</label>
       </node>
       <node id="3038">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3034" relation="include">
+        </childnode>
         <childnode refid="3039" relation="include">
         </childnode>
       </node>
-      <node id="3033">
-        <label>limits.h</label>
+      <node id="3036">
+        <label>stddef.h</label>
       </node>
-      <node id="3041">
-        <label>device/designware/dw_pwm_timer.h</label>
-        <link refid="dw__pwm__timer_8h"/>
-        <childnode refid="3042" relation="include">
-        </childnode>
-        <childnode refid="3040" relation="include">
-        </childnode>
-      </node>
-      <node id="3039">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3030">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</label>
-        <link refid="dw_pwm_timer.c"/>
-        <childnode refid="3031" relation="include">
-        </childnode>
-        <childnode refid="3036" relation="include">
-        </childnode>
-        <childnode refid="3040" relation="include">
-        </childnode>
+      <node id="3040">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
         <childnode refid="3041" relation="include">
         </childnode>
       </node>
+      <node id="3035">
+        <label>limits.h</label>
+      </node>
       <node id="3043">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="3031" relation="include">
+        <label>device/designware/dw_pwm_timer.h</label>
+        <link refid="dw__pwm__timer_8h"/>
+        <childnode refid="3044" relation="include">
+        </childnode>
+        <childnode refid="3042" relation="include">
         </childnode>
       </node>
-      <node id="3040">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3037" relation="include">
-        </childnode>
+      <node id="3041">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="3037">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3031" relation="include">
+      <node id="3032">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/pwm_timer/dw_pwm_timer.c</label>
+        <link refid="dw_pwm_timer.c"/>
+        <childnode refid="3033" relation="include">
         </childnode>
         <childnode refid="3038" relation="include">
+        </childnode>
+        <childnode refid="3042" relation="include">
+        </childnode>
+        <childnode refid="3043" relation="include">
+        </childnode>
+      </node>
+      <node id="3045">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="3033" relation="include">
+        </childnode>
+      </node>
+      <node id="3042">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3039" relation="include">
+        </childnode>
+      </node>
+      <node id="3039">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3033" relation="include">
+        </childnode>
+        <childnode refid="3040" relation="include">
         </childnode>
       </node>
     </incdepgraph>

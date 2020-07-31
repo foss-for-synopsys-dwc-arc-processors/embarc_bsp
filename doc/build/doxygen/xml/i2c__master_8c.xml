@@ -10,99 +10,99 @@
     <includes local="yes">io_config.h</includes>
     <includes local="yes">apexextensions.h</includes>
     <incdepgraph>
-      <node id="3235">
+      <node id="3237">
         <label>stdbool.h</label>
       </node>
-      <node id="3233">
+      <node id="3235">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3226" relation="include">
+        <childnode refid="3228" relation="include">
         </childnode>
-        <childnode refid="3234" relation="include">
+        <childnode refid="3236" relation="include">
         </childnode>
-        <childnode refid="3227" relation="include">
+        <childnode refid="3229" relation="include">
         </childnode>
-        <childnode refid="3235" relation="include">
+        <childnode refid="3237" relation="include">
         </childnode>
-      </node>
-      <node id="3226">
-        <label>stdint.h</label>
       </node>
       <node id="3228">
+        <label>stdint.h</label>
+      </node>
+      <node id="3230">
         <label>stdlib.h</label>
       </node>
-      <node id="3225">
+      <node id="3227">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/iic/i2c_master.c</label>
         <link refid="i2c_master.c"/>
-        <childnode refid="3226" relation="include">
-        </childnode>
-        <childnode refid="3227" relation="include">
-        </childnode>
         <childnode refid="3228" relation="include">
         </childnode>
         <childnode refid="3229" relation="include">
         </childnode>
-        <childnode refid="3238" relation="include">
+        <childnode refid="3230" relation="include">
         </childnode>
-        <childnode refid="3239" relation="include">
+        <childnode refid="3231" relation="include">
         </childnode>
         <childnode refid="3240" relation="include">
         </childnode>
-      </node>
-      <node id="3230">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="3231" relation="include">
+        <childnode refid="3241" relation="include">
         </childnode>
-        <childnode refid="3232" relation="include">
-        </childnode>
-      </node>
-      <node id="3227">
-        <label>stddef.h</label>
-      </node>
-      <node id="3236">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="3237" relation="include">
-        </childnode>
-      </node>
-      <node id="3234">
-        <label>limits.h</label>
-      </node>
-      <node id="3237">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3229">
-        <label>device/subsystem/i2c_master.h</label>
-        <link refid="i2c__master_8h"/>
-        <childnode refid="3230" relation="include">
-        </childnode>
-      </node>
-      <node id="3239">
-        <label>io_config.h</label>
-      </node>
-      <node id="3238">
-        <label>device/subsystem/i2c_priv.h</label>
-        <link refid="i2c__priv_8h"/>
-        <childnode refid="3230" relation="include">
-        </childnode>
-      </node>
-      <node id="3231">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3232" relation="include">
+        <childnode refid="3242" relation="include">
         </childnode>
       </node>
       <node id="3232">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
         <childnode refid="3233" relation="include">
         </childnode>
-        <childnode refid="3236" relation="include">
+        <childnode refid="3234" relation="include">
         </childnode>
       </node>
+      <node id="3229">
+        <label>stddef.h</label>
+      </node>
+      <node id="3238">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3239" relation="include">
+        </childnode>
+      </node>
+      <node id="3236">
+        <label>limits.h</label>
+      </node>
+      <node id="3239">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3231">
+        <label>device/subsystem/i2c_master.h</label>
+        <link refid="i2c__master_8h"/>
+        <childnode refid="3232" relation="include">
+        </childnode>
+      </node>
+      <node id="3241">
+        <label>io_config.h</label>
+      </node>
       <node id="3240">
+        <label>device/subsystem/i2c_priv.h</label>
+        <link refid="i2c__priv_8h"/>
+        <childnode refid="3232" relation="include">
+        </childnode>
+      </node>
+      <node id="3233">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3234" relation="include">
+        </childnode>
+      </node>
+      <node id="3234">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3235" relation="include">
+        </childnode>
+        <childnode refid="3238" relation="include">
+        </childnode>
+      </node>
+      <node id="3242">
         <label>apexextensions.h</label>
       </node>
     </incdepgraph>

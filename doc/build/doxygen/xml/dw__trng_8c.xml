@@ -6,90 +6,90 @@
     <includes refid="embARC__error_8h" local="yes">embARC_error.h</includes>
     <includes refid="dw__trng_8h" local="yes">device/designware/dw_trng.h</includes>
     <incdepgraph>
-      <node id="3103">
+      <node id="3105">
         <label>stdbool.h</label>
       </node>
-      <node id="3099">
+      <node id="3101">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3100" relation="include">
-        </childnode>
-        <childnode refid="3101" relation="include">
-        </childnode>
         <childnode refid="3102" relation="include">
         </childnode>
         <childnode refid="3103" relation="include">
         </childnode>
-      </node>
-      <node id="3100">
-        <label>stdint.h</label>
-      </node>
-      <node id="3104">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="3100" relation="include">
+        <childnode refid="3104" relation="include">
         </childnode>
         <childnode refid="3105" relation="include">
-        </childnode>
-      </node>
-      <node id="3109">
-        <label>device/ip_hal/dev_trng.h</label>
-        <link refid="dev__trng_8h"/>
-        <childnode refid="3110" relation="include">
         </childnode>
       </node>
       <node id="3102">
-        <label>stddef.h</label>
+        <label>stdint.h</label>
       </node>
       <node id="3106">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3102" relation="include">
+        </childnode>
         <childnode refid="3107" relation="include">
         </childnode>
       </node>
-      <node id="3101">
+      <node id="3111">
+        <label>device/ip_hal/dev_trng.h</label>
+        <link refid="dev__trng_8h"/>
+        <childnode refid="3112" relation="include">
+        </childnode>
+      </node>
+      <node id="3104">
+        <label>stddef.h</label>
+      </node>
+      <node id="3108">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3109" relation="include">
+        </childnode>
+      </node>
+      <node id="3103">
         <label>limits.h</label>
       </node>
-      <node id="3107">
+      <node id="3109">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="3098">
+      <node id="3100">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/trng/dw_trng.c</label>
         <link refid="dw_trng.c"/>
-        <childnode refid="3099" relation="include">
+        <childnode refid="3101" relation="include">
         </childnode>
-        <childnode refid="3104" relation="include">
+        <childnode refid="3106" relation="include">
         </childnode>
-        <childnode refid="3108" relation="include">
+        <childnode refid="3110" relation="include">
+        </childnode>
+      </node>
+      <node id="3112">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="3101" relation="include">
         </childnode>
       </node>
       <node id="3110">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="3099" relation="include">
-        </childnode>
-      </node>
-      <node id="3108">
         <label>device/designware/dw_trng.h</label>
         <link refid="dw__trng_8h"/>
-        <childnode refid="3109" relation="include">
-        </childnode>
         <childnode refid="3111" relation="include">
         </childnode>
+        <childnode refid="3113" relation="include">
+        </childnode>
       </node>
-      <node id="3111">
+      <node id="3113">
         <label>arc/arc_exception.h</label>
         <link refid="arc__exception_8h"/>
-        <childnode refid="3105" relation="include">
+        <childnode refid="3107" relation="include">
         </childnode>
       </node>
-      <node id="3105">
+      <node id="3107">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="3099" relation="include">
+        <childnode refid="3101" relation="include">
         </childnode>
-        <childnode refid="3106" relation="include">
+        <childnode refid="3108" relation="include">
         </childnode>
       </node>
     </incdepgraph>

@@ -54,7 +54,7 @@
 <codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/>---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="preprocessor">#if<sp/>defined(__GNU__)</highlight></codeline>
-<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;embarc_toolchain.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="embARC__toolchain_8h" kindref="compound">embARC_toolchain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>embARC&apos;s<sp/>GNU<sp/>C++<sp/>support<sp/>takes<sp/>reference<sp/>from<sp/>Zephyr<sp/>(cpp_xxx.c)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="comment">/*<sp/>What<sp/>a<sp/>constructor<sp/>function<sp/>pointer<sp/>looks<sp/>like<sp/>*/</highlight><highlight class="normal"></highlight></codeline>

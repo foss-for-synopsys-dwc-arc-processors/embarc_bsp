@@ -7,104 +7,104 @@
     <includes refid="gpio_8h" local="yes">device/subsystem/gpio.h</includes>
     <includes refid="ss__gpio_8h" local="yes">device/subsystem/ss_gpio.h</includes>
     <incdepgraph>
-      <node id="3165">
+      <node id="3167">
         <label>stdbool.h</label>
       </node>
-      <node id="3162">
+      <node id="3164">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3160" relation="include">
-        </childnode>
-        <childnode refid="3163" relation="include">
-        </childnode>
-        <childnode refid="3164" relation="include">
+        <childnode refid="3162" relation="include">
         </childnode>
         <childnode refid="3165" relation="include">
         </childnode>
-      </node>
-      <node id="3172">
-        <label>device/ip_hal/dev_gpio.h</label>
-        <link refid="dev__gpio_8h"/>
-        <childnode refid="3173" relation="include">
+        <childnode refid="3166" relation="include">
         </childnode>
-      </node>
-      <node id="3160">
-        <label>stdint.h</label>
-      </node>
-      <node id="3169">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="3170" relation="include">
-        </childnode>
-        <childnode refid="3161" relation="include">
-        </childnode>
-      </node>
-      <node id="3159">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="3160" relation="include">
-        </childnode>
-        <childnode refid="3161" relation="include">
-        </childnode>
-      </node>
-      <node id="3158">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/gpio/ss_gpio.c</label>
-        <link refid="ss_gpio.c"/>
-        <childnode refid="3159" relation="include">
-        </childnode>
-        <childnode refid="3162" relation="include">
-        </childnode>
-        <childnode refid="3168" relation="include">
-        </childnode>
-        <childnode refid="3171" relation="include">
-        </childnode>
-      </node>
-      <node id="3164">
-        <label>stddef.h</label>
-      </node>
-      <node id="3166">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
         <childnode refid="3167" relation="include">
         </childnode>
       </node>
-      <node id="3163">
-        <label>limits.h</label>
-      </node>
-      <node id="3167">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3173">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="3162" relation="include">
+      <node id="3174">
+        <label>device/ip_hal/dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="3175" relation="include">
         </childnode>
       </node>
-      <node id="3168">
-        <label>device/subsystem/gpio.h</label>
-        <link refid="gpio_8h"/>
-        <childnode refid="3169" relation="include">
-        </childnode>
+      <node id="3162">
+        <label>stdint.h</label>
       </node>
-      <node id="3170">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3161" relation="include">
+      <node id="3171">
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
+        <childnode refid="3172" relation="include">
+        </childnode>
+        <childnode refid="3163" relation="include">
         </childnode>
       </node>
       <node id="3161">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
         <childnode refid="3162" relation="include">
         </childnode>
-        <childnode refid="3166" relation="include">
+        <childnode refid="3163" relation="include">
         </childnode>
       </node>
-      <node id="3171">
+      <node id="3160">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/gpio/ss_gpio.c</label>
+        <link refid="ss_gpio.c"/>
+        <childnode refid="3161" relation="include">
+        </childnode>
+        <childnode refid="3164" relation="include">
+        </childnode>
+        <childnode refid="3170" relation="include">
+        </childnode>
+        <childnode refid="3173" relation="include">
+        </childnode>
+      </node>
+      <node id="3166">
+        <label>stddef.h</label>
+      </node>
+      <node id="3168">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3169" relation="include">
+        </childnode>
+      </node>
+      <node id="3165">
+        <label>limits.h</label>
+      </node>
+      <node id="3169">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3175">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="3164" relation="include">
+        </childnode>
+      </node>
+      <node id="3170">
+        <label>device/subsystem/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="3171" relation="include">
+        </childnode>
+      </node>
+      <node id="3172">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3163" relation="include">
+        </childnode>
+      </node>
+      <node id="3163">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3164" relation="include">
+        </childnode>
+        <childnode refid="3168" relation="include">
+        </childnode>
+      </node>
+      <node id="3173">
         <label>device/subsystem/ss_gpio.h</label>
         <link refid="ss__gpio_8h"/>
-        <childnode refid="3172" relation="include">
+        <childnode refid="3174" relation="include">
         </childnode>
       </node>
     </incdepgraph>

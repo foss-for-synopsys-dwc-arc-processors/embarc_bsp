@@ -5,25 +5,25 @@
     <includes refid="dw__i2s__hal__cfg_8h" local="yes">device/designware/dw_i2s_hal_cfg.h</includes>
     <includedby refid="dw__i2s_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</includedby>
     <incdepgraph>
-      <node id="4163">
+      <node id="4167">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s_hal.h</label>
         <link refid="dw_i2s_hal.h"/>
-        <childnode refid="4164" relation="include">
+        <childnode refid="4168" relation="include">
         </childnode>
       </node>
-      <node id="4164">
+      <node id="4168">
         <label>device/designware/dw_i2s_hal_cfg.h</label>
         <link refid="dw__i2s__hal__cfg_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4165">
+      <node id="4169">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s_hal.h</label>
         <link refid="dw_i2s_hal.h"/>
-        <childnode refid="4166" relation="include">
+        <childnode refid="4170" relation="include">
         </childnode>
       </node>
-      <node id="4166">
+      <node id="4170">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
         <link refid="dw__i2s_8c"/>
       </node>

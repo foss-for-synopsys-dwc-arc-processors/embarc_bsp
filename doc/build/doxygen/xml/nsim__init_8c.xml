@@ -124,7 +124,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__BOARD__COMMON_ga916f2adc2080b4fe88034086d107a8dc_1ga916f2adc2080b4fe88034086d107a8dc" kindref="member">board_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" kindref="member">arc_timer_int</ref>();</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/common/nsim_init.c"/>

@@ -9,156 +9,156 @@
     <includes refid="dw__i2s__hal_8h" local="yes">device/designware/dw_i2s_hal.h</includes>
     <includes refid="dw__i2s_8h" local="yes">device/designware/dw_i2s.h</includes>
     <incdepgraph>
-      <node id="2994">
+      <node id="2996">
         <label>stdbool.h</label>
       </node>
-      <node id="3000">
+      <node id="3002">
         <label>device/designware/dw_i2s_hal.h</label>
         <link refid="dw__i2s__hal_8h"/>
-        <childnode refid="3001" relation="include">
+        <childnode refid="3003" relation="include">
         </childnode>
       </node>
-      <node id="2990">
+      <node id="2992">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="2991" relation="include">
-        </childnode>
-        <childnode refid="2992" relation="include">
-        </childnode>
         <childnode refid="2993" relation="include">
         </childnode>
         <childnode refid="2994" relation="include">
         </childnode>
-      </node>
-      <node id="3002">
-        <label>device/designware/dw_i2s.h</label>
-        <link refid="dw__i2s_8h"/>
-        <childnode refid="3003" relation="include">
-        </childnode>
-        <childnode refid="3005" relation="include">
-        </childnode>
-        <childnode refid="3006" relation="include">
-        </childnode>
-        <childnode refid="3010" relation="include">
-        </childnode>
-      </node>
-      <node id="2988">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
-        <link refid="dw_i2s.c"/>
-        <childnode refid="2989" relation="include">
-        </childnode>
-        <childnode refid="2990" relation="include">
-        </childnode>
         <childnode refid="2995" relation="include">
         </childnode>
-        <childnode refid="2999" relation="include">
-        </childnode>
-        <childnode refid="3000" relation="include">
-        </childnode>
-        <childnode refid="3002" relation="include">
-        </childnode>
-      </node>
-      <node id="3001">
-        <label>device/designware/dw_i2s_hal_cfg.h</label>
-        <link refid="dw__i2s__hal__cfg_8h"/>
-      </node>
-      <node id="2991">
-        <label>stdint.h</label>
-      </node>
-      <node id="3003">
-        <label>device/ip_hal/dev_i2s.h</label>
-        <link refid="dev__i2s_8h"/>
-        <childnode refid="3004" relation="include">
-        </childnode>
-      </node>
-      <node id="2995">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="2991" relation="include">
-        </childnode>
         <childnode refid="2996" relation="include">
         </childnode>
-      </node>
-      <node id="3009">
-        <label>board.h</label>
-        <link refid="board_8h"/>
-      </node>
-      <node id="2993">
-        <label>stddef.h</label>
-      </node>
-      <node id="2997">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="2998" relation="include">
-        </childnode>
-      </node>
-      <node id="3008">
-        <label>arc/arc_mp.h</label>
-        <link refid="arc__mp_8h"/>
-        <childnode refid="2996" relation="include">
-        </childnode>
-      </node>
-      <node id="2992">
-        <label>limits.h</label>
-      </node>
-      <node id="2998">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3007">
-        <label>arc/arc_timer.h</label>
-        <link refid="arc__timer_8h"/>
-        <childnode refid="2996" relation="include">
-        </childnode>
-      </node>
-      <node id="3010">
-        <label>embARC_debug.h</label>
-        <link refid="embARC__debug_8h"/>
-        <childnode refid="3005" relation="include">
-        </childnode>
-      </node>
-      <node id="2989">
-        <label>string.h</label>
       </node>
       <node id="3004">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="2990" relation="include">
-        </childnode>
-      </node>
-      <node id="2999">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="2996" relation="include">
-        </childnode>
-      </node>
-      <node id="2996">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="2990" relation="include">
-        </childnode>
-        <childnode refid="2997" relation="include">
-        </childnode>
-      </node>
-      <node id="3006">
-        <label>embARC.h</label>
-        <link refid="embARC_8h"/>
-        <childnode refid="2990" relation="include">
-        </childnode>
-        <childnode refid="2995" relation="include">
-        </childnode>
-        <childnode refid="2996" relation="include">
+        <label>device/designware/dw_i2s.h</label>
+        <link refid="dw__i2s_8h"/>
+        <childnode refid="3005" relation="include">
         </childnode>
         <childnode refid="3007" relation="include">
         </childnode>
+        <childnode refid="3008" relation="include">
+        </childnode>
+        <childnode refid="3012" relation="include">
+        </childnode>
+      </node>
+      <node id="2990">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
+        <link refid="dw_i2s.c"/>
+        <childnode refid="2991" relation="include">
+        </childnode>
+        <childnode refid="2992" relation="include">
+        </childnode>
+        <childnode refid="2997" relation="include">
+        </childnode>
+        <childnode refid="3001" relation="include">
+        </childnode>
+        <childnode refid="3002" relation="include">
+        </childnode>
+        <childnode refid="3004" relation="include">
+        </childnode>
+      </node>
+      <node id="3003">
+        <label>device/designware/dw_i2s_hal_cfg.h</label>
+        <link refid="dw__i2s__hal__cfg_8h"/>
+      </node>
+      <node id="2993">
+        <label>stdint.h</label>
+      </node>
+      <node id="3005">
+        <label>device/ip_hal/dev_i2s.h</label>
+        <link refid="dev__i2s_8h"/>
+        <childnode refid="3006" relation="include">
+        </childnode>
+      </node>
+      <node id="2997">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="2998" relation="include">
+        </childnode>
+      </node>
+      <node id="3011">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="2995">
+        <label>stddef.h</label>
+      </node>
+      <node id="2999">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3000" relation="include">
+        </childnode>
+      </node>
+      <node id="3010">
+        <label>arc/arc_mp.h</label>
+        <link refid="arc__mp_8h"/>
+        <childnode refid="2998" relation="include">
+        </childnode>
+      </node>
+      <node id="2994">
+        <label>limits.h</label>
+      </node>
+      <node id="3000">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3009">
+        <label>arc/arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="2998" relation="include">
+        </childnode>
+      </node>
+      <node id="3012">
+        <label>embARC_debug.h</label>
+        <link refid="embARC__debug_8h"/>
+        <childnode refid="3007" relation="include">
+        </childnode>
+      </node>
+      <node id="2991">
+        <label>string.h</label>
+      </node>
+      <node id="3006">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="2992" relation="include">
+        </childnode>
+      </node>
+      <node id="3001">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="2998" relation="include">
+        </childnode>
+      </node>
+      <node id="2998">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="2992" relation="include">
+        </childnode>
         <childnode refid="2999" relation="include">
         </childnode>
-        <childnode refid="3008" relation="include">
+      </node>
+      <node id="3008">
+        <label>embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="2992" relation="include">
+        </childnode>
+        <childnode refid="2997" relation="include">
+        </childnode>
+        <childnode refid="2998" relation="include">
         </childnode>
         <childnode refid="3009" relation="include">
         </childnode>
+        <childnode refid="3001" relation="include">
+        </childnode>
+        <childnode refid="3010" relation="include">
+        </childnode>
+        <childnode refid="3011" relation="include">
+        </childnode>
       </node>
-      <node id="3005">
+      <node id="3007">
         <label>stdio.h</label>
       </node>
     </incdepgraph>

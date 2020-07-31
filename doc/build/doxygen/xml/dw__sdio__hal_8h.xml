@@ -4,14 +4,14 @@
     <compoundname>dw_sdio_hal.h</compoundname>
     <includedby refid="dw__sdio_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/sdio/dw_sdio.c</includedby>
     <invincdepgraph>
-      <node id="4293">
+      <node id="4297">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/sdio/dw_sdio.c</label>
         <link refid="dw__sdio_8c"/>
       </node>
-      <node id="4292">
+      <node id="4296">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_sdio_hal.h</label>
         <link refid="dw_sdio_hal.h"/>
-        <childnode refid="4293" relation="include">
+        <childnode refid="4297" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

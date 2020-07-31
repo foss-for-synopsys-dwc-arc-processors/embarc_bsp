@@ -2,8 +2,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -13,30 +12,32 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
-        <script type="text/javascript" src="_static/sphinx_tabs/tabs.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="_static/sphinx_tabs/tabs.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/style_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
@@ -52,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> embARC
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> embARC
           
 
           
@@ -79,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -102,6 +104,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -140,7 +143,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Index</li>
     
@@ -166,25 +169,23 @@
 </li>
       <li><a href="arc/resource/timer.html#c.SECURE_TIMER_1">SECURE_TIMER_1 (C macro)</a>
 </li>
-      <li><a href="arc/resource/timer.html#_CPPv420secure_timer_currentK8uint32_tPv">secure_timer_current (C++ function)</a>
+      <li><a href="device/spi.html#_CPPv49spi_close">spi_close (C++ member)</a>
 </li>
-      <li><a href="arc/resource/timer.html#_CPPv417secure_timer_initv">secure_timer_init (C++ function)</a>
-</li>
-      <li><a href="arc/resource/timer.html#_CPPv422secure_timer_int_clearK8uint32_t">secure_timer_int_clear (C++ function)</a>
-</li>
-      <li><a href="arc/resource/timer.html#_CPPv420secure_timer_presentK8uint32_t">secure_timer_present (C++ function)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="arc/resource/timer.html#_CPPv418secure_timer_startK8uint32_tK8uint32_tK8uint32_t">secure_timer_start (C++ function)</a>
-</li>
-      <li><a href="arc/resource/timer.html#_CPPv417secure_timer_stopK8uint32_t">secure_timer_stop (C++ function)</a>
+      <li><a href="device/spi.html#_CPPv411spi_control">spi_control (C++ member)</a>
 </li>
       <li><a href="device/spi.html#c.SPI_DFS_DEFAULT">SPI_DFS_DEFAULT (C macro)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="device/spi.html#c.SPI_DUMMY_DEFAULT">SPI_DUMMY_DEFAULT (C macro)</a>
 </li>
+      <li><a href="device/spi.html#_CPPv48spi_open">spi_open (C++ member)</a>
+</li>
+      <li><a href="device/spi.html#_CPPv48spi_read">spi_read (C++ member)</a>
+</li>
       <li><a href="device/spi.html#c.SPI_SLAVE_NOT_SELECTED">SPI_SLAVE_NOT_SELECTED (C macro)</a>
+</li>
+      <li><a href="device/spi.html#_CPPv49spi_write">spi_write (C++ member)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -200,9 +201,10 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Synopsys
       <span class="lastupdated">
-        Last updated on Jan 14, 2020.
+        Last updated on Jul 31, 2020.
       </span>
 
     </p>
@@ -217,7 +219,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

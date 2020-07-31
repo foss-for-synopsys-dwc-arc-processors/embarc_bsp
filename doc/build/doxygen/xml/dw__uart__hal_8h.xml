@@ -4,13 +4,13 @@
     <compoundname>dw_uart_hal.h</compoundname>
     <includedby refid="dw__uart_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c</includedby>
     <invincdepgraph>
-      <node id="4379">
+      <node id="4384">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart_hal.h</label>
         <link refid="dw_uart_hal.h"/>
-        <childnode refid="4380" relation="include">
+        <childnode refid="4385" relation="include">
         </childnode>
       </node>
-      <node id="4380">
+      <node id="4385">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c</label>
         <link refid="dw__uart_8c"/>
       </node>

@@ -181,7 +181,7 @@
         <argsstring></argsstring>
         <name>dw_uart_0_ctrl</name>
         <initializer>= {                 
-	<ref refid="axs__hardware_8h_a65ef08c4e0597d2a5030cf7f4ed7f342_1a65ef08c4e0597d2a5030cf7f4ed7f342" kindref="member">REGBASE_UART0</ref>, <ref refid="axs__hardware_8h_ae0d32a42c9c56d61c403f9b6d121a1de_1ae0d32a42c9c56d61c403f9b6d121a1de" kindref="member">CLK_UART</ref>,  (<ref refid="axs__hardware_8h_a7eaa0e6e2363b846e661a206ec411d0f_1a7eaa0e6e2363b846e661a206ec411d0f" kindref="member">ICTL_INTNO_UART0</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>,
+	<ref refid="axs__hardware_8h_a65ef08c4e0597d2a5030cf7f4ed7f342_1a65ef08c4e0597d2a5030cf7f4ed7f342" kindref="member">REGBASE_UART0</ref>, <ref refid="axs__hardware_8h_ae0d32a42c9c56d61c403f9b6d121a1de_1ae0d32a42c9c56d61c403f9b6d121a1de" kindref="member">CLK_UART</ref>,  (<ref refid="axs__hardware_8h_a7eaa0e6e2363b846e661a206ec411d0f_1a7eaa0e6e2363b846e661a206ec411d0f" kindref="member">ICTL_INTNO_UART0</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="nsim__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>,
 	 32 ,  32 , 0
 }</initializer>
         <briefdescription>

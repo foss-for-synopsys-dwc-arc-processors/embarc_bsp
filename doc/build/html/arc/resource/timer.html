@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,28 +11,30 @@
   
 
   
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cache" href="cache.html" />
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> embARC
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> embARC
           
 
           
@@ -78,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -117,6 +119,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -155,7 +158,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="../index.html">ARC Processors</a> &raquo;</li>
         
@@ -206,118 +209,118 @@ clock cycles automatically.</p>
 <p>The 64-bit RTC does not generate any interrupts. This timer is used to count the clock cycles automatically. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">arc internal timers names</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_0">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gacc9ff9df4a9674a1ce9ba08fc4a4679e"></span><code class="sig-name descname">TIMER_0</code><a class="headerlink" href="#c.TIMER_0" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gacc9ff9df4a9674a1ce9ba08fc4a4679e"></span><code class="sig-name descname">TIMER_0</code><a class="headerlink" href="#c.TIMER_0" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>macro name for arc internal timer 0 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_1">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gac62c99c2a9289891c1b83052242cca49"></span><code class="sig-name descname">TIMER_1</code><a class="headerlink" href="#c.TIMER_1" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gac62c99c2a9289891c1b83052242cca49"></span><code class="sig-name descname">TIMER_1</code><a class="headerlink" href="#c.TIMER_1" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>macro name for arc internal timer 1 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_RTC">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga81a099568a1622e8050f588e3f934c4d"></span><code class="sig-name descname">TIMER_RTC</code><a class="headerlink" href="#c.TIMER_RTC" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga81a099568a1622e8050f588e3f934c4d"></span><code class="sig-name descname">TIMER_RTC</code><a class="headerlink" href="#c.TIMER_RTC" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>macro name for arc internal RTC </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.SECURE_TIMER_0">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gad2e35fb10b4dfd3616530b9975339803"></span><code class="sig-name descname">SECURE_TIMER_0</code><a class="headerlink" href="#c.SECURE_TIMER_0" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gad2e35fb10b4dfd3616530b9975339803"></span><code class="sig-name descname">SECURE_TIMER_0</code><a class="headerlink" href="#c.SECURE_TIMER_0" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>macro name for arc internal secure timer 0 </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.SECURE_TIMER_1">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga0d8b8775af92a5eea182f5bec22bedfb"></span><code class="sig-name descname">SECURE_TIMER_1</code><a class="headerlink" href="#c.SECURE_TIMER_1" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga0d8b8775af92a5eea182f5bec22bedfb"></span><code class="sig-name descname">SECURE_TIMER_1</code><a class="headerlink" href="#c.SECURE_TIMER_1" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>macro name for arc internal secure timer 1 </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">bit definition of RTC CTRL reg</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_RTC_ENABLE">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gaff747ffa08b8fde47bba1fda40474332"></span><code class="sig-name descname">TIMER_RTC_ENABLE</code><a class="headerlink" href="#c.TIMER_RTC_ENABLE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gaff747ffa08b8fde47bba1fda40474332"></span><code class="sig-name descname">TIMER_RTC_ENABLE</code><a class="headerlink" href="#c.TIMER_RTC_ENABLE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>enable RTC </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_RTC_CLEAR">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gab984a3b6054a19b5547fdefb3118bc89"></span><code class="sig-name descname">TIMER_RTC_CLEAR</code><a class="headerlink" href="#c.TIMER_RTC_CLEAR" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gab984a3b6054a19b5547fdefb3118bc89"></span><code class="sig-name descname">TIMER_RTC_CLEAR</code><a class="headerlink" href="#c.TIMER_RTC_CLEAR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_RTC_STATUS_A0">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gaf0586c343f581977c584b13a4f6eb3f7"></span><code class="sig-name descname">TIMER_RTC_STATUS_A0</code><a class="headerlink" href="#c.TIMER_RTC_STATUS_A0" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gaf0586c343f581977c584b13a4f6eb3f7"></span><code class="sig-name descname">TIMER_RTC_STATUS_A0</code><a class="headerlink" href="#c.TIMER_RTC_STATUS_A0" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>track bit of atomicity of reads of RTC </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_RTC_STATUS_A1">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga7147b16c109045e36f769daec4bdb3ed"></span><code class="sig-name descname">TIMER_RTC_STATUS_A1</code><a class="headerlink" href="#c.TIMER_RTC_STATUS_A1" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga7147b16c109045e36f769daec4bdb3ed"></span><code class="sig-name descname">TIMER_RTC_STATUS_A1</code><a class="headerlink" href="#c.TIMER_RTC_STATUS_A1" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>track bit of atomicity of reads of RTC </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">bit definition of timer CTRL reg</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_CTRL_IE">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga3d86ac7ea9125720c6117abaae649e1a"></span><code class="sig-name descname">TIMER_CTRL_IE</code><a class="headerlink" href="#c.TIMER_CTRL_IE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga3d86ac7ea9125720c6117abaae649e1a"></span><code class="sig-name descname">TIMER_CTRL_IE</code><a class="headerlink" href="#c.TIMER_CTRL_IE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Interrupt when count reaches limit </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_CTRL_NH">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga454b737cdb6a609764ef011654f471f2"></span><code class="sig-name descname">TIMER_CTRL_NH</code><a class="headerlink" href="#c.TIMER_CTRL_NH" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga454b737cdb6a609764ef011654f471f2"></span><code class="sig-name descname">TIMER_CTRL_NH</code><a class="headerlink" href="#c.TIMER_CTRL_NH" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Count only when CPU NOT halted </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_CTRL_W">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga989c3b36e74e1c5174485872be973489"></span><code class="sig-name descname">TIMER_CTRL_W</code><a class="headerlink" href="#c.TIMER_CTRL_W" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga989c3b36e74e1c5174485872be973489"></span><code class="sig-name descname">TIMER_CTRL_W</code><a class="headerlink" href="#c.TIMER_CTRL_W" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>watchdog enable </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.TIMER_CTRL_IP">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gac3be2b7827aa154d07f55d2497190173"></span><code class="sig-name descname">TIMER_CTRL_IP</code><a class="headerlink" href="#c.TIMER_CTRL_IP" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gac3be2b7827aa154d07f55d2497190173"></span><code class="sig-name descname">TIMER_CTRL_IP</code><a class="headerlink" href="#c.TIMER_CTRL_IP" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>interrupt pending </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Defines</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.INTNO_TIMER0">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga7b8512078a0c7ba91d2f2058ca8e66b6"></span><code class="sig-name descname">INTNO_TIMER0</code><a class="headerlink" href="#c.INTNO_TIMER0" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga7b8512078a0c7ba91d2f2058ca8e66b6"></span><code class="sig-name descname">INTNO_TIMER0</code><a class="headerlink" href="#c.INTNO_TIMER0" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.INTNO_TIMER1">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1gab79d104685fb9b67358a5534ea059dd9"></span><code class="sig-name descname">INTNO_TIMER1</code><a class="headerlink" href="#c.INTNO_TIMER1" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1gab79d104685fb9b67358a5534ea059dd9"></span><code class="sig-name descname">INTNO_TIMER1</code><a class="headerlink" href="#c.INTNO_TIMER1" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.INTNO_SECURE_TIMER0">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga1b6b40e3f0ebe066e905bd8f172ab4c6"></span><code class="sig-name descname">INTNO_SECURE_TIMER0</code><a class="headerlink" href="#c.INTNO_SECURE_TIMER0" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga1b6b40e3f0ebe066e905bd8f172ab4c6"></span><code class="sig-name descname">INTNO_SECURE_TIMER0</code><a class="headerlink" href="#c.INTNO_SECURE_TIMER0" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.INTNO_SECURE_TIMER1">
-<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga6931c1288639bbf0568139926abecbdc"></span><code class="sig-name descname">INTNO_SECURE_TIMER1</code><a class="headerlink" href="#c.INTNO_SECURE_TIMER1" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__MISC__TIMER_1ga6931c1288639bbf0568139926abecbdc"></span><code class="sig-name descname">INTNO_SECURE_TIMER1</code><a class="headerlink" href="#c.INTNO_SECURE_TIMER1" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
-<dt id="_CPPv413timer_presentK8uint32_t">
-<span id="_CPPv313timer_presentK8uint32_t"></span><span id="_CPPv213timer_presentK8uint32_t"></span><span id="timer_present__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga4e1c7f5b50bb6c2066d9536aa82c86e7"></span>int32_t <code class="sig-name descname">timer_present</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413timer_presentK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv417arc_timer_presentK8uint32_t">
+<span id="_CPPv317arc_timer_presentK8uint32_t"></span><span id="_CPPv217arc_timer_presentK8uint32_t"></span><span id="arc_timer_present__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga932c45dfc9a9503c778ef586fccade99"></span>int32_t <code class="sig-name descname">arc_timer_present</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417arc_timer_presentK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Check whether the specific timer present. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>1 present, 0 not present </p>
@@ -330,9 +333,9 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv411timer_startK8uint32_tK8uint32_tK8uint32_t">
-<span id="_CPPv311timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="_CPPv211timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="timer_start__uint32_tC.uint32_tC.uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga6abd8670e2fcdeb2a95954064cd1f91e"></span>int32_t <code class="sig-name descname">timer_start</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, <em class="property">const</em> uint32_t <em>mode</em>, <em class="property">const</em> uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411timer_startK8uint32_tK8uint32_tK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv415arc_timer_startK8uint32_tK8uint32_tK8uint32_t">
+<span id="_CPPv315arc_timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="_CPPv215arc_timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="arc_timer_start__uint32_tC.uint32_tC.uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga4ca591bc3b7a83e307437f9b16d387c0"></span>int32_t <code class="sig-name descname">arc_timer_start</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, <em class="property">const</em> uint32_t <em>mode</em>, <em class="property">const</em> uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415arc_timer_startK8uint32_tK8uint32_tK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Start a timer. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 success, -1 failure </p>
@@ -347,9 +350,9 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv410timer_stopK8uint32_t">
-<span id="_CPPv310timer_stopK8uint32_t"></span><span id="_CPPv210timer_stopK8uint32_t"></span><span id="timer_stop__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga226cf3c78e50cb364d4e2b7b81b87b45"></span>int32_t <code class="sig-name descname">timer_stop</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410timer_stopK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv414arc_timer_stopK8uint32_t">
+<span id="_CPPv314arc_timer_stopK8uint32_t"></span><span id="_CPPv214arc_timer_stopK8uint32_t"></span><span id="arc_timer_stop__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga8ded41aa619120071c9742eaf9f50f31"></span>int32_t <code class="sig-name descname">arc_timer_stop</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414arc_timer_stopK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Stop timer. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 success, -1 failure </p>
@@ -362,9 +365,9 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv413timer_currentK8uint32_tPv">
-<span id="_CPPv313timer_currentK8uint32_tPv"></span><span id="_CPPv213timer_currentK8uint32_tPv"></span><span id="timer_current__uint32_tC.voidP"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gaa622d918484c0e2e615a10c850bebabf"></span>int32_t <code class="sig-name descname">timer_current</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413timer_currentK8uint32_tPv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv417arc_timer_currentK8uint32_tPv">
+<span id="_CPPv317arc_timer_currentK8uint32_tPv"></span><span id="_CPPv217arc_timer_currentK8uint32_tPv"></span><span id="arc_timer_current__uint32_tC.voidP"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga651d9dfeffc650c2575542eb21b4cefb"></span>int32_t <code class="sig-name descname">arc_timer_current</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417arc_timer_currentK8uint32_tPv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get timer current tick. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 success, -1 failure </p>
@@ -378,9 +381,9 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv415timer_int_clearK8uint32_t">
-<span id="_CPPv315timer_int_clearK8uint32_t"></span><span id="_CPPv215timer_int_clearK8uint32_t"></span><span id="timer_int_clear__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga04189c0ae851819a2b9bcb8f7e1c504a"></span>int32_t <code class="sig-name descname">timer_int_clear</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415timer_int_clearK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv419arc_timer_int_clearK8uint32_t">
+<span id="_CPPv319arc_timer_int_clearK8uint32_t"></span><span id="_CPPv219arc_timer_int_clearK8uint32_t"></span><span id="arc_timer_int_clear__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gaa491d0f301accab4ef12ef453b848777"></span>int32_t <code class="sig-name descname">arc_timer_int_clear</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419arc_timer_int_clearK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the interrupt pending bit of timer. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>0 success, -1 failure </p>
@@ -393,13 +396,13 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv410timer_initv">
-<span id="_CPPv310timer_initv"></span><span id="_CPPv210timer_initv"></span><span id="timer_init__void"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga7b8ab79df77b57475a5494f5f81c3bd9"></span>void <code class="sig-name descname">timer_init</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410timer_initv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv413arc_timer_intv">
+<span id="_CPPv313arc_timer_intv"></span><span id="_CPPv213arc_timer_intv"></span><span id="arc_timer_int__void"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gaa0e1906f16ad5209a07f835a04f20a93"></span>void <code class="sig-name descname">arc_timer_int</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413arc_timer_intv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Initialize internal timer. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv412arc_delay_us8uint32_t">
 <span id="_CPPv312arc_delay_us8uint32_t"></span><span id="_CPPv212arc_delay_us8uint32_t"></span><span id="arc_delay_us__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gad4ac8705a2215c7fd70fa654b3d6ec85"></span>void <code class="sig-name descname">arc_delay_us</code><span class="sig-paren">(</span>uint32_t <em>usecs</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412arc_delay_us8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Function for delaying execution for number of microseconds. </p>
@@ -412,9 +415,9 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv421timer_calibrate_delay8uint32_t">
-<span id="_CPPv321timer_calibrate_delay8uint32_t"></span><span id="_CPPv221timer_calibrate_delay8uint32_t"></span><span id="timer_calibrate_delay__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga5b2e1f2917dad297e9f0cd01c36c1075"></span>uint64_t <code class="sig-name descname">timer_calibrate_delay</code><span class="sig-paren">(</span>uint32_t <em>cpu_clock</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421timer_calibrate_delay8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv425arc_timer_calibrate_delay8uint32_t">
+<span id="_CPPv325arc_timer_calibrate_delay8uint32_t"></span><span id="_CPPv225arc_timer_calibrate_delay8uint32_t"></span><span id="arc_timer_calibrate_delay__uint32_t"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga6238e55ff583a56101118cedf32edb40"></span>uint64_t <code class="sig-name descname">arc_timer_calibrate_delay</code><span class="sig-paren">(</span>uint32_t <em>cpu_clock</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425arc_timer_calibrate_delay8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get calibration values for a given cpu clock source. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>loops_per_jiffy Calibration value </p>
@@ -427,34 +430,34 @@ clock cycles automatically.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420secure_timer_presentK8uint32_t">
-<span id="_CPPv320secure_timer_presentK8uint32_t"></span><span id="_CPPv220secure_timer_presentK8uint32_t"></span><span id="secure_timer_present__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gabd869c3fdf3529ec51c31d7824b3c22e"></span>int32_t <code class="sig-name descname">secure_timer_present</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420secure_timer_presentK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv424arc_secure_timer_presentK8uint32_t">
+<span id="_CPPv324arc_secure_timer_presentK8uint32_t"></span><span id="_CPPv224arc_secure_timer_presentK8uint32_t"></span><span id="arc_secure_timer_present__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga536835aeda3e7da6ee05d778c807f9bd"></span>int32_t <code class="sig-name descname">arc_secure_timer_present</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424arc_secure_timer_presentK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv418secure_timer_startK8uint32_tK8uint32_tK8uint32_t">
-<span id="_CPPv318secure_timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="_CPPv218secure_timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="secure_timer_start__uint32_tC.uint32_tC.uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga44648e9bf965305b509a1169761c02ab"></span>int32_t <code class="sig-name descname">secure_timer_start</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, <em class="property">const</em> uint32_t <em>mode</em>, <em class="property">const</em> uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418secure_timer_startK8uint32_tK8uint32_tK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv422arc_secure_timer_startK8uint32_tK8uint32_tK8uint32_t">
+<span id="_CPPv322arc_secure_timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="_CPPv222arc_secure_timer_startK8uint32_tK8uint32_tK8uint32_t"></span><span id="arc_secure_timer_start__uint32_tC.uint32_tC.uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga2784575f546b66f79f2066f0add7d1e2"></span>int32_t <code class="sig-name descname">arc_secure_timer_start</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, <em class="property">const</em> uint32_t <em>mode</em>, <em class="property">const</em> uint32_t <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422arc_secure_timer_startK8uint32_tK8uint32_tK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv417secure_timer_stopK8uint32_t">
-<span id="_CPPv317secure_timer_stopK8uint32_t"></span><span id="_CPPv217secure_timer_stopK8uint32_t"></span><span id="secure_timer_stop__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga017ee704eafa9077ed6c4d82c418db09"></span>int32_t <code class="sig-name descname">secure_timer_stop</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417secure_timer_stopK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv421arc_secure_timer_stopK8uint32_t">
+<span id="_CPPv321arc_secure_timer_stopK8uint32_t"></span><span id="_CPPv221arc_secure_timer_stopK8uint32_t"></span><span id="arc_secure_timer_stop__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga70fffef420129e48bd9926c9e3478dc3"></span>int32_t <code class="sig-name descname">arc_secure_timer_stop</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421arc_secure_timer_stopK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420secure_timer_currentK8uint32_tPv">
-<span id="_CPPv320secure_timer_currentK8uint32_tPv"></span><span id="_CPPv220secure_timer_currentK8uint32_tPv"></span><span id="secure_timer_current__uint32_tC.voidP"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gaab2aa4baf8219ebb86c9aad1148b0523"></span>int32_t <code class="sig-name descname">secure_timer_current</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420secure_timer_currentK8uint32_tPv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv424arc_secure_timer_currentK8uint32_tPv">
+<span id="_CPPv324arc_secure_timer_currentK8uint32_tPv"></span><span id="_CPPv224arc_secure_timer_currentK8uint32_tPv"></span><span id="arc_secure_timer_current__uint32_tC.voidP"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gab95d948c51603693067f1c53d527864e"></span>int32_t <code class="sig-name descname">arc_secure_timer_current</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em>, void *<em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424arc_secure_timer_currentK8uint32_tPv" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv422secure_timer_int_clearK8uint32_t">
-<span id="_CPPv322secure_timer_int_clearK8uint32_t"></span><span id="_CPPv222secure_timer_int_clearK8uint32_t"></span><span id="secure_timer_int_clear__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga517e9a555515b5c73549fb3703d7fed0"></span>int32_t <code class="sig-name descname">secure_timer_int_clear</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422secure_timer_int_clearK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv426arc_secure_timer_int_clearK8uint32_t">
+<span id="_CPPv326arc_secure_timer_int_clearK8uint32_t"></span><span id="_CPPv226arc_secure_timer_int_clearK8uint32_t"></span><span id="arc_secure_timer_int_clear__uint32_tC"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gaa53a312d8df304d1175058f5ff372d33"></span>int32_t <code class="sig-name descname">arc_secure_timer_int_clear</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>no</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426arc_secure_timer_int_clearK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="_CPPv417secure_timer_initv">
-<span id="_CPPv317secure_timer_initv"></span><span id="_CPPv217secure_timer_initv"></span><span id="secure_timer_init__void"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1gaf453c9883df6ab97ef7c50cfb7a555f3"></span>void <code class="sig-name descname">secure_timer_init</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417secure_timer_initv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt id="_CPPv421arc_secure_timer_initv">
+<span id="_CPPv321arc_secure_timer_initv"></span><span id="_CPPv221arc_secure_timer_initv"></span><span id="arc_secure_timer_init__void"></span><span class="target" id="group__ARC__HAL__MISC__TIMER_1ga1c5d1a5a6a7c937f3df2c9879bd289d4"></span>void <code class="sig-name descname">arc_secure_timer_init</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421arc_secure_timer_initv" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -474,9 +477,10 @@ clock cycles automatically.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Synopsys
       <span class="lastupdated">
-        Last updated on Jan 14, 2020.
+        Last updated on Jul 31, 2020.
       </span>
 
     </p>
@@ -491,7 +495,6 @@ clock cycles automatically.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

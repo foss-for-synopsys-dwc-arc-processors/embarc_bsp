@@ -16,22 +16,12 @@
     <includes refid="embARC__debug_8h" local="yes">embARC_debug.h</includes>
     <includes refid="embARC_8h" local="yes">embARC.h</includes>
     <incdepgraph>
-      <node id="5442">
+      <node id="5447">
         <label>sys/stat.h</label>
       </node>
-      <node id="5432">
+      <node id="5437">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/clib/embARC_syscalls.c</label>
         <link refid="embARC_syscalls.c"/>
-        <childnode refid="5433" relation="include">
-        </childnode>
-        <childnode refid="5434" relation="include">
-        </childnode>
-        <childnode refid="5435" relation="include">
-        </childnode>
-        <childnode refid="5436" relation="include">
-        </childnode>
-        <childnode refid="5437" relation="include">
-        </childnode>
         <childnode refid="5438" relation="include">
         </childnode>
         <childnode refid="5439" relation="include">
@@ -48,20 +38,8 @@
         </childnode>
         <childnode refid="5445" relation="include">
         </childnode>
-      </node>
-      <node id="5443">
-        <label>clib/embARC_syscalls.h</label>
-        <link refid="embARC__syscalls_8h"/>
-      </node>
-      <node id="5450">
-        <label>stdbool.h</label>
-      </node>
-      <node id="5434">
-        <label>stdarg.h</label>
-      </node>
-      <node id="5446">
-        <label>embARC_toolchain.h</label>
-        <link refid="embARC__toolchain_8h"/>
+        <childnode refid="5446" relation="include">
+        </childnode>
         <childnode refid="5447" relation="include">
         </childnode>
         <childnode refid="5448" relation="include">
@@ -71,109 +49,131 @@
         <childnode refid="5450" relation="include">
         </childnode>
       </node>
-      <node id="5447">
-        <label>stdint.h</label>
-      </node>
-      <node id="5436">
-        <label>stdlib.h</label>
-      </node>
-      <node id="5451">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="5447" relation="include">
-        </childnode>
-        <childnode refid="5452" relation="include">
-        </childnode>
-      </node>
-      <node id="5433">
-        <label>errno.h</label>
-      </node>
-      <node id="5438">
-        <label>fcntl.h</label>
-      </node>
-      <node id="5458">
-        <label>board.h</label>
-        <link refid="board_8h"/>
-      </node>
-      <node id="5449">
-        <label>stddef.h</label>
-      </node>
-      <node id="5453">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="5454" relation="include">
-        </childnode>
-      </node>
-      <node id="5457">
-        <label>arc/arc_mp.h</label>
-        <link refid="arc__mp_8h"/>
-        <childnode refid="5452" relation="include">
-        </childnode>
-      </node>
       <node id="5448">
-        <label>limits.h</label>
-      </node>
-      <node id="5454">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
+        <label>clib/embARC_syscalls.h</label>
+        <link refid="embARC__syscalls_8h"/>
       </node>
       <node id="5455">
-        <label>arc/arc_timer.h</label>
-        <link refid="arc__timer_8h"/>
-        <childnode refid="5452" relation="include">
-        </childnode>
-      </node>
-      <node id="5444">
-        <label>embARC_debug.h</label>
-        <link refid="embARC__debug_8h"/>
-        <childnode refid="5435" relation="include">
-        </childnode>
-      </node>
-      <node id="5437">
-        <label>string.h</label>
+        <label>stdbool.h</label>
       </node>
       <node id="5439">
-        <label>time.h</label>
+        <label>stdarg.h</label>
       </node>
-      <node id="5441">
-        <label>sys/time.h</label>
-      </node>
-      <node id="5456">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
+      <node id="5451">
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
         <childnode refid="5452" relation="include">
-        </childnode>
-      </node>
-      <node id="5440">
-        <label>ctype.h</label>
-      </node>
-      <node id="5452">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="5446" relation="include">
         </childnode>
         <childnode refid="5453" relation="include">
         </childnode>
-      </node>
-      <node id="5445">
-        <label>embARC.h</label>
-        <link refid="embARC_8h"/>
-        <childnode refid="5446" relation="include">
-        </childnode>
-        <childnode refid="5451" relation="include">
-        </childnode>
-        <childnode refid="5452" relation="include">
+        <childnode refid="5454" relation="include">
         </childnode>
         <childnode refid="5455" relation="include">
+        </childnode>
+      </node>
+      <node id="5452">
+        <label>stdint.h</label>
+      </node>
+      <node id="5441">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5456">
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="5452" relation="include">
+        </childnode>
+        <childnode refid="5457" relation="include">
+        </childnode>
+      </node>
+      <node id="5438">
+        <label>errno.h</label>
+      </node>
+      <node id="5443">
+        <label>fcntl.h</label>
+      </node>
+      <node id="5463">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="5454">
+        <label>stddef.h</label>
+      </node>
+      <node id="5458">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="5459" relation="include">
+        </childnode>
+      </node>
+      <node id="5462">
+        <label>arc/arc_mp.h</label>
+        <link refid="arc__mp_8h"/>
+        <childnode refid="5457" relation="include">
+        </childnode>
+      </node>
+      <node id="5453">
+        <label>limits.h</label>
+      </node>
+      <node id="5459">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="5460">
+        <label>arc/arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="5457" relation="include">
+        </childnode>
+      </node>
+      <node id="5449">
+        <label>embARC_debug.h</label>
+        <link refid="embARC__debug_8h"/>
+        <childnode refid="5440" relation="include">
+        </childnode>
+      </node>
+      <node id="5442">
+        <label>string.h</label>
+      </node>
+      <node id="5444">
+        <label>time.h</label>
+      </node>
+      <node id="5446">
+        <label>sys/time.h</label>
+      </node>
+      <node id="5461">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="5457" relation="include">
+        </childnode>
+      </node>
+      <node id="5445">
+        <label>ctype.h</label>
+      </node>
+      <node id="5457">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="5451" relation="include">
+        </childnode>
+        <childnode refid="5458" relation="include">
+        </childnode>
+      </node>
+      <node id="5450">
+        <label>embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="5451" relation="include">
         </childnode>
         <childnode refid="5456" relation="include">
         </childnode>
         <childnode refid="5457" relation="include">
         </childnode>
-        <childnode refid="5458" relation="include">
+        <childnode refid="5460" relation="include">
+        </childnode>
+        <childnode refid="5461" relation="include">
+        </childnode>
+        <childnode refid="5462" relation="include">
+        </childnode>
+        <childnode refid="5463" relation="include">
         </childnode>
       </node>
-      <node id="5435">
+      <node id="5440">
         <label>stdio.h</label>
       </node>
     </incdepgraph>

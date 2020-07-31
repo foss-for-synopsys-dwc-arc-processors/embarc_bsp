@@ -158,11 +158,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga932c45dfc9a9503c778ef586fccade99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_present</definition>
+        <definition>int32_t arc_timer_present</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_present</name>
+        <name>arc_timer_present</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -184,11 +184,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="50" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga6abd8670e2fcdeb2a95954064cd1f91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga4ca591bc3b7a83e307437f9b16d387c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_start</definition>
+        <definition>int32_t arc_timer_start</definition>
         <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
-        <name>timer_start</name>
+        <name>arc_timer_start</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -232,11 +232,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="80" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga226cf3c78e50cb364d4e2b7b81b87b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga8ded41aa619120071c9742eaf9f50f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_stop</definition>
+        <definition>int32_t arc_timer_stop</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_stop</name>
+        <name>arc_timer_stop</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -258,11 +258,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="114" bodyend="138"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gaa622d918484c0e2e615a10c850bebabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga651d9dfeffc650c2575542eb21b4cefb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_current</definition>
+        <definition>int32_t arc_timer_current</definition>
         <argsstring>(const uint32_t no, void *val)</argsstring>
-        <name>timer_current</name>
+        <name>arc_timer_current</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -295,11 +295,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="147" bodyend="167"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga04189c0ae851819a2b9bcb8f7e1c504a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gaa491d0f301accab4ef12ef453b848777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_int_clear</definition>
+        <definition>int32_t arc_timer_int_clear</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_int_clear</name>
+        <name>arc_timer_int_clear</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -321,11 +321,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="108" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="175" bodyend="194"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga7b8ab79df77b57475a5494f5f81c3bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gaa0e1906f16ad5209a07f835a04f20a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void timer_init</definition>
+        <definition>void arc_timer_int</definition>
         <argsstring>(void)</argsstring>
-        <name>timer_init</name>
+        <name>arc_timer_int</name>
         <param>
           <type>void</type>
         </param>
@@ -362,11 +362,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="374" bodyend="391"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga5b2e1f2917dad297e9f0cd01c36c1075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga6238e55ff583a56101118cedf32edb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t timer_calibrate_delay</definition>
+        <definition>uint64_t arc_timer_calibrate_delay</definition>
         <argsstring>(uint32_t cpu_clock)</argsstring>
-        <name>timer_calibrate_delay</name>
+        <name>arc_timer_calibrate_delay</name>
         <param>
           <type>uint32_t</type>
           <declname>cpu_clock</declname>
@@ -388,11 +388,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="399" bodyend="447"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gabd869c3fdf3529ec51c31d7824b3c22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga536835aeda3e7da6ee05d778c807f9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_present</definition>
+        <definition>int32_t arc_secure_timer_present</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>secure_timer_present</name>
+        <name>arc_secure_timer_present</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -405,11 +405,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="112" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga44648e9bf965305b509a1169761c02ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga2784575f546b66f79f2066f0add7d1e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_start</definition>
+        <definition>int32_t arc_secure_timer_start</definition>
         <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
-        <name>secure_timer_start</name>
+        <name>arc_secure_timer_start</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -430,11 +430,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="113" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga017ee704eafa9077ed6c4d82c418db09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga70fffef420129e48bd9926c9e3478dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_stop</definition>
+        <definition>int32_t arc_secure_timer_stop</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>secure_timer_stop</name>
+        <name>arc_secure_timer_stop</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -447,11 +447,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="114" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gaab2aa4baf8219ebb86c9aad1148b0523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gab95d948c51603693067f1c53d527864e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_current</definition>
+        <definition>int32_t arc_secure_timer_current</definition>
         <argsstring>(const uint32_t no, void *val)</argsstring>
-        <name>secure_timer_current</name>
+        <name>arc_secure_timer_current</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -468,11 +468,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="115" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga517e9a555515b5c73549fb3703d7fed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gaa53a312d8df304d1175058f5ff372d33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_int_clear</definition>
+        <definition>int32_t arc_secure_timer_int_clear</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>secure_timer_int_clear</name>
+        <name>arc_secure_timer_int_clear</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -485,11 +485,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="116" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1gaf453c9883df6ab97ef7c50cfb7a555f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_1ga1c5d1a5a6a7c937f3df2c9879bd289d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void secure_timer_init</definition>
+        <definition>void arc_secure_timer_init</definition>
         <argsstring>(void)</argsstring>
-        <name>secure_timer_init</name>
+        <name>arc_secure_timer_init</name>
         <param>
           <type>void</type>
         </param>

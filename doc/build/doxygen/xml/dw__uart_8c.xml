@@ -9,103 +9,103 @@
     <includes refid="dw__uart__hal_8h" local="yes">device/designware/dw_uart_hal.h</includes>
     <includes refid="dw__uart_8h" local="yes">device/designware/dw_uart.h</includes>
     <incdepgraph>
-      <node id="3119">
+      <node id="3121">
         <label>stdbool.h</label>
       </node>
-      <node id="3115">
+      <node id="3117">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3116" relation="include">
-        </childnode>
-        <childnode refid="3117" relation="include">
-        </childnode>
         <childnode refid="3118" relation="include">
         </childnode>
         <childnode refid="3119" relation="include">
         </childnode>
-      </node>
-      <node id="3116">
-        <label>stdint.h</label>
-      </node>
-      <node id="3120">
-        <label>embARC_error.h</label>
-        <link refid="embARC__error_8h"/>
-        <childnode refid="3116" relation="include">
+        <childnode refid="3120" relation="include">
         </childnode>
         <childnode refid="3121" relation="include">
         </childnode>
       </node>
       <node id="3118">
-        <label>stddef.h</label>
+        <label>stdint.h</label>
       </node>
       <node id="3122">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
+        <label>embARC_error.h</label>
+        <link refid="embARC__error_8h"/>
+        <childnode refid="3118" relation="include">
+        </childnode>
         <childnode refid="3123" relation="include">
         </childnode>
       </node>
-      <node id="3117">
+      <node id="3120">
+        <label>stddef.h</label>
+      </node>
+      <node id="3124">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3125" relation="include">
+        </childnode>
+      </node>
+      <node id="3119">
         <label>limits.h</label>
       </node>
-      <node id="3123">
+      <node id="3125">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="3127">
+      <node id="3129">
         <label>device/ip_hal/dev_uart.h</label>
         <link refid="dev__uart_8h"/>
-        <childnode refid="3128" relation="include">
+        <childnode refid="3130" relation="include">
         </childnode>
       </node>
-      <node id="3114">
+      <node id="3116">
         <label>string.h</label>
       </node>
-      <node id="3128">
+      <node id="3130">
         <label>device/dev_common.h</label>
         <link refid="dev__common_8h"/>
-        <childnode refid="3115" relation="include">
+        <childnode refid="3117" relation="include">
+        </childnode>
+      </node>
+      <node id="3128">
+        <label>device/designware/dw_uart.h</label>
+        <link refid="dw__uart_8h"/>
+        <childnode refid="3129" relation="include">
+        </childnode>
+        <childnode refid="3126" relation="include">
         </childnode>
       </node>
       <node id="3126">
-        <label>device/designware/dw_uart.h</label>
-        <link refid="dw__uart_8h"/>
-        <childnode refid="3127" relation="include">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3123" relation="include">
+        </childnode>
+      </node>
+      <node id="3123">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3117" relation="include">
         </childnode>
         <childnode refid="3124" relation="include">
         </childnode>
       </node>
-      <node id="3124">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3121" relation="include">
-        </childnode>
-      </node>
-      <node id="3121">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3115" relation="include">
-        </childnode>
-        <childnode refid="3122" relation="include">
-        </childnode>
-      </node>
-      <node id="3125">
+      <node id="3127">
         <label>device/designware/dw_uart_hal.h</label>
         <link refid="dw__uart__hal_8h"/>
       </node>
-      <node id="3113">
+      <node id="3115">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c</label>
         <link refid="dw_uart.c"/>
-        <childnode refid="3114" relation="include">
+        <childnode refid="3116" relation="include">
         </childnode>
-        <childnode refid="3115" relation="include">
+        <childnode refid="3117" relation="include">
         </childnode>
-        <childnode refid="3120" relation="include">
-        </childnode>
-        <childnode refid="3124" relation="include">
-        </childnode>
-        <childnode refid="3125" relation="include">
+        <childnode refid="3122" relation="include">
         </childnode>
         <childnode refid="3126" relation="include">
+        </childnode>
+        <childnode refid="3127" relation="include">
+        </childnode>
+        <childnode refid="3128" relation="include">
         </childnode>
       </node>
     </incdepgraph>

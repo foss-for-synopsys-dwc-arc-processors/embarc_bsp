@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,28 +11,30 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="I2C HAL" href="i2c.html" />
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> embARC
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> embARC
           
 
           
@@ -78,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -120,6 +122,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -158,7 +161,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="device.html">Devices</a> &raquo;</li>
         
@@ -192,45 +195,45 @@ driver to implement.</p>
 <p>This structure will be used in user implemented code, which was called Device Driver Implement Layer for gpio to use in implementation code. Application developer should use the GPIO API provided here to access to GPIO devices. BSP developer should follow the API definition to implement GPIO device drivers. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Defines</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_GPIO_INFO_SET_EXTRA_OBJECT">
-<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaec3eaf5c7fa6d44a27e58e65a864d8ac"></span><code class="sig-name descname">DEV_GPIO_INFO_SET_EXTRA_OBJECT</code><span class="sig-paren">(</span>gpio_info_ptr, extra_info<span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_GPIO_INFO_SET_EXTRA_OBJECT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaec3eaf5c7fa6d44a27e58e65a864d8ac"></span><code class="sig-name descname">DEV_GPIO_INFO_SET_EXTRA_OBJECT</code><span class="sig-paren">(</span><em>gpio_info_ptr</em>, <em>extra_info</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_GPIO_INFO_SET_EXTRA_OBJECT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set extra information pointer of gpio info </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_GPIO_INFO_GET_EXTRA_OBJECT">
-<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaf04d0e5061e455cf4a79b2eea7d26b4f"></span><code class="sig-name descname">DEV_GPIO_INFO_GET_EXTRA_OBJECT</code><span class="sig-paren">(</span>gpio_info_ptr<span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_GPIO_INFO_GET_EXTRA_OBJECT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaf04d0e5061e455cf4a79b2eea7d26b4f"></span><code class="sig-name descname">DEV_GPIO_INFO_GET_EXTRA_OBJECT</code><span class="sig-paren">(</span><em>gpio_info_ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_GPIO_INFO_GET_EXTRA_OBJECT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get extra information pointer of gpio info </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_GPIO_BITS_MTHD_POLL">
-<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaed07d1ee12aecd4634df70aeed4e9678"></span><code class="sig-name descname">DEV_GPIO_BITS_MTHD_POLL</code><a class="headerlink" href="#c.DEV_GPIO_BITS_MTHD_POLL" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaed07d1ee12aecd4634df70aeed4e9678"></span><code class="sig-name descname">DEV_GPIO_BITS_MTHD_POLL</code><a class="headerlink" href="#c.DEV_GPIO_BITS_MTHD_POLL" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Method of all gpio bits set to poll </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_GPIO_BITS_MTHD_INTERRUPT">
-<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga88cc519090f41d765e90e0abf5a98956"></span><code class="sig-name descname">DEV_GPIO_BITS_MTHD_INTERRUPT</code><a class="headerlink" href="#c.DEV_GPIO_BITS_MTHD_INTERRUPT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga88cc519090f41d765e90e0abf5a98956"></span><code class="sig-name descname">DEV_GPIO_BITS_MTHD_INTERRUPT</code><a class="headerlink" href="#c.DEV_GPIO_BITS_MTHD_INTERRUPT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Method of all gpio bits set to interrupt </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_GPIO_BITS_MTHD_DEFAULT">
-<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga38f184480198a34d80ea26240160facb"></span><code class="sig-name descname">DEV_GPIO_BITS_MTHD_DEFAULT</code><a class="headerlink" href="#c.DEV_GPIO_BITS_MTHD_DEFAULT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga38f184480198a34d80ea26240160facb"></span><code class="sig-name descname">DEV_GPIO_BITS_MTHD_DEFAULT</code><a class="headerlink" href="#c.DEV_GPIO_BITS_MTHD_DEFAULT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Default method of all gpio bits should be poll for first open </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv417DEV_GPIO_INFO_PTR">
 <span id="_CPPv317DEV_GPIO_INFO_PTR"></span><span id="_CPPv217DEV_GPIO_INFO_PTR"></span><span id="DEV_GPIO_INFO_PTR"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga4f94bbcb23c91fbdca62680bd3ef50c7"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv413DEV_GPIO_INFO" title="DEV_GPIO_INFO">DEV_GPIO_INFO</a> *<code class="sig-name descname">DEV_GPIO_INFO_PTR</code><a class="headerlink" href="#_CPPv417DEV_GPIO_INFO_PTR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv412DEV_GPIO_PTR">
 <span id="_CPPv312DEV_GPIO_PTR"></span><span id="_CPPv212DEV_GPIO_PTR"></span><span id="DEV_GPIO_PTR"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gab68cbad48685a69f71b32420fe9b3217"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv48DEV_GPIO" title="DEV_GPIO">DEV_GPIO</a> *<code class="sig-name descname">DEV_GPIO_PTR</code><a class="headerlink" href="#_CPPv412DEV_GPIO_PTR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
@@ -238,9 +241,9 @@ driver to implement.</p>
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Variables</p>
-<dl class="member">
-<dt id="_CPPv4N8DEV_GPIO9gpio_openE">
-<span id="_CPPv3N8DEV_GPIO9gpio_openE"></span><span id="_CPPv2N8DEV_GPIO9gpio_openE"></span><span id="DEV_GPIO::gpio_open__int32_tP"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga3fe32dd40010942a0355849d67d6a8f5"></span>int32_t *<code class="sig-name descname">gpio_open</code><a class="headerlink" href="#_CPPv4N8DEV_GPIO9gpio_openE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv49gpio_open">
+<span id="_CPPv39gpio_open"></span><span id="_CPPv29gpio_open"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga3fe32dd40010942a0355849d67d6a8f5"></span>int32_t (*<code class="sig-name descname">gpio_open</code>)<span class="sig-paren">(</span>uint32_t dir<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49gpio_open" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>open gpio device with pre-defined gpio direction</p>
 <p>Open a gpio device with pre-defined io direction. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -259,9 +262,9 @@ driver to implement.</p>
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N8DEV_GPIO10gpio_closeE">
-<span id="_CPPv3N8DEV_GPIO10gpio_closeE"></span><span id="_CPPv2N8DEV_GPIO10gpio_closeE"></span><span id="DEV_GPIO::gpio_close__int32_tP"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gad7b48dd84b421b47f63a11a5928917d3"></span>int32_t *<code class="sig-name descname">gpio_close</code><a class="headerlink" href="#_CPPv4N8DEV_GPIO10gpio_closeE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv410gpio_close">
+<span id="_CPPv310gpio_close"></span><span id="_CPPv210gpio_close"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gad7b48dd84b421b47f63a11a5928917d3"></span>int32_t (*<code class="sig-name descname">gpio_close</code>)<span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410gpio_close" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>close gpio device</p>
 <p>Close a gpio device, just decrease the opn_cnt, if opn_cnt equals 0, then close the device <dl class="simple">
 <dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -274,9 +277,9 @@ driver to implement.</p>
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N8DEV_GPIO12gpio_controlE">
-<span id="_CPPv3N8DEV_GPIO12gpio_controlE"></span><span id="_CPPv2N8DEV_GPIO12gpio_controlE"></span><span id="DEV_GPIO::gpio_control__int32_tP"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaae02ea5fe11a646b8b929842d2ae7b78"></span>int32_t *<code class="sig-name descname">gpio_control</code><a class="headerlink" href="#_CPPv4N8DEV_GPIO12gpio_controlE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv412gpio_control">
+<span id="_CPPv312gpio_control"></span><span id="_CPPv212gpio_control"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaae02ea5fe11a646b8b929842d2ae7b78"></span>int32_t (*<code class="sig-name descname">gpio_control</code>)<span class="sig-paren">(</span>uint32_t ctrl_cmd, void *param<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412gpio_control" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>control gpio device</p>
 <p>Control an gpio device by ctrl_cmd, with passed param. you can control gpio device using predefined gpio control commands defined using DEV_SET_SYSCMD (which must be implemented by bsp developer), such as change masked gpio direction to input, and more. And you can also control gpio device using your own specified commands defined using DEV_SET_USRCMD, but these specified commands should be defined in your own gpio device driver implementation. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -298,9 +301,9 @@ driver to implement.</p>
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N8DEV_GPIO10gpio_writeE">
-<span id="_CPPv3N8DEV_GPIO10gpio_writeE"></span><span id="_CPPv2N8DEV_GPIO10gpio_writeE"></span><span id="DEV_GPIO::gpio_write__int32_tP"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaf23127d31dc74b0dfa9418a82fa4a46a"></span>int32_t *<code class="sig-name descname">gpio_write</code><a class="headerlink" href="#_CPPv4N8DEV_GPIO10gpio_writeE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv410gpio_write">
+<span id="_CPPv310gpio_write"></span><span id="_CPPv210gpio_write"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1gaf23127d31dc74b0dfa9418a82fa4a46a"></span>int32_t (*<code class="sig-name descname">gpio_write</code>)<span class="sig-paren">(</span>uint32_t val, uint32_t mask<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410gpio_write" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>write gpio device with val, only write the masked bits</p>
 <p>Write gpio with val, and only change the masked bits of gpio. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -318,9 +321,9 @@ driver to implement.</p>
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N8DEV_GPIO9gpio_readE">
-<span id="_CPPv3N8DEV_GPIO9gpio_readE"></span><span id="_CPPv2N8DEV_GPIO9gpio_readE"></span><span id="DEV_GPIO::gpio_read__int32_tP"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga9df311da3c23989aa28d2ea03aa282af"></span>int32_t *<code class="sig-name descname">gpio_read</code><a class="headerlink" href="#_CPPv4N8DEV_GPIO9gpio_readE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv49gpio_read">
+<span id="_CPPv39gpio_read"></span><span id="_CPPv29gpio_read"></span><span class="target" id="group__DEVICE__HAL__GPIO__DEVSTRUCT_1ga9df311da3c23989aa28d2ea03aa282af"></span>int32_t (*<code class="sig-name descname">gpio_read</code>)<span class="sig-paren">(</span>uint32_t *val, uint32_t mask<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49gpio_read" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>read gpio device val, only read the masked bits</p>
 <p>Read the masked gpio value <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -339,7 +342,7 @@ driver to implement.</p>
 </dd></dl>
 
 </div>
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv413DEV_GPIO_INFO">
 <span id="_CPPv313DEV_GPIO_INFO"></span><span id="_CPPv213DEV_GPIO_INFO"></span><span id="DEV_GPIO_INFO"></span><span class="target" id="structDEV__GPIO__INFO"></span><em class="property">struct </em><code class="sig-name descname">DEV_GPIO_INFO</code><a class="headerlink" href="#_CPPv413DEV_GPIO_INFO" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;dev_gpio.h&gt;</em><p>Gpio information struct definition. </p>
@@ -350,7 +353,7 @@ driver to implement.</p>
 </p>
 </dd></dl>
 
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv48DEV_GPIO">
 <span id="_CPPv38DEV_GPIO"></span><span id="_CPPv28DEV_GPIO"></span><span id="DEV_GPIO"></span><span class="target" id="structDEV__GPIO"></span><em class="property">struct </em><code class="sig-name descname">DEV_GPIO</code><a class="headerlink" href="#_CPPv48DEV_GPIO" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;dev_gpio.h&gt;</em><p>Definitions for gpio device interface. </p>
@@ -377,9 +380,10 @@ driver to implement.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Synopsys
       <span class="lastupdated">
-        Last updated on Jan 14, 2020.
+        Last updated on Jul 31, 2020.
       </span>
 
     </p>
@@ -394,7 +398,6 @@ driver to implement.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

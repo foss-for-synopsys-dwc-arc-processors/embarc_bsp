@@ -4,13 +4,13 @@
     <compoundname>creg_slave.h</compoundname>
     <includedby refid="creg__slave_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/creg/creg_slave.c</includedby>
     <invincdepgraph>
-      <node id="4943">
+      <node id="4948">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/creg_slave.h</label>
         <link refid="creg_slave.h"/>
-        <childnode refid="4944" relation="include">
+        <childnode refid="4949" relation="include">
         </childnode>
       </node>
-      <node id="4944">
+      <node id="4949">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/creg/creg_slave.c</label>
         <link refid="creg__slave_8c"/>
       </node>

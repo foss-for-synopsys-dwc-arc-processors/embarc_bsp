@@ -9,91 +9,91 @@
     <includes local="yes">io_config.h</includes>
     <includes local="yes">apexextensions.h</includes>
     <incdepgraph>
-      <node id="3201">
+      <node id="3203">
         <label>stdbool.h</label>
       </node>
-      <node id="3199">
+      <node id="3201">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3194" relation="include">
-        </childnode>
-        <childnode refid="3200" relation="include">
-        </childnode>
-        <childnode refid="3193" relation="include">
-        </childnode>
-        <childnode refid="3201" relation="include">
-        </childnode>
-      </node>
-      <node id="3194">
-        <label>stdint.h</label>
-      </node>
-      <node id="3192">
-        <label>stdlib.h</label>
-      </node>
-      <node id="3196">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="3197" relation="include">
-        </childnode>
-        <childnode refid="3198" relation="include">
-        </childnode>
-      </node>
-      <node id="3193">
-        <label>stddef.h</label>
-      </node>
-      <node id="3202">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="3203" relation="include">
-        </childnode>
-      </node>
-      <node id="3200">
-        <label>limits.h</label>
-      </node>
-      <node id="3203">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3204">
-        <label>io_config.h</label>
-      </node>
-      <node id="3195">
-        <label>device/subsystem/i2s_tx_master.h</label>
-        <link refid="i2s__tx__master_8h"/>
         <childnode refid="3196" relation="include">
-        </childnode>
-      </node>
-      <node id="3197">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3198" relation="include">
-        </childnode>
-      </node>
-      <node id="3198">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3199" relation="include">
         </childnode>
         <childnode refid="3202" relation="include">
         </childnode>
+        <childnode refid="3195" relation="include">
+        </childnode>
+        <childnode refid="3203" relation="include">
+        </childnode>
+      </node>
+      <node id="3196">
+        <label>stdint.h</label>
+      </node>
+      <node id="3194">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3198">
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
+        <childnode refid="3199" relation="include">
+        </childnode>
+        <childnode refid="3200" relation="include">
+        </childnode>
+      </node>
+      <node id="3195">
+        <label>stddef.h</label>
+      </node>
+      <node id="3204">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3202">
+        <label>limits.h</label>
       </node>
       <node id="3205">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3206">
+        <label>io_config.h</label>
+      </node>
+      <node id="3197">
+        <label>device/subsystem/i2s_tx_master.h</label>
+        <link refid="i2s__tx__master_8h"/>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3199">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3200" relation="include">
+        </childnode>
+      </node>
+      <node id="3200">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3201" relation="include">
+        </childnode>
+        <childnode refid="3204" relation="include">
+        </childnode>
+      </node>
+      <node id="3207">
         <label>apexextensions.h</label>
       </node>
-      <node id="3191">
+      <node id="3193">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/i2s/i2s_tx_master.c</label>
         <link refid="i2s_tx_master.c"/>
-        <childnode refid="3192" relation="include">
-        </childnode>
-        <childnode refid="3193" relation="include">
-        </childnode>
         <childnode refid="3194" relation="include">
         </childnode>
         <childnode refid="3195" relation="include">
         </childnode>
-        <childnode refid="3204" relation="include">
+        <childnode refid="3196" relation="include">
         </childnode>
-        <childnode refid="3205" relation="include">
+        <childnode refid="3197" relation="include">
+        </childnode>
+        <childnode refid="3206" relation="include">
+        </childnode>
+        <childnode refid="3207" relation="include">
         </childnode>
       </node>
     </incdepgraph>

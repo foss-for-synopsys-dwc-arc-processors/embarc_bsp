@@ -5,77 +5,77 @@
     <includes refid="ioctl_8h" local="yes">device/ip_hal/ioctl.h</includes>
     <includedby refid="i2c__slave_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/iic/i2c_slave.c</includedby>
     <incdepgraph>
-      <node id="4996">
+      <node id="5001">
         <label>stdbool.h</label>
       </node>
-      <node id="4992">
+      <node id="4997">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="4993" relation="include">
+        <childnode refid="4998" relation="include">
         </childnode>
-        <childnode refid="4994" relation="include">
+        <childnode refid="4999" relation="include">
         </childnode>
+        <childnode refid="5000" relation="include">
+        </childnode>
+        <childnode refid="5001" relation="include">
+        </childnode>
+      </node>
+      <node id="4998">
+        <label>stdint.h</label>
+      </node>
+      <node id="4994">
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
         <childnode refid="4995" relation="include">
         </childnode>
         <childnode refid="4996" relation="include">
         </childnode>
       </node>
       <node id="4993">
-        <label>stdint.h</label>
-      </node>
-      <node id="4989">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="4990" relation="include">
-        </childnode>
-        <childnode refid="4991" relation="include">
-        </childnode>
-      </node>
-      <node id="4988">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/i2c_slave.h</label>
         <link refid="i2c_slave.h"/>
-        <childnode refid="4989" relation="include">
+        <childnode refid="4994" relation="include">
         </childnode>
       </node>
-      <node id="4995">
+      <node id="5000">
         <label>stddef.h</label>
       </node>
-      <node id="4997">
+      <node id="5002">
         <label>arc/arc.h</label>
         <link refid="arc_8h"/>
-        <childnode refid="4998" relation="include">
+        <childnode refid="5003" relation="include">
         </childnode>
       </node>
-      <node id="4994">
+      <node id="4999">
         <label>limits.h</label>
       </node>
-      <node id="4998">
+      <node id="5003">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="4990">
+      <node id="4995">
         <label>arc/arc_exception.h</label>
         <link refid="arc__exception_8h"/>
-        <childnode refid="4991" relation="include">
+        <childnode refid="4996" relation="include">
         </childnode>
       </node>
-      <node id="4991">
+      <node id="4996">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="4992" relation="include">
-        </childnode>
         <childnode refid="4997" relation="include">
+        </childnode>
+        <childnode refid="5002" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4999">
+      <node id="5004">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/i2c_slave.h</label>
         <link refid="i2c_slave.h"/>
-        <childnode refid="5000" relation="include">
+        <childnode refid="5005" relation="include">
         </childnode>
       </node>
-      <node id="5000">
+      <node id="5005">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/iic/i2c_slave.c</label>
         <link refid="i2c__slave_8c"/>
       </node>

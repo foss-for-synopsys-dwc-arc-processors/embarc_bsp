@@ -10,99 +10,99 @@
     <includes local="yes">io_config.h</includes>
     <includes local="yes">apexextensions.h</includes>
     <incdepgraph>
-      <node id="3306">
+      <node id="3308">
         <label>stdbool.h</label>
       </node>
-      <node id="3304">
+      <node id="3306">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="3299" relation="include">
+        <childnode refid="3301" relation="include">
+        </childnode>
+        <childnode refid="3307" relation="include">
+        </childnode>
+        <childnode refid="3300" relation="include">
+        </childnode>
+        <childnode refid="3308" relation="include">
+        </childnode>
+      </node>
+      <node id="3301">
+        <label>stdint.h</label>
+      </node>
+      <node id="3299">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3303">
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
+        <childnode refid="3304" relation="include">
         </childnode>
         <childnode refid="3305" relation="include">
         </childnode>
-        <childnode refid="3298" relation="include">
-        </childnode>
-        <childnode refid="3306" relation="include">
+      </node>
+      <node id="3300">
+        <label>stddef.h</label>
+      </node>
+      <node id="3309">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3310" relation="include">
         </childnode>
       </node>
-      <node id="3299">
-        <label>stdint.h</label>
+      <node id="3307">
+        <label>limits.h</label>
       </node>
-      <node id="3297">
-        <label>stdlib.h</label>
+      <node id="3310">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="3301">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="3302" relation="include">
+      <node id="3311">
+        <label>device/subsystem/spi_priv.h</label>
+        <link refid="spi__priv_8h"/>
+        <childnode refid="3303" relation="include">
         </childnode>
+      </node>
+      <node id="3302">
+        <label>device/subsystem/spi_slave.h</label>
+        <link refid="spi__slave_8h"/>
         <childnode refid="3303" relation="include">
         </childnode>
       </node>
       <node id="3298">
-        <label>stddef.h</label>
-      </node>
-      <node id="3307">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="3308" relation="include">
-        </childnode>
-      </node>
-      <node id="3305">
-        <label>limits.h</label>
-      </node>
-      <node id="3308">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3309">
-        <label>device/subsystem/spi_priv.h</label>
-        <link refid="spi__priv_8h"/>
-        <childnode refid="3301" relation="include">
-        </childnode>
-      </node>
-      <node id="3300">
-        <label>device/subsystem/spi_slave.h</label>
-        <link refid="spi__slave_8h"/>
-        <childnode refid="3301" relation="include">
-        </childnode>
-      </node>
-      <node id="3296">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/spi/spi_slave.c</label>
         <link refid="spi_slave.c"/>
-        <childnode refid="3297" relation="include">
-        </childnode>
-        <childnode refid="3298" relation="include">
-        </childnode>
         <childnode refid="3299" relation="include">
         </childnode>
         <childnode refid="3300" relation="include">
         </childnode>
-        <childnode refid="3309" relation="include">
+        <childnode refid="3301" relation="include">
         </childnode>
-        <childnode refid="3310" relation="include">
+        <childnode refid="3302" relation="include">
         </childnode>
         <childnode refid="3311" relation="include">
         </childnode>
+        <childnode refid="3312" relation="include">
+        </childnode>
+        <childnode refid="3313" relation="include">
+        </childnode>
       </node>
-      <node id="3310">
+      <node id="3312">
         <label>io_config.h</label>
       </node>
-      <node id="3302">
+      <node id="3304">
         <label>arc/arc_exception.h</label>
         <link refid="arc__exception_8h"/>
-        <childnode refid="3303" relation="include">
+        <childnode refid="3305" relation="include">
         </childnode>
       </node>
-      <node id="3303">
+      <node id="3305">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="3304" relation="include">
+        <childnode refid="3306" relation="include">
         </childnode>
-        <childnode refid="3307" relation="include">
+        <childnode refid="3309" relation="include">
         </childnode>
       </node>
-      <node id="3311">
+      <node id="3313">
         <label>apexextensions.h</label>
       </node>
     </incdepgraph>

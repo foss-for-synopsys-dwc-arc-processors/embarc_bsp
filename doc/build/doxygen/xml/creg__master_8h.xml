@@ -4,14 +4,14 @@
     <compoundname>creg_master.h</compoundname>
     <includedby refid="creg__master_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/creg/creg_master.c</includedby>
     <invincdepgraph>
-      <node id="4941">
+      <node id="4946">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/creg/creg_master.c</label>
         <link refid="creg__master_8c"/>
       </node>
-      <node id="4940">
+      <node id="4945">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/creg_master.h</label>
         <link refid="creg_master.h"/>
-        <childnode refid="4941" relation="include">
+        <childnode refid="4946" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

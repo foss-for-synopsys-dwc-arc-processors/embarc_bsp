@@ -112,11 +112,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_present</definition>
+        <definition>int32_t arc_timer_present</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_present</name>
+        <name>arc_timer_present</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -138,11 +138,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="50" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="50" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga4ca591bc3b7a83e307437f9b16d387c0_1ga4ca591bc3b7a83e307437f9b16d387c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_start</definition>
+        <definition>int32_t arc_timer_start</definition>
         <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
-        <name>timer_start</name>
+        <name>arc_timer_start</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -186,11 +186,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="80" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="80" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_stop</definition>
+        <definition>int32_t arc_timer_stop</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_stop</name>
+        <name>arc_timer_stop</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -212,11 +212,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="114" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="114" bodyend="138"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga651d9dfeffc650c2575542eb21b4cefb_1ga651d9dfeffc650c2575542eb21b4cefb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_current</definition>
+        <definition>int32_t arc_timer_current</definition>
         <argsstring>(const uint32_t no, void *val)</argsstring>
-        <name>timer_current</name>
+        <name>arc_timer_current</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -249,11 +249,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="147" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="147" bodyend="167"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa491d0f301accab4ef12ef453b848777_1gaa491d0f301accab4ef12ef453b848777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_int_clear</definition>
+        <definition>int32_t arc_timer_int_clear</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_int_clear</name>
+        <name>arc_timer_int_clear</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -275,11 +275,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="175" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="175" bodyend="194"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void timer_init</definition>
+        <definition>void arc_timer_int</definition>
         <argsstring>(void)</argsstring>
-        <name>timer_init</name>
+        <name>arc_timer_int</name>
         <param>
           <type>void</type>
         </param>
@@ -316,11 +316,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" line="374" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="374" bodyend="391"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga6238e55ff583a56101118cedf32edb40_1ga6238e55ff583a56101118cedf32edb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t timer_calibrate_delay</definition>
+        <definition>uint64_t arc_timer_calibrate_delay</definition>
         <argsstring>(uint32_t cpu_clock)</argsstring>
-        <name>timer_calibrate_delay</name>
+        <name>arc_timer_calibrate_delay</name>
         <param>
           <type>uint32_t</type>
           <declname>cpu_clock</declname>
@@ -386,7 +386,7 @@
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="arc__timer_8c_a6b80a1e838b60bbddb2b3fc4fb47d0bb_1a6b80a1e838b60bbddb2b3fc4fb47d0bb" kindref="member">gl_loops_per_jiffy</ref><sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="arc__timer_8c_a62f7a1f8bd3de776617a6fd3e742be52_1a62f7a1f8bd3de776617a6fd3e742be52" kindref="member">gl_count</ref><sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" kindref="member">arc_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bcr<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaebfb0cbbd7e8404f9b8d97baae5c303f_1gaebfb0cbbd7e8404f9b8d97baae5c303f" kindref="member">AUX_BCR_TIMERS</ref>);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
@@ -409,7 +409,7 @@
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)bcr;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" kindref="member">timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga4ca591bc3b7a83e307437f9b16d387c0_1ga4ca591bc3b7a83e307437f9b16d387c0" kindref="member">arc_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val)</highlight></codeline>
 <codeline lineno="81"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
@@ -437,7 +437,7 @@
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" kindref="member">arc_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
@@ -463,7 +463,7 @@
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="138"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" kindref="member">timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga651d9dfeffc650c2575542eb21b4cefb_1ga651d9dfeffc650c2575542eb21b4cefb" kindref="member">arc_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
 <codeline lineno="148"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
@@ -485,7 +485,7 @@
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="167"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" kindref="member">timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa491d0f301accab4ef12ef453b848777_1gaa491d0f301accab4ef12ef453b848777" kindref="member">arc_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
 <codeline lineno="176"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
@@ -506,24 +506,24 @@
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="194"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" kindref="member">arc_timer_int</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="200"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" kindref="member">arc_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" kindref="member">arc_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gacc9ff9df4a9674a1ce9ba08fc4a4679e_1gacc9ff9df4a9674a1ce9ba08fc4a4679e" kindref="member">TIMER_0</ref>);</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" kindref="member">arc_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" kindref="member">arc_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gac62c99c2a9289891c1b83052242cca49_1gac62c99c2a9289891c1b83052242cca49" kindref="member">TIMER_1</ref>);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" kindref="member">arc_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" kindref="member">arc_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga81a099568a1622e8050f588e3f934c4d_1ga81a099568a1622e8050f588e3f934c4d" kindref="member">TIMER_RTC</ref>);</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="212"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARC_FEATURE_SEC_TIMER1_PRESENT)<sp/>||<sp/>defined(ARC_FEATURE_SEC_TIMER0_PRESENT)</highlight></codeline>
 <codeline lineno="215"><highlight class="preprocessor"></highlight></codeline>
-<codeline lineno="220"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga536835aeda3e7da6ee05d778c807f9bd_1ga536835aeda3e7da6ee05d778c807f9bd" kindref="member">arc_secure_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
 <codeline lineno="221"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bcr<sp/>=<sp/><ref refid="group__ARC__HAL__BUILTIN_gad03638934aed9ae0b0212a6b351a4aa0_1gad03638934aed9ae0b0212a6b351a4aa0" kindref="member">arc_aux_read</ref>(<ref refid="group__ARC__HAL__CORE__COMM_gaebfb0cbbd7e8404f9b8d97baae5c303f_1gaebfb0cbbd7e8404f9b8d97baae5c303f" kindref="member">AUX_BCR_TIMERS</ref>);</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"></highlight></codeline>
@@ -543,7 +543,7 @@
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int32_t)bcr;</highlight></codeline>
 <codeline lineno="238"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight></codeline>
-<codeline lineno="247"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga44648e9bf965305b509a1169761c02ab_1ga44648e9bf965305b509a1169761c02ab" kindref="member">secure_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga2784575f546b66f79f2066f0add7d1e2_1ga2784575f546b66f79f2066f0add7d1e2" kindref="member">arc_secure_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val)</highlight></codeline>
 <codeline lineno="248"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
@@ -568,7 +568,7 @@
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="270"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"></highlight></codeline>
-<codeline lineno="278"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga70fffef420129e48bd9926c9e3478dc3_1ga70fffef420129e48bd9926c9e3478dc3" kindref="member">arc_secure_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
 <codeline lineno="279"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight></codeline>
@@ -591,7 +591,7 @@
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="299"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"></highlight></codeline>
-<codeline lineno="308"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaab2aa4baf8219ebb86c9aad1148b0523_1gaab2aa4baf8219ebb86c9aad1148b0523" kindref="member">secure_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gab95d948c51603693067f1c53d527864e_1gab95d948c51603693067f1c53d527864e" kindref="member">arc_secure_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
 <codeline lineno="309"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"></highlight></codeline>
@@ -610,7 +610,7 @@
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="325"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"></highlight></codeline>
-<codeline lineno="333"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga517e9a555515b5c73549fb3703d7fed0_1ga517e9a555515b5c73549fb3703d7fed0" kindref="member">secure_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa53a312d8df304d1175058f5ff372d33_1gaa53a312d8df304d1175058f5ff372d33" kindref="member">arc_secure_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no)</highlight></codeline>
 <codeline lineno="334"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>ercd<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"></highlight></codeline>
@@ -631,14 +631,14 @@
 <codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ercd;</highlight></codeline>
 <codeline lineno="352"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"></highlight></codeline>
-<codeline lineno="357"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaf453c9883df6ab97ef7c50cfb7a555f3_1gaf453c9883df6ab97ef7c50cfb7a555f3" kindref="member">secure_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="357"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga1c5d1a5a6a7c937f3df2c9879bd289d4_1ga1c5d1a5a6a7c937f3df2c9879bd289d4" kindref="member">arc_secure_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="358"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga536835aeda3e7da6ee05d778c807f9bd_1ga536835aeda3e7da6ee05d778c807f9bd" kindref="member">arc_secure_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga70fffef420129e48bd9926c9e3478dc3_1ga70fffef420129e48bd9926c9e3478dc3" kindref="member">arc_secure_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_gad2e35fb10b4dfd3616530b9975339803_1gad2e35fb10b4dfd3616530b9975339803" kindref="member">SECURE_TIMER_0</ref>);</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="362"><highlight class="normal"></highlight></codeline>
-<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__ARC__HAL__MISC__TIMER_ga536835aeda3e7da6ee05d778c807f9bd_1ga536835aeda3e7da6ee05d778c807f9bd" kindref="member">arc_secure_timer_present</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga70fffef420129e48bd9926c9e3478dc3_1ga70fffef420129e48bd9926c9e3478dc3" kindref="member">arc_secure_timer_stop</ref>(<ref refid="group__ARC__HAL__MISC__TIMER_ga0d8b8775af92a5eea182f5bec22bedfb_1ga0d8b8775af92a5eea182f5bec22bedfb" kindref="member">SECURE_TIMER_1</ref>);</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="366"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ARC_FEATURE_SEC_TIMER1_PRESENT<sp/>&amp;&amp;<sp/>ARC_FEATURE_SEC_TIMER0_PRESENT<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
@@ -662,7 +662,7 @@
 <codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;lp_count&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="391"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="392"><highlight class="normal"></highlight></codeline>
-<codeline lineno="399"><highlight class="normal">uint64_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" kindref="member">timer_calibrate_delay</ref>(uint32_t<sp/>cpu_clock)</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">uint64_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga6238e55ff583a56101118cedf32edb40_1ga6238e55ff583a56101118cedf32edb40" kindref="member">arc_timer_calibrate_delay</ref>(uint32_t<sp/>cpu_clock)</highlight></codeline>
 <codeline lineno="400"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>loopbit;</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>lps_precision<sp/>=<sp/><ref refid="arc__timer_8c_a680fc0a953bb30cab255f7abedb9b5dc_1a680fc0a953bb30cab255f7abedb9b5dc" kindref="member">LPS_PREC</ref>;</highlight></codeline>

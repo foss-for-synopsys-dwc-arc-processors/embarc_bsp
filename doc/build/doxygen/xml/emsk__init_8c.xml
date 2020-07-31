@@ -126,7 +126,7 @@
 <codeline lineno="59"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__BOARD__EMSK__DRV__MUX_gadbb2990c863c9961339946c92f2fc2d6_1gadbb2990c863c9961339946c92f2fc2d6" kindref="member">io_mux_init</ref>();</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__BOARD__EMSK__DRV__GPIO_gae3e6113ee6e6875ab8d71f4a8871af30_1gae3e6113ee6e6875ab8d71f4a8871af30" kindref="member">emsk_io_init</ref>();</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" kindref="member">arc_timer_int</ref>();</highlight></codeline>
 <codeline lineno="63"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
     </programlisting>

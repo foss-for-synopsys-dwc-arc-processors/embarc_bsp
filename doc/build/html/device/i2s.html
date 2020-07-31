@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,28 +11,30 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="SPI HAL" href="spi.html" />
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> embARC
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> embARC
           
 
           
@@ -78,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -120,6 +122,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -158,7 +161,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="device.html">Devices</a> &raquo;</li>
         
@@ -190,27 +193,27 @@
 <p>This structure will be used in user implemented code, which was called Device Driver Implement Layer for I2S to realize in user code. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Defines</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_I2S_INFO_SET_EXTRA_OBJECT">
-<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga14a028919c4c6fb0a8b0ba7d6ba6b496"></span><code class="sig-name descname">DEV_I2S_INFO_SET_EXTRA_OBJECT</code><span class="sig-paren">(</span>i2s_info_ptr, extra_info<span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_I2S_INFO_SET_EXTRA_OBJECT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga14a028919c4c6fb0a8b0ba7d6ba6b496"></span><code class="sig-name descname">DEV_I2S_INFO_SET_EXTRA_OBJECT</code><span class="sig-paren">(</span><em>i2s_info_ptr</em>, <em>extra_info</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_I2S_INFO_SET_EXTRA_OBJECT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set extra information pointer of I2S </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.DEV_I2S_INFO_GET_EXTRA_OBJECT">
-<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga6279e7b89f92b9203ac13dc92b33d4e3"></span><code class="sig-name descname">DEV_I2S_INFO_GET_EXTRA_OBJECT</code><span class="sig-paren">(</span>i2s_info_ptr<span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_I2S_INFO_GET_EXTRA_OBJECT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga6279e7b89f92b9203ac13dc92b33d4e3"></span><code class="sig-name descname">DEV_I2S_INFO_GET_EXTRA_OBJECT</code><span class="sig-paren">(</span><em>i2s_info_ptr</em><span class="sig-paren">)</span><a class="headerlink" href="#c.DEV_I2S_INFO_GET_EXTRA_OBJECT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get extra information pointer of I2S </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv416DEV_I2S_INFO_PTR">
 <span id="_CPPv316DEV_I2S_INFO_PTR"></span><span id="_CPPv216DEV_I2S_INFO_PTR"></span><span id="DEV_I2S_INFO_PTR"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga37034e6fdbce66af76679009cdd47037"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv412DEV_I2S_INFO" title="DEV_I2S_INFO">DEV_I2S_INFO</a> *<code class="sig-name descname">DEV_I2S_INFO_PTR</code><a class="headerlink" href="#_CPPv416DEV_I2S_INFO_PTR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv411DEV_I2S_PTR">
 <span id="_CPPv311DEV_I2S_PTR"></span><span id="_CPPv211DEV_I2S_PTR"></span><span id="DEV_I2S_PTR"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga593d3f4862005c0ef8dcadc2809b5a2b"></span><em class="property">typedef </em><em class="property">struct</em> <a class="reference internal" href="#_CPPv47DEV_I2S" title="DEV_I2S">DEV_I2S</a> *<code class="sig-name descname">DEV_I2S_PTR</code><a class="headerlink" href="#_CPPv411DEV_I2S_PTR" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
@@ -218,9 +221,9 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Variables</p>
-<dl class="member">
-<dt id="_CPPv4N7DEV_I2S8i2s_openE">
-<span id="_CPPv3N7DEV_I2S8i2s_openE"></span><span id="_CPPv2N7DEV_I2S8i2s_openE"></span><span id="DEV_I2S::i2s_open__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga3632ba1ae2a88ea3992e37433cb8646f"></span>int32_t *<code class="sig-name descname">i2s_open</code><a class="headerlink" href="#_CPPv4N7DEV_I2S8i2s_openE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv48i2s_open">
+<span id="_CPPv38i2s_open"></span><span id="_CPPv28i2s_open"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga3632ba1ae2a88ea3992e37433cb8646f"></span>int32_t (*<code class="sig-name descname">i2s_open</code>)<span class="sig-paren">(</span>uint32_t mode, uint32_t param<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48i2s_open" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>open I2S device in master/slave mode, \ when in master mode, param stands for speed mode, \ when in slave mode, param stands for slave address</p>
 <p>Open an I2S device with selected mode (master or slave) with defined param <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -241,9 +244,9 @@
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N7DEV_I2S9i2s_closeE">
-<span id="_CPPv3N7DEV_I2S9i2s_closeE"></span><span id="_CPPv2N7DEV_I2S9i2s_closeE"></span><span id="DEV_I2S::i2s_close__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1gab87a23fcdf8323c09bc107ec6a6bb637"></span>int32_t *<code class="sig-name descname">i2s_close</code><a class="headerlink" href="#_CPPv4N7DEV_I2S9i2s_closeE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv49i2s_close">
+<span id="_CPPv39i2s_close"></span><span id="_CPPv29i2s_close"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1gab87a23fcdf8323c09bc107ec6a6bb637"></span>int32_t (*<code class="sig-name descname">i2s_close</code>)<span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49i2s_close" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>close I2S device</p>
 <p>close an I2S device, just decrease the opn_cnt, if opn_cnt equals 0, then close the device <dl class="simple">
 <dt><strong>Return Value</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -256,9 +259,9 @@
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N7DEV_I2S11i2s_controlE">
-<span id="_CPPv3N7DEV_I2S11i2s_controlE"></span><span id="_CPPv2N7DEV_I2S11i2s_controlE"></span><span id="DEV_I2S::i2s_control__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga72ecb416e0f1e019129e3c54f5f659e5"></span>int32_t *<code class="sig-name descname">i2s_control</code><a class="headerlink" href="#_CPPv4N7DEV_I2S11i2s_controlE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv411i2s_control">
+<span id="_CPPv311i2s_control"></span><span id="_CPPv211i2s_control"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga72ecb416e0f1e019129e3c54f5f659e5"></span>int32_t (*<code class="sig-name descname">i2s_control</code>)<span class="sig-paren">(</span>uint32_t ctrl_cmd, void *param<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411i2s_control" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>control i2s device</p>
 <p>Control an I2S device by ctrl_cmd, with passed param. you can control I2S device using predefined I2S control commands defined using DEV_SET_SYSCMD (which must be implemented by bsp developer), command details. And you can also control I2S device using your own specified commands defined using DEV_SET_USRCMD, but these specified commands should be defined in your own I2S device driver implementation. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -280,9 +283,9 @@
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N7DEV_I2S9i2s_writeE">
-<span id="_CPPv3N7DEV_I2S9i2s_writeE"></span><span id="_CPPv2N7DEV_I2S9i2s_writeE"></span><span id="DEV_I2S::i2s_write__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga62997f2e475f6baa91b6b1281cd0a7bf"></span>int32_t *<code class="sig-name descname">i2s_write</code><a class="headerlink" href="#_CPPv4N7DEV_I2S9i2s_writeE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv49i2s_write">
+<span id="_CPPv39i2s_write"></span><span id="_CPPv29i2s_write"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1ga62997f2e475f6baa91b6b1281cd0a7bf"></span>int32_t (*<code class="sig-name descname">i2s_write</code>)<span class="sig-paren">(</span><em class="property">const</em> void *data, uint32_t len<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49i2s_write" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>send data by i2s TX device (blocking method)</p>
 <p>Send data through I2S with defined len to RX device. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -302,9 +305,9 @@
 </p>
 </dd></dl>
 
-<dl class="member">
-<dt id="_CPPv4N7DEV_I2S8i2s_readE">
-<span id="_CPPv3N7DEV_I2S8i2s_readE"></span><span id="_CPPv2N7DEV_I2S8i2s_readE"></span><span id="DEV_I2S::i2s_read__int32_tP"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1gab35b00fe606cc548f1148047f297ecd8"></span>int32_t *<code class="sig-name descname">i2s_read</code><a class="headerlink" href="#_CPPv4N7DEV_I2S8i2s_readE" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp var">
+<dt id="_CPPv48i2s_read">
+<span id="_CPPv38i2s_read"></span><span id="_CPPv28i2s_read"></span><span class="target" id="group__DEVICE__HAL__I2S__DEVSTRUCT_1gab35b00fe606cc548f1148047f297ecd8"></span>int32_t (*<code class="sig-name descname">i2s_read</code>)<span class="sig-paren">(</span>void *data, uint32_t len<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48i2s_read" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>read data from i2s RX device (blocking method)</p>
 <p>Receive data of defined len through I2S from TX device. <dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -325,14 +328,14 @@
 </dd></dl>
 
 </div>
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv412DEV_I2S_INFO">
 <span id="_CPPv312DEV_I2S_INFO"></span><span id="_CPPv212DEV_I2S_INFO"></span><span id="DEV_I2S_INFO"></span><span class="target" id="structDEV__I2S__INFO"></span><em class="property">struct </em><code class="sig-name descname">DEV_I2S_INFO</code><a class="headerlink" href="#_CPPv412DEV_I2S_INFO" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;dev_i2s.h&gt;</em><p>I2S information struct definition. </p>
 <p>Informations about I2S open state, working state, baurate, I2S registers, working method, interrupt number </p>
 </dd></dl>
 
-<dl class="class">
+<dl class="cpp struct">
 <dt id="_CPPv47DEV_I2S">
 <span id="_CPPv37DEV_I2S"></span><span id="_CPPv27DEV_I2S"></span><span id="DEV_I2S"></span><span class="target" id="structDEV__I2S"></span><em class="property">struct </em><code class="sig-name descname">DEV_I2S</code><a class="headerlink" href="#_CPPv47DEV_I2S" title="Permalink to this definition">¶</a><br /></dt>
 <dd><em>#include &lt;dev_i2s.h&gt;</em><p>Definition for I2S device interface. </p>
@@ -359,9 +362,10 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Synopsys
       <span class="lastupdated">
-        Last updated on Jan 14, 2020.
+        Last updated on Jul 31, 2020.
       </span>
 
     </p>
@@ -376,7 +380,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

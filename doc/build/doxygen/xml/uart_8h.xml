@@ -6,83 +6,83 @@
     <includedby refid="ss__uart_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/ss_uart.c</includedby>
     <includedby refid="uart_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/uart.c</includedby>
     <incdepgraph>
-      <node id="5143">
+      <node id="5148">
         <label>stdbool.h</label>
       </node>
-      <node id="5139">
+      <node id="5144">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="5140" relation="include">
-        </childnode>
-        <childnode refid="5141" relation="include">
-        </childnode>
-        <childnode refid="5142" relation="include">
-        </childnode>
-        <childnode refid="5143" relation="include">
-        </childnode>
-      </node>
-      <node id="5140">
-        <label>stdint.h</label>
-      </node>
-      <node id="5136">
-        <label>device/ip_hal/ioctl.h</label>
-        <link refid="ioctl_8h"/>
-        <childnode refid="5137" relation="include">
-        </childnode>
-        <childnode refid="5138" relation="include">
-        </childnode>
-      </node>
-      <node id="5142">
-        <label>stddef.h</label>
-      </node>
-      <node id="5144">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
         <childnode refid="5145" relation="include">
         </childnode>
-      </node>
-      <node id="5135">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/uart.h</label>
-        <link refid="uart.h"/>
-        <childnode refid="5136" relation="include">
+        <childnode refid="5146" relation="include">
         </childnode>
-      </node>
-      <node id="5141">
-        <label>limits.h</label>
-      </node>
-      <node id="5145">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="5137">
-        <label>arc/arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="5138" relation="include">
-        </childnode>
-      </node>
-      <node id="5138">
-        <label>arc/arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="5139" relation="include">
-        </childnode>
-        <childnode refid="5144" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="5146">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/uart.h</label>
-        <link refid="uart.h"/>
         <childnode refid="5147" relation="include">
         </childnode>
         <childnode refid="5148" relation="include">
         </childnode>
       </node>
-      <node id="5148">
+      <node id="5145">
+        <label>stdint.h</label>
+      </node>
+      <node id="5141">
+        <label>device/ip_hal/ioctl.h</label>
+        <link refid="ioctl_8h"/>
+        <childnode refid="5142" relation="include">
+        </childnode>
+        <childnode refid="5143" relation="include">
+        </childnode>
+      </node>
+      <node id="5147">
+        <label>stddef.h</label>
+      </node>
+      <node id="5149">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="5150" relation="include">
+        </childnode>
+      </node>
+      <node id="5140">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/uart.h</label>
+        <link refid="uart.h"/>
+        <childnode refid="5141" relation="include">
+        </childnode>
+      </node>
+      <node id="5146">
+        <label>limits.h</label>
+      </node>
+      <node id="5150">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="5142">
+        <label>arc/arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="5143" relation="include">
+        </childnode>
+      </node>
+      <node id="5143">
+        <label>arc/arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="5144" relation="include">
+        </childnode>
+        <childnode refid="5149" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5151">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/uart.h</label>
+        <link refid="uart.h"/>
+        <childnode refid="5152" relation="include">
+        </childnode>
+        <childnode refid="5153" relation="include">
+        </childnode>
+      </node>
+      <node id="5153">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/uart.c</label>
         <link refid="uart_8c"/>
       </node>
-      <node id="5147">
+      <node id="5152">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/ss_uart.c</label>
         <link refid="ss__uart_8c"/>
       </node>

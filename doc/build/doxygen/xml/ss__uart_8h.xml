@@ -7,69 +7,69 @@
     <includedby refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.c</includedby>
     <includedby refid="ss__uart_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/ss_uart.c</includedby>
     <incdepgraph>
-      <node id="5130">
+      <node id="5135">
         <label>stdbool.h</label>
       </node>
-      <node id="5123">
+      <node id="5128">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/ss_uart.h</label>
         <link refid="ss_uart.h"/>
-        <childnode refid="5124" relation="include">
-        </childnode>
-      </node>
-      <node id="5126">
-        <label>embARC_toolchain.h</label>
-        <link refid="embARC__toolchain_8h"/>
-        <childnode refid="5127" relation="include">
-        </childnode>
-        <childnode refid="5128" relation="include">
-        </childnode>
         <childnode refid="5129" relation="include">
         </childnode>
-        <childnode refid="5130" relation="include">
-        </childnode>
       </node>
-      <node id="5127">
-        <label>stdint.h</label>
-      </node>
-      <node id="5129">
-        <label>stddef.h</label>
-      </node>
-      <node id="5128">
-        <label>limits.h</label>
-      </node>
-      <node id="5124">
-        <label>device/ip_hal/dev_uart.h</label>
-        <link refid="dev__uart_8h"/>
-        <childnode refid="5125" relation="include">
-        </childnode>
-      </node>
-      <node id="5125">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="5126" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="5131">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/ss_uart.h</label>
-        <link refid="ss_uart.h"/>
+        <label>embARC_toolchain.h</label>
+        <link refid="embARC__toolchain_8h"/>
         <childnode refid="5132" relation="include">
         </childnode>
         <childnode refid="5133" relation="include">
         </childnode>
         <childnode refid="5134" relation="include">
         </childnode>
+        <childnode refid="5135" relation="include">
+        </childnode>
       </node>
       <node id="5132">
+        <label>stdint.h</label>
+      </node>
+      <node id="5134">
+        <label>stddef.h</label>
+      </node>
+      <node id="5133">
+        <label>limits.h</label>
+      </node>
+      <node id="5129">
+        <label>device/ip_hal/dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
+        <childnode refid="5130" relation="include">
+        </childnode>
+      </node>
+      <node id="5130">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="5131" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5136">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/subsystem/ss_uart.h</label>
+        <link refid="ss_uart.h"/>
+        <childnode refid="5137" relation="include">
+        </childnode>
+        <childnode refid="5138" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+      </node>
+      <node id="5137">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
         <link refid="emsdp_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
       </node>
-      <node id="5134">
+      <node id="5139">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/subsystem/uart/ss_uart.c</label>
         <link refid="ss__uart_8c"/>
       </node>
-      <node id="5133">
+      <node id="5138">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/subsystem/uart/dfss_uart_obj.c</label>
         <link refid="iotdk_2drivers_2ip_2subsystem_2uart_2dfss__uart__obj_8c"/>
       </node>

@@ -401,7 +401,7 @@
         <argsstring></argsstring>
         <name>dw_uart_0_ctrl</name>
         <initializer>= {                  
-	0, <ref refid="hsdk__hardware_8h_a834959d61bd62205d39308860373b374_1a834959d61bd62205d39308860373b374" kindref="member">CLK_BUS_APB</ref>,  (<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_af834ec45a8422a9372567ba4416999e7_1af834ec45a8422a9372567ba4416999e7" kindref="member">EMSDP_DBG_UART_INTR</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>,
+	0, <ref refid="hsdk__hardware_8h_a834959d61bd62205d39308860373b374_1a834959d61bd62205d39308860373b374" kindref="member">CLK_BUS_APB</ref>,  (<ref refid="em7d__esp__dfss_2include_2board__emsdp_8h_af834ec45a8422a9372567ba4416999e7_1af834ec45a8422a9372567ba4416999e7" kindref="member">EMSDP_DBG_UART_INTR</ref>)  , (<ref refid="group__ARC__HAL__EXCEPTION__INTERRUPT_ga2f52c7816870bf537c7e1dd6acd6416c_1ga2f52c7816870bf537c7e1dd6acd6416c" kindref="member">INT_HANDLER_T</ref>)<ref refid="nsim__uart__obj_8c_a449b636c4577c4cefa9d1d6ce476532b_1a449b636c4577c4cefa9d1d6ce476532b" kindref="member">dw_uart_0_isr</ref>,
 	 32 ,  32 , 0
 }</initializer>
         <briefdescription>

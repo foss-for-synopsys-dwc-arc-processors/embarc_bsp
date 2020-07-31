@@ -8,109 +8,116 @@
     <includedby refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</includedby>
     <includedby refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.c</includedby>
     <includedby refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/uart/dw_uart_obj.c</includedby>
+    <includedby refid="nsim__uart__obj_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c</includedby>
     <includedby refid="dw__uart_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c</includedby>
     <incdepgraph>
-      <node id="4367">
+      <node id="4371">
         <label>stdbool.h</label>
       </node>
-      <node id="4363">
+      <node id="4367">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="4364" relation="include">
+        <childnode refid="4368" relation="include">
         </childnode>
-        <childnode refid="4365" relation="include">
+        <childnode refid="4369" relation="include">
         </childnode>
+        <childnode refid="4370" relation="include">
+        </childnode>
+        <childnode refid="4371" relation="include">
+        </childnode>
+      </node>
+      <node id="4368">
+        <label>stdint.h</label>
+      </node>
+      <node id="4370">
+        <label>stddef.h</label>
+      </node>
+      <node id="4374">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4375" relation="include">
+        </childnode>
+      </node>
+      <node id="4369">
+        <label>limits.h</label>
+      </node>
+      <node id="4375">
+        <label>arc/arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="4365">
+        <label>device/ip_hal/dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
         <childnode refid="4366" relation="include">
         </childnode>
+      </node>
+      <node id="4366">
+        <label>device/dev_common.h</label>
+        <link refid="dev__common_8h"/>
         <childnode refid="4367" relation="include">
         </childnode>
       </node>
       <node id="4364">
-        <label>stdint.h</label>
-      </node>
-      <node id="4366">
-        <label>stddef.h</label>
-      </node>
-      <node id="4370">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="4371" relation="include">
-        </childnode>
-      </node>
-      <node id="4365">
-        <label>limits.h</label>
-      </node>
-      <node id="4371">
-        <label>arc/arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="4361">
-        <label>device/ip_hal/dev_uart.h</label>
-        <link refid="dev__uart_8h"/>
-        <childnode refid="4362" relation="include">
-        </childnode>
-      </node>
-      <node id="4362">
-        <label>device/dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="4363" relation="include">
-        </childnode>
-      </node>
-      <node id="4360">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h</label>
         <link refid="dw_uart.h"/>
-        <childnode refid="4361" relation="include">
+        <childnode refid="4365" relation="include">
         </childnode>
-        <childnode refid="4368" relation="include">
+        <childnode refid="4372" relation="include">
         </childnode>
       </node>
-      <node id="4368">
+      <node id="4372">
         <label>arc/arc_exception.h</label>
         <link refid="arc__exception_8h"/>
-        <childnode refid="4369" relation="include">
+        <childnode refid="4373" relation="include">
         </childnode>
       </node>
-      <node id="4369">
+      <node id="4373">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="4363" relation="include">
+        <childnode refid="4367" relation="include">
         </childnode>
-        <childnode refid="4370" relation="include">
+        <childnode refid="4374" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4375">
+      <node id="4379">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/drivers/ip/designware/uart/dw_uart_obj.c</label>
         <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="4373">
+      <node id="4381">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/drivers/uart/nsim_uart_obj.c</label>
+        <link refid="nsim__uart__obj_8c"/>
+      </node>
+      <node id="4377">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c</label>
         <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="4372">
+      <node id="4376">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_uart.h</label>
         <link refid="dw_uart.h"/>
-        <childnode refid="4373" relation="include">
-        </childnode>
-        <childnode refid="4374" relation="include">
-        </childnode>
-        <childnode refid="4375" relation="include">
-        </childnode>
-        <childnode refid="4376" relation="include">
-        </childnode>
         <childnode refid="4377" relation="include">
         </childnode>
+        <childnode refid="4378" relation="include">
+        </childnode>
+        <childnode refid="4379" relation="include">
+        </childnode>
+        <childnode refid="4380" relation="include">
+        </childnode>
+        <childnode refid="4381" relation="include">
+        </childnode>
+        <childnode refid="4382" relation="include">
+        </childnode>
       </node>
-      <node id="4374">
+      <node id="4378">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/drivers/ip/designware/uart/dw_uart_obj.c</label>
         <link refid="emsdp_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="4377">
+      <node id="4382">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/uart/dw_uart.c</label>
         <link refid="dw__uart_8c"/>
       </node>
-      <node id="4376">
+      <node id="4380">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/drivers/ip/designware/uart/dw_uart_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>

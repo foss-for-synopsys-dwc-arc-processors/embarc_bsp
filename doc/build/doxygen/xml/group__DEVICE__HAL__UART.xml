@@ -92,7 +92,7 @@
 <simplesect kind="note"><para>Need to implemented by user in user code</para></simplesect>
 get one designware device structure</para><para>get one uart device structure </para>        </detaileddescription>
         <inbodydescription>
-<para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 3 id macro </para>        </inbodydescription>
+<para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 0 id macro</para><para>&lt; uart 1 id macro</para><para>&lt; uart 2 id macro</para><para>&lt; uart 3 id macro</para><para>&lt; uart 0 id macro </para>        </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/ip_hal/dev_uart.h" line="454" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/drivers/ip/designware/uart/dw_uart_obj.c" bodystart="256" bodyend="286"/>
       </memberdef>
       </sectiondef>

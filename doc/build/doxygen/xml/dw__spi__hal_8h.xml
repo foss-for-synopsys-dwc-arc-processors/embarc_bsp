@@ -5,25 +5,25 @@
     <includes refid="dw__spi__hal__cfg_8h" local="yes">device/designware/dw_spi_hal_cfg.h</includes>
     <includedby refid="dw__spi_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c</includedby>
     <incdepgraph>
-      <node id="4324">
+      <node id="4328">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi_hal.h</label>
         <link refid="dw_spi_hal.h"/>
-        <childnode refid="4325" relation="include">
+        <childnode refid="4329" relation="include">
         </childnode>
       </node>
-      <node id="4325">
+      <node id="4329">
         <label>device/designware/dw_spi_hal_cfg.h</label>
         <link refid="dw__spi__hal__cfg_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4326">
+      <node id="4330">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_spi_hal.h</label>
         <link refid="dw_spi_hal.h"/>
-        <childnode refid="4327" relation="include">
+        <childnode refid="4331" relation="include">
         </childnode>
       </node>
-      <node id="4327">
+      <node id="4331">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/spi/dw_spi.c</label>
         <link refid="dw__spi_8c"/>
       </node>

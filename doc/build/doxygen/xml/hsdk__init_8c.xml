@@ -128,7 +128,7 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__BOARD__EMSK__DRV__MUX_gadbb2990c863c9961339946c92f2fc2d6_1gadbb2990c863c9961339946c92f2fc2d6" kindref="member">io_mux_init</ref>();</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hsdk__hardware_8c_a36a06770dfe3e551388ab82d68aa103f_1a36a06770dfe3e551388ab82d68aa103f" kindref="member">hsdk_hardware_init</ref>();</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hsdk__io_8c_af6d565dffaac6c29217ffb23e5cad4d7_1af6d565dffaac6c29217ffb23e5cad4d7" kindref="member">hsdk_io_init</ref>();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" kindref="member">arc_timer_int</ref>();</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/common/hsdk_init.c"/>

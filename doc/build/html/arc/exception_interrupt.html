@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,28 +11,30 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Built-In Functions" href="build_in.html" />
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> embARC
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> embARC
           
 
           
@@ -78,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -115,6 +117,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -153,7 +156,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="index.html">ARC Processors</a> &raquo;</li>
         
@@ -238,89 +241,89 @@ cannot be scheduled or switched by the OS scheduler.</p>
 <dd><p>Core exception management. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Unnamed Group</p>
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv413exc_entry_cpuv">
-<span id="_CPPv313exc_entry_cpuv"></span><span id="_CPPv213exc_entry_cpuv"></span><span id="exc_entry_cpu__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gac7dbb1861e25fce9d97d20987ad64df9"></span><code class="sig-name descname">exc_entry_cpu</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413exc_entry_cpuv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv313exc_entry_cpuv"></span><span id="_CPPv213exc_entry_cpuv"></span><span id="exc_entry_cpu__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gac7dbb1861e25fce9d97d20987ad64df9"></span>void <code class="sig-name descname">exc_entry_cpu</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413exc_entry_cpuv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Default entry of CPU exceptions, such as TLB miss and swap. </p>
 <p>Default CPU exception entry. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv413exc_entry_intv">
-<span id="_CPPv313exc_entry_intv"></span><span id="_CPPv213exc_entry_intv"></span><span id="exc_entry_int__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga3d9c822d87f512a468d2247f4c150cab"></span><code class="sig-name descname">exc_entry_int</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413exc_entry_intv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv313exc_entry_intv"></span><span id="_CPPv213exc_entry_intv"></span><span id="exc_entry_int__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga3d9c822d87f512a468d2247f4c150cab"></span>void <code class="sig-name descname">exc_entry_int</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413exc_entry_intv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Normal interrupt exception entry. In default, all interrupt exceptions are installed with normal entry. If FIRQ is required, exc_entry_firq should be the entry. </p>
 <p>Interrupt exception entry. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv414exc_entry_firqv">
-<span id="_CPPv314exc_entry_firqv"></span><span id="_CPPv214exc_entry_firqv"></span><span id="exc_entry_firq__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga541500458eabf04464413fbda1c03b32"></span><code class="sig-name descname">exc_entry_firq</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414exc_entry_firqv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv314exc_entry_firqv"></span><span id="_CPPv214exc_entry_firqv"></span><span id="exc_entry_firq__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga541500458eabf04464413fbda1c03b32"></span>void <code class="sig-name descname">exc_entry_firq</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414exc_entry_firqv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>firq exception entry </p>
 <p>Fast interrupt exception entry. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv415exc_entry_resetv">
-<span id="_CPPv315exc_entry_resetv"></span><span id="_CPPv215exc_entry_resetv"></span><span id="exc_entry_reset__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gabe24c383d1e553174241984dec0f5c62"></span><code class="sig-name descname">exc_entry_reset</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415exc_entry_resetv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv315exc_entry_resetv"></span><span id="_CPPv215exc_entry_resetv"></span><span id="exc_entry_reset__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gabe24c383d1e553174241984dec0f5c62"></span>void <code class="sig-name descname">exc_entry_reset</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415exc_entry_resetv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Reset entry. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Defines</p>
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.NUM_EXC_CPU">
-<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga1443e9a11bdf7ee0540d79c6ebcc321f"></span><code class="sig-name descname">NUM_EXC_CPU</code><a class="headerlink" href="#c.NUM_EXC_CPU" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga1443e9a11bdf7ee0540d79c6ebcc321f"></span><code class="sig-name descname">NUM_EXC_CPU</code><a class="headerlink" href="#c.NUM_EXC_CPU" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>&lt; number of CPU exceptions number of interrupt exceptions, defined in arc_feature_config.h </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.NUM_EXC_INT">
-<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga07e2a217a7f54496ed4ad507d48d894d"></span><code class="sig-name descname">NUM_EXC_INT</code><a class="headerlink" href="#c.NUM_EXC_INT" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga07e2a217a7f54496ed4ad507d48d894d"></span><code class="sig-name descname">NUM_EXC_INT</code><a class="headerlink" href="#c.NUM_EXC_INT" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>total number of exceptions </p>
 </dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.NUM_EXC_ALL">
-<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gae5139fa9096875ad9a126741fce30e03"></span><code class="sig-name descname">NUM_EXC_ALL</code><a class="headerlink" href="#c.NUM_EXC_ALL" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gae5139fa9096875ad9a126741fce30e03"></span><code class="sig-name descname">NUM_EXC_ALL</code><a class="headerlink" href="#c.NUM_EXC_ALL" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.ARC_PROCESSOR_FRAME_T_SIZE">
-<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gae98cba7141c4a35385a94bdb527c1d87"></span><code class="sig-name descname">ARC_PROCESSOR_FRAME_T_SIZE</code><a class="headerlink" href="#c.ARC_PROCESSOR_FRAME_T_SIZE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gae98cba7141c4a35385a94bdb527c1d87"></span><code class="sig-name descname">ARC_PROCESSOR_FRAME_T_SIZE</code><a class="headerlink" href="#c.ARC_PROCESSOR_FRAME_T_SIZE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.ARC_INT_EXC_FRAME_T_SIZE">
-<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga00a590cc8a51a2b8183d1ca9c6386e43"></span><code class="sig-name descname">ARC_INT_EXC_FRAME_T_SIZE</code><a class="headerlink" href="#c.ARC_INT_EXC_FRAME_T_SIZE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga00a590cc8a51a2b8183d1ca9c6386e43"></span><code class="sig-name descname">ARC_INT_EXC_FRAME_T_SIZE</code><a class="headerlink" href="#c.ARC_INT_EXC_FRAME_T_SIZE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="macro">
+<dl class="cpp macro">
 <dt id="c.ARC_CALLEE_FRAME_T_SIZE">
-<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gacb38f2a5596c5c04f0bba3343021c866"></span><code class="sig-name descname">ARC_CALLEE_FRAME_T_SIZE</code><a class="headerlink" href="#c.ARC_CALLEE_FRAME_T_SIZE" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gacb38f2a5596c5c04f0bba3343021c866"></span><code class="sig-name descname">ARC_CALLEE_FRAME_T_SIZE</code><a class="headerlink" href="#c.ARC_CALLEE_FRAME_T_SIZE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Typedefs</p>
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv411EXC_ENTRY_T">
-<span id="_CPPv311EXC_ENTRY_T"></span><span id="_CPPv211EXC_ENTRY_T"></span><span id="EXC_ENTRY_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga43d6413c0c263defa56d3cec8851485b"></span><em class="property">typedef </em><code class="sig-name descname">EXC_ENTRY_T</code><a class="headerlink" href="#_CPPv411EXC_ENTRY_T" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv311EXC_ENTRY_T"></span><span id="_CPPv211EXC_ENTRY_T"></span><span id="EXC_ENTRY_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga43d6413c0c263defa56d3cec8851485b"></span><em class="property">typedef </em>void (*<code class="sig-name descname">EXC_ENTRY_T</code>)<span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411EXC_ENTRY_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Data type for exception entry. </p>
 </dd></dl>
 
-<dl class="type">
+<dl class="cpp type">
 <dt id="_CPPv413EXC_HANDLER_T">
-<span id="_CPPv313EXC_HANDLER_T"></span><span id="_CPPv213EXC_HANDLER_T"></span><span id="EXC_HANDLER_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga9a301e8a87e130c4e011c70f87fc1db9"></span><em class="property">typedef </em><code class="sig-name descname">EXC_HANDLER_T</code><a class="headerlink" href="#_CPPv413EXC_HANDLER_T" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv313EXC_HANDLER_T"></span><span id="_CPPv213EXC_HANDLER_T"></span><span id="EXC_HANDLER_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga9a301e8a87e130c4e011c70f87fc1db9"></span><em class="property">typedef </em>void (*<code class="sig-name descname">EXC_HANDLER_T</code>)<span class="sig-paren">(</span>void *exc_frame<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413EXC_HANDLER_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Data type for exception handler. </p>
 </dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv419exc_handler_defaultPv">
-<span id="_CPPv319exc_handler_defaultPv"></span><span id="_CPPv219exc_handler_defaultPv"></span><span id="exc_handler_default__voidP"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gaaa967b5a9b8869279d8bbe9b57fc7a9b"></span><em class="property">static</em> void <code class="sig-name descname">exc_handler_default</code><span class="sig-paren">(</span>void *<em>p_excinf</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419exc_handler_defaultPv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv319exc_handler_defaultPv"></span><span id="_CPPv219exc_handler_defaultPv"></span><span id="exc_handler_default__voidP"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gaaa967b5a9b8869279d8bbe9b57fc7a9b"></span>void <code class="sig-name descname">exc_handler_default</code><span class="sig-paren">(</span>void *<em>p_excinf</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419exc_handler_defaultPv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Install default cpu exception handler. </p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -331,7 +334,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv417exc_entry_installK8uint32_t11EXC_ENTRY_T">
 <span id="_CPPv317exc_entry_installK8uint32_t11EXC_ENTRY_T"></span><span id="_CPPv217exc_entry_installK8uint32_t11EXC_ENTRY_T"></span><span id="exc_entry_install__uint32_tC.EXC_ENTRY_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gaff188f19c90ccab522207c930f5f63cd"></span>int32_t <code class="sig-name descname">exc_entry_install</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>excno</em>, <a class="reference internal" href="#_CPPv411EXC_ENTRY_T" title="EXC_ENTRY_T">EXC_ENTRY_T</a> <em>entry</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417exc_entry_installK8uint32_t11EXC_ENTRY_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Install a CPU exception entry. </p>
@@ -345,7 +348,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv413exc_entry_getK8uint32_t">
 <span id="_CPPv313exc_entry_getK8uint32_t"></span><span id="_CPPv213exc_entry_getK8uint32_t"></span><span id="exc_entry_get__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gaa4b5c673e573e320b929709ba930b45f"></span><a class="reference internal" href="#_CPPv411EXC_ENTRY_T" title="EXC_ENTRY_T">EXC_ENTRY_T</a> <code class="sig-name descname">exc_entry_get</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>excno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413exc_entry_getK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get the installed CPU exception entry. </p>
@@ -360,7 +363,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv419exc_handler_installK8uint32_t13EXC_HANDLER_T">
 <span id="_CPPv319exc_handler_installK8uint32_t13EXC_HANDLER_T"></span><span id="_CPPv219exc_handler_installK8uint32_t13EXC_HANDLER_T"></span><span id="exc_handler_install__uint32_tC.EXC_HANDLER_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga69b337215e6300f4b4d85e34ebb26d7c"></span>int32_t <code class="sig-name descname">exc_handler_install</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>excno</em>, <a class="reference internal" href="#_CPPv413EXC_HANDLER_T" title="EXC_HANDLER_T">EXC_HANDLER_T</a> <em>handler</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419exc_handler_installK8uint32_t13EXC_HANDLER_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Install an exception handler. </p>
@@ -374,7 +377,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv415exc_handler_getK8uint32_t">
 <span id="_CPPv315exc_handler_getK8uint32_t"></span><span id="_CPPv215exc_handler_getK8uint32_t"></span><span id="exc_handler_get__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gab088d390d0f2aaf7f3308a269523f62b"></span><a class="reference internal" href="#_CPPv413EXC_HANDLER_T" title="EXC_HANDLER_T">EXC_HANDLER_T</a> <code class="sig-name descname">exc_handler_get</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>excno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415exc_handler_getK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get the installed exception handler. </p>
@@ -389,7 +392,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv411int_disableK8uint32_t">
 <span id="_CPPv311int_disableK8uint32_t"></span><span id="_CPPv211int_disableK8uint32_t"></span><span id="int_disable__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gaa06cd81d78d066c1cdc46dde7dabeb57"></span>int32_t <code class="sig-name descname">int_disable</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411int_disableK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Disable interrupt. </p>
@@ -402,7 +405,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv410int_enableK8uint32_t">
 <span id="_CPPv310int_enableK8uint32_t"></span><span id="_CPPv210int_enableK8uint32_t"></span><span id="int_enable__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gab709d97aa7dcc618975fc7e8d5860c7f"></span>int32_t <code class="sig-name descname">int_enable</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410int_enableK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Enable interrupt. </p>
@@ -415,7 +418,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv411int_enabledK8uint32_t">
 <span id="_CPPv311int_enabledK8uint32_t"></span><span id="_CPPv211int_enabledK8uint32_t"></span><span id="int_enabled__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga7f54b17cdd6f65442850e1bdcf10c272"></span>int32_t <code class="sig-name descname">int_enabled</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411int_enabledK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get interrupt enable state. </p>
@@ -430,7 +433,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv411int_ipm_getv">
 <span id="_CPPv311int_ipm_getv"></span><span id="_CPPv211int_ipm_getv"></span><span id="int_ipm_get__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga653e2bfd8567c76dc56578aad0585517"></span>int32_t <code class="sig-name descname">int_ipm_get</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411int_ipm_getv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get interrupt priority masking threshold. </p>
@@ -441,7 +444,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv411int_ipm_set7int32_t">
 <span id="_CPPv311int_ipm_set7int32_t"></span><span id="_CPPv211int_ipm_set7int32_t"></span><span id="int_ipm_set__int32_t"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gab54915b2976f68cc96681374cbd0f023"></span>int32_t <code class="sig-name descname">int_ipm_set</code><span class="sig-paren">(</span>int32_t <em>intpri</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411int_ipm_set7int32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set interrupt priority masking threshold. </p>
@@ -454,7 +457,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv411int_pri_getK8uint32_t">
 <span id="_CPPv311int_pri_getK8uint32_t"></span><span id="_CPPv211int_pri_getK8uint32_t"></span><span id="int_pri_get__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga155d43c83556ee963e5291c8a25c1dc5"></span>int32_t <code class="sig-name descname">int_pri_get</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411int_pri_getK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get current interrupt priority masking threshold. </p>
@@ -469,7 +472,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv411int_pri_setK8uint32_t7int32_t">
 <span id="_CPPv311int_pri_setK8uint32_t7int32_t"></span><span id="_CPPv211int_pri_setK8uint32_t7int32_t"></span><span id="int_pri_set__uint32_tC.int32_t"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gab670f0f6729ebec51cc2de8f98c74a40"></span>int32_t <code class="sig-name descname">int_pri_set</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em>, int32_t <em>intpri</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411int_pri_setK8uint32_t7int32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set interrupt priority. </p>
@@ -485,7 +488,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv414int_secure_setK8uint32_t8uint32_t">
 <span id="_CPPv314int_secure_setK8uint32_t8uint32_t"></span><span id="_CPPv214int_secure_setK8uint32_t8uint32_t"></span><span id="int_secure_set__uint32_tC.uint32_t"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gafef73153596413e6c51edbe558b01c33"></span>int32_t <code class="sig-name descname">int_secure_set</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em>, uint32_t <em>secure</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414int_secure_setK8uint32_t8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set interrupt secure or not secure. </p>
@@ -501,7 +504,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv49int_probeK8uint32_t">
 <span id="_CPPv39int_probeK8uint32_t"></span><span id="_CPPv29int_probeK8uint32_t"></span><span id="int_probe__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga9126c0df90c318b678022ab7b4d470c2"></span>int32_t <code class="sig-name descname">int_probe</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49int_probeK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Probe interrupt pending state. </p>
@@ -516,7 +519,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv414int_sw_triggerK8uint32_t">
 <span id="_CPPv314int_sw_triggerK8uint32_t"></span><span id="_CPPv214int_sw_triggerK8uint32_t"></span><span id="int_sw_trigger__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga136b8b6cdc3fd044879e2e3779041c3b"></span>int32_t <code class="sig-name descname">int_sw_trigger</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414int_sw_triggerK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Trigger interrupt through software. </p>
@@ -531,7 +534,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv416int_level_configK8uint32_tK8uint32_t">
 <span id="_CPPv316int_level_configK8uint32_tK8uint32_t"></span><span id="_CPPv216int_level_configK8uint32_tK8uint32_t"></span><span id="int_level_config__uint32_tC.uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gafb4ee7c403bef57f56452190d13e93ec"></span>int32_t <code class="sig-name descname">int_level_config</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em>, <em class="property">const</em> uint32_t <em>level</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416int_level_configK8uint32_tK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Configure interrupt trigger mode. </p>
@@ -547,7 +550,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv413int_level_getK8uint32_t">
 <span id="_CPPv313int_level_getK8uint32_t"></span><span id="_CPPv213int_level_getK8uint32_t"></span><span id="int_level_get__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga46223bbf586c1a4af4d5d4082d3484e7"></span>int32_t <code class="sig-name descname">int_level_get</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>intno</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413int_level_getK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get interrupt request mode. </p>
@@ -560,19 +563,19 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv48cpu_lockv">
 <span id="_CPPv38cpu_lockv"></span><span id="_CPPv28cpu_lockv"></span><span id="cpu_lock__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga733e45f48f9fe46022e47acd9677d980"></span>void <code class="sig-name descname">cpu_lock</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48cpu_lockv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>lock cpu, disable interrupts </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv410cpu_unlockv">
 <span id="_CPPv310cpu_unlockv"></span><span id="_CPPv210cpu_unlockv"></span><span id="cpu_unlock__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gaa93883b650c91f0e9b31a4cd6e935dc8"></span>void <code class="sig-name descname">cpu_unlock</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410cpu_unlockv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Unlock cpu to enable interrupts. </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv413cpu_lock_savev">
 <span id="_CPPv313cpu_lock_savev"></span><span id="_CPPv213cpu_lock_savev"></span><span id="cpu_lock_save__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga8801f275b2a194a99f6d673a0e72cd32"></span>uint32_t <code class="sig-name descname">cpu_lock_save</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413cpu_lock_savev" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Lock cpu and return status. </p>
@@ -583,7 +586,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv418cpu_unlock_restoreK8uint32_t">
 <span id="_CPPv318cpu_unlock_restoreK8uint32_t"></span><span id="_CPPv218cpu_unlock_restoreK8uint32_t"></span><span id="cpu_unlock_restore__uint32_tC"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gacb9f94a852339140f2d1d4ab8411c9c3"></span>void <code class="sig-name descname">cpu_unlock_restore</code><span class="sig-paren">(</span><em class="property">const</em> uint32_t <em>status</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418cpu_unlock_restoreK8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Unlock cpu with the specific status. </p>
@@ -596,7 +599,7 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
+<dl class="cpp function">
 <dt id="_CPPv418arc_firq_stack_setP7uint8_t">
 <span id="_CPPv318arc_firq_stack_setP7uint8_t"></span><span id="_CPPv218arc_firq_stack_setP7uint8_t"></span><span id="arc_firq_stack_set__uint8_tP"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gad14255ed8d12d245bc83636c252f1e17"></span>void <code class="sig-name descname">arc_firq_stack_set</code><span class="sig-paren">(</span>uint8_t *<em>firq_sp</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418arc_firq_stack_setP7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set the stack pointer for firq handling. </p>
@@ -609,9 +612,9 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv421arc_vector_base_write8uint32_t">
-<span id="_CPPv321arc_vector_base_write8uint32_t"></span><span id="_CPPv221arc_vector_base_write8uint32_t"></span><span id="arc_vector_base_write__uint32_t"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gafab1dd6432df25f8e591639c4cf97347"></span>void <code class="sig-name descname">arc_vector_base_write</code><span class="sig-paren">(</span>uint32_t <em>vec_base</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421arc_vector_base_write8uint32_t" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1gafab1dd6432df25f8e591639c4cf97347"></span><code class="sig-name descname">Inline void arc_vector_base_write (uint32_t vec_base)</code></dt>
 <dd><p>Write exception vector base. </p>
 <p><dl class="simple">
 <dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
@@ -622,9 +625,9 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </p>
 </dd></dl>
 
-<dl class="function">
-<dt id="_CPPv420arc_vector_base_readv">
-<span id="_CPPv320arc_vector_base_readv"></span><span id="_CPPv220arc_vector_base_readv"></span><span id="arc_vector_base_read__void"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga96acfc21ce10cb30230dc56c548a269c"></span>uint32_t <code class="sig-name descname">arc_vector_base_read</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420arc_vector_base_readv" title="Permalink to this definition">¶</a><br /></dt>
+<dl class="cpp function">
+<dt>
+<span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga96acfc21ce10cb30230dc56c548a269c"></span><code class="sig-name descname">Inline uint32_t arc_vector_base_read (void)</code></dt>
 <dd><p>Read current exception vector base. </p>
 <p><dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>Exception vector base (uint32_t) </p>
@@ -636,37 +639,47 @@ cannot be scheduled or switched by the OS scheduler.</p>
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Variables</p>
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv48_f_stack">
 <span id="_CPPv38_f_stack"></span><span id="_CPPv28_f_stack"></span><span id="_f_stack__uint8_tA"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga66b52625373d41fbdbb76ef3e86aae63"></span>uint8_t <code class="sig-name descname">_f_stack</code>[]<a class="headerlink" href="#_CPPv48_f_stack" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv415exc_entry_table">
-<span id="_CPPv315exc_entry_table"></span><span id="_CPPv215exc_entry_table"></span><span id="exc_entry_table__EXC_ENTRY_T"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga7f19edb2bb5a5e518171a0d3eb8325eb"></span><a class="reference internal" href="#_CPPv411EXC_ENTRY_T" title="EXC_ENTRY_T">EXC_ENTRY_T</a> <code class="sig-name descname">exc_entry_table</code><a class="headerlink" href="#_CPPv415exc_entry_table" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv315exc_entry_table"></span><span id="_CPPv215exc_entry_table"></span><span id="exc_entry_table__EXC_ENTRY_TA"></span><span class="target" id="group__ARC__HAL__EXCEPTION__CPU_1ga7f19edb2bb5a5e518171a0d3eb8325eb"></span><a class="reference internal" href="#_CPPv411EXC_ENTRY_T" title="EXC_ENTRY_T">EXC_ENTRY_T</a> <code class="sig-name descname">exc_entry_table</code>[(16 + 9)]<a class="headerlink" href="#_CPPv415exc_entry_table" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>exception entry table </p>
 <p>Install exception entry table to ARC_AUX_INT_VECT_BASE in startup. According to ARCv2 ISA, vectors are fetched in instruction space and thus may be present in ICCM, Instruction Cache, or main memory accessed by instruction fetch logic. So it is put into a specific section .vector.</p>
 <p>Please note that the exc_entry_table maybe cached in ARC. Some functions is defined in .s files. </p>
 </dd></dl>
 
 </div>
-<dl class="union">
+<dl class="cpp struct">
+<dt id="_CPPv420AUX_IRQ_CTRL_FIELD_T">
+<span id="_CPPv320AUX_IRQ_CTRL_FIELD_T"></span><span id="_CPPv220AUX_IRQ_CTRL_FIELD_T"></span><span id="AUX_IRQ_CTRL_FIELD_T"></span><span class="target" id="structAUX__IRQ__CTRL__FIELD__T"></span><em class="property">struct </em><code class="sig-name descname">AUX_IRQ_CTRL_FIELD_T</code><a class="headerlink" href="#_CPPv420AUX_IRQ_CTRL_FIELD_T" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp union">
 <dt id="_CPPv414AUX_IRQ_CTRL_T">
 <span id="_CPPv314AUX_IRQ_CTRL_T"></span><span id="_CPPv214AUX_IRQ_CTRL_T"></span><span class="target" id="unionAUX__IRQ__CTRL__T"></span><em class="property">union </em><code class="sig-name descname">AUX_IRQ_CTRL_T</code><a class="headerlink" href="#_CPPv414AUX_IRQ_CTRL_T" title="Permalink to this definition">¶</a><br /></dt>
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Members</p>
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv4N14AUX_IRQ_CTRL_T4bitsE">
-<span id="_CPPv3N14AUX_IRQ_CTRL_T4bitsE"></span><span id="_CPPv2N14AUX_IRQ_CTRL_T4bitsE"></span><span id="AUX_IRQ_CTRL_T::bits__AUX_IRQ_CTRL_FIELD_T"></span><span class="target" id="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401"></span>AUX_IRQ_CTRL_FIELD_T <code class="sig-name descname">bits</code><a class="headerlink" href="#_CPPv4N14AUX_IRQ_CTRL_T4bitsE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N14AUX_IRQ_CTRL_T4bitsE"></span><span id="_CPPv2N14AUX_IRQ_CTRL_T4bitsE"></span><span id="AUX_IRQ_CTRL_T::bits__AUX_IRQ_CTRL_FIELD_T"></span><span class="target" id="unionAUX__IRQ__CTRL__T_abb03527bb0648352a71ea60f64c35401_1abb03527bb0648352a71ea60f64c35401"></span><a class="reference internal" href="#_CPPv420AUX_IRQ_CTRL_FIELD_T" title="AUX_IRQ_CTRL_FIELD_T">AUX_IRQ_CTRL_FIELD_T</a> <code class="sig-name descname">bits</code><a class="headerlink" href="#_CPPv4N14AUX_IRQ_CTRL_T4bitsE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
-<dl class="member">
+<dl class="cpp var">
 <dt id="_CPPv4N14AUX_IRQ_CTRL_T5valueE">
 <span id="_CPPv3N14AUX_IRQ_CTRL_T5valueE"></span><span id="_CPPv2N14AUX_IRQ_CTRL_T5valueE"></span><span id="AUX_IRQ_CTRL_T::value__uint32_t"></span><span class="target" id="unionAUX__IRQ__CTRL__T_a81cc8f12d8b2033b1480750e62f0acfe_1a81cc8f12d8b2033b1480750e62f0acfe"></span>uint32_t <code class="sig-name descname">value</code><a class="headerlink" href="#_CPPv4N14AUX_IRQ_CTRL_T5valueE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
 </dd></dl>
+
+<dl class="cpp struct">
+<dt id="_CPPv413EMBARC_PACKED">
+<span id="_CPPv313EMBARC_PACKED"></span><span id="_CPPv213EMBARC_PACKED"></span><span id="EMBARC_PACKED"></span><span class="target" id="structEMBARC__PACKED"></span><em class="property">struct </em><code class="sig-name descname">EMBARC_PACKED</code><a class="headerlink" href="#_CPPv413EMBARC_PACKED" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;arc_exception.h&gt;</em></dd></dl>
 
 </dd></dl>
 
@@ -685,9 +698,10 @@ cannot be scheduled or switched by the OS scheduler.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2019, Synopsys
       <span class="lastupdated">
-        Last updated on Jan 14, 2020.
+        Last updated on Jul 31, 2020.
       </span>
 
     </p>
@@ -702,7 +716,6 @@ cannot be scheduled or switched by the OS scheduler.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

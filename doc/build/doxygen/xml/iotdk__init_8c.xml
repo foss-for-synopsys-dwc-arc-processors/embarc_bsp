@@ -155,7 +155,7 @@
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>cpu<sp/>to<sp/>CLK_CPU<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sysconf_8c_a673957d32354c51a004befa4214a12d3_1a673957d32354c51a004befa4214a12d3" kindref="member">pll_fout_config</ref>(<ref refid="axs__hardware_8h_a77ec960fb2992023cfa6b3e698b2aed8_1a77ec960fb2992023cfa6b3e698b2aed8" kindref="member">CLK_CPU</ref><sp/>/<sp/>1000000);</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="iotdk__init_8c_adffdd886642df371b25b868ace573fdd_1adffdd886642df371b25b868ace573fdd" kindref="member">iotdk_mux_init</ref>();</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" kindref="member">arc_timer_int</ref>();</highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/common/iotdk_init.c"/>

@@ -12,96 +12,132 @@
     <includedby refid="iotdk__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/common/iotdk_init.c</includedby>
     <includedby refid="nsim__init_8c" local="yes">/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/common/nsim_init.c</includedby>
     <incdepgraph>
-      <node id="4054">
+      <node id="4058">
         <label>stdbool.h</label>
       </node>
-      <node id="4050">
+      <node id="4054">
         <label>embARC_toolchain.h</label>
         <link refid="embARC__toolchain_8h"/>
-        <childnode refid="4051" relation="include">
+        <childnode refid="4055" relation="include">
         </childnode>
-        <childnode refid="4052" relation="include">
-        </childnode>
-        <childnode refid="4053" relation="include">
-        </childnode>
-        <childnode refid="4054" relation="include">
-        </childnode>
-      </node>
-      <node id="4051">
-        <label>stdint.h</label>
-      </node>
-      <node id="4053">
-        <label>stddef.h</label>
-      </node>
-      <node id="4055">
-        <label>arc/arc.h</label>
-        <link refid="arc_8h"/>
         <childnode refid="4056" relation="include">
         </childnode>
+        <childnode refid="4057" relation="include">
+        </childnode>
+        <childnode refid="4058" relation="include">
+        </childnode>
       </node>
-      <node id="4052">
-        <label>limits.h</label>
+      <node id="4055">
+        <label>stdint.h</label>
+      </node>
+      <node id="4057">
+        <label>stddef.h</label>
+      </node>
+      <node id="4059">
+        <label>arc/arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4060" relation="include">
+        </childnode>
       </node>
       <node id="4056">
+        <label>limits.h</label>
+      </node>
+      <node id="4060">
         <label>arc/arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="4048">
+      <node id="4052">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h</label>
         <link refid="arc_timer.h"/>
-        <childnode refid="4049" relation="include">
+        <childnode refid="4053" relation="include">
         </childnode>
       </node>
-      <node id="4049">
+      <node id="4053">
         <label>arc/arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="4050" relation="include">
+        <childnode refid="4054" relation="include">
         </childnode>
-        <childnode refid="4055" relation="include">
+        <childnode refid="4059" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4060">
+      <node id="4064">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/clib/embARC_syscalls.c</label>
         <link refid="embARC__syscalls_8c"/>
       </node>
-      <node id="4062">
+      <node id="4066">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/device/designware/dw_i2s.h</label>
         <link refid="dw__i2s_8h"/>
-        <childnode refid="4063" relation="include">
+        <childnode refid="4067" relation="include">
         </childnode>
-        <childnode refid="4064" relation="include">
+        <childnode refid="4068" relation="include">
         </childnode>
       </node>
-      <node id="4064">
+      <node id="4068">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/device/ip/designware/i2s/dw_i2s.c</label>
         <link refid="dw__i2s_8c"/>
       </node>
-      <node id="4063">
+      <node id="4067">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/drivers/ip/designware/i2s/dw_i2s_obj.c</label>
         <link refid="dw__i2s__obj_8c"/>
       </node>
-      <node id="4073">
+      <node id="4077">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/nsim/common/nsim_init.c</label>
         <link refid="nsim__init_8c"/>
       </node>
-      <node id="4058">
+      <node id="4062">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c</label>
         <link refid="arc__timer_8c"/>
       </node>
-      <node id="4066">
+      <node id="4070">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/board.c</label>
         <link refid="board_8c"/>
       </node>
-      <node id="4057">
+      <node id="4061">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h</label>
         <link refid="arc_timer.h"/>
-        <childnode refid="4058" relation="include">
+        <childnode refid="4062" relation="include">
         </childnode>
-        <childnode refid="4059" relation="include">
+        <childnode refid="4063" relation="include">
         </childnode>
-        <childnode refid="4068" relation="include">
+        <childnode refid="4072" relation="include">
+        </childnode>
+        <childnode refid="4073" relation="include">
+        </childnode>
+        <childnode refid="4074" relation="include">
+        </childnode>
+        <childnode refid="4075" relation="include">
+        </childnode>
+        <childnode refid="4076" relation="include">
+        </childnode>
+        <childnode refid="4077" relation="include">
+        </childnode>
+      </node>
+      <node id="4072">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/common/axs_init.c</label>
+        <link refid="axs__init_8c"/>
+      </node>
+      <node id="4065">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/console_io.c</label>
+        <link refid="console__io_8c"/>
+      </node>
+      <node id="4074">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_init.c</label>
+        <link refid="emsk__init_8c"/>
+      </node>
+      <node id="4076">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/common/iotdk_init.c</label>
+        <link refid="iotdk__init_8c"/>
+      </node>
+      <node id="4063">
+        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</label>
+        <link refid="embARC_8h"/>
+        <childnode refid="4064" relation="include">
+        </childnode>
+        <childnode refid="4065" relation="include">
+        </childnode>
+        <childnode refid="4066" relation="include">
         </childnode>
         <childnode refid="4069" relation="include">
         </childnode>
@@ -109,56 +145,20 @@
         </childnode>
         <childnode refid="4071" relation="include">
         </childnode>
-        <childnode refid="4072" relation="include">
-        </childnode>
-        <childnode refid="4073" relation="include">
-        </childnode>
       </node>
-      <node id="4068">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/common/axs_init.c</label>
-        <link refid="axs__init_8c"/>
-      </node>
-      <node id="4061">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/library/console/console_io.c</label>
-        <link refid="console__io_8c"/>
-      </node>
-      <node id="4070">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsk/common/emsk_init.c</label>
-        <link refid="emsk__init_8c"/>
-      </node>
-      <node id="4072">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/iotdk/common/iotdk_init.c</label>
-        <link refid="iotdk__init_8c"/>
-      </node>
-      <node id="4059">
-        <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/embARC.h</label>
-        <link refid="embARC_8h"/>
-        <childnode refid="4060" relation="include">
-        </childnode>
-        <childnode refid="4061" relation="include">
-        </childnode>
-        <childnode refid="4062" relation="include">
-        </childnode>
-        <childnode refid="4065" relation="include">
-        </childnode>
-        <childnode refid="4066" relation="include">
-        </childnode>
-        <childnode refid="4067" relation="include">
-        </childnode>
-      </node>
-      <node id="4065">
+      <node id="4069">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/axs/configs/103/axs_103_interrupt.c</label>
         <link refid="axs__103__interrupt_8c"/>
       </node>
-      <node id="4071">
+      <node id="4075">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/common/hsdk_init.c</label>
         <link refid="hsdk__init_8c"/>
       </node>
-      <node id="4069">
+      <node id="4073">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/emsdp/common/emsdp_init.c</label>
         <link refid="emsdp__init_8c"/>
       </node>
-      <node id="4067">
+      <node id="4071">
         <label>/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/board/hsdk/configs/10/hsdk_interrupt.c</label>
         <link refid="hsdk__interrupt_8c"/>
       </node>
@@ -362,11 +362,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_present</definition>
+        <definition>int32_t arc_timer_present</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_present</name>
+        <name>arc_timer_present</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -388,11 +388,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="104" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="50" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga4ca591bc3b7a83e307437f9b16d387c0_1ga4ca591bc3b7a83e307437f9b16d387c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_start</definition>
+        <definition>int32_t arc_timer_start</definition>
         <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
-        <name>timer_start</name>
+        <name>arc_timer_start</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -436,11 +436,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="105" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="80" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_stop</definition>
+        <definition>int32_t arc_timer_stop</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_stop</name>
+        <name>arc_timer_stop</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -462,11 +462,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="106" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="114" bodyend="138"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga651d9dfeffc650c2575542eb21b4cefb_1ga651d9dfeffc650c2575542eb21b4cefb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_current</definition>
+        <definition>int32_t arc_timer_current</definition>
         <argsstring>(const uint32_t no, void *val)</argsstring>
-        <name>timer_current</name>
+        <name>arc_timer_current</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -499,11 +499,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="107" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="147" bodyend="167"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa491d0f301accab4ef12ef453b848777_1gaa491d0f301accab4ef12ef453b848777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t timer_int_clear</definition>
+        <definition>int32_t arc_timer_int_clear</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>timer_int_clear</name>
+        <name>arc_timer_int_clear</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -525,11 +525,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="108" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="175" bodyend="194"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void timer_init</definition>
+        <definition>void arc_timer_int</definition>
         <argsstring>(void)</argsstring>
-        <name>timer_init</name>
+        <name>arc_timer_int</name>
         <param>
           <type>void</type>
         </param>
@@ -566,11 +566,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="110" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="374" bodyend="391"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga6238e55ff583a56101118cedf32edb40_1ga6238e55ff583a56101118cedf32edb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
-        <definition>uint64_t timer_calibrate_delay</definition>
+        <definition>uint64_t arc_timer_calibrate_delay</definition>
         <argsstring>(uint32_t cpu_clock)</argsstring>
-        <name>timer_calibrate_delay</name>
+        <name>arc_timer_calibrate_delay</name>
         <param>
           <type>uint32_t</type>
           <declname>cpu_clock</declname>
@@ -592,11 +592,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="111" column="1" bodyfile="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/arc/arc_timer.c" bodystart="399" bodyend="447"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga536835aeda3e7da6ee05d778c807f9bd_1ga536835aeda3e7da6ee05d778c807f9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_present</definition>
+        <definition>int32_t arc_secure_timer_present</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>secure_timer_present</name>
+        <name>arc_secure_timer_present</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -609,11 +609,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="112" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga44648e9bf965305b509a1169761c02ab_1ga44648e9bf965305b509a1169761c02ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga2784575f546b66f79f2066f0add7d1e2_1ga2784575f546b66f79f2066f0add7d1e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_start</definition>
+        <definition>int32_t arc_secure_timer_start</definition>
         <argsstring>(const uint32_t no, const uint32_t mode, const uint32_t val)</argsstring>
-        <name>secure_timer_start</name>
+        <name>arc_secure_timer_start</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -634,11 +634,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="113" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga70fffef420129e48bd9926c9e3478dc3_1ga70fffef420129e48bd9926c9e3478dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_stop</definition>
+        <definition>int32_t arc_secure_timer_stop</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>secure_timer_stop</name>
+        <name>arc_secure_timer_stop</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -651,11 +651,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="114" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaab2aa4baf8219ebb86c9aad1148b0523_1gaab2aa4baf8219ebb86c9aad1148b0523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gab95d948c51603693067f1c53d527864e_1gab95d948c51603693067f1c53d527864e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_current</definition>
+        <definition>int32_t arc_secure_timer_current</definition>
         <argsstring>(const uint32_t no, void *val)</argsstring>
-        <name>secure_timer_current</name>
+        <name>arc_secure_timer_current</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -672,11 +672,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="115" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga517e9a555515b5c73549fb3703d7fed0_1ga517e9a555515b5c73549fb3703d7fed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaa53a312d8df304d1175058f5ff372d33_1gaa53a312d8df304d1175058f5ff372d33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
-        <definition>int32_t secure_timer_int_clear</definition>
+        <definition>int32_t arc_secure_timer_int_clear</definition>
         <argsstring>(const uint32_t no)</argsstring>
-        <name>secure_timer_int_clear</name>
+        <name>arc_secure_timer_int_clear</name>
         <param>
           <type>const uint32_t</type>
           <declname>no</declname>
@@ -689,11 +689,11 @@
         </inbodydescription>
         <location file="/home/travis/build/foss-for-synopsys-dwc-arc-processors/embarc_bsp/include/arc/arc_timer.h" line="116" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_gaf453c9883df6ab97ef7c50cfb7a555f3_1gaf453c9883df6ab97ef7c50cfb7a555f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__ARC__HAL__MISC__TIMER_ga1c5d1a5a6a7c937f3df2c9879bd289d4_1ga1c5d1a5a6a7c937f3df2c9879bd289d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void secure_timer_init</definition>
+        <definition>void arc_secure_timer_init</definition>
         <argsstring>(void)</argsstring>
-        <name>secure_timer_init</name>
+        <name>arc_secure_timer_init</name>
         <param>
           <type>void</type>
         </param>
@@ -785,20 +785,20 @@
 <codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga4e1c7f5b50bb6c2066d9536aa82c86e7_1ga4e1c7f5b50bb6c2066d9536aa82c86e7" kindref="member">timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga6abd8670e2fcdeb2a95954064cd1f91e_1ga6abd8670e2fcdeb2a95954064cd1f91e" kindref="member">timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga226cf3c78e50cb364d4e2b7b81b87b45_1ga226cf3c78e50cb364d4e2b7b81b87b45" kindref="member">timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa622d918484c0e2e615a10c850bebabf_1gaa622d918484c0e2e615a10c850bebabf" kindref="member">timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga04189c0ae851819a2b9bcb8f7e1c504a_1ga04189c0ae851819a2b9bcb8f7e1c504a" kindref="member">timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga7b8ab79df77b57475a5494f5f81c3bd9_1ga7b8ab79df77b57475a5494f5f81c3bd9" kindref="member">timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga932c45dfc9a9503c778ef586fccade99_1ga932c45dfc9a9503c778ef586fccade99" kindref="member">arc_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga4ca591bc3b7a83e307437f9b16d387c0_1ga4ca591bc3b7a83e307437f9b16d387c0" kindref="member">arc_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga8ded41aa619120071c9742eaf9f50f31_1ga8ded41aa619120071c9742eaf9f50f31" kindref="member">arc_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga651d9dfeffc650c2575542eb21b4cefb_1ga651d9dfeffc650c2575542eb21b4cefb" kindref="member">arc_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa491d0f301accab4ef12ef453b848777_1gaa491d0f301accab4ef12ef453b848777" kindref="member">arc_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa0e1906f16ad5209a07f835a04f20a93_1gaa0e1906f16ad5209a07f835a04f20a93" kindref="member">arc_timer_int</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gad4ac8705a2215c7fd70fa654b3d6ec85_1gad4ac8705a2215c7fd70fa654b3d6ec85" kindref="member">arc_delay_us</ref>(uint32_t<sp/>usecs);</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga5b2e1f2917dad297e9f0cd01c36c1075_1ga5b2e1f2917dad297e9f0cd01c36c1075" kindref="member">timer_calibrate_delay</ref>(uint32_t<sp/>cpu_clock);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gabd869c3fdf3529ec51c31d7824b3c22e_1gabd869c3fdf3529ec51c31d7824b3c22e" kindref="member">secure_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga44648e9bf965305b509a1169761c02ab_1ga44648e9bf965305b509a1169761c02ab" kindref="member">secure_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga017ee704eafa9077ed6c4d82c418db09_1ga017ee704eafa9077ed6c4d82c418db09" kindref="member">secure_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaab2aa4baf8219ebb86c9aad1148b0523_1gaab2aa4baf8219ebb86c9aad1148b0523" kindref="member">secure_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga517e9a555515b5c73549fb3703d7fed0_1ga517e9a555515b5c73549fb3703d7fed0" kindref="member">secure_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaf453c9883df6ab97ef7c50cfb7a555f3_1gaf453c9883df6ab97ef7c50cfb7a555f3" kindref="member">secure_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga6238e55ff583a56101118cedf32edb40_1ga6238e55ff583a56101118cedf32edb40" kindref="member">arc_timer_calibrate_delay</ref>(uint32_t<sp/>cpu_clock);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga536835aeda3e7da6ee05d778c807f9bd_1ga536835aeda3e7da6ee05d778c807f9bd" kindref="member">arc_secure_timer_present</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga2784575f546b66f79f2066f0add7d1e2_1ga2784575f546b66f79f2066f0add7d1e2" kindref="member">arc_secure_timer_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>val);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga70fffef420129e48bd9926c9e3478dc3_1ga70fffef420129e48bd9926c9e3478dc3" kindref="member">arc_secure_timer_stop</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gab95d948c51603693067f1c53d527864e_1gab95d948c51603693067f1c53d527864e" kindref="member">arc_secure_timer_current</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group__ARC__HAL__MISC__TIMER_gaa53a312d8df304d1175058f5ff372d33_1gaa53a312d8df304d1175058f5ff372d33" kindref="member">arc_secure_timer_int_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>no);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__ARC__HAL__MISC__TIMER_ga1c5d1a5a6a7c937f3df2c9879bd289d4_1ga1c5d1a5a6a7c937f3df2c9879bd289d4" kindref="member">arc_secure_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
 <codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
