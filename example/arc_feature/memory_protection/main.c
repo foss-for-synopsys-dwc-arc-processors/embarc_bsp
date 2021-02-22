@@ -257,6 +257,12 @@ static void privilege_violation_handler(void *p_excinf)
 }
 #endif /* ARC_FEATURE_MPU_PRESENT */
 
+/* For HSDK (HS4x) boards to run this example,
+   it is necessary to change memory settings in target_mem_config.h
+   Otherwise the .data section (_f_data) will fall in ROM MPU region and cause error
+   e.g. you could define REGION_EXT_ROM_START to 0x00000000 and REGION_EXT_ROM_SIZE to 0x10000000
+   and then define REGION_ROM to REGION_EXT_ROM
+*/
 int main(void)
 {
 #if ARC_FEATURE_MPU_PRESENT
@@ -276,7 +282,7 @@ int main(void)
 
 	/* default mpu setting: kernel R+W */
 	arc_mpu_default(REGION_DEFAULT_ATTR);
-#if ARC_FEATURE_MPU_VERSION == 2
+#if ARC_FEATURE_MPU_VERSION == 2 || ARC_FEATURE_MPU_VERSION == 3
 	arc_mpu_enable();
 #endif
 	/* try to write ROM area */

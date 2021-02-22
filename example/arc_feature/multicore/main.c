@@ -59,7 +59,7 @@ static volatile uint32_t cores_delay_count[ARC_FEATURE_MP_NUM_CPUS];
 
 static void cores_timer0_isr(void *ptr)
 {
-	timer_int_clear(TIMER_0);
+	arc_timer_int_clear(TIMER_0);
 	cores_t0_count[arc_core_id()]++;
 }
 
@@ -81,7 +81,7 @@ static void cores_main(uint32_t id, void *arg)
 
 	EMBARC_PRINTF("core %d in arc connect is %d\r\n", id, arc_connect_check_core_id());
 	int_enable(INTNO_TIMER0);
-	timer_start(TIMER_0, TIMER_CTRL_IE, DELAY_COUNT);
+	arc_timer_start(TIMER_0, TIMER_CTRL_IE, DELAY_COUNT);
 	int_enable(INTNO_ICI);
 
 	while (1) {
