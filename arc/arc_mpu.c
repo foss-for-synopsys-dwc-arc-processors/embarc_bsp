@@ -38,7 +38,7 @@
  */
 void arc_mpu_enable(void)
 {
-#if ARC_FEATURE_MPU_VERSION == 2
+#if ARC_FEATURE_MPU_VERSION == 2 || ARC_FEATURE_MPU_VERSION == 3
 	arc_aux_write(AUX_MPU_EN, arc_aux_read(AUX_MPU_EN) | AUX_MPU_EN_ENABLE);
 #elif ARC_FEATURE_MPU_VERSION == 4
 	arc_mpu_default(0);
@@ -51,7 +51,7 @@ void arc_mpu_enable(void)
  */
 void arc_mpu_disable(void)
 {
-#if ARC_FEATURE_MPU_VERSION == 2
+#if ARC_FEATURE_MPU_VERSION == 2 || ARC_FEATURE_MPU_VERSION == 3
 	arc_aux_write(AUX_MPU_EN, arc_aux_read(AUX_MPU_EN) & AUX_MPU_EN_DISABLE);
 #elif ARC_FEATURE_MPU_VERSION == 4
 	arc_mpu_default(ARC_MPU_REGION_ALL_ATTR | AUX_MPU_ATTR_S | AUX_MPU_ATTR_SID(1));
@@ -75,18 +75,19 @@ void arc_mpu_region_config(uint32_t index, uint32_t base, uint32_t size, uint32_
 	region_attr &= AUX_MPU_ATTR_MASK;
 
 	/* ARC MPU version 2 and version 3 have different aux reg interface */
-#if ARC_FEATURE_MPU_VERSION == 2
-	uint8_t bits = arc_find_msb(size) - 1;
-
-	if (bits < ARC_FEATURE_MPU_ALIGNMENT_BITS) {
-		bits = ARC_FEATURE_MPU_ALIGNMENT_BITS;
-	}
-
-	if ((1 << bits) < size) {
-		bits++;
-	}
-
+#if ARC_FEATURE_MPU_VERSION == 2 || ARC_FEATURE_MPU_VERSION == 3
 	if (size > 0) {
+		uint8_t bits = arc_find_msb(size) - 1;
+
+		if (bits < ARC_FEATURE_MPU_ALIGNMENT_BITS) {
+			bits = ARC_FEATURE_MPU_ALIGNMENT_BITS;
+		}
+
+		if ((1 << bits) < size) {
+			bits++;
+		}
+
+		region_attr &= ~(AUX_MPU_RDP_SIZE_MASK);
 		region_attr |= AUX_MPU_RDP_REGION_SIZE(bits);
 		base |= AUX_MPU_VALID_MASK;
 	} else {
@@ -102,6 +103,7 @@ void arc_mpu_region_config(uint32_t index, uint32_t base, uint32_t size, uint32_
 	}
 
 	if (region_attr) {
+		region_attr &= AUX_MPU_RPER_ATTR_MASK;
 		region_attr |= AUX_MPU_VALID_MASK;
 	}
 
@@ -135,7 +137,7 @@ void arc_mpu_default(uint32_t region_attr)
  */
 int32_t arc_mpu_in_region(uint32_t index, uint32_t start, uint32_t size)
 {
-#if ARC_FEATURE_MPU_VERSION == 2
+#if ARC_FEATURE_MPU_VERSION == 2 || ARC_FEATURE_MPU_VERSION == 3
 	uint32_t r_addr_start;
 	uint32_t r_addr_end;
 	uint32_t r_size_lshift;
@@ -169,7 +171,7 @@ int32_t arc_mpu_in_region(uint32_t index, uint32_t start, uint32_t size)
 int32_t arc_mpu_probe(uint32_t addr)
 {
 
-#if ARC_FEATURE_MPU_VERSION == 2
+#if ARC_FEATURE_MPU_VERSION == 2 || ARC_FEATURE_MPU_VERSION == 3
 	uint32_t index;
 	uint32_t regions = ARC_FEATURE_MPU_REGIONS;
 
