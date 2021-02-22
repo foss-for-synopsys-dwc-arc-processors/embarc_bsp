@@ -46,6 +46,9 @@ struct cache_config {
 };
 
 static struct cache_config icache_config, dcache_config;
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
+static struct cache_config slc_config;
+#endif
 
 /**
  * @brief Invalidate instruction cache lines
@@ -183,6 +186,60 @@ int32_t icache_indirect_read(uint32_t mem_addr, uint32_t *tag, uint32_t *data)
 }
 #endif
 
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
+//SLC_OP_PREFETCH is not implemented
+void _slc_rgn_op(uint32_t start_addr, uint32_t size, uint32_t op){
+	uint32_t ctrl;
+	uint32_t end_addr;
+	if(!slc_enabled())
+	{
+		return;
+	}
+	ctrl = arc_aux_read(AUX_SLC_CTRL);
+	// /* Don't rely on default value of IM bit */
+	// if (!(op & SLC_OP_FLUSH))		/* i.e. SLC_OP_INV */
+	// {
+	// 	ctrl &= ~SLC_CTRL_IM;	/* clear IM: Disable flush before Inv */
+	// }
+	// else
+	// {
+	// 	ctrl |= SLC_CTRL_IM;
+	// }
+
+	if (op & SLC_OP_INV)
+	{
+		ctrl |= SLC_CTRL_RGN_OP_INV;	/* Inv or flush-n-inv */
+	}
+	else
+	{
+		ctrl &= ~SLC_CTRL_RGN_OP_INV;
+	}
+	arc_aux_write(AUX_SLC_CTRL, ctrl);
+	/*
+	 * Lower bits are ignored, no need to clip
+	 * END needs to be setup before START (latter triggers the operation)
+	 * END can't be same as START, so add (l2_line_sz - 1) to sz
+	 */
+	end_addr = start_addr + size + slc_config.line - 1;
+	/*
+	 * Upper addresses (ARC_AUX_SLC_RGN_END1 and ARC_AUX_SLC_RGN_START1)
+	 * are always == 0 as we don't use PAE40, so we only setup lower ones
+	 * (ARC_AUX_SLC_RGN_END and ARC_AUX_SLC_RGN_START)
+	 */
+	arc_aux_write(AUX_SLC_RGN_END, end_addr);
+	arc_aux_write(AUX_SLC_RGN_START, start_addr);
+	/* Make sure "busy" bit reports correct stataus, see STAR 9001165532 */
+	arc_aux_read(AUX_SLC_CTRL);
+	while (arc_aux_read(AUX_SLC_CTRL) & SLC_CTRL_BUSY) {
+		;
+	}
+}
+
+
+
+
+#endif
+
 /**
  * @brief Invalidate data cache lines
  *
@@ -195,6 +252,7 @@ int32_t dcache_invalidate_mlines(uint32_t start_addr, uint32_t size)
 	uint32_t end_addr;
 	uint32_t line_size;
 	uint32_t status;
+	uint32_t start = start_addr;
 
 	if ((size == 0) || (size > dcache_config.capacity)) {
 		return -1;
@@ -216,6 +274,10 @@ int32_t dcache_invalidate_mlines(uint32_t start_addr, uint32_t size)
 		}
 		start_addr += line_size;
 	} while (start_addr <= end_addr);
+
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
+	_slc_rgn_op(start, size, SLC_OP_INV);
+#endif
 	cpu_unlock_restore(status);
 
 	return 0;
@@ -234,6 +296,7 @@ int32_t dcache_flush_mlines(uint32_t start_addr, uint32_t size)
 	uint32_t end_addr;
 	uint32_t line_size;
 	uint32_t status;
+	uint32_t start = start_addr;
 
 	if ((size == 0) || (size > dcache_config.capacity)) {
 		return -1;
@@ -255,6 +318,10 @@ int32_t dcache_flush_mlines(uint32_t start_addr, uint32_t size)
 		}
 		start_addr += line_size;
 	} while (start_addr <= end_addr);
+
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
+	_slc_rgn_op(start, size, SLC_OP_FLUSH);
+#endif
 	cpu_unlock_restore(status);
 
 	return 0;
@@ -399,5 +466,18 @@ void arc_cache_init(void)
 		icache_enable(IC_CTRL_IC_ENABLE);
 		icache_invalidate();
 	}
+
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
+	build_cfg = arc_aux_read(AUX_BCR_SLC);
+	slc_config.ver = build_cfg & 0xff;
+
+	build_cfg = arc_aux_read(AUX_SLC_CACHE_CONFIG);
+	slc_enable(SLC_CTRL_DISABLE_FLUSH_LOCKED | SLC_CTRL_IM);
+	slc_invalidate();
+	slc_config.assoc = 4 << ((build_cfg >> 6) & 0x3);
+	//default 128KB = 0x20000
+	slc_config.capacity = 0x20000 << ((build_cfg) & 0xf);
+	slc_config.line = 128 >> ((build_cfg >> 4) & 0x3);
+#endif
 
 }

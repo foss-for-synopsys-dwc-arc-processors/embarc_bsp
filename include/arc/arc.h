@@ -143,6 +143,7 @@
 #define AUX_BCR_BS              (0xcb)          /*!< build configuration for bitstream */
 #define AUX_BCR_AGU             (0xcc)          /*!< build configuration for address generate unit */
 #define AUX_BCR_DMAC            (0xcd)          /*!< build configuration for DMA */
+#define AUX_BCR_SLC             (0xce)          /*!< build configuration for L2 Cache */
 #define AUX_BCR_CONNECT_SYSTEM  (0xd0)          /*!< build configuration for arc connect */
 #define AUX_BCR_CONNECT_SEMA    (0xd1)          /*!< build configuration for inter-core semaphore */
 #define AUX_BCR_CONNECT_MESSAGE (0xd2)          /*!< build configuration for inter-code message */
@@ -387,24 +388,62 @@
  * @name cache related auxiliary register
  * @{
  */
-#define AUX_IC_IVIC         (0x10)      /*!< invalidate instruction cache */
-#define AUX_IC_CTRL         (0x11)      /*!< instruction cache control register */
-#define AUX_IC_LIL          (0x13)      /*!< lock instruction cache line */
-#define AUX_IC_IVIL         (0x19)      /*!< invalidate instruction cache line */
-#define AUX_IC_RAM_ADDR     (0x1a)      /*!< instruction cache external access address */
-#define AUX_IC_TAG          (0x1b)      /*!< instruction cache tag access */
-#define AUX_IC_XTAG         (0x1c)      /*!< instruction cache secure bit tag */
-#define AUX_IC_DATA         (0x1d)      /*!< instruction cache data access */
-#define AUX_DC_IVDC         (0x47)      /*!< invalidate data cache */
-#define AUX_DC_CTRL         (0x48)      /*!< data cache control register */
-#define AUX_DC_LDL          (0x49)      /*!< lock data cache line */
-#define AUX_DC_IVDL         (0x4a)      /*!< invalidate data cache line */
-#define AUX_DC_FLSH         (0x4b)      /*!< flush data cache */
-#define AUX_DC_FLDL         (0x4c)      /*!< flush data line */
-#define AUX_DC_RAM_ADDR     (0x58)      /*!< data cache external access address */
-#define AUX_DC_TAG          (0x59)      /*!< data cache tag access */
-#define AUX_DC_XTAG         (0x5a)      /*!< data cache secure bit tag */
-#define AUX_DC_DATA         (0x5b)      /*!< data cache data access */
+#define AUX_IC_IVIC              (0x10)      /*!< invalidate instruction cache */
+#define AUX_IC_CTRL              (0x11)      /*!< instruction cache control register */
+#define AUX_IC_LIL               (0x13)      /*!< lock instruction cache line */
+#define AUX_IC_IVIL              (0x19)      /*!< invalidate instruction cache line */
+#define AUX_IC_RAM_ADDR          (0x1a)      /*!< instruction cache external access address */
+#define AUX_IC_TAG               (0x1b)      /*!< instruction cache tag access */
+#define AUX_IC_XTAG              (0x1c)      /*!< instruction cache secure bit tag */
+#define AUX_IC_DATA              (0x1d)      /*!< instruction cache data access */
+#define AUX_DC_IVDC              (0x47)      /*!< invalidate data cache */
+#define AUX_DC_CTRL              (0x48)      /*!< data cache control register */
+#define AUX_DC_LDL               (0x49)      /*!< lock data cache line */
+#define AUX_DC_IVDL              (0x4a)      /*!< invalidate data cache line */
+#define AUX_DC_FLSH              (0x4b)      /*!< flush data cache */
+#define AUX_DC_FLDL              (0x4c)      /*!< flush data line */
+#define AUX_DC_RAM_ADDR          (0x58)      /*!< data cache external access address */
+#define AUX_DC_TAG               (0x59)      /*!< data cache tag access */
+#define AUX_DC_XTAG              (0x5a)      /*!< data cache secure bit tag */
+#define AUX_DC_DATA              (0x5b)      /*!< data cache data access */
+
+#define AUX_SLC_CACHE_CONFIG     (0x901)     /*!< configuration information for L2 Cache */
+#define AUX_SLC_CACHE_ECC_CONFIG (0x902)     /*!< configuration information for L2 Cache ECC configurations */
+#define AUX_SLC_CTRL             (0x903)     /*!< L2 Cache control register */
+#define AUX_SLC_FLUSH            (0x904)     /*!< L2 Cache flush register */
+#define AUX_SLC_INV              (0x905)     /*!< L2 Cache invalidate register */
+#define AUX_SLC_LINE_LOCK        (0x90E)     /*!< L2 Cache Line Lock Register */
+#define AUX_SLC_LINE_LOCK1       (0x90F)     /*!< L2 Cache Line Lock Register for upper bits */
+#define AUX_SLC_LINE_INV         (0x910)     /*!< L2 Cache Line Invalidate register */
+#define AUX_SLC_LINE_INV1        (0x911)     /*!< L2 Cache Line Invalidate register for upper bits */
+#define AUX_SLC_LINE_FLUSH       (0x912)     /*!< L2 Cache Line Flush register */
+#define AUX_SLC_LINE_FLUSH1      (0x913)     /*!< L2 Cache Line Flush register for upper bits */
+#define AUX_SLC_RGN_START        (0x914)     /*!< L2 Cache Line Operation Start Address Register */
+#define AUX_SLC_RGN_START1       (0x915)     /*!< L2 Cache Line Operation Start Address Register for upper bits */
+#define AUX_SLC_RGN_END          (0x916)     /*!< L2 Cache Line Operation End Address Register */
+#define AUX_SLC_RGN_END1         (0x917)     /*!< L2 Cache Line Operation End Address Register for upper bits */
+#define AUX_SLC_LINE_ADDR        (0x918)     /*!< L2 Cache RAM Access Register */
+#define AUX_SLC_LINE_ADDR1       (0x919)     /*!< L2 Cache RAM Access Register */
+#define AUX_SLC_DIRECT_IDX       (0x91A)     /*!< L2 Cache Direct Index Register */
+#define AUX_SLC_TAG_DATA         (0x91B)     /*!< L2 Cache TAG Register */
+#define AUX_SLC_TAG_DATA1        (0x91C)     /*!< L2 Cache TAG Register */
+#define AUX_SLC_STATUS_DATA      (0x91D)     /*!< L2 Cache Status Register */
+#define AUX_SLC_DATA0            (0x91F)     /*!< L2 Cache Data Register */
+#define AUX_SLC_DATA1            (0x920)
+#define AUX_SLC_DATA2            (0x921)
+#define AUX_SLC_DATA3            (0x922)
+#define AUX_SLC_FAULT_ADDR       (0x923)     /*!< L2 Cache Fault Address Register */
+#define AUX_SLC_FAULT_ADDR1      (0x924)     /*!< L2 Cache Fault Address Register for upper bits */
+#define AUX_SLC_FAULT_STAT       (0x925)     /*!< L2 Cache Fault Status Register */
+#define AUX_SLC_PM_CMD           (0x926)     /*!< L2 Cache Performance Monitor Command Register */
+#define AUX_SLC_PM_EVENT         (0x927)     /*!< L2 Cache Performance Monitor Event Register */
+#define AUX_SLC_PM_OVF           (0x928)     /*!< L2 Cache Performance Counter Overflow Register */
+#define AUX_SLC_PM_CNT0          (0x929)     /*!< L2 Cache Performance Monitor Count0 Register */
+#define AUX_SLC_PM_CNT1          (0x92A)     /*!< L2 Cache Performance Monitor Count0 Register for upper bits */
+#define AUX_SLC_CACHE_LOCK_BASE  (0x906)     /*!< L2 Cache Way-Lock Register */
+#define AUX_SLC_CACHE_LOCK_BASE1 (0x92E)     /*!< L2 Cache Way-Lock Register */
+#define AUX_SLC_ECC_SBE_CNT      (0x93C)     /*!< L2 Cache SBE Counter Register */
+// other SLC registers are not supported yet
 /** @} */
 
 /**
