@@ -252,7 +252,9 @@ int32_t dcache_invalidate_mlines(uint32_t start_addr, uint32_t size)
 	uint32_t end_addr;
 	uint32_t line_size;
 	uint32_t status;
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
 	uint32_t start = start_addr;
+#endif
 
 	if ((size == 0) || (size > dcache_config.capacity)) {
 		return -1;
@@ -296,7 +298,9 @@ int32_t dcache_flush_mlines(uint32_t start_addr, uint32_t size)
 	uint32_t end_addr;
 	uint32_t line_size;
 	uint32_t status;
+#ifdef ARC_FEATURE_SL2CACHE_PRESENT
 	uint32_t start = start_addr;
+#endif
 
 	if ((size == 0) || (size > dcache_config.capacity)) {
 		return -1;
